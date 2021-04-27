@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: The Diamond by Triksta / Fix secret
+
+FINGERPRINT
+{
+	362 [-2 -57 -18]
+	1063 [-27 -21 10]
+	1179 [-15 -54 25]
+	333 [-9 -47 -18]
+	602 [93 -88 14]
+	187 [52 -62 13]
+	489 [41 -134 7]
+	239 [-68 27 -1]
+	QVAR "goal_target_8" == 716
+}
+
++ObjProp 415 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}

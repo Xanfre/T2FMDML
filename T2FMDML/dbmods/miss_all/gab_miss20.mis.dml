@@ -1,0 +1,168 @@
+DML1
+
+//T2 FM: Garrett and the Beanstalk by Katy Fortner (Kfort) / Fixes
+
+FINGERPRINT
+{
+	649 [189 -222 192]
+	507 [47 8 188]
+	685 [227 -250 185]
+	795 [78 -173 148]
+	75 [104 65 87]
+	783 [116 -136 145]
+	209 [69 112 87]
+	280 [76 -203 140]
+	NAME 746 "C-Wally"
+}
+
+#script "nvscript"
+
+//secrets
+-ObjProp 520 "Darkstat"
+-Link 683 520 "ControlDevice"
+-Link 521 81 "ControlDevice"
+-Link 522 521 "ControlDevice"
++Link 522 81 "ControlDevice"
+{
+}
++ObjProp 522 "DarkStat"
+{
+	"" Hidden
+}
++ObjProp 522 "Scripts"
+{
+	"Script 2" FrobFind
+}
++ObjProp 849 "DarkStat"
+{
+	"" Hidden
+}
++ObjProp 849 "Scripts"
+{
+	"Script 0" FrobFind
+}
++Receptron 81 "EarthStim"
+{
+	Min 8
+	Max 10
+
+	Target Me
+	Agent 520
+
+	Effect "add_prop"
+	{
+		"Prop Name" CollisionType
+	}
+}
+++Receptron 81 "EarthStim"
+{
+	Min 8
+	Max 10
+
+	Target Me
+	Agent 520
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 81 "EarthStim"
+{
+	Min 8
+	Max 10
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" DarkStat
+	}
+}
+++Receptron 81 "EarthStim"
+{
+	Min 11
+	Max None
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" Scripts
+	}
+}
++ObjProp 81 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrap2TDest="[Me]"; NVRelayTrapOnDelay=200; NVRelayTrap2OnDelay=500; NVRelayTrapTOn="[9.00]EarthStim"; NVRelayTrap2TOn="[12.00]EarthStim"; NVRelayTrapTCount=1; NVRelayTrap2TCount=1
+}
+ObjProp 81 "Scripts"
+{
+	"Script 1" TrigSlain
+	"Script 2" NVRelayTrap
+	"Script 3" NVRelayTrap2
+}
++Link 81 521 "ControlDevice"
+{
+}
+Create -5317 "SecretFix"
+{
+	+ObjProp "DiffDestroy"
+	{
+		"quest var values" 0, 1
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 208, -179, 197
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+}
++Link "SecretFix" 683 "ControlDevice"
+{
+}
++ObjProp 521 "Scripts"
+{
+	"Script 0" TrapDestroy
+	"Don't Inherit" true
+}
++Link 521 683 "ControlDevice"
+{
+}
++Link 521 "SecretFix" "ControlDevice"
+{
+}
++Receptron 683 "EarthStim"
+{
+	Min 9
+	Max None
+
+	Target Me
+	Agent 81
+
+	Effect "add_prop"
+	{
+		"Prop Name" DarkStat
+	}
+}
++ObjProp 683 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapTCount=1
+}
++ObjProp 683 "Scripts"
+{
+	"Script 0" TrapFindSecret
+	"Script 1" NVRelayTrap
+	"Don't Inherit" true
+}
+//vine arrows
+-ObjProp 302 "Scripts"
+//final goal
++ObjProp 446 "TrapFlags"
+{
+	"" Once, NoOff
+}
+//pickpocketing count
+-Link 447 821 "ControlDevice"

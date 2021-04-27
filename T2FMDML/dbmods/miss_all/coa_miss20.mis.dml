@@ -1,0 +1,638 @@
+DML1
+
+//T2 FM: Coalport by Duncan Ardley (Ravenhook) / Fixes
+
+FINGERPRINT
+{
+	634 [528 488 485]
+	1916 [410 716 465]
+	2243 [103 401 507]
+	756 [529 537 498]
+	1168 [457 486 464]
+	1189 [461 525 486]
+	1080 [208 322 502]
+	2257 [123 520 501]
+	QVAR "goal_target_1" == 2428
+}
+
+#script "tnhscript"
+
+-ObjProp 472 "Position"
++ObjProp 472 "Position"
+{
+	"Location" 587.348,455.506,480.992
+}
+-ObjProp 473 "Position"
++ObjProp 473 "Position"
+{
+	"Location" 587.909,455.475,480.992
+}
+-ObjProp 476 "Position"
++ObjProp 476 "Position"
+{
+	"Location" 587.966,454.615,480.992
+}
+-ObjProp 316 "Position"
++ObjProp 316 "Position"
+{
+	"Location" 574.665,547.365,482.616
+}
+-ObjProp 1729 "Position"
++ObjProp 1729 "Position"
+{
+	"Location" 444.407,500.774,484.433
+	"Heading" 4000
+}
+-ObjProp 1341 "Position"
++ObjProp 1341 "Position"
+{
+	"Location" 265.9,343.165,465.351
+}
+-ObjProp 861 "Position"
++ObjProp 861 "Position"
+{
+	"Location" 456.189,565.526,488.101
+	"Heading" 4000
+	"Bank" 4000
+}
+-ObjProp 544 "Position"
++ObjProp 544 "Position"
+{
+	"Location" 501.468,458.307,494.786
+}
+-ObjProp 546 "Position"
++ObjProp 546 "Position"
+{
+	"Location" 500.841,458.306,494.786
+}
+-ObjProp 104 "Position"
++ObjProp 104 "Position"
+{
+	"Location" 370.606,489.201,497.41
+}
+-ObjProp 1832 "Position"
++ObjProp 1832 "Position"
+{
+	"Location" 631.993,471.004,468.012
+}
++Receptron 159 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 538.009,524.574,509.487
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 159 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 6 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 6 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 12 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 537.949,507.852,509.487
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 12 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 272 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 272 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 81 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 370.73,489.57,495.487
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 81 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 101 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 101 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 1965 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 388.81,639.607,475.487
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 1965 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 1964 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1964 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 1532 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 455.031,498.255,459.987
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 1532 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 1571 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1571 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 2424 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 529.263,472.32,509.487
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 2424 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 247 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 247 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 316 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 578.593,555.286,493.487
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 316 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 264 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 264 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 284 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 655.388,547.898,467.487
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 284 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 287 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 287 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 1830 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 546.96,758.142,366.487
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 1830 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 2414 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 2414 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 1832 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1832 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+Create -464 "QVarFixSwitch"
+{
+	+ObjProp "Position"
+	{
+		"Location" 505.188,420.765,519,703
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "designnote"
+	{
+		"" Proximity=2000
+	}
+}
++ObjProp 2064 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2064 "TrapQVar"
+{
+	"" =40000:goal_loot_0
+}
++Link "QVarFixSwitch" 2064 "ControlDevice"
+{
+}
++ObjProp 2046 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2046 "TrapQVar"
+{
+	"" =4000:goal_loot_1
+}
++Link "QVarFixSwitch" 2046 "ControlDevice"
+{
+}
++ObjProp 204 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 204 "TrapQVar"
+{
+	"" =0:goal_target_1
+}
++Link "QVarFixSwitch" 204 "ControlDevice"
+{
+}
++ObjProp 200 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 200 "TrapQVar"
+{
+	"" =2428:goal_target_0
+}
++Link "QVarFixSwitch" 200 "ControlDevice"
+{
+}
++ObjProp 456 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 456 "TrapQVar"
+{
+	"" =4:goal_type_0
+}
++Link "QVarFixSwitch" 456 "ControlDevice"
+{
+}
++ObjProp 206 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 206 "TrapQVar"
+{
+	"" =3:goal_type_1
+}
++Link "QVarFixSwitch" 206 "ControlDevice"
+{
+}
++ObjProp 2270 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2270 "TrapQVar"
+{
+	"" =1:goal_final_0
+}
++Link "QVarFixSwitch" 2270 "ControlDevice"
+{
+}
+-Link 1621 1797 "AIPatrol"
+-Link 1821 1620 "AIPatrol"
++Link 1621 1620 "AIPatrol"
+{
+}
++ObjProp 1411 "Scale"
+{
+	"" 1.1,1.1,1
+}
++ObjProp 1418 "Scale"
+{
+	"" 1.1,1.1,1
+}

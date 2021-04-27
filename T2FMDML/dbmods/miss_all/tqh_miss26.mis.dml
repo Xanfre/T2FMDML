@@ -1,0 +1,139 @@
+DML1
+
+//T2 FM: The Quiet Heat by MotleyCat / Fixes
+
+FINGERPRINT
+{
+	381 [59 218 84]
+	503 [-51 5 89]
+	301 [-123 113 57]
+	965 [-40 180 57]
+	158 [-63 277 56]
+	739 [-74 388 57]
+	730 [-169 209 58]
+	428 [-254 243 57]
+	QVAR "goal_target_2" == 497
+}
+
+#script "squirrel"
+
++ObjProp 422 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 856 "Position"
+{
+	"Location" -275.894,293.268,58.02
+	"Heading" e38
+	"Pitch" 4000
+}
++ObjProp 1010 "Position"
+{
+	"Location" -20.5464,94.6952,57.6709
+	"Heading" 71c
+	"Pitch" 4000
+}
+-ObjProp 543 "Position"
++ObjProp 543 "Position"
+{
+	"Location" -148.749,103.997,60.65
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 544 "Position"
++ObjProp 544 "Position"
+{
+	"Location" -149.612,104.006,60.65
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 545 "Position"
++ObjProp 545 "Position"
+{
+	"Location" -150.436,103.711,60.65
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 546 "Position"
++ObjProp 546 "Position"
+{
+	"Location" -151.526,103.869,60.65
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 879 "FrobInfo"
+-ObjProp 880 "FrobInfo"
+-ObjProp 881 "FrobInfo"
+-ObjProp 882 "FrobInfo"
+-ObjProp 291 "FrobInfo"
++ObjProp 290 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 627 "DesignNote"
+{
+	"" RepositionLoc=-59.355,333.014,56.704
+}
++ObjProp 627 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 652 "DesignNote"
+{
+	"" RepositionLoc=-66.7608,348.693,57.0945
+}
++ObjProp 652 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 363 "DesignNote"
+{
+	"" RepositionLoc=-0.0,0.0,0.1
+}
++ObjProp 363 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 661 "DesignNote"
+{
+	"" RepositionLoc=-0.0,0.0,0.1
+}
++ObjProp 661 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 659 "DesignNote"
+{
+	"" RepositionLoc=-0.0,0.0,0.1
+}
++ObjProp 659 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 660 "DesignNote"
+{
+	"" RepositionLoc=-0.0,0.0,0.1
+}
++ObjProp 660 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 42 "DesignNote"
+{
+	"" RepositionLoc=-0.0,0.0,0.5
+}
++ObjProp 42 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 663 "DesignNote"
+{
+	"" RepositionLoc=-93.7553,337.145,66.6043
+}
++ObjProp 663 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}

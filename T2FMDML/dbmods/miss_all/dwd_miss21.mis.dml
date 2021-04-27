@@ -1,0 +1,28 @@
+DML1
+
+//T2 FM: Dancing with the Dead by Gregorius / Fix secret
+
+FINGERPRINT
+{
+	331 [165 308 250]
+	238 [102 256 238]
+	102 [187 250 231]
+	108 [273 169 228]
+	306 [109 242 240]
+	219 [71 234 251]
+	170 [184 258 247]
+	117 [171 252 237]
+	NAME 277 "MutatedTalkingFrog"
+}
+
+#script "nvscript"
+
++MetaProp 264 -1629
++ObjProp 330 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 330 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget="264"; NVMetaTrapOn="Null"; NVMetaTrapOff="Contained"
+}

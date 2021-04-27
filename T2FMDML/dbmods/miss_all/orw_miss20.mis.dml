@@ -1,0 +1,356 @@
+DML1
+
+//T2 FM: Orthodox Wedding by TDBonko / Fix goals and other issues
+
+FINGERPRINT
+{
+	927 [88 285 89]
+	1395 [123 267 83]
+	594 [46 185 88]
+	212 [96 116 99]
+	1261 [266 -172 90]
+	1520 [210 -275 106]
+	776 [404 -26 66]
+	403 [377 186 68]
+	QVAR "goal_target_4" == 1284
+}
+
+#script "nvscript"
+#script "squirrel"
+
++ObjProp 363 "TrapQVar"
+{
+	"" =3:goal_state_12
+}
++ObjProp 853 "TrapQVar"
+{
+	"" =3:goal_state_12
+}
++ObjProp 363 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" NVRelayTrap
+}
++ObjProp 853 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++Link 853 363 "ControlDevice"
+{
+}
++Receptron 1033 "BashStim"
+{
+	Min None
+	Max None
+	Target 853
+	Effect "frob_obj"
+}
++ObjProp 351 "TrapQVar"
+{
+	"" =1:goal_irreversible_0
+}
++ObjProp 351 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 602 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 602 351 "ControlDevice"
+{
+}
+Create -4533
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 206.0,-153.0,97.1
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -4533
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 206.1,-145.0,97.1
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 1001 "Position"
++ObjProp 1001 "Position"
+{
+	"Location" 299.99,101.65,75.48
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++StimSource 680 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 680 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -491
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 385.0, 49.0, 72.8
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
+-ObjProp 1037 "Position"
++ObjProp 1037 "Position"
+{
+	"Location" 329.0,160.75,76.9
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1094 "Position"
++ObjProp 1094 "Position"
+{
+	"Location" 404.11,-29.9,66.5
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1034 "Position"
++ObjProp 1034 "Position"
+{
+	"Location" 308.16,160.1,77.0
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1027 "Position"
++ObjProp 1027 "Position"
+{
+	"Location" 328.9,181.14,76.58
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1036 "Position"
++ObjProp 1036 "Position"
+{
+	"Location" 308.34,170.0,76.0
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 822 "Scale"     
+{
+	"" 1.2,1.2,1.2
+}
++ObjProp 632 "Scale"     
+{
+	"" 0.8,0.8,0.9
+}
++ObjProp 811 "Scale"     
+{
+	"" 0.8,0.8,0.9
+}
+-ObjProp 811 "Position"
++ObjProp 811 "Position"
+{
+	"Location" 404.47,-2.3,67.13
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1093 "Position"
++ObjProp 1093 "Position"
+{
+	"Location" 404.63,-27.43,66.0
+	"Heading" 364a
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 734 "PhysType"
++ObjProp 734 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 734 "Position"
++ObjProp 734 "Position"
+{
+	"Location" 376.3,-59.25,69.11
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 809 "PhysType"
++ObjProp 809 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 809 "Position"
++ObjProp 809 "Position"
+{
+	"Location" 371.9,23.15,67.22
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1448 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 1448 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1449 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 1449 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 502 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 502 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 778 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 778 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 653 "DesignNote" 
+{
+	"" NVRelayTrapTDest="Player"; NVRelayTrapTOn="[100.00]FireStim"; NVRelayTrapOff="Null"; NVRelayTrapTon="Turnon";
+}
++Link 853 653 "ControlDevice"
+{
+}
++Link 853 363 "ControlDevice"
+{
+}
++ObjProp 653 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+++StimSource 604 "PhotoStim"
+{
+	Intensity 1
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 3.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++StimSource 613 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 4
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 3.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 604 "PingStim"
+{
+	Min 3
+	Max 7
+	Target me
+	Agent -553
+	Effect "add_prop"
+	{
+		"Prop Name" "Frobinfo"
+	}
+}
++ObjProp 604 "DesignNote"
+{
+	"" NVSetPropertyTrapProperty="FrobInfo"; NVSetPropertyTrapSubProperty="World Action"; NVSetPropertyTrapValue=0
+}
++Link 1600 604 "ControlDevice"
+{
+}
++ObjProp 604 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}

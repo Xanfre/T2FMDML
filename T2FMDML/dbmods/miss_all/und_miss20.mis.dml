@@ -1,0 +1,85 @@
+DML1
+
+//T2 FM: Underneath (aka La Mine) by Charlybegood / Fixes
+
+FINGERPRINT
+{
+	468 [-146 118 -178]
+	438 [-85 0 -176]
+	945 [-105 41 -164]
+	715 [-114 44 -167]
+	582 [-135 -68 -142]
+	1088 [-168 140 -168]
+	680 [-116 79 -198]
+	762 [-109 58 -193]
+	QVAR "goal_target_1" == 588
+}
+
+#script "tnhscript"
+#script "nvscript"
+
++MetaProp 427 -1629
++ObjProp 916 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 916 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=427
+}
++ObjProp 189 "PhysCanMant"      
+{
+	"" false
+}
++ObjProp 427 "PickDist"
+{
+	"" 4.4
+}
++ObjProp 646 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 646 "TrapQVar"
+{
+    "" =3000:goal_loot_3
+}
+Create -464 "Goal3LootSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "DesignNote"
+	{
+		"" Proximity=2000
+	}
+}
++Link "Goal3LootSwitch" 646 "ControlDevice"
+{
+}
++ObjProp 918 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 918 "TrapFlags"          
+{
+	"" Once,Invert
+}
++Link 380 918 "ControlDevice"
+{
+}
++Link 918 916 "ControlDevice"
+{
+}
++ObjProp 910 "BlockFrob"
+{
+	"" true
+}
++ObjProp 911 "BlockFrob"
+{
+	"" true
+}
++ObjProp 912 "BlockFrob"
+{
+	"" true
+}

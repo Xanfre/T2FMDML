@@ -1,0 +1,277 @@
+DML1
+
+//T2 FM: Relics by Paul D Rotter (eepcat) / Fixes
+
+FINGERPRINT
+{
+	402 [-31 170 29]
+	187 [-57 74 45]
+	153 [-109 141 34]
+	455 [60 225 31]
+	286 [119 193 49]
+	114 [-157 146 33]
+	438 [83 26 96]
+	109 [-122 253 27]
+	QVAR "goal_target_0" == 162
+}
+
++MetaProp 383 -1629
++MetaProp 263 -1629
++MetaProp 265 -1629
++MetaProp 253 -1629
++MetaProp 262 -1629
++MetaProp 254 -1629
++MetaProp 264 -1629
++StimSource 27 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 27 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 119.24, 192.56, 49.99
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 29 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 29 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 131.7, 192.75, 49.99
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 28 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 28 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 135.4, 192.9, 49.99
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 21 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 21 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 135.4, 197.49, 49.99
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++ObjProp 286 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 286 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 285 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 285 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 282 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 282 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 283 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 283 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 361 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 361 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+-ObjProp 299 "PhysType"
++ObjProp 299 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 299 "Position"
++ObjProp 299 "Position"
+{
+	"Location" 118.8,213.28,45.67
+	"Heading" 0
+	"Pitch" 0
+	"Bank" c000
+}
+-ObjProp 299 "PhysType"
++ObjProp 299 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 410 "PhysType"
++ObjProp 410 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 410 "Position"
++ObjProp 410 "Position"
+{
+	"Location" -30.9,166.8,31.35
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 186 "Position"
++ObjProp 186 "Position"
+{
+	"Location" -54.44,75.55,44.87
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0
+}

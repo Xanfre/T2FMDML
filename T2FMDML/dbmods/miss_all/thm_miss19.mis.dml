@@ -1,0 +1,25 @@
+DML1
+
+//T2 FM: The Hightowne Museum (Contest 2) by Jani Saarijarvi (Spitter) / Fix the hatch
+
+FINGERPRINT
+{
+	380 [-25 -18 33]
+	253 [-27 11 81]
+	428 [25 -10 65]
+	362 [28 -13 39]
+	348 [28 -9 32]
+	366 [-13 -24 39]
+	266 [-17 12 31]
+	59 [10 1 82]
+	QVAR "goal_target_5" == 330
+}
+
+ObjProp 11 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 11 "PhysCanMant"
+{
+}

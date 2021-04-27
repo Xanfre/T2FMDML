@@ -1,0 +1,189 @@
+DML1
+
+//T2 FM: The Jarlson Manor (aka Assassins) by Minas Zuniga / Fixes: Objectives, paintings, misplaced objects, talismans
+
+FINGERPRINT
+{
+	587 [52 -33 146]
+	1323 [34 156 103]
+	1179 [-5 -57 147]
+	1898 [71 7 121]
+	590 [53 -32 146]
+	1299 [24 165 101]
+	1974 [204 -169 110]
+	700 [42 -20 150]
+	QVAR "goal_target_0" == 2341
+}
+
+//goal (imposter)
++ObjProp 1805 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1805 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++ObjProp 2341 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++Link 2341 1805 "ControlDevice"
+{
+}
++ObjProp 2341 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+//goal (thief)
++ObjProp 1824 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1824 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
++ObjProp 2336 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++Link 2336 1824 "ControlDevice"
+{
+}
++ObjProp 2336 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+//talismans (thief)
++ObjProp 2307 "DiffPermit"
+{
+	"quest var values" 1
+}
++ObjProp 2308 "DiffPermit"
+{
+	"quest var values" 1
+}
++ObjProp 2309 "DiffPermit"
+{
+	"quest var values" 1
+}
++ObjProp 2310 "DiffPermit"
+{
+	"quest var values" 1
+}
+//frederick
++ObjProp 1187 "GameName"
+{
+	"" Name_Frederick: "Frederick Jarlson"
+}
+//kheldara
++ObjProp 2303 "GameName"
+{
+	"" Name_Kheldara: "Kheldara"
+}
+//paintings
+-ObjProp 89 "PhysType"
+ObjProp 89 "Position"
+{
+	"Pitch" 0
+}
++ObjProp 89 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 90 "PhysType"
+ObjProp 90 "Position"
+{
+	"Location" 16.8, 48.3687, 155.571
+	"Heading" 4000
+}
++ObjProp 90 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1820 "PhysType"
+ObjProp 1820 "Position"
+{
+	"Location" -97.2297, 62.35, 105.103
+}
++ObjProp 1820 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2306 "PhysType"
+ObjProp 2306 "Position"
+{
+	"Location" -83, 132.166, 105.116
+}
++ObjProp 2306 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2314 "PhysType"
+ObjProp 2314 "Position"
+{
+	"Location" -83, 110.897, 106.21
+}
++ObjProp 2314 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2317 "PhysType"
+ObjProp 2317 "Position"
+{
+	"Pitch" 0
+}
++ObjProp 2317 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2335 "PhysType"
+ObjProp 2335 "Position"
+{
+	"Location" -38.0902, 155, 106.584
+}
++ObjProp 2335 "PhysType"
+{
+	"Type" OBB
+}
+//table
+-ObjProp 1872 "PhysType"
+ObjProp 1872 "Position"
+{
+	"Heading" 4000
+}
++ObjProp 1872 "PhysType"
+{
+	"Type" OBB
+}
+//doors
++Link 100 101  "ScriptParams"
+{
+	"" Double
+}
++Link 134 135  "ScriptParams"
+{
+	"" Double
+}
++Link 744 745  "ScriptParams"
+{
+	"" Double
+}
++Link 2024 2025  "ScriptParams"
+{
+	"" Double
+}
++Link 2026 2043  "ScriptParams"
+{
+	"" Double
+}
++ObjProp 2313 "Position"
+{
+	"Location" -79.81,152.13,99.590
+	"Bank" 23.906
+}
++ObjProp 1186 "Position"
+{
+	"Location" 2.93207,165.445,99.698
+}

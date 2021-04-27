@@ -1,0 +1,28 @@
+DML1
+
+//T2 FM: Old Comrades, Old Debts by Bukary and Ernie / Fix explosives switch
+
+FINGERPRINT
+{
+	133 [523 491 515]
+	232 [523 486 519]
+	139 [504 489 506]
+	336 [573 498 506]
+	60 [501 475 508]
+	425 [513 480 491]
+	423 [527 497 496]
+	463 [518 508 500]
+	QVAR "goal_target_6" == 493
+}
+
++ObjProp 185 "CfgTweqJoints"
+{
+	"Halt" "Stop Tweq"    
+	"AnimC" Sim
+	"MiscC" Scripts
+	"CurveC" None
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"Joint1CurveC" Bounce
+	"    rate-low-high" 2,0,90
+}

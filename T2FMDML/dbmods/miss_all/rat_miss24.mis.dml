@@ -1,0 +1,22 @@
+DML1
+
+//T2 FM: Von Ratten, Spinnen un einer Flucht by Kamon / Fix jar position
+
+FINGERPRINT
+{
+	109 [11 29 14]
+	557 [-13 18 -13]
+	392 [-29 -19 -15]
+	101 [21 -1 -28]
+	141 [31 9 -23]
+	326 [3 -10 -12]
+	370 [-13 -10 -9]
+	136 [-2 0 -29]
+	QVAR "goal_target_0" == 531
+}
+
+-ObjProp 9 "Position"
++ObjProp 9 "Position"
+{
+	"Location" -29.3608,0,17.94
+}

@@ -1,0 +1,27 @@
+DML1
+
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fix floating bottles
+
+FINGERPRINT
+{
+	631 [-274 57 -32]
+	1755 [-242 -169 16]
+	1113 [-184 -41 -35]
+	1077 [-303 -5 -31]
+	1379 [-113 16 6]
+	1009 [-232 -156 -2]
+	831 [-267 10 -35]
+	1734 [-217 -21 -34]
+	QVAR "goal_target_0" == 1151
+}
+
+-ObjProp 418 "Position"
++ObjProp 418 "Position"
+{
+	"Location" -256.198,46.9161,-33.3768
+}
+-ObjProp 419 "Position"
++ObjProp 419 "Position"
+{
+	"Location" -262.077,43.5855,-33.3768
+}

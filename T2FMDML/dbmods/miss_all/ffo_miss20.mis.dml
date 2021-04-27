@@ -1,0 +1,227 @@
+DML1
+
+//T2 FM: Freedo Finds One by Todd Neil (CloakedInDarkness) / Fix objects and goals
+
+FINGERPRINT
+{
+	1064 [574 606 496]
+	1516 [407 654 481]
+	867 [558 682 493]
+	491 [499 603 479]
+	683 [405 659 495]
+	132 [480 552 495]
+	1011 [541 521 492]
+	61 [508 492 493]
+	QVAR "goal_target_0" == 1036
+}
+
+-ObjProp 1036 "Scripts"
++ObjProp 65 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 65 "TrapFlags" 
+{
+	"" Once,NoOff
+}
++ObjProp 25 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 25 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++ObjProp 27 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 27 "TrapQVar"
+{
+	"" =0:goal_type_0
+}
++ObjProp 5 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 5 27 "ControlDevice"
+{
+}
++Link 152 65 "ControlDevice"
+{
+}
++Link 65 25 "ControlDevice"
+{
+}
++ObjProp 152 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 102 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 135 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 568 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 95 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++Link 102 65 "ControlDevice"
+{
+}
++Link 135 65 "ControlDevice"
+{
+}
++Link 568 65 "ControlDevice"
+{
+}
++Link 95 65 "ControlDevice"
+{
+}
+//objects
+-ObjProp 1060 "PhysType"
++ObjProp 1060 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1060 "Position"
++ObjProp 1060 "Position"
+{
+	"Location" 582.2,572.21,495.45
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1060 "PhysType"
++ObjProp 1060 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 808 "PhysType"
++ObjProp 808 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 808 "Position"
++ObjProp 808 "Position"
+{
+	"Location" 405.4,658.28,495.86
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 808 "PhysType"
++ObjProp 808 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+//barrels
++StimSource 27 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 27 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 558.11, 643.72, 493.99
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 26 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 26 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -2987
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 339.4, 642.3, 438.4
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++ObjProp 919 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 919 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 556 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 556 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}

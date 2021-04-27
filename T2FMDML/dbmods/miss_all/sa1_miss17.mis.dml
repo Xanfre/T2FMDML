@@ -1,0 +1,76 @@
+DML1
+
+//T2 FM: Sisterhood of Azura, part 1: Estheridge by Ben Hur (And) / Fix loot, rope arrow, and other issues
+
+FINGERPRINT
+{
+	826 [-234 -112 -9]
+	255 [-88 -30 -7]
+	480 [-49 -196 -10]
+	458 [149 -166 10]
+	1003 [-86 -56 -11]
+	200 [-93 -104 -14]
+	779 [-201 -115 -16]
+	1195 [173 137 -6]
+	QVAR "goal_target_0" == 1532
+}
+
+#script "tnhscript"
+#script "nvscript"
+
+-ObjProp 652 "FrobInfo"
++ObjProp 652 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1161 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1161 "PhysControl"
++ObjProp 1161 "Position"
+{
+}
++ObjProp 1161 "Position"
+{
+	"Location" 37.59, -4.9, -3.12
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 131 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 131 "PhysControl"
++ObjProp 131 "Position"
+{
+}
++ObjProp 131 "Position"
+{
+	"Location" 37.5, -4.8, -3.11
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-Link 39 38 "AIAttack"
++Link 38 39 "Contains" 
+{
+}
++ObjProp 353 "Position"
+{
+	"Location" 43.0, 31.68, 17.88
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 180 "Position"
+{
+	"Location" 132.21, -136.64, 7.72
+	"Heading" 839f
+	"Pitch" 0
+	"Bank" 0
+}
++MetaProp 1268 -1629

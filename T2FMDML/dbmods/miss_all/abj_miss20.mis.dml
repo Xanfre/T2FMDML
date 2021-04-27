@@ -1,0 +1,131 @@
+DML1
+
+//T2 FM: A Bank Job (Novice Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes
+
+FINGERPRINT
+{
+	641 [517 380 498]
+	757 [514 400 500]
+	1004 [524 361 515]
+	1221 [520 362 496]
+	940 [529 365 506]
+	906 [504 407 504]
+	954 [536 375 506]
+	450 [525 444 495]
+	QVAR "goal_target_5" == 12
+}
+
+//mantling
++ObjProp 20 "PhysCanMant"
+{
+}
++ObjProp 22 "PhysCanMant"
+{
+}
++ObjProp 25 "PhysCanMant"
+{
+}
++ObjProp 27 "PhysCanMant"
+{
+}
++ObjProp 231 "PhysCanMant"
+{
+}
++ObjProp 570 "PhysCanMant"
+{
+}
++ObjProp 848 "PhysCanMant"
+{
+}
+//shutters
++Link 66 67 "ScriptParams"
+{
+	"" Double
+}
++Link 79 93 "ScriptParams"
+{
+	"" Double
+}
++Link 90 91 "ScriptParams"
+{
+	"" Double
+}
+//doors
++Receptron 68 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 96 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 133 "PickCfg"
++Receptron 133 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 161 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 162 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 163 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 643 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 643 -2422
++MetaProp 667 -2419
++Receptron 870 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 870 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//chests
+-ObjProp 146 "StTweqLock"
+-ObjProp 147 "StTweqLock"
+-ObjProp 1230 "StTweqLock"
+//AIs
+ObjProp 1093 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1096 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1099 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1131 "AI_Hearing"
+{
+	"" Well Below Average
+}

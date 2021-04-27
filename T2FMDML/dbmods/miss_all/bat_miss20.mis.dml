@@ -1,0 +1,130 @@
+DML1
+
+//T2 FM: The Bath House by cdfbr / Fix loot and some objects
+
+FINGERPRINT
+{
+	234 [3 -105 19]
+	263 [-28 -104 -5]
+	556 [-78 -88 3]
+	491 [-98 -51 -14]
+	228 [-8 -135 13]
+	34 [-31 -111 -4]
+	532 [-84 -88 -19]
+	576 [-103 -82 -6]
+	QVAR "goal_target_0" == 611
+}
+
+-ObjProp 402 "PhysType"
++ObjProp 402 "Position"
+{
+	"Location" 30.21, -136.6, 12.1
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 4000
+}
++ObjProp 163 "CombineType"
+{
+	"" Loot
+}
++ObjProp 297 "CombineType"
+{
+	"" Loot
+}
++ObjProp 577 "CombineType"
+{
+	"" Loot
+}
++ObjProp 163 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 156 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 156 "Scripts"
+{
+	"Script 0" StdDoor
+	"Script 1" SecurityDoor
+}
++ObjProp 156 "TransDoor" 
+{
+	"Closed Position" 0
+	"Open Position" 4
+	"Base Speed" 1
+	"Axis" x
+	"Status" closed
+	"Hard Limits?" true
+	"Blocks Vision?" false
+	"Blocks Sound %" 60
+	"Lean Blocks Sound %" 0
+	"Push Mass" : 25
+}
++ObjProp 156 "BlockFrob"
+{
+	"" true
+}
++ObjProp 87 "BlockFrob"
+{
+	"" true
+}
++ObjProp 156 "PickDist"
+{
+	"" 0.6
+}
++ObjProp 402 "PhysType"
+{
+}
+-ObjProp 67 "PhysType"
++ObjProp 67 "Position"
+{
+	"Location" 31.08, -114.44, -14.42
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 67 "PhysType"
+{
+}
+-ObjProp 288 "PhysType"
++ObjProp 288 "Position"
+{
+	"Location" -2.88, -150.6, -14.42
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 288 "PhysType"
+{
+}
+-ObjProp 289 "PhysType"
++ObjProp 289 "Position"
+{
+	"Location" -38.36, -155.24, -14.42
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 289 "PhysType"
+{
+}
+-ObjProp 69 "PhysType"
++ObjProp 69 "Position"
+{
+	"Location" -38.36, -112.4, -14.42
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 69 "PhysType"
+{
+}
++ObjProp 87 "SlayResult"   
+{
+	"Effect" Normal
+}
++ObjProp 207 "FrobInfo"
+{
+	"World Action" None
+}

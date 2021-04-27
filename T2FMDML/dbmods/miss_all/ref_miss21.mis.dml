@@ -1,0 +1,224 @@
+DML1
+
+//T2 FM: Reflections by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	866 [-314 0 -16]
+	140 [-171 -63 1]
+	711 [-136 -105 20]
+	521 [-328 -11 -14]
+	296 [-353 -72 -4]
+	659 [-521 -62 12]
+	112 [-180 -138 -8]
+	816 [-297 -137 -73]
+	QVAR "goal_target_1" == 475
+}
+
++ObjProp 729 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 729 "Position"
++ObjProp 729 "Position"
+{
+	"Location" -146.2,-93.09,7.159
+	"Heading" e764
+	"Pitch" 0
+	"Bank" fe80
+}
+-ObjProp 701 "PhysType"
++ObjProp 701 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 701 "Position"
++ObjProp 701 "Position"
+{
+	"Location" 72.7,-57.3,7.0
+	"Heading" ec70
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 701 "PhysType"
++ObjProp 701 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 701 "PhysType"
++ObjProp 701 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 701 "Position"
++ObjProp 701 "Position"
+{
+	"Location" 72.7,-57.3,7.0
+	"Heading" ec70
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 701 "PhysType"
++ObjProp 701 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 702 "PhysType"
++ObjProp 702 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 702 "Position"
++ObjProp 702 "Position"
+{
+	"Location" 70.5,-94.93,8.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 702 "PhysType"
++ObjProp 702 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 708 "PhysType"
++ObjProp 708 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 708 "Position"
++ObjProp 708 "Position"
+{
+	"Location" 69.23,-125.5,8.0
+	"Heading" ec70
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 708 "PhysType"
++ObjProp 708 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++Receptron 413 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5746
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -64.0, -74.0, 12.6
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 413 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 449 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5746
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -64.0, -93.0, 12.6
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 449 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 641 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 111 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 113 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
+-ObjProp 904 "PhysType"
++ObjProp 904 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 904 "Position"
++ObjProp 904 "Position"
+{
+	"Location" -127.6,-78.99,9.36
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 904 "PhysType"
++ObjProp 904 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 914 "HasRefs"
+{
+	"" false
+}
++ObjProp 915 "HasRefs"
+{
+	"" false
+}

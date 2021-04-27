@@ -1,0 +1,32 @@
+DML1
+
+//T2 FM: The Unknown Treasure (NewDark Version) by Shaun M.D. Morin (GORT) / Fix secret count
+
+FINGERPRINT
+{
+	1154 [214 -106 122]
+	1484 [416 -120 126]
+	2104 [-107 136 123]
+	1541 [-17 50 132]
+	1501 [-137 -134 135]
+	498 [238 -52 117]
+	997 [-74 -50 127]
+	1171 [-47 -81 65]
+	QVAR "goal_target_12" == -8174
+}
+
++ObjProp 1725 "TrapFlags"
+{
+   "" Once,NoOff
+}
++ObjProp 1725 "Scripts"
+{
+   "Script 0" TrapSetQVar
+}
++ObjProp 1725 "TrapQVar"
+{
+   "" =7:DrSScrtCnt
+}
++Link 2775 1725 "ControlDevice"
+{
+}

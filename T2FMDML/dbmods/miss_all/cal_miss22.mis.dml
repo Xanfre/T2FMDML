@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: Calendra's Legacy by Anthony Huso (Purah) / Fix loot and objects
+
+FINGERPRINT
+{
+	1887 [45 -80 -372]
+	1598 [-4 -80 -393]
+	323 [-63 -122 -248]
+	523 [21 177 -256]
+	864 [-37 -13 -221]
+	272 [-72 -35 -267]
+	1223 [-84 79 -369]
+	1929 [66 -116 -374]
+	QVAR "goal_target_0" == 1817
+}
+
++ObjProp 697 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 697 "PhysControl"
++ObjProp 697 "Position"
+{
+	"Location" 118.7, -102.4, -265.37
+	"Heading" 105b
+	"Pitch" 0
+	"Bank" 4000 
+}
++ObjProp 1661 "SlayResult"   
+{
+	"Effect" "No Effect"
+}
++ObjProp 1662 "SlayResult"   
+{
+	"Effect" "No Effect"
+}

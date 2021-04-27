@@ -1,0 +1,47 @@
+DML1
+
+//T2 FM: Strife Campaign by Terry DeLaney (Ricebug) / Fix final goal
+
+FINGERPRINT
+{
+	443 [-317 55 11]
+	737 [-218 220 -8]
+	404 [-224 72 2]
+	438 [-232 19 4]
+	801 [-263 97 4]
+	209 [-192 223 -4]
+	154 [-238 222 20]
+	544 [-329 144 2]
+	QVAR "goal_target_0" == 528
+}
+
++ObjProp 569 "Scripts"
+{
+    "Script 1" TrigRoomPlayer
+}
++ObjProp 44 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++ObjProp 44 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 320 44 "ControlDevice"
+{
+}
++ObjProp 47 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++ObjProp 47 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 569 47 "ControlDevice"
+{
+}
++ObjProp 320 "Scripts"
+{
+	"Script 1" TrigUnlock
+}

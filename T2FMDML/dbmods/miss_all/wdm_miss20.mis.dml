@@ -1,0 +1,76 @@
+DML1
+
+//T2 FM: Walkin' Da Moon! (Crap Contest) by Bulgarian Taffer / Fixes
+
+FINGERPRINT
+{
+	29 [1 36 -42]
+	47 [-10 -4 3]
+	90 [10 103 -48]
+	80 [-46 104 -45]
+	96 [6 119 -48]
+	94 [6 108 -48]
+	84 [1 97 -48]
+	11 [-1 36 -42]
+	QVAR "goal_target_1" == 55
+}
+
++ObjProp 27 "PhysAIColl"
+{
+	"" false
+}
++ObjProp 27 "AI_ObjPathable"
+{
+	"" false
+}
+Create -2997 "BloodySpider"
+{
+	+ObjProp "Position"
+	{
+		"Location" 5.678, 112.515, -47.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0 
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigSlain
+	}
+	+ObjProp "AI_Patrol"
+	{
+		"" true
+	}
+}
++Link "Bloodyspider" 106 "ControlDevice"
+{
+}
++ObjProp 55 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 55 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 32 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 44 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 44 "TrapQVar"
+{
+	"" =1:goal_irreversible_2
+}
++Link 32 44 "ControlDevice"
+{
+}

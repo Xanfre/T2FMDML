@@ -1,0 +1,58 @@
+DML1
+
+//T2 FM: Frozen Mines (Contest 5) by Azrarhn / Fixes
+
+FINGERPRINT
+{
+	262 [524 524 495]
+	202 [524 489 434]
+	206 [517 390 453]
+	246 [533 519 498]
+	140 [554 397 436]
+	42 [501 437 452]
+	148 [559 390 438]
+	173 [545 436 412]
+	QVAR "goal_target_8" == 228
+}
+
+//goals
++ObjProp 10 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 10 131 "ControlDevice"
+{
+}
++Link 10 132 "ControlDevice"
+{
+}
++ObjProp 131 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 131 "TrapQVar"
+{
+	"" =1:goal_reverse_6
+}
++ObjProp 132 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 132 "TrapQVar"
+{
+	"" =1:goal_reverse_7
+}
+//secrets
+-ObjProp 37 "DarkStat"
++ObjProp 272 "DarkStat"
+{
+	"" Hidden
+}
++ObjProp 272 "Scripts"
+{
+	"Script 0" TrapFindSecret
+}
+//loot
++ObjProp 99 "Loot"
+{
+}

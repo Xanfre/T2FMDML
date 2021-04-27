@@ -1,0 +1,197 @@
+DML1
+
+//T2 FM: The Good Samaritian by Vaughan Cooper (Sluggs) / Add goal and task notifications
+
+FINGERPRINT
+{
+	459 [12 -16 -6]
+	104 [40 102 -4]
+	637 [32 119 -4]
+	642 [37 119 -4]
+	175 [-4 -40 6]
+	263 [8 42 15]
+	687 [134 28 -7]
+	839 [141 17 5]
+	NAME 303 "Comfy'sNote"
+}
+
+#script "nvscript"
+
++ObjProp 461 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 461 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++ObjProp 763 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 763 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++ObjProp 821 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 821 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++ObjProp 823 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 823 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++ObjProp 429 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 429 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++ObjProp 680 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 680 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
++ObjProp 831 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 831 "TrapQVar"
+{
+	"" =1:goal_state_6
+}
++ObjProp 899 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 899 "TrapQVar"
+{
+	"" =1:goal_state_7
+}
++ObjProp 829 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 829 "TrapQVar"
+{
+	"" =1:goal_state_8
+}
++ObjProp 328 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 328 "TrapQVar"
+{
+	"" =1:goal_state_9
+}
++ObjProp 340 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 340 "TrapQVar"
+{
+	"" =1:goal_state_10
+}
++ObjProp 570 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 570 "TrapQVar"
+{
+	"" =1:goal_state_11
+}
++ObjProp 74 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 74 "TrapQVar"
+{
+	"" =1:goal_state_12
+}
++ObjProp 88 "Scripts"
+{
+	"Script 0" NVOnscreenText
+}
++ObjProp 88 "DesignNote"   
+{
+	"" NVText=Objective Complete
+}
++Link 461 88 "ControlDevice"
+{
+}
++Link 763 88 "ControlDevice"
+{
+}
++Link 821 88 "ControlDevice"
+{
+}
++Link 823 88 "ControlDevice"
+{
+}
++Link 429 88 "ControlDevice"
+{
+}
++Link 680 88 "ControlDevice"
+{
+}
++Link 899 88 "ControlDevice"
+{
+}
++Link 829 88 "ControlDevice"
+{
+}
++Link 328 88 "ControlDevice"
+{
+}
++Link 340 88 "ControlDevice"
+{
+}
++Link 570 88 "ControlDevice"
+{
+}
++Link 461 88 "ControlDevice"
+{
+}
++Link 74 88 "ControlDevice"
+{
+}
+//Task
++Link 236 89 "ControlDevice"
+{
+}
++Link 295 89 "ControlDevice"
+{
+}
++ObjProp 89 "Scripts"
+{
+	"Script 0" NVOnscreenText
+}
++ObjProp 89 "DesignNote"   
+{
+	"" NVText=Task Complete
+}
++Link 771 89 "ControlDevice"
+{
+}
++Link 396 89 "ControlDevice"
+{
+}
++Link 464 89 "ControlDevice"
+{
+}
++Link 758 89 "ControlDevice"
+{
+}

@@ -1,0 +1,429 @@
+DML1
+
+//T2 FM: Haddur by Turi Robert / Fixes
+
+FINGERPRINT
+{
+	1655 [20 -17 1]
+	1871 [-208 -69 -72]
+	1798 [64 64 15]
+	1616 [10 -36 16]
+	1008 [50 79 -48]
+	727 [-92 198 -63]
+	2173 [206 19 -75]
+	2185 [-246 -10 -75]
+	QVAR "goal_target_0" == 290
+}
+
+#script "nvscript"
+
++ObjProp 1409 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 574 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 36 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 2158 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2158 "TrapQVar"
+{
+	"" =0:goal_type_0
+}
++Link 36 2158 "ControlDevice"
+{
+}
++ObjProp 1923 "HitPoints"
+{
+	"" 200
+}
++ObjProp 1923 "MAX_HP"  
+{
+	"" 200
+}
++ObjProp 2281 "HitPoints"
+{
+	"" 120
+}
+
++ObjProp 2281 "MAX_HP"  
+{
+	"" 120
+}
++ObjProp 104 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 104 "KeyDst"  
+{
+	"MasterBit" false
+	"RegionMask" 1
+	"LockID" 4
+}
++ObjProp 4 "KeySrc"
+{
+	"MasterBit" false
+	"RegionMask" "1"
+	"LockID" 4
+}
++ObjProp 241 "Position"
+{
+	"Location" 0.08, -104.01, -47.00
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 1409 "Scripts"
+{
+	"Script 0" StdButton
+}
++ObjProp 574 "Scripts"
+{
+	"Script 0" StdButton
+}
++ObjProp 2261 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 1409 2261 "ControlDevice"
+{
+}
++Link 574 2261 "ControlDevice"
+{
+}
++ObjProp 2157 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2157 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++Link 2261 2157 "ControlDevice"
+{
+}
++Receptron 1923 "PingStim"
+{
+	Min 5
+	Max 10
+	Target 574
+	Effect "frob_obj"
+}
++Receptron 290 "PingStim"
+{
+	Min 2
+	Max 4
+	Target 1409
+	Effect "frob_obj"
+}
++StimSource 2427 "PingStim"
+{
+	Intensity 3
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "No Max Firings"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 15.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++StimSource 241 "PingStim"
+{
+	Intensity 8
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "No Max Firings"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+
+		Shape
+		{
+			"Radius" 15.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+-Link 1923 4 "Contains"
+-Link 1923 4 "Culpablefor"
++Link 10 4 "Contains"
+{
+}
++ObjProp 4 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Script
+	"Tool Action" Script,Deselect
+}
++ObjProp 104 "RotDoor"
+{
+	"Closed Angle" 0.00
+	"Open Angle" 270.00
+	"Base Speed" 2.00
+	"Axis" "Z-Axis"
+	"Status" "Closed"
+	"Hard Limits?" false
+	"Blocks Vision?" true
+	"Blocks Sound %" 60.00
+	"Lean Blocks Sound %" 0.00
+	"Push Mass" 25.00
+	"Clockwise?" true
+}
++ObjProp 104 "Locked"
+{
+	"" true
+}
++ObjProp 104 "StTweqLock"
+{
+	"AnimS" On,Reverse
+}
++ObjProp 574 "PickDist"
+{
+	"" 0
+}
++ObjProp 1409 "PickDist"
+{
+	"" 0
+}
+Create -2086 "TPKV"
+{
+	+ObjProp "Position"
+	{
+		"Location" -50,300,-70
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Script 1" ""
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" true
+	}
+}
+Create -36 "KeanTP"
+{
+	+ObjProp "Position"
+	{
+		"Location" 9.4,124.3,-47.9
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" ""
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" false
+	}
+	+ObjProp "TrapFlags"
+	{
+		"" Once
+	}
+}
+Create -36 "VennokTP"
+{
+	+ObjProp "Position"
+	{
+		"Location" -9.4,124.3,-47.9
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" ""
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" false
+	}
+	+ObjProp "TrapFlags"
+	{
+		"" Once
+	}
+}
++Link "KeanTP" "Kean" "ControlDevice"
+{
+}
++Link "VennokTP" "Vennok" "ControlDevice"
+{
+}
++Link "TPKV" "KeanTP" "ControlDevice"
+{
+}
++Link "TPKV" "VennokTP" "ControlDevice"
+{
+}
+Create -36 "EnableTPKV"
+{
+	+ObjProp "Position"
+	{
+		"Location" 0.0,124.3,-47.9
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" ""
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" false
+	}
+	+ObjProp "TrapFlags"
+	{
+		"" Once
+	}
+}
++Link "EnableTPKV" "TPKV" "ControlDevice"
+{
+}
++ObjProp 104 "DesignNote"
+{
+	"" NVRelayTrapOn="NowUnlocked"; NVRelayTrapTDest="EnableTPKV"
+}
++ObjProp 104 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+//AIWatch
++Link 2281 2281 "AIWatchObj"
+{
+	"Watch kind" "Player intrusion"
+	"Priority" "High"
+	"Trigger: Radius" 70
+	"         Height" 20
+	"         Required awareness" "(0) None"
+	"         Line requirement" "None"
+	"         Minimum alertness" "(0) None"
+	"         Maximum alertness" "(3) High"
+	"Exit: Link kill option" "Don't kill"
+	"      Kill like links" false
+	"      No test once triggered" true
+	"      Reuse delay" 0
+	"      Reset delay" 10
+	"Response: Step 1" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1" "10"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Response: Step 2" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[1] "Player"
+	"   Argument 2"[1] "Very Fast"
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[2] "Player"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[3] "10"
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+}
++Link 1923 1923 "AIWatchObj"
+{
+	"Watch kind" "Player intrusion"
+	"Priority" "High"
+	"Trigger: Radius" 78
+	"         Height" 20
+	"         Required awareness" "(0) None"
+	"         Line requirement" "None"
+	"         Minimum alertness" "(0) None"
+	"         Maximum alertness" "(3) High"
+	"Exit: Link kill option" "Don't kill"
+	"      Kill like links" false
+	"      No test once triggered" true
+	"      Reuse delay" 20
+	"      Reset delay" 10
+	"Response: Step 1" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1" "10"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Response: Step 2" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[1] "Player"
+	"   Argument 2"[1] "Very Fast"
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[2] "Player"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[3] "10"
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+}
++Receptron 1923 "WeaponStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent Source
+	Effect "damage"
+	{
+		"Damage Type" 0
+		"Use stimulus as type" true
+		"Multiply By" -1.00
+		"Then Add" -1
+	}
+}
+//End
++ObjProp 485 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 485 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++Link 485 237  "ControlDevice"
+{
+}
++Link 485 235  "ControlDevice"
+{
+}
++ObjProp 485 "Locked"  
+{
+	"" false
+}
++ObjProp 237 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" TrigWorldFrob
+}
++ObjProp 237 "DesignNote"  
+{
+	"" NVRelayTrapOn="ControlDevice"; NVRelayTrapTDest="235"; NVRelayTrapTOn="[10.00]HolyStim";
+}
+//fix goal type for goal 0
+Create -36
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVTrapSetQVarOn="EndScript"; NVDeleteTrapOn="EndScript"; NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrapSetQVar
+		"Script 1" NVDeleteTrap
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" false
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =2:goal_type_0
+	}
+}

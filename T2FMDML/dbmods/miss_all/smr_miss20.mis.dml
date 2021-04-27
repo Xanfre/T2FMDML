@@ -1,0 +1,25 @@
+DML1
+
+//T2 FM: A Smuggler's Request by Richard Cull (RiCh) / Fix AI names
+
+FINGERPRINT
+{
+	1721 [-246 -104 9]
+	162 [152 -229 -7]
+	1355 [-237 -942 -54]
+	1023 [-218 -290 -56]
+	545 [-148 -23 0]
+	2162 [-67 -702 -39]
+	1337 [-131 -948 -86]
+	1404 [-72 -937 -88]
+	QVAR "goal_target_4" == 1870
+}
+
++ObjProp 1994 "GameName"    
+{
+	"" Name_obj : "Ship Captain"
+}
++ObjProp 685 "GameName"    
+{
+	"" Name_obj : "Captain of the Guard"
+}

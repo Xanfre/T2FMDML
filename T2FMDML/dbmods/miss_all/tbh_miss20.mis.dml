@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: The Builder's Hammer (Contest 2) by Yametha / Fix loot
+
+FINGERPRINT
+{
+	110 [116 -26 -6]
+	120 [77 -16 -5]
+	38 [108 -40 -20]
+	7 [116 -46 -4]
+	32 [155 12 -1]
+	128 [91 32 -5]
+	135 [53 -26 -6]
+	101 [77 34 -6]
+	QVAR "goal_target_1" == 136
+}
+
++ObjProp 110 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

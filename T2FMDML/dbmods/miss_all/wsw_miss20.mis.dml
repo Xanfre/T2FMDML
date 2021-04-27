@@ -1,0 +1,152 @@
+DML1
+
+//T2 FM: The Way of the Sword by Jason Otto (Ottoj55) / Fixes
+
+FINGERPRINT
+{
+	297 [393 500 508]
+	1664 [450 467 510]
+	1062 [357 456 500]
+	472 [507 565 514]
+	1765 [474 533 503]
+	1096 [381 452 502]
+	769 [381 451 502]
+	1907 [385 429 487]
+	QVAR "goal_target_1" == 736
+}
+
+#script "tnhscript"
+#script "script-t2"
+#script "nvscript"
+
+-ObjProp 738 "Scripts"
++ObjProp 1934 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1934 "Position"
+{
+	"Location" 481.577,461.596,502.787
+	"Heading" 4197
+}
+Create -36 "RepVase"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+	}
+	+ObjProp "Position"
+	{
+		"Location" 425.515,427,500
+	}
+}
+Create -36 "SimTrig"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigSim
+	}
+}
++Link "RepVase" 1536 "ControlDevice"
+{
+}
++Link "SimTrig" "RepVase" "ControlDevice"
+{
+}
++ObjProp 1033 "RenderType"   
+{
+	"" Not Rendered
+}
++ObjProp 1130 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[me]"
+}
+ObjProp 1130 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrapContainer
+}
++Link 1130 166 "ControlDevice"
+{
+}
++ObjProp 1063 "RenderType"   
+{
+	"" Not Rendered
+}
++ObjProp 1129 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[me]"
+}
+ObjProp 1129 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrapContainer
+}
++Link 1129 166 "ControlDevice"
+{
+}
++ObjProp 1036 "RenderType"   
+{
+	"" Not Rendered
+}
++ObjProp 1134 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[me]"
+}
+ObjProp 1134 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrapContainer
+}
++Link 1134 166 "ControlDevice"
+{
+}
++ObjProp 1032 "RenderType"   
+{
+	"" Not Rendered
+}
++ObjProp 1131 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[me]"
+}
+ObjProp 1131 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrapContainer
+}
++Link 1131 166 "ControlDevice"
+{
+}
++ObjProp 1034 "RenderType"   
+{
+	"" Not Rendered
+}
++ObjProp 1132 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[me]"
+}
+ObjProp 1132 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrapContainer
+}
++Link 1132 166 "ControlDevice"
+{
+}
++ObjProp 1035 "RenderType"   
+{
+	"" Not Rendered
+}
++ObjProp 1133 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[me]"
+}
+ObjProp 1133 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrapContainer
+}
++Link 1133 166 "ControlDevice"
+{
+}

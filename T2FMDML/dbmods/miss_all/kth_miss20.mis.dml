@@ -1,0 +1,102 @@
+DML1
+
+//T2 FM: The Karrassinian Threat by Paul Buckley (pbucko) / Fix fences and deathstage 12 objects
+
+FINGERPRINT
+{
+	1884 [-675 -10 -36]
+	143 [-423 10 -3]
+	936 [-728 24 -33]
+	606 [-631 -71 -38]
+	1597 [-629 -132 -44]
+	1852 [-726 -134 -23]
+	603 [-623 -88 -38]
+	1752 [-614 28 -23]
+	QVAR "goal_target_3" == 1647
+}
+
++ObjProp 10 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 525 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 512 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 85 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 88 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 316 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 193 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 194 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 196 "PhysCanMant"
+{
+	"" false
+}
+-ObjProp 82 "DeathStage"
+-ObjProp 561 "DeathStage"
+-ObjProp 1440 "DeathStage"
+-ObjProp 1441 "DeathStage"
+-ObjProp 1700 "DeathStage"
+-ObjProp 1718 "DeathStage"
+-ObjProp 1117 "DeathStage"
+-ObjProp 250 "DeathStage"
+-ObjProp 1880 "DeathStage"
+-ObjProp 1885 "DeathStage"
+-ObjProp 1986 "DeathStage"
+-ObjProp 445 "DeathStage"
+-ObjProp 390 "DeathStage"
+-ObjProp 328 "DeathStage"
+-ObjProp 620 "DeathStage"
+-ObjProp 1331 "DeathStage"
+-ObjProp 1437 "DeathStage"
+-ObjProp 1302 "DeathStage"
+-ObjProp 1869 "DeathStage"
+-ObjProp 827 "DeathStage"
+-ObjProp 828 "DeathStage"
+-ObjProp 593 "DeathStage"
+-ObjProp 776 "DeathStage"
+-ObjProp 342 "DeathStage"
+-ObjProp 784 "DeathStage"
++ObjProp 390 "HitPoints"   
+{
+	"" 1000
+}
++ObjProp 390 "MAX_HP"     
+{
+	"" 1000
+}
++ObjProp 445 "HitPoints"   
+{
+	"" 1000
+}
++ObjProp 445 "MAX_HP"     
+{
+	"" 1000
+}
++ObjProp 784 "HitPoints"   
+{
+	"" 1000
+}
++ObjProp 784 "MAX_HP"     
+{
+	"" 1000
+}

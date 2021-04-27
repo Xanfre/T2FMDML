@@ -1,0 +1,122 @@
+DML1
+
+//T2 FM: Library pt 1: The Town by Wizard / Fix dock key and several objects
+
+FINGERPRINT
+{
+	492 [473 296 -9]
+	629 [315 272 -8]
+	438 [456 337 -9]
+	130 [480 520 -4]
+	853 [464 448 -1]
+	324 [305 426 -10]
+	154 [413 468 -4]
+	95 [467 535 -2]
+	QVAR "goal_target_3" == 807
+}
+
++ObjProp 40 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 40 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
++Link 887 40 "ControlDevice"
+{
+}
++ObjProp 887 "Scripts"
+{
+	"Script 1" TrigContained
+}
++ObjProp 887 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 435 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 805 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 806 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 833 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 834 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 805 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 806 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 833 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 834 "AI_BlkVis"
+{
+	"" true
+}
++MetaProp 755 -6696
++MetaProp 364 -2418
+-ObjProp 423 "Position"
++ObjProp 423 "Position"
+{
+	"Location" 488.762,341.898,-9.6595
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 516 "Position"
++ObjProp 516 "Position"
+{
+	"Location" 466.683,268.946,-10.4069
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 517 "Position"
++ObjProp 517 "Position"
+{
+	"Location" 463.704,268.946,-10.4069
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 518 "Position"
++ObjProp 518 "Position"
+{
+	"Location" 461.252,268.946,-10.4069
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 519 "Position"
++ObjProp 519 "Position"
+{
+	"Location" 458.466,268.946,-10.4069
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 520 "Position"
++ObjProp 520 "Position"
+{
+	"Location" 455.856,268.946,-10.4069
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

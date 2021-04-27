@@ -1,0 +1,162 @@
+DML1
+
+//T2 FM: In dubio pro Garrett by Dainem and PsymH / Fix final goal and two bonus objectives
+
+FINGERPRINT
+{
+	1657 [410 -178 -64]
+	967 [246 -152 -5]
+	495 [520 -88 9]
+	1032 [378 -200 -2]
+	1185 [230 -34 -7]
+	1761 [516 -186 -7]
+	1795 [521 -57 -7]
+	400 [436 -102 -7]
+	QVAR "goal_target_1" == 580
+}
+
++ObjProp 1211 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 581 "Scripts"
+{
+	"Script 1" TrigRoomPlayer
+}
++ObjProp 1211 "TrapQVar"
+{
+	"" =1:goal_state_11
+}
++Link 581 1211 "ControlDevice"
+{
+}
++ObjProp 1212 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1212 "TrapQVar"
+{
+	"" =1:goal_state_14
+}
++Link 581 1212 "ControlDevice"
+{
+}
++ObjProp 1214 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1214 "TrapQVar"
+{
+	"" =1:goal_state_9
+}
++Link 581 1214 "ControlDevice"
+{
+}
++ObjProp 1204 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1204 "TrapQVar"
+{
+	"" =1:goal_state_10
+}
++Link 581 1204 "ControlDevice"
+{
+}
++ObjProp 1203 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1203 "TrapQVar"
+{
+    "" =1:goal_state_8
+}
++Link 581 1203 "ControlDevice"
+{
+}
++ObjProp 1201 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrigQVar
+}
++ObjProp 1201 "TrapQVar"
+{
+	"" =1:goal_visible_12
+}
++Link 1800 1201 "ControlDevice"
+{
+}
++Link 632 1273 "ControlDevice"
+{
+}
++ObjProp 1273 "Scripts"
+{
+	"Script 0" TrigQVar
+	"Script 1" TrapSetQVar
+}
++ObjProp 1273 "TrapQVar"
+{
+	"" =1:goal_visible_13
+}
++ObjProp 303 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrigQVar
+}
++ObjProp 303 "TrapQVar"
+{
+	"" =1:goal_state_13
+}
++Link 632 303 "ControlDevice"
+{
+}
++ObjProp 1456 "Scripts"
+{
+	"Script 3" TrigWorldFrob
+}
++ObjProp 716 "Scripts"
+{
+	"Script 3" TrigWorldFrob
+}
++ObjProp 1467 "Scripts"
+{
+	"Script 3" TrigWorldFrob
+}
++ObjProp 1457 "Scripts"
+{
+	"Script 3" TrigWorldFrob
+}
+ObjProp 632 "NoDrop"
+{
+	""  false
+}
++ObjProp 1794 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1794 "TrapQVar"
+{
+	"" =1:goal_irreversible_6
+}
++ObjProp 4 "Scripts"
+{
+	"Script 1" TrigContained
+}
++Link 4 1794 "ControlDevice"
+{
+}
++ObjProp 1067 "TrapQVar"
+{
+	"" =1:goal_state_6
+}
++Link 632 1067 "ControlDevice"
+{
+}
++Link 1273 1067 "ControlDevice"
+{
+}
++ObjProp 1067 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrigQVar
+}

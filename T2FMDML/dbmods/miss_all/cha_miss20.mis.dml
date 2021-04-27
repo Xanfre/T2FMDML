@@ -1,0 +1,366 @@
+DML1
+
+//T2 FM: Curse of the Hammerites by Henri Havulinna (Henri The Hammer) / Fix various misplaced objects
+
+FINGERPRINT
+{
+	797 [-196 112 -62]
+	169 [-106 -68 -52]
+	208 [-112 12 -53]
+	920 [-263 162 -50]
+	1116 [-255 -23 -48]
+	175 [-110 -86 -55]
+	614 [-183 0 -47]
+	680 [-139 109 -49]
+	QVAR "goal_target_1" == 372
+}
+
+-ObjProp 321 "PhysType"
++ObjProp 321 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 322 "PhysType"
++ObjProp 322 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 323 "PhysType"
++ObjProp 323 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 56 "PhysType"
++ObjProp 56 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 56 "Position"
++ObjProp 56 "Position"
+{
+	"Location" -8.8,-14.37,-47.66
+	"Heading" 0
+	"Pitch" fd8a
+	"Bank" fffa
+}
+-ObjProp 321 "Position"
++ObjProp 321 "Position"
+{
+	"Location" 122.77,55.86,-47.16
+	"Heading" 4000
+	"Bank" 0
+}
+-ObjProp 322 "Position"
++ObjProp 322 "Position"
+{
+	"Location" 118.145,56.01,-47.16
+	"Heading" 4000
+	"Bank" 0
+}
+-ObjProp 323 "Position"
++ObjProp 323 "Position"
+{
+	"Location" 114.122,55.93,-47.16
+	"Heading" 4000
+	"Bank" 0
+}
+//Footlocker
+-ObjProp 299 "PhysType"
++ObjProp 299 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 299 "Position"
++ObjProp 299 "Position"
+{
+	"Location" 83.62,106.25,-48.48
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 299 "PhysType"
++ObjProp 299 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 423 "Scale"             
+{
+	"" 0.8,1.0,1.0
+}
+//cavetab
+-ObjProp 147 "PhysType"
++ObjProp 147 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 147 "Position"
++ObjProp 147 "Position"
+{
+	"Location" -75.59,-54.10,-53.49
+	"Heading" 0
+	"Pitch" 0
+	"Bank" d77f
+}
+-ObjProp 147 "PhysType"
++ObjProp 147 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+//Zombie
+-ObjProp 199 "Position"
++ObjProp 199 "Position"
+{
+	"Location" -77.6,-0.8,-53.17
+	"Heading" b65f
+	"Pitch" 0
+	"Bank" 0
+}
+//Nugget
+-ObjProp 225 "Position"
++ObjProp 225 "Position"
+{
+	"Location" -79.72,-11.61,-52.97
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 278 "Position"
++ObjProp 278 "Position"
+{
+	"Location" -69.06,-22.6,-54.84
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 232 "Position"
++ObjProp 232 "Position"
+{
+	"Location" -115.14,3.56,-52.14
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 159 "PhysType"
++ObjProp 159 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 159 "Position"
++ObjProp 159 "Position"
+{
+	"Location" -110.52,-71.261,-50.83
+	"Heading" 9581
+	"Pitch" 4000
+	"Bank" 4000
+}
+-ObjProp 188 "Position"
++ObjProp 188 "Position"
+{
+	"Location" -141.94,-7.26,-44.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 187 "Position"
++ObjProp 187 "Position"
+{
+	"Location" -140.4,-7.36,-44.1
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 189 "Position"
++ObjProp 189 "Position"
+{
+	"Location" -138.4,-7.0,-44.1
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 504 "Position"
++ObjProp 504 "Position"
+{
+	"Location" -96.2,104.550,-59.44
+	"Heading" a7ad
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 505 "Position"
++ObjProp 505 "Position"
+{
+	"Location" -96.0,112.150,-59.44
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 506 "Position"
++ObjProp 506 "Position"
+{
+	"Location" -106.1,108.38,-59.44
+	"Heading" 44f9
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 624 "Position"
++ObjProp 624 "Position"
+{
+	"Location" -178.7,19.53,-30.26
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 578 "Position"
++ObjProp 578 "Position"
+{
+	"Location" -178.13,97.75,-44.95
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 465 "Position"
++ObjProp 465 "Position"
+{
+	"Location" -178.33,89.31,-44.93
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 467 "Position"
++ObjProp 467 "Position"
+{
+	"Location" -178.3,73.2,-45.06
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 584 "PhysType"
++ObjProp 584 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 584 "Position"
++ObjProp 584 "Position"
+{
+	"Location" -234.7,87.9,-46.8
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+//Fireplace
+-ObjProp 524 "PhysType"
++ObjProp 524 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 524 "Position"
++ObjProp 524 "Position"
+{
+	"Location" -221.55,55.166,-47.4
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 524 "PhysType"
++ObjProp 524 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 525 "Position"
++ObjProp 525 "Position"
+{
+	"Location" -221.3,55.52,-47.4
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 259 "ModelName"       
+{
+	"" key3a
+}
+-ObjProp 55 "PhysType"
++ObjProp 55 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 55 "Position"
++ObjProp 55 "Position"
+{
+	"Location" -6.8,-14.37,-48.76
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 759 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 759 "Position"
++ObjProp 759 "Position"
+{
+	"Location" -183.6,166.57,-47.98
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 24 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 24 "Position"
++ObjProp 24 "Position"
+{
+	"Location" -75.07,-55.42,-52.59
+	"Heading" 0
+	"Pitch" 0
+	"Bank" aec
+}
+-ObjProp 150 "PhysType"
++ObjProp 150 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 150 "Position"
++ObjProp 150 "Position"
+{
+	"Location" -75.87,-54.90,-52.37
+	"Heading" 0
+	"Pitch" 0
+	"Bank" e33
+}
+//no swords
+-ObjProp 826 "PhysType"
++ObjProp 826 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 826 "Position"
++ObjProp 826 "Position"
+{
+	"Location" -175.3,171.35,-47.65
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 826 "PhysType"
++ObjProp 826 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

@@ -1,0 +1,208 @@
+DML1
+
+//T2 FM: Shining Standards by Aaron Pettett (Spanker) / Fix two bonus goals and the back door key
+
+FINGERPRINT
+{
+	1793 [6 -17 2]
+	884 [-19 -405 -10]
+	1655 [-125 -237 -21]
+	2066 [183 -295 -43]
+	458 [14 -327 -18]
+	551 [125 -357 -15]
+	2075 [172 -371 -38]
+	540 [132 -297 -21]
+	QVAR "goal_target_4" == 1737
+}
+
+#script "nvscript"
+
++ObjProp 1402 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1402 "PhysControl"
++ObjProp 1402 "Position"
+{
+}
++ObjProp 1402 "Position"
+{
+	"Location" -93.5, -237.8, -19.5
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 4000
+}
++ObjProp 577 "TrapQVar"
+{
+	"" =2252:goal_loot_9
+}
++ObjProp 577 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+	"Script 1" NVTrigQVar
+}
++ObjProp 895 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+	"Script 1" NVTrigQVar
+}
++ObjProp 895 "TrapQVar"
+{
+	"" =0:goal_visible_9
+}
++Link 7 895 "ControlDevice"
+{
+}
++ObjProp 7 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 7 577 "ControlDevice"
+{
+}
++ObjProp 1737 "Scripts"
+{
+	"Script 1" TrigRoomPlayer
+}
++ObjProp 716 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 716 "TrapQVar"
+{
+	"" =0:goal_visible_10
+}
++Link 7 716 "ControlDevice"
+{
+}
++ObjProp 896 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 886 "TrapQVar"
+{
+	"" =1:goal_state_6
+}
++ObjProp 936 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 1737 896 "ControlDevice"
+{
+}
++Link 1737 936 "ControlDevice"
+{
+}
++ObjProp 1039 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 1039 "TrapQVar"
+{
+	"" =847:goal_target_10
+}
++Link 7 1039 "ControlDevice"
+{
+}
++ObjProp 1161 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 7 1161 "ControlDevice"
+{
+}
++ObjProp 5 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 5 "TrapQVar"
+{
+	"" =1:goal_bonus_10
+}
++ObjProp 1515 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1515 "TrapQVar"
+{
+	"" =1:goal_bonus_9
+}
++Link 7 5 "ControlDevice"
+{
+}
++Link 7 1515 "ControlDevice"
+{
+}
++Link 7 914 "ControlDevice"
+{
+}
++Link 7 932 "ControlDevice"
+{
+}
++ObjProp 912 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 912 "TrapQVar"
+{
+	"" =0:goal_visible_8
+}
++ObjProp 913 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 913 "TrapQVar"
+{
+	"" =0:goal_state_8
+}
++ObjProp 2066 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2066 "TrapQVar"
+{
+	"" =0:goal_type_8
+}
++Link 7 912 "ControlDevice"
+{
+}
++Link 7 913 "ControlDevice"
+{
+}
++Link 7 2066 "ControlDevice"
+{
+}
++ObjProp 1093 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
++ObjProp 1094 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
++ObjProp 1096 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
++ObjProp 1098 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
++ObjProp 1099 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
++ObjProp 1104 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
++ObjProp 1131 "DiffDestroy"
+{
+	"quest var values" 0,1
+}
+-Link 1396 1694 "Contains"
++Link 1909 1694 "Contains"
+{
+	"" Belt 
+}

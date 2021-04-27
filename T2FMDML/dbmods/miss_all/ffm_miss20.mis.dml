@@ -1,0 +1,20 @@
+DML1
+
+//T2 FM: Fletcher's Final Mistake by SlyFoxx / Fix loot
+
+FINGERPRINT
+{
+	484 [434 526 506]
+	579 [477 265 480]
+	94 [401 485 495]
+	1305 [442 544 507]
+	1640 [550 568 498]
+	1364 [475 374 483]
+	1868 [492 457 489]
+	2024 [489 537 507]
+	QVAR "goal_target_0" == 1380
+}
+
++Link 577 320 "Contains"
+{
+}

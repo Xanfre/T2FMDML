@@ -1,0 +1,16 @@
+DML1
+
+//T2 FM: A Debt Repaid by Jason Otto (Ottoj55) / Fixes
+
+FINGERPRINT
+{
+	NAME -7046 "M-Jason"
+	NAME -7193 "tm2006i"
+}
+
+//antidote
++ObjProp -6677 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" None
+}

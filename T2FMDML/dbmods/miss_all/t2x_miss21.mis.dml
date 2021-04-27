@@ -1,0 +1,18 @@
+DML1
+
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fix frobbable AI
+
+FINGERPRINT
+{
+	1969 [366 -410 -70]
+	542 [59 -523 -33]
+	1448 [-301 -549 -58]
+	971 [251 -517 -22]
+	775 [219 -533 -40]
+	2105 [409 -542 -108]
+	535 [132 -521 -36]
+	1134 [206 -519 -161]
+	QVAR "goal_target_2" == 244
+}
+
+-ObjProp 194 "FrobInfo"

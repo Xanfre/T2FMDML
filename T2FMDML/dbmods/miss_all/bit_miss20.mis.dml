@@ -1,0 +1,51 @@
+DML1
+
+//T2 FM: Brawl in the Tombs (Remix) by John D. & Dark Assassin / Fixes
+
+FINGERPRINT
+{
+	1872 [-76 513 124]
+	2096 [18 423 74]
+	2143 [-91 236 75]
+	625 [-225 -227 69]
+	448 [136 252 69]
+	345 [98 280 69]
+	579 [-2 3 3]
+	1969 [-10 363 69]
+	QVAR "goal_target_10" == 2712
+}
+
+//goal 5, 6, 7 (expert)
++ObjProp 642 "DiffLock"
+{
+	"quest var values" 2
+}
++ObjProp 673 "DiffPermit"
+{
+	"quest var values" 2
+}
++ObjProp 673 "FrobInfo"
+{
+}
++ObjProp 843 "DiffPermit"
+{
+	"quest var values" 2
+}
++ObjProp 2131 "DiffPermit"
+{
+	"quest var values" 2
+}
++ObjProp 2131 "StackCount"
+{
+}
+//doors
+-ObjProp 866 "SlayResult"
+Receptron 866 "FireStim"
+{
+	Min 3
+}
+-ObjProp 868 "SlayResult"
+Receptron 868 "FireStim"
+{
+	Min 3
+}

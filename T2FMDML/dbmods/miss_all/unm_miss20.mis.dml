@@ -1,0 +1,66 @@
+DML1
+
+//T2 FM: UnMasked by Sonnich Brinch Nielsen (Nielsen74) / Fixes
+
+FINGERPRINT
+{
+	502 [548 424 507]
+	129 [530 478 505]
+	771 [468 428 497]
+	505 [596 424 503]
+	447 [470 457 511]
+	542 [449 428 498]
+	215 [522 503 501]
+	580 [536 392 512]
+	NAME 185 "Guards Chair"
+}
+
+//goals
+-Link 57 571 "ControlDevice"
++ObjProp 39 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 39 180 "ControlDevice"
+{
+}
++Link 39 181 "ControlDevice"
+{
+}
++Link 39 182 "ControlDevice"
+{
+}
++ObjProp 180 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 180 "TrapQVar"
+{
+	"" =1:goal_reverse_5
+}
++ObjProp 181 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 181 "TrapQVar"
+{
+	"" =57:goal_target_4
+}
++ObjProp 182 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 182 "TrapQVar"
+{
+	"" =4:goal_type_4
+}
+//doors
++MetaProp 50 -2419
++ObjProp 62 "BlockFrob"
+{
+	"" true
+}
+//toolbox key
++ObjProp 579 "SlayResult"
+{
+}

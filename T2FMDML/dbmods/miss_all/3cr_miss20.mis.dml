@@ -1,0 +1,134 @@
+DML1
+
+//T2 FM: Three Crowns by Bryan Gleason (BBB) / Fixes
+
+FINGERPRINT
+{
+	562 [342 593 494]
+	2297 [556 566 487]
+	1323 [300 820 480]
+	1087 [313 824 372]
+	1397 [282 866 436]
+	320 [430 856 435]
+	874 [360 664 475]
+	1598 [637 724 355]
+	QVAR "goal_target_7" == 2558
+}
+
+#script "nvscript"
+#script "script-t2"
+
+//fix green crown
+-Link 2509 1467 "ControlDevice"
++ObjProp 2509 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=1467
+}
+ObjProp 2509 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+//fix goal 6
++ObjProp 2510 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapMetaProp
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" true
+}
++Link 2510 2509 "ScriptParams"
+{
+	"" aFrobInert
+}
++Link 2510 2507 "ScriptParams"
+{
+	"" aFrobInert
+}
++Link 2510 355 "ScriptParams"
+{
+	"" aFrobInert
+}
+//fix secrets
+-ObjProp 717 "DarkStat"
+-ObjProp 732 "DarkStat"
+//prevent frobbing switch through banner
++ObjProp 231 "BlockFrob"
+{
+	"" true
+}
+//reposition spider
++ObjProp 1866 "Position"
+{
+	"Location" 658.8,596.209,391.391
+	"Pitch" ecc8
+}
+//reposition hammerite
++ObjProp 758 "Position"
+{
+	"Location" 373,449.75,471.726
+	"Heading" 4000
+	"Bank" 8000
+}
+//fix mantling over gate
+Create -2819 "GateBlock1"
+{
+	-ObjProp "PhysType"
+	+ObjProp "ModelName"
+	{
+		"" ladder8
+	}
+	+ObjProp "Position"
+	{
+		"Location" 515,500,494.323
+		"Bank" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+}
+Create -2819 "GateBlock2"
+{
+	-ObjProp "PhysType"
+	+ObjProp "ModelName"
+	{
+		"" ladder8
+	}
+	+ObjProp "Position"
+	{
+		"Location" 521,500,494.323
+		"Pitch" 8000
+		"Bank" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+}
++ObjProp 425 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 427 "PhysCanMant"
+{
+	"" false
+}

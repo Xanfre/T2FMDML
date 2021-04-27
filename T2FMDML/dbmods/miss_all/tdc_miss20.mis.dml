@@ -1,0 +1,18 @@
+DML1
+
+//T2 FM: The Drymian Codex by Russ Robbins (Yandros), Rob Strain (Random_Taffer), and Tannar / Load more recent NVScript module
+
+FINGERPRINT
+{
+	402 [-36 108 -13]
+	766 [154 74 -6]
+	1097 [201 4 -36]
+	2156 [-72 45 -63]
+	1249 [188 -11 -43]
+	933 [101 17 -35]
+	416 [108 -56 -59]
+	1454 [24 8 -62]
+	QVAR "goal_target_0" == 3219
+}
+
+#script "nvscript"

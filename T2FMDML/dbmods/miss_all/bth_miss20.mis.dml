@@ -1,0 +1,124 @@
+DML1
+
+//T2 FM: Bafford's Town House (Classic Contest) by Esme / Fixes
+
+FINGERPRINT
+{
+	601 [126 66 13]
+	1474 [165 95 43]
+	641 [126 64 15]
+	1417 [222 86 41]
+	1619 [93 207 29]
+	1588 [64 203 50]
+	147 [99 47 30]
+	1595 [130 27 42]
+	QVAR "goal_target_7" == 983
+}
+
+#script "nvscript"
+
+//tulip's ledger (goal 8)
++ObjProp 290 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1
+}
+ObjProp 290 "Scripts"
+{
+	"Script 2" NVRelayTrap
+}
+//doors
++ObjProp 48 "BlockFrob"
+{
+	"" true
+}
+ObjProp 78 "RotDoor"
+{
+	"Open Angle" 89
+}
++Receptron 204 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 256 "TransDoor"
++Receptron 964 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 965 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 966 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 975 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//mantling
++ObjProp 553 "PhysCanMant"
+{
+}
+//bafford's sceptre
+-ObjProp 979 "DiffPermit"
++ObjProp 979 "PickDist"
+{
+	"" 5.00
+}
+//AIs
++ObjProp 1271 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cthfm02
+}
++ObjProp 1306 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1310 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 1488 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 1489 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 1499 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 1504 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
+//junk
++ObjProp 1327 "InvType"
+{
+}
++ObjProp 1329 "InvType"
+{
+}
++ObjProp 1783 "InvType"
+{
+}

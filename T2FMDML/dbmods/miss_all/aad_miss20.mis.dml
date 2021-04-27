@@ -1,0 +1,32 @@
+DML1
+
+//T2 FM: Ashes and Dust (Thief Anniversary Contest) by Rob Strain (Random_Taffer) / Fixes
+
+FINGERPRINT
+{
+	777 [494 482 531]
+	651 [514 474 500]
+	343 [474 531 502]
+	275 [526 481 488]
+	617 [528 514 502]
+	463 [504 496 516]
+	173 [475 473 488]
+	447 [508 493 476]
+	QVAR "goal_target_10" == 596
+}
+
+//fix rendering issue with a key
+ObjProp 538 "HasRefs"
+{
+    "" false
+}
+//have a guard return to his original location when idle
+ObjProp 536 "Position"
+{
+    "Location" 507.025, 490.074, 515.37
+    "Heading" bc69
+}
+ObjProp 536 "AI_IdlRetOrg"
+{
+    "" true
+}

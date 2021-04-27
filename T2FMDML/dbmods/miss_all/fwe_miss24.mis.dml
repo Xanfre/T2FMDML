@@ -1,0 +1,40 @@
+DML1
+
+//T2 FM: Four Weapons by Jan Hladík (Yohny C. Liar) / Fix guard patrol and misplaced objects
+
+FINGERPRINT
+{
+	658 [35 17 -6]
+	205 [19 27 -23]
+	441 [4 -6 -34]
+	831 [-32 32 -8]
+	334 [-36 31 -18]
+	700 [15 35 -6]
+	558 [39 0 -3]
+	916 [-12 -28 -6]
+	QVAR "goal_target_0" == 1060
+}
+
+-ObjProp 991 "Position"
++ObjProp 991 "Position"
+{
+	"Location" 20.4062,-14.3252,-5.7849
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-Link 1027 1032 "Contains"
+-Link 1027 1032 "CulpableFor"
++Link 1027 1032 "CreatureAttachment"
+{
+	"Joint" "Left Fingers"
+	"Rot Mode" "Always Use Joint Rotation"
+}
+-ObjProp 726 "Position"
++ObjProp 726 "Position"
+{
+	"Location" 0.710549,41.4545,-5.66019
+	"Heading" 4000
+	"Pitch" 198e
+	"Bank" 0
+}

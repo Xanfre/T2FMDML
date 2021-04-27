@@ -1,0 +1,61 @@
+DML1
+
+//T2 FM: Lord Alan's Basement by Andrea Aleotti / Fix loot
+
+FINGERPRINT
+{
+	1341 [48 210 42]
+	1315 [-119 -110 4]
+	183 [-46 74 -7]
+	921 [-85 -45 25]
+	1142 [84 47 -7]
+	1086 [-52 68 -24]
+	493 [-97 -141 91]
+	635 [102 127 48]
+	QVAR "goal_target_0" == 500
+}
+
++ObjProp 166 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 262 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 290 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 293 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+ObjProp 904 "PickDist"  
+{
+	"" 5
+}
+ObjProp 914 "PickDist"  
+{
+	"" 5
+}
++ObjProp 899 "BlockFrob"   
+{
+	"" true
+}
++ObjProp 904 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 914 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 904 "PickBias" 
+{
+	"" 2
+}
++ObjProp 914 "PickBias" 
+{
+	"" 2
+}

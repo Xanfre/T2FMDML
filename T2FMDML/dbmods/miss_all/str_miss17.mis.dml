@@ -1,0 +1,60 @@
+DML1
+
+//T2 FM: Stronghold by JohnEric / Fix loot
+
+FINGERPRINT
+{
+	1132 [-186 363 -311]
+	849 [-138 688 -150]
+	1397 [-30 255 -264]
+	207 [-132 108 71]
+	1530 [-178 267 -317]
+	443 [-59 49 84]
+	1342 [-23 404 -314]
+	1379 [-233 259 -257]
+	QVAR "goal_target_0" == 902
+}
+
++ObjProp 106 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 107 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 108 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1886 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1906 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 741 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 741 "PhysControl"
++ObjProp 741 "Position"
+{
+	"Location" 66.4, 240.6, -75.58
+	"Heading" d539
+	"Pitch" 0
+	"Bank" 0 
+}

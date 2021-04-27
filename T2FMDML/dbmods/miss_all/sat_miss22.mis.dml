@@ -1,0 +1,50 @@
+DML1
+
+//T2 FM: Saints and Thieves by Jani Saarijärvi (Spitter) / Fix deposit scroll objective
+
+FINGERPRINT
+{
+	956 [294 216 129]
+	2052 [12 46 99]
+	943 [382 321 123]
+	83 [491 303 118]
+	836 [-76 22 148]
+	841 [-42 120 153]
+	1333 [88 122 132]
+	1897 [396 448 120]
+	QVAR "goal_target_2" == 1142
+}
+
++Link 1869 1872 "ControlDevice"
+{
+} 
++Link 183 1023 "ControlDevice"
+{
+}
++ObjProp 1023 "Scripts"
+{
+	"Script 0" StdDoor
+	"Script 1" TrigDoorOpen
+}
++Link 1023 1872 "ControlDevice"
+{
+}
++ObjProp 1023 "TransDoor"
+{
+	"Closed Position" 0
+	"Open Position" 1
+	"Base Speed" 6
+	"Axis" X-Axis
+	"Status" Closed
+	"Hard Limits?" false
+	"Blocks Vision?" false
+	"Blocks Sound %" 0
+	"Lean Blocks Sound %" 0
+	"Push Mass" 0
+}
+-ObjProp 706 "PhysType"
++ObjProp 706 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

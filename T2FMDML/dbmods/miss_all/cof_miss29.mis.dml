@@ -1,0 +1,176 @@
+DML1
+
+//T2 FM: Children of the Future SE by Mr.Tunnel / Fixes
+
+FINGERPRINT
+{
+	324 [-110 645 -39]
+	1440 [-438 679 -16]
+	1385 [-450 628 -19]
+	306 [-90 640 -38]
+	1177 [-322 640 -17]
+	1957 [-440 853 22]
+	534 [-169 570 -39]
+	137 [-41 494 -14]
+	QVAR "goal_target_4" == 2335
+}
+
+#script "nvscript"
+
+//door threshold
+Create -445 "Threshold"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -100, 628.1, -38.9
+		"Pitch" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+//new objectives
++ObjProp 201 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=1970; NVRelayTrapDelay=300; NVRelayTrapCount=1; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2TDest=1971; NVRelayTrap2Delay=1000; NVRelayTrap2Count=1
+}
+ObjProp 201 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+}
++ObjProp 1280 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=300; NVRelayTrapCount=1
+}
+ObjProp 1280 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 2103 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=300; NVRelayTrapCount=1
+}
+ObjProp 2103 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
+//tunnel dust
++ObjProp 282 "NoDrop"
+{
+	"" true
+}
+//salvador's golden dice
++ObjProp 1958 "NoDrop"
+{
+	"" true
+}
+//chests
+-ObjProp 1140 "StTweqLock"
+-ObjProp 2291 "PhysType"
+ObjProp 2291 "Position"
+{
+	"Heading" 8e38
+}
++ObjProp 2291 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2336 "PhysType"
+ObjProp 2336 "Position"
+{
+	"Heading" c000
+}
++ObjProp 2336 "PhysType"
+{
+	"Type" OBB
+}
+//cage
++ObjProp 2329 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2329 "PhysCanMant"
+{
+}
++ObjProp 2330 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2330 "PhysCanMant"
+{
+}
+//junk objects
++ObjProp 567 "InvType"
+{
+	"" Junk
+}
++ObjProp 1875 "InvType"
+{
+	"" Junk
+}
+//doors
+-ObjProp 2593 "JointPos"
++ObjProp 822 "Material Tags"
+{
+	"1: Tags" Material Stone
+}
+ObjProp 1186 "RotDoor"
+{
+	"Open Angle" 89
+	"Clockwise?" false
+}
+ObjProp 1451 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Link 2059 2065 "ScriptParams"
+{
+	"" Double
+}
++Link 2132 2133 "ScriptParams"
+{
+	"" Double
+}
++Link 2135 2143 "ScriptParams"
+{
+	"" Double
+}
++Link 2342 2343 "ScriptParams"
+{
+	"" Double
+}
+//keys
++ObjProp 91 "SlayResult"
+{
+}
++ObjProp 92 "SlayResult"
+{
+}
++ObjProp 1101 "SlayResult"
+{
+}
++ObjProp 1394 "SlayResult"
+{
+}
++ObjProp 2292 "SlayResult"
+{
+}
+//mantling
++ObjProp 1995 "PhysCanMant"
+{
+}
++ObjProp 1996 "PhysCanMant"
+{
+}

@@ -1,0 +1,208 @@
+DML1
+
+//T2 FM: Flowers for a Friend (Thief Anniversary Contest) by P Forth / Fixes
+
+FINGERPRINT
+{
+	289 [555 386 171]
+	425 [541 398 171]
+	546 [537 394 223]
+	34 [508 356 222]
+	222 [532 366 189]
+	224 [497 350 189]
+	564 [527 399 200]
+	571 [542 381 206]
+	QVAR "goal_target_3" == 552
+}
+
+#script "nvscript"
+
+//mantling
++ObjProp 4 "PhysCanMant"
+{
+}
++ObjProp 7 "PhysCanMant"
+{
+}
++ObjProp 8 "PhysCanMant"
+{
+}
++ObjProp 9 "PhysCanMant"
+{
+}
++ObjProp 10 "PhysCanMant"
+{
+}
++ObjProp 13 "PhysCanMant"
+{
+}
++ObjProp 18 "PhysCanMant"
+{
+}
++ObjProp 19 "PhysCanMant"
+{
+}
++ObjProp 20 "PhysCanMant"
+{
+}
++ObjProp 21 "PhysCanMant"
+{
+}
++ObjProp 22 "PhysCanMant"
+{
+}
++ObjProp 36 "PhysCanMant"
+{
+}
++ObjProp 44 "PhysCanMant"
+{
+}
++ObjProp 50 "PhysCanMant"
+{
+}
++ObjProp 52 "PhysCanMant"
+{
+}
++ObjProp 59 "PhysCanMant"
+{
+}
++ObjProp 60 "PhysCanMant"
+{
+}
++ObjProp 62 "PhysCanMant"
+{
+}
++ObjProp 65 "PhysCanMant"
+{
+}
++ObjProp 68 "PhysCanMant"
+{
+}
++ObjProp 72 "PhysCanMant"
+{
+}
++ObjProp 75 "PhysCanMant"
+{
+}
++ObjProp 78 "PhysCanMant"
+{
+}
++ObjProp 79 "PhysCanMant"
+{
+}
+//flowers / gravestone
++StimSource 61 "EarthStim"
+{
+	Intensity 10
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 61 "StackCount"
+{
+}
++ObjProp 61 "NoDrop"
+{
+	"" true
+}
++ObjProp 61 "Class Tags"
+{
+	"1: Tags" ""
+}
+-Link 577 557 "ControlDevice"
++Receptron 474 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++Link 474 525 "ControlDevice"
+{
+}
++Link 474 526 "ControlDevice"
+{
+}
++Link 474 557 "ControlDevice"
+{
+}
++ObjProp 474 "PhysCanMant"
+{
+}
+//friend / note
+-Link 525 527 "AIWatchObj"
++ObjProp 525 "DesignNote"
+{
+	"" NVPhantomAlphaMax=0.50; NVPhantomFadeOn=2000; NVPhantomFadeOff=2000; NVLinkBuilderLinkType="CreatureAttachment"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=526
+}
+ObjProp 525 "RenderAlpha"
+{
+	"" 0.00
+}
+ObjProp 525 "Scripts"
+{
+	"Script 0" NVPhantomTrap
+	"Script 1" NVLinkBuilder
+}
++ObjProp 526 "DesignNote"
+{
+	"" NVPhantomFadeOn=2000; NVRelayTrapOn="Contained"; NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest=525; NVRelayTrapCount=1; NVRelayTrap2On="FrobInvEnd"; NVRelayTrap2OnDelay=200; NVRelayTrap2Count=1
+}
++ObjProp 526 "RenderAlpha"
+{
+	"" 0.00
+}
+ObjProp 526 "Scripts"
+{
+	"Script 1" NVPhantomTrap
+	"Script 2" NVRelayTrap
+	"Script 3" NVRelayTrap2
+}
+//doors
++ObjProp 38 "BlockFrob"
+{
+	"" true
+}
++ObjProp 137 "FrobInfo"
+{
+}
++ObjProp 151 "FrobInfo"
+{
+}
++MetaProp 353 -2420
++Link 238 239 "ScriptParams"
+{
+	"" Double
+}
+//cabinet
+-ObjProp 206 "PhysType"
+ObjProp 206 "Position"
+{
+	"Location" 540.35, 372, 189.48
+}
++ObjProp 206 "PhysType"
+{
+	"Type" OBB
+}
+//arrows
+-ObjProp 326 "PhysType"
+-ObjProp 327 "PhysType"
+-ObjProp 328 "PhysType"
+-ObjProp 329 "PhysType"
+-ObjProp 508 "PhysType"
+-ObjProp 510 "PhysType"
+//keys
++ObjProp 346 "SlayResult"
+{
+}
++ObjProp 354 "SlayResult"
+{
+}

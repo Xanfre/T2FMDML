@@ -1,0 +1,129 @@
+DML1
+
+//T2 FM: Partytime (Demo Rework) by PsymH / Fixes
+
+FINGERPRINT
+{
+	1677 [-450 211 34]
+	2310 [94 298 10]
+	221 [21 173 -8]
+	1530 [-79 -37 9]
+	1548 [-102 -34 21]
+	977 [-373 145 86]
+	1691 [270 418 9]
+	1794 [165 408 34]
+	QVAR "goal_target_0" == 356
+}
+
++ObjProp 186 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 186 "Position"
++ObjProp 186 "Position"
+{
+	"Location" 126.18,188.9,20.39
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 806 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 806 "Position"
++ObjProp 806 "Position"
+{
+	"Location" 126.28,187.6,20.24
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 812 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 812 "Position"
++ObjProp 812 "Position"
+{
+	"Location" 127.25,188.2,20.24
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 571 "PhysType"
++ObjProp 571 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 2423 "Position"
++ObjProp 2423 "Position"
+{
+	"Location" 16.25,-34.7,13.35
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 665 "ModelName"       
++ObjProp 665 "ModelName"   
+{
+	"" womsev02
+}
++Link 1424 1749  "Contains"
+{
+}
++ObjProp 943 "BlockFrob"     
+{
+	"" true
+}
++ObjProp 1212 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
+-ObjProp 100 "ModelName"       
++ObjProp 100 "ModelName"   
+{
+	"" malsev01
+}
++ObjProp 2513 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
+
++ObjProp 2513 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++Link 929 1585 "ControlDevice"
+{
+}
++Link 1585 2513  "ControlDevice"
+{
+}
++ObjProp 107 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 107 "TrapQVar"
+{
+	"" =1:goal_irreversible_1
+}
++ObjProp 534 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 534 107  "ControlDevice"
+{
+}
++ObjProp 1585 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 1585 "TrapFlags"   
+{
+	"" Once,NoOff
+}

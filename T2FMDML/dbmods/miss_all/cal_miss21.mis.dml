@@ -1,0 +1,93 @@
+DML1
+
+//T2 FM: Calendra's Legacy by Anthony Huso (Purah) / Fix beast and loot in vault
+
+FINGERPRINT
+{
+	1286 [-229 -286 -223]
+	2322 [13 -463 -209]
+	705 [106 79 -224]
+	181 [82 -389 -212]
+	1032 [-197 -177 -219]
+	532 [100 19 -224]
+	1565 [44 -136 -226]
+	1738 [72 -11 -247]
+	QVAR "goal_target_5" == 929
+}
+
++ObjProp 1532 "Position"
+{
+	"Location" -13.20, -242.0, -173.5
+	"Heading" 8000
+}
++ObjProp 1531 "Position"
+{
+	"Location" -13.20, -251.0, -173.5
+	"Heading" 8000
+} 
++ObjProp 2286 "SlayResult"   
+{
+	"Effect" "No Effect"
+}
+-ObjProp 478 "AI_SaveConverse" 
++ObjProp 478 "AI_SaveConverse" 
+{
+	"" false
+}
+-ObjProp 317 "AI_SaveConverse" 
++ObjProp 317 "AI_SaveConverse" 
+{
+	"" false
+}
++ObjProp 829 "BlockFrob" 
+{ 
+	"" true
+}
+ObjProp 707 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 708 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 741 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 743 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 744 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 747 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 770 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 771 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}

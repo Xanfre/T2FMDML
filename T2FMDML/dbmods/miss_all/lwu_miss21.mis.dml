@@ -1,0 +1,53 @@
+DML1
+
+//T2 FM: Horns of Canzo pt. 1: A Long Way Up by Menguzzo Stefano (Sterlino) / Fixes
+
+FINGERPRINT
+{
+	405 [309 411 515]
+	2169 [262 730 543]
+	242 [37 397 588]
+	415 [298 446 503]
+	352 [332 461 515]
+	2153 [481 353 490]
+	1639 [157 485 586]
+	1329 [137 450 595]
+	QVAR "goal_target_0" == 1487
+}
+
++ObjProp 398 "Position"
+{
+	"Location" 109.13, 400.14,580.69
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0 
+}
+-ObjProp 1234 "FrobInfo"
++ObjProp 1234 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+-Link 2259 2266 "ControlDevice"
+-Link 2259 2373 "ControlDevice"
++ObjProp 1609 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 2251 1609 "ControlDevice"
+{
+}
++Link 1609 1675 "ControlDevice"
+{
+}
++Link 1609 1657 "ControlDevice"
+{
+}
++Link 2259 1609 "ControlDevice"
+{
+}
++Link 1609 2266 "ControlDevice"
+{
+}
++Link 1609 2373 "ControlDevice"
+{
+}

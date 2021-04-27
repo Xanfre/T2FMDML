@@ -1,0 +1,148 @@
+DML1
+
+//T2 FM: Snowstorm by Theker / Fixes
+
+FINGERPRINT
+{
+	733 [145 -114 -5]
+	1407 [-49 -13 -2]
+	147 [8 14 -3]
+	101 [-18 27 -6]
+	818 [150 -56 -9]
+	943 [-70 -81 -7]
+	165 [9 13 -8]
+	697 [129 -138 -8]
+	QVAR "goal_target_0" == 923
+}
+
+-ObjProp 1150 "PhysType"
++ObjProp 1150 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1150 "Position"
++ObjProp 1150 "Position"
+{
+	"Location" 21.9,-146.10,-6.4
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -42.47,-127.5,12.81
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 1150 "PhysType"
++ObjProp 1150 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1150 "Position"
++ObjProp 1150 "Position"
+{
+	"Location" 21.9,-146.10,-6.4
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -42.47,-128.5,12.81
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 506 "PhysType"
++ObjProp 506 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 506 "Position"
++ObjProp 506 "Position"
+{
+	"Location" -75.9,-68.39,-9.63
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0
+}
+-ObjProp 57 "Position"
++ObjProp 57 "Position"
+{
+	"Location" -34.45,-34.39,-6.63
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 185 "PhysType"
++ObjProp 185 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 185 "Position"
++ObjProp 185 "Position"
+{
+	"Location" 15.85,45.7,-7.15
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 185 "PhysType"
++ObjProp 185 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 1461 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1457 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1285 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1285 "Position"
++ObjProp 1285 "Position"
+{
+	"Location" 118.6,30.35,-5.00
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 58 "PhysType"
++ObjProp 58 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

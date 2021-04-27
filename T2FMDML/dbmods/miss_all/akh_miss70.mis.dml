@@ -1,0 +1,66 @@
+DML1
+
+//T2 FM: Akhenaten's Tomb (Contest 3) by Darkfire / Fixes
+
+FINGERPRINT
+{
+	31 [93 98 4]
+	94 [115 107 -16]
+	30 [87 87 16]
+	71 [105 100 3]
+	89 [97 98 -8]
+	47 [106 96 -14]
+	101 [89 113 12]
+	73 [82 116 4]
+	QVAR "goal_target_5" == 113
+}
+
+#script "nvscript"
+
+//goals
++ObjProp 4 "DesignNote"
+{
+	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+}
++ObjProp 4 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 4 "TrapQVar"
+{
+	"" =0:goal_state_0
+}
+//water talisman
++ObjProp 65 "PickDist"
+{
+	"" 3.90
+}
+//door
++ObjProp 74 "BlockFrob"
+{
+	"" true
+}
+//spice
++ObjProp 110 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 110 "Position"
+{
+	"Location" 109.024, 102, 2.378
+}
+//medallion (expert only)
++ObjProp 113 "DiffPermit"
+{
+	"quest var values" 2
+}
+//mask
+ObjProp 114 "Position"
+{
+	"Location" 109.366, 119.3, -14.265
+}
+//switches
++Link 75 71 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}

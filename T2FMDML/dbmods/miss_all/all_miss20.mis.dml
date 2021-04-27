@@ -1,0 +1,40 @@
+DML1
+
+//T2 FM: All Torc by Robin Collier (R Soul) / Fixes
+
+FINGERPRINT
+{
+	1923 [-54 -72 36]
+	965 [-7 -127 41]
+	283 [109 301 64]
+	525 [94 174 38]
+	715 [18 33 46]
+	1722 [25 -30 35]
+	156 [285 355 63]
+	1938 [-61 -79 35]
+	QVAR "goal_target_5" == 210
+}
+
+//fix loot objective
+Create -464 "QVarFixSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "designnote"
+	{
+		"" Proximity=2000
+	}
+}
++ObjProp 1087 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1087 "TrapQVar"
+{
+	"" =735:goal_loot_8
+}
++Link "QVarFixSwitch" 1087 "ControlDevice"
+{
+}

@@ -1,0 +1,101 @@
+DML1
+
+//T2 FM: Rosaries are Red (Novice Contest) by Tainted / Fix missing loot and frobbing gem through banner
+
+FINGERPRINT
+{
+	154 [-2 -56 -1]
+	620 [-33 -32 -24]
+	454 [38 -65 15]
+	675 [35 -68 -1]
+	223 [-14 -78 -1]
+	331 [-2 -66 2]
+	77 [44 -21 -28]
+	377 [30 -69 14]
+	QVAR "goal_target_0" == 492
+}
+
+Create -6129 "Blocker1"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -20.58,-9.32,15.1
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++MetaProp "Blocker1" -2420
+//loot
++ObjProp 444 "BlockFrob"
+{
+	"" true
+}
++ObjProp 446 "BlockFrob"
+{
+	"" true
+}
++ObjProp 184 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 184 "PhysControl"
++ObjProp 184 "Position"
+{
+	"Location" -20.97, -79.45, 30.518
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 198 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 198 "PhysControl"
++ObjProp 198 "Position"
+{
+	"Location" -21.63, -79.45, 30.518
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 199 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 199 "PhysControl"
++ObjProp 199 "Position"
+{
+	"Location" -21.56, -79.73, 30.518
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}
+Create -6129 "Blocker2"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -20.64,-10.53,6.1
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++MetaProp "Blocker2" -2420

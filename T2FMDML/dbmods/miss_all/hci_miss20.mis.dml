@@ -1,0 +1,43 @@
+DML1
+
+//T2 FM: Heartcliff Islands by Qolelis / Fixes
+
+FINGERPRINT
+{
+	1526 [-167 153 147]
+	1512 [-139 221 133]
+	2326 [-110 127 176]
+	405 [-107 240 153]
+	1792 [-141 190 175]
+	671 [-99 285 135]
+	1666 [-203 22 23]
+	2304 [-110 128 176]
+	QVAR "goal_target_2" == 1292
+}
+
++ObjProp 6476 "Scripts"
+{
+	"Script 2" TrigRoomPlayer
+}
++ObjProp 3888 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++Link 6476 5479 "ControlDevice"
+{
+}
++Link 5479 3888 "ControlDevice"
+{
+}
++ObjProp 3888 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=1616
+}
++ObjProp 5479 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 5479 "TrapFlags"
+{
+	"" Once,Invert
+}

@@ -1,0 +1,129 @@
+DML1
+
+//T2 FM: Damsel in Distress by David Dyal (Dyald) / Fix loot and various objects
+
+FINGERPRINT
+{
+	802 [140 -3 145]
+	1723 [96 414 216]
+	352 [114 564 199]
+	1395 [309 28 201]
+	233 [186 241 198]
+	392 [118 427 204]
+	1942 [156 396 272]
+	508 [179 -16 221]
+	QVAR "goal_target_3" == 1810
+}
+
+#script "miss2"
+#script "nvscript"
+
++ObjProp 1875 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1875 "PhysControl"
++ObjProp 1875 "Position"
+{
+	"Location" 93.16, 438.48, 221.76
+	"Heading" bfd2
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 914 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
+Link 1917 1915 "TPath"
+{
+	"Speed" 1.00
+	"Pause (ms)" 0
+	"Path Limit?" 0
+}
++Link 1915 1917 "TPath"
+{
+	"Speed" 1.00
+	"Pause (ms)" 0
+	"Path Limit?" 0
+}
++ObjProp 1687 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1687 "PhysControl"
++ObjProp 1687 "Position"
+{
+	"Location" 246.989, 619.626, 199.1
+	"Heading" 400
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1699 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1699 "PhysControl"
++ObjProp 1699 "Position"
+{
+	"Location" 228.821, 621.242, 199.1
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1696 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1696 "PhysControl"
++ObjProp 1696 "Position"
+{
+	"Location" 233.281, 621.22, 199.1
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1697 "PhysControl"
++ObjProp 1697 "Position"
+{
+	"Location" 226.9, 621.222, 199.1
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1697 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1698 "PhysControl"
++ObjProp 1698 "Position"
+{
+	"Location" 231.914, 626.303, 199.1
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++Link 1801 1805 "ControlDevice"
+{
+}
++Link 1805 1917 "ControlDevice"
+{
+}
++Link 1805 1914 "ControlDevice"
+{
+}
++ObjProp 1805 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 1805 "DesignNote"
+{
+	"" NVRelayTrapOnDelay=50000
+}
+-Link 1801 1917 "ControlDevice"

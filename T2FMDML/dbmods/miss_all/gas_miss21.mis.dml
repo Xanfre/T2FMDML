@@ -1,0 +1,69 @@
+DML1
+
+//T2 FM: Assault at the Gas Station by Menguzzo Stefano (Sterlino) / Fix sandbags
+
+FINGERPRINT
+{
+	272 [82 -29 -3]
+	2221 [151 81 -26]
+	341 [117 7 -41]
+	1300 [217 -134 -24]
+	1923 [186 13 44]
+	655 [253 -15 -6]
+	332 [59 -34 -33]
+	1379 [196 119 -23]
+	QVAR "goal_target_0" == 1647
+}
+
+-ObjProp 2377 "ModelName"
++ObjProp 2377 "ModelName"
+{
+	"" coinscop
+}
+-ObjProp 637 "ModelName"
++ObjProp 637 "ModelName"
+{
+	"" lotpouc2
+}
+-ObjProp 638 "ModelName"
++ObjProp 638 "ModelName"
+{
+	"" lotpouc2
+}
++ObjProp 99 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 99 "TrapQVar"
+{
+	"" =0:goal_min_diff_1
+}
++Link 213 99 "ControlDevice"
+{
+}
++ObjProp 637 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 638 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 637 "Position"
+{
+	"Location" 206.96, -168.54, -28.25
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 638 "Position"
+{
+	"Location" 205.29, -168.54, -28.25
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
+-MetaProp 1077 -2886
++MetaProp 1077 -5697

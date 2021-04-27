@@ -1,0 +1,28 @@
+DML1
+
+//T2 FM: Shadow Plans by Terry DeLaney (Ricebug) / Fix goal 4
+
+FINGERPRINT
+{
+	1201 [-32 521 16]
+	655 [227 371 52]
+	1285 [4 283 2]
+	549 [208 313 7]
+	122 [112 409 36]
+	616 [126 433 43]
+	1093 [61 276 30]
+	1310 [295 384 22]
+	QVAR "goal_target_0" == 1122
+}
+
++ObjProp 500 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 500 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++Link 1351 500 "ControlDevice"
+{
+}

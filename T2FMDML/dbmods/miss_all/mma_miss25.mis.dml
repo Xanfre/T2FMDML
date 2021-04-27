@@ -1,0 +1,113 @@
+DML1
+
+//T2 FM: Mind Master by Ben Ramsey (Komag) / Fix decorative loot
+
+FINGERPRINT
+{
+	434 [605 470 538]
+	793 [602 453 545]
+	160 [544 520 513]
+	267 [649 522 538]
+	1008 [593 463 554]
+	992 [593 462 555]
+	1522 [540 493 515]
+	299 [582 499 539]
+	QVAR "goal_target_0" == 1365
+}
+
++ObjProp 130 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 138 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 139 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 140 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 141 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 146 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 147 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 148 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 149 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 150 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 151 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 152 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 153 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 154 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 155 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 156 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

@@ -1,0 +1,20 @@
+DML1
+
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes
+
+FINGERPRINT
+{
+	1319 [-242 511 -1]
+	151 [-259 323 -1]
+	1373 [-86 8 13]
+	312 [-335 351 0]
+	883 [-256 464 2]
+	773 [-317 453 -1]
+	1290 [-233 378 -9]
+	1124 [-221 556 -4]
+	QVAR "goal_target_0" == 2245
+}
+
+//secret count
+-ObjProp 1061 "DarkStat"
+-ObjProp 1088 "DarkStat"

@@ -1,0 +1,26 @@
+DML1
+
+//T2 FM: Lost Souls (Water Contest) by TheNightTerror / Fixes
+
+FINGERPRINT
+{
+	142 [3 -105 15]
+	509 [-8 -104 29]
+	86 [-26 -107 24]
+	553 [19 -160 11]
+	138 [10 -111 17]
+	269 [-6 -128 27]
+	641 [-22 -102 32]
+	260 [9 -141 30]
+	NAME 495 "GregoryJournal"
+}
+
++ObjProp 479 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 401 "Scale"           
+{
+	"" 0.8,0.8,0.8
+}

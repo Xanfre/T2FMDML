@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: Bad Intentions by Mirko (Thief Anniversary Contest) / Fixes
+
+FINGERPRINT
+{
+	224 [442 470 500]
+	473 [434 421 510]
+	204 [470 419 500]
+	445 [463 467 500]
+	393 [476 457 500]
+	614 [421 422 510]
+	408 [450 421 496]
+	27 [430 433 482]
+	QVAR "goal_target_6" == 122
+}
+
+//raise sunken guard
++ObjProp 437 "Position"
+{
+    "Location" 476.505, 445.419, 536.016
+    "Heading" 4000
+}

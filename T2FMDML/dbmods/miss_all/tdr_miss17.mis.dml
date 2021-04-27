@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: The Drop (Crap Contest) by Vaughan Cooper (Sluggs) / Fix vases
+
+FINGERPRINT
+{
+	17 [16 -52 -18]
+	132 [21 -52 20]
+	38 [14 -43 -38]
+	174 [-12 32 -60]
+	138 [19 -43 21]
+	107 [26 -42 21]
+	24 [-69 -25 -24]
+	90 [15 -55 -45]
+	PROP 51 "Scale"
+}
+
+-ObjProp 110 "Position"
++ObjProp 110 "Position"
+{
+	"Location" 26.3736,-46.1737,20.3911
+}
++ObjProp 110 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 116 "Position"
++ObjProp 116 "Position"
+{
+	"Location" 24.4947,-48.0754,20.3911
+}
++ObjProp 116 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

@@ -1,0 +1,59 @@
+DML1
+
+//T2 FM: Ack! There's a Zombie in the Basement by Polygon / Fixes
+
+FINGERPRINT
+{
+	135 [503 516 479]
+	1085 [507 539 496]
+	79 [522 517 498]
+	947 [548 533 512]
+	504 [495 522 512]
+	1380 [492 527 497]
+	491 [497 539 510]
+	33 [537 512 498]
+	QVAR "goal_target_3" == 361
+}
+
+//fix zombie objective
+-Receptron 63 "BashStim"
+-Receptron 63 "SlashStim"
++Receptron 63 "BashStim"
+{
+	Min "None"
+	Max "None"
+	Target "Me"
+	Effect "damage"
+	{
+		"Damage Type" 0
+		"Use stimulus as type" false
+		"Multiply By" -1.00
+		"Then Add" 0
+	}
+}
++Receptron 63 "SlashStim"
+{
+	Min "None"
+	Max "None"
+	Target "Me"
+	Effect "damage"
+	{
+		"Damage Type" 0
+		"Use stimulus as type" false
+		"Multiply By" -1.00
+		"Then Add" 0
+	}
+}
++Receptron 63 "WeaponStim"
+{
+	Min "None"
+	Max "None"
+	Target "Me"
+	Effect "damage"
+	{
+		"Damage Type" 0
+		"Use stimulus as type" false
+		"Multiply By" -1.00
+		"Then Add" 0
+	}
+}

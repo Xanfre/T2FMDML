@@ -1,0 +1,447 @@
+DML1
+
+//T2 FM: A Pirate's Downfall by Nick Dablin (nicked) / Fixes
+
+FINGERPRINT
+{
+	1235 [647 621 420]
+	1538 [592 536 556]
+	1248 [545 440 571]
+	1085 [543 369 576]
+	1610 [519 312 590]
+	305 [481 350 572]
+	739 [233 145 535]
+	1107 [198 140 545]
+	QVAR "goal_target_0" == 296
+}
+
+#script "squirrel"
+
+//final goal fix, objects, patrol routes, blocking invisible objects added
+-ObjProp 484 "PhysType"
++ObjProp 484 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 484 "Position"
++ObjProp 484 "Position"
+{
+	"Location" 575.75,271.56,570.00
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 642 "PhysType"
++ObjProp 642 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 642 "Position"
++ObjProp 642 "Position"
+{
+	"Location" 523.56,356.06,571.57
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 650 "PhysType"
++ObjProp 650 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 650 "Position"
++ObjProp 650 "Position"
+{
+	"Location" 513.77,357.44,574.54
+	"Heading" 0
+	"Bank" 0
+}
++ObjProp 698 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 698 "Position"
++ObjProp 698 "Position"
+{
+	"Location" 427.69,330.27,571.94
+	"Heading" f380
+	"Bank" 0
+}
++ObjProp 726 "DesignNote"
+{
+	"" RepositionLoc=262.92,311.01,533.81
+}
++ObjProp 726 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
+-ObjProp 679 "Position"
++ObjProp 679 "Position"
+{
+	"Location" 481.00,352.00,604.125
+	"Heading" 0
+	"Bank" 4000
+}
+-Link 1580 1568 "ControlDevice"
+-Link 1580 1586 "ControlDevice"
++ObjProp 328 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 328 "TrapFlags"   
+{
+	"" Invert
+}
++Link 1580 328 "ControlDevice"
+{
+}
++Link 328 1568 "ControlDevice"
+{
+}
++Link 328 1586 "ControlDevice"
+{
+}
++ObjProp 68 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 68 "TrapQVar"
+{
+	"" =1:goal_state_14
+}
++ObjProp 67 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 67 "ScriptTiming"
+{
+	"" 3000
+}
++Link 377 67 "ControlDevice"
+{
+}
++Link 67 68 "ControlDevice"
+{
+}
++ObjProp 14 "CanAttach"
+{
+	"Flags" rope
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 466.47,231.5,600.1
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 532.47,288.5,591.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 579.47,415.1,591.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 417.47,427.5,591.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 424.47,288.5,600.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 534.47,415.5,590.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 417.47,454.5,591.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 535.47,448.5,591.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 412.47,265.5,591.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 426.47,289.5,600.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 427.47,239.5,600.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 426.47,289.5,600.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 443.4,312.5,622.5
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 448.4,390.5,622.5
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 443.4,312.5,622.5
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -1291
+{
+	+ObjProp "Position"
+	{
+		"Location" 514.2,351.6,573.5
+	}
+}
++ObjProp 725 "Scale" 
+{
+	"" 2.1,2.1,2.5
+}
+-ObjProp 391 "Position"
++ObjProp 391 "Position"
+{
+	"Location" 404.57,364.94,573.54
+	"Heading" 0
+	"Bank" 0
+}
++Link 391 1386 "AIWatchObj"
+{
+	"Watch kind" "Self entry"
+	"Priority" "Very High"
+	"Trigger: Radius" 6
+	"         Height" 6
+	"         Required awareness" "(0) None"
+	"         Line requirement" "None"
+	"         Minimum alertness" "(0) None"
+	"         Maximum alertness" "(3) High"
+	"Exit: Link kill option" "Don't kill"
+	"      Kill like links" true
+	"      No test once triggered" false
+	"      Reuse delay" 10
+	"      Reset delay" 20
+	"Response: Step 1" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1" "100"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Response: Step 2" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[1] "1390"
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[2] "1000"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1"[3] "Add"
+	"   Argument 2"[3] "DoesPatrol"
+	"   Argument 3"[3] ""
+}

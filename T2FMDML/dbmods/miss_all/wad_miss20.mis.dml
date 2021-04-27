@@ -1,0 +1,92 @@
+DML1
+
+//T2 FM: What a Drag! by Philou / Fixes
+
+FINGERPRINT
+{
+	2361 [-43 -113 51]
+	580 [-45 -287 -17]
+	1466 [113 -80 13]
+	1121 [17 -191 -7]
+	659 [3 -1 -11]
+	1781 [15 130 19]
+	1850 [-9 93 14]
+	2000 [21 -5 8]
+	QVAR "goal_target_0" == 2014
+}
+
++ObjProp 1557 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++Link 2109 1557 "ControlDevice"
+{
+}
++Link 1421 2109 "ControlDevice"
+{
+}
++ObjProp 1557 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=1319
+}
++ObjProp 2109 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 2109 "TrapFlags"
+{
+	"" Once,Invert
+}
++MetaProp 1319 -1629
++ObjProp 1322 "AI_Efficiency"    
+{
+	"Enabled" false
+}
++ObjProp 816 "AI_Efficiency"    
+{
+	"Enabled" false
+}
++ObjProp 1391 "AI_Efficiency"    
+{
+	"Enabled" false
+}
++ObjProp 1395 "AI_Efficiency"    
+{
+	"Enabled" false
+}
++ObjProp 680 "AI_Efficiency"    
+{
+	"Enabled" false
+}
+//Conversations
++Link 784 825 "ControlDevice"
+{
+}
++ObjProp 141 "ScriptTiming"
+{
+	"" 3000
+}
++ObjProp 141 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 2302 "ScriptTiming"
+{
+	"" 7000
+}
++ObjProp 2302 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 784 141 "ControlDevice"
+{
+}
++Link 784 2302 "ControlDevice"
+{
+}
++Link 141 1436 "ControlDevice"
+{
+}
++Link 2302 1409 "ControlDevice"
+{
+}

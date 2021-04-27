@@ -1,0 +1,54 @@
+DML1
+
+//T2 FM: Ravencourt's Mansion by T. Nagy Levente / Fix goal to get in the mansion
+
+FINGERPRINT
+{
+	330 [-13 0 -8]
+	194 [31 46 2]
+	272 [108 35 37]
+	302 [20 -14 -6]
+	14 [112 -18 35]
+	105 [19 -16 14]
+	331 [31 -37 57]
+	56 [32 13 -3]
+	QVAR "goal_target_0" == 314
+}
+
++ObjProp 348 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 348 "TrapFlags"  
+{
+	"" Once,NoOff
+}
++ObjProp 175 "Scripts"
+{
+	"Script 0" TrigRoomPlayer
+}
++ObjProp 345 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++ObjProp 345 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 175 348 "ControlDevice"
+{
+}
++Link 348 345 "ControlDevice"
+{
+}
++ObjProp 369 "TrapQVar"
+{
+	"" =1:goal_irreversible_3
+}
++ObjProp 369 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 773 369 "ControlDevice"
+{
+}

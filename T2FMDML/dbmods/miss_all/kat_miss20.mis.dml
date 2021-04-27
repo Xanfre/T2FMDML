@@ -1,0 +1,100 @@
+DML1
+
+//T2 FM: The Keepers are Thirsty (Contest 3) by Chris K. (Cypher628) / Fixes
+
+FINGERPRINT
+{
+	166 [109 88 2]
+	121 [113 92 -15]
+	150 [115 109 5]
+	210 [116 118 12]
+	130 [102 116 5]
+	78 [97 103 -4]
+	42 [117 64 -17]
+	92 [109 96 -4]
+	QVAR "goal_target_0" == 135
+}
+
+//final goal
++ObjProp 42 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 42 127 "ControlDevice"
+{
+}
++Link 42 128 "ControlDevice"
+{
+}
++ObjProp 127 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 127 "TrapQVar"
+{
+	"" =1:goal_final_1
+}
++ObjProp 128 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 128 "TrapQVar"
+{
+	"" =0:goal_state_1
+}
+//missing loot: 4 x purse (400)
+Link 108 208 "Contains"
+{
+	"" Belt
+}
+Link 162 205 "Contains"
+{
+	"" Belt
+}
+Link 163 206 "Contains"
+{
+	"" Belt
+}
+-Link 203 207 "Contains"
++Link 49 207 "Contains"
+{
+	"" Belt
+}
+//beer
+ObjProp 135 "FrobInfo"
+{
+	"Inv Action" None
+}
++ObjProp 135 "NoDrop"
+{
+	"" true
+}
+ObjProp 135 "GameName"
+{
+	"" Name_Guiness: "Guiness"
+}
+//banner
++ObjProp 119 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 119 "PhysType"
+ObjProp 119 "Position" 
+{
+	"Location" 88.95, 86, -15
+}
++ObjProp 119 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 119 "Scale"
+{
+	"" 1.05, 1.05, 1.05
+}
+//keys
++ObjProp 125 "SlayResult"
+{
+}
++ObjProp 212 "SlayResult"
+{
+}

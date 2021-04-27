@@ -1,0 +1,60 @@
+DML1
+
+//T2 FM: Gearheart by Bronze Griffin / Fixes
+
+FINGERPRINT
+{
+	102 [471 566 504]
+	124 [488 521 486]
+	283 [437 506 488]
+	352 [468 422 490]
+	123 [489 520 486]
+	73 [489 540 485]
+	71 [490 535 505]
+	104 [461 545 504]
+	QVAR "goal_target_1" == 313
+}
+
+//final goal
++ObjProp 250 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 250 "TrapQVar"
+{
+	"" =1:goal_final_1
+}
++ObjProp 251 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 251 "TrapQVar"
+{
+	"" =0:goal_state_1
+}
++Link 345 250 "ControlDevice"
+{
+}
++Link 345 251 "ControlDevice"
+{
+}
++ObjProp 345 "Scripts"
+{
+	"Script 0" TrigContained
+}
+//keys
+-ObjProp 150 "PhysType"
++ObjProp 341 "SlayResult"
+{
+}
+//doors
+-ObjProp 160 "JointPos"
+-ObjProp 161 "JointPos"
+-ObjProp 246 "JointPos"
+-ObjProp 247 "JointPos"
+//mechanist priest
++ObjProp 277 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
+}

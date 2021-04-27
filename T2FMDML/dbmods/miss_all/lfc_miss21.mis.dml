@@ -1,0 +1,151 @@
+DML1
+
+//T2 FM: Lord Fishkill's Curse by Randy Sybel (Shadowspawn) / Fix loot
+
+FINGERPRINT
+{
+	1224 [-56 368 -81]
+	1587 [76 135 28]
+	2345 [-14 187 1]
+	1836 [-183 168 -32]
+	2196 [126 337 -27]
+	1762 [105 210 10]
+	1158 [106 395 21]
+	1751 [81 196 -11]
+	QVAR "goal_target_3" == 2168
+}
+
++ObjProp 1601 "ScriptTiming"    
+{   
+	"" 100
+}
++ObjProp 1601 "Scripts" 
+{
+	"Script 0" TrapRelay
+}
++ObjProp 1482 "Scripts" 
+{
+	"Script 0" TrapDeadfall   
+}
++Link 1601 1482 "ControlDevice"
+{
+}
++Link 2123 1601 "ControlDevice"
+{
+}
++Link 1482 1931 "ControlDevice"
+{
+}
+-StimSource 1931 "MoneyStim" 
+-ObjProp 1929 "AI_Converation"
++ObjProp 1929 "AI_Converation"
+{
+	"Actor" "ActorOne"
+	"Flags" "[None]"
+	"Conversation: Action 0" "Remove link(Flavor,Destination(s),Source(s))"
+	"   Argument 1" "ControlDevice"
+	"   Argument 2" "MomThanksConv"
+	"   Argument 3" ""
+	"Actor"[1] "ActorOne"
+	"Flags"[1] "[None]"
+	"Conversation: Action 1" "Remove link(Flavor,Destination(s),Source(s))"
+	"   Argument 1"[1] "AIWatchObj"
+	"   Argument 2"[1] "Jumper"
+	"   Argument 3"[1] "Mother"
+	"Actor"[2] "ActorOne"
+	"Flags"[2] "[None]"
+	"Conversation: Action 2" "Frob object(Target Object,With Object)"
+	"   Argument 1"[2] "EndofPanicFrob"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Actor"[3] "ActorOne"
+	"Flags"[3] "[None]"
+	"Conversation: Action 3" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[3] "Player"
+	"   Argument 2"[3] "Fast"
+	"   Argument 3"[3] ""
+	"Actor"[4] "ActorOne"
+	"Flags"[4] "[None]"
+	"Conversation: Action 4" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[4] ""
+	"   Argument 2"[4] "Player"
+	"   Argument 3"[4] ""
+	"Actor"[5] "ActorOne"
+	"Flags"[5] "[None]"
+	"Conversation: Action 5" "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[5] "jm003"
+	"   Argument 2"[5] "LineNo 1"
+	"   Argument 3"[5] "Conv42"
+	"Actor"[6] "ActorOne"
+	"Flags"[6] "[None]"
+	"Conversation: Action 0"[1] "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[6] "jm003"
+	"   Argument 2"[6] "LineNo 2"
+	"   Argument 3"[6] "conv11"
+	"Actor"[7] "ActorOne"
+	"Flags"[7] "[None]"
+	"Conversation: Action 1"[1] "Frob object(Target Object,With Object)"
+	"   Argument 1"[7] "BringGiftB"
+	"   Argument 2"[7] ""
+	"   Argument 3"[7] ""
+	"Actor"[8] "ActorOne"
+	"Flags"[8] "[None]"
+	"Conversation: Action 2"[1] "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[8] ""
+	"   Argument 2"[8] ""
+	"   Argument 3"[8] "Worldfrob 0, AtWaist 0, WithSword 0"
+	"Actor"[9] "ActorOne"
+	"Flags"[9] "[None]"
+	"Conversation: Action 3"[1] "Frob object(Target Object,With Object)"
+	"   Argument 1"[9] "GarrettThanksB"
+	"   Argument 2"[9] ""
+	"   Argument 3"[9] ""
+	"Actor"[10] "ActorOne"
+	"Flags"[10] "[None]"
+	"Conversation: Action 4"[1] "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1"[10] "Remove"
+	"   Argument 2"[10] "FrobInert"
+	"   Argument 3"[10] "JGFrob"
+	"Actor"[11] "ActorOne"
+	"Flags"[11] "[None]"
+	"Conversation: Action 5"[1] "Add link(Flavor,Destination(s),Source(s))"
+	"   Argument 1"[11] "Contains"
+	"   Argument 2"[11] "SaveGift"
+	"   Argument 3"[11] "Player"
+	"Actor"[12] "ActorOne"
+	"Flags"[12] "[None]"
+	"Conversation: Action 0"[2] "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1"[12] "add"
+	"   Argument 2"[12] "M-DontGoHome"
+	"   Argument 3"[12] ""
+	"Actor"[13] "ActorOne"
+	"Flags"[13] "[None]"
+	"Conversation: Action 1"[2] "Remove link(Flavor,Destination(s),Source(s))"
+	"   Argument 1"[13] "ControlDevice"
+	"   Argument 2"[13] "DadThanks"
+	"   Argument 3"[13] "HasJumper"
+	"Actor"[14] "ActorOne"
+	"Flags"[14] "[None]"
+	"Conversation: Action 2"[2] "Frob object(Target Object,With Object)"
+	"   Argument 1"[14] "DadSees"
+	"   Argument 2"[14] ""
+	"   Argument 3"[14] ""
+	"Actor"[15] "Unused"
+	"Flags"[15] "[None]"
+	"Conversation: Action 3"[2] "Nothing()"
+	"   Argument 1"[15] ""
+	"   Argument 2"[15] ""
+	"   Argument 3"[15] ""
+	"Actor"[16] "Unused"
+	"Flags"[16] "[None]"
+	"Conversation: Action 4"[2] "Nothing()"
+	"   Argument 1"[16] ""
+	"   Argument 2"[16] ""
+	"   Argument 3"[16] ""
+	"Actor"[17] "Unused"
+	"Flags"[17] "[None]"
+	"Conversation: Action 5"[2] "Nothing()"
+	"   Argument 1"[17] ""
+	"   Argument 2"[17] ""
+	"   Argument 3"[17] ""
+}

@@ -1,0 +1,103 @@
+DML1
+
+//T2 FM: Safe Haven by Michał Walczyk (Vk) / Fix loot and some bugs
+
+FINGERPRINT
+{
+	2391 [173 -64 8]
+	348 [-17 5 -8]
+	379 [-32 -45 -5]
+	397 [-102 68 3]
+	1124 [45 -74 1]
+	445 [-103 37 4]
+	192 [43 -1 0]
+	2266 [170 -104 9]
+	QVAR "goal_target_0" == 2314
+}
+
++ObjProp 109 "DarkStat"
+{
+	"" Hidden
+}
++Link 31 364 "Contains"
+{
+}
+ObjProp 381 "Locked" 
+{
+	"" false
+}
+-ObjProp 389 "PhysControl"
++ObjProp 389 "Position"
+{
+	"Location" -18.71, -66.47, -5.15
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 417 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 417 "PhysControl"
++ObjProp 417 "Position"
+{
+	"Location" -99.71, -34.76, -3.37
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 418 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 418 "PhysControl"
++ObjProp 418 "Position"
+{
+	"Location" -101.9, -35.0, -3.37
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-Link 578 84 "Contains"
++ObjProp 578 "Position"
+{
+	"Location" -127.4, 30.0, 0.77
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+ObjProp 578 "HasRefs" 
+{
+	"" true
+}
+ObjProp 578 "StackCount"     
+{
+	"" 0
+}
+-Link 531 527 "Contains"
++ObjProp 531 "Position"
+{
+	"Location" -127.4, 30.4, 0.77
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+ObjProp 531 "HasRefs" 
+{
+	"" true
+}
+ObjProp 531 "StackCount"     
+{
+	"" 0
+}
+-ObjProp 3061 "PhysControl"
++ObjProp 3061 "Position"
+{
+	"Location" -54.9, 84.0, -1.0
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+  

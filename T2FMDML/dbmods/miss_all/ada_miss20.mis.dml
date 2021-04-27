@@ -1,0 +1,338 @@
+DML1
+
+//T2 FM: After Dark by Shadowhide / Fixes
+
+FINGERPRINT
+{
+	657 [-95 479 87]
+	572 [99 148 96]
+	724 [-242 119 88]
+	603 [-207 359 94]
+	1063 [-205 -318 66]
+	150 [55 292 106]
+	688 [-92 474 78]
+	631 [105 113 51]
+	QVAR "goal_target_0" == 538
+}
+
+//mantling
++ObjProp 200 "PhysCanMant"
+{
+}
++ObjProp 225 "PhysCanMant"
+{
+}
++ObjProp 253 "PhysCanMant"
+{
+}
+//missing loot: 1 x gold ankh (50) out of map, excluded
++ObjProp 412 "Loot"
+{
+}
+//letter and goals
++ObjProp 414 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=498; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1000
+}
++ObjProp 414 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 414 "Scripts"
+{
+	"Script 0" StdBook
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+}
++ObjProp 498 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 498 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
+//bonfire
++ObjProp 212 "StTweqJoints"
+{
+	"AnimS" On
+	"Joint1AnimS" On
+}
++ObjProp 212 "StTweqModels"
+{
+	"AnimS" On
+}
+-ObjProp 212 "CfgTweqJoints"
+-ObjProp 212 "CfgTweqModels"
+//unnecessary rope (the well)
++ObjProp 378 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+}
++ObjProp 378 "StTweqDelete"
+{
+	"AnimS" "On"
+}
+//fireplaces
+ObjProp 408 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 410 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+ObjProp 1130 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 1132 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+//keys
+-ObjProp 140 "NoDrop"
+-ObjProp 886 "NoDrop"
++ObjProp 198 "NoDrop"
+{
+	"" true
+}
++ObjProp 1109 "SlayResult"
+{
+}
+//quest items
++ObjProp 157 "StackCount"
+{
+}
++ObjProp 625 "StackCount"
+{
+}
++ObjProp 662 "StackCount"
+{
+}
++ObjProp 1163 "StackCount"
+{
+}
+//empty bottle / wine barrel
++StimSource 246 "EarthStim"
+{
+	Intensity 4
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 246 "StackCount"
+{
+}
++Receptron 840 "EarthStim"
+{
+	Min 3
+	Max 5
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//full bottle / pagan
++StimSource 247 "EarthStim"
+{
+	Intensity 7
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 247 "StackCount"
+{
+}
++Receptron 1210 "EarthStim"
+{
+	Min 6
+	Max 8
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//flowers / vase
++StimSource 291 "EarthStim"
+{
+	Intensity 10
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 291 "StackCount"
+{
+}
++Receptron 657 "EarthStim"
+{
+	Min 9
+	Max 11
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//heartbox
+++Receptron 424 "WomanRingStim"
+{
+	Min 0
+	Max None
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//pick
+++Receptron 477 "stim1"
+{
+	Min 0
+	Max None
+
+	Target 445
+
+	Effect "destroy_obj"
+}
+//cheese / plate
++StimSource 630 "EarthStim"
+{
+	Intensity 13
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 630 "StackCount"
+{
+}
++Receptron 629 "EarthStim"
+{
+	Min 12
+	Max 14
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//girl's mother
+++Receptron 731 "GirlChimeStim"
+{
+	Min 0
+	Max None
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//skeleton
+++Receptron 1215 "SkeletonNecklaceStim"
+{
+	Min 0
+	Max None
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//fish
++ObjProp 32 "GameName"
+{
+	"" Name_Fish
+}
++ObjProp 32 "CombineType"
+{
+	"" Fish
+}
++ObjProp 33 "GameName"
+{
+	"" Name_Fish
+}
++ObjProp 33 "CombineType"
+{
+	"" Fish
+}
++ObjProp 34 "GameName"
+{
+	"" Name_Fish
+}
++ObjProp 34 "CombineType"
+{
+	"" Fish
+}
+//doors
+ObjProp 173 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 738 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Link 737 738 "ScriptParams"
+{
+	"" Double
+}
+//scrolls
+-ObjProp 943 "NoDrop"
++ObjProp 950 "NoDrop"
+{
+	"" true
+}
+//ale without any effect
++ObjProp 12 "FrobInfo"
+{
+}

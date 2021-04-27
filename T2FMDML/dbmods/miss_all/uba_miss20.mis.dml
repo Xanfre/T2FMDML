@@ -1,0 +1,32 @@
+DML1
+
+//T2 FM: United Bank of Auldale by Patrick Baldwin (mxleader) / Fix goal 4
+
+FINGERPRINT
+{
+	824 [492 344 507]
+	874 [581 363 393]
+	1163 [563 388 501]
+	164 [653 300 483]
+	720 [494 477 511]
+	577 [594 354 489]
+	657 [635 533 491]
+	520 [648 540 491]
+	QVAR "goal_target_1" == 1214
+}
+
+#script "nvscript"
+
++ObjProp 1247 "Scripts"
+{
+   "Script 0" NVTrigQVar
+   "Script 1" NVMetaTrap
+}
++ObjProp 1247 "DesignNote"
+{
+   "" NVTrigQVarTDest="[me]"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1247 "TrapQVar"
+{
+   "" =1:goal_state_4
+}

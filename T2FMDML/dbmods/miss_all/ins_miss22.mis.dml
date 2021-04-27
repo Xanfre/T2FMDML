@@ -1,0 +1,59 @@
+DML1
+
+//T2 FM: Insurrection by Jeremy Catlin (HipBreaker) / Fixes
+
+FINGERPRINT
+{
+	2143 [104 -69 87]
+	1980 [71 -13 108]
+	760 [-9 14 96]
+	2209 [-18 89 89]
+	1205 [-205 7 97]
+	1076 [-229 9 94]
+	119 [-116 105 94]
+	1266 [-218 -84 123]
+	QVAR "goal_target_0" == 30
+}
+
+-MetaProp 140 -3371
++ObjProp 2680 "PhysAIColl"  
+{
+	"" false
+}
++ObjProp 2682 "PhysAIColl"  
+{
+	"" false
+}
+-ObjProp 1609 "Position"
++ObjProp 1609 "Position"
+{
+	"Location" -200.49,-39.12,108.11
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1683 "Position"
++ObjProp 1683 "Position"
+{
+	"Location" 123.99,3.12,100.11
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 2289 "PhysAIColl"  
+{
+	"" true
+}
++ObjProp 2290 "PhysAIColl"  
+{
+	"" true
+}
++ObjProp 2291 "PhysAIColl"  
+{
+	"" true
+}
++ObjProp 2292 "PhysAIColl"  
+{
+	"" true
+}
+-ObjProp 2258 "DarkStat"  

@@ -1,0 +1,387 @@
+DML1
+
+//T2 FM: Under Templehill by Andy Joel (The Pixie) / Fixes
+
+FINGERPRINT
+{
+	1883 [510 515 464]
+	1671 [563 460 494]
+	870 [799 753 451]
+	240 [593 440 486]
+	2113 [783 713 507]
+	308 [536 636 503]
+	886 [724 612 384]
+	433 [447 583 453]
+	QVAR "goal_target_5" == 1733
+}
+
+#script "nvscript"
+
+-Link 266 1103 "AICurrentPatrol"
++ObjProp 1102 "DesignNote"
+{
+	"" NVLinkBuilderOff="Null"; NVLinkBuilderLinkType="AICurrentPatrol"; NVLinkBuilderLinkSource="Intruder"; NVLinkBuilderLinkDest="IntruStartTP"
+}
++ObjProp 1102 "Scripts"
+{
+	"Script 0" TrapTeleporter
+	"Script 1" NVLinkBuilder
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" true
+}
+-ObjProp 1785 "PhysType"
++ObjProp 1785 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1785 "Position"
++ObjProp 1785 "Position"
+{
+	"Location" 775.83,628.93,484.73
+	"Heading" 38e3
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1914 "PhysType"
++ObjProp 1914 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1914 "Position"
++ObjProp 1914 "Position"
+{
+	"Location" 508.84,489.3,460.34
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 2402 "PhysType"
++ObjProp 2402 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 2402 "Position"
++ObjProp 2402 "Position"
+{
+	"Location" 550.05,441.0,485.56
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1927 "PhysType"
++ObjProp 1927 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1927 "Position"
++ObjProp 1927 "Position"
+{
+	"Location" 462.78,510.29,482.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1398 "PhysCanMant"  
+{
+	"" false
+}
+//Barrels
++ObjProp 1763 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1763 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 1757 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1757 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 183 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 183 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 36 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 36 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 39 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 39 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 301 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 301 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 1919 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 442.23, 689.89, 458.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 1919 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 703 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 446.16, 685.29, 458.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 703 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 472 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -552
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 472.0, 507.34, 470.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 472 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 2000 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 387.88, 532.57, 459.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 2000 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 344 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -552
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 440.14, 532.2, 458.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 344 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 347 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -552
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 438.16, 535.0, 458.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 347 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}

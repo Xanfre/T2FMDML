@@ -1,0 +1,83 @@
+DML1
+
+//T2 FM: The Box by Krzysztof Zerko (Ghost In The Shell) / Fixes
+
+FINGERPRINT
+{
+	165 [493 524 -6]
+	522 [534 498 3]
+	298 [428 505 1]
+	180 [444 474 -8]
+	204 [430 504 -20]
+	535 [-66 -41 -3]
+	374 [489 558 -16]
+	320 [480 496 -12]
+	QVAR "goal_target_0" == 425
+}
+
+//torches
++ObjProp 29 "PickDist"
+{
+	"" -2.00
+}
++ObjProp 62 "PickDist"
+{
+	"" -2.00
+}
++ObjProp 171 "PickDist"
+{
+	"" -2.00
+}
++ObjProp 179 "PickDist"
+{
+	"" -2.00
+}
++ObjProp 231 "PickDist"
+{
+	"" -2.00
+}
++ObjProp 298 "PickDist"
+{
+	"" -2.00
+}
+//debtors registry
++ObjProp 541 "NoDrop"
+{
+	"" true
+}
+//mantling
++ObjProp 74 "PhysCanMant"
+{
+}
+//bed
+-ObjProp 78 "PhysType"
+ObjProp 78 "Position"
+{
+	"Heading" c000
+}
++ObjProp 78 "PhysType"
+{
+	"Type" OBB
+}
+//doors
+ObjProp 81 "RotDoor"
+{
+	"Open Angle" 89
+}
++Receptron 117 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 118 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 372 "Scale"
+{
+	"" 0.75, 0.75, 0.75
+}
++MetaProp 474 -2420

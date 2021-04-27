@@ -1,0 +1,282 @@
+DML1
+
+//T2 FM: The Lost Crusade by Spoonman / Fixes
+
+FINGERPRINT
+{
+	1132 [34 332 -111]
+	188 [332 125 -50]
+	590 [-24 -21 -24]
+	1551 [352 458 -114]
+	801 [-109 148 -22]
+	339 [229 -48 -12]
+	737 [20 129 6]
+	1141 [44 350 -112]
+	QVAR "goal_target_0" == 1454
+}
+
+#script "squirrel"
+
++ObjProp 213 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 213 "DesignNote"
+{
+	"" RepositionDir=180.0,0.0,0.0
+}
++ObjProp 218 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 541 "Scale"
+{
+	"" 2.50,2.50,2.50
+}
++ObjProp 580 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 580 "Position"
+{
+	"Location" 113.152,66.6197,-24.2312
+	"Heading" 6493
+	"Pitch" 4000
+}
++ObjProp 788 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 788 "DesignNote"
+{
+	"" RepositionLoc=-0.4,0,0.2
+}
++ObjProp 39 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 39 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 32 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 32 "DesignNote"
+{
+	"" RepositionLoc=397.543,-26.946,-41.436
+}
++ObjProp 51 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 51 "DesignNote"
+{
+	"" RepositionLoc=385.245,-7.59434,-38.4898; RepositionDir=0.0,0.0,0.0
+}
++ObjProp 56 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 56 "DesignNote"
+{
+	"" RepositionLoc=395.057,-21.4235,-23.395
+}
++ObjProp 58 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 58 "DesignNote"
+{
+	"" RepositionLoc=392.745,-15.1664,-23.5848
+}
+-ObjProp 71 "Scale"
++ObjProp 71 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 71 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,1.0
+}
++ObjProp 212 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 212 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
+-ObjProp 81 "Scale"
++ObjProp 81 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 81 "DesignNote"
+{
+	"" RepositionLoc=311.841,-45.511,-42.4942
+}
++ObjProp 259 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 259 "DesignNote"
+{
+	"" RepositionLoc=0.8,-0.2,0.0
+}
++ObjProp 228 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 228 "DesignNote"
+{
+	"" RepositionLoc=0.4,0.0,0.0
+}
++ObjProp 466 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 466 "DesignNote"
+{
+	"" RepositionLoc=189.265,-92.8889,-30.8857
+}
++ObjProp 137 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 137 "DesignNote"
+{
+	"" RepositionLoc=313.264,114.389,-50.5833
+}
+-ObjProp 138 "Scale"
++ObjProp 138 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 138 "DesignNote"
+{
+	"" RepositionLoc=313.163,120.5,-50.2485
+}
++ObjProp 139 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 139 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 122 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 122 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 594 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 594 "DesignNote"
+{
+	"" RepositionLoc=-18.9652,29.586,-21.7027
+}
++ObjProp 736 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 736 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,2.0
+}
++ObjProp 767 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 767 "DesignNote"
+{
+	"" RepositionLoc=-117.14,151.89,-20.9966
+}
++ObjProp 977 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 977 "DesignNote"
+{
+	"" RepositionLoc=0.4,0.0,0.0
+}
++ObjProp 976 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 976 "DesignNote"
+{
+	"" RepositionLoc=0.8,0.0,0.0
+}
++ObjProp 909 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 909 "DesignNote"
+{
+	"" RepositionLoc=146.84,398.746,-98.9792; RepositionDir=70.906,0.0,0.0
+}
++ObjProp 906 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 906 "DesignNote"
+{
+	"" RepositionLoc=150.798,392.089,-96.6547
+}
++ObjProp 868 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 868 "DesignNote"
+{
+	"" RepositionLoc=44.2854,304.721,-90.1046
+}
++ObjProp 870 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 870 "DesignNote"
+{
+	"" RepositionLoc=45.5166,309.383,-91.05
+}
+-ObjProp 1237 "Scale"
++ObjProp 1237 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1237 "DesignNote"
+{
+	"" RepositionLoc=115.819,197.881,-123.245
+}
++ObjProp 264 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 264 "DesignNote"
+{
+	"" RepositionLoc=262.09,-42.1508,-42.5346
+}
++ObjProp 483 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 483 "DesignNote"
+{
+	"" RepositionLoc=-0.4,-1.6,0.2
+}

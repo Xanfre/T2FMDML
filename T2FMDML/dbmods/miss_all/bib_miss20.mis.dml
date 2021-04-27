@@ -1,0 +1,79 @@
+DML1
+
+//T2 FM: Burglary in Blackbrook by John D. / Fixes
+
+FINGERPRINT
+{
+	466 [-311 8 18]
+	1413 [-365 -91 47]
+	1894 [-378 -167 36]
+	1137 [-294 -246 5]
+	1645 [-288 -151 47]
+	1935 [-414 -164 38]
+	635 [-353 -85 3]
+	862 [-250 -12 21]
+	QVAR "goal_target_3" == 2288
+}
+
+#script "tnhscript"
+
+//Dave objective
+Create -464 "QVarFixSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "designnote"
+	{
+		"" Proximity=2000
+	}
+}
++ObjProp 2086 "Scripts"
+{
+	"Script 0" TrapSetQvar
+}
++ObjProp 2086 "TrapQVar"
+{
+	"" =0:goal_target_9
+}
++Link "QVarFixSwitch" 2086 "ControlDevice"
+{
+}
++ObjProp 2137 "Scripts"
+{
+	"Script 0" TrigRoomDeposit
+}
++Link 2137 2569 "Route"
+{
+}
+Create -1823 "DaveObj"
+{
+	+ObjProp "TrapQvar"
+	{
+		"" =1:goal_state_9
+	}
+}
+Create -1823 "EscapeObj"
+{
+	+ObjProp "TrapQvar"
+	{
+		"" =1:goal_state_12
+	}
+}
++Link 2137 "DaveObj" "ControlDevice"
+{
+}
++Link 2137 "EscapeObj" "ControlDevice"
+{
+}
++ObjProp 2137 "Scripts"
+{
+	"Script 0" TrigRoomObject
+}
+//bottle
++ObjProp 1692 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

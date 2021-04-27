@@ -1,0 +1,45 @@
+DML1
+
+//T2 FM: Torner Island by Harald Lootze (Haman) / Fix loot and a skull
+
+FINGERPRINT
+{
+	740 [-194 -51 -6]
+	1101 [-239 72 10]
+	467 [-67 339 -42]
+	869 [-98 107 19]
+	1143 [-142 85 21]
+	521 [-237 80 12]
+	145 [51 165 -6]
+	863 [88 131 18]
+	QVAR "goal_target_0" == 616
+}
+
++ObjProp 437 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 750 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 753 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 754 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 954 "InvType"     
+{
+	"" Item
+}

@@ -1,0 +1,55 @@
+DML1
+
+//T2 FM: The Night Watch by Fidcal / Fix the boulder on top of the chest containing Jake's note
+
+FINGERPRINT
+{
+	225 [167 17 632]
+	996 [125 -4 664]
+	1848 [141 -305 626]
+	1022 [121 87 615]
+	741 [169 -158 591]
+	437 [113 -60 611]
+	912 [98 -85 613]
+	1621 [143 -302 612]
+	QVAR "goal_target_6" == 165
+}
+
+#script "squirrel"
+
++ObjProp 719 "DesignNote"
+{
+	"" RepositionLoc=104.427,-116.134,613.801
+}
++ObjProp 719 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 526 "DesignNote"
+{
+	"" RepositionLoc=135.992,-91.225,611.731; RepositionDir=43.995,278.685,0.0
+}
++ObjProp 526 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
+ObjProp 324 "Scale"
+{
+	"" 1.7,1.7,1.7
+}
+ObjProp 78 "Scale"
+{
+	"" 1.7,1.03561,1.0913
+}
++ObjProp 573 "Position"
+{
+	"Location" 109.15,-60.1359,616.673
+	"Heading" c000
+	"Bank" aaa
+}
++ObjProp 575 "Position"
+{
+	"Location" 109.03,-56.6865,616.486
+	"Heading" c000
+	"Bank" 71c
+}

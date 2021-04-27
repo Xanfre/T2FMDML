@@ -1,0 +1,145 @@
+DML1
+
+//T2 FM: The Curse by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes
+
+FINGERPRINT
+{
+	161 [55 82 88]
+	741 [109 200 46]
+	281 [92 103 78]
+	109 [100 95 113]
+	392 [53 101 85]
+	105 [95 95 120]
+	520 [75 188 68]
+	560 [74 133 85]
+	QVAR "goal_target_0" == 317
+}
+
+//vase (loot)
++ObjProp 770 "HitPoints"
+{
+	"" 100
+}
+//secret doors
++MetaProp 150 -2420
++MetaProp 747 -2420
+//crypt doors
++ObjProp 187 "PhysCanMant"
+{
+}
++ObjProp 188 "PhysCanMant"
+{
+}
+//crown
++ObjProp 317 "StackCount"
+{
+}
+//switches
+-Link 334 335 "ControlDevice"
++Link 334 263 "ControlDevice"
+{
+}
+ObjProp 334 "StTweqJoints"
+{
+	"AnimS" Reverse
+}
+-Link 511 574 "ControlDevice"
++Link 336 574 "ControlDevice"
+{
+}
+//dolls
++ObjProp 348 "NoDrop"
+{
+	"" true
+}
++ObjProp 356 "NoDrop"
+{
+	"" true
+}
+//chests
+-ObjProp 507 "PhysType"
+ObjProp 507 "Position"
+{
+	"Location" 113.5, 103.14, 97.4185
+}
++ObjProp 507 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 548 "PhysType"
+ObjProp 548 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 548 "PhysType"
+{
+	"Type" OBB
+}
+//plates
+-ObjProp 439 "PhysType"
+-ObjProp 440 "PhysType"
+++Receptron 348 "Fetish1Stim"
+{
+	Min 0
+	Max None
+
+	Target 439
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 356 "Fetish2Stim"
+{
+	Min 0
+	Max None
+
+	Target 440
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 371 "RedGStim"
+{
+	Min 0
+	Max None
+
+	Target 538
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 375 "GreenGStim"
+{
+	Min 0
+	Max None
+
+	Target 537
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 376 "BlueGStim"
+{
+	Min 0
+	Max None
+
+	Target 536
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}

@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: Forbidden Rites by Pete Willhite (Krush) / Fix loot
+
+FINGERPRINT
+{
+	829 [-36 339 93]
+	929 [192 242 94]
+	1117 [214 174 94]
+	2226 [206 -151 -1]
+	1476 [-46 322 94]
+	290 [164 134 74]
+	2377 [120 88 93]
+	279 [123 258 68]
+	QVAR "goal_target_0" == 765
+}
+
++ObjProp 766 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

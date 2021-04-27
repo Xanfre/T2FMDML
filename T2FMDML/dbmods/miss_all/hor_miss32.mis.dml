@@ -1,0 +1,157 @@
+DML1
+
+//T2 FM: House of Random (Contest 5) by J. Knez (Schwaa) / Fix final goal and other issues
+
+FINGERPRINT
+{
+	1125 [-168 397 18]
+	1163 [-239 426 24]
+	312 [-294 394 3]
+	1212 [-156 401 21]
+	587 [-265 416 22]
+	721 [-239 427 23]
+	1146 [-270 461 -3]
+	980 [-139 408 19]
+	QVAR "goal_target_10" == 956
+}
+
++StimSource 584 "FeatherStim"
+{
+	Intensity 10
+	Propagator "Contact"
+    {
+		Shape
+		{
+			"Contact Types" "Collision, Frob Inv -> World"
+			"Velocity Coeff" 0.00
+			"Frob Time Coeff" 0.00
+		}
+	}
+}
++ObjProp 205 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 205 "TrapQVar"
+{
+	"" =1:goal_state_10
+}
++ObjProp 73 "Scripts"
+{
+	"Script 1" TrigContained
+}
++Link 956 205 "ControlDevice"
+{
+}
+-ObjProp 956 "Scripts"
++ObjProp 956 "Scripts"
+{
+	"Script 0" TrigRoomPlayer
+}
+-Link 778 779 "Contains"
++Link 778 779 "Contains"
+{
+	"" Belt  
+}
+ObjProp 123 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 149 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 201 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 202 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 203 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 223 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 260 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 269 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 403 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 413 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 426 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 433 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 554 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 555 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 648 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 1072 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}
+ObjProp 1073 "Scripts"
+{
+	"Script 0" AnimLight
+	"Script 1" ""
+	"Don't Inherit" true
+}

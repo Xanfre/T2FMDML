@@ -1,0 +1,25 @@
+DML1
+
+//T2 FM: The Den by Gaetane / Fix conversation bug
+
+FINGERPRINT
+{
+	2284 [52 420 139]
+	1032 [240 457 92]
+	1377 [15 338 107]
+	1738 [-34 337 91]
+	1485 [53 401 89]
+	2344 [20 330 107]
+	1781 [187 401 48]
+	1803 [212 450 63]
+	QVAR "goal_target_0" == 511
+}
+
+-ObjProp 1063 "Position"
++ObjProp 1063 "Position"
+{
+	"Location" -296.9,-53.09,74.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

@@ -1,0 +1,54 @@
+DML1
+
+//T2 FM: The Saint (Contest 5) by Isaac Kopecky (golem8) / Fix goal 7 and loot
+
+FINGERPRINT
+{
+	1105 [462 442 558]
+	578 [504 519 513]
+	704 [669 514 512]
+	965 [602 517 482]
+	1013 [585 486 486]
+	776 [546 501 491]
+	675 [615 513 495]
+	777 [551 508 491]
+	QVAR "goal_target_1" == 668
+}
+
+//goal 7
++ObjProp 1062 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1062 "TrapQVar"
+{
+	"" =1:goal_state_7
+}
++Link 754 1062 "ControlDevice"
+{
+}
++ObjProp 754 "FrobInfo" 
+{
+	"World Action" Move,Script
+}
++ObjProp 754 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+//loot
+-ObjProp 655 "PhysControl"
++ObjProp 655 "Position"
+{
+	"Location" 485.01, 471.53, 526.2
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 656 "PhysControl"
++ObjProp 656 "Position"
+{
+	"Location" 471.86, 471.53, 526.2
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

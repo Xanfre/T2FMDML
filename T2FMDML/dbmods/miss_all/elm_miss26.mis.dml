@@ -1,0 +1,71 @@
+DML1
+
+//T2 FM: Elevator Mission by JIS / Fix for loot and a goal
+
+FINGERPRINT
+{
+	1148 [-14 -495 37]
+	290 [-154 -242 31]
+	653 [118 -387 16]
+	806 [130 -192 16]
+	1109 [149 -199 32]
+	902 [-68 -265 30]
+	749 [78 -418 22]
+	927 [-55 -574 34]
+	QVAR "goal_target_0" == 624
+}
+
++ObjProp 696 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 697 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 698 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 577 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+-ObjProp 624 "FrobInfo"
++ObjProp 624 "FrobInfo"
+{
+	"World Action" Move,Script,FocusScript
+}
++ObjProp 663 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 663 "ScriptTiming"
+{
+	"" 1
+}
+-Link 624 397 "ControlDevice"
++Link 624 663 "ControlDevice"
+{
+}
++Link 663 397 "ControlDevice"
+{
+}
++ObjProp 624 "Scripts"
+{
+	"Script 3" TrigWorldFocus
+}
++ObjProp 624 "CombineType"  
+{
+	"" Loot
+}
++ObjProp 624 "Loot"    
+{
+	"Gold" 100
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 663 "TrapFlags" 
+{
+	"" Once,NoOff
+}

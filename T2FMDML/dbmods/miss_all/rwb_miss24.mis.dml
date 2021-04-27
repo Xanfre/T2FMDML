@@ -1,0 +1,51 @@
+DML1
+
+//T2 FM: Reunion with Basso by Zappenduster / Fix climbable fences and patrols
+
+FINGERPRINT
+{
+	1045 [179 83 6]
+	1697 [422 235 16]
+	779 [179 87 25]
+	1078 [120 319 1]
+	334 [255 176 3]
+	771 [356 259 34]
+	1219 [374 172 20]
+	1220 [238 204 20]
+	QVAR "goal_target_1" == 1136
+}
+
++ObjProp 492 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 485 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 875 "PhysCanMant"
+{
+	"" false
+}
+-ObjProp 1170 "CretPose"
+-ObjProp 1171 "Position"
++ObjProp 1171 "Position"
+{
+	"Location" 107,224,-8.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1253 "Position"
++ObjProp 1253 "Position"
+{
+	"Location" 107,224,-8.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+ObjProp 410 "AI_IdleOrgn"
+{
+	"Original Location" 119,226,-8
+	"Original Facing" 270
+}

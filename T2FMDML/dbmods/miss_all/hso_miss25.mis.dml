@@ -1,0 +1,24 @@
+DML1
+
+//T2 FM: Heist Society by Mark Smith (AsyluM) / Fix loot
+
+FINGERPRINT
+{
+	2113 [108 88 204]
+	1169 [243 192 207]
+	1627 [178 410 212]
+	1211 [217 62 222]
+	621 [10 251 213]
+	851 [81 394 204]
+	1528 [64 282 204]
+	454 [160 57 213]
+	QVAR "goal_target_0" == 976
+}
+
++ObjProp 1073 "loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
+-Link 599 3458 "Contains"

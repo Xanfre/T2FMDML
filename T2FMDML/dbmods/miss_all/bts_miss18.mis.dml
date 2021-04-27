@@ -1,0 +1,53 @@
+DML1
+
+//T2 FM: Breaking the Stone by Jeremy Catlin (HipBreaker) / Fix coronas
+
+FINGERPRINT
+{
+	616 [131 -3 -61]
+	1714 [29 -148 -11]
+	2363 [84 -230 -2]
+	858 [-63 -16 -6]
+	1270 [2 -55 -45]
+	2259 [-79 -53 -17]
+	2060 [171 -28 -55]
+	1982 [-116 -63 -9]
+	QVAR "goal_target_0" == 1083
+}
+
+-ObjProp 1856 "Corona" 
++ObjProp 1856 "Corona" 
+{
+	"flags" Track Moving Object
+	"radius up close" 1
+	"radius at max dist" 2
+	"max. dist. visible" 48
+	"alpha" 0.6
+	"texture" coron01.tga
+	"color" 255,255,255
+	"spot angle scale" 1.00
+}
+-ObjProp 2439 "Corona" 
++ObjProp 2439 "Corona" 
+{
+	"flags" Track Moving Object
+	"radius up close" 1
+	"radius at max dist" 2
+	"max. dist. visible" 48
+	"alpha" 0.6
+	"texture" coron01.tga
+	"color" 255,255,255
+	"spot angle scale" 1.00
+}
+-ObjProp 343 "Corona" 
++ObjProp 343 "Corona" 
+{
+	"flags" Track Moving Object
+	"radius up close" 1
+	"radius at max dist" 2
+	"max. dist. visible" 48
+	"alpha" 0.6
+	"texture" coron01.tga
+	"color" 255,255,255
+	"spot angle scale" 1.00
+}

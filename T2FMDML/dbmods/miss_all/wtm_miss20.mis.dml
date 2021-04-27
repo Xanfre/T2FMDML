@@ -1,0 +1,185 @@
+DML1
+
+//T2 FM: Working the Mines (Contest 5) by Fred Thiefstone / Fix rampaging minecart
+
+FINGERPRINT
+{
+	230 [13 13 -28]
+	589 [47 55 -70]
+	833 [73 -4 -50]
+	376 [32 -91 -45]
+	821 [101 -49 -51]
+	418 [100 17 -56]
+	644 [58 49 -68]
+	512 [82 -40 -54]
+	QVAR "goal_target_1" == 146
+}
+
+Link 256 262 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 263 271 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 263 371 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 269 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 280 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 283 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 289 276 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 291 314 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 294 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 295 276 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 304 276 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 306 262 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 316 317 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 324 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 325 314 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 330 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 333 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 345 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 346 262 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 416 417 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 431 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 432 314 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 436 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 249 254 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 327 303 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 274 303 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 287 303 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 287 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 305 250 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 305 277 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 290 277 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 290 367 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 270 277 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 270 366 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 334 311 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 334 380 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 326 311 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 335 414 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 335 311 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 321 320 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 321 369 "ScriptParams"
+{
+	"" WaypointReached
+}
+Link 421 420 "ScriptParams"
+{
+	"" WaypointReached
+}

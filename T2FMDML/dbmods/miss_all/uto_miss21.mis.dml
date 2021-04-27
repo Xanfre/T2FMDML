@@ -1,0 +1,18 @@
+DML1
+
+//T2 FM: The Unknown Treasure (Version 1.11) by Shaun M.D. Morin (GORT) / Fix secret count
+
+FINGERPRINT
+{
+	1991 [402 630 60]
+	1544 [-226 38 113]
+	1977 [55 150 118]
+	206 [-175 -45 125]
+	1765 [-255 91 125]
+	1384 [-48 148 126]
+	2069 [-125 208 123]
+	718 [16 284 130]
+	QVAR "goal_target_12" == 1521
+}
+
+-Link 2121 2120 "ControlDevice"

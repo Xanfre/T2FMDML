@@ -1,0 +1,335 @@
+DML1
+
+//T2 FM: A Night in Rocksbourg: Discovery by DrK / Fixes
+
+FINGERPRINT
+{
+	1118 [237 54 -21]
+	747 [-407 -303 -160]
+	1001 [313 59 -21]
+	562 [-393 -254 -164]
+	1555 [-58 -97 6]
+	1770 [23 -104 -12]
+	261 [8 65 -18]
+	945 [63 -40 -25]
+	QVAR "goal_target_2" == 2454
+}
+
+-ObjProp 1776 "Position"
++ObjProp 1776 "Position"
+{
+	"Location" 21.6668,-96.3565,4.09537
+	"Heading" b1c7
+	"Bank" 4000
+}
++ObjProp 1691 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1698 "Position"
++ObjProp 1698 "Position"
+{
+	"Location" -47.0005,-99.0239,-8.94858
+	"Heading" 2000
+}
++ObjProp 1698 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1607 "Position"
++ObjProp 1607 "Position"
+{
+	"Location" -46.2192,-112.538,4.99156
+}
++ObjProp 1607 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1697 "Position"
++ObjProp 1697 "Position"
+{
+	"Location" -43.792,-98.2201,-8.94858
+	"Heading" 2000
+}
++ObjProp 1697 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1640 "Position"
++ObjProp 1640 "Position"
+{
+	"Location" -25.2801,-107.598,-8.99844
+}
++ObjProp 1640 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1635 "Position"
++ObjProp 1635 "Position"
+{
+	"Location" -26.7773,-107.237,-902386
+}
+-ObjProp 1641 "Position"
++ObjProp 1641 "Position"
+{
+	"Location" -27.3527,-105.986,-8.99844
+}
++ObjProp 1641 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1688 "Position"
++ObjProp 1688 "Position"
+{
+	"Location" -24.0319,-82.6105,-3.70731
+}
++ObjProp 1688 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1689 "Position"
++ObjProp 1689 "Position"
+{
+	"Location" -24.5472,-82.6152,-3.70731
+}
++ObjProp 1689 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1690 "Position"
++ObjProp 1690 "Position"
+{
+	"Location" -24.9963,-82.5895,-3.70731
+}
++ObjProp 1690 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1616 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1585 "Position"
++ObjProp 1585 "Position"
+{
+	"Location" -50.4976,-89.2529,5.65636
+}
+-ObjProp 1609 "Position"
++ObjProp 1609 "Position"
+{
+	"Location" -50.2224,-89.2704,5.91156
+}
++ObjProp 1609 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1610 "Position"
++ObjProp 1610 "Position"
+{
+	"Location" -50.2411,-88.8365,5.91156
+}
++ObjProp 1610 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1611 "Position"
++ObjProp 1611 "Position"
+{
+	"Location" -50.2441,-89.7137,5.91156
+}
++ObjProp 1611 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1619 "Position"
++ObjProp 1619 "Position"
+{
+	"Location" -45.7261,-74.0313,4.54265
+	"Heading" 2000
+}
++ObjProp 1619 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1620 "Position"
++ObjProp 1620 "Position"
+{
+	"Location" -46.7637,-73.9847,4.54265
+	"Heading" 2000
+}
++ObjProp 1620 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1612 "Position"
++ObjProp 1612 "Position"
+{
+	"Location" -17.0301,-82.1486,4.99156
+}
++ObjProp 1612 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1613 "Position"
++ObjProp 1613 "Position"
+{
+	"Location" -12.462,-83.3042,4.99156
+}
++ObjProp 1613 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1614 "Position"
++ObjProp 1614 "Position"
+{
+	"Location" -10.1293,-81.0023,4.99156
+}
++ObjProp 1614 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1615 "Position"
++ObjProp 1615 "Position"
+{
+	"Location" -12.2044,-78.4581,4.99156
+}
++ObjProp 1615 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1587 "Position"
++ObjProp 1587 "Position"
+{
+	"Location" -44.7808,-137.169,8.58264
+}
++ObjProp 1587 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1589 "Position"
++ObjProp 1589 "Position"
+{
+	"Location" -44.1232,-136.424,8.53156
+}
++ObjProp 1589 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1617 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1448 "Position"
++ObjProp 1448 "Position"
+{
+	"Location" -23.1214,-154.037,14.2916
+}
++ObjProp 1448 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1658 "Position"
++ObjProp 1658 "Position"
+{
+	"Location" -43.1878,-98.986,-11.8527
+	"Heading" ec24
+	"Pitch" c000
+}
+-ObjProp 1427 "Position"
++ObjProp 1427 "Position"
+{
+	"Location" -48.1983,-107.562,-8.38164
+	"Heading" eaaa
+}
+-ObjProp 375 "Position"
++ObjProp 375 "Position"
+{
+	"Location" 12.6552,-124.789,-11.1708
+}
+-ObjProp 217 "Position"
++ObjProp 217 "Position"
+{
+	"Location" -18.2935,18.0054,6.8632
+}
+-ObjProp 253 "Position"
++ObjProp 253 "Position"
+{
+	"Location" -1.9381,21.6455,6.2059
+	"Pitch" c000
+}
+-ObjProp 1214 "Position"
++ObjProp 1214 "Position"
+{
+	"Location" -17.3949,54.109,2.81324
+	"Heading" c71c
+}
+-ObjProp 1317 "Position"
++ObjProp 1317 "Position"
+{
+	"Location" -35.1999,44.2552,-17.2472
+	"Pitch" 4000
+}
++ObjProp 1317 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1319 "Position"
++ObjProp 1319 "Position"
+{
+	"Location" -36.5856,44.8196,-17.2072
+}
++ObjProp 1319 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1321 "Position"
++ObjProp 1321 "Position"
+{
+	"Location" -36.1846,44.4348,-17.2072
+}
++ObjProp 1321 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 2125 "Position"
++ObjProp 2125 "Position"
+{
+	"Location" 350.25,-7.61096,-58.6
+	"Heading" f8e3
+}
+-ObjProp 73 "Position"
++ObjProp 73 "Position"
+{
+	"Location" -71.2977,-25.6882,-6.98561
+}
+-ObjProp 1820 "DarkStat"
+-ObjProp 2437 "DarkStat"
+-ObjProp 2606 "DarkStat"
+-ObjProp 2607 "DarkStat"
+-ObjProp 2640 "DarkStat"

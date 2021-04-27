@@ -1,0 +1,20 @@
+DML1
+
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fix a bad metal texture and the drill bit stack property
+
+FINGERPRINT
+{
+	PROP -5478 "Material Tags"
+	PROP -4282 "StackCount"
+}
+
+-ObjProp -5478 "Material Tags"
++ObjProp -5478 "Material Tags"
+{    
+	"1: Tags" Material Metgrate
+}
+-ObjProp -4282 "StackCount"
++ObjProp -8385 "FrobInfo"
+{
+	"World Action" None
+}

@@ -1,0 +1,556 @@
+DML1
+
+//T2 FM: Sisterhood of Azura, part 2: The House by Ben Hur (And) / Fixes
+
+FINGERPRINT
+{
+	979 [-37 5 22]
+	1739 [-86 14 9]
+	138 [-197 -146 66]
+	1373 [-255 -171 54]
+	621 [1 -3 17]
+	1406 [-279 -100 97]
+	594 [-182 -222 72]
+	2019 [-128 -22 76]
+	QVAR "goal_target_1" == 1885
+}
+
+#script "tnhscript"
+
++ObjProp 333 "PickDist"
+{
+	"" -11
+}
++ObjProp 43 "PickDist"
+{
+	"" -11
+}
++Link 581 43 "ControlDevice"
+{
+}
++ObjProp 1491 "AI_PtrlRnd"
+{
+	"" true
+}
+Create -464 "GoaltypeSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "DesignNote"
+	{
+		"" Proximity=2000
+	}
+}
++ObjProp 1345 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1345 "TrapQVar"
+{
+	"" =1:goal_irreversible_5
+}
++Link "GoaltypeSwitch" 1345 "ControlDevice"
+{
+}
++Link "GoaltypeSwitch" 971 "ControlDevice"
+{
+}
++ObjProp 971 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 971 "TrapQVar"
+{
+	"" =0:goal_bonus_5
+}
+-ObjProp 177 "PhysType"
++ObjProp 177 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 177 "Position"
++ObjProp 177 "Position"
+{
+	"Location" -5.98,14.81,15.47
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1551 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1551 "Position"
++ObjProp 1551 "Position"
+{
+	"Location" -59.98,-5.03,12.81
+	"Heading" 4000
+	"Pitch" c000
+	"Bank" 0
+}
++ObjProp 173 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 173 "Position"
++ObjProp 173 "Position"
+{
+	"Location" -199.7,-52.1,56.456
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1433 "PhysType"
++ObjProp 1433 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1433 "Position"
++ObjProp 1433 "Position"
+{
+	"Location" -273.5,-3.88,54.36
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1333 "PhysType"
++ObjProp 1333 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1333 "Position"
++ObjProp 1333 "Position"
+{
+	"Location" -136.4,-196.2,56.34
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1332 "PhysType"
++ObjProp 1332 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1332 "Position"
++ObjProp 1332 "Position"
+{
+	"Location" -136.4,-199.2,56.34
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 960 "AI_ObjAvoid"
+{
+	"Flags" "[None]"
+}
++ObjProp 960 "PhysAIColl"
+{
+	"" false
+}
++ObjProp 989 "AI_ObjAvoid"
+{
+	"Flags" "[None]"
+}
++ObjProp 989 "PhysAIColl"
+{
+	"" false
+}
++ObjProp 914 "AI_ObjAvoid"
+{
+	"Flags" "[None]"
+}
++ObjProp 914 "PhysAIColl"
+{
+	"" false
+}
+//goal 11
++ObjProp 989 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 989 "TrapQVar"
+{
+	"" =0:goal_irreversible_11
+}
++ObjProp 914 "Scripts"
+{
+    "Script 0" TrapSetQVar
+}
++ObjProp 914 "TrapQVar"
+{
+	"" =0:goal_type_11
+}
++Link "GoaltypeSwitch" 989 "ControlDevice"
+{
+}
++Link "GoaltypeSwitch" 914 "ControlDevice"
+{
+}
+-ObjProp 1824 "Position"
++ObjProp 1824 "Position"
+{
+	"Location" -274.7,9.75,98.34
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1610 "PhysType"
++ObjProp 1610 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1610 "Position"
++ObjProp 1610 "Position"
+{
+	"Location" -10.88,-149.86,60.09
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1531 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1531 "Position"
++ObjProp 1531 "Position"
+{
+	"Location" -281.45,-68.17,54.86
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 514 "PhysType"
++ObjProp 514 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 514 "Position"
++ObjProp 514 "Position"
+{
+	"Location" -116.75,100.76,51.76
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1817 "PhysType"
++ObjProp 1817 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1817 "Position"
++ObjProp 1817 "Position"
+{
+	"Location" -212.65,-12.17,70.157
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 4000
+}
+-ObjProp 1857 "PhysType"
++ObjProp 1857 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1857 "Position"
++ObjProp 1857 "Position"
+{
+	"Location" 0.65,0.17,0.6
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 4000
+}
+-ObjProp 1493 "PhysType"
++ObjProp 1493 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1493 "Position"
++ObjProp 1493 "Position"
+{
+	"Location" 1.65,0.17,0.6
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 4000
+}
+//fireplace
+ObjProp 896 "PGLaunchInfo"
+{
+	"Launch Type" "Bounding Box"
+	"Box Min" -0.30, -0.60, 0.50
+	"Box Max" 0.30, 0.60, 1.00
+	"Min Radius" 0.00
+	"Max Radius" 0.00
+	"Loc unrotated?" false
+	"Velocity Min" 0.00, 0.00, 0.00
+	"Velocity Max" 0.00, 0.00, 0.00
+	"Vel unrotated?" false
+	"Min time" 1.90
+	"Max time" 2.40
+}
+ObjProp 896 "ParticleGroup"
+{
+	"Active" true
+	"Particle Render Type" "Single-colored disk"
+	"Particle Animation" "Launched continually"
+	"Particle Group Motion" "Attached to object"
+	"number of particles" 40
+	"size of particle" 0.50
+	"bitmap name" ""
+	"velocity" 0.00, 0.00, 0.00
+	"gravity vector" 0.00, 0.00, 2.00
+	"color (palettized)" 188
+	"2nd color" 0
+	"3rd color" 0
+	"alpha" 90
+	"fixed-group radius" 0.02
+	"spin / pulse group" false
+	"spin speed" 0.00, 0.00, 0.00
+	"pulse magnitude" 0.00
+	"pulse cycle time ms" 0
+	"particle fade time" 0.80
+	"launch period" 0.05
+	"animation offset ms" 0
+	"Group-scale velocity" 0.00
+	"bm-disk flags" "[None]"
+	"bm-disk birth time" 0.00
+	"bm-disk rot (vel, offs, rand)" 0.00, 0.00, 0.00
+	"bm-disk ani frame time" 0.00
+	"bm-disk grow speed" 0.00
+	"bm-disk rgb" 0, 0, 0
+	"bm-disk 2nd rgb" 0, 0, 0
+	"bm-disk 3rd rgb" 0, 0, 0
+	"always simulate (slow)" false
+	"always simulate group" false
+	"particles start launched" true
+	"alpha subpixel particles" false
+	"skip subpixel particles" false
+	"ignore attachment refs" false
+	"force matching unrefs" false
+}
+ObjProp 202 "PGLaunchInfo"
+{
+	"Launch Type" "Bounding Box"
+	"Box Min" -0.30, -0.60, 0.50
+	"Box Max" 0.30, 0.60, 1.00
+	"Min Radius" 0.00
+	"Max Radius" 0.00
+	"Loc unrotated?" false
+	"Velocity Min" 0.00, 0.00, 0.00
+	"Velocity Max" 0.00, 0.00, 0.00
+	"Vel unrotated?" false
+	"Min time" 1.90
+	"Max time" 2.40
+}
+ObjProp 202 "ParticleGroup"
+{
+	"Active" true
+	"Particle Render Type" "Single-colored disk"
+	"Particle Animation" "Launched continually"
+	"Particle Group Motion" "Attached to object"
+	"number of particles" 40
+	"size of particle" 0.50
+	"bitmap name" ""
+	"velocity" 0.00, 0.00, 0.00
+	"gravity vector" 0.00, 0.00, 2.00
+	"color (palettized)" 188
+	"2nd color" 0
+	"3rd color" 0
+	"alpha" 90
+	"fixed-group radius" 0.02
+	"spin / pulse group" false
+	"spin speed" 0.00, 0.00, 0.00
+	"pulse magnitude" 0.00
+	"pulse cycle time ms" 0
+	"particle fade time" 0.80
+	"launch period" 0.05
+	"animation offset ms" 0
+	"Group-scale velocity" 0.00
+	"bm-disk flags" "[None]"
+	"bm-disk birth time" 0.00
+	"bm-disk rot (vel, offs, rand)" 0.00, 0.00, 0.00
+	"bm-disk ani frame time" 0.00
+	"bm-disk grow speed" 0.00
+	"bm-disk rgb" 0, 0, 0
+	"bm-disk 2nd rgb" 0, 0, 0
+	"bm-disk 3rd rgb" 0, 0, 0
+	"always simulate (slow)" false
+	"always simulate group" false
+	"particles start launched" true
+	"alpha subpixel particles" false
+	"skip subpixel particles" false
+	"ignore attachment refs" false
+	"force matching unrefs" false
+}
++Link 1328 305 "ControlDevice"
+{
+}
+//Sarah
++ObjProp 959 "HitPoints"
+{
+	"" 1000
+}
++ObjProp 959 "MAX_HP"
+{
+	"" 1000
+}
+//Thieves
++ObjProp 1821 "AI_IgCam"
+{
+    "" true
+}
++ObjProp 1491 "AI_IgCam"
+{
+    "" true
+}
+-ObjProp 1821 "Position"
++ObjProp 1821 "Position"
+{
+	"Location" -241.3,-38.1,71.61
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+//doors
+-ObjProp 79 "TransDoor"
+-ObjProp 78 "TransDoor"
+-ObjProp 486 "PhysType"
++ObjProp 486 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 486 "Position"
++ObjProp 486 "Position"
+{
+	"Location" -125.2,-68.18,77.45
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 486 "PhysType"
++ObjProp 486 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+//fix parent key
+-Link 1485 1855 "ControlDevice"
++Link 1485 538 "ControlDevice"
+{
+}
++Link 538 1855 "ControlDevice"
+{
+}
++ObjProp 538 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 538 "TrapFlags"
+{
+	"" Once,NoOff
+}
++MetaProp 1821 -5811
++MetaProp 1491 -5811
+//bot2
++ObjProp 948 "AI_Efficiency"
+{
+	"Enabled" false
+	"Super effic. Enter dist sq." 22500.00
+	"Super effic. Enter Z" 45.00
+	"Super effic. Exit dist sq." 14400.00
+	"Super effic. Exit Z" 30.00
+	"Effic. Enter dist sq." 14400.00
+	"effic. Enter Z" 30.00
+	"Effic. Exit dist sq." 8100.00
+	"Effic. Exit Z" 20.00
+	"Flags" "[None]"
+}
++ObjProp 168 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp  168 "Position"
++ObjProp  168 "Position"
+{
+	"Location" -214.2,-53.18,48.45
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-Link 227 -2099 "Contains"
+-Link 227 -2099 "Contains"
+-ObjProp 322 "AI_IdleDirs"
+-ObjProp  1779 "Position"
++ObjProp  1779 "Position"
+{
+	"Location" -278.8,-52.53,70.2
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+//Libraray Conversation
++ObjProp 840 "Scripts"
+{
+	"Script 0" VOSounds
+}
++Link 1875 840 "ControlDevice"
+{
+}
++Link 840 -4104 "SoundDescription"
+{
+}
+//Begin Conversation
++Link 1733 -6529 "SoundDescription"
+{
+}
++Link 382 1100 "ControlDevice"
+{
+}
++Link 1100 1733 "ControlDevice"
+{
+}
++ObjProp 1100 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 1100 "ScriptTiming"
+{
+	"" 11330
+}
++ObjProp 1733 "Scripts"
+{
+	"Script 0" VOSounds
+}
++ObjProp 1797 "GameName"
+{
+}
++ObjProp 54 "NoDrop"
+{
+	"" true
+}
++ObjProp 54 "CombineType"
+{
+	"" SpellScroll
+}
++ObjProp 650 "NoDrop"
+{
+	"" true
+}
++ObjProp 650 "CombineType"
+{
+	"" SpellScroll
+}

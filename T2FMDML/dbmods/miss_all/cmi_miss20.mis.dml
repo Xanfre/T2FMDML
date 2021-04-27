@@ -1,0 +1,40 @@
+DML1
+
+//T2 FM: Chon Migoroshi by GORUGO 13 / Fix final goal
+
+FINGERPRINT
+{
+	23 [41 -66 -6]
+	85 [-11 18 -4]
+	105 [-24 -54 -7]
+	86 [-3 28 -4]
+	38 [-49 -37 -1]
+	152 [30 79 -17]
+	107 [17 71 -6]
+	143 [33 72 -19]
+	QVAR "goal_target_0" == 189
+}
+
++ObjProp 101 "Scripts"
+{
+	"Script 1" TrigDoorOpen
+}
++ObjProp 91 "Scripts"
+{
+	"Script 1" TrigDoorOpen
+}
++ObjProp 100 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++ObjProp 90 "Scripts"
+{
+	"Script 1" TrigDoorOpen
+}
++ObjProp 100 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 101 100 "ControlDevice"
+{
+}

@@ -1,0 +1,164 @@
+DML1
+
+//T2 FM: Mystery at the St. Anne Inn by Paul D Rotter (eepcat) / Fixes
+
+FINGERPRINT
+{
+	404 [130 95 -10]
+	1191 [-196 245 -55]
+	424 [-232 238 -58]
+	1277 [-374 72 -49]
+	700 [-101 -119 -22]
+	1458 [134 213 23]
+	879 [-131 218 -34]
+	1288 [-211 -3 -28]
+	QVAR "goal_target_5" == 14
+}
+
+#script "squirrel"
+
+//fix flames escaping fireplaces
+ObjProp 285 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.60
+}
+ObjProp 276 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
+ObjProp 263 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.60
+}
+ObjProp 260 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
+ObjProp 284 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.60
+}
+ObjProp 281 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
+ObjProp 303 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.60
+}
+ObjProp 300 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
+//barrels
++ObjProp 390 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.5,0.0
+}
++ObjProp 390 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 391 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.5,0.0
+}
++ObjProp 391 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 375 "DesignNote"
+{
+	"" RepositionLoc=-0.5,0.0,0.0
+}
++ObjProp 375 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 383 "DesignNote"
+{
+	"" RepositionLoc=-0.5,0.0,0.0
+}
++ObjProp 383 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1032 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,1.0
+}
++ObjProp 1032 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1410 "DesignNote"
+{
+	"" RepositionLoc=-331.614,124.452,-55.0949
+}
++ObjProp 1410 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 800 "DesignNote"
+{
+	"" RepositionLoc=-415.921,-154.434,-65.2225
+}
++ObjProp 800 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
+//prevent mantling on extendable bridge
++ObjProp 791 "PhysCanMant"
+{
+	"" false
+}
+//reposition servant
++ObjProp 1696 "Position"
+{
+	"Location" 130.411,94.7643,22.7439
+}
+//fix bush physics
++ObjProp 860 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 860 "PhysDims"
+{
+}
++ObjProp 861 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 861 "PhysDims"
+{
+}
++ObjProp 862 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 862 "PhysDims"
+{
+}
++ObjProp 863 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 863 "PhysDims"
+{
+}
++ObjProp 864 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 864 "PhysDims"
+{
+}

@@ -1,0 +1,50 @@
+DML1
+
+//T2 FM: Swamped by Aaron Lambert (Sharga) / Fixes
+
+FINGERPRINT
+{
+	585 [664 -207 25]
+	359 [753 -162 -3]
+	482 [502 -364 54]
+	643 [547 -360 63]
+	358 [727 -158 -8]
+	407 [262 -167 -22]
+	644 [488 -380 63]
+	228 [628 -61 -6]
+	QVAR "goal_target_3" == 491
+}
+
+//loot
++ObjProp 332 "Loot"
+{
+}
+//portcullis
++ObjProp 717 "PhysCanMant"
+{
+}
++ObjProp 718 "PhysCanMant"
+{
+}
++ObjProp 719 "PhysCanMant"
+{
+}
++ObjProp 742 "PhysCanMant"
+{
+}
++ObjProp 769 "PhysCanMant"
+{
+}
++ObjProp 770 "PhysCanMant"
+{
+}
+//fountain sound
++Link 686 418 "ControlDevice"
+{
+}
+//secret doors
++MetaProp 279 -2420
++MetaProp 508 -2420
++MetaProp 709 -2420
++MetaProp 715 -2420
++MetaProp 741 -2420

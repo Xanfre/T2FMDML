@@ -1,0 +1,52 @@
+DML1
+
+//T2 FM: Podroz do Krainy Biedakow by Kapitan Smith / Fixes
+
+FINGERPRINT
+{
+	747 [-100 -194 -9]
+	1751 [-259 73 -6]
+	444 [-13 -21 -5]
+	768 [-87 -179 -7]
+	1177 [-294 -33 -16]
+	491 [-91 147 -4]
+	1310 [-280 123 16]
+	776 [-122 37 -6]
+	QVAR "goal_target_3" == 1940
+}
+
++ObjProp 1577 "PickBias"
+{
+	"" 8.00
+}
++ObjProp 1574 "PickBias"
+{
+	"" 8.00
+}
++ObjProp 1578 "PickBias"
+{
+	"" 8.00
+}
++ObjProp 1581 "PickBias"
+{
+	"" 8.00
+}
++ObjProp 1580 "PickBias"
+{
+	"" 8.00
+}
++ObjProp 1579 "PickBias"
+{
+	"" 8.00
+}
++ObjProp 1805 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1805 "Position"
+{
+	"Location" -291.34,125.10,5.17
+	"Heading" 4000
+	"Bank" 4000
+}

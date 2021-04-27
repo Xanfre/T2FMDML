@@ -1,0 +1,70 @@
+DML1
+
+//T2 FM: Among Two Storms by Ali Pouladi (Haplo) / Fixes
+
+FINGERPRINT
+{
+	590 [547 551 489]
+	1182 [594 718 476]
+	1035 [600 705 495]
+	289 [602 742 475]
+	870 [569 765 474]
+	825 [554 747 476]
+	439 [591 688 481]
+	231 [680 748 473]
+	QVAR "goal_target_10" == -14
+}
+
+//mantling
++ObjProp 73 "PhysCanMant"
+{
+}
++ObjProp 83 "PhysCanMant"
+{
+}
++ObjProp 157 "PhysCanMant"
+{
+}
++ObjProp 330 "PhysCanMant"
+{
+}
++ObjProp 346 "PhysCanMant"
+{
+}
++ObjProp 347 "PhysCanMant"
+{
+}
++ObjProp 358 "PhysCanMant"
+{
+}
++ObjProp 397 "PhysCanMant"
+{
+}
++ObjProp 940 "PhysCanMant"
+{
+}
++ObjProp 941 "PhysCanMant"
+{
+}
++ObjProp 942 "PhysCanMant"
+{
+}
+//pans (kitchen)
+-ObjProp 671 "PhysType"
+ObjProp 671 "Position"
+{
+	"Location" 555.719, 741.473, 475.985
+}
++ObjProp 671 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 673 "PhysType"
+ObjProp 673 "Position"
+{
+	"Location" 554.778, 743.587, 475.965
+}
++ObjProp 673 "PhysType"
+{
+	"Type" OBB
+}

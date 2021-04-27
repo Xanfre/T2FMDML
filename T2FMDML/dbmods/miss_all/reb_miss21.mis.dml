@@ -1,0 +1,39 @@
+DML1
+
+//T2 FM: Rebel by John The Beggar / Fixes
+
+FINGERPRINT
+{
+	190 [-373 15 -29]
+	228 [-388 52 23]
+	701 [-432 161 22]
+	654 [-419 160 27]
+	555 [-407 125 10]
+	506 [-324 93 7]
+	385 [-306 115 31]
+	724 [-336 98 13]
+	QVAR "goal_target_1" == 793
+}
+
+-ObjProp 109 "FrobInfo"
+-ObjProp 134 "FrobInfo"
+-ObjProp 135 "FrobInfo"
+-ObjProp 61 "FrobInfo"
+ObjProp 5 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 7 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 518 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+ObjProp 520 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}

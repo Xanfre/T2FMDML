@@ -1,0 +1,15 @@
+DML1
+
+//T2 FM: The Curse by Daniel Markarian (Ramirez's Old Fat Burrick) / Zombie Fix
+
+FINGERPRINT
+{
+	NAME -7536 "t_fam/KEEPER/KWGRAINA"
+	NAME -7534 "t_fam/VicM09/wall03bo"
+}
+
+ObjProp -5433 "PhysExplode"        
+{
+	"Magnitude" 400
+	"Radius (squared)" 2000
+}

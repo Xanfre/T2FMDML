@@ -1,0 +1,86 @@
+DML1
+
+//T2 FM: Bloodsport by Metalhead / Fix loot
+
+FINGERPRINT
+{
+	1420 [-115 -225 1]
+	1339 [-32 -382 14]
+	1682 [-44 -38 -18]
+	1140 [-16 -298 14]
+	1544 [-33 82 -18]
+	1020 [-97 -278 -28]
+	412 [-33 -183 12]
+	431 [0 -189 17]
+	QVAR "goal_target_9" == 1673
+}
+
++ObjProp 803 "Loot"
+{
+	"Gold" 0
+	"Gems" 700
+	"Art" 350
+}
++ObjProp 1052 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1052 "PhysControl"
++ObjProp 1053 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1053 "PhysControl"
++ObjProp 1054 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1054 "PhysControl"
++ObjProp 1052 "Position"
+{
+	"Location" -4.12, -352.6, 14.8
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1053 "Position"
+{
+	"Location" -4.4, -352.6, 14.8
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1054 "Position"
+{
+	"Location" -4.45, -352.5, 14.8
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 858 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 859 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 858 "Position"
+{
+	"Location" -25.75, -37.6, -6.94
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 859 "Position"
+{
+	"Location" -25.23, -37.96, -6.94
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

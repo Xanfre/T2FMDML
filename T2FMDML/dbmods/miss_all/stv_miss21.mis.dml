@@ -1,0 +1,87 @@
+DML1
+
+//T2 FM: Sneaking Through Venice by Naks / Fixes
+
+FINGERPRINT
+{
+	421 [141 117 78]
+	274 [131 116 86]
+	294 [112 62 105]
+	205 [148 61 106]
+	240 [141 90 79]
+	330 [100 111 86]
+	238 [134 70 87]
+	252 [104 187 88]
+	QVAR "goal_target_1" == 275
+}
+
+-ObjProp 162 "PhysType"
++ObjProp 162 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 162 "Position"
++ObjProp 162 "Position"
+{
+	"Location" 100.6,110.43,81.88
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 163 "PhysType"
++ObjProp 163 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 163 "Position"
++ObjProp 163 "Position"
+{
+	"Location" 103.38,109.64,81.88
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 164 "PhysType"
++ObjProp 164 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 164 "Position"
++ObjProp 164 "Position"
+{
+	"Location" 107.08,110.18,81.88
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 165 "PhysType"
++ObjProp 165 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 165 "Position"
++ObjProp 165 "Position"
+{
+	"Location" 104.36,111.3,81.58
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 166 "PhysType"
++ObjProp 166 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 166 "Position"
++ObjProp 166 "Position"
+{
+	"Location" 109.38,110.0,81.58
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

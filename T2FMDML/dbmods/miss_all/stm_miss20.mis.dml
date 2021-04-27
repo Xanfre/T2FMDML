@@ -1,0 +1,147 @@
+DML1
+
+//T2 FM: Strange Meeting by Sven Grunig (Ar-Zimrathon) / Fixes
+
+FINGERPRINT
+{
+	188 [-52 22 -4]
+	224 [-69 11 2]
+	313 [-23 5 -6]
+	321 [8 -4 -7]
+	73 [-55 29 -24]
+	272 [-8 14 19]
+	37 [-41 -9 -20]
+	58 [-43 -1 -9]
+	QVAR "goal_target_0" == 372
+}
+
++Receptron 129 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -3306
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -62.3167,24.203,-29.731
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 129 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 135 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 135 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 80 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -1380
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -55.5177,-13.6047,-23.7731
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 80 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 102 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 102 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+-ObjProp 285 "Position"
++ObjProp 285 "Position"
+{
+	"Location" -7.87865,6.96023,-14.2818
+}
+-ObjProp 286 "Position"
++ObjProp 286 "Position"
+{
+	"Location" -7.5741,4.08057,-12.9568
+}
+-ObjProp 290 "Position"
++ObjProp 290 "Position"
+{
+	"Location" -7.37805,5.31999,-20.8001
+}
++ObjProp 285 "HasRefs"
+{
+	"" false
+}
++ObjProp 286 "HasRefs"
+{
+	"" false
+}
++ObjProp 290 "HasRefs"
+{
+	"" false
+}
+-ObjProp 374 "Position"
++ObjProp 374 "Position"
+{
+	"Location" -1.3575,-3.34715,-3.15864
+}

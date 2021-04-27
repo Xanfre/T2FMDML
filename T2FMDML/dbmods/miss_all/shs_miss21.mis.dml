@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Shining Standards by Aaron Pettett (Spanker) / Fixes
+
+FINGERPRINT
+{
+	306 [27 -523 -34]
+	246 [-15 -504 -43]
+	386 [-29 -529 -20]
+	242 [201 -294 -115]
+	492 [-146 -466 -124]
+	203 [14 -243 -78]
+	193 [-6 -542 -63]
+	379 [10 -187 -39]
+	QVAR "goal_target_0" == 452
+}
+
++ObjProp 182 "Locked"
+{
+	"" false 
+}

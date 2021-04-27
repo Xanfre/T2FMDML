@@ -1,0 +1,341 @@
+DML1
+
+//T2 FM: Five Tigers: HBS Iron Butterfly by W. Scott Thune (Catman) / Fixes
+
+FINGERPRINT
+{
+	948 [187 -45 -54]
+	1705 [-44 -118 -112]
+	1168 [6 196 -96]
+	1817 [-52 130 -56]
+	1446 [-131 233 -93]
+	620 [47 -147 -61]
+	1285 [-26 11 -86]
+	1695 [-20 -146 -111]
+	QVAR "goal_target_11" == 1712
+}
+
+#script "script-t2"
+#script "nvscript"
+
++ObjProp 863 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 911 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 928 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 912 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 927 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 2068 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2068 "Position"
+{
+	"Location" -37.9962,-130.005,-41.875
+}
++ObjProp 2070 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2070 "Position"
+{
+	"Location" -40.9962,-130.005,-41.875
+}
++ObjProp 2071 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2071 "Position"
+{
+	"Location" -38.9962,-130.005,-41.875
+}
+-Link 1711 2813 "ControlDevice"
++ObjProp 1711 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="G13Trig"; NVRemovePropertyTrapProp="FrobInfo"
+}
+ObjProp 1711 "Scripts"
+{
+	"Script 0" TrigContained
+	"Script 1" NVRemovePropertyTrap
+}
+Create -36 "Goal13Fix"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVTrigQVarTDest="[me]"; NVRelayTrapTDest=1711; NVRelayTrapTOn="G13Trig"
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrigQVar
+		"Script 1" NVRelayTrap
+		"Script 2" TrapMetaProp
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =1:goal_visible_13
+	}
+}
++Link "Goal13Fix" 1711 "ScriptParams"
+{
+	"" aFrobInert
+}
+Create -36 "Goal7Fix"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVTrigQVarTDest="[me]"; NVRelayTrapTDest="Goal11Trap"
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrigQVar
+		"Script 1" TrapMetaProp
+		"Script 2" NVRelayTrap
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =1:goal_state_7
+	}
+}
++Link "Goal7Fix" 1716 "ScriptParams"
+{
+	"" aFrobInert
+}
+Create -36 "Goal11Trap"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVRelayTrapTDest="Goal11Check"
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrapSetQVar
+		"Script 1" NVRelayTrap
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =1:goal_state_11
+	}
+}
+Create -36 "Goal11Check"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrapSetQVar
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =mission_complete:goal_state_11
+	}
+}
+Create -36 "MCTrig"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVTrigQVarTDest="[me]"; NVRelayTrapTDest="Goal11Targ"
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrigQVar
+		"Script 1" NVRelayTrap
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =1:mission_complete
+	}
+}
+Create -1823 "Goal11Targ"
+{
+	+ObjProp "TrapQVar"
+	{
+		"" =0:goal_target_11
+	}
+}
++ObjProp 2805 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2806 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1717 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1731 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1726 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1722 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1724 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1734 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1732 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1736 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1739 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1740 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1751 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1754 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1744 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1743 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1743 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1743 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1742 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1746 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1274 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1288 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1285 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1298 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1294 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1295 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1296 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1270 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1271 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1272 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1273 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1266 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1267 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1280 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1282 "BlockFrob"
+{
+	"" true
+}
++ObjProp 635 "BlockFrob"
+{
+	"" true
+}
++ObjProp 636 "BlockFrob"
+{
+	"" true
+}
++ObjProp 637 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2287 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2288 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2290 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2291 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2292 "BlockFrob"
+{
+	"" true
+}

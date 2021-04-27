@@ -1,0 +1,41 @@
+DML1
+
+//T2 FM: The WaterWay Tunnel part 2 by Jan Hladík (Yohny C. Liar) / Fix arrow and equipment objective
+
+FINGERPRINT
+{
+	432 [112 244 -6]
+	296 [68 251 -13]
+	44 [12 171 -7]
+	468 [115 185 -13]
+	829 [100 188 -1]
+	746 [12 135 -40]
+	305 [64 253 -13]
+	818 [171 284 -13]
+	QVAR "goal_target_0" == 862
+}
+
++ObjProp 488 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 455 "Scripts"
+{
+	"Script 1" TrigWorldFrob
+}
++ObjProp 488 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++Link 455 488 "ControlDevice"
+{
+}
++ObjProp 455 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+-ObjProp 383 "FrobInfo"
++ObjProp 383 "FrobInfo"
+{
+	"World Action" Move,Script
+} 

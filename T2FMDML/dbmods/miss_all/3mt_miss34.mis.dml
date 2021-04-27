@@ -1,0 +1,65 @@
+DML1
+
+//T2 FM: Three Mages Tomb (Skully Demo) by J. Knez (Schwaa) / Fixes
+
+FINGERPRINT
+{
+	236 [23 -13 -13]
+	76 [-94 106 3]
+	160 [-62 28 11]
+	250 [22 31 -13]
+	99 [-103 40 7]
+	228 [6 7 3]
+	321 [22 97 5]
+	259 [43 36 -16]
+	QVAR "goal_target_3" == 200
+}
+
+//goals
++ObjProp 296 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 313 "TrapFlags"
+{
+	"" Once,NoOff
+}
+//rubies
++ObjProp 110 "CombineType"
+{
+	"" DeathRuby
+}
++ObjProp 110 "StackCount"
+{
+	"" 1
+}
++ObjProp 111 "CombineType"
+{
+	"" DeathRuby
+}
++ObjProp 111 "StackCount"
+{
+	"" 1
+}
++ObjProp 112 "CombineType"
+{
+	"" DeathRuby
+}
++ObjProp 112 "StackCount"
+{
+	"" 1
+}
+//skeleton
++ObjProp 166 "FrobInfo"
+{
+}
+//portcullis
++ObjProp 12 "FrobInfo"
+{
+}
++ObjProp 199 "FrobInfo"
+{
+}

@@ -1,0 +1,73 @@
+DML1
+
+//T2 FM: Mysterious Invitation by PsymH / Fixes
+
+FINGERPRINT
+{
+	913 [-45 300 14]
+	687 [-169 354 -3]
+	2011 [-62 121 32]
+	1995 [50 86 32]
+	946 [30 111 11]
+	441 [-122 307 -2]
+	1002 [57 285 -2]
+	1749 [69 187 12]
+	QVAR "goal_target_6" == 2990
+}
+
+-ObjProp 1641 "PhysType"
++ObjProp 1641 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1641 "PhysControl"
++ObjProp 1641 "Position"
+{
+	"Location" 7.378, 33.815, 34.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
+-ObjProp 608 "PhysType"
++ObjProp 608 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 608 "PhysControl"
++ObjProp 608 "Position"
+{
+	"Location" 221.37, 597.7, -74.31
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
+-ObjProp 792 "PhysType"
++ObjProp 792 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 792 "PhysControl"
++ObjProp 792 "Position"
+{
+	"Location" -89.52, 328.21, 13.925
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 4000 
+}
+-ObjProp 1326 "PhysType"
++ObjProp 1326 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1326 "PhysControl"
++ObjProp 1326 "Position"
+{
+	"Location" -7.27, 33.815, 34.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}

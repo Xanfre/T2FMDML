@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: After Dark by Shadowhide / Fixes
+
+FINGERPRINT
+{
+	NAME -9053 "t_fam/vmaw/tergrass"
+	NAME -9792 "WomanRing"
+}
+
+-ObjProp -1450 "FrobInfo"
+//mantling
++ObjProp -1430 "PhysCanMant"
+{
+}
++ObjProp -2550 "PhysCanMant"
+{
+}
++ObjProp -2551 "PhysCanMant"
+{
+}

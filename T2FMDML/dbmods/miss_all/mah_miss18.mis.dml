@@ -1,0 +1,88 @@
+DML1
+
+//T2 FM: Mad as a Hatter by Triksta / Fixes
+
+FINGERPRINT
+{
+	1309 [-37 -11 -51]
+	1258 [57 1 -19]
+	1653 [-4 78 11]
+	250 [-58 69 -55]
+	1018 [-34 73 9]
+	1205 [-23 -11 12]
+	1420 [131 47 14]
+	1269 [47 -19 -18]
+	QVAR "goal_target_3" == 874
+}
+
+#script "nvscript"
+
+//goals
++ObjProp 91 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 91 1380 "ControlDevice"
+{
+}
++ObjProp 1380 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1380 "TrapQVar"
+{
+	"" =1:goal_reverse_5
+}
++Receptron 69 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 1705 "DesignNote"
+{
+	"" NVRelayTrapTDest=69; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapTCount=1
+}
++ObjProp 1705 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+//painting
+ObjProp 141 "TransDoor"
+{
+	"Open Position" -3.25
+}
++ObjProp 141 "BlockFrob"     
+{
+	"" true
+}
+//door scroll
+ObjProp 733 "Position"
+{
+	"Location" -63.75, -6.6, -50.985
+}
++ObjProp 733 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++Link 866 733 "ControlDevice"
+{
+}
++ObjProp 866 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
+//doors
+ObjProp 1002 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 1266 "RotDoor"
+{
+	"Open Angle" 271
+}

@@ -1,0 +1,22 @@
+DML1
+
+//T2 FM: Snobs part 1 by Naks / Fix the goblet
+
+FINGERPRINT
+{
+	272 [112 111 108]
+	369 [95 59 105]
+	1153 [84 110 87]
+	564 [235 55 83]
+	880 [213 93 95]
+	779 [196 -121 83]
+	424 [233 80 104]
+	1243 [180 -35 65]
+	QVAR "goal_target_0" == 1151
+}
+
++ObjProp 695 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

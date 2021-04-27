@@ -1,0 +1,18 @@
+DML1
+
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fix gem objective
+
+FINGERPRINT
+{
+	1247 [9 -74 71]
+	1428 [94 37 78]
+	646 [-427 -12 67]
+	910 [-162 52 85]
+	1022 [-189 51 81]
+	1876 [-170 90 84]
+	1701 [-142 -188 88]
+	1858 [-161 -217 88]
+	QVAR "goal_target_0" == 1998
+}
+
+-Link 1348 1341 "ControlDevice"

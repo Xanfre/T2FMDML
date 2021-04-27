@@ -1,0 +1,29 @@
+DML1
+
+//T2 FM: Greyfeather Gems - Part 2: Rodamill by Maria Ström (Morrgan) / Fix safe
+
+FINGERPRINT
+{
+	1996 [26 271 9]
+	844 [-81 253 26]
+	1848 [-166 301 30]
+	1684 [1 75 15]
+	1507 [-75 263 32]
+	882 [-39 499 15]
+	2374 [-119 242 20]
+	1905 [-64 90 24]
+	QVAR "goal_target_2" == 1973
+}
+
++ObjProp 1362 "BlockFrob"   
+{
+	"" true
+}
+-Link 1902 610 "ControlDevice"
+-Link 1901 613 "ControlDevice"
++Link 1362 610 "Contains"
+{   
+}
++Link 1362 613 "Contains"
+{   
+}

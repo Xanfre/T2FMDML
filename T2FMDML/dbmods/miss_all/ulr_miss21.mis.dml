@@ -1,0 +1,93 @@
+DML1
+
+//T2 FM: Ultima Ratio by PsymH / Fixes
+
+FINGERPRINT
+{
+	1284 [130 249 -37]
+	1062 [118 400 -45]
+	2065 [159 355 -33]
+	677 [-110 727 -57]
+	423 [-82 75 -42]
+	752 [-82 650 -66]
+	580 [-169 183 -26]
+	1737 [-314 -197 -34]
+	QVAR "goal_target_3" == 2415
+}
+
+#script "nvscript"
+
+-ObjProp 2461 "Scripts"
+-ObjProp 2475 "Scripts"
+ObjProp 759 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 756 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
+ObjProp 757 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 2.00
+}
++ObjProp 2389 "RenderAlpha"
+{
+	"" 0.00
+}
++MetaProp 2389 -1629
++ObjProp 1495 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1914 "Position"
+{
+	"Location" -319.495,363.534,-46.0968
+}
+Create -50 "TrapSecretL1"
+{
+}
+Create -50 "TrapSecretL2"
+{
+}
+-ObjProp 2930 "DarkStat"
+ObjProp 2930 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 2930 "DesignNote"
+{
+	"" NVRelayTrapTDest="TrapSecretL1"; NVRelayTrapOn="Contained"; NVRelayTrapOff="Null"
+}
+-ObjProp 2931 "DarkStat"
+ObjProp 2931 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 2931 "DesignNote"
+{
+	"" NVRelayTrapTDest="TrapSecretL2"; NVRelayTrapOn="Contained"; NVRelayTrapOff="Null"
+}
++ObjProp 495 "Position"
+{
+	"Location" 206.38,-216.764,-62.5911
+	"Bank" e24
+}
++ObjProp 494 "Position"
+{
+	"Location" 227.363,-229.314,-66.0871
+	"Pitch" fe3c
+	"Bank" 9ac
+}
++ObjProp 1832 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1832 "Position"
+{
+	"Location" -275.406,376.469,-48.3191
+	"Bank" 4000
+}

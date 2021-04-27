@@ -1,0 +1,24 @@
+DML1
+
+//T2 FM: The Night I Ghosted Berkshead by Tim Murray (Gumdrop) / Fixes
+
+FINGERPRINT
+{
+	280 [-34 133 0]
+	295 [19 89 2]
+	149 [-3 31 0]
+	141 [-38 80 2]
+	72 [-45 60 -13]
+	216 [-32 138 3]
+	138 [-3 33 0]
+	70 [-50 80 -10]
+	QVAR "goal_target_0" == 253
+}
+
+//loot
++ObjProp 353 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

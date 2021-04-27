@@ -1,0 +1,227 @@
+DML1
+
+//T2 FM: Treason and Plot by Nick Dablin (nicked) / Fix barrels and other issues
+
+FINGERPRINT
+{
+	329 [-68 21 -51]
+	91 [-68 34 -34]
+	118 [-114 -59 -47]
+	359 [-48 -8 -40]
+	42 [-21 35 -51]
+	266 [-55 11 -54]
+	368 [-62 29 -54]
+	237 [-68 -17 -57]
+	QVAR "goal_target_0" == 344
+}
+
++Receptron 466 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -453
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -178.43, -26.53, -27.64
+		"Heading" 270
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 466 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 62 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 62 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 195 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 195 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 196 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 196 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 239 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 239 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 242 "BlockFrob"        
+{
+	"" true
+}
+-ObjProp 491 "Position"
++ObjProp 491 "Position"
+{
+	"Location" -71.34,45.53,-55.47
+	"Heading" 0
+	"Bank" 0
+}
+//Create
++Receptron 185 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -125.93, -1.64, -40.55
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 185 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 602 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -121.88, -5.84, -40.5
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 602 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 215 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -105.0, 13.29, -54.5
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 215 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+-MetaProp 491 -2886
++MetaProp 491 -5697

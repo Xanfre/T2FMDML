@@ -1,0 +1,379 @@
+DML1
+
+//T2 FM: Bane 2 - Cult of the Damned by The Immortal Thief / Fixes
+
+FINGERPRINT
+{
+	911 [430 281 496]
+	876 [501 269 498]
+	1708 [410 587 484]
+	1629 [501 528 514]
+	513 [501 552 517]
+	1107 [611 357 556]
+	691 [493 250 532]
+	1350 [574 237 510]
+	QVAR "goal_target_0" == 1215
+}
+
+#script "squirrel"
+
++ObjProp 1133 "Scripts"
+{
+	"Script 0" TrapFindSecret
+}
++Link 1915 1133 "ControlDevice"
+{
+}
++ObjProp 1133 "DarkStat"
+{
+	"" Hidden
+}
++ObjProp 1727 "DesignNote"
+{
+   "" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 1727 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2102 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2102 "Position"
+{
+	"Location" 608.7,611.862,501.204
+}
++ObjProp 457 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1760 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 459 "DesignNote"
+{
+	"" RepositionLoc=390.37,541.694,506.883
+}
++ObjProp 459 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1558 "DesignNote"
+{
+	"" RepositionLoc=0.0,1.0,0.0
+}
++ObjProp 1558 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1559 "DesignNote"
+{
+	"" RepositionLoc=461.661,316.948,497.861; RepositionDir=0.0,0.0,0.0
+}
++ObjProp 1559 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 963 "Scale"
+{
+	"" 0.9,0.9,0.9
+}
++ObjProp 963 "DesignNote"
+{
+	"" RepositionLoc=444.966,288.021,497.491
+}
++ObjProp 963 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 964 "Scale"
+{
+	"" 0.7,0.7,0.7
+}
++ObjProp 964 "DesignNote"
+{
+	"" RepositionLoc=444.94,286.278,497.291
+}
++ObjProp 964 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 824 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,0.0
+}
++ObjProp 824 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 762 "Position"
+{
+	"Location" 477.315,353.768,497.699
+}
++ObjProp 1228 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1228 "Position"
+{
+	"Location" 483.862,322.589,542.155
+}
++ObjProp 233 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 233 "Position"
+{
+	"Location" 482.285,323.925,542.175
+	"Pitch" 4000
+}
++ObjProp 1724 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1724 "Position"
+{
+	"Location" 448.401,423.863,494.42
+	"Bank" 1000
+}
++ObjProp 1729 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1729 "Position"
+{
+	"Location" 450.464,423.415,493.485
+	"Bank" 1000
+}
+ObjProp 947 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
++ObjProp 1597 "DesignNote"
+{
+	"" RepositionLoc=0.0,-1.0,0.0
+}
++ObjProp 1597 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1869 "DesignNote"
+{
+	"" RepositionLoc=428.239,557.235,478.125
+}
++ObjProp 1869 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1870 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 1870 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 611 "DesignNote"
+{
+	"" RepositionLoc=501.73,603.97,496.735
+}
++ObjProp 611 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 612 "DesignNote"
+{
+	"" RepositionLoc=502.544,607.594,495.675
+}
++ObjProp 612 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 613 "DesignNote"
+{
+	"" RepositionLoc=499.688,607.553,495.675
+}
++ObjProp 613 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 614 "DesignNote"
+{
+	"" RepositionLoc=497.025,607.648,495.835
+}
++ObjProp 614 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1728 "DesignNote"
+{
+	"" RepositionLoc=0.0,1.0,0.0
+}
++ObjProp 1728 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 266 "DesignNote"
+{
+	"" RepositionLoc=585.451,621.082,501.163
+}
++ObjProp 266 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 264 "DesignNote"
+{
+	"" RepositionLoc=581.756,620.676,501.858
+}
++ObjProp 264 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 256 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.5,0.0
+}
++ObjProp 256 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 263 "DesignNote"
+{
+	"" RepositionLoc=0.7,1.0,0.0
+}
++ObjProp 263 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 532 "DesignNote"
+{
+	"" RepositionLoc=3.5,-0.7,0.2
+}
++ObjProp 532 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 534 "DesignNote"
+{
+	"" RepositionLoc=-1.0,1.0,0.0
+}
++ObjProp 534 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 533 "DesignNote"
+{
+	"" RepositionLoc=0.5,0.0,0.0
+}
++ObjProp 533 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 536 "DesignNote"
+{
+	"" RepositionLoc=2.0,0.0,0.0
+}
++ObjProp 536 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1713 "DesignNote"
+{
+	"" RepositionLoc=-1.0,1.0,0.0
+}
++ObjProp 1713 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 552 "DesignNote"
+{
+	"" RepositionLoc=503.746,552.846,493.75
+}
++ObjProp 552 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 557 "DesignNote"
+{
+	"" RepositionLoc=507.172,552.155,493.75
+}
++ObjProp 557 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 558 "DesignNote"
+{
+	"" RepositionLoc=510.871,553.142,493.75
+}
++ObjProp 558 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1596 "DesignNote"
+{
+	"" RepositionLoc=-3.0,-0.5,0.0
+}
++ObjProp 1596 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1730 "DesignNote"
+{
+	"" RepositionLoc=1.5,-1.0,1.0
+}
++ObjProp 1730 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1731 "DesignNote"
+{
+	"" RepositionLoc=1.5,8.0,1.0
+}
++ObjProp 1731 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1566 "DesignNote"
+{
+	"" RepositionLoc=0.0,1.0,0.0
+}
++ObjProp 1566 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1567 "DesignNote"
+{
+	"" RepositionLoc=-1.0,1.0,0.0
+}
++ObjProp 1567 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+-ObjProp 1855 "Scale"
++ObjProp 1855 "DesignNote"
+{
+	"" RepositionLoc=372.535,493.955,500.481
+}
++ObjProp 1855 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1560 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1560 "Position"
+{
+	"Location" 466.063,317.5,497.406
+}

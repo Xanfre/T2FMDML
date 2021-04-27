@@ -1,0 +1,51 @@
+DML1
+
+//T2 FM: The Creepy Temple by P Forth / Fixes
+
+FINGERPRINT
+{
+	357 [351 118 488]
+	589 [511 402 585]
+	281 [379 138 496]
+	231 [323 140 488]
+	239 [470 96 502]
+	319 [391 101 499]
+	434 [476 195 442]
+	380 [391 262 534]
+	QVAR "goal_target_2" == 430
+}
+
+//chest
+-ObjProp 137 "PhysType"
+ObjProp 137 "Position"
+{
+	"Location" 407.49, 201.85, 496.18
+}
++ObjProp 137 "PhysType"
+{
+	"Type" OBB
+}
+//loot
++ObjProp 152 "Loot"
+{
+}
++ObjProp 523 "Loot"
+{
+}
++ObjProp 524 "Loot"
+{
+}
+//doors
++ObjProp 581 "FrobInfo"
+{
+}
++ObjProp 644 "FrobInfo"
+{
+}
++ObjProp 645 "FrobInfo"
+{
+}
+//gold skull (junk)
++ObjProp 828 "InvType"
+{
+}

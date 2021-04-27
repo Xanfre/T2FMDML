@@ -1,0 +1,67 @@
+DML1
+
+//T2 FM: The Seven Sisters by Lady Rowena / Fixes
+
+FINGERPRINT
+{
+	791 [-67 -161 -14]
+	2398 [-150 -256 -11]
+	779 [-67 -457 -6]
+	252 [-112 -366 -6]
+	1964 [-471 -170 -9]
+	2284 [10 -335 -44]
+	857 [-392 -272 -39]
+	2337 [-74 -50 -31]
+	QVAR "goal_target_8" == -6843
+}
+
+#script "squirrel"
+
++ObjProp 2640 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 2641 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 2527 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2527 "DesignNote"
+{
+	"" RepositionLoc="0,0,-0.1"
+}
++ObjProp 2528 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2528 "DesignNote"
+{
+	"" RepositionLoc="0,0,-0.1"
+}
++ObjProp 2529 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2529 "DesignNote"
+{
+	"" RepositionLoc="0,0,-0.1"
+}
++ObjProp 2530 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2530 "DesignNote"
+{
+	"" RepositionLoc="0,0,-0.1"
+}
++ObjProp 1696 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1696 "DesignNote"
+{
+	"" RepositionLoc="-368.579,-167.356,-27.4083"
+}

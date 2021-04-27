@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: The Mask of Agamemnon by Russ Robbins (Yandros) / Fix mantling
+
+FINGERPRINT
+{
+	663 [409 55 232]
+	228 [376 92 202]
+	148 [320 92 232]
+	329 [343 43 253]
+	568 [297 7 231]
+	586 [217 9 263]
+	404 [207 128 187]
+	396 [168 158 200]
+	QVAR "goal_target_0" == 559
+}
+
++ObjProp 224 "PhysCanMant"
+{
+	"" false
+}

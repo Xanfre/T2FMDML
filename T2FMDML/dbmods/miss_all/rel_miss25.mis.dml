@@ -1,0 +1,75 @@
+DML1
+
+//T2 FM: The Relic (Contest 5) by Timon / Fix a hidden loot objective
+
+FINGERPRINT
+{
+	1292 [93 156 91]
+	123 [77 78 95]
+	1110 [45 58 94]
+	363 [96 89 92]
+	1232 [110 116 99]
+	383 [107 81 94]
+	1046 [127 100 94]
+	1157 [127 95 121]
+	QVAR "goal_target_3" == 1031
+}
+
+#script "tnhscript"
+
++ObjProp 1151 "DiffScript"   
+{
+	"quest var values" 0,1,2
+}
++ObjProp 1151 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1151 "TrapQVar"
+{
+	"" =3:goal_type_11
+}
++ObjProp 59 "TrapQVar"
+{
+	"" =1:goal_visible_11
+}
++Link 1151 59 "ControlDevice"
+{
+}
++ObjProp 59 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 55 "Scripts"
+{
+	"Script 2" TrapSetQVar
+}
++ObjProp 55 "TrapQVar"
+{
+	"" =1:goal_state_11
+}
++Link 1151 55 "ControlDevice"
+{
+}
++ObjProp 506 "TrapQVar"
+{
+	"" =3888:goal_loot_11
+}
++ObjProp 506 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 43 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 43 506 "ControlDevice"
+{
+}
++Link 43 1151 "ControlDevice"
+{
+}
++ObjProp 339 "Scripts"
+{
+	"Script 2" LootStats
+}

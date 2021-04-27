@@ -1,0 +1,76 @@
+DML1
+
+//T2 FM: Plagiarism (Contest 5) by Genie_bottle / Fixes
+
+FINGERPRINT
+{
+	586 [342 401 383]
+	673 [385 448 386]
+	444 [395 428 388]
+	253 [410 394 374]
+	698 [414 447 404]
+	794 [373 455 396]
+	508 [330 489 387]
+	560 [393 457 385]
+	QVAR "goal_target_0" == 651
+}
+
+//goal 9 (expert)
++ObjProp 19 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 19 380 "ControlDevice"
+{
+}
++ObjProp 380 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 380 "TrapQVar"
+{
+	"" =1:goal_reverse_9
+}
+//doors
+-ObjProp 156 "JointPos"
+-ObjProp 187 "JointPos"
+-ObjProp 399 "JointPos"
+-ObjProp 498 "JointPos"
+-ObjProp 509 "JointPos"
++Link 138 145 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 345 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
++ObjProp 562 "BlockFrob"
+{
+	"" true
+}
++ObjProp 563 "BlockFrob"
+{
+	"" true
+}
++ObjProp 564 "BlockFrob"
+{
+	"" true
+}
+//switch
+ObjProp 81 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 81 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+//junk
++ObjProp 476 "InvType"
+{
+}

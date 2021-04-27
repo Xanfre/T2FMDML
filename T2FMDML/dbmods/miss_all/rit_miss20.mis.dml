@@ -1,0 +1,60 @@
+DML1
+
+//T2 FM: The Ritual by Twisty / Fix Merimee
+
+FINGERPRINT
+{
+	769 [56 111 -60]
+	1293 [12 116 -72]
+	1288 [-80 339 -48]
+	797 [114 53 -71]
+	558 [201 119 -86]
+	270 [155 -8 -17]
+	795 [114 73 -71]
+	1028 [-162 266 -71]
+	QVAR "goal_target_0" == 973
+}
+
++ObjProp 208 "ScriptTiming"
+{
+	"" 2000
+}
++ObjProp 208 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 450 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++Link 182 208 "ControlDevice"
+{
+}
++ObjProp 1190 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 1190 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 182 1190 "ControlDevice"
+{
+}
++Link 208 450 "ControlDevice"
+{
+}
++Link 450 182 "ControlDevice"
+{
+}
++Link 1190 1214 "ControlDevice"
+{
+}
+-ObjProp 465 "Position"
++ObjProp 465 "Position"
+{
+	"Location" 251.2,154.66,-67.16
+	"Heading" 0
+	"Bank" 0
+}
+-Link 1212 1214 "ControlDevice"

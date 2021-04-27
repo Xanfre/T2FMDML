@@ -1,0 +1,108 @@
+DML1
+
+//T2 FM: TTGM: Chasm of the Lost by Steven Hindley (Belboz) / Fix switch and floating keys
+
+FINGERPRINT
+{
+	1415 [304 199 8]
+	219 [-96 118 4]
+	476 [8 154 19]
+	357 [130 91 22]
+	1418 [172 150 8]
+	505 [-5 129 21]
+	2163 [-132 -150 21]
+	1076 [-64 -151 19]
+	QVAR "goal_target_7" == 123
+}
+
+#script "nvscript"
+
++ObjProp 2134 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2134 "Position"
+{
+	"Location" -2.04, 4.05, 0.11
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0  
+}
+ObjProp 208 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 208 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}
+ObjProp 1707 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 1707 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}
+ObjProp 1709 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 1709 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}
+ObjProp 1711 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 1711 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}
++ObjProp 2155 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 2155 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}
++ObjProp 2157 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 2157 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}
++ObjProp 2159 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVGibTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 2159 "DesignNote"         
+{
+	"" NVGibTrapOn="Slain"
+}

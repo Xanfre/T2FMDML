@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Lord Burkhard by Gilbert Gradl (Master) / Fix inability to save
+
+FINGERPRINT
+{
+	62 [24 57 -22]
+	187 [-4 141 -21]
+	66 [22 65 -19]
+	108 [-9 109 -19]
+	78 [-4 111 -21]
+	101 [19 114 -19]
+	113 [16 102 -7]
+	160 [19 129 -7]
+	QVAR "goal_target_1" == 199
+}
+
+TagBlock "DARKMISS"
+{
+	"Mission Number" 20
+}

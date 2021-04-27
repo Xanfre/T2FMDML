@@ -1,0 +1,144 @@
+DML1
+
+//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fixes
+
+FINGERPRINT
+{
+	620 [-108 115 -4]
+	802 [-36 -83 4]
+	1184 [-128 -52 14]
+	1487 [-45 0 1]
+	979 [-36 -88 12]
+	663 [-75 156 -6]
+	1309 [-121 175 22]
+	223 [-190 175 43]
+	QVAR "goal_target_3" == 218
+}
+
+#script "nvscript"
+
+-ObjProp 970 "Position"
++ObjProp 970 "Position"
+{
+	"Location" -4.9529,-74.5043,-6.30267
+	"Heading" f300
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 592 "Position"
++ObjProp 592 "Position"
+{
+	"Location" 49.4937,-86.128,9.6259
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 344 "Position"
++ObjProp 344 "Position"
+{
+	"Location" -65.2507,85.1957,-2.22392
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 575 "Position"
++ObjProp 575 "Position"
+{
+	"Location" -74.216,83.2506,-2.22392
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+ObjProp 994 "AI_ObjAvoid"
+{
+	"Flags" Block pathfind,Repel
+}
+ObjProp 993 "AI_AlrtRsp"
+{
+	"Alert level" "(2) Moderate"
+	"Priority" "Default/None"
+	"Response: Step 1" "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1" "Remove"
+	"   Argument 2" "M-SittingSleeper"
+	"   Argument 3" "993"
+	"Response: Step 2" "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[1] "toleveltwo"
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[2] "991"
+	"   Argument 2"[2] "Very Fast"
+	"   Argument 3"[2] ""
+}
++ObjProp 663 "HasRefs"
+{
+	"" false
+}
++Link 663 691 "ControlDevice"
+{
+}
+-ObjProp 669 "Position"
++ObjProp 669 "Position"
+{
+	"Location" -78.927,162.675,-6
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+ObjProp 661 "RotDoor"
+{
+	"Open Angle" 271.00
+}
++ObjProp 164 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 531 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 908 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 911 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 913 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 399 "Scripts"
+{
+	"Script 0" TrigOBBPlayer
+}
+-Link 1331 1565 "ScriptParams"
+-Link 1331 1330 "ControlDevice"
+-Link 1565 1330 "ControlDevice"
++ObjProp 1331 "DesignNote"
+{
+	"" NVRelayTrapTDest=1330; NVRelayTrapOn="DoorOpening"; NVRelayTrapOff="DoorClosing"
+}
+ObjProp 1331 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 1565 "DesignNote"
+{
+	"" NVRelayTrapTDest=1330; NVRelayTrapOn="DoorOpening"; NVRelayTrapOff="DoorClosing"
+}
+ObjProp 1565 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}

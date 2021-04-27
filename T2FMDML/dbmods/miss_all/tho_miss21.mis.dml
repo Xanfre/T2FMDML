@@ -1,0 +1,115 @@
+DML1
+
+//T2 FM: Thork by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	1052 [-595 418 -193]
+	1411 [-128 459 -28]
+	543 [-101 445 -36]
+	982 [-707 436 -116]
+	1125 [113 113 87]
+	494 [216 423 -24]
+	233 [106 113 87]
+	1132 [-18 141 77]
+	QVAR "goal_target_8" == 830
+}
+
+#script "squirrel"
+
++ObjProp 1145 "Scale"
+{
+	"" 0.9,0.9,1
+}
+ObjProp 850 "Scripts"
+{
+	"Script 1" SimRepositionAbs
+}
++ObjProp 850 "DesignNote"
+{
+	"" RepositionLoc="80.1567,122.041,50.0189"
+}
+ObjProp 734 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 731 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
++ObjProp 891 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 891 "DesignNote"
+{
+	"" RepositionLoc="3,-0.1,0.1"
+}
++ObjProp 890 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 890 "DesignNote"
+{
+	"" RepositionLoc="1.2,0,0"
+}
++ObjProp 1346 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1346 "DesignNote"
+{
+	"" RepositionLoc="-0.2,-0.2,0"
+}
++ObjProp 1354 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1354 "DesignNote"
+{
+	"" RepositionLoc="-0.8,-0.6,1.6"
+}
++ObjProp 1336 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1336 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 1357 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1357 "DesignNote"
+{
+	"" RepositionLoc="-689.508,538.872,-117.125"
+}
++ObjProp 1332 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1332 "DesignNote"
+{
+	"" RepositionLoc="-688.051,526.526,-117.396"
+}
++ObjProp 870 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 870 "DesignNote"
+{
+	"" RepositionLoc="-687.156,533.185,-116.096"
+}
++ObjProp 1448 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1448 "DesignNote"
+{
+	"" RepositionLoc="0.6,0.6,0.4"
+}
++ObjProp 1004 "BlockFrob"
+{
+	"" true
+}

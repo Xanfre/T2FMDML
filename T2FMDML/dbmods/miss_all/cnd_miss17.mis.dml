@@ -1,0 +1,24 @@
+DML1
+
+//T2 FM: The Cell Next Door by Frank Mitchell / Fix Jersak's Note
+
+FINGERPRINT
+{
+	218 [16 113 42]
+	109 [-3 91 48]
+	255 [-11 87 28]
+	186 [7 53 42]
+	247 [-10 83 29]
+	243 [-21 83 48]
+	240 [-14 58 38]
+	318 [-31 92 11]
+	QVAR "goal_target_0" == 271
+}
+
+ObjProp 191 "Scripts"
+{
+	"Script 1" TrigInvFrob
+}
++Link 191 311 "ControlDevice"
+{
+}

@@ -1,0 +1,370 @@
+DML1
+
+//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fix final objective and keeper conversation
+
+FINGERPRINT
+{
+	1706 [-401 340 15]
+	236 [-205 106 22]
+	197 [-189 388 56]
+	730 [-300 372 51]
+	862 [-139 311 -6]
+	2333 [-455 243 39]
+	1246 [-113 147 34]
+	1765 [-313 241 56]
+	QVAR "goal_target_3" == 1398
+}
+
+#script "nvscript"
+#script "tnhscript"
+
++ObjProp 1131 "ScriptTiming"      
+{
+	"" 3000
+}
++ObjProp 1131 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 1501 1131 "ControlDevice"
+{
+}
++Link 1131 722 "ControlDevice"
+{
+}
++ObjProp 722 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 722 "TrapQVar"
+{
+	"" =1:goal_state_6
+}
++ObjProp 1147 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1147 "TrapQVar"
+{
+	"" =0:goal_type_6
+}
++ObjProp 40 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 40 1147 "ControlDevice"
+{
+}
++ObjProp 1708 "Scripts"
+{
+	"Script 3" TrigWorldFrob
+}
+//Other
++ObjProp 783 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
++Link 40 783 "ControlDevice"
+{
+}
++Link 40 783 "ControlDevice"
+{
+}
++Link 783 2231 "ControlDevice"
+{
+}
++Link 783 817 "ControlDevice"
+{
+}
++Link 783 2228 "ControlDevice"
+{
+}
++Link 783 2229 "ControlDevice"
+{
+}
+//Barrels without collision
++Receptron 2230 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -7695
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -288.08, 322.32, 34.36
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 2230 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++StimSource 2311 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 2311 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -7695
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -282.58, 322.32, 34.36
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
+-ObjProp 1005 "PhysType"
+ObjProp 1005 "Position"
+{
+	"Location" -489.7, 210.9, 31.609
+	"Heading" 6e5b
+}
++ObjProp 1005 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+//Keeper
+-ObjProp 1360 "AI_Converation"
++ObjProp 1360 "AI_Converation"
+{
+	"Actor" "ActorOne"
+	"Flags" "[None]"
+	"Conversation: Action 0" "Frob object(Target Object,With Object)"
+	"   Argument 1" "1380"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Actor"[1] "ActorOne"
+	"Flags"[1] "[None]"
+	"Conversation: Action 1" "Frob object(Target Object,With Object)"
+	"   Argument 1"[1] "2188"
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] ""
+	"Actor"[2] "ActorOne"
+	"Flags"[2] "[None]"
+	"Conversation: Action 2" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[2] "100"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Actor"[3] "ActorOne"
+	"Flags"[3] "[None]"
+	"Conversation: Action 3" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[3] "1358"
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+	"Actor"[4] "ActorOne"
+	"Flags"[4] "[None]"
+	"Conversation: Action 4" "Frob object(Target Object,With Object)"
+	"   Argument 1"[4] "1524"
+	"   Argument 2"[4] ""
+	"   Argument 3"[4] ""
+	"Actor"[5] "ActorOne"
+	"Flags"[5] "[None]"
+	"Conversation: Action 5" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[5] "100"
+	"   Argument 2"[5] ""
+	"   Argument 3"[5] ""
+	"Actor"[6] "Unused"
+	"Flags"[6] "[None]"
+}
+//Endloot
++ObjProp 2058 "Position"
+{
+	"Location" -469.15, 106.5, -5.69
+	"Heading" bd78
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 2056 "Position"
+{
+	"Location" -437.15, 108.13, -4.6
+	"Heading" 0
+	"Pitch" d555
+	"Bank" 4000
+}
++ObjProp 2057 "Position"
+{
+	"Location" -437.15, 110.13, -9.6
+	"Heading" 0
+	"Pitch" d555
+	"Bank" 4000
+}
++ObjProp 339 "Position"
+{
+	"Location" -362.05, 425.13, 66.65
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+ }
+-ObjProp 1384 "PhysControl"
++ObjProp 1384 "Position"
+{
+	"Location" -259.5, 418.18, 50.39
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+ }
+-ObjProp 2327 "PhysControl"
++ObjProp 2327 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2327 "Position"
+{
+	"Location" -540.3, 253.8, 51.56
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+ObjProp 1981 "AI_Converation"
+{
+	"Actor" ActorOne
+	"Conversation: Action 0" "Frob object(Target Object,With Object)"
+	"   Argument 1" 1988
+	"Actor"[1] ActorOne
+	"Conversation: Action 1" Nothing()
+}
+//Secrets
++Link 1422 1433 "ControlDevice"
+{
+}
++ObjProp 1422 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1433 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1433 "TrapQVar"
+{
+	"" =0:DrSSecrets
+}
+Create -464 "SecretfixSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "designnote"
+	{
+		"" Proximity=2000
+	}
+}
++Link "SecretfixSwitch" 1433 "ControlDevice"
+{
+}
++ObjProp 1483 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1483 "TrapQVar"
+{
+	"" =0:DrSScrtCnt
+}
++Link "SecretfixSwitch" 1483 "ControlDevice"
+{
+}
++Link "SecretfixSwitch" 1490 "ControlDevice"
+{
+}
++ObjProp 1401 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1401 "TrapQVar"
+{
+	"" =4:DrSScrtCnt
+}
+//secretsounds
++ObjProp 694 "Scripts"
+{
+	"Script 0" VOSounds
+}
++Link 694 -732 "Sounddescription"
+{
+}
++Link 1977 694 "ControlDevice"
+{
+}
++Link 2318 694 "ControlDevice"
+{
+}
++Link 2320 694 "ControlDevice"
+{
+}
++Link 2328 694 "ControlDevice"
+{
+}
++Link 2438 1401 "ControlDevice"
+{
+}
++Link 1977 1401 "ControlDevice"
+{
+}
++Link 2318 1401 "ControlDevice"
+{
+}
++Link 2320 1401 "ControlDevice"
+{
+}
++Link 2438 1401 "ControlDevice"
+{
+}
++Link 2438 1401 "ControlDevice"
+{
+}
++Link 1977 1490 "ControlDevice"
+{
+}
++Link 2318 1490 "ControlDevice"
+{
+}
++Link 2320 1490 "ControlDevice"
+{
+}
++Link 2438 1490 "ControlDevice"
+{
+}
++Link 2438 694 "ControlDevice"
+{
+}

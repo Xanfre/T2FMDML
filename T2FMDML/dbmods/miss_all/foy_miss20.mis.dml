@@ -1,0 +1,128 @@
+DML1
+
+//T2 FM: The Folly of Youth by Philip Shepherd (The Dude) / Fix items
+
+FINGERPRINT
+{
+	1725 [505 463 496]
+	2193 [617 479 256]
+	1463 [651 553 405]
+	800 [585 357 449]
+	2389 [584 402 281]
+	1480 [508 573 405]
+	1392 [429 513 403]
+	2396 [512 627 402]
+	QVAR "goal_target_0" == 1976
+}
+
++ObjProp 503 "NoDrop"       
+{
+	"" true
+}
++ObjProp 680 "NoDrop"       
+{
+	"" true
+}
++ObjProp 1100 "NoDrop"       
+{
+	"" true
+}
++ObjProp 704 "NoDrop"       
+{
+	"" true
+}
++ObjProp 1270 "BlockFrob"         
+{
+	"" true
+}
+-ObjProp 1270 "PhysType"
++ObjProp 1270 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1270 "PhysDims"
++ObjProp 1270 "PhysDims"
+{
+	"Size" 0.20, 4.00, 4.00
+	"Radius 1" 0.00
+	"Radius 2" 0.00
+	"Offset 1" 0.00, 0.00, 0.00
+	"Offset 2" 0.00, 0.00, 0.00
+	"Point vs Terrain" false
+	"Point vs Not Special" false
+}
++ObjProp 1270 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+Create -2467
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 443.99,409.49,403.57
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++ObjProp 1056 "InvType"     
+{
+	"" Item
+}
++ObjProp 1057 "InvType"     
+{
+	"" Item
+}
++ObjProp 1079 "InvType"     
+{
+	"" Item
+}
++ObjProp 1085 "InvType"     
+{
+	"" Item
+}
++ObjProp 1142 "InvType"     
+{
+	"" Item
+}
++ObjProp 2098 "InvType"     
+{
+	"" Item
+}
++ObjProp 2113 "InvType"     
+{
+	"" Item
+}
++ObjProp 2135 "InvType"     
+{
+	"" Item
+}
++ObjProp 2141 "InvType"     
+{
+	"" Item
+}
++ObjProp 2145 "InvType"     
+{
+	"" Item
+}
++ObjProp 2343 "InvType"     
+{
+	"" Item
+}
++ObjProp 2456 "InvType"     
+{
+	"" Item
+}
++ObjProp 2457 "InvType"     
+{
+	"" Item
+}

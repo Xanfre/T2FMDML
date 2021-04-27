@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: The Skygem Connection by David Dyal (Dyald) / Fix fences
+
+FINGERPRINT
+{
+	88 [448 507 499]
+	27 [469 485 494]
+	71 [478 550 495]
+	78 [482 556 495]
+	41 [491 480 496]
+	5 [505 508 504]
+	95 [505 492 498]
+	23 [501 499 494]
+	NAME 37 "William"
+}
+
+-ObjProp 35 "PhysType"
++ObjProp 35 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 35 "Position"
++ObjProp 35 "Position"
+{
+	"Location" 510.06,495.25,498.04
+	"Heading" 4000
+	"Pitch" 4000
+	"Bank" 0
+}
+-ObjProp 35 "PhysType"
++ObjProp 35 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

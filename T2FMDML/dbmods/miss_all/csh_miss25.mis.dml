@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Curiosity Shop (Contest 4) by Moghedian / Allow saves to work
+
+FINGERPRINT
+{
+	119 [7 -5 20]
+	130 [-20 49 21]
+	171 [-13 54 22]
+	323 [-14 35 -1]
+	178 [-23 51 10]
+	112 [-16 35 26]
+	264 [-39 -26 18]
+	233 [-14 26 24]
+	QVAR "goal_target_0" == 327
+}
+
+TagBlock "DARKMISS"
+{
+	"Mission Number" 25
+}

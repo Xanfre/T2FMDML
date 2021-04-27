@@ -1,0 +1,52 @@
+DML1
+
+//T2 FM: Kill Factory (Crap Contest) by Sliptip / Fix windows
+
+FINGERPRINT
+{
+	69 [1 1 -20]
+	111 [-72 54 -34]
+	126 [-72 1 -35]
+	48 [-36 39 -8]
+	88 [-64 46 -35]
+	63 [-15 -8 -38]
+	115 [-36 54 -8]
+	120 [-72 51 -34]
+	QVAR "goal_target_0" == 116
+}
+
+
+Create -48
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -54.0,30.0,-6.0
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -48
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -54.0,38.0,-6.0
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}

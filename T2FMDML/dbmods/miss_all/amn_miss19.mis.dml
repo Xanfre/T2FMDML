@@ -1,0 +1,48 @@
+DML1
+
+//T2 FM: Amnesia (Contest 4) by Tom N. Harris (Telliamed) / Fixes
+
+FINGERPRINT
+{
+	355 [1 25 -8]
+	517 [1 34 21]
+	622 [0 34 21]
+	405 [20 12 -9]
+	415 [-34 36 17]
+	182 [27 43 1]
+	291 [18 28 4]
+	555 [-34 20 -11]
+	QVAR "goal_target_2" == 550
+}
+
+//goals
+-Link 550 553 "ControlDevice"
+ObjProp 554 "TrapQVar"
+{
+	"" >0:burnt_envelopes
+}
+ObjProp 555 "TrapQVar"
+{
+	"" >1:burnt_envelopes
+}
++Link 572 171 "ControlDevice"
+{
+}
++ObjProp 171 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 171 "TrapQVar"
+{
+	"" =2:goal_state_2
+}
+//pickpocketing
+-Link 517 636 "ControlDevice"
+//doors
+ObjProp 46 "TransDoor"
+{
+	"Open Position" -2.85
+}
++ObjProp 48 "FrobInfo"
+{
+}

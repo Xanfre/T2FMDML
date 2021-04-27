@@ -1,0 +1,53 @@
+DML1
+
+//T2 FM: A Love Story III by John Denison / Fix goal 3
+
+FINGERPRINT
+{
+	2018 [-49 558 -34]
+	1376 [38 494 -45]
+	184 [-54 425 -34]
+	960 [-93 531 -39]
+	1510 [54 369 -73]
+	1749 [-73 464 -34]
+	1230 [-22 475 -34]
+	1056 [-317 548 -38]
+	QVAR "goal_target_1" == -5919
+}
+
++ObjProp 1979 "Position"
+{
+	"Location" 63.8163,396.119,-31.0763
+}
++ObjProp 1979 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1979 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=646
+}
++ObjProp 1979 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 1290 "DesignNote"
+{
+	"" NVDeleteTrapOn="Sim"; NVDeleteTrapDeleteSelf=1
+}
++ObjProp 1290 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+	"Don't Inherit" true
+}
++ObjProp 1537 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1537 "Position"
+{
+	"Location" -19.8081,520.498,-49.8323
+	"Heading" ec64
+	"Pitch" 4000
+}

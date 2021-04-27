@@ -1,0 +1,22 @@
+DML1
+
+//T2 FM: The Gold Skull of Lord Frobb (Contest 3) by Rachel Yvonne (Cookiedough) / Fix objectives not showing
+
+FINGERPRINT
+{
+	24 [-4 -7 -16]
+	6 [12 -6 2]
+	16 [4 -14 14]
+	21 [12 -14 -15]
+	13 [-2 18 11]
+	8 [4 -6 11]
+	14 [-13 18 11]
+	19 [18 -7 -15]
+	QVAR "goal_target_0" == 22
+}
+
+TagBlock "DARKMISS"
+{
+	"Mission Number" 20
+	"Mission Pathname" miss20
+}

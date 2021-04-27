@@ -1,0 +1,115 @@
+DML1
+
+//T2 FM: Through the Lookin' Glass by J. Knez (Schwaa) / Fixes
+
+FINGERPRINT
+{
+	1061 [-191 177 -52]
+	461 [-129 201 -14]
+	954 [-117 147 -4]
+	981 [-274 307 -67]
+	966 [-124 135 4]
+	217 [-141 130 -18]
+	692 [-154 377 -55]
+	448 [19 167 -27]
+	QVAR "goal_target_8" == 831
+}
+
+//mantling
++ObjProp 68 "PhysCanMant"
+{
+}
++ObjProp 69 "PhysCanMant"
+{
+}
++ObjProp 101 "PhysCanMant"
+{
+}
++ObjProp 295 "PhysCanMant"
+{
+}
++ObjProp 298 "PhysCanMant"
+{
+}
++ObjProp 485 "PhysCanMant"
+{
+}
++ObjProp 486 "PhysCanMant"
+{
+}
+//banner
++Receptron 191 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//chests
++ObjProp 243 "DesignNote"
+{
+	"" NVMetaTrapOn="Container"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 243 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 280 "DesignNote"
+{
+	"" NVMetaTrapOn="TweqComplete"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 280 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 286 "DesignNote"
+{
+	"" NVMetaTrapOn="Container"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 286 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 404 "DesignNote"
+{
+	"" NVMetaTrapOn="Container"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 404 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+//bread loaf
+-ObjProp 663 "PhysType"
+//new objectives timer
+ObjProp 685 "ScriptTiming"
+{
+	"" 1300
+}
+//shutters
++Link 703 704 "ScriptParams"
+{
+	"" Double
+}
++Link 705 706 "ScriptParams"
+{
+	"" Double
+}
+//portcullis
++ObjProp 746 "FrobInfo"
+{
+}
+ObjProp 1050 "FrobInfo"
+{
+	"World Action" None
+}
+//ladder
+-ObjProp 925 "PhysType"
++ObjProp 925 "Position"
+{
+	"Location" -193.93, 177.85, -23.25
+}
++ObjProp 925 "PhysType"
+{
+	"Type" OBB
+}
+//sleeping thief
+-ObjProp 1030 "AI_Vision"

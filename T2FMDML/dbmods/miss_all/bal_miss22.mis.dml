@@ -1,0 +1,212 @@
+DML1
+
+//T2 FM: Balfour's Secret by Michael Haase (DarkShadow) / Fixes
+
+FINGERPRINT
+{
+	297 [-118 24 -22]
+	118 [58 -37 -10]
+	545 [-144 -27 -19]
+	438 [-265 38 -19]
+	501 [-182 38 -21]
+	331 [-186 26 -23]
+	400 [-123 -60 -3]
+	628 [-397 -15 -106]
+	QVAR "goal_target_6" == 660
+}
+
+#script "nvscript"
+
+//doors
+-ObjProp 17 "JointPos"
+-ObjProp 110 "JointPos"
+-ObjProp 119 "JointPos"
+-ObjProp 139 "JointPos"
+-ObjProp 196 "JointPos"
+-ObjProp 197 "JointPos"
+-ObjProp 250 "JointPos"
+-ObjProp 268 "JointPos"
+-ObjProp 401 "JointPos"
+-ObjProp 443 "JointPos"
+-ObjProp 446 "JointPos"
+-ObjProp 449 "JointPos"
++ObjProp 92 "BlockFrob"
+{
+	"" true
+}
++ObjProp 148 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 151 "JointPos"
+ObjProp 151 "Scale"
+{
+	"" 1.05, 0.48, 0.875
+}
++ObjProp 155 "BlockFrob"
+{
+	"" true
+}
++MetaProp 251 -2420
++Receptron 283 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 283 "JointPos"
+{
+	"Joint 1" 0.00
+}
++Receptron 445 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 458 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 458 "PhysType"
+ObjProp 458 "Position"
+{
+	"Location" -97.52, -66.5, 0.2
+}
++ObjProp 458 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 495 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent -2262
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++ObjProp 495 "DesignNote"
+{
+	"" NVRelayTrapOn="BeginScript"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapCount=1
+}
++ObjProp 495 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++Receptron 507 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent -2262
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++ObjProp 507 "DesignNote"
+{
+   "" NVRelayTrapOn="BeginScript"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapCount=1
+}
++ObjProp 507 "Scripts"
+{
+   "Script 0" NVRelayTrap
+}
+//chests
+-ObjProp 48 "StTweqLock"
++Link 193 170 "ControlDevice"
+{
+}
++ObjProp 170 "DesignNote"
+{
+   "" NVRemovePropertyTrapProp="FrobInfo"
+}
++ObjProp 170 "FrobInfo"
+{
+}
++ObjProp 170 "Scripts"
+{
+   "Script 0" NVRemovePropertyTrap
+}
+//fireplaces
+ObjProp 188 "PGLaunchInfo"
+{
+   "Min time" 1.00
+   "Max time" 1.00
+}
+ObjProp 191 "PGLaunchInfo"
+{
+   "Min time" 1.00
+   "Max time" 1.00
+}
+ObjProp 212 "PGLaunchInfo"
+{
+   "Min time" 1.50
+   "Max time" 1.50
+}
+ObjProp 215 "PGLaunchInfo"
+{
+   "Min time" 1.50
+   "Max time" 1.50
+}
+//mantling
++ObjProp 224 "PhysCanMant"
+{
+}
+//junk
++ObjProp 328 "StackCount"
+{
+}
++ObjProp 328 "InvType"
+{
+}
+//torches
+-Link 557 569 "ControlDevice"
+-Link 574 569 "ControlDevice"
++ObjProp 437 "TrapFlags"
+{
+   "" Invert, NoOn
+}
+//ladder
+-ObjProp 441 "Scale"
+-ObjProp 441 "PhysType"
+ObjProp 441 "Position"
+{
+	"Location" -264.135, 16.9, -32.45
+}
++ObjProp 441 "PhysType"
+{
+	"Type" OBB
+}
+//trap
++ObjProp 444 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 444 "Class Tags"
+{
+	"1: Tags" ""
+}
+//rope arrow
+-ObjProp 459 "PhysType"
+//note (goal 6, 7)
++ObjProp 591 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1
+}
+ObjProp 591 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+//balfour (goal 7)
++ObjProp 594 "DesignNote"
+{
+	"" NVMetaTrapTarget=681; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 594 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}

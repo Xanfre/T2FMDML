@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: Mountain Monastery by Christine Schneider / Fixes
+
+FINGERPRINT
+{
+	1359 [393 115 -35]
+	1202 [341 92 -20]
+	1185 [407 71 4]
+	1428 [361 19 -32]
+	1257 [305 91 -38]
+	1088 [221 152 12]
+	385 [-62 18 -4]
+	1078 [-246 60 -45]
+	QVAR "goal_target_9" == 993
+}
+
++ObjProp 1349 "AI_ObjAvoid"     
+{
+	"Flags" Block pathfind,Repel
+}
++ObjProp 1349 "PhysAIColl"     
+{
+	"" false
+}
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 315.47,64.5,-13.81
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}

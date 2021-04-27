@@ -1,0 +1,36 @@
+DML1
+
+//T2 FM: Transitions in Chaos Part I: Conspiracies in the Dark by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes
+
+FINGERPRINT
+{
+	1087 [131 91 91]
+	1803 [-50 164 87]
+	1021 [92 92 100]
+	2124 [8 36 106]
+	2080 [34 85 124]
+	722 [37 110 92]
+	1795 [-47 174 91]
+	1195 [-17 17 102]
+	QVAR "goal_target_1" == 1590
+}
+
+-Link 1948 535 "ControlDevice"
+-Link 1948 1950 "ControlDevice"
++ObjProp 949 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 949 1950 "ControlDevice"
+{
+}
++Link 1948 949 "ControlDevice"
+{
+}
++Link 949 535 "ControlDevice"
+{
+}
++ObjProp 949 "TrapFlags" 
+{
+	"" Once
+}

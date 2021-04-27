@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: Thieves' Highway by Don Adam (Uncadonego) / Fix the woman sleeping on the sofa
+
+FINGERPRINT
+{
+	275 [167 465 36]
+	454 [143 471 17]
+	107 [70 366 56]
+	653 [195 585 3]
+	868 [221 484 35]
+	845 [226 549 13]
+	1054 [266 346 28]
+	1199 [84 487 33]
+	QVAR "goal_target_6" == 443
+}
+
++ObjProp 1081 "AI_AlrtRsp"
+{
+	"Alert level" "(1) Low"
+	"Priority" "High"
+	"Response: Step 1" "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1" "Remove"
+	"   Argument 2" "M-NewSleeper"
+	"   Argument 3" ""
+	"Response: Step 2" "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] "Sit2Stand"
+	"Response: Step 3" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] "Player"
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[3] "1072"
+	"   Argument 2"[3] "Very Fast"
+	"   Argument 3"[3] ""
+	"Response: Step 5" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[4] "50000"
+	"   Argument 2"[4] ""
+	"   Argument 3"[4] ""
+}

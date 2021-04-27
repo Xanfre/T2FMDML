@@ -1,0 +1,161 @@
+DML1
+
+//T2 FM: Ruins of Originia by Terry Head (YcatX) / Fixed light based transparency on items
+
+FINGERPRINT
+{
+	1027 [-241 139 111]
+	77 [-129 168 39]
+	683 [-249 -363 110]
+	816 [-5 221 40]
+	748 [245 -437 108]
+	257 [-332 -301 111]
+	338 [-465 -88 112]
+	152 [-292 162 109]
+	QVAR "goal_target_2" == 215
+}
+
++ObjProp 328 "LBAlpha"
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 1
+	"Light level (0-100) for max" 10
+}
++ObjProp 330 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 1
+	"Light level (0-100) for max" 100
+}
++ObjProp 335 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 1
+	"Light level (0-100) for max" 100
+}
++ObjProp 730 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 730 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 213 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 893 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 912 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 891 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 907 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 901 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 899 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 897 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 895 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 705 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 709 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 707 "LBAlpha"            
+{
+	"Active" true
+	"Min alpha" 0.01
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 70
+	"Light level (0-100) for max" 90
+}
++ObjProp 328 "SelfLit"  
+{
+	"" 9
+}
++ObjProp 328 "SelfLitRad"   
+{
+	"" 11
+}

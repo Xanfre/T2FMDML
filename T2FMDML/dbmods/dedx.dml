@@ -1,0 +1,38 @@
+DML1
+
+//DromEd Deluxe Game System / Fixes
+
+FINGERPRINT
+{
+	NAME -7222 "M-SilenceEffectX"
+	PROP -7222 "Fungus"
+}
+
+//get Death Stage 12 off of the projectile archetype if it is there
+-ObjProp "Projectile" "DeathStage"
+//disable M-SilenceEffectX metaproperty
+-ObjProp "M-SilenceEffectX" "Fungus"
+//fix fires propagating FireStim even when put out
+-StimSource "Flame" "FireStim"
+//prevent M-AlertCapHigh from being added by AlertStimX and ProjStimX indefinitely
+Receptron "Creature" "AlertStimX" 0020010A
+{
+	Effect "add_prop"
+	{
+		"Prop Name" AI_AlertCap
+	}
+}
+Receptron "Creature" "ProjStimX" 00200148
+{
+	Effect "add_prop"
+	{
+		"Prop Name" AI_AlertCap
+	}
+}
+Receptron "Human" "AlertStimX" 002000F7
+{
+	Effect "add_prop"
+	{
+		"Prop Name" AI_AlertCap
+	}
+}

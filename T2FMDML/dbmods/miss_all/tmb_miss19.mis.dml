@@ -1,0 +1,92 @@
+DML1
+
+//T2 FM: Mech Bank (Novice Contest) by Andy Joel (The Pixie) / Fixes
+
+FINGERPRINT
+{
+	425 [396 399 432]
+	110 [423 395 382]
+	740 [423 325 418]
+	745 [406 333 392]
+	53 [415 399 382]
+	216 [388 393 413]
+	661 [368 381 381]
+	240 [375 428 399]
+	QVAR "goal_target_1" == 576
+}
+
+#script "nvscript"
+
++ObjProp 709 "PhysCanMant"
+{
+	"" true
+}
++ObjProp 703 "PhysCanMant"
+{
+	"" true
+}
+-ObjProp 373 "PhysType"
++ObjProp 373 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 373 "PhysControl"
++ObjProp 805 "BlockFrob"
+{
+	"" true
+}
++ObjProp 779 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 779 "PhysControl"
++ObjProp 779 "Position"
+{
+	"Location" 423.08, 424.73, 422.71
+	"Heading" aaaa
+	"Pitch" 0
+	"Bank" 0  
+}
+-ObjProp 459 "Position"
++ObjProp 459 "Position"
+{
+	"Location" 422.46, 420.79, 421.32
+	"Heading" 73ae
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 758 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrigQVar
+}
++ObjProp 758 "TrapQVar"
+{
+	"" =1:goal_visible_3
+}
+//frobinert on sun mask
++MetaProp 562 "FrobInert"
++ObjProp 778 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 778 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=562
+}
++Link 180 778 "ControlDevice"
+{
+}
++Link 758 180 "ControlDevice"
+{
+}
++ObjProp 180 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 180 "TrapFlags"
+{
+	"" Invert
+}

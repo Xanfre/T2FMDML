@@ -1,0 +1,63 @@
+DML1
+
+//T2 FM: Curse of the Carnival by Alex Thomson (Jyre/Dashjianta) / Fix final goal
+
+FINGERPRINT
+{
+	708 [-91 -17 17]
+	660 [-47 -24 16]
+	341 [-148 63 14]
+	386 [-118 92 15]
+	212 [-10 39 23]
+	44 [-14 7 16]
+	225 [3 3 7]
+	476 [-37 142 -2]
+	QVAR "goal_target_0" == 335
+}
+
++ObjProp 729 "Scripts"
+{
+	"Script 0" WelcomeRoom
+}
++ObjProp 461 "Scripts"
+{
+	"Script 0" TrapTeleporter
+}
++Link 461 240 "ControlDevice"
+{
+}
++Link 636 461 "ControlDevice"
+{
+}
++ObjProp 697 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 164 697 "ControlDevice"
+{
+}
++Link 697 338 "ControlDevice"
+{
+}
++Link 697 339 "ControlDevice"
+{
+}
++Link 697 340 "ControlDevice"
+{
+}
++Link 697 634 "ControlDevice"
+{
+}
++Link 697 635 "ControlDevice"
+{
+}
++ObjProp 685 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++Link 224 685 "ControlDevice"
+{
+}
++Link 685 697 "ControlDevice"
+{
+}

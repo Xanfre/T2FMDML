@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Portisco Head by Duncan Ardley (Ravenhook) / Fixes
+
+FINGERPRINT
+{
+	237 [279 610 424]
+	398 [339 570 424]
+	1766 [539 493 485]
+	1035 [369 393 409]
+	1164 [326 227 454]
+	1867 [486 146 257]
+	519 [293 173 409]
+	1443 [188 83 437]
+	QVAR "goal_target_5" == 1771
+}
+
+-ObjProp 825 "PhysType"
++ObjProp 825 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 825 "Position"
++ObjProp 825 "Position"
+{
+	"Location" 220.3,107.6,438.48
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 825 "PhysType"
++ObjProp 825 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

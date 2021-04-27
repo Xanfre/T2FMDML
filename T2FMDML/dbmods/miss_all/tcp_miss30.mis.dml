@@ -1,0 +1,121 @@
+DML1
+
+//T2 FM: Thief - The Chain Project by The Chain Project Team / Fixes
+
+FINGERPRINT
+{
+	910 [31 110 0]
+	1235 [-247 -404 180]
+	297 [11 -147 2]
+	1647 [-95 -97 -42]
+	2164 [218 -119 23]
+	1138 [-253 -424 186]
+	1065 [-244 -430 178]
+	231 [205 -402 24]
+	QVAR "goal_target_4" == 1305
+}
+
+#script "squirrel"
+#script "nvscript"
+
+-ObjProp 46 "StackCount"
++ObjProp 2344 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1982 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1982 "DesignNote"
+{
+	"" RepositionLoc="0.5,0.5,0.2"
+}
+-ObjProp 745 "DarkStat"
++ObjProp 745 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 745 "DesignNote"
+{	
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest="TiaraSecret"
+}
+Create -50 "TiaraSecret"
+{
+}
+Create -2123 "QVarFixTrap"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVTrapSetQVarOn="BeginScript"
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrapSetQVar
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =0:goal_target_4
+	}
+}
+Create -2123 "TrigVis4"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrapSetQVar
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =1:goal_visible_4
+	}
+}
+Create -2123 "TrigGoal4"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVTrapSetQVar
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =1:goal_state_4
+	}
+}
+ObjProp 1305 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+}
++ObjProp 1305 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrap2On="Contained"; NVRelayTrapTDest="TrigVis4"; NVRelayTrap2TDest="TrigGoal4"
+}
++ObjProp 2226 "Scale"
+{
+	"" 0.8,0.8,0.8
+}
+ObjProp 2241 "PGLaunchInfo"
+{
+	"Min time" 0.50
+	"Max time" 1.00
+}
+ObjProp 2242 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 2244 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 233 "Position"
+{
+	"Location" 255.521,-331.364,18.5941
+}
+-ObjProp 861 "DeathStage"
+-ObjProp 401 "DeathStage"
++ObjProp 1342 "ModelName"
+{
+	"" coinbig
+}

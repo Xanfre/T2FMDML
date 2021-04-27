@@ -1,0 +1,54 @@
+DML1
+
+//T2 FM: Through No Vault of My Own (Small Stock Resource Contest) by Brother Renault / Fix goal
+
+FINGERPRINT
+{
+	180 [428 469 507]
+	176 [589 455 507]
+	307 [661 480 510]
+	574 [532 455 493]
+	170 [561 491 503]
+	201 [635 445 522]
+	598 [662 461 520]
+	367 [490 454 492]
+	QVAR "goal_target_3" == 131
+}
+
++ObjProp 39 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 39 "ScriptTiming"     
+{
+	"" 2000
+}
+-Link 131 412 "ControlDevice"
++Link 131 39 "ControlDevice"
+{
+}
++Link 60 412 "ControlDevice"
+{
+}
+-ObjProp 236 "PhysType"
++ObjProp 236 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 236 "Position"
++ObjProp 236 "Position"
+{
+	"Location" 534.10,468.62,490.15
+	"Heading" e5ac
+	"Pitch" 4000
+	"Bank" 4000
+}
+-ObjProp 563 "Position"
++ObjProp 563 "Position"
+{
+	"Location" 468.83,475.38,485.83
+	"Heading" 4c78
+	"Pitch" 0
+	"Bank" 0
+}

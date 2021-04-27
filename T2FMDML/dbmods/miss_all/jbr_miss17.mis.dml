@@ -1,0 +1,27 @@
+DML1
+
+//T2 FM: JailBreak by J. Knez (Schwaa) / Fix loot
+
+FINGERPRINT
+{
+	818 [-1 15 -18]
+	1060 [-122 -1 35]
+	1227 [7 72 18]
+	1032 [40 16 2]
+	739 [-91 14 14]
+	886 [46 19 -3]
+	785 [9 6 33]
+	643 [-43 30 -23]
+	QVAR "goal_target_4" == 1178
+}
+
+-Link 1133 1147 "Contains"
++ObjProp 1147 "CombineType"
+{
+	"" gold
+}
+-ObjProp 1223 "Book"
++ObjProp 1223 "Book"
+{
+	"" CB10
+}

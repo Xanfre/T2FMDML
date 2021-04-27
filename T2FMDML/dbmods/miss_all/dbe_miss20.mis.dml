@@ -1,0 +1,150 @@
+DML1
+
+//T2 FM: Doschtles Beginn by Doschtle / Fixes
+
+FINGERPRINT
+{
+	668 [345 558 498]
+	646 [338 494 512]
+	633 [295 474 513]
+	533 [313 547 514]
+	192 [295 517 510]
+	752 [327 527 503]
+	670 [346 405 498]
+	778 [304 503 500]
+	QVAR "goal_target_1" == 25
+}
+
+ObjProp 48 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 46 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 45 "PGLaunchInfo"
+{
+	"Min time" 0.50
+	"Max time" 1.00
+}
+ObjProp 35 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 33 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 32 "PGLaunchInfo"
+{
+	"Min time" 0.50
+	"Max time" 1.00
+}
+ObjProp 92 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 98 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 100 "PGLaunchInfo"
+{
+	"Min time" 0.50
+	"Max time" 1.00
+}
+ObjProp 148 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 146 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+ObjProp 145 "PGLaunchInfo"
+{
+	"Min time" 0.50
+	"Max time" 1.00
+}
++ObjProp 387 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 387 "Position"
+{
+	"Location" 412.667,558.59,501.49
+}
++ObjProp 436 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 436 "Position"
+{
+	"Location" 477.002,477.498,497.812
+}
+-ObjProp 437 "Scale"
++ObjProp 156 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 156 "Position"
+{
+	"Location" 325.573,543.053,503.27
+}
++ObjProp 775 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 775 "Position"
+{
+	"Location" 326.115,515.165,503.079
+	"Bank" 4000
+}
++Link 790 415 "Contains"
+{
+	"" Belt
+}
++Link 790 415 "CulpableFor"
+{
+}
++Link 791 416 "Contains"
+{
+	"" Belt
+}
++Link 791 416 "CulpableFor"
+{
+}
++Link 796 426 "Contains"
+{
+	"" Belt
+}
++Link 796 426 "CulpableFor"
+{
+}
++Link 784 455 "Contains"
+{
+	"" Belt
+}
++Link 784 455 "CulpableFor"
+{
+}
++Link 795 552 "Contains"
+{
+	"" Belt
+}
++Link 795 552 "CulpableFor"
+{
+}

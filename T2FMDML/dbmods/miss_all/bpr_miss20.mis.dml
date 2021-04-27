@@ -1,0 +1,89 @@
+DML1
+
+//T2 FM: Book of Prophecy part 1: Dead Letter Box by Schattengilde / Fixes
+
+FINGERPRINT
+{
+	124 [121 651 87]
+	964 [252 586 68]
+	1088 [370 566 78]
+	286 [99 575 70]
+	346 [187 587 64]
+	911 [298 539 73]
+	782 [329 545 73]
+	861 [340 539 82]
+	QVAR "goal_target_1" == 634
+}
+
+#script "squirrel"
+#script "script-t2"
+
+//prevent escaping from the map
++ObjProp 709 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 711 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 190 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 258 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 448 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 885 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 263 "PhysCanMant"
+{
+	"" false
+}
+//barrels
++ObjProp 720 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 720 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 110 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.6,0.2
+}
++ObjProp 110 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+//fix flames escaping fireplace
+ObjProp 269 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.60
+}
+ObjProp 262 "PGLaunchInfo"
+{
+	"Max time" 1.00
+}
+//fix goal 4
++ObjProp 1169 "Scripts"
+{
+	"Script 0" TrapMetaProp
+	"Script 1" TrapSetQVar
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" true
+}
++Link 1169 1140 "ScriptParams"
+{
+	"" aFrobInert
+}

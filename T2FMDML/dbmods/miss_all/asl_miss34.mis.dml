@@ -1,0 +1,75 @@
+DML1
+
+//T2 FM: A Servant's Life by John Denison / Fixes
+
+FINGERPRINT
+{
+	1492 [177 239 4]
+	2305 [140 189 5]
+	1560 [192 294 15]
+	1330 [105 306 2]
+	1917 [62 203 8]
+	1675 [43 190 10]
+	2124 [-49 124 5]
+	551 [-77 240 7]
+	QVAR "goal_target_0" == 1192
+}
+
++ObjProp 1566 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1566 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 1535 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1535 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+-ObjProp 939 "PhysType"
++ObjProp 939 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 939 "Position"
++ObjProp 939 "Position"
+{
+	"Location" 4.2,180.37,8.9
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1313 "PhysType"
++ObjProp 1313 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1313 "Position"
++ObjProp 1313 "Position"
+{
+	"Location" 67.5,215.97,44.1
+	"Heading" be38
+	"Pitch" 0
+	"Bank" 0
+}

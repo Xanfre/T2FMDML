@@ -1,0 +1,46 @@
+DML1
+
+//T2 FM: Lovely Night by Caradavin / Fixes
+
+FINGERPRINT
+{
+	451 [475 483 480]
+	199 [497 548 482]
+	331 [511 535 499]
+	421 [471 511 485]
+	593 [450 482 503]
+	612 [548 529 502]
+	130 [500 543 508]
+	138 [501 453 501]
+	QVAR "goal_target_6" == 231
+}
+
+-ObjProp 803 "PhysType"
++ObjProp 803 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 803 "Position"
++ObjProp 803 "Position"
+{
+	"Location" 492.38,542.58,482.74
+	"Heading" 0
+	"Bank" 0
+}
+-ObjProp 105 "PhysType"
++ObjProp 105 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 105 "Position"
++ObjProp 105 "Position"
+{
+	"Location" 506.42,463.31,484.19
+	"Heading" 0
+	"Pitch" c485
+}
+//secret count
+-ObjProp 17 "DarkStat"
+-ObjProp 200 "DarkStat"

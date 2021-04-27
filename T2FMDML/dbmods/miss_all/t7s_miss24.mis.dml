@@ -1,0 +1,45 @@
+DML1
+
+//T2 FM: The Seven Sisters by Lady Rowena / Fixes
+
+FINGERPRINT
+{
+	1757 [-29 235 -18]
+	636 [-397 -111 2]
+	140 [-119 -212 -30]
+	200 [-259 32 -14]
+	1717 [-284 48 -31]
+	694 [-459 -22 27]
+	1566 [22 312 -14]
+	1626 [-244 19 224]
+	NAME 1838 "PicktotalTrigger"
+}
+
++ObjProp 1956 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1956 "Position"
+{
+	"Location" -286.028,-24.304,-2.90775
+	"Heading" 49fa
+	"Pitch" 1456
+	"Bank" 3e6
+}
++ObjProp 1958 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1958 "Position"
+{
+	"Location" -286.603,-24.4196,-2.74758
+	"Heading" 3f84
+	"Pitch" 1456
+	"Bank" 3e6
+}
++ObjProp 1775 "PickBias"
+{
+	"" 0.00
+}

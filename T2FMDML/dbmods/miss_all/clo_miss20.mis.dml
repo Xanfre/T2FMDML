@@ -1,0 +1,29 @@
+DML1
+
+//T2 FM: The Clocktower by Jason Otto (Ottoj55) / Fix decorative loot
+
+FINGERPRINT
+{
+	39 [500 480 532]
+	234 [497 493 537]
+	363 [508 485 495]
+	438 [508 489 493]
+	729 [495 517 496]
+	477 [448 540 460]
+	281 [488 494 482]
+	623 [562 497 450]
+	PROP 300 "ModelName"
+}
+
++ObjProp 229 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 253 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

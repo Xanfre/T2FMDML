@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: Temple of the Tides (Water Contest) by Nameless Voice / Fixes
+
+FINGERPRINT
+{
+	563 [80 124 -4]
+	176 [132 97 -8]
+	169 [203 138 -49]
+	578 [184 149 4]
+	657 [142 112 13]
+	672 [92 100 5]
+	465 [103 148 -12]
+	567 [137 104 -28]
+	NAME 661 "NewFireElemental"
+}
+
+#script "nvscript"
+
+ObjProp 231 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobInvEnd"; NVRelayDelay=500; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="GiveDictionary"; NVRelayTrapOff="Null"; NVRelayTrapTCount=1; NVItemGiverOn="GiveDictionary"; NVGiveWhat="Dictionary";  NVAmbientSoundTrapOn="GiveDictionary"
+}

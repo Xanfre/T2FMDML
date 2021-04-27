@@ -1,0 +1,191 @@
+DML1
+
+//T2 FM: The Cloister of St. Lazarius (Beauty Contest) by Alexius / Fix loot
+
+FINGERPRINT
+{
+	983 [100 11 23]
+	982 [92 29 23]
+	248 [52 -26 25]
+	1016 [60 -26 21]
+	263 [103 -20 26]
+	230 [52 26 25]
+	946 [88 7 22]
+	1110 [-23 -79 26]
+	QVAR "goal_target_0" == 939
+}
+
++ObjProp 79 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 80 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 205 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 229 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 240 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 249 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 256 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 264 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 272 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 289 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 930 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 933 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 939 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1043 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1044 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1045 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1046 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1047 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1048 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1049 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1083 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1043 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1044 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1045 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1046 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1047 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1048 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1049 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}
++ObjProp 1083 "FrobInfo"
+{
+	"World Action" Ignore
+	"Inv Action" Ignore
+	"Tool Action" Ignore
+}

@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Dwelling Insanity (Contest 4) by Rustibus / Fix objectives not displaying
+
+FINGERPRINT
+{
+	19 [19 92 -2]
+	25 [19 92 21]
+	26 [-19 96 4]
+	48 [13 108 41]
+	37 [-19 96 55]
+	40 [-19 96 40]
+	9 [-7 96 64]
+	7 [-7 86 64]
+	NAME 17 "The Book"
+}
+
+TagBlock "DARKMISS"
+{
+	"Mission Pathname" ""
+}

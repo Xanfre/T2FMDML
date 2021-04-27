@@ -1,0 +1,202 @@
+DML1
+
+//T2 FM: Lucrative Opportunity by Aaron Pettett (Spanker) / Fix goals and objects
+
+FINGERPRINT
+{
+	731 [156 139 5]
+	1413 [-20 169 0]
+	1384 [252 -99 3]
+	1803 [-91 421 -4]
+	1402 [211 -85 15]
+	1440 [6 232 39]
+	1100 [162 139 8]
+	852 [-131 392 -6]
+	QVAR "goal_target_0" == 1135
+}
+
+-ObjProp 1770 "DeathStage"
+-ObjProp 1609 "DeathStage"
+-ObjProp 1447 "DeathStage"
+-ObjProp 1321 "DeathStage"
+-ObjProp 479 "DeathStage"
+-ObjProp 182 "DeathStage"
+-ObjProp 193 "DeathStage"
+-ObjProp 1150 "DeathStage"
+-ObjProp 1433 "DeathStage"
+-ObjProp 267 "DeathStage"
+-ObjProp 1380 "DeathStage"
+-ObjProp 187 "DeathStage"
+-ObjProp 189 "DeathStage"
+-ObjProp 991 "DeathStage"
+-ObjProp 1278 "DeathStage"
+-ObjProp 1192 "DeathStage"
+-ObjProp 1168 "DeathStage"
+-ObjProp 1759 "DeathStage"
+-ObjProp 1634 "DeathStage"
+-ObjProp 288 "DeathStage"
+-ObjProp 286 "DeathStage"
+-ObjProp 281 "DeathStage"
+-ObjProp 283 "DeathStage"
+-ObjProp 295 "DeathStage"
+-ObjProp 505 "DeathStage"
+-ObjProp 1046 "DeathStage"
+-ObjProp 1441 "DeathStage"
+-ObjProp 384 "DeathStage"
+-ObjProp 595 "DeathStage"
+-ObjProp 221 "DeathStage"
+-ObjProp 653 "DeathStage"
++StimSource 590 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 590 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 178.52, 126.01, 26.8
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 599 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 599 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 185.77, -80.32, 6.8
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++ObjProp 558 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 558 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 694 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 694 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+//goal 7
++ObjProp 817 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 817 "TrapQVar"
+{
+	"" =1:goal_state_7
+}
++ObjProp 766 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 766 "TrapQVar"
+{
+	"" =0:goal_type_7
+}
++ObjProp 19 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 19 766 "ControlDevice"
+{
+}
++Link 7 817 "ControlDevice"
+{
+}
++ObjProp 7 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 7 "Scripts"
+{
+	"Script 0" StdButton
+}
+//fireplace
+-ObjProp 794 "PhysType"
++ObjProp 794 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 794 "Position"
++ObjProp 794 "Position"
+{
+	"Location" -161.59,385.41,-5.155
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 794 "PhysType"
++ObjProp 794 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

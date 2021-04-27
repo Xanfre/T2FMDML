@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: Ashcourt by Duncan Ardley (Ravenhook)/ Fixes
+
+FINGERPRINT
+{
+	889 [337 274 461]
+	625 [303 279 458]
+	1459 [481 89 470]
+	1002 [247 292 453]
+	1487 [547 303 435]
+	1919 [378 181 465]
+	2229 [418 144 469]
+	299 [2 544 584]
+	QVAR "goal_target_3" == 2771
+}
+
+//goal
+-ObjProp 165 "TrapQVar"
++ObjProp 165 "TrapQVar"
+{
+	"" =1:goal_visible_6
+}

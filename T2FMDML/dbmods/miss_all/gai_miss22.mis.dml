@@ -1,0 +1,112 @@
+DML1
+
+//T2 FM: Gathering at the Inn (CoSaS 1) by Team CoSaS / Fixes
+
+FINGERPRINT
+{
+	1594 [-120 -60 -5]
+	1198 [-58 -38 -12]
+	1645 [-121 -44 -22]
+	1651 [-180 -114 -3]
+	1143 [-122 -46 -27]
+	1365 [-57 -41 -16]
+	727 [-116 -31 -3]
+	125 [-168 -248 -32]
+	QVAR "goal_target_1" == 950
+}
+
+//secrets
+-ObjProp 141 "DarkStat"
+-ObjProp 848 "DarkStat"
++ObjProp 384 "DarkStat"
+{
+}
+//door mat
++ObjProp 254 "BlockFrob"
+{
+	"" true
+}
+//doors
++Receptron 469 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 493 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 621 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 621 "Scripts"
+{
+	"Don't Inherit" true
+}
++Receptron 711 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1088 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1268 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1309 "Class Tags"
+{
+	"1: Tags" DoorType Slide1
+}
+//disguised firewand / toolbox
++ObjProp 351 "StackCount"
+{
+}
+++Receptron 1086 "GenStim"
+{
+	Min 299.5
+	Max 300.5
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" JointPos
+	}
+}
+++Receptron 1086 "GenStim"
+{
+	Min 299.5
+	Max 300.5
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//shake in romero's hand
+ObjProp 1044 "FrobInfo"
+{
+	"World Action" None
+}
+//inn key
+ObjProp 1125 "Scripts"
+{
+	"Script 0" TrigContained
+}

@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Chronicle of the Metal Age Chapter 1 by Balázs Vágovits (Sir Balu) / Fixes
+
+FINGERPRINT
+{
+	1050 [229 40 21]
+	1817 [47 256 23]
+	783 [-21 20 24]
+	1799 [-71 116 -34]
+	1640 [137 119 32]
+	1897 [-90 30 26]
+	1128 [-79 89 40]
+	1974 [41 -102 -10]
+	QVAR "goal_target_1" == 1675
+}
+
++ObjProp 1425 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1425 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1071 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 1071 "NoDrop"
+{
+}
++ObjProp 1071 "InvType"
+{
+}

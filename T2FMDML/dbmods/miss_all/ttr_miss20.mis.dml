@@ -1,0 +1,46 @@
+DML1
+
+//T2 FM: Throne Room by T. Nagy Levente / Fixes
+
+FINGERPRINT
+{
+	5 [80 -81 -10]
+	27 [77 -44 -9]
+	12 [76 -63 -9]
+	15 [133 -96 -10]
+	16 [118 -35 -8]
+	26 [85 -68 0]
+	17 [101 -89 -8]
+	224 [133 -96 -9]
+	QVAR "goal_target_0" == 175
+}
+
+//goal
++ObjProp 10 "Scripts"
+{
+	"Script 0" TrapSetQVar
+
+}
++ObjProp 10 "TrapQVar"
+{
+	"" =1:goal_irreversible_0
+}
+//paper
++ObjProp 224 "NoDrop"
+{
+	"" true
+}
+//unused books
++ObjProp 28 "FrobInfo"
+{
+}
++ObjProp 29 "FrobInfo"
+{
+}
++ObjProp 30 "FrobInfo"
+{
+}
+//unused door
++ObjProp 32 "FrobInfo"
+{
+}

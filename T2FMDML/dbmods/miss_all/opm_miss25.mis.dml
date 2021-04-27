@@ -1,0 +1,71 @@
+DML1
+
+//T2 FM: Obligatory Prison Mission by Jonathan Seymour (Maver1ck) / Fixes
+
+FINGERPRINT
+{
+	955 [148 86 -36]
+	982 [126 101 49]
+	754 [72 237 2]
+	1173 [-160 358 -82]
+	1285 [71 114 -35]
+	1080 [-44 143 -70]
+	833 [109 211 3]
+	742 [85 237 7]
+	QVAR "goal_target_0" == 1288
+}
+
+//cell A2 key
+ObjProp 437 "KeyDst"           
+{
+	"LockID" 6
+}
+ObjProp 507 "KeySrc"
+{
+	"LockID" 6
+}
+//combat bot key
++ObjProp 736 "RenderType"
+{
+	"" Not Rendered
+}
+//speed potion
+ObjProp 1028 "Position"
+{
+	"Location" 109.1, 209.407, 1.68
+}
+//purse (secret)
+-ObjProp 1163 "DarkStat"
+//loot (normal)
++ObjProp 1075 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1093 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1144 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1163 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1173 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1217 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1218 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 1219 "DiffDestroy"
+{
+	"quest var values" 0
+}

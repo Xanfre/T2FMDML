@@ -1,0 +1,28 @@
+DML1
+
+//T2 FM: Delford Abbey by Speesh / Fix loot in a footlocker and outside the map
+
+FINGERPRINT
+{
+	2153 [333 598 424]
+	1574 [356 525 493]
+	1532 [379 614 493]
+	200 [393 535 424]
+	2179 [434 540 427]
+	2018 [280 565 393]
+	1619 [450 656 508]
+	2060 [328 550 474]
+	QVAR "goal_target_0" == 2225
+}
+
+-Link 234 2151 "AIAttack"
++Link 234 2151 "Contains"
+{
+}
++ObjProp 2165 "Position"
+{
+	"Location" 331.08, 607.6, 492.32
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}

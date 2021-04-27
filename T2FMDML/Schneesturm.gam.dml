@@ -1,0 +1,62 @@
+DML1
+
+//T2 FM: Snowstorm by Theker / Fix rope arrows
+
+FINGERPRINT
+{
+	NAME -6720 "t_fam/23holz1/23holz01"
+	NAME -6732 "t_fam/23holz1/23holz13"
+}
+
++ObjProp -6720 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6721 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6722 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6723 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6724 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6725 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6726 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6727 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6728 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6729 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6730 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6731 "CanAttach"
+{
+	"Flags" Rope
+}
++ObjProp -6732 "CanAttach"
+{
+	"Flags" Rope
+}

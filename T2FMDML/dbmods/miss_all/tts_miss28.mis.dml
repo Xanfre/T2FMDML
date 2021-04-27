@@ -1,0 +1,77 @@
+DML1
+
+//T2 FM: SSDD part I: Tipping the Scales by GarrettWannabe and Apache / Fixes
+
+FINGERPRINT
+{
+	1251 [-22 183 -1]
+	1131 [-154 142 -11]
+	1745 [-54 166 10]
+	730 [63 161 -1]
+	380 [77 302 16]
+	1097 [-207 120 -50]
+	1616 [-30 89 -3]
+	934 [-129 152 -8]
+	QVAR "goal_target_0" == 663
+}
+
+#script "script-t2"
+
++ObjProp 1667 "Position"
+{
+	"Location" -76.546,-143.72,7.93458
+	"Heading" 4000
+}
+ObjProp 1395 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.80
+}
+ObjProp 1397 "PGLaunchInfo"
+{
+	"Min time" 1.10
+	"Max time" 1.80
+}
+ObjProp 1394 "PGLaunchInfo"
+{
+	"Max time" 1.30
+}
++ObjProp 711 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 711 "Position"
+{
+	"Location" -67.8055,147.098,3.62707
+}
++ObjProp 1673 "Position"
+{
+	"Heading" 4000
+}
++ObjProp 938 "Position"
+{
+	"Location" -243.964,125.669,-7.39856
+}
++ObjProp 1823 "Position"
+{
+	"Location" 89.0401,135.352,1.6417
+	"Heading" 8000
+}
++MetaProp 362 "FrobInert"
++ObjProp 104 "Scripts"
+{
+	"Script 0" TrapMetaProp
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+}
++Link 104 362 "ScriptParams"
+{
+	"" rFrobInert
+}
+-ObjProp 70 "DarkStat"
++ObjProp 861 "Scale"
+{
+	"" 1,1,0.99
+}

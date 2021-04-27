@@ -1,0 +1,147 @@
+DML1
+
+//T2 FM: The Wedding of Lady Dark by Theker / Fixes
+
+FINGERPRINT
+{
+	645 [35 0 16]
+	1122 [-86 -55 -41]
+	951 [135 -69 -4]
+	1194 [42 -15 -37]
+	1084 [148 -78 -5]
+	608 [110 3 -7]
+	337 [-22 26 -21]
+	318 [-24 38 -21]
+	QVAR "goal_target_3" == 798
+}
+
+#script "squirrel"
+
+ObjProp 1138 "Scripts"
+{
+	"Script 1" ""
+}
++ObjProp 1281 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1281 "Position"
+{
+	"Location" 43.7903,-48.8834,-44.5716
+	"Heading" 2de1
+}
++ObjProp 462 "Position"
+{
+	"Location" -34.8969,32.4791,14.866
+	"Heading" 90db
+}
++ObjProp 779 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,-0.3
+}
++ObjProp 779 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1184 "Scale"
+{
+	"" 0.5,0.5,0.5
+}
++ObjProp 1276 "Scale"
+{
+	"" 0.5,0.5,0.5
+}
++ObjProp 1282 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1282 "Position"
+{
+	"Location" 10.6704,21.0702,15.2727
+	"Heading" b233
+}
++ObjProp 136 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 151 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 344 "Scale"
+{
+	"" 0.6,0.6,0.6
+}
++ObjProp 359 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 359 "Position"
+{
+	"Location" -10.2741,41.9658,-21.701
+}
++ObjProp 347 "Scale"
+{
+	"" 0.6,0.6,0.6
+}
++ObjProp 346 "Scale"
+{
+	"" 0.6,0.6,0.6
+}
++ObjProp 346 "DesignNote"
+{
+	"" RepositionLoc=-22.1749,33.6477,-21.0612
+}
++ObjProp 346 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 345 "Scale"
+{
+	"" 0.6,0.6,0.6
+}
++ObjProp 345 "DesignNote"
+{
+	"" RepositionLoc=-21.9343,17.9596,-21.1335
+}
++ObjProp 345 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 354 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.3,0.0
+}
++ObjProp 354 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 351 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.3,0.0
+}
++ObjProp 351 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+ObjProp 794 "Scale"
+{
+	"" 0.97,1.38,0.98
+}
+ObjProp 792 "Scale"
+{
+	"" 0.97,1.38,0.98
+}
+ObjProp 795 "Scale"
+{
+	"" 0.97,1.38,0.98
+}
+ObjProp 791 "Scale"
+{
+	"" 0.97,1.38,0.98
+}

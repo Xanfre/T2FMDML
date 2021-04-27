@@ -1,0 +1,90 @@
+DML1
+
+//T2 FM: Keyhunt (Small Stock Resource Contest) by Renzo Thonen (Eshaktaar) / Fixes
+
+FINGERPRINT
+{
+	601 [-21 145 123]
+	427 [-18 176 174]
+	201 [-14 216 158]
+	148 [13 209 157]
+	46 [17 219 186]
+	345 [2 185 121]
+	100 [23 160 174]
+	526 [20 213 185]
+	QVAR "goal_target_3" == 507
+}
+
+//mantling
++ObjProp 10 "PhysCanMant"
+{
+}
++ObjProp 11 "PhysCanMant"
+{
+}
++ObjProp 12 "PhysCanMant"
+{
+}
++ObjProp 13 "PhysCanMant"
+{
+}
++ObjProp 16 "PhysCanMant"
+{
+}
++ObjProp 17 "PhysCanMant"
+{
+}
++ObjProp 19 "PhysCanMant"
+{
+}
++ObjProp 24 "PhysCanMant"
+{
+}
++ObjProp 53 "PhysCanMant"
+{
+}
++ObjProp 55 "PhysCanMant"
+{
+}
++ObjProp 115 "PhysCanMant"
+{
+}
++ObjProp 577 "PhysCanMant"
+{
+}
++ObjProp 578 "PhysCanMant"
+{
+}
++ObjProp 612 "PhysCanMant"
+{
+}
+//doors
++Receptron 199 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 223 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//mysterious keys
++ObjProp 132 "NoDrop"
+{
+	"" true
+}
++ObjProp 139 "NoDrop"
+{
+	"" true
+}
++ObjProp 302 "NoDrop"
+{
+	"" true
+}
++ObjProp 377 "NoDrop"
+{
+	"" true
+}

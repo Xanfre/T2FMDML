@@ -1,0 +1,87 @@
+DML1
+
+//T2 FM: The Seven Sisters by Lady Rowena / Fixes
+
+FINGERPRINT
+{
+	1312 [-175 -224 -24]
+	1927 [-312 -351 -10]
+	1286 [-174 -178 -38]
+	282 [-419 -172 -40]
+	250 [-415 -111 -72]
+	529 [-22 -211 -22]
+	1613 [-217 -538 -18]
+	1264 [-248 -401 -11]
+	QVAR "goal_target_6" == 552
+}
+
+#script "squirrel"
+
++ObjProp 176 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 176 "DesignNote"
+{
+	"" RepositionLoc="0,0,-0.2"
+}
++ObjProp 760 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 761 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1173 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 2761 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2761 "DesignNote"
+{
+	"" RepositionLoc="-0.2,0,0.2"
+}
++ObjProp 2760 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2760 "DesignNote"
+{
+	"" RepositionLoc="-0.3,0,0.2"
+}
++ObjProp 2759 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2759 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 2758 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2758 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 2757 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2757 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 2756 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 2756 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.7"
+}

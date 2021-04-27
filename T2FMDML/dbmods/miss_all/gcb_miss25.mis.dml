@@ -1,0 +1,60 @@
+DML1
+
+//T2 FM: A Guard Called Benny by Jari Mäkinen (Dark Arrow) / Fix loot
+
+FINGERPRINT
+{
+	658 [-56 -154 -31]
+	1233 [-32 -154 -28]
+	570 [33 -147 -17]
+	1014 [44 -93 -17]
+	506 [41 -85 -29]
+	1254 [-27 -138 -26]
+	757 [-31 -123 19]
+	1194 [21 -161 -27]
+	QVAR "goal_target_4" == 965
+}
+
++ObjProp 1294 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1294 "PhysControl"
++ObjProp 1294 "Position"
+{
+	"Location" 2.77, -133.18, -1.362
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 1295 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1295 "PhysControl"
++ObjProp 1295 "Position"
+{
+	"Location" 2.42, -133.34, -1.362
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 1296 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1296 "PhysControl"
++ObjProp 1296 "Position"
+{
+	"Location" 2.87, -133.6, -1.362
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++Link 1016 1294 "ScriptParams"
+{
+	"" R@2
+}

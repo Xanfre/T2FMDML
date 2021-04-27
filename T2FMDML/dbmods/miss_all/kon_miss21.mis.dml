@@ -1,0 +1,78 @@
+DML1
+
+//T2 FM: Konkurrenten by Igor Smikalla (Rostvogel) / Fix loot and other problems
+
+FINGERPRINT
+{
+	1291 [40 -101 -43]
+	1993 [-69 -187 -3]
+	861 [-19 -57 -5]
+	157 [43 -137 0]
+	2014 [-26 -72 -7]
+	1848 [-135 -225 30]
+	1584 [-57 -455 19]
+	1568 [-154 -407 22]
+	QVAR "goal_target_0" == 1249
+}
+
+-Link 183 898 "Contains"
++Link 183 898 "Contains"
+{
+	"" Belt   
+}
++ObjProp 2136 "FrobInfo"
+{
+	"World Action" Ignore
+}
++ObjProp 2232 "CombineType" 
+{ 
+	"" Loot
+}
++ObjProp 2237 "CombineType" 
+{ 
+	"" Loot
+}
++ObjProp 1968 "Scripts"
+{
+	"Script 0" TrigSlain
+}
++ObjProp 2104 "Scripts"
+{
+	"Script 0" Trapsetqvar
+}
++ObjProp 2104 "Trapqvar"
+{
+	"" =1:goal_state_9
+}
++Link 1968 2104 "ControlDevice"
+{
+}
++ObjProp 2237 "Scripts"
+{
+	"Script 0" LootSounds
+}
++ObjProp 2232 "Scripts"
+{
+	"Script 0" LootSounds
+}
++ObjProp 2232 "StackCount"     
+{
+	"" 0
+}
++ObjProp 2237 "StackCount"     
+{
+	"" 0
+}
++ObjProp 1818 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1818 "PhysControl"
++ObjProp 1818 "Position"
+{
+	"Location" -131.04, -106.73, 34.81
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}

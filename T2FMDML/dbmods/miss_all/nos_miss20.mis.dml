@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Nostalgia by Rob Strain (Random_Taffer) and Devin Reynolds (Drysils Chosen) / Fix conversation
+
+FINGERPRINT
+{
+	460 [517 545 507]
+	107 [504 471 530]
+	244 [518 449 433]
+	420 [602 441 502]
+	389 [505 366 382]
+	546 [486 378 380]
+	136 [429 441 496]
+	637 [463 315 383]
+	QVAR "goal_target_2" == 319
+}
+
++ObjProp 218 "AI_Efficiency"  
+{
+	"Enabled" false
+}

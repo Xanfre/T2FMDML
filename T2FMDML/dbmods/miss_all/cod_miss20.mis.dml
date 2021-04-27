@@ -1,0 +1,109 @@
+DML1
+
+//T2 FM: Citadel of Douro by Pedro Quintela (Cardia) / Fixes
+
+FINGERPRINT
+{
+	2319 [-182 -80 -34]
+	2105 [-265 -38 -39]
+	1438 [-131 -113 -20]
+	560 [-142 -144 -27]
+	1197 [-108 117 -39]
+	754 [-41 -175 -15]
+	2030 [-211 -103 -37]
+	1610 [-193 -185 -20]
+	QVAR "goal_target_0" == 836
+}
+
+#script "squirrel"
+
++ObjProp 830 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 548 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 400 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 400 "DesignNote"
+{
+	"" RepositionLoc="-45.4903,-169.41,-38.1411"
+}
++ObjProp 399 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 399 "DesignNote"
+{
+	"" RepositionLoc="-50.358,-170.43,-37.1216"
+}
++ObjProp 1577 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1577 "DesignNote"
+{
+	"" RepositionLoc="-233.874,-208.857,-38.1416"
+}
++ObjProp 1577 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1577 "DesignNote"
+{
+	"" RepositionLoc="-233.874,-208.857,-38.1416"
+}
++ObjProp 1576 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1576 "DesignNote"
+{
+	"" RepositionLoc="-236.635,-200.766,-37.1318"
+}
++ObjProp 1579 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1579 "DesignNote"
+{
+	"" RepositionLoc="-240.692,-197.607,-38.1921"
+}
++ObjProp 1586 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1586 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 1587 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1587 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 1096 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1096 "DesignNote"
+{
+	"" RepositionLoc="-183.912,-107.148,-37.0304"
+}
++ObjProp 873 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 873 "DesignNote"
+{
+	"" RepositionLoc="-0.2,0,0.2"
+}

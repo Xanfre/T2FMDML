@@ -1,0 +1,52 @@
+DML1
+
+//T2 FM: Cragscright Prison by Marcin Pawelec (Paweuek) / Fix for killing the sheriff on expert
+
+FINGERPRINT
+{
+	195 [-41 85 45]
+	76 [-53 52 47]
+	157 [27 34 52]
+	241 [-25 68 44]
+	293 [54 60 51]
+	353 [5 97 48]
+	206 [3 8 47]
+	304 [71 51 45]
+	QVAR "goal_target_0" == 158
+}
+
+#script "nvscript"
+
++ObjProp 158 "TrapQVar"
+{
+    "" =1:goal_state_0
+}
++ObjProp 158 "DesignNote"
+{
+    "" NVTrapSetQVarOn="Slain"
+}
++ObjProp 158 "Scripts"
+{
+    "Script 0" NVTrapSetQVar
+}
++ObjProp 24 "FrobInfo"
+{
+    "World Action" Move,Script
+}
++ObjProp 24 "TrapQVar"
+{
+    "" =1:goal_state_6
+}
++ObjProp 24 "DesignNote"
+{
+    "" NVTrapSetQVarOn="FrobWorldEnd"
+}
++ObjProp 24 "Scripts"
+{
+    "Script 0" NVTrapSetQVar
+}
++ObjProp 45 "PhysType"
+{
+    "Type" None
+    "# Submodels" 0
+}

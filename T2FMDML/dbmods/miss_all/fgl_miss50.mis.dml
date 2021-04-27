@@ -1,0 +1,123 @@
+DML1
+
+//T2 FM: Fortune and Glory by DonkeyKong / Fixes
+
+FINGERPRINT
+{
+	330 [-91 128 19]
+	500 [-179 109 1]
+	298 [516 -364 -13]
+	223 [512 -202 -26]
+	583 [-145 -147 -12]
+	744 [415 -220 -57]
+	949 [-20 144 0]
+	674 [-121 -111 -13]
+	QVAR "goal_target_0" == 1079
+}
+
+//loot
++ObjProp 557 "Loot"
+{
+}
++ObjProp 560 "Loot"
+{
+}
++ObjProp 561 "Loot"
+{
+}
++ObjProp 568 "Loot"
+{
+}
++ObjProp 597 "Loot"
+{
+}
++ObjProp 628 "Loot"
+{
+}
++ObjProp 752 "Loot"
+{
+}
++ObjProp 753 "Loot"
+{
+}
++ObjProp 754 "Loot"
+{
+}
++ObjProp 755 "Loot"
+{
+}
++ObjProp 756 "Loot"
+{
+}
++ObjProp 757 "Loot"
+{
+}
++ObjProp 758 "Loot"
+{
+}
++ObjProp 759 "Loot"
+{
+}
++ObjProp 760 "Loot"
+{
+}
++ObjProp 761 "Loot"
+{
+}
++ObjProp 762 "Loot"
+{
+}
++ObjProp 763 "Loot"
+{
+}
+//doors
++MetaProp 114 -2420
++MetaProp 163 -2420
++MetaProp 173 -2420
++MetaProp 387 -2420
++MetaProp 388 -2420
++MetaProp 605 -2420
++MetaProp 608 -2420
++MetaProp 641 -2420
++MetaProp 646 -2420
++MetaProp 647 -2420
++MetaProp 654 -2420
++MetaProp 655 -2420
++MetaProp 656 -2420
++MetaProp 657 -2420
++MetaProp 728 -2420
++MetaProp 729 -2420
++Link 457 459 "ScriptParams"
+{
+	"" Double
+}
++Link 795 796 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 795 "RotDoor"
+{
+	"Open Angle" 273
+}
+ObjProp 796 "RotDoor"
+{
+	"Open Angle" 89
+}
++Link 810 811 "ScriptParams"
+{
+	"" Double
+}
++Link 817 818 "ScriptParams"
+{
+	"" Double
+}
+//mask
++ObjProp 640 "StackCount"
+{
+}
+//wall skull
+-ObjProp 714 "PhysType"
++ObjProp 714 "PhysType"
+{
+	"Type" Sphere
+}

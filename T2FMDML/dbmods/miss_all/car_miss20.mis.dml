@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: Carneval by Silencium / Fixes
+
+FINGERPRINT
+{
+	299 [36 -159 -58]
+	112 [44 -92 -51]
+	287 [23 -162 -58]
+	50 [54 -35 -61]
+	224 [36 -143 -58]
+	306 [53 -160 -58]
+	220 [34 -140 -58]
+	181 [53 -132 -58]
+	QVAR "goal_target_0" == 27
+}
+
+//loot
++ObjProp 14 "Loot"
+{
+}
++ObjProp 15 "Loot"
+{
+}
++ObjProp 53 "Loot"
+{
+}
++ObjProp 56 "Loot"
+{
+}
++ObjProp 57 "Loot"
+{
+}
++ObjProp 58 "Loot"
+{
+}
++ObjProp 60 "Loot"
+{
+}
++ObjProp 68 "Loot"
+{
+}

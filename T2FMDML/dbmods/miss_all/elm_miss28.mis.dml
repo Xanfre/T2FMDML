@@ -1,0 +1,44 @@
+DML1
+
+//T2 FM: Elevator Mission by JIS / Fix for a goal
+
+FINGERPRINT
+{
+	505 [-48 -383 10]
+	1150 [28 -533 4]
+	1334 [-17 -540 3]
+	1403 [-77 -558 20]
+	414 [-40 -351 10]
+	1527 [-43 -262 -22]
+	301 [-41 -219 -20]
+	628 [-71 -378 -52]
+	QVAR "goal_target_0" == 1612
+}
+
+-ObjProp 421 "FrobInfo"
++ObjProp 421 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+-ObjProp 461 "TrapQVar"
++ObjProp 461 "TrapQVar"
+{
+	"" =1:goal_visible_4
+}
++ObjProp 421 "Scripts"
+{
+	"Script 1" TrigWorldFrob
+}
++Link 421 461 "ControlDevice"
+{
+}
++ObjProp 1252 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++Link 421 1252 "ControlDevice"
+{
+}
++Link 1252 421 "ControlDevice"
+{
+}

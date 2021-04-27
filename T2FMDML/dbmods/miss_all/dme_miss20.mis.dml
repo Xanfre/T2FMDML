@@ -1,0 +1,48 @@
+DML1
+
+//T2 FM: Dark Messiah by Schattengilde / Fix minor issues
+
+FINGERPRINT
+{
+	1286 [426 568 -38]
+	100 [171 350 -14]
+	1238 [411 607 -61]
+	964 [410 674 -34]
+	981 [434 537 -40]
+	835 [393 552 -29]
+	1323 [99 377 -32]
+	249 [237 378 -23]
+	QVAR "goal_target_1" == 1263
+}
+
++ObjProp 1287 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1287 "Position"
++ObjProp 1287 "Position"
+{
+	"Location" 164.38,271.29,13.546
+	"Heading" 0
+	"Bank" aaa
+	"Pitch" 4000
+}
+-ObjProp 725 "Position"
++ObjProp 725 "Position"
+{
+	"Location" 374.03,618.0,-38.465
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 725 "PhysType"
++ObjProp 725 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 971 "BlockFrob"       
+{
+	"" true
+}

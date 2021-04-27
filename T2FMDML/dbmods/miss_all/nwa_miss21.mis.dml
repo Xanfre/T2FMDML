@@ -1,0 +1,59 @@
+DML1
+
+//T2 FM: The Night Watch by Fidcal / Fixes
+
+FINGERPRINT
+{
+	1603 [-157 121 610]
+	133 [144 78 606]
+	250 [-161 112 610]
+	1104 [87 -33 630]
+	1277 [32 -19 650]
+	1394 [91 -61 651]
+	1171 [87 -33 623]
+	104 [21 -48 655]
+	QVAR "goal_target_0" == 844
+}
+
++ObjProp 59 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 59 "Position"
+{
+	"Location" 82.0169,-34.4583,659.876
+	"Heading" 656d
+	"Pitch" 4000
+}
++ObjProp 60 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 60 "Position"
+{
+	"Location" 81.8152,-34.8204,659.876
+	"Heading" 6187
+	"Pitch" 4000
+}
++ObjProp 69 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 69 "Position"
+{
+	"Location" 82.2438,-34.2954,659.876
+	"Heading" 638e
+	"Pitch" 4000
+}
++ObjProp 912 "Position"
+{
+	"Location" 70.1664,-19.39,662.75
+}
++ObjProp 49 "Position"
+{
+	"Location" 69.9594,-21.2324,662.375
+	"Heading" 4000
+}

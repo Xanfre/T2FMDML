@@ -1,0 +1,73 @@
+DML1
+
+//T2 FM: A Love Story IV by John Denison / Fixes
+
+FINGERPRINT
+{
+	833 [-275 116 -10]
+	504 [-274 61 -2]
+	485 [-366 170 6]
+	1255 [-146 94 -15]
+	1629 [-326 139 6]
+	1901 [110 63 -50]
+	321 [-259 158 -12]
+	1940 [79 74 -44]
+	QVAR "goal_target_3" == 1069
+}
+
+#script "squirrel"
+
++ObjProp 820 "Position"
+{
+	"Location" -196.652,137.374,-1.18475
+	"Heading" 3cf0
+}
++ObjProp 820 "AI_AlrtRsp"
+{
+	"Response: Step 1" Nothing()
+	"   Argument 1" ""
+	"   Argument 2" ""
+	"   Argument 3" ""
+}
++ObjProp 761 "CretPose"
+{
+	"Type" Tags
+	"Motion" Crumple,Die,Sitting
+}
++ObjProp 1376 "DesignNote"
+{
+	"" RepositionLoc=-198.846,159.705,-3.59531
+}
++ObjProp 1376 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1360 "DesignNote"
+{
+	"" RepositionLoc=-197.835,155.058,-2.535
+}
++ObjProp 1360 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 857 "DesignNote"
+{
+	"" RepositionLoc=-150.059,169.421,-18.1703
+}
++ObjProp 857 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1764 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1764 "Position"
+{
+	"Location" -317.401,143.157,0.753147
+}
++ObjProp 355 "Position"
+{
+	"Location" -184.92,81.69,-34.42
+}

@@ -1,0 +1,30 @@
+DML1
+
+//T2 FM: Death's Cold Embrace by Russ Robbins (Yandros), Rob Strain (Random_Taffer), Robin Collier (R Soul), Moghedian, Polygon, Peter Smith, & Tannar / Fixes
+
+FINGERPRINT
+{
+	1155 [634 581 522]
+	36 [600 607 506]
+	1526 [453 595 515]
+	415 [674 564 525]
+	481 [620 557 503]
+	1912 [677 823 496]
+	2351 [711 819 530]
+	426 [650 604 498]
+	QVAR "goal_target_9" == 2073
+}
+
+//prevent unused goal from showing
+-Link 2045 2059 "ControlDevice"
+-Link 3367 4505 "ControlDevice"
+-Link 3281 4505 "ControlDevice"
+-Link 3282 4505 "ControlDevice"
+-Link 4352 4505 "ControlDevice"
+//loot
++ObjProp 4018 "Loot"
+{
+	"Gold" 50
+	"Gems" 0
+	"Art" 0
+}

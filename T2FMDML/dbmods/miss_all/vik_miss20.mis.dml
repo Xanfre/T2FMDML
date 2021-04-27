@@ -1,0 +1,44 @@
+DML1
+
+//T2 FM: Viktor Gaspar by Douglas Brainard (Balboa) / Fixes
+
+FINGERPRINT
+{
+	1065 [478 485 518]
+	1139 [442 520 564]
+	1396 [458 429 503]
+	187 [430 497 512]
+	1064 [478 475 518]
+	505 [496 527 495]
+	466 [443 541 533]
+	1069 [474 487 514]
+	QVAR "goal_target_3" == 612
+}
+
+//loot
++ObjProp 345 "Loot"
+{
+}
+//fake sun mask
++ObjProp 613 "CombineType"
+{     
+	"" FakeMask
+}
+//doors
++ObjProp 1355 "BlockFrob"     
+{
+	"" true
+}
++ObjProp 1356 "BlockFrob"     
+{
+	"" true
+}
++ObjProp 1394 "BlockFrob"     
+{
+	"" true
+}
+//P0447 key
+ObjProp 1710 "PickDist"
+{
+	"" 4.00
+}

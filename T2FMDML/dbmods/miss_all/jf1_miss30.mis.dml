@@ -1,0 +1,264 @@
+DML1
+
+//T2 FM: Just Friends part 1 by Chris Moyer (bassmanret) / Fixes
+
+FINGERPRINT
+{
+	1879 [869 913 565]
+	319 [763 587 565]
+	1325 [685 904 564]
+	1390 [759 923 575]
+	528 [815 591 562]
+	987 [775 776 588]
+	1773 [869 953 583]
+	524 [861 590 567]
+	QVAR "goal_target_0" == 496
+}
+
+#script "squirrel"
+
++ObjProp 784 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.1,0.1
+}
++ObjProp 784 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1171 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.5,0.1
+}
++ObjProp 1171 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1172 "DesignNote"
+{
+	"" RepositionLoc=0.5,1.0,0.0
+}
++ObjProp 1172 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1016 "DesignNote"
+{
+	"" RepositionLoc=683.041,747.953,563.915
+}
++ObjProp 1016 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1017 "DesignNote"
+{
+	"" RepositionLoc=683.015,744.018,563.915
+}
++ObjProp 1017 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 987 "DesignNote"
+{
+	"" RepositionLoc=-0.3,0.0,0.0
+}
++ObjProp 987 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 988 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.5,0.0
+}
++ObjProp 988 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1872 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,0.0
+}
++ObjProp 1872 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1917 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,0.0
+}
++ObjProp 1917 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1910 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,0.0
+}
++ObjProp 1910 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1914 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.1
+}
++ObjProp 1914 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1386 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.2,0.2
+}
++ObjProp 1386 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1520 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.1
+}
++ObjProp 1520 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1510 "DesignNote"
+{
+	"" RepositionLoc=831.023,937.561,565.525
+}
++ObjProp 1510 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1511 "DesignNote"
+{
+	"" RepositionLoc=830.204,922.859,565.525
+}
++ObjProp 1511 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1667 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,0.0
+}
++ObjProp 1667 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1668 "DesignNote"
+{
+	"" RepositionLoc=-0.2,-0.2,0.0
+}
++ObjProp 1668 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 627 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.4,0.0
+}
++ObjProp 627 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 628 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.5,0.0
+}
++ObjProp 628 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 257 "DesignNote"
+{
+	"" RepositionLoc=702.519,569.389,565.096
+}
++ObjProp 257 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1525 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,1.0
+}
++ObjProp 1525 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1004 "DesignNote"
+{
+	"" RepositionLoc=4.0,0.0,0.0
+}
++ObjProp 1004 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 539 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 539 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 1294 "BlockFrob" 
+{
+	"" true
+}
++ObjProp 1330 "BlockFrob" 
+{
+	"" true
+}
+-ObjProp 789 "FrobInfo"
++ObjProp 789 "FrobInfo"
+{
+	"World Action" Script
+}
+-ObjProp 1331 "PickDist" 
++ObjProp 1331 "PickDist"       
+{
+	"" 5
+}
+-ObjProp 2042 "DeathStage"
+-ObjProp 490 "DeathStage"
+-ObjProp 1907 "DeathStage"
+-ObjProp 1908 "DeathStage"
+-ObjProp 1209 "DeathStage"
+-ObjProp 1271 "DeathStage"
+ObjProp 940 "PGLaunchInfo"
+{
+	"Min time" 1.5
+	"Max time" 1.5
+}
+ObjProp 937 "PGLaunchInfo"
+{
+	"Min time" 0.5
+	"Max time" 0.5
+}
++ObjProp 255 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 732 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 740 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1114 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

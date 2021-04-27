@@ -1,0 +1,18 @@
+DML1
+
+//T2 FM: Shadows in our Blood by Ali Pouladi (Haplo) / Load more recent NVScript module
+
+FINGERPRINT
+{
+	1161 [558 196 323]
+	1076 [449 202 289]
+	963 [552 224 300]
+	469 [483 150 307]
+	716 [281 274 295]
+	1244 [386 143 294]
+	1306 [405 230 294]
+	1175 [442 157 292]
+	QVAR "goal_target_5" == 885
+}
+
+#script "nvscript"

@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: The New Sheriff (Strange Ventures Contest) by JarlFrank / Fixes
+
+FINGERPRINT
+{
+	1341 [-46 -67 -44]
+	1497 [38 42 -32]
+	845 [190 92 -40]
+	1207 [204 196 -49]
+	312 [-90 193 -59]
+	939 [178 71 -46]
+	563 [-89 -50 -19]
+	827 [42 114 -64]
+	QVAR "goal_target_6" == 615
+}
+
+//secrets
+-ObjProp 222 "DarkStat"
+ObjProp 2044 "DarkStat"
+{
+	"" None
+}
+ObjProp 2045 "DarkStat"
+{
+	"" None
+}
+//mantling
++ObjProp 107 "PhysCanMant"
+{
+}
++ObjProp 505 "PhysCanMant"
+{
+}
++ObjProp 646 "PhysCanMant"
+{
+}

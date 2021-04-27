@@ -1,0 +1,32 @@
+DML1
+
+//T2 FM: The Seven Shades Of Mercury by The Hammerite Imperium Team / Fix bookcase
+
+FINGERPRINT
+{
+	2184 [-39 -131 162]
+	1900 [84 -42 211]
+	277 [-177 43 173]
+	1572 [-121 73 80]
+	2368 [72 -21 194]
+	234 [-11 60 195]
+	486 [-268 -224 180]
+	1283 [-72 -69 211]
+	QVAR "goal_target_3" == 1866
+}
+
++ObjProp 2732 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" Sim
+	"MiscC" None
+	"CurveC" None
+	"Rate" 0
+}
++ObjProp 2732 "StTweqDelete"
+{
+	"AnimS" On
+	"MiscS" None
+	"Cur Time" 0
+	"Frame #" 0
+}

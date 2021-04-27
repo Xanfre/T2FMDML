@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: A Night in the Pub by Oskar Schwermer (Hrothgar) / Fix goal 2
+
+FINGERPRINT
+{
+	148 [-61 -157 -30]
+	300 [-78 -251 -27]
+	522 [-254 -248 -42]
+	51 [-1 -209 -29]
+	556 [-207 -262 -1]
+	544 [47 -100 -13]
+	620 [-43 -293 -27]
+	285 [-152 -94 -41]
+	QVAR "goal_target_0" == 221
+}
+
+-Link 201 564 "ControlDevice"
+-Link 201 565 "ControlDevice"
+-Link 201 613 "ControlDevice"
+-Link 201 561 "ControlDevice"
+-Link 201 195 "ControlDevice"
++ObjProp 545 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 545 "TrapFlags"  
+{
+	"" Once,NoOff
+}
++Link 201 545 "ControlDevice"
+{
+}
++Link 545 564 "ControlDevice"
+{
+}
++Link 545 613 "ControlDevice"
+{
+}
++Link 545 561 "ControlDevice"
+{
+}

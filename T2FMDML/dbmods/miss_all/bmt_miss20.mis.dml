@@ -1,0 +1,182 @@
+DML1
+
+//T2 FM: Bloodmist Tower by Katy Fortner (Kfort) / Fixes
+
+FINGERPRINT
+{
+	1274 [-344 170 270]
+	1931 [154 87 -43]
+	2139 [144 51 -44]
+	2345 [97 162 58]
+	116 [75 162 38]
+	1896 [73 153 22]
+	971 [-147 -53 183]
+	1283 [-341 160 239]
+	QVAR "goal_target_3" == 1233
+}
+
+#script "squirrel"
+
++ObjProp 1195 "Scale"
+{
+	"" 0.33,0.33,0.33
+}
++ObjProp 1195 "Position"
+{
+	"Location" -241.028,457.859,186.268
+}
++ObjProp 477 "Loot"
+{
+	"Gold" 100
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 184 "Loot"
+{
+	"Gold" 100
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1512 "Loot"
+{
+	"Gold" 100
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1695 "DesignNote"
+{
+	"" RepositionLoc=-326.429,177.51,185.346
+}
++ObjProp 1695 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1717 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 1717 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 1698 "DesignNote"
+{
+	"" RepositionLoc=-347.449,176.737,185.221
+}
++ObjProp 1698 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 263 "DesignNote"
+{
+	"" RepositionLoc=-344.384,176.893,185.316
+}
++ObjProp 263 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1699 "DesignNote"
+{
+	"" RepositionLoc=-344.629,176.759,188.114
+}
++ObjProp 1699 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 257 "DesignNote"
+{
+	"" RepositionLoc=-356.397,144.359,204.06
+}
++ObjProp 257 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 258 "DesignNote"
+{
+	"" RepositionLoc=-361.146,146.645,204.06
+}
++ObjProp 258 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 259 "DesignNote"
+{
+	"" RepositionLoc=-360.366,143.116,203.308
+}
++ObjProp 259 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 252 "DesignNote"
+{
+	"" RepositionLoc=-326.936,146.59,203.76
+}
++ObjProp 252 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 253 "DesignNote"
+{
+	"" RepositionLoc=-353.908,146.874,203.76
+}
++ObjProp 253 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 254 "DesignNote"
+{
+	"" RepositionLoc=-327.144,142.988,203.76
+}
++ObjProp 254 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 255 "DesignNote"
+{
+	"" RepositionLoc=-331.305,147.221,203.76
+}
++ObjProp 255 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 256 "DesignNote"
+{
+	"" RepositionLoc=-331.457,144.013,203.76
+}
++ObjProp 256 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 2944 "DesignNote"
+{
+	"" RepositionLoc=-343.757,153.086,187.173
+}
++ObjProp 2944 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 2947 "DesignNote"
+{
+	"" RepositionLoc=-345.576,153.069,187.173
+}
++ObjProp 2947 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 1093 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1093 "Position"
+{
+	"Location" -334.79,152.516,204.701
+	"Heading" da27
+}

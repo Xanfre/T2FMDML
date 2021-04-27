@@ -1,0 +1,98 @@
+DML1
+
+//T2 FM: Stowaway by Finial / Fix spice goal and various objects
+
+FINGERPRINT
+{
+	557 [53 87 15]
+	322 [135 81 -45]
+	531 [203 113 8]
+	419 [119 77 -4]
+	143 [139 139 -7]
+	541 [97 73 14]
+	360 [157 32 -4]
+	81 [-6 78 2]
+	QVAR "goal_target_0" == 288
+}
+
++ObjProp 498 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
++ObjProp 498 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 146 498 "ControlDevice"
+{
+}
++ObjProp 146 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 146 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
++ObjProp 136 "FrobInfo"
+{
+}
++ObjProp 136 "NoDrop"
+{
+	"" true
+}
++ObjProp 138 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 138 "NoDrop"
+{
+	"" true
+}
++ObjProp 139 "FrobInfo"
+{
+}
++ObjProp 139 "NoDrop"
+{
+	"" true
+}
++ObjProp 296 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 587 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 519 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 519 "InvType"
+{
+}
++ObjProp 520 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 520 "InvType"
+{
+}
++ObjProp 632 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 632 "InvType"
+{
+}
++ObjProp 633 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 633 "InvType"
+{
+}

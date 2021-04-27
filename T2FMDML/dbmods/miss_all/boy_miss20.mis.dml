@@ -1,0 +1,111 @@
+DML1
+
+//T2 FM: TTGM: Errand Boy by Steven Hindley (Belboz) / Fixes
+
+FINGERPRINT
+{
+	218 [30 288 -4]
+	1478 [-10 -62 26]
+	1833 [-44 290 -2]
+	630 [52 286 20]
+	1805 [-58 13 22]
+	1708 [-58 154 16]
+	1770 [-57 -10 4]
+	636 [58 271 -4]
+	QVAR "goal_target_3" == 2222
+}
+
++ObjProp 1236 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1236 "PhysControl"
++ObjProp 1117 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2003 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2151 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2218 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2220 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2222 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2231 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2232 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2233 "SlayResult"
+{
+	"Effect" Normal
+}
++ObjProp 2234 "SlayResult"
+{
+	"Effect" Normal
+}
+ObjProp 606 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 646 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 899 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 901 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 902 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 903 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 904 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 1460 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 1990 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 2353 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 2354 "Scripts"
+{
+	"Don't Inherit" true
+}
+ObjProp 2355 "Scripts"
+{
+	"Don't Inherit" true
+}

@@ -1,0 +1,113 @@
+DML1
+
+//T2 FM: A Love Story II by John Denison / Fixes
+
+FINGERPRINT
+{
+	1488 [53 289 -12]
+	1510 [55 324 -17]
+	604 [221 192 -44]
+	802 [11 354 -34]
+	49 [-27 118 -28]
+	1368 [16 112 -22]
+	562 [-59 132 -25]
+	1274 [63 340 -14]
+	QVAR "goal_target_5" == 1091
+}
+
+ObjProp 1201 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1202 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1204 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1205 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1206 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1207 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1208 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1209 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1212 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1213 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1214 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1215 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1217 "CollisionType"
+{
+	"" Bounce
+}
+ObjProp 1218 "CollisionType"
+{
+	"" Bounce
+}
+-ObjProp 2019 "Position"
++ObjProp 2019 "Position"
+{
+	"Location" -52.5677,175.112,-35.744
+}
+-ObjProp 228 "Position"
++ObjProp 228 "Position"
+{
+	"Location" -47.5058,79.793,-36.2326
+}
+-ObjProp 230 "Position"
++ObjProp 230 "Position"
+{
+	"Location" -37.6382,81.0921,-36.0459
+	"Heading" 7fe0
+}
+ObjProp 513 "Position"
+{
+	"Location" -135.78,175.719,-17.5013
+	"Heading" a78
+	"Pitch" aac4
+}
++ObjProp 1128 "AI_AlertCap"
+{
+	"Max level" "(0) None"
+	"Min level" "(0) None"
+	"Min relax after peak" "(0) None"
+}
+-ObjProp 217 "AI_Team"
+-ObjProp 227 "AI_Team"
+-ObjProp 228 "AI_Team"
+-ObjProp 229 "AI_Team"
+-ObjProp 230 "AI_Team"
+-ObjProp 1159 "AI_Team"
++MetaProp 217 -3371
++MetaProp 227 -3371
++MetaProp 228 -3371
++MetaProp 229 -3371
++MetaProp 230 -3371
++MetaProp 1159 -3371

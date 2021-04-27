@@ -1,0 +1,94 @@
+DML1
+
+//T2 FM: McLeod's Revenge by Oldweird / Fix objects and add another trigger for the final goal
+
+FINGERPRINT
+{
+	857 [759 41 441]
+	128 [346 0 493]
+	455 [648 -540 429]
+	645 [-306 -403 431]
+	382 [329 -28 428]
+	284 [329 -165 388]
+	173 [296 75 463]
+	452 [409 -301 431]
+	QVAR "goal_target_5" == 598
+}
+
+#script "nvscript"
+
++ObjProp 299 "Scripts"
+{
+	"Script 1" NVMetaTrap
+	"Script 2" TrigUnlock
+	"Script 3" TweqOnOff
+}
++ObjProp 299 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"
+}
++ObjProp 397 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 397 "DesignNote"  
+{ 
+	"" NVRelaytrapOn="Sim"; 
+}
++ObjProp 471 "Scripts"
+{
+	"Script 3" TrigDoorOpen
+}
++Link 471 215 "ControlDevice"
+{
+}
+-Link 405 406 "CreatureAttachment"
++Link 405 406 "Contains"
+{
+	"" Belt
+}
++ObjProp 558 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 558 "PhysControl"
++ObjProp 558 "Position"
+{
+	"Location" 611.76, -534.039, 431.147
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 4000  
+}
++ObjProp 397 "Position"
+{
+	"Location" 612.998, -517.477, 433.386
+	"Heading" 7ffe
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 397 "Scripts"
+{
+	"Script 0" TrapTeleporter
+}
++Link 397 511 "ControlDevice"
+{
+}
++ObjProp 339 "Scripts"
+{
+	"Script 1" TrigDoorOpen
+}
++Link 339 397 "ControlDevice"
+{
+}
++Link 299 299 "ControlDevice"
+{
+}
++ObjProp 308 "PickDist" 
+{
+	"" 4.00
+}
++ObjProp 598 "PickDist" 
+{
+	"" 4.30
+}

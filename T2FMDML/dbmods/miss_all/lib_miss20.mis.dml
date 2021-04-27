@@ -1,0 +1,50 @@
+DML1
+
+//T2 FM: The Librarian by Ger Hermans (nightshifter) / Fix goal 9
+
+FINGERPRINT
+{
+	1325 [821 383 359]
+	1726 [684 784 304]
+	1305 [828 386 357]
+	623 [791 398 389]
+	1994 [585 752 242]
+	1627 [658 588 385]
+	892 [521 549 425]
+	1194 [599 514 396]
+	QVAR "goal_target_5" == 2201
+}
+
++ObjProp 825 "Locked"
+{
+	"" true
+}
++ObjProp 826 "Locked"
+{
+	"" true
+}
++ObjProp 2160 "Scripts"
+{
+	"Script 1" TrapRelay
+}
++Link 843 2160 "ControlDevice"
+{
+}
++ObjProp 825 "Scripts"
+{
+	"Script 1" Lock
+}
++ObjProp 826 "Scripts"
+{
+	"Script 1" Lock
+}
++Link 2160 825 "ControlDevice"
+{
+}
++Link 2160 826 "ControlDevice"
+{
+}
++ObjProp 2160 "TrapFlags"
+{
+	"" Once,Invert
+}

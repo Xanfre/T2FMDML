@@ -1,0 +1,27 @@
+DML1
+
+//T2 FM: TrainSpotting (Contest 2) by J. Knez (Schwaa) / Fix carpenter table
+
+FINGERPRINT
+{
+	467 [-128 -42 -15]
+	694 [-137 -22 -14]
+	749 [-221 36 -17]
+	574 [-167 -15 1]
+	169 [-196 0 15]
+	264 [-222 18 -4]
+	128 [-217 6 -3]
+	566 [-146 -14 1]
+	QVAR "goal_target_0" == 729
+}
+
++ObjProp 682 "PhysDims"
+{
+	"Size" 5.17, 6.88, 3.58
+	"Radius 1" 0.00
+	"Radius 2" 0.00
+	"Offset 1" 0.00, 0.70, -2.17
+	"Offset 2" 0.00, 0.00, 0.00
+	"Point vs Terrain" false
+	"Point vs Not Special" false
+}

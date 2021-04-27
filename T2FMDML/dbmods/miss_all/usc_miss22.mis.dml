@@ -1,0 +1,300 @@
+DML1
+
+//T2 FM: TTGM: Up Shit Creek by Steven Hindley (Belboz) / Fixes
+
+FINGERPRINT
+{
+	1164 [-92 170 100]
+	449 [-757 -206 87]
+	467 [-906 -192 6]
+	786 [-60 141 79]
+	1232 [14 466 93]
+	1300 [-80 382 80]
+	193 [-96 142 -7]
+	427 [-702 -206 82]
+	QVAR "goal_target_3" == 1068
+}
+
+//mantling
++ObjProp 259 "PhysCanMant"
+{
+}
++ObjProp 776 "PhysCanMant"
+{
+}
++ObjProp 955 "PhysCanMant"
+{
+}
++ObjProp 958 "PhysCanMant"
+{
+}
++ObjProp 1065 "PhysCanMant"
+{
+}
+//doors
+ObjProp 379 "Locked"
+{
+	"" true
+}
++MetaProp 350 -2420
++MetaProp 521 -2420
++MetaProp 1003 -2420
++MetaProp 1037 -2420
++MetaProp 1038 -2420
++MetaProp 1064 -2420
++MetaProp 1122 -2420
+-ObjProp 1157 "JointPos"
+//keys
++ObjProp 597 "NoDrop"
+{
+	"" true
+}
++ObjProp 635 "SlayResult"
+{
+}
++ObjProp 636 "SlayResult"
+{
+}
++ObjProp 637 "SlayResult"
+{
+}
++ObjProp 638 "SlayResult"
+{
+}
++ObjProp 722 "SlayResult"
+{
+}
++ObjProp 749 "NoDrop"
+{
+	"" true
+}
++ObjProp 777 "NoDrop"
+{
+	"" true
+}
++ObjProp 787 "NoDrop"
+{
+	"" true
+}
++ObjProp 813 "NoDrop"
+{
+	"" true
+}
++ObjProp 814 "NoDrop"
+{
+	"" true
+}
++ObjProp 935 "NoDrop"
+{
+	"" true
+}
++ObjProp 1022 "SlayResult"
+{
+}
+//plates
+++Receptron 740 "RedStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 741 "WhiteStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 742 "BelbozStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 743 "GreenStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 744 "RedStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 745 "WhiteStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 746 "BlueStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+//lever
++ObjProp 902 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 902 "Class Tags"
+{
+	"1: Tags" ""
+}
+//ruby lava snake head
+-Link 1209 44 "ControlDevice"
++Link 1209 444 "ControlDevice"
+{
+}
+//gold skull (junk)
++ObjProp 532 "InvType"
+{
+}
+//AIs
++ObjProp 15 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 724 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ccavad
+}
++ObjProp 781 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 899 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1043 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1069 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1117 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1124 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1127 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1129 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1138 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1147 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1182 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1198 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1202 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecsolu
+}
++ObjProp 1272 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1279 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1286 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1293 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1334 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1335 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}
++ObjProp 1349 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cape1
+}

@@ -1,0 +1,829 @@
+DML1
+
+//T2 FM: The Dream of Tyrus by Turi Robert / Fixes
+
+FINGERPRINT
+{
+	540 [108 -53 -73]
+	10 [-14 -112 -82]
+	358 [128 23 -99]
+	266 [117 -212 -93]
+	576 [198 121 -97]
+	729 [20 -10 -47]
+	126 [104 -136 -48]
+	659 [154 -136 -51]
+	QVAR "goal_target_0" == 100
+}
+
+-ObjProp 677 "Scale"
+-ObjProp 394 "Position"
++ObjProp 394 "Position"
+{
+	"Location" 97.1911,54.9272,-98.2
+	"Heading" 4000
+}
++Receptron 568 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 14.2647,-150.377,-94.5132
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 568 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 570 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 570 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 428 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 89.537,34.5326,-99.1132
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 428 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 401 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 401 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 496 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 89.218,33.311,-74.5132
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 496 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 490 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 490 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 427 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 117.413,54.6204,-96.7646
+		"Heading" 336.379
+		"Pitch" 0.00
+		"Bank" 275.850
+	}
+}
++StimSource 427 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 385 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 385 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 473 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 103.359,28.9323,-74.5132
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 473 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 471 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 471 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 419 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -5076
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 92.9399,-39.6102,-98.5132
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 419 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 413 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 413 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 411 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -506
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 87.6238,57.4526,-98.8649
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++ObjProp 400 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 400 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 397 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -506
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 91.5492,50.8608,-98.8649
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 397 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 399 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 399 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 402 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -506
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 99.6521,46.4276,-98.8649
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 402 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 398 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 398 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 554 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -2987
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -26.0967,-124.084,-94.0957
+		"Heading" 90
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 554 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 587 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 587 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 560 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -12.5217,-101.267,-94.0957
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 560 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 553 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 553 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 527 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 111.559,-23.9096,-74.0922
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 527 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 530 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 530 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 368 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 118.965,-23.2711,-98.0957
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 368 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 366 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 366 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 369 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 122.554,-23.309,-98.0957
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 369 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 364 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 364 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 367 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 122.664,-26.659,-98.0957
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 367 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 365 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 365 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 107 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 107 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+Create -3082
+{
+	+ObjProp "Position"
+	{
+		"Location" 165.522,-211.326,-96.7556
+		"Heading" c000
+	}
+	+ObjProp "AI_Patrol" 
+	{
+		"" true
+	}
+	+ObjProp "AI_PtrlRnd"
+	{
+		"" true
+	}
+	+ObjProp "AI_Vision"
+	{
+		"" "Well Above Average"
+	}
+	+ObjProp "AI_Hearing"
+	{
+		"" "Well Above Average"
+	}
+	+ObjProp "AI_Aggression"
+	{
+		"" "Well Above Average"
+	}
+	+ObjProp "AI_Verbosity"
+	{
+		"" "Well Above Average"
+	}
+}
++ObjProp 111 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 111 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+Create -3082
+{
+	+ObjProp "Position"
+	{
+		"Location" 188.655,-129.967,-47.7556
+		"Heading" 4000
+	}
+	+ObjProp "AI_Patrol" 
+	{
+		"" true
+	}
+	+ObjProp "AI_Vision"
+	{
+		"" "Well Above Average"
+	}
+	+ObjProp "AI_Hearing"
+	{
+		"" "Well Above Average"
+	}
+	+ObjProp "AI_Aggression"
+	{
+		"" "Well Above Average"
+	}
+	+ObjProp "AI_Verbosity"
+	{
+		"" "Well Above Average"
+	}
+}

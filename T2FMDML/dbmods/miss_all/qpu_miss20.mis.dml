@@ -1,0 +1,76 @@
+DML1
+
+//T2 FM: Quamtotius Purgamentum (Crap Contest) by Philip Shepherd (The Dude) / Fix fall at start
+
+FINGERPRINT
+{
+	245 [345 746 -948]
+	546 [442 923 -908]
+	406 [606 741 -939]
+	308 [326 815 -948]
+	724 [517 499 889]
+	327 [410 803 -930]
+	165 [490 311 -947]
+	671 [366 333 -948]
+	QVAR "goal_target_2" == 717
+}
+
+#script "tnhscript"
+#script "nvscript"
+
++ObjProp 645 "Scripts"
+{
+	"Script 1" TrigSim
+}
++ObjProp 542 "Scripts"
+{
+	"Script 1" CommandControl
+}
++ObjProp 542 "DesignNote"
+{
+	"" on="inv_select Brolley"; NVRelaytrapOn="Sim"; NVRelayTrapDest="[Me]"
+}
++Link 645 542 "ControlDevice"
+{
+}
++ObjProp 542 "Scripts"
+{
+	"Script 2" NVRelaytrap
+}
++Link 542 542 "ControlDevice"
+{
+}
+Create -36 "Crapteleporter"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" Trapteleporter
+	}
+	+ObjProp "Position"
+	{
+		"Location" 609.966,750.329,-942.89
+		"Heading" 8000
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++Link 406 "Crapteleporter" "ControlDevice"
+{
+}
++Link "Crapteleporter" 511 "ControlDevice"
+{
+}
+-ObjProp 511 "PhysType"
++ObjProp 511 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 511 "Position"
++ObjProp 511 "Position"
+{
+	"Location" 611.98,750.31,15.47
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

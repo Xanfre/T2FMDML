@@ -1,0 +1,40 @@
+DML1
+
+//T2 FM: Ranstall Keep by Alex Thomson (Dashjianta) / Fix the crushed zombie
+
+FINGERPRINT
+{
+	735 [122 26 76]
+	1240 [26 48 91]
+	966 [33 -55 41]
+	2076 [-122 86 75]
+	1881 [101 -67 69]
+	611 [-109 14 82]
+	1760 [22 -34 42]
+	1164 [-34 44 79]
+	QVAR "goal_target_4" == 1374
+}
+
+// emit zombie using the zombie
+-ObjProp 855 "PhysType"
+ObjProp 855 "Position"
+{
+	"Location" 20, -93, 30
+}
++ObjProp 855 "CfgTweqEmit"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" Sim
+	"Max frames" 1
+	"Emit what" Zombie
+}
++ObjProp 855 "StTweqEmit"
+{
+	"AnimS" On
+}
+// the portcullises needs to be locked
++ObjProp 770 "Locked" = true
++ObjProp 777 "Locked" = true
++ObjProp 771 "Locked" = true
++ObjProp 775 "Locked" = true
++ObjProp 776 "Locked" = true

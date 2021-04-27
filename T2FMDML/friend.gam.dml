@@ -1,0 +1,19 @@
+DML1
+
+//T2 FM: Flowers for a Friend (Thief Anniversary Contest) by P Forth / Fixes
+
+FINGERPRINT
+{
+	NAME -6681 "t_fam/CATACOMB/BRSSDOOR"
+	NAME -6680 "t_fam/CATACOMB/CAVTRANS"
+}
+
+//mantling
++ObjProp -2634 "PhysCanMant"
+{
+}
+//friend
++ObjProp -54 "SchPlayParams"
+{
+	"Initial Delay" 0
+}

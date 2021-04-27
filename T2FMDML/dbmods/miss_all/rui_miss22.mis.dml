@@ -1,0 +1,223 @@
+DML1
+
+//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fix objectives and loot
+
+FINGERPRINT
+{
+	78 [-495 -77 -83]
+	2161 [-563 6 42]
+	224 [-438 -48 -97]
+	2100 [-495 -86 29]
+	118 [-587 -128 -98]
+	173 [-447 -150 -96]
+	2162 [-561 -21 19]
+	2095 [-617 -8 -112]
+	QVAR "goal_target_2" == 147
+}
+
++ObjProp 2206 "StTweqJoints"
+{
+	"AnimS" "On, Reverse"
+	"MiscS" "[None]"
+	"Joint1AnimS" "[None]"
+	"Joint2AnimS" "[None]"
+	"Joint3AnimS" "[None]"
+	"Joint4AnimS" "[None]"
+	"Joint5AnimS" "[None]"
+	"Joint6AnimS" "[None]"
+}
+
++ObjProp 29 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 30 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 32 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 63 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 64 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 65 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 66 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 115 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 116 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 117 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 126 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 128 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 129 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 136 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 137 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 144 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 145 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 146 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 339 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 138 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 208 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++Link 208 162 "ControlDevice"
+{
+}
+//port
++Receptron 177 "PingStim"
+{
+	Min 3
+	Max 7
+	Target 177
+	Agent 0
+	Effect "move_obj"
+	{
+		"Position" -467.4, -32.81, -117.00
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 177 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+-ObjProp 18 "Position"
++ObjProp 18 "Position"
+{
+	"Location" -564.0,-109.8,-81.0
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+//Valhall
++ObjProp 2168 "ScriptTiming"     
+{
+	"" 4000
+}
++ObjProp 2168 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 208 2168 "ControlDevice"
+{
+}
++Link 2168 211 "ControlDevice"
+{
+}
++Link 2168 13 "ControlDevice"
+{
+}
++Link 2168 15 "ControlDevice"
+{
+}
++Link 2168 16 "ControlDevice"
+{
+}

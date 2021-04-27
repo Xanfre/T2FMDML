@@ -1,0 +1,93 @@
+DML1
+
+//T2 FM: A Night in Rocksbourg: A New Beginning by DrK / Fixes
+
+FINGERPRINT
+{
+	738 [96 22 9]
+	837 [225 202 -7]
+	307 [34 44 -4]
+	748 [52 1 19]
+	1550 [60 -37 16]
+	907 [137 31 5]
+	1526 [184 61 2]
+	441 [11 -48 2]
+	QVAR "goal_target_0" == 1554
+}
+
+-ObjProp 1204 "Position"
++ObjProp 1204 "Position"
+{
+	"Location" 126.754,-52.5154,5.95357
+}
++ObjProp 1204 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1201 "Position"
++ObjProp 1201 "Position"
+{
+	"Location" 125.211,-52.775,6.144
+}
++ObjProp 1201 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1203 "Position"
++ObjProp 1203 "Position"
+{
+	"Location" 125.669,-52.634,6.14357
+}
++ObjProp 1203 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 967 "Position"
++ObjProp 967 "Position"
+{
+	"Location" 28.6091,27.3248,6.16917
+}
++ObjProp 967 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 490 "Position"
++ObjProp 490 "Position"
+{
+	"Location" 120.359,-26.5637,7.04605
+}
+-ObjProp 488 "Position"
++ObjProp 488 "Position"
+{
+	"Location" 122.031,-26.6533,7.115
+}
+-ObjProp 811 "Position"
++ObjProp 811 "Position"
+{
+	"Location" 154.546,27.5001,6.31898
+	"Heading" 4000
+}
+-ObjProp 755 "Position"
++ObjProp 755 "Position"
+{
+	"Location" 154.546,30.5028,6.24436
+	"Heading" c000
+}
+-ObjProp 183 "Position"
++ObjProp 183 "Position"
+{
+	"Location" -18.5537,48.9999,-3.58928
+	"Heading" dc71
+}
+-ObjProp 1447 "Position"
++ObjProp 1447 "Position"
+{
+	"Location" 139.1,28.6897,4.18212
+	"Heading" f8e3
+}
+-ObjProp 628 "DarkStat"
+-ObjProp 1569 "DarkStat"

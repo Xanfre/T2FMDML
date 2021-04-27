@@ -1,0 +1,43 @@
+DML1
+
+//T2 FM: Undead Reckoning by John Denison / Fix final goal and a few objects
+
+FINGERPRINT
+{
+	1154 [-25 196 25]
+	1294 [-323 127 -120]
+	852 [-204 280 16]
+	1448 [-144 238 21]
+	1692 [16 11 26]
+	1027 [110 231 40]
+	1850 [-197 262 14]
+	544 [-361 150 -48]
+	QVAR "goal_target_0" == 1613
+}
+
++Link 1161 584 "Contains"
+{
+}
++ObjProp 393 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1440 "Scripts"
+{
+	"Script 1" TrigRoomPlayer
+}
++ObjProp 1015 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1015 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++Link 1440 1015 "ControlDevice"
+{
+}
++ObjProp 1737 "AI_Hearing"
+{
+	"" Null
+}

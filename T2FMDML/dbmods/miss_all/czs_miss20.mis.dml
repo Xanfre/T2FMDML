@@ -1,0 +1,32 @@
+DML1
+
+//T2 FM: CZSK Council by Jan Hladík (Yohny C. Liar) / Fix for goal 4
+
+FINGERPRINT
+{
+	99 [4 -12 -9]
+	202 [-17 -91 -27]
+	189 [-6 -37 -11]
+	14 [-2 23 -8]
+	26 [4 11 -9]
+	75 [-22 91 -8]
+	114 [8 -37 -9]
+	160 [-17 -32 -11]
+	QVAR "goal_target_2" == 202
+}
+
++ObjProp 75 "Scripts"
+{
+	"Script 0" TrigSlain
+}
++ObjProp 6 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 6 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++Link 75 6 "ControlDevice"
+{
+}

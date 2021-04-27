@@ -1,0 +1,211 @@
+DML1
+
+//T2 FM: Merchant's Manor by Nick_UI / Fixes
+
+FINGERPRINT
+{
+	1265 [421 -270 27]
+	1750 [576 -139 48]
+	460 [385 23 30]
+	690 [519 -26 60]
+	636 [588 39 44]
+	1205 [544 -219 48]
+	550 [364 27 30]
+	1211 [576 -205 48]
+	QVAR "goal_target_0" == 1116
+}
+
+#script "nvscript"
+
+//missing loot
+ObjProp 204 "Position"
+{
+	"Location" 502.52, 4.64, 25.21
+}
+ObjProp 963 "Position"
+{
+	"Location" 533.67, -47.35, 49.755
+}
+ObjProp 965 "Position"
+{
+	"Location" 533.35, -49.6, 45.7
+}
+//doors
++ObjProp 215 "FrobInfo"
+{
+}
++Receptron 528 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 528 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 528 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"; NVRelayTrapCount=1
+}
++ObjProp 528 "FrobInfo"
+{
+}
++ObjProp 528 "BlockFrob"
+{
+	"" true
+}
++ObjProp 528 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++Receptron 634 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 638 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 638 "KeySrc"
++ObjProp 638 "KeyDst"
+{
+	"RegionMask" 1
+	"LockID" 16
+}
++ObjProp 746 "FrobInfo"
+{
+}
++ObjProp 752 "FrobInfo"
+{
+}
++ObjProp 759 "FrobInfo"
+{
+}
++ObjProp 768 "FrobInfo"
+{
+}
++ObjProp 777 "FrobInfo"
+{
+}
++ObjProp 780 "FrobInfo"
+{
+}
++ObjProp 781 "FrobInfo"
+{
+}
++ObjProp 782 "FrobInfo"
+{
+}
++ObjProp 783 "FrobInfo"
+{
+}
++ObjProp 784 "FrobInfo"
+{
+}
++ObjProp 895 "FrobInfo"
+{
+}
++ObjProp 896 "FrobInfo"
+{
+}
++ObjProp 942 "FrobInfo"
+{
+}
++ObjProp 943 "FrobInfo"
+{
+}
++ObjProp 944 "FrobInfo"
+{
+}
++ObjProp 945 "FrobInfo"
+{
+}
++ObjProp 946 "FrobInfo"
+{
+}
++ObjProp 947 "FrobInfo"
+{
+}
+//keys
++ObjProp 967 "CombineType"
+{
+	"" keyred
+}
++ObjProp 983 "CombineType"
+{
+	"" keyred
+}
++ObjProp 983 "KeySrc"
+{
+	"RegionMask" 1
+	"LockID" 16
+}
+//junk objects
++ObjProp 15 "FrobInfo"
+{
+}
++ObjProp 207 "InvType"
+{
+	"" Junk
+}
+//moneybox / tiara
++Link 335 989 "ControlDevice"
+{
+}
++ObjProp 989 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"; NVRelayTrapCount=1
+}
++ObjProp 989 "FrobInfo"
+{
+}
++ObjProp 989 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
+//table
++ObjProp 349 "RenderType"
+{
+	"" Not Rendered
+}
+//banner
++ObjProp 472 "BlockFrob"
+{
+	"" true
+}
+//chest
+-ObjProp 489 "Locked"
+//gaslight
++ObjProp 847 "FrobInfo"
+{
+}
+ObjProp 847 "AnimLight"
+{
+	"Mode" zero brightness
+}
+//secret door button
++ObjProp 1161 "PickDist"
+{
+	"" 5.00
+}
+//lens schematics
++ObjProp 1116 "NoDrop"
+{
+	"" true
+}
++ObjProp 1116 "GameName"
+{
+	"" Name_schematics: "Lens schematics"
+}
+//lens prototype
++ObjProp 1236 "GameName"
+{
+	"" Name_prototype: "Lens prototype"
+}

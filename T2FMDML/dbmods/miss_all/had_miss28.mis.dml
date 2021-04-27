@@ -1,0 +1,139 @@
+DML1
+
+//T2 FM: Haddur by Turi Robert / Fixes
+
+FINGERPRINT
+{
+	374 [-310 260 -156]
+	416 [-373 452 -180]
+	478 [-375 350 -186]
+	391 [-292 254 -153]
+	400 [-278 260 -156]
+	216 [-2 74 -63]
+	320 [-406 171 -151]
+	344 [-406 289 -176]
+	QVAR "goal_target_0" == 433
+}
+
+#script "nvscript"
+
++ObjProp 464 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" NVTrapSetQVar
+}
++ObjProp 464 "DesignNote"  
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest="[me]"; NVRelayTrapTOn="[100.00]Touch"; NVRelayTrapOff="Null"; NVTrapSetQVarOn="FrobWorldEnd"
+}
++ObjProp 219 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 210 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 210 "TrapQVar"
+{
+	"" =0:goal_type_2
+}
++Link 219 210 "ControlDevice"
+{
+}
++Link 219 321 "ControlDevice"
+{
+}
++ObjProp 321 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 321 "TrapQVar"
+{
+	"" =1:goal_reverse_3
+}
++ObjProp 323 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 323 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 323 473 "ControlDevice"
+{
+}
++ObjProp 473 "Scripts"
+{
+	"Script 0" TrapTeleporter
+}
++Link 473 3 "ControlDevice"
+{
+}
++ObjProp 290 "ScriptTiming"
+{
+	"" 2000
+}
++ObjProp 290 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 323 290 "ControlDevice"
+{
+}
++ObjProp 216 "ScriptTiming"
+{
+	"" 3000
+}
++ObjProp 216 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 323 216 "ControlDevice"
+{
+}
++Link 349 323 "ControlDevice"
+{
+}
++ObjProp 349 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Receptron 464 "Touch"
+{
+	Min None
+	Max None
+	Effect "SetQvar"
+	{
+		"Quest Variable" "goal_state_2"
+		"Operation" "Set To"
+		"Operand" 1
+	}
+}
+//Frobinert
++ObjProp 330 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+
++ObjProp 330 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=349
+}
++Link 219 330 "ControlDevice"
+{
+}
++ObjProp 331 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 331 "TrapFlags"
+{
+	"" Once,Invert
+}
++Link 354 331 "ControlDevice"
+{
+}
++Link 331 330 "ControlDevice"
+{
+}

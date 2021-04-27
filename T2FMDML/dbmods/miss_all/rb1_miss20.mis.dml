@@ -1,0 +1,83 @@
+DML1
+
+//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes
+
+FINGERPRINT
+{
+	667 [57 102 101]
+	691 [61 100 99]
+	166 [49 -186 166]
+	631 [98 -271 144]
+	619 [124 -324 143]
+	199 [5 -310 155]
+	131 [58 -240 171]
+	668 [57 101 101]
+	QVAR "goal_target_1" == 328
+}
+
+#script "nvscript"
+
++ObjProp 78 "PhysPPlate"
+{
+	"Activation Weight" 50.00
+	"Travel" 0.01
+	"Speed" 1.00
+	"Pause" 8.00
+	"Blocks Vision" false
+}
+ObjProp 78 "Scripts"
+{
+	"Script 0" "TrigPPlate"
+	"Don't Inherit" true
+}
+-Receptron 78 "Touch"  
++Link 78 95 "ControlDevice"
+{
+}
++Link 78 96 "ControlDevice"
+{
+}
++Link 78 77 "ControlDevice"
+{
+}
++Link 78 96 "ControlDevice"
+{
+}
++Link 78 97 "ControlDevice"
+{
+}
++Link 78 98 "ControlDevice"
+{
+}
+ObjProp 241 "Scripts"
+{
+	"Script 0" "TrigPPlate"
+	"Don't Inherit" true
+}
+-Receptron 241 "Touch"  
++ObjProp 247 "PhysPPlate"
+{
+	"Activation Weight" 50.00
+	"Travel" 0.01
+	"Speed" 1.00
+	"Pause" 3.00
+	"Blocks Vision" false
+}
+ObjProp 247 "Scripts"
+{
+	"Script 0" "TrigPPlate"
+	"Don't Inherit" true
+}
+-Receptron 247 "Touch"  
++Link 247 250 "ControlDevice"
+{
+}
++Link 247 251 "ControlDevice"
+{
+}
++Link 247 246 "ControlDevice"
+{
+}
++Link 247 249 "ControlDevice"
+{
+}

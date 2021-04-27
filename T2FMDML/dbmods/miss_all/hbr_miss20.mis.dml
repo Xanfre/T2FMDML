@@ -1,0 +1,48 @@
+DML1
+
+//T2 FM: Hammerite's Brutality by T. Nagy Levente / Fixed kill ghost objective and loot
+
+FINGERPRINT
+{
+	367 [217 25 32]
+	274 [187 92 17]
+	224 [244 47 15]
+	185 [153 89 17]
+	321 [154 42 15]
+	386 [221 119 24]
+	468 [147 23 24]
+	809 [126 67 16]
+	QVAR "goal_target_0" == 193
+}
+
++ObjProp 382 "Scripts"
+{
+	"Script 0" TrigBraindead
+}
++Link 382 383 "ControlDevice"
+{
+}
++ObjProp 383 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 383 "TrapQVar"
+{
+	"" =1:goal_state_6
+}
++ObjProp 341 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+-ObjProp 382 "CollisionType" 
++ObjProp 382 "CollisionType" 
+{
+	"" Bounce
+}
++Receptron 382  "KOGas"
+{
+	Effect "SetQvar"
+	{
+		"Quest Variable" =1:goal_state_6
+	}
+}

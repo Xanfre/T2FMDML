@@ -1,0 +1,41 @@
+DML1
+
+//T2 FM: The First Day of Winter (Polish Contest) by PinkDot / Fix locking door and make an item easier to pick up
+
+FINGERPRINT
+{
+	150 [164 -2 -30]
+	143 [2 -3 -6]
+	177 [-4 14 -2]
+	397 [191 8 -15]
+	404 [155 -26 -39]
+	377 [437 -81 -20]
+	296 [157 -10 -11]
+	411 [280 -32 -41]
+	QVAR "goal_target_1" == 168
+}
+
+ObjProp 207 "Scripts"
+{
+	"Script 0" TrigUnlock
+	"Script 1" ""
+	"Script 2" ""
+	"Don't Inherit" false
+}
+ObjProp 224 "PickBias"
+{
+	"" 20.00
+}
++ObjProp 273 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 273 "FrobInfo"
+{
+	"World Action" None
+	"Inv Action" None
+	"Tool Action" None
+}
++Link 100 273 "Contains"
+{
+}

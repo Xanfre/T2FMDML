@@ -1,0 +1,473 @@
+DML1
+
+//T2 FM: The Jewel of Ghandar by BodomChild / Fix goal
+
+FINGERPRINT
+{
+	558 [-86 7 22]
+	404 [-173 -17 1]
+	552 [-158 5 16]
+	617 [-207 -4 -4]
+	663 [-164 21 -5]
+	676 [-196 -21 -5]
+	437 [-184 -9 -5]
+	597 [-182 10 10]
+	QVAR "goal_target_0" == 745
+}
+
++ObjProp 372 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 15 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 15 "TrapQVar"
+{
+	"" =1:goal_state_8
+}
++Link 372 15 "ControlDevice"
+{
+}
++ObjProp 190 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 44 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 43 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 44 "TrapQVar"
+{
+	"" =1:goal_min_diff_3
+}
++ObjProp 43 "TrapQVar"
+{
+	"" =1:goal_max_diff_3
+}
++Link 190 43 "ControlDevice"
+{
+}
++Link 190 44 "ControlDevice"
+{
+}
+//objects
+-ObjProp 133 "Position"
++ObjProp 133 "Position"
+{
+	"Location" -155.6,31.43,-7.21
+	"Heading" 3ff4
+	"Bank" 0
+}
+ObjProp 282 "PGLaunchInfo"
+{
+	"Launch Type" "Bounding Box"
+	"Box Min" -0.10, -0.20, -0.10
+	"Box Max" 0.10, 0.20, 0.10
+	"Min Radius" 0.00
+	"Max Radius" 0.00
+	"Loc unrotated?" false
+	"Velocity Min" 0.00, 0.00, 0.00
+	"Velocity Max" 0.00, 0.00, 0.00
+	"Vel unrotated?" false
+	"Min time" 1.90
+	"Max time" 2.40
+}
+ObjProp 282 "ParticleGroup"
+{
+	"Active" true
+	"Particle Render Type" "Single-colored disk"
+	"Particle Animation" "Launched continually"
+	"Particle Group Motion" "Attached to object"
+	"number of particles" 40
+	"size of particle" 0.50
+	"bitmap name" ""
+	"velocity" 0.00, 0.00, 0.00
+	"gravity vector" 0.00, 0.00, 2.00
+	"color (palettized)" 188
+	"2nd color" 0
+	"3rd color" 0
+	"alpha" 90
+	"fixed-group radius" 0.02
+	"spin / pulse group" false
+	"spin speed" 0.00, 0.00, 0.00
+	"pulse magnitude" 0.00
+	"pulse cycle time ms" 0
+	"particle fade time" 0.80
+	"launch period" 0.05
+	"animation offset ms" 0
+	"Group-scale velocity" 0.00
+	"bm-disk flags" "[None]"
+	"bm-disk birth time" 0.00
+	"bm-disk rot (vel, offs, rand)" 0.00, 0.00, 0.00
+	"bm-disk ani frame time" 0.00
+	"bm-disk grow speed" 0.00
+	"bm-disk rgb" 0, 0, 0
+	"bm-disk 2nd rgb" 0, 0, 0
+	"bm-disk 3rd rgb" 0, 0, 0
+	"always simulate (slow)" false
+	"always simulate group" false
+	"particles start launched" true
+	"alpha subpixel particles" false
+	"skip subpixel particles" false
+	"ignore attachment refs" false
+	"force matching unrefs" false
+}
+ObjProp 303 "PGLaunchInfo"
+{
+	"Launch Type" "Bounding Box"
+	"Box Min" -0.30, -0.60, 0.50
+	"Box Max" 0.30, 0.60, 1.00
+	"Min Radius" 0.00
+	"Max Radius" 0.00
+	"Loc unrotated?" false
+	"Velocity Min" 0.00, 0.00, 0.00
+	"Velocity Max" 0.00, 0.00, 0.00
+	"Vel unrotated?" false
+	"Min time" 1.90
+	"Max time" 2.40
+}
+ObjProp 303 "ParticleGroup"
+{
+	"Active" true
+	"Particle Render Type" "Single-colored disk"
+	"Particle Animation" "Launched continually"
+	"Particle Group Motion" "Attached to object"
+	"number of particles" 40
+	"size of particle" 0.50
+	"bitmap name" ""
+	"velocity" 0.00, 0.00, 0.00
+	"gravity vector" 0.00, 0.00, 2.00
+	"color (palettized)" 188
+	"2nd color" 0
+	"3rd color" 0
+	"alpha" 90
+	"fixed-group radius" 0.02
+	"spin / pulse group" false
+	"spin speed" 0.00, 0.00, 0.00
+	"pulse magnitude" 0.00
+	"pulse cycle time ms" 0
+	"particle fade time" 0.80
+	"launch period" 0.05
+	"animation offset ms" 0
+	"Group-scale velocity" 0.00
+	"bm-disk flags" "[None]"
+	"bm-disk birth time" 0.00
+	"bm-disk rot (vel, offs, rand)" 0.00, 0.00, 0.00
+	"bm-disk ani frame time" 0.00
+	"bm-disk grow speed" 0.00
+	"bm-disk rgb" 0, 0, 0
+	"bm-disk 2nd rgb" 0, 0, 0
+	"bm-disk 3rd rgb" 0, 0, 0
+	"always simulate (slow)" false
+	"always simulate group" false
+	"particles start launched" true
+	"alpha subpixel particles" false
+	"skip subpixel particles" false
+	"ignore attachment refs" false
+	"force matching unrefs" false
+}
+-ObjProp 319 "PhysType"
++ObjProp 319 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 319 "Position"
++ObjProp 319 "Position"
+{
+	"Location" -144.4,0.43,12.03
+	"Heading" 0
+	"Bank" 0
+}
++ObjProp 202 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 202 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 84 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 84 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 690 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 690 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 691 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 691 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 594 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 594 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 359 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 359 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++StimSource 48 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 48 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -161.6, 62.0, -17.4
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 46 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 46 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+	"Position" -137.7, 71.7, -17.4
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+	}
+}
++StimSource 50 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 50 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -131.2, 71.9, -17.4
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 52 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 52 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -135.8, 43.55, -17.4
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 49 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 49 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -138
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -87.44, -16.4, -5.9
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
+-ObjProp 175 "PhysType"
++ObjProp 175 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 175 "Position"
++ObjProp 175 "Position"
+{
+	"Location" -153.2,46.4,5.2
+	"Heading" f010
+	"Bank" 0
+}
+-ObjProp 176 "PhysType"
++ObjProp 176 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 176 "Position"
++ObjProp 176 "Position"
+{
+	"Location" -153.7,46.8,5.13
+	"Heading" 4000
+	"Bank" 0
+}

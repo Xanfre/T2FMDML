@@ -1,0 +1,167 @@
+DML1
+
+//T2 FM: The Fever (Small Stock Resource Contest) by Rob Strain (Random_Taffer) / Fixes
+
+FINGERPRINT
+{
+	226 [457 378 484]
+	431 [457 397 483]
+	227 [460 371 484]
+	278 [482 362 478]
+	357 [472 390 520]
+	136 [486 424 517]
+	192 [505 428 480]
+	208 [489 357 482]
+	QVAR "goal_target_0" == 428
+}
+
++ObjProp 367 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 370 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++Receptron 183 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -2987
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 504.166,410.998,477.858
+		"Heading" 132.995
+		"Pitch" 0.00
+		"Bank" 0.00
+ }
+}
++StimSource 183 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 185 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 185 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 450 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -553
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 529.551,358.588,479.093
+		"Heading" 0.00
+		"Pitch" 0.00
+		"Bank" 0.00
+	}
+}
++StimSource 450 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++ObjProp 451 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 451 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+-Link 309 386 "ControlDevice"
+-Link 386 309 "ControlDevice"
+-Link 386 387 "ControlDevice"
++Link 423 387 "ControlDevice"
+{
+}
+Create -4340
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 507.4,423.003,508.73
+		"Heading" 8000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++ObjProp 111 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 112 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 113 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 114 "PhysCanMant"
+{
+	"" false
+}

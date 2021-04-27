@@ -1,0 +1,45 @@
+DML1
+
+//T2 FM: The Blackheart's Recording by Ogi / Fix loot and door
+
+FINGERPRINT
+{
+	1160 [439 558 371]
+	1676 [651 672 394]
+	263 [526 550 379]
+	1348 [458 678 380]
+	657 [458 511 394]
+	1035 [592 506 379]
+	850 [541 644 369]
+	109 [436 606 380]
+	QVAR "goal_target_0" == 1640
+}
+
++ObjProp 567 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 567 "PhysControl"
++ObjProp 567 "Position"
+{
+	"Location" 538.16, 620.63, 380.09
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1651 "loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 1652 "loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++Link 419 461 "Lock"
+{
+}

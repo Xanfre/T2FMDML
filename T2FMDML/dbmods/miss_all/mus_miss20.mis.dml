@@ -1,0 +1,86 @@
+DML1
+
+//T2 FM: Mystic Gems I - Unlucky Soul by Wille / Fixes
+
+FINGERPRINT
+{
+	813 [-117 99 -29]
+	741 [-74 151 -39]
+	1034 [-239 444 -18]
+	1115 [-158 422 -27]
+	717 [-133 239 -36]
+	215 [69 205 -24]
+	453 [128 170 -14]
+	587 [137 212 0]
+	QVAR "goal_target_4" == 1112
+}
+
+Create -5746
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 24.68,206.981,-5.57
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 24.48,210.981,-7.57
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -214.16,423.72,-22.43
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-Link 1345 1125 "ControlDevice"
++ObjProp 1037 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 1037 1125 "ControlDevice"
+{
+}
++Link 1345 1037 "ControlDevice"
+{
+}
++ObjProp 1037 "TrapFlags"
+{
+	"" Invert
+}
+-ObjProp 1041 "DarkStat"

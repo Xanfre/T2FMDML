@@ -1,0 +1,67 @@
+DML1
+
+//T2 FM: Claire's Harbour by Michael Haase (DarkShadow) / Fixes
+
+FINGERPRINT
+{
+	183 [34 -36 -6]
+	253 [-85 43 -12]
+	128 [-45 7 -3]
+	682 [-24 24 -8]
+	108 [21 -7 -2]
+	704 [16 101 -19]
+	437 [-129 -49 4]
+	629 [30 113 -23]
+	NAME 696 "WindS7"
+}
+
+//doors
+-ObjProp 5 "JointPos"
+-ObjProp 6 "JointPos"
+-ObjProp 21 "JointPos"
+-ObjProp 32 "JointPos"
+-ObjProp 122 "JointPos"
+-ObjProp 191 "JointPos"
+-ObjProp 235 "JointPos"
+-ObjProp 267 "JointPos"
+-ObjProp 268 "JointPos"
+-ObjProp 562 "JointPos"
++ObjProp 76 "BlockFrob"
+{
+	"" true
+}
++ObjProp 422 "Material Tags"
+{
+	"1: Tags" Material Stone
+}
+//swordsmen (auto-equip)
+-ObjProp 594 "Scripts"
+-ObjProp 598 "Scripts"
+//elise
+++Receptron 756 "EliseBrief"
+{
+	Min 1
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+-ObjProp 756 "Scripts"
++ObjProp 756 "Scripts"
+{
+	"Script 0" TrigBrainDead
+}
++Link 756 757 "ControlDevice"
+{
+}
++ObjProp 757 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 757 "TrapQVar"
+{
+	"" =3:goal_state_2
+}

@@ -1,0 +1,241 @@
+DML1
+
+//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes
+
+FINGERPRINT
+{
+	1126 [52 76 9]
+	2194 [-81 65 -3]
+	1773 [-46 -66 -34]
+	1714 [-42 3 -36]
+	1444 [115 22 3]
+	1676 [2 69 -37]
+	699 [36 80 -4]
+	2008 [214 53 16]
+	QVAR "goal_target_0" == 868
+}
+
+#script "nvscript"
+#script "squirrel"
+
+Create -2086 "BalconyEntrance"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -81.5,0.0470588,15
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Script 1" ""
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" true
+	}
+}
+Create -1823 "Goal0Trap"
+{
+	+ObjProp "TrapQVar"
+	{
+		"" =1:goal_state_0
+	}
+	+ObjProp "TrapFlags"
+	{
+		"" Once,NoOff
+	}
+}
++Link "BalconyEntrance" "Goal0Trap" "ControlDevice"
+{
+}
+Create -2123 "SecretMessage"
+{
+	+ObjProp "Book"
+	{
+		"" M03ST01
+	}
+	+ObjProp "TrapFlags"
+	{
+		"" Once
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVOnScreenText
+		"Script 1" ""
+		"Script 2" ""
+		"Script 3" ""
+		"Don't Inherit" false
+	}
+}
++ObjProp 1270 "DesignNote"
+{
+	"" NVRelayTrapTDest="SecretMessage"; NVRelayTrapDelay=500; NVRelayTrapOn="FrobWorldEnd"
+}
+ObjProp 1270 "Scripts"
+{
+	"Script 2" NVRelayTrap
+}
+-ObjProp 2037 "AI_AlrtRsp"
+ObjProp 2037 "Position"
+{
+	"Location" 117,-83.25,-3.45
+	"Heading" 4000
+}
+-MetaProp 2037 -5697
++ObjProp 2205 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 2205 "Position"
+{
+	"Location" -91.8853,85.9922,-3.54266
+}
++ObjProp 2199 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 2199 "Position"
+{
+	"Location" -91.6029,68.549,-3.58055
+	"Heading" e000
+}
+ObjProp 222 "Position"
+{
+	"Location" -89.0002,77.8686,-5.34142
+	"Heading" cd44
+}
+ObjProp 217 "Position"
+{
+	"Location" -77.0002,77.8686,-5.34142
+	"Heading" b1fc
+}
+ObjProp 210 "Position"
+{
+	"Location" -94.4002,90.7686,-5.34142
+	"Heading" 4c50
+}
+ObjProp 221 "Position"
+{
+	"Location" -89.3002,89.8686,-5.34142
+	"Heading" c000
+}
+ObjProp 215 "Position"
+{
+	"Location" -77.3002,58.9686,-5.34142
+	"Heading" c000
+}
+ObjProp 219 "Position"
+{
+	"Location" -77.3002,88.9686,-5.34142
+	"Heading" d954
+}
+ObjProp 205 "Position"
+{
+	"Location" -82.7002,90.1686,-5.34142
+	"Heading" 2000
+}
+ObjProp 474 "Position"
+{
+	"Location" -54.75,107.525,-2.97921
+	"Heading" 4000
+}
+ObjProp 195 "Position"
+{
+	"Location" -86.3422,-81.9961,-3.44
+	"Heading" c910
+	"Pitch" 4000
+}
++ObjProp 2686 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 2686 "Position"
+{
+	"Location" 80.1824,-76.1069,-3.83
+	"Heading" e800
+}
++ObjProp 1012 "DesignNote"
+{
+	"" RepositionLoc=-1.0,0.0,0.0
+}
++ObjProp 1012 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1815 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.2
+}
++ObjProp 1815 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1277 "Scale"
+{
+	"" 0.8,0.8,0.8
+}
++ObjProp 2464 "HasRefs"
+{
+	"" false
+}
++ObjProp 1397 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 1397 "Position"
+{
+	"Location" 113,58,13.4926
+}
++ObjProp 1403 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1427 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1425 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1415 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1417 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1426 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1432 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 2748 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 747 "Position"
+{
+	"Location" -51.4951,10.5471,12.3315
+}

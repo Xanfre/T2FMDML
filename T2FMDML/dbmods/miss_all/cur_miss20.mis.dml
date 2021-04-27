@@ -1,0 +1,60 @@
+DML1
+
+//T2 FM: Curiosity by Demonreaver / Fix loot and guard patrols
+
+FINGERPRINT
+{
+	1185 [-112 402 23]
+	65 [65 -78 21]
+	1451 [-91 557 23]
+	1343 [35 476 29]
+	1274 [113 380 29]
+	1576 [27 537 21]
+	102 [60 -76 21]
+	1883 [-3 -34 20]
+	QVAR "goal_target_0" == 1471
+}
+
++ObjProp 84 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 32 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 32 "TrapQVar"
+{
+	"" =2800:goal_loot_1
+}
++Link 84 32 "ControlDevice"
+{
+}
++ObjProp 233 "BlockFrob"
+{
+	"" true
+}
++ObjProp 246 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
+-ObjProp 236 "ModelName"
++ObjProp 236 "Scale"
+{
+	"" 0.30,0.30,0.30
+}
+-ObjProp 247 "FrobInfo"
+-ObjProp 248 "FrobInfo"
+-ObjProp 315 "FrobInfo"
+-ObjProp 321 "FrobInfo"
+-ObjProp 322 "FrobInfo"
+-ObjProp 323 "FrobInfo"
+-ObjProp 326 "FrobInfo"
+-ObjProp 369 "FrobInfo"
+-ObjProp 423 "FrobInfo"
+ObjProp 403 "Locked"
+{
+	"" false
+}

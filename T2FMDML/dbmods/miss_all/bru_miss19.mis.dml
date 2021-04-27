@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: Bloody Ruins by Christine Schneider / Fix loot and barrels
+
+FINGERPRINT
+{
+	1578 [-28 -22 -24]
+	857 [-105 -34 -37]
+	422 [332 5 -44]
+	233 [346 137 -44]
+	1104 [26 -57 -31]
+	848 [-79 -22 -33]
+	548 [245 156 -36]
+	1587 [-152 -12 -42]
+	QVAR "goal_target_1" == 905
+}
+
++ObjProp 1504 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1504 "Position"
+{
+	"Location" 134.059, -0.43, -39.22
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
++Link 991 -2987 "Corpse"
+{
+}
++Link 992 -2987 "Corpse"
+{
+}
++Link 993 -2987 "Corpse"
+{
+}

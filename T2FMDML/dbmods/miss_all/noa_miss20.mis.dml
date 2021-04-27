@@ -1,0 +1,199 @@
+DML1
+
+//T2 FM: A. K. A. Noah (Water Contest) by Volgelfrei / Fix fish
+
+FINGERPRINT
+{
+	437 [551 532 488]
+	15 [524 507 489]
+	450 [551 489 496]
+	502 [576 507 510]
+	244 [556 511 485]
+	594 [544 490 452]
+	700 [509 529 499]
+	252 [563 512 481]
+	QVAR "goal_target_0" == 629
+}
+
++Link 433 428 "AIPatrol"
+{
+}
++Link 435 428 "AIPatrol"
+{
+}
++Link 432 427 "AIPatrol"
+{
+}
++Link 434 427 "AIPatrol"
+{
+}
++Link 425 424 "AIPatrol"
+{
+}
++Link 431 424 "AIPatrol"
+{
+}
+//more fish
++ObjProp 54 "AI_ObjAvoid"       
+{
+   "Flags" Block pathfind,Repel
+}
++ObjProp 54 "PhysAIColl"       
+{
+	"" true
+}
++ObjProp 55 "AI_ObjAvoid"       
+{
+	"Flags" Block pathfind,Repel
+}
++ObjProp 55 "PhysAIColl"       
+{
+	"" true
+}
+-ObjProp 88 "PhysType"
++ObjProp 88 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 89 "PhysType"
++ObjProp 89 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 282 "PhysType"
++ObjProp 282 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 282 "PhysType"
++ObjProp 282 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 271 "PhysType"
++ObjProp 271 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 274 "PhysType"
++ObjProp 274 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 273 "PhysType"
++ObjProp 273 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 272 "PhysType"
++ObjProp 272 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 277 "PhysType"
++ObjProp 277 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 279 "PhysType"
++ObjProp 279 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 274 "PhysType"
++ObjProp 274 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 281 "PhysType"
++ObjProp 281 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 303 "PhysControl"
++ObjProp 303 "Position"
+{
+	"Location" 550.62, 495.97, 478.33
+	"Heading" d9ed
+	"Pitch" 0
+	"Bank" 0 
+}
+-ObjProp 229 "PhysControl"
++ObjProp 229 "Position"
+{
+	"Location" 545.52, 527.96, 504.14
+	"Heading" ca8b
+	"Pitch" 0
+	"Bank" 0 
+}
+-ObjProp 88 "PhysControl"
+-ObjProp 89 "PhysControl"
+-ObjProp 282 "PhysControl"
+-ObjProp 271 "PhysControl"
+-ObjProp 273 "PhysControl"
+-ObjProp 272 "PhysControl"
+-ObjProp 279 "PhysControl"
+-ObjProp 274 "PhysControl"
+-ObjProp 281 "PhysControl"
+-ObjProp 277 "PhysControl"
++ObjProp 88 "Position"
+{
+	"Location" 553.68, 502.59, 481.44
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 271 "Position"
+{
+	"Location" 553.04, 502.33, 481.44
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 273 "Position"
+{
+	"Location" 551.41, 502.47, 481.44
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 272 "Position"
+{
+	"Location" 550.90, 502.87, 481.44
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 281 "Position"
+{
+	"Location" 552.53, 503.32, 481.33
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 274 "Position"
+{
+	"Location" 552.09, 503.06, 481.41
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}
++ObjProp 277 "Position"
+{
+	"Location" 550.36, 502.31, 481.41
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}

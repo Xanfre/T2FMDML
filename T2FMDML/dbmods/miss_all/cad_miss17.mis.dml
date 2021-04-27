@@ -1,0 +1,69 @@
+DML1
+
+//T2 FM: Cathedral of the Damned by Dark Angel / Fixes
+
+FINGERPRINT
+{
+	240 [-133 -4 12]
+	461 [-87 11 -39]
+	570 [-119 -10 13]
+	741 [-104 -33 -35]
+	770 [-111 36 -7]
+	394 [-85 -55 -8]
+	710 [-88 -45 -17]
+	121 [-152 -45 -20]
+	QVAR "goal_target_7" == 969
+}
+
+//doors
++Link 38 39 "ScriptParams"
+{
+	"" Double
+}
++Link 81 82 "ScriptParams"
+{
+	"" Double
+}
++Receptron 505 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 505 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 506 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 506 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//crypt door (holy sword)
++ObjProp 621 "BlockFrob"
+{
+	"" true
+}
+//necromancer's patrol point
+ObjProp 717 "Position"
+{
+	"Location" -138, 69, -17.1326
+}
+//barrel
+ObjProp 238 "Position"
+{
+	"Location" -125.81, -0.63, 7.81
+}
+//unused book
++ObjProp 764 "FrobInfo"
+{
+}

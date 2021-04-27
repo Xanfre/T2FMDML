@@ -1,0 +1,169 @@
+DML1
+
+//T2 FM: Eastwater Bank Gold (Contest 3) by Russ Robbins (Yandros) / Fixes
+
+FINGERPRINT
+{
+	261 [-19 -1 -7]
+	310 [-11 30 -32]
+	91 [10 16 22]
+	183 [-6 -7 -5]
+	112 [36 -35 -11]
+	226 [-17 18 -19]
+	499 [41 -62 -14]
+	538 [6 10 -18]
+	QVAR "goal_target_0" == 451
+}
+
+//mantling
++ObjProp 30 "PhysCanMant"
+{
+}
++ObjProp 38 "PhysCanMant"
+{
+}
++ObjProp 46 "PhysCanMant"
+{
+}
++ObjProp 48 "PhysCanMant"
+{
+}
++ObjProp 49 "PhysCanMant"
+{
+}
++ObjProp 56 "PhysCanMant"
+{
+}
++ObjProp 57 "PhysCanMant"
+{
+}
++ObjProp 58 "PhysCanMant"
+{
+}
++ObjProp 59 "PhysCanMant"
+{
+}
++ObjProp 60 "PhysCanMant"
+{
+}
++ObjProp 61 "PhysCanMant"
+{
+}
++ObjProp 62 "PhysCanMant"
+{
+}
++ObjProp 64 "PhysCanMant"
+{
+}
++ObjProp 67 "PhysCanMant"
+{
+}
++ObjProp 69 "PhysCanMant"
+{
+}
++ObjProp 130 "PhysCanMant"
+{
+}
++ObjProp 131 "PhysCanMant"
+{
+}
++ObjProp 132 "PhysCanMant"
+{
+}
++ObjProp 133 "PhysCanMant"
+{
+}
++ObjProp 185 "PhysCanMant"
+{
+}
++ObjProp 186 "PhysCanMant"
+{
+}
++ObjProp 187 "PhysCanMant"
+{
+}
++ObjProp 188 "PhysCanMant"
+{
+}
++ObjProp 189 "PhysCanMant"
+{
+}
++ObjProp 327 "PhysCanMant"
+{
+}
++ObjProp 328 "PhysCanMant"
+{
+}
++ObjProp 462 "PhysCanMant"
+{
+}
+//railings
+-ObjProp 59 "PhysType"
+ObjProp 59 "Position"
+{
+	"Location" -3.2475, -0.05, 12.62
+}
++ObjProp 59 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 61 "PhysType"
+ObjProp 61 "Position"
+{
+	"Location" -6.2, -4.875, 12.62
+}
++ObjProp 61 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 61 "Scale"
+{
+	"" 0.925, 1, 1
+}
+-ObjProp 62 "PhysType"
+ObjProp 62 "Position"
+{
+	"Location" -0.20185, 3.125, 12.62
+}
++ObjProp 62 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 62 "Scale"
+{
+	"" 0.575, 1, 1
+}
+-ObjProp 187 "PhysType"
+ObjProp 187 "Position"
+{
+	"Location" -0.24625, 0, 12.716
+}
++ObjProp 187 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 188 "PhysType"
+ObjProp 188 "Position"
+{
+	"Location" -6.25, 0, 12.716
+}
++ObjProp 188 "PhysType"
+{
+	"Type" OBB
+}
+//paintings
++ObjProp 375 "BlockFrob"
+{
+	"" true
+}
++ObjProp 387 "NoDrop"
+{
+	"" true
+}
+//basement door
++Receptron 631 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}

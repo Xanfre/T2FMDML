@@ -1,0 +1,280 @@
+DML1
+
+//T2 FM: The Ghost House and The Haunted Hospital by Jari Mäkinen (Dark Arrow) and Gloria Creep / Fixes
+
+FINGERPRINT
+{
+	144 [-1 31 -12]
+	291 [36 -43 -12]
+	1476 [7 -65 9]
+	1450 [19 -18 -23]
+	1459 [-18 -86 7]
+	1944 [42 -7 -9]
+	1649 [-8 -316 -11]
+	1372 [17 -38 -11]
+	QVAR "goal_target_8" == 1835
+}
+
++ObjProp 640 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 640 "PhysControl"
++ObjProp 640 "Position"
+{
+	"Location" -17.08, -78.73, -10.69
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}
+-Link 1817 1817 "AIWatchobj"
++Link 1817 1817 "AIWatchObj"
+{
+	"Watch kind" "Player intrusion"
+	"Priority" "Absolute"
+	"Trigger: Radius" 10
+	"         Height" 8
+	"         Required awareness" "(0) None"
+	"         Line requirement" "None"
+	"         Minimum alertness" "(0) None"
+	"         Maximum alertness" "(3) High"
+	"Exit: Link kill option" "After completion"
+	"      Kill like links" false
+	"      No test once triggered" true
+	"      Reuse delay" 10
+	"      Reset delay" 2000
+	"Response: Step 1" "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1" "Remove"
+	"   Argument 2" "M-ZombiePossum"
+	"   Argument 3" ""
+	"Response: Step 2" "Frob object(Target Object,With Object)"
+	"   Argument 1"[1] "BurnMan"
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1"[2] "Add"
+	"   Argument 2"[2] "HeatSource"
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Frob object(Target Object,With Object)"
+	"   Argument 1"[3] "Litmeup"
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+	"Response: Step 5" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[4] "1135"
+	"   Argument 2"[4] "Very Fast"
+	"   Argument 3"[4] ""
+	"Response: Step 6" "Nothing()"
+	"   Argument 1"[5] ""
+	"   Argument 2"[5] ""
+	"   Argument 3"[5] ""
+}
++ObjProp 1817 "TimeWarp" 
+{
+	"" 0.75
+}
++ObjProp 1817 "AI_AlrtRsp"
+{
+	"Alert level" "(2) Moderate"
+	"Priority" "Very High"
+	"Response: Step 1" "Frob object(Target Object,With Object)"
+	"   Argument 1" "Burnman"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Response: Step 2" "Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)"
+	"   Argument 1"[1] "Add"
+	"   Argument 2"[1] "HeatSource"
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Frob object(Target Object,With Object)"
+	"   Argument 1"[2] "LitMeUp"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[3] "1045"
+	"   Argument 2"[3] "Very Fast"
+	"   Argument 3"[3] ""
+	"Response: Step 5" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[4] "Player"
+	"   Argument 2"[4] ""
+	"   Argument 3"[4] ""
+}
++ObjProp 136 "Position"
+{
+	"Location" 31.08, 39.54, 1.2
+	"Heading" 2db8
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 1817 "Position"
+{
+	"Location" 42.08, -292.01, 7.00
+	"Heading" 34f4
+	"Pitch" 0
+	"Bank" 0  
+}
++ObjProp 136 "PhysControl"
+{
+}
+ObjProp 1626 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimSmallRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 3000
+}
+ObjProp 1626 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1627 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimSmallRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 5000
+}
+ObjProp 1627 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1628 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimSmallRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 10000
+}
+ObjProp 1628 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1630 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 7000
+}
+ObjProp 1630 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1631 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 5000
+}
+ObjProp 1631 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1632 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 5500
+}
+ObjProp 1632 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1633 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 5000
+}
+ObjProp 1633 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1634 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 7500
+}
+ObjProp 1634 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1635 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 6500
+}
+ObjProp 1635 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 1632 "CfgTweqBlink"
+{
+	"Halt" "Continue"
+	"AnimC" "SimLargeRad, OffScreen"
+	"MiscC" "Scripts"
+	"CurveC" "[None]"
+	"Rate" 5500
+}
+ObjProp 1632 "StTweqBlink"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++ObjProp 484 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 484 "Position"
++ObjProp 484 "Position"
+{
+	"Location" 19.1934,-86.6381,6.10369
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0
+}

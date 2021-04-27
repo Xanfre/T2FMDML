@@ -1,0 +1,106 @@
+DML1
+
+//T2 FM: The Skygem Connection by David Dyal (Dyald) / Fix loot goals
+
+FINGERPRINT
+{
+	106 [425 546 493]
+	1229 [455 653 484]
+	1556 [353 513 482]
+	205 [579 446 442]
+	867 [524 297 493]
+	480 [687 51 383]
+	1116 [434 95 419]
+	963 [436 55 441]
+	QVAR "goal_target_8" == 1377
+}
+
+#script "tnhscript"
+#script "nvscript"
+
+Create -464 "GoalLootSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "DesignNote"
+	{
+		"" Proximity=2000
+	}
+}
++Link "GoalLootSwitch" 1233 "ControlDevice"
+{
+}
++Link "GoalLootSwitch" 1233 "ControlDevice"
+{
+}
++Link 1233 455 "ControlDevice"
+{
+}
++Link 1233 399 "ControlDevice"
+{
+}
++ObjProp 455 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 455 "TrapQVar"
+{
+	"" =1:goal_visible_6
+}
++ObjProp 399 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 399 "TrapQVar"
+{
+	"" =1:goal_visible_7
+}
++ObjProp 1233 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++ObjProp 1233 "ScriptTiming"
+{
+	"" 1000
+}
++Link "GoalLootSwitch" 442 "ControlDevice"
+{
+}
++Link "GoalLootSwitch" 1234 "ControlDevice"
+{
+}
++ObjProp 442 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 442 "TrapQVar"
+{
+	"" =0:goal_state_6
+}
++ObjProp 1234 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1234 "TrapQVar"
+{
+	"" =0:goal_state_7
+}
++ObjProp 646 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 646 "Position"
++ObjProp 646 "Position"
+{
+	"Location" 427.88,116.224,450.73
+	"Heading" 0
+	"Pitch" 0
+	"Bank" d60b
+}
++ObjProp 647 "Scripts"
+{
+	"Script 1" NVDeleteTrap
+}

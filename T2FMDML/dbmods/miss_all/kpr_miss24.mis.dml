@@ -1,0 +1,45 @@
+DML1
+
+//T2 FM: Keeper of the Prophecies by Ken Ramsley (frobber) / Fixes
+
+FINGERPRINT
+{
+	2133 [-310 -90 32]
+	1809 [-296 -172 25]
+	2142 [-84 -160 18]
+	1505 [-315 -262 35]
+	1794 [56 -241 3]
+	440 [-276 -102 23]
+	2299 [-2 4 71]
+	1405 [-41 -439 36]
+	QVAR "goal_target_3" == -7436
+}
+
+-ObjProp 1402 "Position"
++ObjProp 1402 "Position"
+{
+	"Location" 61.529,-265.2,16.3
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1721 "Position"
++ObjProp 1721 "Position"
+{
+	"Location" 52.56,-258.9,17.1
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1297 "Position"
++ObjProp 1297 "Position"
+{
+	"Location" -280.529,-375.043,10.795
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 1297 "PhysAIColl"  
+{
+	"" false
+}

@@ -1,0 +1,31 @@
+DML1
+
+//T2 FM: Night at the Theatre by Pinky and the Brain / Fix loot on table
+
+FINGERPRINT
+{
+	206 [15 13 -5]
+	152 [15 2 -3]
+	179 [-14 -9 -5]
+	353 [-119 -21 -3]
+	166 [-69 -6 -7]
+	138 [12 -31 -5]
+	51 [9 49 -7]
+	418 [-139 31 -2]
+	QVAR "goal_target_0" == 329
+}
+
++ObjProp 114 "Position"
+{
+	"Location" 10.12, -13.34, -3.91
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0
+}
++ObjProp 115 "Position"
+{
+	"Location" 10.0, -13.9, -3.91
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0
+}

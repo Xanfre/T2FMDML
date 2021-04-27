@@ -1,0 +1,276 @@
+DML1
+
+//T2 FM: Happy New Year, Mister Lambert! by Gaetane / Fixes
+
+FINGERPRINT
+{
+	56 [184 438 11]
+	327 [-30 343 4]
+	240 [-7 346 -6]
+	151 [222 399 -7]
+	763 [192 248 -7]
+	814 [-37 398 11]
+	512 [185 252 -7]
+	597 [198 346 -5]
+	QVAR "goal_target_0" == 915
+}
+
+//goal 0
++ObjProp 903 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 903 160 "ControlDevice"
+{
+}
++ObjProp 160 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 160 "TrapQVar"
+{
+	"" =160:goal_target_0
+}
++Link 389 390 "ControlDevice"
+{
+}
++ObjProp 389 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++ObjProp 390 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 390 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
+//statuettes
+-Link 439 810 "ControlDevice"
++ObjProp 396 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 792 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 793 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 794 "TrapFlags"
+{
+	"" Once, NoOff
+}
+ObjProp 796 "CombineType"
+{
+	"" Statue
+}
++ObjProp 796 "StackCount"
+{
+	"" 1
+}
++Link 796 389 "ControlDevice"
+{
+}
++ObjProp 796 "Scripts"
+{
+	"Script 0" TrigContained
+}
+ObjProp 797 "CombineType"
+{
+	"" Statue
+}
++ObjProp 797 "StackCount"
+{
+	"" 1
+}
++Link 797 389 "ControlDevice"
+{
+}
++ObjProp 797 "Scripts"
+{
+	"Script 0" TrigContained
+}
+ObjProp 798 "CombineType"
+{
+	"" Statue
+}
++ObjProp 798 "StackCount"
+{
+	"" 1
+}
++Link 798 389 "ControlDevice"
+{
+}
++ObjProp 798 "Scripts"
+{
+	"Script 0" TrigContained
+}
+ObjProp 915 "CombineType"
+{
+	"" Statue
+}
++ObjProp 915 "StackCount"
+{
+	"" 1
+}
++Link 915 389 "ControlDevice"
+{
+}
++ObjProp 915 "Scripts"
+{
+	"Script 0" TrigContained
+}
+//doors
+ObjProp 61 "RotDoor"
+{
+	"Open Angle" 89
+}
++Link 88 89 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 88 "PhysCanMant"
+{
+}
++ObjProp 89 "PhysCanMant"
+{
+}
++Link 124 127 "ScriptParams"
+{
+	"" Double
+}
++Link 235 236 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 241 "RotDoor"
+{
+	"Open Angle" 271
+}
++MetaProp 858 -2420
++ObjProp 912 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1014 "BlockFrob"
+{
+	"" true
+}
+//paintings
++ObjProp 419 "BlockFrob"
+{
+	"" true
+}
+ObjProp 419 "Scale"
+{
+	"" 1.53, 1.00, 1.82
+}
+ObjProp 654 "TransDoor"
+{
+	"Open Position" 2.50
+}
+-ObjProp 799 "PhysType"
+ObjProp 799 "Position"
+{
+	"Location" 16.746, 323.8, 19.1355
+}
++ObjProp 799 "PhysType"
+{
+	"Type" OBB
+}
+//loot
+ObjProp 749 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 750 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 848 "PhysType"
+ObjProp 848 "Position"
+{
+	"Location" 141.425, 351.234, 8.1
+}
++ObjProp 848 "PhysType"
+{
+	"Type" Sphere
+}
+//AIs
++ObjProp 97 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 98 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 99 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 101 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 267 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 347 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 616 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 856 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
+//fireplaces
+ObjProp 180 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 222 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 476 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 478 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 603 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 609 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+//switches
++Link 615 706 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}

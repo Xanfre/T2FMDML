@@ -1,0 +1,131 @@
+DML1
+
+//T2 FM: Evirath's Misery by Beatrice Madry (Turcaill) / Fixes
+
+FINGERPRINT
+{
+	806 [555 455 487]
+	599 [532 431 503]
+	337 [478 374 510]
+	953 [621 427 499]
+	902 [539 423 505]
+	664 [551 319 503]
+	551 [503 371 473]
+	948 [500 435 509]
+	QVAR "goal_target_13" == 1168
+}
+
+#script "nvscript"
+
+//frank's letter
++ObjProp 48 "DesignNote"
+{
+	"" NVRelayTrapOn="BeginScript"; NVRelayTrapOff="Null"; NVRelayTrapTDest="[Me]"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1; NVRelayTrapTOn="InitialSelect"; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
+ObjProp 48 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+
+//miriam's note (trap)
++ObjProp 808 "TrapFlags"
+{
+	"" Once
+}
+//evirath's diary
++ObjProp 1168 "NoDrop"
+{
+	"" true
+}
+-ObjProp 1168 "PhysType"
+ObjProp 1168 "Position"
+{
+	"Location" 618.869, 337.792, 461.572
+}
++ObjProp 1168 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 168 "Position"
+{
+	"Location" 618.869, 337.792, 461.572
+}
+//pedestal
+-ObjProp 1160 "PhysType"
+ObjProp 1160 "Position"
+{
+	"Location" 618.937, 337.818, 458.043
+}
++ObjProp 1160 "PhysType"
+{
+	"Type" OBB
+}
+//torches
++ObjProp 169 "FrobInfo"
+{
+}
++ObjProp 209 "FrobInfo"
+{
+}
+//button-book
+ObjProp 261 "StTweqJoints"
+{
+	"AnimS" Reverse
+}
+//safe doors
++ObjProp 37 "BlockFrob"
+{
+	"" true
+}
++ObjProp 332 "BlockFrob"
+{
+	"" true
+}
++ObjProp 490 "BlockFrob"
+{
+	"" true
+}
++ObjProp 741 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 741 "PhysType"
++ObjProp 741 "PhysType"
+{
+	"Type" OBB
+}
+//sheriff's archer female
+-ObjProp 995 "AI_Vision"
+//mantling
++ObjProp 166 "PhysCanMant"
+{
+}
++ObjProp 427 "PhysCanMant"
+{
+}
+//shutters
+-ObjProp 87 "RotDoor"
++ObjProp 87 "Immobile"
+{
+	"" true
+}
+-ObjProp 87 "PhysType"
++ObjProp 87 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 88 "RotDoor"
++ObjProp 88 "Immobile"
+{
+	"" true
+}
+-ObjProp 88 "PhysType"
++ObjProp 88 "PhysType"
+{
+	"Type" OBB
+}
++Link 599 600 "ScriptParams"
+{
+	"" Double
+}

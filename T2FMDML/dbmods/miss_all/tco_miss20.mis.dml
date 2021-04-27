@@ -1,0 +1,44 @@
+DML1
+
+//T2 FM: The Clean Out by Dark Gentleman / Fix a book and loot
+
+FINGERPRINT
+{
+	326 [36 -124 -37]
+	1102 [151 -47 -55]
+	1183 [-50 -65 -56]
+	582 [105 -48 -61]
+	65 [-109 90 -58]
+	811 [-50 4 -9]
+	501 [-84 -39 -76]
+	126 [-64 32 46]
+	QVAR "goal_target_3" == 971
+}
+
++ObjProp 1513 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1513 "PhysControl"
++ObjProp 1513 "Position"
+{
+	"Location" -61.08, 37.45, -17.85
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0  
+}
+-ObjProp 746 "PhysType"
++ObjProp 746 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 746 "PhysControl"
++ObjProp 746 "Position"
+{
+	"Location" -119.13, 79.53, -50.16
+	"Heading" 0
+	"Pitch" 8000
+	"Bank" 0  
+}

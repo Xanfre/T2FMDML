@@ -1,0 +1,58 @@
+DML1
+
+//T2 FM: The Auldale Chess Tournament (Small Stock Resource Contest) by SlyFoxx / Fixes
+
+FINGERPRINT
+{
+	779 [472 484 503]
+	641 [525 481 502]
+	255 [498 511 487]
+	216 [544 512 501]
+	797 [496 506 506]
+	391 [456 480 486]
+	835 [472 538 477]
+	812 [471 465 509]
+	QVAR "goal_target_0" == 766
+}
+
+Create -2789 "TPPlant"
++Link "TPPlant" 679 "ControlDevice"
+{
+}
++Link 678 "TPPlant" "ControlDevice"
+{
+}
++ObjProp 678 "Scripts"
+{
+	"Script 0" StdButton
+}
++ObjProp 678 "FrobInfo"
+{
+	"World Action" "Move,Script"
+}
++ObjProp 679 "Scale"
+{
+	"" 0.5,0.5,0.5
+}
+-ObjProp 679 "Position"
++ObjProp 679 "Position"
+{
+	"Location" 472.026,468.908,484.372
+}
+-ObjProp 881 "Position"
++ObjProp 881 "Position"
+{
+	"Location" 451.997,536.636,500.149
+	"Pitch" c000
+}
+-ObjProp 894 "Position"
++ObjProp 894 "Position"
+{
+	"Location" 502.576,547.848,504.459
+}
+-ObjProp 601 "Position"
++ObjProp 601 "Position"
+{
+	"Location" 517.906,452.468,507.226
+	"Bank" 8000
+}

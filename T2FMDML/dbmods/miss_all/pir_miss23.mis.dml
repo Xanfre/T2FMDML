@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Pirates Ahoy! by Christine Schneider and Greenhorn / Fix loot
+
+FINGERPRINT
+{
+	763 [514 112 -5]
+	913 [4 695 -19]
+	567 [-146 -91 -8]
+	535 [-280 185 10]
+	744 [543 43 -15]
+	326 [38 -20 18]
+	1097 [538 -57 -42]
+	593 [-202 -129 -20]
+	QVAR "goal_target_4" == 224
+}
+
++ObjProp 463 "Position"
+{
+	"Location" 599.60,177.50,-12.94
+}

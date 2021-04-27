@@ -1,0 +1,49 @@
+DML1
+
+//T2 FM: Freedom for Nepumuk by Dennis / Fix loot
+
+FINGERPRINT
+{
+	1758 [242 18 -63]
+	1190 [241 115 18]
+	986 [264 114 -7]
+	562 [213 22 -133]
+	300 [31 166 -3]
+	310 [190 230 -7]
+	769 [201 166 -7]
+	1167 [202 -34 14]
+	QVAR "goal_target_0" == 1908
+}
+
++ObjProp 1185 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1186 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1190 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1197 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1198 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1200 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 1201 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 843 "FrobInfo"
+{
+	"World Action" Move,Script
+}

@@ -1,0 +1,46 @@
+DML1
+
+//T2 FM: Slow but Steady Progress (Small Stock Resource Contest) by Vlad Midnight / Fix window
+
+FINGERPRINT
+{
+	261 [497 491 510]
+	229 [484 548 510]
+	302 [451 472 513]
+	36 [464 511 493]
+	304 [415 488 511]
+	171 [449 557 478]
+	290 [415 494 485]
+	250 [500 515 509]
+	QVAR "goal_target_0" == 254
+}
+
+#script "squirrel"
+
++ObjProp 142 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 251 "DesignNote"
+{
+	"" RepositionLoc=-0.0,0.0,0.1
+}
++ObjProp 251 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+Create -6082 "BrokenWinBlock"
+{
+	+ObjProp "ModelName"
+	{
+		"" win4x8br
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
++Link 101 "BrokenWinBlock" "Corpse"
+{
+}

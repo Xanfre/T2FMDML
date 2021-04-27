@@ -1,0 +1,26 @@
+DML1
+
+//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes
+
+FINGERPRINT
+{
+	244 [211 -365 0]
+	1425 [681 564 -9]
+	1675 [603 -252 -185]
+	1617 [490 718 -163]
+	1614 [490 718 -163]
+	1648 [601 -9 -254]
+	1596 [408 646 -200]
+	936 [375 283 13]
+	QVAR "goal_target_0" == 1274
+}
+
++ObjProp 1502 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+ObjProp 1078 "Position"
+{
+	"Location" 715,782.851,-95.7934
+}

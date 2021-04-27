@@ -1,0 +1,148 @@
+DML1
+
+//T2 FM: Arac Attack by Theker / Fixes
+
+FINGERPRINT
+{
+	371 [-13 -37 -22]
+	815 [95 82 -61]
+	442 [-74 95 -67]
+	131 [22 92 -36]
+	121 [36 112 -36]
+	725 [55 201 -47]
+	191 [45 214 -64]
+	226 [26 93 -32]
+	QVAR "goal_target_4" == 602
+}
+
+#script "squirrel"
+
++ObjProp 620 "Position"
+{
+	"Location" 100.714,129.426,-64.8361
+	"Bank" e8ac
+}
++ObjProp 619 "Position"
+{
+	"Location" 100.352,129.345,-64.7896
+	"Bank" e958
+}
++ObjProp 616 "Position"
+{
+	"Location" 100.312,130.029,-65.1842
+	"Bank" ec58
+}
++ObjProp 615 "Position"
+{
+	"Location" 100.312,130.551,-65.486
+	"Bank" ea28
+}
++ObjProp 618 "Position"
+{
+	"Location" 100.191,129.586,-64.9289
+	"Bank" e9ec
+}
++ObjProp 626 "Position"
+{
+	"Location" 99.7492,129.305,-64.7665
+	"Bank" e9a4
+}
++ObjProp 617 "Position"
+{
+	"Location" 99.8698,129.627,-64.9521
+	"Bank" eb34
+}
++ObjProp 614 "Position"
+{
+	"Location" 99.9502,130.069,-65.2075
+	"Bank" e938
+}
++ObjProp 623 "Position"
+{
+	"Location" 99.9904,130.792,-65.6252
+	"Bank" eb6c
+}
++ObjProp 630 "Position"
+{
+	"Location" 99.3472,129.265,-64.7432
+	"Bank" e884
+}
++ObjProp 625 "Position"
+{
+	"Location" 99.307,129.627,-64.9521
+	"Bank" e960
+}
++ObjProp 621 "Position"
+{
+	"Location" 99.3472,129.828,-65.0682
+	"Bank" eb88
+}
++ObjProp 624 "Position"
+{
+	"Location" 99.4276,130.27,-65.3235
+	"Bank" e8c0
+}
++ObjProp 622 "Position"
+{
+	"Location" 99.4678,130.511,-65.4627
+	"Bank" ead0
+}
++ObjProp 629 "Position"
+{
+	"Location" 98.8648,129.265,-64.7432
+	"Bank" eba4
+}
++ObjProp 627 "Position"
+{
+	"Location" 98.7844,129.828,-65.0682
+	"Bank" eb3c
+}
++ObjProp 628 "Position"
+{
+	"Location" 99.0256,130.39,-65.3931
+	"Bank" eb6c
+}
++ObjProp 776 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 776 "DesignNote"
+{
+	"" RepositionLoc="0,-1,0.2"
+}
++ObjProp 777 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 777 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 400 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 400 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 399 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 399 "DesignNote"
+{
+	"" RepositionLoc="0,0,0.2"
+}
++ObjProp 401 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 401 "DesignNote"
+{
+	"" RepositionLoc="-25.373,98.552,-70.3957"
+}
++ObjProp 819 "TrapFlags"
+{
+	"" Once
+}

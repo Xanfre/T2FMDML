@@ -1,0 +1,124 @@
+DML1
+
+//T2 FM: Breakout From Apocalypse Prison by Isaac Kopecky (golem8) / Fix a door and the final objective
+
+FINGERPRINT
+{
+	205 [1 -9 -25]
+	291 [-13 -30 -24]
+	367 [19 21 -26]
+	57 [62 -14 -9]
+	138 [18 15 -22]
+	325 [35 28 -23]
+	206 [18 -8 -22]
+	60 [12 4 -26]
+	QVAR "goal_target_7" == 268
+}
+
++ObjProp 36 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 36 "Scripts"
+{
+	"Script 1" TrapDestroy
+}
++ObjProp 36 "TrapQVar"
+{
+	"" =1:goal_state_7
+}
++ObjProp 268 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 268 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
++Link 268 36 "ControlDevice"
+{
+}
++Link 36 268 "ControlDevice"
+{
+}
++StimSource 386 "WaterStim"
+{
+	Intensity 100
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "No Max Firings"
+			"Period" 1000
+			"Max Firings" 10
+			"Intensity Slope" 1.00
+		}
+		Shape
+		{
+			"Radius" 9
+			"Flags" None
+			"Dispersion" None
+		}
+	}
+}
++ObjProp 258 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
+ObjProp 267 "Scripts"
+{
+	"Script 1" TrigRoomPlayer
+}
++ObjProp 352 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 352 "Scripts"
+{
+	"Script 1" TrapSetQVar
+}
++ObjProp 278 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
+ObjProp 211 "Position"
+{
+	"Location" 7.5, 3.22, -26.35
+	"Heading" fc87
+}
++ObjProp 352 "TrapQVar"
+{
+	"" =1:goal_state_9
+}
++ObjProp 258 "TrapQVar"
+{
+	"" =1:goal_state_8
+}
++Link 267 258 "ControlDevice"
+{
+}
++Link 267 267 "ControlDevice"
+{
+}
++Link 267 352 "ControlDevice"
+{
+}
++Link 267 278 "ControlDevice"
+{
+}
++ObjProp 13 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 13 "TrapQVar"
+{
+	"" =2:goal_max_diff_9
+}
++ObjProp 25 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++Link 25 13 "ControlDevice"
+{
+}
+-ObjProp 44 "Scripts"

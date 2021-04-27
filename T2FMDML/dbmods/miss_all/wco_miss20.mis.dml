@@ -1,0 +1,53 @@
+DML1
+
+//T2 FM: Worlds Collide by Jabberwocky / Fix loot
+
+FINGERPRINT
+{
+	914 [234 77 122]
+	759 [113 79 80]
+	925 [119 45 99]
+	785 [27 143 90]
+	443 [0 39 82]
+	606 [16 129 82]
+	430 [101 104 112]
+	824 [136 -8 113]
+	QVAR "goal_target_5" == 871
+}
+
++ObjProp 84 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 84 "PhysControl"
++ObjProp 84 "Position"
+{
+	"Location" 86.16, 87.49, 96.31
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" ddc3
+}
+-Link 45 84 "Corpse" 
++ObjProp 59 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 59 "PhysControl"
++ObjProp 59 "Position"
+{
+	"Location" 78.91, 65.19, 99.35
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 391 "FrobInfo"
++ObjProp 391 "FrobInfo"
+{
+	"World Action" Move,Script
+}
++ObjProp 391 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}

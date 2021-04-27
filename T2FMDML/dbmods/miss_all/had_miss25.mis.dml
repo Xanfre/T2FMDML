@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: Haddur by Turi Robert / Fix loot
+
+FINGERPRINT
+{
+	1050 [34 -3 104]
+	1148 [127 2 104]
+	1039 [-48 -21 101]
+	1034 [-66 -19 114]
+	151 [-73 63 -94]
+	1048 [34 -3 101]
+	89 [-98 37 -97]
+	125 [-30 -37 -91]
+	QVAR "goal_target_1" == 2281
+}
+
++ObjProp 164 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

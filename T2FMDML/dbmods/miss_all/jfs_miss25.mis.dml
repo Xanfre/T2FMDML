@@ -1,0 +1,391 @@
+DML1
+
+//T2 FM: Just for Show by William Hollingsworth (Tumbleweed) / Fixes
+
+FINGERPRINT
+{
+	890 [284 145 -172]
+	153 [270 98 -156]
+	637 [283 75 -167]
+	215 [206 60 -152]
+	857 [241 -23 -185]
+	120 [83 23 -175]
+	76 [-6 -33 -179]
+	743 [14 30 -165]
+	QVAR "goal_target_0" == 806
+}
+
+#script "nvscript"
+#script "tnhscript"
+
+//fix difficulties
+-MetaProp 125 -3994
+-ObjProp 125 "AirSupply"
+//fix final goal
+-ObjProp 965 "Scripts"
+Create -2123 "FinalGoalFix"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapSetQVar
+		"Script 1" NVDeleteTrap
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =0:goal_irreversible_6
+	}
+}
+Create -2123 "FixLoot"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapSetQVar
+		"Script 1" NVDeleteTrap
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =0:TOTAL_LOOT
+	}
+}
+Create -464 "StartTrigger"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "DesignNote"
+	{
+		"" Proximity=2000
+	}
+	+ObjProp "StTweqJoints"
+	{
+		"AnimS" "On"
+		"MiscS" "[None]"
+		"Joint1AnimS" "[None]"
+		"Joint2AnimS" "[None]"
+		"Joint3AnimS" "[None]"
+		"Joint4AnimS" "[None]"
+		"Joint5AnimS" "[None]"
+		"Joint6AnimS" "[None]"
+	}
+}
++Link "StartTrigger" "FinalGoalFix" "ControlDevice"
+{
+}
++Link "StartTrigger" "FixLoot" "ControlDevice"
+{
+}
+//fix object positions
++ObjProp 736 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 736 "Position"
+{
+	"Location" 15.9,37.85,-176.0
+}
++ObjProp 735 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 735 "Position"
+{
+	"Location" 16.4,37.87,-176.0
+}
+-ObjProp 352 "PhysType"
++ObjProp 352 "Position"
+{
+	"Location" 72.35,-7.9,-164.9
+	"Heading" 4000
+}
++ObjProp 352 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 356 "PhysType"
++ObjProp 356 "Position"
+{
+	"Location" 75.8,-7.9,-164.9
+	"Heading" c000
+}
++ObjProp 356 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
++ObjProp 678 "Position"
+{
+	"Location" 43.81,26.1,-151.36
+	"Heading" f53c
+}
+Create -2123 "MoveBarrel1"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Position"
+	{
+		"Location" 43.1202,37.7436,-191.927
+		"Heading" cc7
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" NVDeleteTrap
+	}
+}
+Create -2123 "MoveBarrel2"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Position"
+	{
+		"Location" 43.1202,42.2436,-191.927
+		"Heading" 8b8
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" NVDeleteTrap
+	}
+}
+Create -2123 "MoveBarrel3"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Position"
+	{
+		"Location" 43.1202,47.1372,-191.927
+		"Heading" f606
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" NVDeleteTrap
+	}
+}
+Create -2123 "MoveBarrel4"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Position"
+	{
+		"Location" 43.1202,-12.3804,-188.57
+		"Heading" c000
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" NVDeleteTrap
+	}
+}
++Link "MoveBarrel1" 568 "ControlDevice"
+{
+}
++Link "MoveBarrel2" 471 "ControlDevice"
+{
+}
++Link "MoveBarrel3" 552 "ControlDevice"
+{
+}
++Link "MoveBarrel4" 930 "ControlDevice"
+{
+}
++Link "StartTrigger" "MoveBarrel1" "ControlDevice"
+{
+}
++Link "StartTrigger" "MoveBarrel2" "ControlDevice"
+{
+}
++Link "StartTrigger" "MoveBarrel3" "ControlDevice"
+{
+}
++Link "StartTrigger" "MoveBarrel4" "ControlDevice"
+{
+}
++StimSource 568 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 2.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+++Receptron 568 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysControl"
+	}
+}
+++Receptron 568 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysType"
+	}
+}
++StimSource 471 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 2.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+++Receptron 471 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysControl"
+	}
+}
+++Receptron 471 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysType"
+	}
+}
++StimSource 552 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 2.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+++Receptron 552 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysControl"
+	}
+}
+++Receptron 552 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysType"
+	}
+}
++StimSource 930 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 2.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+++Receptron 930 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysControl"
+	}
+}
+++Receptron 930 "PingStim"
+{
+	Min 3
+	Max 7
+	Target Me
+	Agent -2099
+	Effect "add_prop"
+	{
+		"Prop Name" "PhysType"
+	}
+}

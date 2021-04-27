@@ -1,0 +1,20 @@
+DML1
+
+//T2 FM: Troubling Transitions (TMA20AC) by Psych0sis / Fixes
+
+FINGERPRINT
+{
+	969 [312 284 -5]
+	1393 [357 386 -10]
+	536 [143 453 29]
+	836 [92 306 36]
+	1145 [356 399 12]
+	575 [87 409 40]
+	2367 [235 417 -2]
+	1671 [470 426 -16]
+	QVAR "goal_target_0" == 2474
+}
+
++ObjProp 2657 "Loot"
+{
+}

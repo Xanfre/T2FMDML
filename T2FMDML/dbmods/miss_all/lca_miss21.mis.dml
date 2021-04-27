@@ -1,0 +1,52 @@
+DML1
+
+//T2 FM: Last Caress (Horror Contest) by Tom N. Harris (Telliamed) / Fixes
+
+FINGERPRINT
+{
+	860 [-84 19 88]
+	482 [10 -103 66]
+	692 [34 -90 66]
+	578 [113 -147 98]
+	78 [-29 -12 137]
+	834 [-5 35 69]
+	847 [-33 103 85]
+	947 [-33 32 122]
+	QVAR "goal_target_0" == 286
+}
+
+#script "squirrel"
+
++MetaProp 581 -1629
++MetaProp 582 -1629
++MetaProp 400 -1629
++MetaProp 579 -1629
++MetaProp 578 -1629
++ObjProp 591 "DesignNote"
+{
+	"" RepositionLoc=-7.48327,13.5434,119.125
+}
++ObjProp 591 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 588 "DesignNote"
+{
+	"" RepositionLoc=-24.7541,9.96724,118.965; RepositionDir=0,0,0
+}
++ObjProp 588 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 689 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 82 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 83 "PhysCanMant"
+{
+	"" false
+}

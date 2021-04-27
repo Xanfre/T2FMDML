@@ -1,0 +1,57 @@
+DML1
+
+//T2 FM: Lord Hammerarse's Manor by Asgaroth / Fixes
+
+FINGERPRINT
+{
+	142 [406 498 493]
+	71 [404 457 511]
+	148 [477 380 505]
+	525 [470 302 494]
+	556 [446 435 502]
+	47 [429 459 497]
+	156 [371 482 500]
+	272 [397 360 496]
+	QVAR "goal_target_1" == 276
+}
+
+-ObjProp 69 "Position"
++ObjProp 69 "Position"
+{
+	"Location" 406.5,457,510.547
+	"Heading" c000
+}
++ObjProp 69 "Scale"
+{
+	"" 0.8,0.8,0.8
+}
+ObjProp 480 "PGLaunchInfo"
+{
+	"Min time" 1.5
+	"Max time" 1.5
+}
+ObjProp 478 "PGLaunchInfo"
+{
+	"Min time" 2
+	"Max time" 2
+}
+ObjProp 483 "PGLaunchInfo"
+{
+	"Min time" 1.5
+	"Max time" 1.5
+}
+ObjProp 488 "PGLaunchInfo"
+{
+	"Min time" 1.5
+	"Max time" 1.5
+}
+ObjProp 485 "PGLaunchInfo"
+{
+	"Min time" 2
+	"Max time" 2
+}
+ObjProp 490 "PGLaunchInfo"
+{
+	"Min time" 2
+	"Max time" 2
+}

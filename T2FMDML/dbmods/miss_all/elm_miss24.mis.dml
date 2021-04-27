@@ -1,0 +1,30 @@
+DML1
+
+//T2 FM: Elevator Mission by JIS / Fix for a switch to a secret area
+
+FINGERPRINT
+{
+	896 [-20 68 -5]
+	74 [-77 -337 32]
+	118 [-29 -406 30]
+	821 [-74 -524 41]
+	457 [-127 -239 36]
+	310 [-11 -199 30]
+	227 [6 -426 29]
+	694 [38 -193 15]
+	QVAR "goal_target_0" == 868
+}
+
++ObjProp 720 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 720 "PhysControl"
++ObjProp 720 "Position"
+{
+	"Location" 100.44, -423.67, 16.77
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}

@@ -1,0 +1,24 @@
+DML1
+
+//T2 FM: Meeting by Jan Hladík (Yohny C. Liar) / Fix guard without physics
+
+FINGERPRINT
+{
+	200 [-34 -1 -2]
+	383 [40 25 -10]
+	153 [-43 -5 -14]
+	421 [41 28 -12]
+	210 [-35 12 -4]
+	415 [10 4 -13]
+	353 [-46 -13 -12]
+	229 [-34 -31 -10]
+	QVAR "goal_target_0" == 319
+}
+
++ObjProp 351 "PhysType"
+{
+	"Type" "Sphere"
+	"# Submodels" 2
+	"Remove on Sleep" false
+	"Special" false
+}

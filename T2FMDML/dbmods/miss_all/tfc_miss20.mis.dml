@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: Time for Culture 1.5 by Pedro Quintela (Cardia) / Fixes
+
+FINGERPRINT
+{
+	2339 [-124 112 22]
+	1847 [-50 554 18]
+	837 [-154 383 -11]
+	2333 [-75 -83 -12]
+	986 [-156 320 -8]
+	1946 [-55 563 25]
+	242 [-15 84 -11]
+	1158 [27 261 42]
+	QVAR "goal_target_0" == 2265
+}
+
++ObjProp 476 "Loot"
+{
+}
++ObjProp 478 "Loot"
+{
+}
++ObjProp 479 "Loot"
+{
+}
++ObjProp 480 "Loot"
+{
+}
++ObjProp 481 "Loot"
+{
+}
++ObjProp 482 "Loot"
+{
+}
++ObjProp 483 "Loot"
+{
+}

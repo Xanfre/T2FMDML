@@ -1,0 +1,283 @@
+DML1
+
+//T2 FM: A Debt Repaid by Jason Otto (Ottoj55) / Fixes
+
+FINGERPRINT
+{
+	702 [389 468 504]
+	1654 [612 566 497]
+	1121 [665 452 474]
+	1413 [719 435 518]
+	2145 [589 452 458]
+	1928 [642 488 475]
+	2052 [684 500 460]
+	294 [590 458 518]
+	QVAR "goal_target_0" == 1993
+}
+
+#script "nvscript"
+
+//doors
++Receptron 36 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 74 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 122 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 136 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 180 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 181 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 284 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 406 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 413 "BlockFrob"
+{
+	"" true
+}
++MetaProp 413 -2420
++ObjProp 418 "BlockFrob"
+{
+	"" true
+}
++MetaProp 418 -2420
++Receptron 451 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 603 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 710 "PickCfg"
+{
+	"LockBits 1" 1
+	"Pins 1" 2
+	"TimePct 1" 3
+	"LockBits 2" 10
+	"Pins 2" 3
+	"TimePct 2" 2
+}
++Receptron 712 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 713 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1678 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1772 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1773 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1850 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1851 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 2030 "PhysType"
+ObjProp 2030 "Position"
+{
+	"Location" 733.89, 448, 503.25
+}
++ObjProp 2030 "PhysType"
+{
+	"Type" OBB
+}
++Link 2289 545 "ControlDevice"
+{
+}
++ObjProp 545 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"
+}
++ObjProp 545 "FrobInfo"
+{
+}
++ObjProp 545 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++ObjProp 2395 "FrobInfo"
+{
+}
++Receptron 2556 "EarthStim"
+{
+	Min 9
+	Max None
+
+	Target 2395
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++Receptron 2556 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 2556 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapOff="Null"; NVRelayTrapCount=1
+}
++ObjProp 2556 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 2646 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2680 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2701 "BlockFrob"
+{
+	"" true
+}
++Link 2002 2073 "ControlDevice"
+{
+}
++ObjProp 2073 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"
+}
++ObjProp 2073 "FrobInfo"
+{
+}
++ObjProp 2073 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
+//chief's office key
++Link 2612 2617 "ControlDevice"
+{
+}
++ObjProp 2617 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"
+}
++ObjProp 2617 "FrobInfo"
+{
+}
++ObjProp 2617 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
+//mantling
++ObjProp 928 "PhysCanMant"
+{
+}
++ObjProp 930 "PhysCanMant"
+{
+}
++ObjProp 2335 "PhysCanMant"
+{
+}
++ObjProp 2336 "PhysCanMant"
+{
+}
++ObjProp 2708 "PhysCanMant"
+{
+}
+//gas bombs
+-ObjProp 1269 "DeathStage"
+//chemicals
++ObjProp 1355 "CombineType"
+{
+	"" ChemC
+}
++ObjProp 1355 "StackCount"
+{
+	"" 1
+}
++ObjProp 1362 "CombineType"
+{
+	"" ChemD
+}
++ObjProp 1362 "StackCount"
+{
+	"" 1
+}
++ObjProp 1432 "CombineType"
+{
+	"" ChemD
+}
++ObjProp 1432 "StackCount"
+{
+	"" 1
+}
++ObjProp 1433 "CombineType"
+{
+	"" ChemC
+}
++ObjProp 1433 "StackCount"
+{
+	"" 1
+}

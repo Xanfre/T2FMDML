@@ -1,0 +1,26 @@
+DML1
+
+//T2 FM: Dead Flower by Turi Robert / Make player resistent to flying zombie parts
+
+FINGERPRINT
+{
+	1193 [171 757 -59]
+	450 [111 764 20]
+	1158 [255 632 2]
+	355 [157 773 17]
+	814 [174 784 22]
+	2173 [2 71 12]
+	247 [8 622 12]
+	1011 [104 797 -87]
+	QVAR "goal_target_3" == 1330
+}
+
++ObjProp 17 "BashFactor"
+{
+	"" 0.1
+}
++ObjProp 17 "BashParams"
+{
+	"Threshold" 20000
+	"Coefficient" 0.1
+}

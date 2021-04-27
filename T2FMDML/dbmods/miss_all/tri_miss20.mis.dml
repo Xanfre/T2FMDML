@@ -1,0 +1,93 @@
+DML1
+
+//T2 FM: Thief Trinity by Theker / Fixes
+
+FINGERPRINT
+{
+	803 [-208 -52 -23]
+	735 [-115 84 -27]
+	1038 [-162 -367 -48]
+	747 [-96 -59 -17]
+	1347 [-150 150 -23]
+	626 [-327 10 -1]
+	590 [-86 -49 -26]
+	891 [-174 174 -23]
+	QVAR "goal_target_0" == 963
+}
+
+#script "squirrel"
+
++ObjProp 805 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 805 "Position"
+{
+	"Location" -52.4373,-6,-15.827
+}
++ObjProp 1503 "DesignNote"
+{
+	"" RepositionLoc=-149.879,241.213,-21.0976
+}
++ObjProp 1503 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
+//Skull Creeper
+ObjProp 964 "AI_Alertness"
+{
+	"Level" "(0) None"
+	"Peak" "(0) None"
+}
++ObjProp 964 "AI_Vision"
+{
+	"" "Well Above Average"
+}
++ObjProp 964 "AI_Hearing"
+{
+	"" "Well Above Average"
+}
++ObjProp 964 "AI_Sloth"
+{
+	"" "Well Below Average"
+}
+Create -1291 "CreeperTrol1"
+{
+	+ObjProp "Position"
+	{
+		"Location" -228.302,-357.159,-47.5998
+	}
+}
+Create -1291 "CreeperTrol2"
+{
+	+ObjProp "Position"
+	{
+		"Location" -186.514,-357.159,-47.5998
+	}
+}
++Link "CreeperTrol1" "CreeperTrol2" "AIPatrol"
+{
+}
++Link "CreeperTrol2" "CreeperTrol1" "AIPatrol"
+{
+}
++Link 964 "CreeperTrol1" "AICurrentPatrol"
+{
+}
++ObjProp 964 "AI_Patrol"
+{
+	"" true
+}
++ObjProp 964 "TimeWarp"
+{
+	"" 0.75
+}
++ObjProp 964 "AI_VisDesc"
+{
+	"Cone 1: Flags" Active,Night vision
+	"Cone 1: Angle" 170
+	"Cone 1: Z angle" 170
+	"Cone 1: Range" 15
+	"Cone 1: Acuity" 1500
+}

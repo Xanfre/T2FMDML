@@ -1,0 +1,558 @@
+DML1
+
+//T2 FM: Snobs part 2 by Naks / Fixes
+
+FINGERPRINT
+{
+	245 [41 85 95]
+	1494 [135 37 104]
+	1313 [151 -67 90]
+	597 [177 104 102]
+	230 [236 -151 100]
+	462 [276 7 70]
+	786 [296 -98 99]
+	2041 [388 -183 119]
+	QVAR "goal_target_0" == 1919
+}
+
+#script "nvscript"
+
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 188.55,80.4,115.46
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 263.33,50.4,113.46
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 260.15,-9.8,114.46
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 348.55,-169.4,101.46
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++ObjProp 277 "NonPhysCreature"
+{
+	"" false
+}
++ObjProp 271 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 271 "Position"
++ObjProp 271 "Position"
+{
+	"Location" 224.77,65.65,110.4
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 269.55,84.4,129.3
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 269.55,91.4,129.3
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 269.55,97.4,129.3
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 1534 "PhysType"
++ObjProp 1534 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1534 "Position"
++ObjProp 1534 "Position"
+{
+	"Location" 223.75,-29.366,110.98
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1534 "PhysType"
++ObjProp 1534 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 1535 "PhysType"
++ObjProp 1535 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1535 "Position"
++ObjProp 1535 "Position"
+{
+	"Location" 223.75,-18.266,110.98
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1535 "PhysType"
++ObjProp 1535 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 1533 "PhysType"
++ObjProp 1533 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1533 "Position"
++ObjProp 1533 "Position"
+{
+	"Location" 225.779,-23.8796,112.46
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1533 "PhysType"
++ObjProp 1533 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 1571 "PhysType"
++ObjProp 1571 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1571 "Position"
++ObjProp 1571 "Position"
+{
+	"Location" 224.646,-16.704,96.768
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 225.809,-18.477,98.856
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 365.626,-127.739,101.503
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 570 "PhysType"
++ObjProp 570 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 570 "Position"
++ObjProp 570 "Position"
+{
+	"Location" 357.57,-150.76,99.563
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 570 "PhysType"
++ObjProp 570 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 280.463,-167.951,94.276
+		"Heading" 4000
+		"Pitch" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 274.253,-167.951,94.276
+		"Heading" 4000
+		"Pitch" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 267.463,-167.951,94.276
+		"Heading" 4000
+		"Pitch" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++ObjProp 643 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 643 "Position"
++ObjProp 643 "Position"
+{
+	"Location" 333.201,-142.875,102.32
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 642 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 642 "Position"
++ObjProp 642 "Position"
+{
+	"Location" 333.388,-142.635,100.984
+	"Heading" 4000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 1830 "Position"
++ObjProp 1830 "Position"
+{
+	"Location" 290.776,-139.699,118.356
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 865 "PhysType"
++ObjProp 865 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 865 "Position"
++ObjProp 865 "Position"
+{
+	"Location" 234.182,-114.58,99.91
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 890 "PhysType"
++ObjProp 890 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 890 "Position"
++ObjProp 890 "Position"
+{
+	"Location" 238.156,-162.916,99.95
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 277 "PhysAIColl"
+{
+	"" true
+}
++Link 206 89 "AIWatchObj"
+{
+	"Watch kind" "Self entry"
+	"Priority" "High"
+	"Trigger: Radius" 10
+	"         Height" 10
+	"         Required awareness" "(0) None"
+	"         Line requirement" "None"
+	"         Minimum alertness" "(0) None"
+	"         Maximum alertness" "(3) High"
+	"Exit: Link kill option" "Don't kill"
+	"      Kill like links" false
+	"      No test once triggered" true
+	"      Reuse delay" 1000
+	"      Reset delay" 10000
+	"Response: Step 1" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1" "53"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Response: Step 2" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[1] "89"
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[2] "10000"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[3] "89"
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+}
++ObjProp 277 "PhysAttr"
+{
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 242.783,37.82,107.12
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 877 "PhysType"
++ObjProp 877 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 877 "Position"
++ObjProp 877 "Position"
+{
+	"Location" 208.579,-105.34,99.91
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-Link 1356 1918 "ControlDevice"
++Link 1356 1219 "ControlDevice"
+{
+}
++ObjProp 1219 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 1219 1918 "ControlDevice"
+{
+}
++ObjProp 1219 "TrapFlags"
+{
+	"" Once, NoOff
+}
+Create -439
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 241.778,18.1711,121.555
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+		"# Submodels" 6
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++ObjProp 908 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 908 "TrapQVar"
+{
+	"" =1:goal_irreversible_1
+}
++ObjProp 76 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 76 908 "ControlDevice"
+{
+}
++ObjProp 911 "DesignNote"
+{
+	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=1407
+}
++ObjProp 911 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-Link 1407 1922 "ControlDevice"
++ObjProp 909 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 909 1922 "ControlDevice"
+{
+}
++ObjProp 909 "TrapFlags"
+{
+	"" Once,NoOff
+}
++Link 1407 909 "ControlDevice"
+{
+}
++ObjProp 711 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 711 "TrapQVar"
+{
+	"" =1:goal_irreversible_2
+}
++Link 76 711 "ControlDevice"
+{
+}

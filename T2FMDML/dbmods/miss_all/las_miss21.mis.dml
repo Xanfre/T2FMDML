@@ -1,0 +1,40 @@
+DML1
+
+//T2 FM: The Lord Ashton Series by Christine Schneider / Fix door
+
+FINGERPRINT
+{
+	181 [-155 -68 -3]
+	1418 [-278 160 -4]
+	489 [-42 166 11]
+	659 [84 233 -3]
+	728 [214 235 -70]
+	959 [238 507 -3]
+	881 [75 368 -25]
+	2139 [386 203 15]
+	QVAR "goal_target_0" == 1139
+}
+
+-ObjProp 7 "TransDoor"
+-ObjProp 7 "RotDoor"
++ObjProp 7 "TransDoor"
+{
+	"Closed Position" 0.00
+	"Open Position" 7.00
+	"Base Speed" 3.00
+	"Axis" "X-Axis"
+	"Status" "Closed"
+	"Hard Limits?" false
+	"Blocks Vision?" false
+	"Blocks Sound %" 60.00
+	"Lean Blocks Sound %" 0.00
+	"Push Mass" 25.00
+}
+ObjProp 469 "FrobInfo"
+{
+	"World Action" Move,Script
+}
+ObjProp 1020 "FrobInfo"
+{
+	"World Action" Move,Script
+}

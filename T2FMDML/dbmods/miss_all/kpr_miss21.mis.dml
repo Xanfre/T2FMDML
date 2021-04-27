@@ -1,0 +1,35 @@
+DML1
+
+//T2 FM: Keeper of the Prophecies by Ken Ramsley (frobber) / Fixes
+
+FINGERPRINT
+{
+	1520 [42 595 24]
+	2292 [-100 594 172]
+	1873 [46 545 133]
+	1945 [62 568 130]
+	446 [-97 424 177]
+	1559 [-12 92 172]
+	1532 [104 496 156]
+	1138 [84 480 112]
+	QVAR "goal_target_6" == -6801
+}
+
++Link 1150 2310 "ControlDevice"
+{
+}
++Link 1150 2309 "ControlDevice"
+{
+}
+-Link 1338 2310 "ControlDevice"
+-Link 1340 2309 "ControlDevice"
++Link 1338 1150 "ControlDevice"
+{
+}
++Link 1340 1150 "ControlDevice"
+{
+}
++ObjProp 1150 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}

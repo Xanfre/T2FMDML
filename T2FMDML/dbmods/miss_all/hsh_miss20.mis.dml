@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: Home Sweet Home by Lady Rowena / Fix deposit box 20 key
+
+FINGERPRINT
+{
+	1603 [-23 578 7]
+	476 [-209 196 10]
+	1623 [-23 487 13]
+	2043 [28 274 8]
+	1650 [-65 406 13]
+	1532 [-36 112 26]
+	567 [-91 485 8]
+	1521 [-36 115 21]
+	NAME 1782 "Gim"
+}
+
+#script "nvscript"
+
+-Link 772 2514 "ControlDevice"
+-Link 772 2515 "ControlDevice"
++Link 772 685 "ControlDevice"
+{
+}
++ObjProp 685 "DesignNote"
+{
+	"" NVRelayDelay=1500
+}
++ObjProp 685 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++Link 685 2514 "ControlDevice"
+{
+}
++Link 685 2515 "ControlDevice"
+{
+}

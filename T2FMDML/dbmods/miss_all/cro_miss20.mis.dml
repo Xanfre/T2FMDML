@@ -1,0 +1,30 @@
+DML1
+
+//T2 FM: Crom's Blade by J. Knex (Schwaa) / Fix coin stack
+
+FINGERPRINT
+{
+	412 [22 225 32]
+	2001 [-12 176 -4]
+	666 [-220 171 -12]
+	656 [34 312 27]
+	270 [-103 269 14]
+	988 [57 68 11]
+	1670 [78 97 10]
+	585 [-225 109 -8]
+	QVAR "goal_target_0" == 1024
+}
+
++ObjProp 1872 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 1872 "PhysControl"
++ObjProp 1872 "Position"
+{
+	"Location" 35.4, 308.5, 42.268
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0 
+}

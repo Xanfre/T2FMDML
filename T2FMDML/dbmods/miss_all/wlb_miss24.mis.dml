@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: What Lies Below (Water Contest) by Russ Robbins (Yandros) / Fixes
+
+FINGERPRINT
+{
+	1434 [7 349 -2]
+	976 [28 165 4]
+	1603 [37 168 8]
+	1493 [2 358 3]
+	854 [10 236 -7]
+	1297 [9 321 10]
+	501 [11 232 -8]
+	1334 [2 334 -7]
+	QVAR "goal_target_12" == 834
+}
+
++ObjProp 563 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}

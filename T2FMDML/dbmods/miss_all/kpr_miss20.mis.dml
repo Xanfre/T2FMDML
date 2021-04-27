@@ -1,0 +1,64 @@
+DML1
+
+//T2 FM: Keeper of the Prophecies by Ken Ramsley (frobber) / Fixes
+
+FINGERPRINT
+{
+	1460 [-100 -43 44]
+	1543 [-61 70 47]
+	431 [-261 -100 6]
+	1261 [-250 -82 6]
+	791 [-244 -57 21]
+	1905 [-111 25 48]
+	2258 [-48 -206 20]
+	1844 [-93 20 41]
+	QVAR "goal_target_0" == 128
+}
+
++Receptron 762 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1167 "TimeWarp"
+{
+	"" 0.60
+}
++ObjProp 1167 "AI_AlrtRsp"
+{
+	"Alert level" "(3) High"
+	"Priority" "Very high"
+	"Response: Step 1" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1" "10"
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Response: Step 2" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[1] "1"
+	"   Argument 2"[1] ""
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[2] "Stand 0, Halt 0, NearHazard 0"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[3] "1169"
+	"   Argument 2"[3] "Very Fast"
+	"   Argument 3"[3] ""
+	"Response: Step 5" "Face(Angle,Object(-1 for angle relative to self))"
+	"   Argument 1"[4] "Player"
+	"   Argument 2"[4] ""
+	"   Argument 3"[4] ""
+}
+ObjProp 1167 AI_Efficiency
+{
+	"Flags" "Allow Effic. While Visible","Allow Effic. While Combat"
+}
+-ObjProp 1167 "Position"
++ObjProp 1167 "Position"
+{
+	"Location" -26.21, -255.4, 5.75
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}

@@ -1,0 +1,33 @@
+DML1
+
+//T2 FM: The Radiant Garden by Theker / Fix crate and misplaced gemstone
+
+FINGERPRINT
+{
+	1203 [-29 236 -15]
+	703 [93 220 -14]
+	1279 [98 199 4]
+	878 [-8 188 -8]
+	479 [106 16 -14]
+	866 [0 171 -9]
+	439 [18 156 -33]
+	214 [74 24 -15]
+	QVAR "goal_target_0" == 548
+}
+
+ObjProp 1141 "Position"
+{
+	"Location" 3.7, 51.75, -12.34
+	"Bank" 4000
+}
++ObjProp 1141 "Scale"
+{
+	"" 0.4,0.4,0.4
+}
++ObjProp 569 "PhysCanMant"
+{
+}
+ObjProp 190 "Position"
+{
+	"Location" 94.95, 59.93, -5.93
+}

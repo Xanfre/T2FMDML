@@ -1,0 +1,111 @@
+DML1
+
+//T2 FM: The Hidden Stone by Devin Reynolds (Drysils Chosen) / Fix secret and loot
+
+FINGERPRINT
+{
+	59 [56 -25 20]
+	439 [30 -42 22]
+	583 [104 103 19]
+	223 [87 22 33]
+	575 [-40 -4 9]
+	677 [133 -15 -23]
+	236 [41 71 1]
+	175 [-18 -16 39]
+	QVAR "goal_target_1" == 515
+}
+
++ObjProp 706 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 55 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 541 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 542 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 543 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 544 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 545 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 546 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 547 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 548 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 549 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 550 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 551 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 553 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 555 "Loot" 
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
+-ObjProp 454 "DeathStage"
+-ObjProp 668 "DeathStage"
+-ObjProp 353 "DeathStage"
+-ObjProp 577 "DeathStage"
+-ObjProp 631 "DeathStage"
+-ObjProp 552 "DeathStage"

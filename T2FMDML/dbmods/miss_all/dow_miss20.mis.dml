@@ -1,0 +1,114 @@
+DML1
+
+//T2 FM: The Dead of Winter by Jason Otto (Ottoj55) / Fix crash
+
+FINGERPRINT
+{
+	224 [543 394 514]
+	1241 [495 512 495]
+	1858 [522 568 517]
+	257 [651 543 518]
+	1700 [614 618 506]
+	1765 [589 445 470]
+	187 [504 546 522]
+	207 [525 526 500]
+	NAME 1141 "resetdelay"
+}
+
+-Link 1107 1030 "Contains"
++ObjProp 1030 "RenderType"    
+{
+	"" Not Rendered
+}
++ObjProp 1030 "Position"     
+{
+	"Location" 651.00,434.00,494.00
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 692 "AI_Converation"
++ObjProp 692 "AI_Converation"
+{
+	"Actor" "ActorOne"
+	"Flags" "[None]"
+	"Conversation: Action 0" "Nothing()"
+	"   Argument 1" ""
+	"   Argument 2" ""
+	"   Argument 3" ""
+	"Actor"[1] "ActorOne"
+	"Flags"[1] "[None]"
+	"Conversation: Action 1" "Play sound/motion(Sound Concept,Sound Tags,Motion Tags)"
+	"   Argument 1"[1] "c2002"
+	"   Argument 2"[1] "LineNo 1"
+	"   Argument 3"[1] "Conv 16"
+	"Actor"[2] "ActorOne"
+	"Flags"[2] "[None]"
+	"Conversation: Action 2" "Wait(Time(ms),Motion Tags)"
+	"   Argument 1"[2] "1000"
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Actor"[3] "ActorOne"
+	"Flags"[3] "[None]"
+	"Conversation: Action 3" "Remove link(Flavor,Destination(s),Source(s))"
+	"   Argument 1"[3] "contains"
+	"   Argument 2"[3] "1030"
+	"   Argument 3"[3] "1107"
+	"Actor"[4] "ActorOne"
+	"Flags"[4] "[None]"
+	"Conversation: Action 4" "Add link(Flavor,Destination(s),Source(s))"
+	"   Argument 1"[4] "contains"
+	"   Argument 2"[4] "1030"
+	"   Argument 3"[4] "player"
+	"Actor"[5] "ActorOne"
+	"Flags"[5] "[None]"
+	"Conversation: Action 5" "Frob object(Target Object,With Object)"
+	"   Argument 1"[5] "1413"
+	"   Argument 2"[5] ""
+	"   Argument 3"[5] ""
+}
+-ObjProp 1200 "DeathStage"
+-ObjProp 959 "DeathStage"
+-ObjProp 1084 "DeathStage"
+-ObjProp 729 "DeathStage"
+-ObjProp 1139 "DeathStage"
+-ObjProp 632 "DeathStage"
+-ObjProp 1733 "DeathStage"
+-ObjProp 1745 "DeathStage"
+-ObjProp 1749 "DeathStage"
+-ObjProp 786 "DeathStage"
++ObjProp 562 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 562 "Position"
+{
+	"Location" 584.065,617.645,500.49
+	"Heading" b868
+}
++ObjProp 1165 "Position"
+{
+	"Location" 584.065,617.645,500.49
+	"Heading" b868
+}
++ObjProp 1115 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 1114 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 983 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 997 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

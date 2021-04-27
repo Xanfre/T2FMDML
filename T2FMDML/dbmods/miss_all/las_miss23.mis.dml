@@ -1,0 +1,18 @@
+DML1
+
+//T2 FM: The Lord Ashton Series by Christine Schneider / Fix door
+
+FINGERPRINT
+{
+	986 [234 98 -47]
+	1659 [117 210 -41]
+	1037 [226 146 -47]
+	1472 [184 86 -50]
+	837 [90 67 -38]
+	1135 [53 85 -24]
+	299 [-122 33 -6]
+	341 [-178 71 -6]
+	QVAR "goal_target_5" == 923
+}
+
+-ObjProp 1071 "TransDoor" 

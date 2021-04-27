@@ -1,0 +1,243 @@
+DML1
+
+//T2 FM: Secret Breaking of a Pyramid by Zmey / Fixes
+
+FINGERPRINT
+{
+	1103 [-206 -587 -239]
+	815 [-68 -461 372]
+	620 [-17 374 92]
+	181 [-81 -493 385]
+	857 [-189 -290 -238]
+	717 [-14 -214 -151]
+	142 [-61 -462 372]
+	870 [-186 -250 -235]
+	QVAR "goal_target_1" == 599
+}
+
++StimSource 99 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 99 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -439
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -32.55, -396.8, 199.46
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 100 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 100 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -439
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -32.71, -376.8, 199.46
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 101 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 101 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -2925
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -80.38, -461.1, 390.97
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 818 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 818 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -2925
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" -80.71, -503.14, 390.97
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++ObjProp 129 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 129 "Position"
++ObjProp 129 "Position"
+{
+	"Location" -65.8,-487.4,381.64
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 272 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 272 "Position"
++ObjProp 272 "Position"
+{
+	"Location" -13.8,-496.9,454.1
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 268 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 268 "Position"
++ObjProp 268 "Position"
+{
+	"Location" -14.0,-500.8,453.83
+	"Heading" 0
+	"Pitch" 4000
+	"Bank" 0
+}
++ObjProp 70 "Loot"              
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 99 "Loot"              
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 100 "Loot"              
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 818 "Loot"              
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 101 "Loot"              
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 70 "Loot"              
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}
++ObjProp 538 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 538 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}

@@ -1,0 +1,51 @@
+DML1
+
+//T2 FM: The Suffer Catalyst by Asgaroth / Fixes
+
+FINGERPRINT
+{
+	901 [86 -13 93]
+	396 [405 89 234]
+	43 [34 34 120]
+	181 [63 0 140]
+	669 [128 78 244]
+	641 [393 6 90]
+	937 [197 28 90]
+	842 [254 -4 93]
+	QVAR "goal_target_0" == 693
+}
+
++ObjProp 398 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 398 "Position"
+{
+	"Location" 475.075,59.5066,232.284
+	"Heading" 53f2
+}
++ObjProp 79 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 79 "Position"
+{
+	"Location" 33.0531,32.3706,116.573
+}
++ObjProp 77 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 77 "Position"
+{
+	"Location" 34.8253,32.3237,116.573
+}
++ObjProp 589 "Loot"
+{
+	"Gold" 0
+	"Gems" 0
+	"Art" 0
+}

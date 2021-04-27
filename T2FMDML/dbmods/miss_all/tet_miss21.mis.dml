@@ -1,0 +1,263 @@
+DML1
+
+//T2 FM: In These Enlightened Times (Water Contest) by Andy Joel (The Pixie) / Fix mages and ankhs
+
+FINGERPRINT
+{
+	553 [499 360 508]
+	112 [528 539 516]
+	225 [467 467 488]
+	629 [479 338 507]
+	189 [463 563 509]
+	624 [479 338 507]
+	335 [429 548 510]
+	152 [429 516 470]
+	QVAR "goal_target_0" == 107
+}
+
++ObjProp 30 "AI_NGOBB"
+{
+	"" true
+}
++ObjProp 30 "AI_ObjPathable"
+{
+	"" true
+}
++ObjProp 30 "AI_ObjAvoid"
+{
+	"Flags" Block pathfind,Repel
+}
++ObjProp 467 "Position"
+{
+	"Location" 529.65, 505.00, 503.11
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 416 "HasRefs"
+{
+	"" true
+}
++ObjProp 580 "HasRefs"
+{
+	"" true
+}
++ObjProp 211 "HasRefs"
+{
+	"" true
+}
+//ankh
+-ObjProp 211 "PhysType"
++ObjProp 211 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 416 "PhysType"
++ObjProp 416 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 580 "PhysType"
++ObjProp 580 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 227 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 227 "Position"
++ObjProp 227 "Position"
+{
+	"Location" 473.61,465.90,488.77
+	"Heading" 2830
+	"Pitch" 0
+	"Bank" 4000
+}
++ObjProp 550 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 550 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
++Receptron 551 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -3132
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 512.89, 518.38, 510.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 551 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
++Receptron 421 "PingStim"
+{
+	Min 3
+	Max 7
+	Target -3132
+	Agent 0
+	Effect "create_obj"
+	{
+		"Position" 511.89, 518.40, 510.0
+		"Heading" 0
+		"Pitch" 0
+		"Bank" 0
+	}
+}
++StimSource 421 "PingStim"
+{
+	Intensity 5
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Flags" "[None]"
+			"Period" 5000
+			"Max Firings" 1
+			"Intensity Slope" 0.00
+		}
+		Shape
+		{
+			"Radius" 10.00
+			"Flags" "[None]"
+			"Dispersion" "Linear"
+		}
+	}
+}
+//loot goals
++ObjProp 33 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 29 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 33 "TrapQVar"
+{
+	"" =0:goal_visible_2
+}
++ObjProp 29 "TrapQVar"
+{
+	"" =0:goal_visible_3
+}
++ObjProp 5 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 5 29 "ControlDevice"
+{
+}
++Link 5 33 "ControlDevice"
+{
+}
+//bat
++ObjProp 60 "AI_ObjPathable"
+{
+	"" true
+}
++ObjProp 60 "AI_ObjAvoid"
+{
+	"Flags" Block pathfind,Repel
+}
++ObjProp 60 "AI_NGOBB"    
+{
+	"" true
+}
+//bat
++Link 113 113 "AIWatchObj"
+{
+	"Watch kind" "Self entry"
+	"Priority" "Absolute"
+	"Trigger: Radius" 5
+	"         Height" 5
+	"         Required awareness" "(0) None"
+	"         Line requirement" "None"
+	"         Minimum alertness" "(0) None"
+	"         Maximum alertness" "(3) High"
+	"Exit: Link kill option" "Don't kill"
+	"      Kill like links" false
+	"      No test once triggered" true
+	"      Reuse delay" 10
+	"      Reset delay" 10
+	"Response: Step 1" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1" "27"
+	"   Argument 2" "very fast"
+	"   Argument 3" ""
+	"Response: Step 2" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[1] "61"
+	"   Argument 2"[1] "very fast"
+	"   Argument 3"[1] ""
+	"Response: Step 3" "Goto object(Object,Speed,Motion Tags)"
+	"   Argument 1"[2] "257"
+	"   Argument 2"[2] "very fast"
+	"   Argument 3"[2] ""
+	"Response: Step 4" "Nothing()"
+	"   Argument 1"[3] ""
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+}
++ObjProp 60 "CfgTweqDelete"
+{
+	"Halt" "Destroy Obj"
+	"AnimC" "Sim"
+	"MiscC" "[None]"
+	"CurveC" "[None]"
+	"Rate" 0
+}
++ObjProp 50 "StTweqDelete"
+{
+	"AnimS" "On"
+	"MiscS" "[None]"
+	"Cur Time" 0
+	"Frame #" 0
+}
+ObjProp 113 "AI_MoveZOffset"    
+{
+	"" 24
+}
+-ObjProp 113 "Position"
++ObjProp 113 "Position"
+{
+	"Location" 528.78,488.29,521.9
+	"Heading" 0
+	"Pitch" 0
+	"Bank" 0
+}

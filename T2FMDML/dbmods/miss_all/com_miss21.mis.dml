@@ -1,0 +1,53 @@
+DML1
+
+//T2 FM: Complications (Small Stock Resource Contest) by Devin Reynolds (Drysils Chosen)/ Fixes
+
+FINGERPRINT
+{
+	409 [-4 59 41]
+	619 [-62 14 40]
+	391 [6 57 40]
+	678 [-21 -10 40]
+	151 [47 38 42]
+	653 [16 78 39]
+	706 [-25 56 40]
+	693 [-40 48 39]
+	QVAR "goal_target_3" == 743
+}
+
++ObjProp 33 "PhysCanMant"       
+{
+	"" false
+}
++ObjProp 37 "PhysCanMant"       
+{
+	"" false
+}
++ObjProp 38 "PhysCanMant"       
+{
+	"" false
+}
++ObjProp 39 "PhysCanMant"       
+{
+	"" false
+}
++ObjProp 187 "PhysCanMant"       
+{
+	"" false
+}
++ObjProp 435 "BlockFrob"       
+{
+	"" true
+}
++ObjProp 287 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 182 287 "ControlDevice"
+{
+}
++Link 287 180 "ControlDevice"
+{
+}
+-Link 563 16 "ControlDevice"
+-Link 499 16 "ControlDevice"

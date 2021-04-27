@@ -1,0 +1,134 @@
+DML1
+
+//T2 FM: Precarious Business by Nicholas Canfield (ObservingEye) / Fixes
+
+FINGERPRINT
+{
+	1180 [467 540 -69]
+	1504 [514 645 12]
+	1272 [520 606 -1]
+	219 [452 660 9]
+	458 [447 787 4]
+	385 [456 627 -13]
+	625 [458 800 16]
+	1764 [493 589 18]
+	QVAR "goal_target_0" == 1999
+}
+
+#script "squirrel"
+
+//loot
++ObjProp 1017 "Loot"
+{
+}
++ObjProp 1018 "Loot"
+{
+}
+//barrels
++ObjProp 1366 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.5,0.0
+}
++ObjProp 1366 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1367 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.2,0.0
+}
++ObjProp 1367 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1370 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.1,0.0
+}
++ObjProp 1370 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+
++ObjProp 1639 "DesignNote"
+{
+	"" RepositionLoc=-0.2,0.0,0.0
+}
++ObjProp 1639 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+//pedestal
++ObjProp 14 "BlockFrob"
+{
+	"" true
+}
+//glasses
++Receptron 20 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 20 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+
++Receptron 1893 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1893 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+
++Receptron 1894 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1894 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+
++Receptron 1895 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1895 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1898 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1898 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//doors
++Link 1717 1718  "ScriptParams"
+{
+	"" Double
+}

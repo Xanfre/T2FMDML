@@ -1,0 +1,20 @@
+DML1
+
+//T2 FM: Pereira's Mansion by Pedro Quintela (Cardia) / Remove death stage property on arrows
+
+FINGERPRINT
+{
+	219 [112 -169 -3]
+	191 [-35 71 8]
+	490 [145 15 -77]
+	40 [-154 -89 -3]
+	470 [83 -37 14]
+	156 [42 -8 9]
+	512 [-118 79 4]
+	111 [10 -114 29]
+	QVAR "goal_target_0" == 371
+}
+
+-ObjProp 213 "DeathStage"
+-ObjProp 212 "DeathStage"
+-ObjProp 732 "DeathStage"

@@ -1,0 +1,49 @@
+DML1
+
+//T2 FM: The Guardmen of Haddur by Turi Robert / Fixes
+
+FINGERPRINT
+{
+	234 [44 -110 -85]
+	554 [69 191 -140]
+	737 [46 -118 -44]
+	278 [135 -20 -65]
+	690 [111 -14 -67]
+	426 [52 219 -142]
+	215 [165 -186 -97]
+	616 [-94 -28 -19]
+	QVAR "goal_target_0" == 256
+}
+
+ObjProp 428 "TransDoor"   
+{
+	"Closed Position" 0.0
+	"Open Position" -4.0
+	"Base Speed" 2
+	"Axis" Y-Axis
+	"Status" Closed
+	"Hard Limits?" true
+	"Blocks Vision?" false
+	"Blocks Sound %" 18
+	"Lean Blocks Sound %" 16
+	"Push Mass" 25
+}
+-ObjProp 428 "PhysType"
++ObjProp 428 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 428 "Position"
++ObjProp 428 "Position"
+{
+	"Location" 62.0,231.50,-141.05
+	"Heading" 8000
+	"Pitch" 0
+	"Bank" 0
+}
++ObjProp 428 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

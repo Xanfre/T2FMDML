@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: The Rise of the Mechanists by Pedro Quintela (Cardia) / Fix final goal
+
+FINGERPRINT
+{
+	66 [87 101 60]
+	200 [56 171 -55]
+	981 [40 342 -7]
+	718 [138 255 -19]
+	1487 [222 214 -11]
+	488 [227 233 -62]
+	1133 [435 167 -13]
+	1345 [543 227 -11]
+	QVAR "goal_target_10" == 1975
+}
+
+#script "tnhscript"
+
+Create -464 "QVarFixSwitch"
+{
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigProximity
+	}
+	+ObjProp "designnote"
+	{
+		"" Proximity=2000
+	}
+}
++ObjProp 273 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 273 "TrapQVar"
+{
+	"" =0:goal_irreversible_10
+}
++Link "QVarFixSwitch" 273 "ControlDevice"
+{
+}
+-ObjProp 1975 "Scripts"

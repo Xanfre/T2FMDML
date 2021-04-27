@@ -1,0 +1,116 @@
+DML1
+
+//T2 FM: A Shopping Stopover by TheNightTerror / Fix food in freezer
+
+FINGERPRINT
+{
+	385 [82 -51 129]
+	249 [112 -63 141]
+	494 [51 48 151]
+	481 [123 -127 132]
+	407 [124 -91 127]
+	299 [51 52 141]
+	484 [86 -72 127]
+	148 [59 -3 140]
+	QVAR "goal_target_3" == 462
+}
+
+-ObjProp 125 "Position"
++ObjProp 125 "Position"
+{
+	"Location" 57.6131,-18.2557,141.156
+	"Heading" 1fb
+}
++ObjProp 125 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 126 "Position"
++ObjProp 126 "Position"
+{
+	"Location" 55.6163,-17.6133,141.156
+	"Heading" f86c
+}
++ObjProp 126 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 127 "Position"
++ObjProp 127 "Position"
+{
+	"Location" 57.374,-21.6653,141.156
+	"Heading" 5a4
+}
++ObjProp 127 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 128 "Position"
++ObjProp 128 "Position"
+{
+	"Location" 55.4711,-21.7565,141.156
+	"Heading" ffaa
+}
++ObjProp 128 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 107 "Position"
++ObjProp 107 "Position"
+{
+	"Location" 67.284,-18.8413,141.018
+	"Heading" cbd
+}
++ObjProp 107 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 108 "Position"
++ObjProp 108 "Position"
+{
+	"Location" 67.3536,-17.0472,141.018
+	"Heading" ea66
+}
++ObjProp 108 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 109 "Position"
++ObjProp 109 "Position"
+{
+	"Location" 66.1344,-16.9332,141.018
+	"Heading" 475
+}
++ObjProp 109 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 110 "Position"
++ObjProp 110 "Position"
+{
+	"Location" 65.974,-18.7349,141.018
+	"Heading" ff38
+}
++ObjProp 110 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
+-ObjProp 111 "Position"
++ObjProp 111 "Position"
+{
+	"Location" 65.018,-17.7352,141.018
+	"Heading" ff38
+}
++ObjProp 111 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}

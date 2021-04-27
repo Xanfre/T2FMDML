@@ -1,0 +1,63 @@
+DML1
+
+//T2 FM: Evendale by Rob Strain (Random_Taffer) / Fixes
+
+FINGERPRINT
+{
+	230 [471 329 494]
+	417 [513 415 514]
+	443 [506 346 455]
+	132 [549 419 493]
+	389 [471 335 475]
+	450 [503 374 505]
+	317 [534 346 517]
+	564 [502 362 493]
+	QVAR "goal_target_1" == 421
+}
+
++ObjProp 162 "FrobInfo"
+{
+	"World Action" Ignore
+}
++ObjProp 165 "FrobInfo"
+{
+	"World Action" Ignore
+}
++ObjProp 188 "FrobInfo"
+{
+	"World Action" Ignore
+}
++ObjProp 224 "FrobInfo"
+{
+	"World Action" Ignore
+}
++ObjProp 511 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++ObjProp 511 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 531 511 "ControlDevice"
+{
+}
++ObjProp 531 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 369 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++ObjProp 369 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 421 "Scripts"
+{
+	"Script 0" TrigSlain
+}
++Link 421 369 "ControlDevice"
+{
+}

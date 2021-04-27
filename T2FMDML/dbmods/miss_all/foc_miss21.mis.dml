@@ -1,0 +1,234 @@
+DML1
+
+//T2 FM: The Focus (Contest 5) by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes
+
+FINGERPRINT
+{
+	233 [-12 179 45]
+	557 [17 127 45]
+	969 [-21 129 71]
+	976 [31 169 46]
+	152 [19 83 30]
+	1064 [13 15 -17]
+	1072 [-16 27 28]
+	76 [6 16 -11]
+	QVAR "goal_target_5" == 622
+}
+
+#script "nvscript"
+
+//goals
++ObjProp 636 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1
+}
+ObjProp 636 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 638 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1
+}
+ObjProp 638 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+ObjProp 853 "AI_Converation"
+{
+	"  Argument 1" 500
+}
++ObjProp 1067 "TrapFlags"
+{
+	"" Once, NoOff
+}
+//keys
++ObjProp 20 "SlayResult"
+{
+}
++ObjProp 20 "NoDrop"
+{
+	"" true
+}
++ObjProp 201 "SlayResult"
+{
+}
++ObjProp 888 "SlayResult"
+{
+}
++ObjProp 888 "NoDrop"
+{
+	"" true
+}
++ObjProp 889 "SlayResult"
+{
+}
++ObjProp 889 "NoDrop"
+{
+	"" true
+}
+ObjProp 889 "PickDist"
+{
+	"" 5.00
+}
+//switches
++Link 54 158 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 259 536 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 293 393 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 294 537 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 300 415 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 355 360 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 614 735 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 907 140 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 319 "PickDist"
+{
+	"" 5.00
+}
+//doors
+-ObjProp 525 "JointPos"
+-ObjProp 564 "JointPos"
+-ObjProp 565 "JointPos"
++ObjProp 554 "FrobInfo"
+{
+}
++MetaProp 611 -2420
++MetaProp 857 -2420
++ObjProp 781 "BlockFrob"
+{
+	"" true
+}
+ObjProp 994 "RotDoor"
+{
+	"Open Angle" 89
+}
+//jenny's ring
+++Receptron 167 "DropStim"
+{
+	Min 0
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 167 "DropStim"
+{
+	Min 0
+	Max None
+	Target Me
+	Agent -141
+	Effect "add_prop"
+	{
+		"Prop Name" ExtraLight
+	}
+}
+//skulls
+++Receptron 528 "CraneGobelStim"
+{
+	Min 0
+	Max None
+	Target 545
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 528 "NoDrop"
+{
+	"" true
+}
+++Receptron 529 "CraneReinertStim"
+{
+	Min 0
+	Max None
+	Target 526
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 529 "NoDrop"
+{
+	"" true
+}
+++Receptron 540 "CraneMasvStim"
+{
+	Min 0
+	Max None
+	Target 527
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 540 "NoDrop"
+{
+	"" true
+}
+//AIs
++ObjProp 181 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 731 "AI_Efficiency"
+{
+	"Enabled" false
+}
+//mantling
++ObjProp 184 "PhysCanMant"
+{
+}
++ObjProp 715 "PhysCanMant"
+{
+}
+//painting
+-ObjProp 206 "PhysType"
+ObjProp 206 "Position"
+{
+	"Location" 9, 115.8, 31
+}
++ObjProp 206 "PhysType"
+{
+	"Type" OBB
+}
+//elevator button
++Link 733 949 "ControlDevice"
+{
+}
+//keeper medallion
+Receptron 741 "KeeperStim"
+{
+	Target 664
+}
++ObjProp 741 "StackCount"
+{
+}

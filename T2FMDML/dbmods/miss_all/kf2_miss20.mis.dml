@@ -1,0 +1,28 @@
+DML1
+
+//T2 FM: Kill Factory II: Escape from the Planet of the Robots by Sliptip / Fix secret and switch
+
+FINGERPRINT
+{
+	142 [-42 -17 -9]
+	679 [51 -10 20]
+	628 [54 -23 2]
+	471 [-3 -74 40]
+	178 [-73 -33 48]
+	494 [-3 72 45]
+	492 [-4 56 45]
+	256 [-112 25 3]
+	NAME 781 "Start01Relay"
+}
+
+-ObjProp 823 "DarkStat"
+-ObjProp 53 "PhysType"
++ObjProp 53 "Position"
+{
+	"Location" 74.8314,1.67255,-6
+}
++ObjProp 53 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

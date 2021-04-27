@@ -1,0 +1,261 @@
+DML1
+
+//T2 FM: A Keeper's Betrayal by The Immortal Thief / Fix for goal 10 and light-based transparency
+
+FINGERPRINT
+{
+	1054 [586 595 482]
+	1350 [646 591 505]
+	698 [657 528 498]
+	1272 [563 684 496]
+	1575 [377 494 479]
+	892 [619 680 481]
+	1110 [619 697 482]
+	842 [625 688 481]
+	QVAR "goal_target_11" == 1499
+}
+
+#script "squirrel"
+
++ObjProp 1689 "Scripts"
+{
+	"Script 1" TrigQVar
+}
++ObjProp 1689 "TrapQVar"
+{
+	"" =1:goal_state_10
+}
++ObjProp 527 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 527 "TrapQVar"
+{
+	"" =1:goal_irreversible_6
+}
++ObjProp 1688 "Scripts"
+{
+	"Script 1" TrigRoomDeposit
+}
++ObjProp 1623 "Scripts"
+{
+	"Script 1" TrigRoomPlayer
+}
++Link 1623 1687 "ControlDevice"
+{
+}
++Link 1623 527 "ControlDevice"
+{
+}
++Link 1623 1475 "ControlDevice"
+{
+}
++ObjProp 1475 "Scripts"
+{
+	"Script 1" TrapSetQVar
+}
++ObjProp 1475 "TrapQVar"
+{
+	"" =0:goal_state_10
+}
++Link 1496 1475 "ControlDevice"
+{
+}
+-ObjProp 81 "RenderAlpha" 
+-ObjProp 163 "RenderAlpha" 
+-ObjProp 337 "RenderAlpha" 
+-ObjProp 338 "RenderAlpha" 
+-ObjProp 581 "RenderAlpha" 
+-ObjProp 713 "RenderAlpha" 
+-ObjProp 1355 "RenderAlpha" 
+-ObjProp 1357 "RenderAlpha"
+// more fixes to transparency
++ObjProp 81 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 163 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 713 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 1357 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 337 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 581 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 338 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 1355 "LBAlpha"  
+{
+	"Active" true
+	"Min alpha" 0.1
+	"Max alpha" 1.00
+	"Light level (0-100) for min" 10
+	"Light level (0-100) for max" 50
+}
++ObjProp 499 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 499 "Position"
+{
+	"Location" 350.764,425.183,492.119
+	"Heading" 1555
+}
++ObjProp 518 "PhysType"
+{
+	"Type" None
+	"# Submodels" 0
+}
++ObjProp 518 "Position"
+{
+	"Location" 231.101,462.951,524.171
+	"Heading" 2000
+	"Pitch" 4000
+}
+ObjProp 625 "PGLaunchInfo"
+{
+	"Max time" 1.50
+	"Max time" 2.00
+}
+ObjProp 627 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 642 "PGLaunchInfo"
+{
+	"Max time" 1.50
+	"Max time" 2.00
+}
+ObjProp 644 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 375 "PGLaunchInfo"
+{
+	"Max time" 1.50
+	"Max time" 2.00
+}
+ObjProp 371 "PGLaunchInfo"
+{
+	"Max time" 1.50
+	"Max time" 1.70
+}
+ObjProp 373 "PGLaunchInfo"
+{
+	"Max time" 1.30
+}
++ObjProp 1337 "DesignNote"
+{
+	"" RepositionLoc=1.0,1.0,1.0
+}
++ObjProp 1337 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1336 "DesignNote"
+{
+	"" RepositionLoc=0.7,0.0,1.0
+}
++ObjProp 1336 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 1339 "DesignNote"
+{
+	"" RepositionLoc=1.0,0.0,0.0
+}
++ObjProp 1339 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 391 "DesignNote"
+{
+	"" RepositionLoc=-1.0,-1.0,0.2
+}
++ObjProp 391 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 224 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.5,0.0
+}
++ObjProp 224 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 485 "DesignNote"
+{
+	"" RepositionLoc=375.59,446.874,494.987
+}
++ObjProp 485 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 482 "DesignNote"
+{
+	"" RepositionLoc=371.662,451.11,494.006
+}
++ObjProp 482 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 483 "DesignNote"
+{
+	"" RepositionLoc=374.517,451.11,494.006
+}
++ObjProp 483 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 484 "DesignNote"
+{
+	"" RepositionLoc=373.081,451.11,497.917
+}
++ObjProp 484 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}

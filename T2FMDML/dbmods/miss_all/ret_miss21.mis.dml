@@ -1,0 +1,52 @@
+DML1
+
+//T2 FM: Retaliation by Jeremy Catlin (HipBreaker) / Fixes
+
+FINGERPRINT
+{
+	1425 [-95 -111 7]
+	847 [-375 311 -19]
+	1438 [-406 226 -15]
+	483 [-176 142 -46]
+	820 [-304 282 -5]
+	874 [-334 311 -10]
+	349 [-282 224 -7]
+	1611 [-136 292 -6]
+	QVAR "goal_target_0" == 1456
+}
+
+//banners
++ObjProp 1760 "BlockFrob"
+{
+	"" true
+}
++ObjProp 455 "BlockFrob"
+{
+	"" true
+}
+//goals
++ObjProp 1739 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1739 "TrapQVar"
+{
+	"" =1:goal_state_9
+}
++Link 2008 1739 "ControlDevice"
+{
+}
++ObjProp 514 "DiffDestroy"  
+{
+	"quest var values" 0,1
+}
++ObjProp 1739 "DiffDestroy"  
+{
+	"quest var values" 0,1
+}
++ObjProp 510 "DiffDestroy"  
+{
+	"quest var values" 0,1
+}
+//door
+-ObjProp 209 "TransDoor"
