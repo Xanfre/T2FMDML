@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_1" == 421
 }
 
-//goal 0
+//goals
 +ObjProp 137 "Scripts"
 {
 	"Script 0" TrigContained
@@ -30,6 +30,14 @@ FINGERPRINT
 +ObjProp 140 "TrapQVar"
 {
 	"" =1:goal_irreversible_0
+}
++ObjProp 265 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 265 "TrapQVar"
+{
+	"" =1:goal_state_1
 }
 //mantling
 +ObjProp 23 "PhysCanMant"
@@ -70,6 +78,10 @@ ObjProp 78 "Position"
 	"Type" OBB
 }
 //doors
+ObjProp 117 "RotDoor"
+{
+	"Open Angle" 89
+}
 -ObjProp 135 "JointPos"
 -ObjProp 185 "JointPos"
 -ObjProp 186 "JointPos"
@@ -78,6 +90,10 @@ ObjProp 78 "Position"
 +ObjProp 259 "BlockFrob"
 {
 	"" true
+}
+ObjProp 302 "RotDoor"
+{
+	"Open Angle" 89
 }
 +ObjProp 353 "BlockFrob"
 {
@@ -189,6 +205,13 @@ ObjProp 268 "GameName"
 +ObjProp 421 "GameName"
 {
 	"" Name_Wassergibt: "Mr. Wassergibt"
+}
++Link 421 265 "ControlDevice"
+{
+}
++ObjProp 421 "Scripts"
+{
+	"Script 0" TrigSlain
 }
 //dagger
 +ObjProp 422 "GameName"
