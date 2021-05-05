@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Evendale by Rob Strain (Random_Taffer) / Fixes
+//T2 FM: Evendale (Novice Contest) by Rob Strain (Random_Taffer) / Fixes
 
 FINGERPRINT
 {
@@ -15,49 +15,194 @@ FINGERPRINT
 	QVAR "goal_target_1" == 421
 }
 
-+ObjProp 162 "FrobInfo"
-{
-	"World Action" Ignore
-}
-+ObjProp 165 "FrobInfo"
-{
-	"World Action" Ignore
-}
-+ObjProp 188 "FrobInfo"
-{
-	"World Action" Ignore
-}
-+ObjProp 224 "FrobInfo"
-{
-	"World Action" Ignore
-}
-+ObjProp 511 "TrapQVar"
-{
-	"" =1:goal_state_4
-}
-+ObjProp 511 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+Link 531 511 "ControlDevice"
-{
-}
-+ObjProp 531 "Scripts"
+//goal 0
++ObjProp 137 "Scripts"
 {
 	"Script 0" TrigContained
 }
-+ObjProp 369 "TrapQVar"
++Link 137 140 "ControlDevice"
 {
-	"" =1:goal_state_1
 }
-+ObjProp 369 "Scripts"
++ObjProp 140 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 421 "Scripts"
++ObjProp 140 "TrapQVar"
 {
-	"Script 0" TrigSlain
+	"" =1:goal_irreversible_0
 }
-+Link 421 369 "ControlDevice"
+//mantling
++ObjProp 23 "PhysCanMant"
 {
+}
++ObjProp 25 "PhysCanMant"
+{
+}
++ObjProp 26 "PhysCanMant"
+{
+}
++ObjProp 28 "PhysCanMant"
+{
+}
++ObjProp 29 "PhysCanMant"
+{
+}
++ObjProp 47 "PhysCanMant"
+{
+}
++ObjProp 175 "PhysCanMant"
+{
+}
++ObjProp 572 "PhysCanMant"
+{
+}
++ObjProp 573 "PhysCanMant"
+{
+}
+//safe
+-ObjProp 78 "PhysType"
+ObjProp 78 "Position"
+{
+	"Location" 502.85, 373.812, 512.215
+}
++ObjProp 78 "PhysType"
+{
+	"Type" OBB
+}
+//doors
+-ObjProp 135 "JointPos"
+-ObjProp 185 "JointPos"
+-ObjProp 186 "JointPos"
+-ObjProp 187 "JointPos"
+-ObjProp 254 "JointPos"
++ObjProp 259 "BlockFrob"
+{
+	"" true
+}
++ObjProp 353 "BlockFrob"
+{
+	"" true
+}
+//torches
++ObjProp 162 "FrobInfo"
+{
+}
++ObjProp 165 "FrobInfo"
+{
+}
++ObjProp 188 "FrobInfo"
+{
+}
++ObjProp 224 "FrobInfo"
+{
+}
+//poster scroll
+ObjProp 172 "Position"
+{
+	"Location" 500.69, 382.024, 495.316
+	"Bank" 4000
+}
+//switch
+-ObjProp 260 "PhysType"
+ObjProp 260 "Position"
+{
+	"Location" 501.54, 372, 492.65
+}
++ObjProp 260 "PhysType"
+{
+	"Type" OBB
+}
+//alexander's last notes
+-ObjProp 268 "FrobInfo"
++ObjProp 268 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 268 "NoDrop"
+{
+	"" true
+}
+ObjProp 268 "GameName"
+{
+	"" Name_Book1: "Alexander's Last Notes"
+}
++Link 268 442 "ControlDevice"
+{
+}
++ObjProp 268 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 442 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+//darts
+-ObjProp 338 "PhysType"
++ObjProp 338 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 424 "PhysType"
++ObjProp 424 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 425 "PhysType"
++ObjProp 425 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 426 "PhysType"
++ObjProp 426 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 427 "PhysType"
++ObjProp 427 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 428 "PhysType"
++ObjProp 428 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 433 "PhysType"
++ObjProp 433 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+-ObjProp 434 "PhysType"
++ObjProp 434 "GameName"
+{
+	"" Name_ThrowingDart: "Throwing Dart"
+}
+//keys
++ObjProp 360 "SlayResult"
+{
+}
++ObjProp 566 "SlayResult"
+{
+}
+//wassergibt
++ObjProp 421 "GameName"
+{
+	"" Name_Wassergibt: "Mr. Wassergibt"
+}
+//dagger
++ObjProp 422 "GameName"
+{
+	"" Name_Dagger: "Dagger"
+}
++ObjProp 422 "Material Tags"
+{
+	"1: Tags" ""
+}
+//trickster
++Receptron 554 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
 }

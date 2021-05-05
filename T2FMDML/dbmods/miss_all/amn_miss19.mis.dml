@@ -36,8 +36,6 @@ ObjProp 555 "TrapQVar"
 {
 	"" =2:goal_state_2
 }
-//pickpocketing
--Link 517 636 "ControlDevice"
 //doors
 ObjProp 46 "TransDoor"
 {
@@ -46,3 +44,44 @@ ObjProp 46 "TransDoor"
 +ObjProp 48 "FrobInfo"
 {
 }
+//lockboxes
++Receptron 255 "EarthStim"
+{
+	Min 9
+	Max None
+	Target 297
+	Agent Me
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
+-Link 297 255 "FrobProxy"
++Receptron 297 "EarthStim"
+{
+	Min 9
+	Max None
+	Target 255
+	Agent Me
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
++ObjProp 297 "Locked"
+{
+	"" true
+}
++StimSource 302 "EarthStim"
+{
+	Intensity 10
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+//pickpocketing
+-Link 517 636 "ControlDevice"
