@@ -1,0 +1,89 @@
+DML1
+
+//T2 FM: Carkess Escape by Carsten Kessler (Carkess) / Fixes
+
+FINGERPRINT
+{
+	449 [403 498 494]
+	274 [377 402 500]
+	703 [467 361 494]
+	377 [439 547 495]
+	372 [435 544 495]
+	707 [471 361 492]
+	408 [360 537 493]
+	569 [422 401 510]
+	QVAR "goal_target_2" == 481
+}
+
+//servant
+ObjProp 500 "Position"
+{
+	"Location" 428.335, 391.537, 505.914
+	"Heading" 4000
+}
+//deer legs
+-ObjProp 446 "PhysType"
+ObjProp 446 "Position"
+{
+	"Location" 432.636, 389.958, 495.612
+}
+-ObjProp 447 "PhysType"
+ObjProp 447 "Position"
+{
+	"Location" 427.112, 389.607, 495.612
+}
+-ObjProp 452 "PhysType"
+ObjProp 452 "Position"
+{
+	"Location" 425.477, 389.617, 495.612
+}
+-ObjProp 453 "PhysType"
+ObjProp 453 "Position"
+{
+	"Location" 426.981, 404.5, 495.612
+}
+-ObjProp 454 "PhysType"
+ObjProp 454 "Position"
+{
+	"Location" 427.021, 408.198, 495.612
+}
+-ObjProp 455 "PhysType"
+ObjProp 455 "Position"
+{
+	"Location" 427.022, 415.274, 495.612
+}
+-ObjProp 457 "PhysType"
+ObjProp 457 "Position"
+{
+	"Location" 427.001, 418.706, 495.612
+}
+//mask
+ObjProp 850 "Position"
+{
+	"Location" 459.311, 401.864, 499.91
+	"Heading" 8000
+}
+//plates
+-ObjProp 590 "PhysType"
+ObjProp 590 "Position"
+{
+	"Location" 473.363, 398.582, 514.154
+}
+-ObjProp 640 "PhysType"
+ObjProp 640 "Position"
+{
+	"Location" 485.814, 408.717, 496.086
+	"Heading" 4000
+	"Bank" 4000
+}
+//medallion
+ObjProp 481 "Position"
+{
+	"Location" 486.929, 408.797, 515.362
+	"Heading" 4000
+}
+//banner
++ObjProp 671 "BlockFrob"
+{
+	"" true
+}

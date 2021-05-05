@@ -1,0 +1,48 @@
+DML1
+
+//T2 FM: Greenbay by DrK / Fixes
+
+FINGERPRINT
+{
+	196 [11 -60 -17]
+	1193 [-80 -31 -29]
+	448 [-48 -184 -12]
+	235 [116 -167 -27]
+	369 [100 -26 -38]
+	535 [52 -149 -23]
+	249 [11 -85 -15]
+	653 [-15 -103 -11]
+	QVAR "goal_target_2" == 1203
+}
+
+//remove DeathStage 12 from arrows
+-ObjProp 38 "DeathStage"
+-ObjProp 115 "DeathStage"
+-ObjProp 666 "DeathStage"
+-ObjProp 798 "DeathStage"
+-ObjProp 1152 "DeathStage"
+//fix flames escaping fireplace
+ObjProp 78 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 80 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.90
+}
+//raise sunken pagan
+ObjProp 1160 "Position"
+{
+	"Location" 28.5913, -112.533, -19.6202
+}
+//prevent dropping the diaries
++ObjProp 819 "NoDrop"
+{
+	"" true
+}
++ObjProp 1192 "NoDrop"
+{
+	"" true
+}

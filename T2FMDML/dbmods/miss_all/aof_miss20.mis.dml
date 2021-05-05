@@ -1,0 +1,173 @@
+DML1
+
+//T2 FM: An Old Friend (Thief Anniversary Contest) by Lost Soul / Fixes
+
+FINGERPRINT
+{
+	420 [484 493 494]
+	234 [489 488 463]
+	380 [483 485 472]
+	415 [496 478 482]
+	119 [529 500 447]
+	559 [482 525 483]
+	464 [506 512 478]
+	506 [505 518 498]
+	QVAR "goal_target_1" == 442
+}
+
+#script "nvscript"
+
+//final goal
+Create -2086 "GoalFix"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=211
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 524, 475, 501
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVLinkBuilder
+	}
+}
++ObjProp 204 "DesignNote"
+{
+	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+}
++ObjProp 204 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 204 "TrapQVar"
+{
+	"" =484:goal_target_2
+}
++ObjProp 205 "DesignNote"
+{
+	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+}
++ObjProp 205 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 205 "TrapQVar"
+{
+	"" =0:goal_satisfied_2
+}
++Link 211 "GoalFix" "ControlDevice"
+{
+}
++ObjProp 211 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 211 "Scripts"
+{
+	"Script 0" TrapNonFinalComplete
+	"Script 1" TrapSetQVar
+}
++ObjProp 211 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
+//doors
++Receptron 4 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 69 -2420
++MetaProp 96 -2420
++ObjProp 96 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 124 "JointPos"
+-ObjProp 125 "JointPos"
++Receptron 277 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 329 -2420
++Link 529 530 "ScriptParams"
+{
+	"" Double
+}
+//levers
+-Link 78 79 "ControlDevice"
+-Link 79 78 "ControlDevice"
++Link 79 78 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+//AIs
++ObjProp 162 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 384 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 440 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 440 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
+//chest
+-ObjProp 201 "PhysType"
+ObjProp 201 "Position"
+{
+	"Location" 506.78, 506.033, 455.53
+}
++ObjProp 201 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 201 "Scale"
+{
+	"" 0.9, 0.9, 0.9
+}
+//unused book
++ObjProp 218 "FrobInfo"
+{
+}
+//bafford's sceptre
++ObjProp 442 "NoDrop"
+{
+	"" true
+}
+//coin
+ObjProp 493 "Position"
+{
+	"Location" 523.73, 518.875, 498.574
+}
+//painting
+ObjProp 554 "CollisionType"
+{
+	"" None
+}
+-ObjProp 554 "PhysType"
+ObjProp 554 "Position"
+{
+	"Location" 483.95, 496.832, 495.316
+}
++ObjProp 554 "PhysType"
+{
+	"Type" OBB
+}

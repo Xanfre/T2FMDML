@@ -1,0 +1,68 @@
+DML1
+
+//T2 FM: Uninvited Guest by Paul D Rotter (eepcat) / Fixes
+
+FINGERPRINT
+{
+	458 [-11 41 17]
+	116 [-115 77 4]
+	411 [40 -147 -3]
+	1872 [-68 129 54]
+	1084 [-32 33 4]
+	874 [-72 -86 -3]
+	1830 [-65 110 71]
+	1383 [-93 146 3]
+	QVAR "goal_target_0" == 2027
+}
+
+#script "squirrel"
+
+//fix flames escaping fireplaces
+ObjProp 451 "PGLaunchInfo"
+{
+	"Min time" 1.40
+	"Max time" 1.90
+}
+ObjProp 1025 "PGLaunchInfo"
+{
+	"Min time" 0.50
+	"Max time" 1.20
+}
+ObjProp 1032 "PGLaunchInfo"
+{
+	"Min time" 1.80
+	"Max time" 2.30
+}
+ObjProp 1034 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.50
+}
+//prevent reaching through the oven doors
++ObjProp 1053 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1054 "BlockFrob"
+{
+	"" true
+}
+//reposition objects
+-ObjProp 1504 "PhysType"
+ObjProp 1504 "Position"
+{
+	"Location" -148.894, 90.2716, 3.6868
+}
++ObjProp 1172 "DesignNote"
+{
+	"" RepositionLoc=-159.352,149.261,3.23511
+}
++ObjProp 1172 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" false
+}
+-ObjProp 213 "PhysType"
