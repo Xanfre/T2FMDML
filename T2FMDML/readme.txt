@@ -35,12 +35,14 @@ Breakout from Apocalypse Prison
 The Builder's Hammer
 Burglary in Blackbrook
 Calendra's Legacy
+Carkess Escape
 Carneval
 Cathedral of the Damned
 The Cell Next Door
 Children of the Future
 Chon Migoroshi
 Choose Your Own Adventure
+Christmas Present
 Chronicle of the Metal Age
 Citadel of Douro
 Claire's Harbour
@@ -103,6 +105,7 @@ The Ghost House and The Haunted Hospital
 Ghost Town
 The Gold Skull of Lord Frobb
 The Good Samaritan
+Greenbay
 The Greyfeather Gems - Part 2: Rodamill
 A Guard Called Benny
 Guardsmen of Haddur
@@ -177,6 +180,7 @@ Night Watch
 Nostalgia
 Obligatory Prison Mission
 Old Comrades, Old Debts
+An Old Friend
 Orthodox Wedding
 Partytime (Demo Rework)
 Payback
@@ -258,6 +262,7 @@ Ultima Ratio
 Undead Reckoning
 Under Templehill
 Underneath
+Uninvited Guest
 United Bank of Auldale
 Unknown Treasure
 UnMasked

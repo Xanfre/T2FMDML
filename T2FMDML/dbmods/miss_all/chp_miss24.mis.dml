@@ -1,0 +1,90 @@
+DML1
+
+//T2 FM: Christmas Present by Naks and P Forth / Fixes
+
+FINGERPRINT
+{
+	904 [590 260 -5]
+	911 [594 256 -11]
+	282 [633 43 69]
+	984 [564 166 54]
+	1263 [620 34 34]
+	1167 [649 179 55]
+	618 [620 24 20]
+	1073 [729 391 0]
+	QVAR "goal_target_1" == 1231
+}
+
+//mantling
++ObjProp 13 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 14 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 17 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 18 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 416 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 419 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 422 "PhysCanMant"
+{
+	"" false
+}
+//object dimensions
+-ObjProp 114 "PhysType"
++ObjProp 114 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 528 "PhysType"
++ObjProp 528 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 529 "PhysType"
++ObjProp 529 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 530 "PhysType"
++ObjProp 530 "PhysType"
+{
+	"Type" OBB
+}
+//tree physics
+Create -490
+{
+	-ObjProp "PhysType"
+	ObjProp "Position"
+	{
+		"Location" 626.617, 174.224, 55.9275
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+//present
+-ObjProp 936 "PhysType"
+ObjProp 936 "Position"
+{
+	"Location" 540.373, 261.977, 10.0904
+}
