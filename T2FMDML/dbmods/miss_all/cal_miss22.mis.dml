@@ -26,13 +26,13 @@ FINGERPRINT
 	"Location" 118.7, -102.4, -265.37
 	"Heading" 105b
 	"Pitch" 0
-	"Bank" 4000 
+	"Bank" 4000
 }
-+ObjProp 1661 "SlayResult"   
++ObjProp 1661 "SlayResult"
 {
 	"Effect" "No Effect"
 }
-+ObjProp 1662 "SlayResult"   
++ObjProp 1662 "SlayResult"
 {
 	"Effect" "No Effect"
 }

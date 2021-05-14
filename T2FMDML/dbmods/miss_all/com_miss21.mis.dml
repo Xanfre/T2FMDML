@@ -15,27 +15,27 @@ FINGERPRINT
 	QVAR "goal_target_3" == 743
 }
 
-+ObjProp 33 "PhysCanMant"       
++ObjProp 33 "PhysCanMant"
 {
 	"" false
 }
-+ObjProp 37 "PhysCanMant"       
++ObjProp 37 "PhysCanMant"
 {
 	"" false
 }
-+ObjProp 38 "PhysCanMant"       
++ObjProp 38 "PhysCanMant"
 {
 	"" false
 }
-+ObjProp 39 "PhysCanMant"       
++ObjProp 39 "PhysCanMant"
 {
 	"" false
 }
-+ObjProp 187 "PhysCanMant"       
++ObjProp 187 "PhysCanMant"
 {
 	"" false
 }
-+ObjProp 435 "BlockFrob"       
++ObjProp 435 "BlockFrob"
 {
 	"" true
 }

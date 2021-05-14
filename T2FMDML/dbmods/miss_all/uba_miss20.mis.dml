@@ -19,14 +19,14 @@ FINGERPRINT
 
 +ObjProp 1247 "Scripts"
 {
-   "Script 0" NVTrigQVar
-   "Script 1" NVMetaTrap
+	"Script 0" NVTrigQVar
+	"Script 1" NVMetaTrap
 }
 +ObjProp 1247 "DesignNote"
 {
-   "" NVTrigQVarTDest="[me]"; NVMetaTrapMeta="FrobInert"
+	"" NVTrigQVarTDest="[me]"; NVMetaTrapMeta="FrobInert"
 }
 +ObjProp 1247 "TrapQVar"
 {
-   "" =1:goal_state_4
+	"" =1:goal_state_4
 }

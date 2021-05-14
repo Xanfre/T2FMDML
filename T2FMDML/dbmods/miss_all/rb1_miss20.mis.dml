@@ -30,7 +30,7 @@ ObjProp 78 "Scripts"
 	"Script 0" "TrigPPlate"
 	"Don't Inherit" true
 }
--Receptron 78 "Touch"  
+-Receptron 78 "Touch"
 +Link 78 95 "ControlDevice"
 {
 }
@@ -54,7 +54,7 @@ ObjProp 241 "Scripts"
 	"Script 0" "TrigPPlate"
 	"Don't Inherit" true
 }
--Receptron 241 "Touch"  
+-Receptron 241 "Touch"
 +ObjProp 247 "PhysPPlate"
 {
 	"Activation Weight" 50.00
@@ -68,7 +68,7 @@ ObjProp 247 "Scripts"
 	"Script 0" "TrigPPlate"
 	"Don't Inherit" true
 }
--Receptron 247 "Touch"  
+-Receptron 247 "Touch"
 +Link 247 250 "ControlDevice"
 {
 }

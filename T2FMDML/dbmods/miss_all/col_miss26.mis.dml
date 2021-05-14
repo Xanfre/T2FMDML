@@ -27,7 +27,7 @@ FINGERPRINT
 	"Location" -2.04, 4.05, 0.11
 	"Heading" 4000
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 ObjProp 208 "Scripts"
 {
@@ -36,7 +36,7 @@ ObjProp 208 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 208 "DesignNote"         
++ObjProp 208 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }
@@ -47,7 +47,7 @@ ObjProp 1707 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 1707 "DesignNote"         
++ObjProp 1707 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }
@@ -58,7 +58,7 @@ ObjProp 1709 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 1709 "DesignNote"         
++ObjProp 1709 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }
@@ -69,7 +69,7 @@ ObjProp 1711 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 1711 "DesignNote"         
++ObjProp 1711 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }
@@ -80,7 +80,7 @@ ObjProp 1711 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 2155 "DesignNote"         
++ObjProp 2155 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }
@@ -91,7 +91,7 @@ ObjProp 1711 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 2157 "DesignNote"         
++ObjProp 2157 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }
@@ -102,7 +102,7 @@ ObjProp 1711 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+ObjProp 2159 "DesignNote"         
++ObjProp 2159 "DesignNote"
 {
 	"" NVGibTrapOn="Slain"
 }

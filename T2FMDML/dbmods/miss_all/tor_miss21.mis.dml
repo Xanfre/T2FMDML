@@ -39,7 +39,7 @@ FINGERPRINT
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 954 "InvType"     
++ObjProp 954 "InvType"
 {
 	"" Item
 }

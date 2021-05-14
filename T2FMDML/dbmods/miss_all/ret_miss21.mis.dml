@@ -36,15 +36,15 @@ FINGERPRINT
 +Link 2008 1739 "ControlDevice"
 {
 }
-+ObjProp 514 "DiffDestroy"  
++ObjProp 514 "DiffDestroy"
 {
 	"quest var values" 0,1
 }
-+ObjProp 1739 "DiffDestroy"  
++ObjProp 1739 "DiffDestroy"
 {
 	"quest var values" 0,1
 }
-+ObjProp 510 "DiffDestroy"  
++ObjProp 510 "DiffDestroy"
 {
 	"quest var values" 0,1
 }

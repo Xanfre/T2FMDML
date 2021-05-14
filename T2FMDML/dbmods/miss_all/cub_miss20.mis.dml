@@ -17,11 +17,11 @@ FINGERPRINT
 
 -Link 394 369 "ControlDevice"
 -Link 40 48 "ControlDevice"
-+Link 40 48 "Corpse"             
++Link 40 48 "Corpse"
 {
 	"Propagate Source Scale?" false
 }
-+Link 369 302 "ControlDevice"             
++Link 369 302 "ControlDevice"
 {
 }
 -ObjProp 1029 "TransDoor"

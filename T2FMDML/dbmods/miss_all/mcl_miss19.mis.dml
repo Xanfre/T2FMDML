@@ -31,9 +31,9 @@ FINGERPRINT
 {
 	"Script 1" NVRelayTrap
 }
-+ObjProp 397 "DesignNote"  
-{ 
-	"" NVRelaytrapOn="Sim"; 
++ObjProp 397 "DesignNote"
+{
+	"" NVRelaytrapOn="Sim"
 }
 +ObjProp 471 "Scripts"
 {
@@ -58,14 +58,14 @@ FINGERPRINT
 	"Location" 611.76, -534.039, 431.147
 	"Heading" 4000
 	"Pitch" 0
-	"Bank" 4000  
+	"Bank" 4000
 }
 +ObjProp 397 "Position"
 {
 	"Location" 612.998, -517.477, 433.386
 	"Heading" 7ffe
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 397 "Scripts"
 {
@@ -84,11 +84,11 @@ FINGERPRINT
 +Link 299 299 "ControlDevice"
 {
 }
-+ObjProp 308 "PickDist" 
++ObjProp 308 "PickDist"
 {
 	"" 4.00
 }
-+ObjProp 598 "PickDist" 
++ObjProp 598 "PickDist"
 {
 	"" 4.30
 }

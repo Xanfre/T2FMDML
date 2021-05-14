@@ -42,7 +42,7 @@ FINGERPRINT
 {
 	"Script 0" TrapTimedRelay
 }
-+ObjProp 1259 "ScriptTiming"     
++ObjProp 1259 "ScriptTiming"
 {
 	"" 4000
 }
@@ -57,9 +57,9 @@ FINGERPRINT
 +Link 1083 1284 "ControlDevice"
 {
 }
-+ObjProp 1083 "FrobInfo"     
++ObjProp 1083 "FrobInfo"
 {
-	"World Action" Move,Script   
+	"World Action" Move,Script
 	"Inv Action" Script
 }
 +ObjProp 1083 "Scripts"
@@ -100,7 +100,7 @@ FINGERPRINT
 {
 	"Script 0" ToggleDoor
 }
-+ObjProp 1180 "ScriptTiming"     
++ObjProp 1180 "ScriptTiming"
 {
 	"" 10000
 }
@@ -545,13 +545,13 @@ FINGERPRINT
 	"Bank" 0
 }
 -ObjProp 658 "PhysType"
-+ObjProp 658  "PhysType"
++ObjProp 658 "PhysType"
 {
 	"Type" None
 	"# Submodels" 0
 }
--ObjProp 658  "Position"
-+ObjProp 658  "Position"
+-ObjProp 658 "Position"
++ObjProp 658 "Position"
 {
 	"Location" -386.15,132.61,-21.0
 	"Heading" 0
@@ -1039,31 +1039,31 @@ FINGERPRINT
 		"Bank" 0
 	}
 }
-+ObjProp 1352 "Scale"         
++ObjProp 1352 "Scale"
 {
 	"" 0.8,0.8,0.75
 }
-+ObjProp 272 "Scale"         
++ObjProp 272 "Scale"
 {
 	"" 0.9,0.9,0.95
 }
-+ObjProp 114 "Scale"         
++ObjProp 114 "Scale"
 {
 	"" 1.0,1.0,1.1
 }
-+ObjProp 112 "Scale"         
++ObjProp 112 "Scale"
 {
 	"" 1.0,1.0,0.98
 }
-+ObjProp 117 "Scale"         
++ObjProp 117 "Scale"
 {
 	"" 1.0,1.0,1.1
 }
-+ObjProp 118 "Scale"         
++ObjProp 118 "Scale"
 {
 	"" 1.0,1.0,1.1
 }
-+ObjProp 582 "PhysAIColl"       
++ObjProp 582 "PhysAIColl"
 {
 	"" false
 }

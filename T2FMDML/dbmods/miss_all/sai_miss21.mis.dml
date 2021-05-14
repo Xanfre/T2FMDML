@@ -27,7 +27,7 @@ FINGERPRINT
 +Link 754 1062 "ControlDevice"
 {
 }
-+ObjProp 754 "FrobInfo" 
++ObjProp 754 "FrobInfo"
 {
 	"World Action" Move,Script
 }

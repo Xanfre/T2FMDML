@@ -53,7 +53,7 @@ Create -6129 "Blocker1"
 	"Location" -20.97, -79.45, 30.518
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 198 "PhysType"
 {
@@ -66,7 +66,7 @@ Create -6129 "Blocker1"
 	"Location" -21.63, -79.45, 30.518
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 199 "PhysType"
 {
@@ -79,7 +79,7 @@ Create -6129 "Blocker1"
 	"Location" -21.56, -79.73, 30.518
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 Create -6129 "Blocker2"
 {

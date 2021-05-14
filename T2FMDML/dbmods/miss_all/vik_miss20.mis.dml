@@ -21,19 +21,19 @@ FINGERPRINT
 }
 //fake sun mask
 +ObjProp 613 "CombineType"
-{     
+{
 	"" FakeMask
 }
 //doors
-+ObjProp 1355 "BlockFrob"     
++ObjProp 1355 "BlockFrob"
 {
 	"" true
 }
-+ObjProp 1356 "BlockFrob"     
++ObjProp 1356 "BlockFrob"
 {
 	"" true
 }
-+ObjProp 1394 "BlockFrob"     
++ObjProp 1394 "BlockFrob"
 {
 	"" true
 }

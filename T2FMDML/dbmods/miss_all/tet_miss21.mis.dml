@@ -197,7 +197,7 @@ FINGERPRINT
 {
 	"Flags" Block pathfind,Repel
 }
-+ObjProp 60 "AI_NGOBB"    
++ObjProp 60 "AI_NGOBB"
 {
 	"" true
 }
@@ -249,7 +249,7 @@ FINGERPRINT
 	"Cur Time" 0
 	"Frame #" 0
 }
-ObjProp 113 "AI_MoveZOffset"    
+ObjProp 113 "AI_MoveZOffset"
 {
 	"" 24
 }

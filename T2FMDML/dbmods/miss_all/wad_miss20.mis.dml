@@ -38,23 +38,23 @@ FINGERPRINT
 	"" Once,Invert
 }
 +MetaProp 1319 -1629
-+ObjProp 1322 "AI_Efficiency"    
++ObjProp 1322 "AI_Efficiency"
 {
 	"Enabled" false
 }
-+ObjProp 816 "AI_Efficiency"    
++ObjProp 816 "AI_Efficiency"
 {
 	"Enabled" false
 }
-+ObjProp 1391 "AI_Efficiency"    
++ObjProp 1391 "AI_Efficiency"
 {
 	"Enabled" false
 }
-+ObjProp 1395 "AI_Efficiency"    
++ObjProp 1395 "AI_Efficiency"
 {
 	"Enabled" false
 }
-+ObjProp 680 "AI_Efficiency"    
++ObjProp 680 "AI_Efficiency"
 {
 	"Enabled" false
 }

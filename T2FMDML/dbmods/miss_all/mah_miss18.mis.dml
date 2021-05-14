@@ -57,7 +57,7 @@ ObjProp 141 "TransDoor"
 {
 	"Open Position" -3.25
 }
-+ObjProp 141 "BlockFrob"     
++ObjProp 141 "BlockFrob"
 {
 	"" true
 }

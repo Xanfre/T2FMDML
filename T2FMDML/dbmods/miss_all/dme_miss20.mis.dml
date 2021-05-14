@@ -42,7 +42,7 @@ FINGERPRINT
 	"Type" OBB
 	"# Submodels" 6
 }
-+ObjProp 971 "BlockFrob"       
++ObjProp 971 "BlockFrob"
 {
 	"" true
 }

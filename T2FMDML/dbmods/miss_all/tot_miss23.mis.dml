@@ -19,5 +19,5 @@ FINGERPRINT
 
 ObjProp 231 "DesignNote"
 {
-	"" NVRelayTrapOn="FrobInvEnd"; NVRelayDelay=500; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="GiveDictionary"; NVRelayTrapOff="Null"; NVRelayTrapTCount=1; NVItemGiverOn="GiveDictionary"; NVGiveWhat="Dictionary";  NVAmbientSoundTrapOn="GiveDictionary"
+	"" NVRelayTrapOn="FrobInvEnd"; NVRelayDelay=500; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="GiveDictionary"; NVRelayTrapOff="Null"; NVRelayTrapTCount=1; NVItemGiverOn="GiveDictionary"; NVGiveWhat="Dictionary"; NVAmbientSoundTrapOn="GiveDictionary"
 }

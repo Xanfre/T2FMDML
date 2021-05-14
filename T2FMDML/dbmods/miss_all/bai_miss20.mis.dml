@@ -18,6 +18,6 @@ FINGERPRINT
 //raise sunken guard
 +ObjProp 437 "Position"
 {
-    "Location" 476.505, 445.419, 536.016
-    "Heading" 4000
+	"Location" 476.505, 445.419, 536.016
+	"Heading" 4000
 }

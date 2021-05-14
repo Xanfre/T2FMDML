@@ -109,11 +109,11 @@ ObjProp 458 "Position"
 }
 +ObjProp 507 "DesignNote"
 {
-   "" NVRelayTrapOn="BeginScript"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapCount=1
+	"" NVRelayTrapOn="BeginScript"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapCount=1
 }
 +ObjProp 507 "Scripts"
 {
-   "Script 0" NVRelayTrap
+	"Script 0" NVRelayTrap
 }
 //chests
 -ObjProp 48 "StTweqLock"
@@ -122,35 +122,35 @@ ObjProp 458 "Position"
 }
 +ObjProp 170 "DesignNote"
 {
-   "" NVRemovePropertyTrapProp="FrobInfo"
+	"" NVRemovePropertyTrapProp="FrobInfo"
 }
 +ObjProp 170 "FrobInfo"
 {
 }
 +ObjProp 170 "Scripts"
 {
-   "Script 0" NVRemovePropertyTrap
+	"Script 0" NVRemovePropertyTrap
 }
 //fireplaces
 ObjProp 188 "PGLaunchInfo"
 {
-   "Min time" 1.00
-   "Max time" 1.00
+	"Min time" 1.00
+	"Max time" 1.00
 }
 ObjProp 191 "PGLaunchInfo"
 {
-   "Min time" 1.00
-   "Max time" 1.00
+	"Min time" 1.00
+	"Max time" 1.00
 }
 ObjProp 212 "PGLaunchInfo"
 {
-   "Min time" 1.50
-   "Max time" 1.50
+	"Min time" 1.50
+	"Max time" 1.50
 }
 ObjProp 215 "PGLaunchInfo"
 {
-   "Min time" 1.50
-   "Max time" 1.50
+	"Min time" 1.50
+	"Max time" 1.50
 }
 //mantling
 +ObjProp 224 "PhysCanMant"
@@ -168,7 +168,7 @@ ObjProp 215 "PGLaunchInfo"
 -Link 574 569 "ControlDevice"
 +ObjProp 437 "TrapFlags"
 {
-   "" Invert, NoOn
+	"" Invert, NoOn
 }
 //ladder
 -ObjProp 441 "Scale"

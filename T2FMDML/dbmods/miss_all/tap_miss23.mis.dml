@@ -109,7 +109,7 @@ FINGERPRINT
 	"Cur Time" 0
 	"Frame #" 0
 }
-+ObjProp 242 "BlockFrob"        
++ObjProp 242 "BlockFrob"
 {
 	"" true
 }

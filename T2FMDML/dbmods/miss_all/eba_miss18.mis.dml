@@ -31,15 +31,15 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 4000
 }
-+ObjProp 479 "Scale"              
++ObjProp 479 "Scale"
 {
 	"" 0.8,0.8,1.0
 }
-+ObjProp 480 "Scale"              
++ObjProp 480 "Scale"
 {
 	"" 0.8,0.8,1.0
 }
-+ObjProp 482 "Scale"              
++ObjProp 482 "Scale"
 {
 	"" 0.8,0.8,1.0
 }

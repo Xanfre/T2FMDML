@@ -56,7 +56,7 @@ FINGERPRINT
 	"Bank" 0
 }
 -Link 39 38 "AIAttack"
-+Link 38 39 "Contains" 
++Link 38 39 "Contains"
 {
 }
 +ObjProp 353 "Position"

@@ -15,11 +15,11 @@ FINGERPRINT
 	QVAR "goal_target_4" == 1870
 }
 
-+ObjProp 1994 "GameName"    
++ObjProp 1994 "GameName"
 {
 	"" Name_obj : "Ship Captain"
 }
-+ObjProp 685 "GameName"    
++ObjProp 685 "GameName"
 {
 	"" Name_obj : "Captain of the Guard"
 }

@@ -56,14 +56,14 @@ FINGERPRINT
 	"Location" 206.96, -168.54, -28.25
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 638 "Position"
 {
 	"Location" 205.29, -168.54, -28.25
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 -MetaProp 1077 -2886
 +MetaProp 1077 -5697

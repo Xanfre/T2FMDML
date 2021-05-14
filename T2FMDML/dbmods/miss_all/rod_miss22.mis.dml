@@ -15,15 +15,15 @@ FINGERPRINT
 	QVAR "goal_target_2" == 1973
 }
 
-+ObjProp 1362 "BlockFrob"   
++ObjProp 1362 "BlockFrob"
 {
 	"" true
 }
 -Link 1902 610 "ControlDevice"
 -Link 1901 613 "ControlDevice"
 +Link 1362 610 "Contains"
-{   
+{
 }
 +Link 1362 613 "Contains"
-{   
+{
 }

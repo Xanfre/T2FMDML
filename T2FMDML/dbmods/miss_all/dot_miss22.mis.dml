@@ -759,7 +759,7 @@ Create -3082
 		"Location" 165.522,-211.326,-96.7556
 		"Heading" c000
 	}
-	+ObjProp "AI_Patrol" 
+	+ObjProp "AI_Patrol"
 	{
 		"" true
 	}
@@ -806,7 +806,7 @@ Create -3082
 		"Location" 188.655,-129.967,-47.7556
 		"Heading" 4000
 	}
-	+ObjProp "AI_Patrol" 
+	+ObjProp "AI_Patrol"
 	{
 		"" true
 	}

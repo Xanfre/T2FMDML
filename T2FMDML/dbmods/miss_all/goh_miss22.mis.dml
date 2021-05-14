@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_0" == 256
 }
 
-ObjProp 428 "TransDoor"   
+ObjProp 428 "TransDoor"
 {
 	"Closed Position" 0.0
 	"Open Position" -4.0

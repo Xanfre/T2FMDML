@@ -55,17 +55,17 @@ FINGERPRINT
 {
 	"Script 3" TrigWorldFocus
 }
-+ObjProp 624 "CombineType"  
++ObjProp 624 "CombineType"
 {
 	"" Loot
 }
-+ObjProp 624 "Loot"    
++ObjProp 624 "Loot"
 {
 	"Gold" 100
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 663 "TrapFlags" 
++ObjProp 663 "TrapFlags"
 {
 	"" Once,NoOff
 }

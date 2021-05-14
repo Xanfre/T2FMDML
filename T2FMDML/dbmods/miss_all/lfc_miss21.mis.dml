@@ -15,17 +15,17 @@ FINGERPRINT
 	QVAR "goal_target_3" == 2168
 }
 
-+ObjProp 1601 "ScriptTiming"    
-{   
++ObjProp 1601 "ScriptTiming"
+{
 	"" 100
 }
-+ObjProp 1601 "Scripts" 
++ObjProp 1601 "Scripts"
 {
 	"Script 0" TrapRelay
 }
-+ObjProp 1482 "Scripts" 
++ObjProp 1482 "Scripts"
 {
-	"Script 0" TrapDeadfall   
+	"Script 0" TrapDeadfall
 }
 +Link 1601 1482 "ControlDevice"
 {
@@ -36,7 +36,7 @@ FINGERPRINT
 +Link 1482 1931 "ControlDevice"
 {
 }
--StimSource 1931 "MoneyStim" 
+-StimSource 1931 "MoneyStim"
 -ObjProp 1929 "AI_Converation"
 +ObjProp 1929 "AI_Converation"
 {

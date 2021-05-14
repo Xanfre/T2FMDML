@@ -23,14 +23,14 @@ FINGERPRINT
 	"Location" -195.38, -25.92,-22.92
 	"Heading" 4000
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 198 "Position"
 {
 	"Location" -148.13, -70.92,26.52
 	"Heading" 0
 	"Pitch" 4000
-	"Bank" 0 
+	"Bank" 0
 }
 -ObjProp 763 "AI_Converation"
 +ObjProp 763 "AI_Converation"

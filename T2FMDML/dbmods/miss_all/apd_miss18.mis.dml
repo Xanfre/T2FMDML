@@ -90,7 +90,7 @@ FINGERPRINT
 {
 	"Script 0" TrapRelay
 }
-+ObjProp 328 "TrapFlags"   
++ObjProp 328 "TrapFlags"
 {
 	"" Invert
 }
@@ -402,7 +402,7 @@ Create -1291
 		"Location" 514.2,351.6,573.5
 	}
 }
-+ObjProp 725 "Scale" 
++ObjProp 725 "Scale"
 {
 	"" 2.1,2.1,2.5
 }

@@ -19,34 +19,34 @@ FINGERPRINT
 
 +ObjProp 158 "TrapQVar"
 {
-    "" =1:goal_state_0
+	"" =1:goal_state_0
 }
 +ObjProp 158 "DesignNote"
 {
-    "" NVTrapSetQVarOn="Slain"
+	"" NVTrapSetQVarOn="Slain"
 }
 +ObjProp 158 "Scripts"
 {
-    "Script 0" NVTrapSetQVar
+	"Script 0" NVTrapSetQVar
 }
 +ObjProp 24 "FrobInfo"
 {
-    "World Action" Move,Script
+	"World Action" Move,Script
 }
 +ObjProp 24 "TrapQVar"
 {
-    "" =1:goal_state_6
+	"" =1:goal_state_6
 }
 +ObjProp 24 "DesignNote"
 {
-    "" NVTrapSetQVarOn="FrobWorldEnd"
+	"" NVTrapSetQVarOn="FrobWorldEnd"
 }
 +ObjProp 24 "Scripts"
 {
-    "Script 0" NVTrapSetQVar
+	"Script 0" NVTrapSetQVar
 }
 +ObjProp 45 "PhysType"
 {
-    "Type" None
-    "# Submodels" 0
+	"Type" None
+	"# Submodels" 0
 }

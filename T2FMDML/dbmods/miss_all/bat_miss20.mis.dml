@@ -48,7 +48,7 @@ FINGERPRINT
 	"Script 0" StdDoor
 	"Script 1" SecurityDoor
 }
-+ObjProp 156 "TransDoor" 
++ObjProp 156 "TransDoor"
 {
 	"Closed Position" 0
 	"Open Position" 4
@@ -120,7 +120,7 @@ FINGERPRINT
 +ObjProp 69 "PhysType"
 {
 }
-+ObjProp 87 "SlayResult"   
++ObjProp 87 "SlayResult"
 {
 	"Effect" Normal
 }

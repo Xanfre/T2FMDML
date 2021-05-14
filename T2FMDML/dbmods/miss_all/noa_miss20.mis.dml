@@ -34,19 +34,19 @@ FINGERPRINT
 {
 }
 //more fish
-+ObjProp 54 "AI_ObjAvoid"       
-{
-   "Flags" Block pathfind,Repel
-}
-+ObjProp 54 "PhysAIColl"       
-{
-	"" true
-}
-+ObjProp 55 "AI_ObjAvoid"       
++ObjProp 54 "AI_ObjAvoid"
 {
 	"Flags" Block pathfind,Repel
 }
-+ObjProp 55 "PhysAIColl"       
++ObjProp 54 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 55 "AI_ObjAvoid"
+{
+	"Flags" Block pathfind,Repel
+}
++ObjProp 55 "PhysAIColl"
 {
 	"" true
 }
@@ -128,7 +128,7 @@ FINGERPRINT
 	"Location" 550.62, 495.97, 478.33
 	"Heading" d9ed
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 -ObjProp 229 "PhysControl"
 +ObjProp 229 "Position"
@@ -136,7 +136,7 @@ FINGERPRINT
 	"Location" 545.52, 527.96, 504.14
 	"Heading" ca8b
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 -ObjProp 88 "PhysControl"
 -ObjProp 89 "PhysControl"
@@ -153,47 +153,47 @@ FINGERPRINT
 	"Location" 553.68, 502.59, 481.44
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 271 "Position"
 {
 	"Location" 553.04, 502.33, 481.44
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 273 "Position"
 {
 	"Location" 551.41, 502.47, 481.44
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 272 "Position"
 {
 	"Location" 550.90, 502.87, 481.44
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 281 "Position"
 {
 	"Location" 552.53, 503.32, 481.33
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 274 "Position"
 {
 	"Location" 552.09, 503.06, 481.41
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 +ObjProp 277 "Position"
 {
 	"Location" 550.36, 502.31, 481.41
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }

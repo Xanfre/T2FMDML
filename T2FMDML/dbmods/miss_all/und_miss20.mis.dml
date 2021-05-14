@@ -27,7 +27,7 @@ FINGERPRINT
 {
 	"" NVMetaTrapMeta="Frobinert"; NVMetaTrapTarget=427
 }
-+ObjProp 189 "PhysCanMant"      
++ObjProp 189 "PhysCanMant"
 {
 	"" false
 }
@@ -41,7 +41,7 @@ FINGERPRINT
 }
 +ObjProp 646 "TrapQVar"
 {
-    "" =3000:goal_loot_3
+	"" =3000:goal_loot_3
 }
 Create -464 "Goal3LootSwitch"
 {
@@ -61,7 +61,7 @@ Create -464 "Goal3LootSwitch"
 {
 	"Script 0" TrapRelay
 }
-+ObjProp 918 "TrapFlags"          
++ObjProp 918 "TrapFlags"
 {
 	"" Once,Invert
 }

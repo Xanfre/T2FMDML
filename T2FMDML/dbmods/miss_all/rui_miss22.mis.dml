@@ -198,7 +198,7 @@ FINGERPRINT
 	"Bank" 0
 }
 //Valhall
-+ObjProp 2168 "ScriptTiming"     
++ObjProp 2168 "ScriptTiming"
 {
 	"" 4000
 }

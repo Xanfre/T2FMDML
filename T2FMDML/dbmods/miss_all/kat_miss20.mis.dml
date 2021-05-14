@@ -79,7 +79,7 @@ ObjProp 135 "GameName"
 	"" true
 }
 -ObjProp 119 "PhysType"
-ObjProp 119 "Position" 
+ObjProp 119 "Position"
 {
 	"Location" 88.95, 86, -15
 }

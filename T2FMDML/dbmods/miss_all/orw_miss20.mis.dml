@@ -176,15 +176,15 @@ Create -4533
 	"Pitch" 0
 	"Bank" 0
 }
-+ObjProp 822 "Scale"     
++ObjProp 822 "Scale"
 {
 	"" 1.2,1.2,1.2
 }
-+ObjProp 632 "Scale"     
++ObjProp 632 "Scale"
 {
 	"" 0.8,0.8,0.9
 }
-+ObjProp 811 "Scale"     
++ObjProp 811 "Scale"
 {
 	"" 0.8,0.8,0.9
 }
@@ -278,7 +278,7 @@ Create -4533
 	"Cur Time" 0
 	"Frame #" 0
 }
-+ObjProp 653 "DesignNote" 
++ObjProp 653 "DesignNote"
 {
 	"" NVRelayTrapTDest="Player"; NVRelayTrapTOn="[100.00]FireStim"; NVRelayTrapOff="Null"; NVRelayTrapTon="Turnon";
 }

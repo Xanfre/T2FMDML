@@ -16,11 +16,11 @@ FINGERPRINT
 }
 
 -Link 1107 1030 "Contains"
-+ObjProp 1030 "RenderType"    
++ObjProp 1030 "RenderType"
 {
 	"" Not Rendered
 }
-+ObjProp 1030 "Position"     
++ObjProp 1030 "Position"
 {
 	"Location" 651.00,434.00,494.00
 	"Heading" 0

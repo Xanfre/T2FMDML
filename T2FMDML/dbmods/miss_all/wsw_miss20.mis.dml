@@ -54,7 +54,7 @@ Create -36 "SimTrig"
 +Link "SimTrig" "RepVase" "ControlDevice"
 {
 }
-+ObjProp 1033 "RenderType"   
++ObjProp 1033 "RenderType"
 {
 	"" Not Rendered
 }
@@ -70,7 +70,7 @@ ObjProp 1130 "Scripts"
 +Link 1130 166 "ControlDevice"
 {
 }
-+ObjProp 1063 "RenderType"   
++ObjProp 1063 "RenderType"
 {
 	"" Not Rendered
 }
@@ -86,7 +86,7 @@ ObjProp 1129 "Scripts"
 +Link 1129 166 "ControlDevice"
 {
 }
-+ObjProp 1036 "RenderType"   
++ObjProp 1036 "RenderType"
 {
 	"" Not Rendered
 }
@@ -102,7 +102,7 @@ ObjProp 1134 "Scripts"
 +Link 1134 166 "ControlDevice"
 {
 }
-+ObjProp 1032 "RenderType"   
++ObjProp 1032 "RenderType"
 {
 	"" Not Rendered
 }
@@ -118,7 +118,7 @@ ObjProp 1131 "Scripts"
 +Link 1131 166 "ControlDevice"
 {
 }
-+ObjProp 1034 "RenderType"   
++ObjProp 1034 "RenderType"
 {
 	"" Not Rendered
 }
@@ -134,7 +134,7 @@ ObjProp 1132 "Scripts"
 +Link 1132 166 "ControlDevice"
 {
 }
-+ObjProp 1035 "RenderType"   
++ObjProp 1035 "RenderType"
 {
 	"" Not Rendered
 }

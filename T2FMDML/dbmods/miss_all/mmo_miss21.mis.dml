@@ -15,11 +15,11 @@ FINGERPRINT
 	QVAR "goal_target_9" == 993
 }
 
-+ObjProp 1349 "AI_ObjAvoid"     
++ObjProp 1349 "AI_ObjAvoid"
 {
 	"Flags" Block pathfind,Repel
 }
-+ObjProp 1349 "PhysAIColl"     
++ObjProp 1349 "PhysAIColl"
 {
 	"" false
 }

@@ -24,7 +24,7 @@ FINGERPRINT
 {
 	"Script 0" TrapRelay
 }
-+ObjProp 545 "TrapFlags"  
++ObjProp 545 "TrapFlags"
 {
 	"" Once,NoOff
 }

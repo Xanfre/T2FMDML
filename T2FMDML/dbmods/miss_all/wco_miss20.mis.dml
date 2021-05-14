@@ -28,7 +28,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" ddc3
 }
--Link 45 84 "Corpse" 
+-Link 45 84 "Corpse"
 +ObjProp 59 "PhysType"
 {
 	"Type" None

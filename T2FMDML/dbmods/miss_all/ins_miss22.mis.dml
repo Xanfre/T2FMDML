@@ -16,11 +16,11 @@ FINGERPRINT
 }
 
 -MetaProp 140 -3371
-+ObjProp 2680 "PhysAIColl"  
++ObjProp 2680 "PhysAIColl"
 {
 	"" false
 }
-+ObjProp 2682 "PhysAIColl"  
++ObjProp 2682 "PhysAIColl"
 {
 	"" false
 }
@@ -40,20 +40,20 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
-+ObjProp 2289 "PhysAIColl"  
++ObjProp 2289 "PhysAIColl"
 {
 	"" true
 }
-+ObjProp 2290 "PhysAIColl"  
++ObjProp 2290 "PhysAIColl"
 {
 	"" true
 }
-+ObjProp 2291 "PhysAIColl"  
++ObjProp 2291 "PhysAIColl"
 {
 	"" true
 }
-+ObjProp 2292 "PhysAIColl"  
++ObjProp 2292 "PhysAIColl"
 {
 	"" true
 }
--ObjProp 2258 "DarkStat"  
+-ObjProp 2258 "DarkStat"

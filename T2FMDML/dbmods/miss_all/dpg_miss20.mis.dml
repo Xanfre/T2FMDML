@@ -69,7 +69,7 @@ FINGERPRINT
 }
 +ObjProp 1203 "TrapQVar"
 {
-    "" =1:goal_state_8
+	"" =1:goal_state_8
 }
 +Link 581 1203 "ControlDevice"
 {
@@ -128,7 +128,7 @@ FINGERPRINT
 }
 ObjProp 632 "NoDrop"
 {
-	""  false
+	"" false
 }
 +ObjProp 1794 "Scripts"
 {

@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_2" == 319
 }
 
-+ObjProp 218 "AI_Efficiency"  
++ObjProp 218 "AI_Efficiency"
 {
 	"Enabled" false
 }

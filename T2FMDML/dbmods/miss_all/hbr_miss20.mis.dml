@@ -34,12 +34,12 @@ FINGERPRINT
 {
 	"World Action" Move,Script
 }
--ObjProp 382 "CollisionType" 
-+ObjProp 382 "CollisionType" 
+-ObjProp 382 "CollisionType"
++ObjProp 382 "CollisionType"
 {
 	"" Bounce
 }
-+Receptron 382  "KOGas"
++Receptron 382 "KOGas"
 {
 	Effect "SetQvar"
 	{

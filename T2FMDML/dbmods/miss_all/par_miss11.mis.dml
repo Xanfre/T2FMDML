@@ -68,15 +68,15 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
--ObjProp 665 "ModelName"       
-+ObjProp 665 "ModelName"   
+-ObjProp 665 "ModelName"
++ObjProp 665 "ModelName"
 {
 	"" womsev02
 }
-+Link 1424 1749  "Contains"
++Link 1424 1749 "Contains"
 {
 }
-+ObjProp 943 "BlockFrob"     
++ObjProp 943 "BlockFrob"
 {
 	"" true
 }
@@ -84,8 +84,8 @@ FINGERPRINT
 {
 	"Script 0" TrapSetQVar
 }
--ObjProp 100 "ModelName"       
-+ObjProp 100 "ModelName"   
+-ObjProp 100 "ModelName"
++ObjProp 100 "ModelName"
 {
 	"" malsev01
 }
@@ -101,7 +101,7 @@ FINGERPRINT
 +Link 929 1585 "ControlDevice"
 {
 }
-+Link 1585 2513  "ControlDevice"
++Link 1585 2513 "ControlDevice"
 {
 }
 +ObjProp 107 "Scripts"
@@ -116,14 +116,14 @@ FINGERPRINT
 {
 	"Script 0" TrigContained
 }
-+Link 534 107  "ControlDevice"
++Link 534 107 "ControlDevice"
 {
 }
 +ObjProp 1585 "Scripts"
 {
 	"Script 0" TrapRelay
 }
-+ObjProp 1585 "TrapFlags"   
++ObjProp 1585 "TrapFlags"
 {
 	"" Once,NoOff
 }

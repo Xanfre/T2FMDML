@@ -18,18 +18,18 @@ FINGERPRINT
 -Link 183 898 "Contains"
 +Link 183 898 "Contains"
 {
-	"" Belt   
+	"" Belt
 }
 +ObjProp 2136 "FrobInfo"
 {
 	"World Action" Ignore
 }
-+ObjProp 2232 "CombineType" 
-{ 
++ObjProp 2232 "CombineType"
+{
 	"" Loot
 }
-+ObjProp 2237 "CombineType" 
-{ 
++ObjProp 2237 "CombineType"
+{
 	"" Loot
 }
 +ObjProp 1968 "Scripts"
@@ -55,11 +55,11 @@ FINGERPRINT
 {
 	"Script 0" LootSounds
 }
-+ObjProp 2232 "StackCount"     
++ObjProp 2232 "StackCount"
 {
 	"" 0
 }
-+ObjProp 2237 "StackCount"     
++ObjProp 2237 "StackCount"
 {
 	"" 0
 }
@@ -74,5 +74,5 @@ FINGERPRINT
 	"Location" -131.04, -106.73, 34.81
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }

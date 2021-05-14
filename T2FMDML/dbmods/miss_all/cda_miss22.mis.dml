@@ -30,7 +30,7 @@ FINGERPRINT
 +Link 949 535 "ControlDevice"
 {
 }
-+ObjProp 949 "TrapFlags" 
++ObjProp 949 "TrapFlags"
 {
 	"" Once
 }

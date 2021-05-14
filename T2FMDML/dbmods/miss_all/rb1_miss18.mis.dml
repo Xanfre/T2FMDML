@@ -149,7 +149,7 @@ ObjProp 1929 "AI_Converation"
 +Link 1809 1929 "ControlDevice"
 {
 }
-+ObjProp 1392 "ScriptTiming"  
++ObjProp 1392 "ScriptTiming"
 {
 	"" 20000
 }
@@ -172,7 +172,7 @@ ObjProp 1929 "AI_Converation"
 +Link 2000 1392 "ControlDevice"
 {
 }
-+ObjProp 53 "ScriptTiming"  
++ObjProp 53 "ScriptTiming"
 {
 	"" 22000
 }
@@ -194,7 +194,7 @@ ObjProp 1929 "AI_Converation"
 {
 	"" "Well Below Average"
 }
-+ObjProp 35 "ScriptTiming"  
++ObjProp 35 "ScriptTiming"
 {
 	"" 38000
 }
@@ -210,7 +210,7 @@ ObjProp 1929 "AI_Converation"
 	"Script 3" TrigWorldfrob
 }
 -Link 1771 1998 "Contains"
-+Link 1771 1998 "Contains"  
++Link 1771 1998 "Contains"
 {
 	"" Belt
 }

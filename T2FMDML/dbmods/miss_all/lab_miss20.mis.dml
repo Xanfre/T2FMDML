@@ -31,15 +31,15 @@ FINGERPRINT
 {
 	"World Action" Move,Script
 }
-ObjProp 904 "PickDist"  
+ObjProp 904 "PickDist"
 {
 	"" 5
 }
-ObjProp 914 "PickDist"  
+ObjProp 914 "PickDist"
 {
 	"" 5
 }
-+ObjProp 899 "BlockFrob"   
++ObjProp 899 "BlockFrob"
 {
 	"" true
 }
@@ -51,11 +51,11 @@ ObjProp 914 "PickDist"
 {
 	"World Action" Move,Script
 }
-+ObjProp 904 "PickBias" 
++ObjProp 904 "PickBias"
 {
 	"" 2
 }
-+ObjProp 914 "PickBias" 
++ObjProp 914 "PickBias"
 {
 	"" 2
 }

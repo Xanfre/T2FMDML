@@ -47,7 +47,7 @@ FINGERPRINT
 	"Location" 423.08, 424.73, 422.71
 	"Heading" aaaa
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 -ObjProp 459 "Position"
 +ObjProp 459 "Position"
@@ -55,7 +55,7 @@ FINGERPRINT
 	"Location" 422.46, 420.79, 421.32
 	"Heading" 73ae
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 758 "Scripts"
 {

@@ -22,7 +22,7 @@ FINGERPRINT
 +Link 31 364 "Contains"
 {
 }
-ObjProp 381 "Locked" 
+ObjProp 381 "Locked"
 {
 	"" false
 }
@@ -68,11 +68,11 @@ ObjProp 381 "Locked"
 	"Pitch" 0
 	"Bank" 0
 }
-ObjProp 578 "HasRefs" 
+ObjProp 578 "HasRefs"
 {
 	"" true
 }
-ObjProp 578 "StackCount"     
+ObjProp 578 "StackCount"
 {
 	"" 0
 }
@@ -84,11 +84,11 @@ ObjProp 578 "StackCount"
 	"Pitch" 0
 	"Bank" 0
 }
-ObjProp 531 "HasRefs" 
+ObjProp 531 "HasRefs"
 {
 	"" true
 }
-ObjProp 531 "StackCount"     
+ObjProp 531 "StackCount"
 {
 	"" 0
 }
@@ -100,4 +100,3 @@ ObjProp 531 "StackCount"
 	"Pitch" 0
 	"Bank" 0
 }
-  

@@ -17,15 +17,15 @@ FINGERPRINT
 
 +ObjProp 1725 "TrapFlags"
 {
-   "" Once,NoOff
+	"" Once,NoOff
 }
 +ObjProp 1725 "Scripts"
 {
-   "Script 0" TrapSetQVar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 1725 "TrapQVar"
 {
-   "" =7:DrSScrtCnt
+	"" =7:DrSScrtCnt
 }
 +Link 2775 1725 "ControlDevice"
 {

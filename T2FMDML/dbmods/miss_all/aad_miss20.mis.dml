@@ -18,15 +18,15 @@ FINGERPRINT
 //fix rendering issue with a key
 ObjProp 538 "HasRefs"
 {
-    "" false
+	"" false
 }
 //have a guard return to his original location when idle
 ObjProp 536 "Position"
 {
-    "Location" 507.025, 490.074, 515.37
-    "Heading" bc69
+	"Location" 507.025, 490.074, 515.37
+	"Heading" bc69
 }
 ObjProp 536 "AI_IdlRetOrg"
 {
-    "" true
+	"" true
 }

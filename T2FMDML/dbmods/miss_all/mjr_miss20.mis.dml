@@ -45,7 +45,7 @@ ObjProp 234 "Position"
 }
 +Link 499 205 "ControlDevice"
 {
-} 
+}
 +ObjProp 463 "Scripts"
 {
 	"Script 0" TrigContained
@@ -60,7 +60,7 @@ ObjProp 234 "Position"
 }
 +Link 463 305 "ControlDevice"
 {
-} 
+}
 +ObjProp 463 "FrobInfo"
 {
 	"World Action" Move,Script

@@ -128,7 +128,7 @@ FINGERPRINT
 	Effect "Abort"
 }
 //doors
-+Link 1717 1718  "ScriptParams"
++Link 1717 1718 "ScriptParams"
 {
 	"" Double
 }

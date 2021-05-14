@@ -158,23 +158,23 @@ ObjProp 1872 "Position"
 	"Type" OBB
 }
 //doors
-+Link 100 101  "ScriptParams"
++Link 100 101 "ScriptParams"
 {
 	"" Double
 }
-+Link 134 135  "ScriptParams"
++Link 134 135 "ScriptParams"
 {
 	"" Double
 }
-+Link 744 745  "ScriptParams"
++Link 744 745 "ScriptParams"
 {
 	"" Double
 }
-+Link 2024 2025  "ScriptParams"
++Link 2024 2025 "ScriptParams"
 {
 	"" Double
 }
-+Link 2026 2043  "ScriptParams"
++Link 2026 2043 "ScriptParams"
 {
 	"" Double
 }

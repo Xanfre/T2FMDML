@@ -125,7 +125,7 @@ FINGERPRINT
 {
 	"Script 0" NVOnscreenText
 }
-+ObjProp 88 "DesignNote"   
++ObjProp 88 "DesignNote"
 {
 	"" NVText=Objective Complete
 }
@@ -179,7 +179,7 @@ FINGERPRINT
 {
 	"Script 0" NVOnscreenText
 }
-+ObjProp 89 "DesignNote"   
++ObjProp 89 "DesignNote"
 {
 	"" NVText=Task Complete
 }

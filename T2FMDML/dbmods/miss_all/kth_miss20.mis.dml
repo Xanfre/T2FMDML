@@ -76,27 +76,27 @@ FINGERPRINT
 -ObjProp 776 "DeathStage"
 -ObjProp 342 "DeathStage"
 -ObjProp 784 "DeathStage"
-+ObjProp 390 "HitPoints"   
++ObjProp 390 "HitPoints"
 {
 	"" 1000
 }
-+ObjProp 390 "MAX_HP"     
++ObjProp 390 "MAX_HP"
 {
 	"" 1000
 }
-+ObjProp 445 "HitPoints"   
++ObjProp 445 "HitPoints"
 {
 	"" 1000
 }
-+ObjProp 445 "MAX_HP"     
++ObjProp 445 "MAX_HP"
 {
 	"" 1000
 }
-+ObjProp 784 "HitPoints"   
++ObjProp 784 "HitPoints"
 {
 	"" 1000
 }
-+ObjProp 784 "MAX_HP"     
++ObjProp 784 "MAX_HP"
 {
 	"" 1000
 }

@@ -2650,7 +2650,7 @@ FINGERPRINT
 	"Frame #" 0
 }
 //other
-+ObjProp 941 "PhysCanMant"        
++ObjProp 941 "PhysCanMant"
 {
 	"" false
 }

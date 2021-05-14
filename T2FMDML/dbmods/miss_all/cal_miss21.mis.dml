@@ -24,23 +24,23 @@ FINGERPRINT
 {
 	"Location" -13.20, -251.0, -173.5
 	"Heading" 8000
-} 
-+ObjProp 2286 "SlayResult"   
+}
++ObjProp 2286 "SlayResult"
 {
 	"Effect" "No Effect"
 }
--ObjProp 478 "AI_SaveConverse" 
-+ObjProp 478 "AI_SaveConverse" 
+-ObjProp 478 "AI_SaveConverse"
++ObjProp 478 "AI_SaveConverse"
 {
 	"" false
 }
--ObjProp 317 "AI_SaveConverse" 
-+ObjProp 317 "AI_SaveConverse" 
+-ObjProp 317 "AI_SaveConverse"
++ObjProp 317 "AI_SaveConverse"
 {
 	"" false
 }
-+ObjProp 829 "BlockFrob" 
-{ 
++ObjProp 829 "BlockFrob"
+{
 	"" true
 }
 ObjProp 707 "Scripts"

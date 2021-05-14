@@ -26,7 +26,7 @@ FINGERPRINT
 	"Location" -17.08, -78.73, -10.69
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 -Link 1817 1817 "AIWatchobj"
 +Link 1817 1817 "AIWatchObj"
@@ -69,7 +69,7 @@ FINGERPRINT
 	"   Argument 2"[5] ""
 	"   Argument 3"[5] ""
 }
-+ObjProp 1817 "TimeWarp" 
++ObjProp 1817 "TimeWarp"
 {
 	"" 0.75
 }
@@ -103,14 +103,14 @@ FINGERPRINT
 	"Location" 31.08, 39.54, 1.2
 	"Heading" 2db8
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 1817 "Position"
 {
 	"Location" 42.08, -292.01, 7.00
 	"Heading" 34f4
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 136 "PhysControl"
 {

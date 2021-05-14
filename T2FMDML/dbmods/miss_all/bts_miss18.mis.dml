@@ -15,8 +15,8 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1083
 }
 
--ObjProp 1856 "Corona" 
-+ObjProp 1856 "Corona" 
+-ObjProp 1856 "Corona"
++ObjProp 1856 "Corona"
 {
 	"flags" Track Moving Object
 	"radius up close" 1
@@ -27,8 +27,8 @@ FINGERPRINT
 	"color" 255,255,255
 	"spot angle scale" 1.00
 }
--ObjProp 2439 "Corona" 
-+ObjProp 2439 "Corona" 
+-ObjProp 2439 "Corona"
++ObjProp 2439 "Corona"
 {
 	"flags" Track Moving Object
 	"radius up close" 1
@@ -39,8 +39,8 @@ FINGERPRINT
 	"color" 255,255,255
 	"spot angle scale" 1.00
 }
--ObjProp 343 "Corona" 
-+ObjProp 343 "Corona" 
+-ObjProp 343 "Corona"
++ObjProp 343 "Corona"
 {
 	"flags" Track Moving Object
 	"radius up close" 1

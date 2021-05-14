@@ -44,7 +44,7 @@ FINGERPRINT
 {
 	"" 200
 }
-+ObjProp 1923 "MAX_HP"  
++ObjProp 1923 "MAX_HP"
 {
 	"" 200
 }
@@ -53,7 +53,7 @@ FINGERPRINT
 	"" 120
 }
 
-+ObjProp 2281 "MAX_HP"  
++ObjProp 2281 "MAX_HP"
 {
 	"" 120
 }
@@ -61,7 +61,7 @@ FINGERPRINT
 {
 	"World Action" Script
 }
-+ObjProp 104 "KeyDst"  
++ObjProp 104 "KeyDst"
 {
 	"MasterBit" false
 	"RegionMask" 1
@@ -78,7 +78,7 @@ FINGERPRINT
 	"Location" 0.08, -104.01, -47.00
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0  
+	"Bank" 0
 }
 +ObjProp 1409 "Scripts"
 {
@@ -388,13 +388,13 @@ Create -36 "EnableTPKV"
 {
 	"Script 0" TrigDoorOpen
 }
-+Link 485 237  "ControlDevice"
++Link 485 237 "ControlDevice"
 {
 }
-+Link 485 235  "ControlDevice"
++Link 485 235 "ControlDevice"
 {
 }
-+ObjProp 485 "Locked"  
++ObjProp 485 "Locked"
 {
 	"" false
 }
@@ -403,7 +403,7 @@ Create -36 "EnableTPKV"
 	"Script 1" NVRelayTrap
 	"Script 2" TrigWorldFrob
 }
-+ObjProp 237 "DesignNote"  
++ObjProp 237 "DesignNote"
 {
 	"" NVRelayTrapOn="ControlDevice"; NVRelayTrapTDest="235"; NVRelayTrapTOn="[10.00]HolyStim";
 }

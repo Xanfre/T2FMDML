@@ -30,7 +30,7 @@ Create -2997 "BloodySpider"
 		"Location" 5.678, 112.515, -47.0
 		"Heading" 0
 		"Pitch" 0
-		"Bank" 0 
+		"Bank" 0
 	}
 	+ObjProp "Scripts"
 	{

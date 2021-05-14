@@ -30,7 +30,7 @@ FINGERPRINT
 }
 +ObjProp 1727 "DesignNote"
 {
-   "" RepositionLoc=0.0,0.0,0.2
+	"" RepositionLoc=0.0,0.0,0.2
 }
 +ObjProp 1727 "Scripts"
 {

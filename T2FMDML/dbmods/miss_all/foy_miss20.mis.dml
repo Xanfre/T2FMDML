@@ -15,23 +15,23 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1976
 }
 
-+ObjProp 503 "NoDrop"       
++ObjProp 503 "NoDrop"
 {
 	"" true
 }
-+ObjProp 680 "NoDrop"       
++ObjProp 680 "NoDrop"
 {
 	"" true
 }
-+ObjProp 1100 "NoDrop"       
++ObjProp 1100 "NoDrop"
 {
 	"" true
 }
-+ObjProp 704 "NoDrop"       
++ObjProp 704 "NoDrop"
 {
 	"" true
 }
-+ObjProp 1270 "BlockFrob"         
++ObjProp 1270 "BlockFrob"
 {
 	"" true
 }
@@ -74,55 +74,55 @@ Create -2467
 		"" Not Rendered
 	}
 }
-+ObjProp 1056 "InvType"     
++ObjProp 1056 "InvType"
 {
 	"" Item
 }
-+ObjProp 1057 "InvType"     
++ObjProp 1057 "InvType"
 {
 	"" Item
 }
-+ObjProp 1079 "InvType"     
++ObjProp 1079 "InvType"
 {
 	"" Item
 }
-+ObjProp 1085 "InvType"     
++ObjProp 1085 "InvType"
 {
 	"" Item
 }
-+ObjProp 1142 "InvType"     
++ObjProp 1142 "InvType"
 {
 	"" Item
 }
-+ObjProp 2098 "InvType"     
++ObjProp 2098 "InvType"
 {
 	"" Item
 }
-+ObjProp 2113 "InvType"     
++ObjProp 2113 "InvType"
 {
 	"" Item
 }
-+ObjProp 2135 "InvType"     
++ObjProp 2135 "InvType"
 {
 	"" Item
 }
-+ObjProp 2141 "InvType"     
++ObjProp 2141 "InvType"
 {
 	"" Item
 }
-+ObjProp 2145 "InvType"     
++ObjProp 2145 "InvType"
 {
 	"" Item
 }
-+ObjProp 2343 "InvType"     
++ObjProp 2343 "InvType"
 {
 	"" Item
 }
-+ObjProp 2456 "InvType"     
++ObjProp 2456 "InvType"
 {
 	"" Item
 }
-+ObjProp 2457 "InvType"     
++ObjProp 2457 "InvType"
 {
 	"" Item
 }

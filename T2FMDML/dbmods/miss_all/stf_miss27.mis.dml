@@ -17,7 +17,7 @@ FINGERPRINT
 
 +ObjProp 569 "Scripts"
 {
-    "Script 1" TrigRoomPlayer
+	"Script 1" TrigRoomPlayer
 }
 +ObjProp 44 "TrapQVar"
 {

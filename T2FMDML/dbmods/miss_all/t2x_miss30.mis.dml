@@ -15,8 +15,8 @@ FINGERPRINT
 	NAME 196 "Beasty"
 }
 
--ObjProp 766 "Position"    
-+ObjProp 766 "Position"   
+-ObjProp 766 "Position"
++ObjProp 766 "Position"
 {
 	"Location" 144.0,246.0,-9.94
 	"Heading" 0

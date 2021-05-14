@@ -86,7 +86,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
-+ObjProp 1398 "PhysCanMant"  
++ObjProp 1398 "PhysCanMant"
 {
 	"" false
 }

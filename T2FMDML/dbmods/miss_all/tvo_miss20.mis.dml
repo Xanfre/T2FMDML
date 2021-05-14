@@ -19,7 +19,7 @@ FINGERPRINT
 {
 	"Script 0" TrapTimedRelay
 }
-+ObjProp 39 "ScriptTiming"     
++ObjProp 39 "ScriptTiming"
 {
 	"" 2000
 }

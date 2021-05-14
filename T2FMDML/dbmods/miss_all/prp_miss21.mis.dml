@@ -29,9 +29,9 @@ FINGERPRINT
 }
 +Link 30 370 "ControlDevice"
 {
-} 
+}
 +ObjProp 913 "DiffDestroy"
-{ 
+{
 	"quest var values" 0, 1
 }
 -Link 779 778 "AIWatchObj"

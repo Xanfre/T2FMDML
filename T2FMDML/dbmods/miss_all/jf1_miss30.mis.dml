@@ -208,11 +208,11 @@ FINGERPRINT
 	"Cur Time" 0
 	"Frame #" 0
 }
-+ObjProp 1294 "BlockFrob" 
++ObjProp 1294 "BlockFrob"
 {
 	"" true
 }
-+ObjProp 1330 "BlockFrob" 
++ObjProp 1330 "BlockFrob"
 {
 	"" true
 }
@@ -221,8 +221,8 @@ FINGERPRINT
 {
 	"World Action" Script
 }
--ObjProp 1331 "PickDist" 
-+ObjProp 1331 "PickDist"       
+-ObjProp 1331 "PickDist"
++ObjProp 1331 "PickDist"
 {
 	"" 5
 }

@@ -19,7 +19,7 @@ FINGERPRINT
 {
 	Intensity 10
 	Propagator "Contact"
-    {
+	{
 		Shape
 		{
 			"Contact Types" "Collision, Frob Inv -> World"
@@ -51,7 +51,7 @@ FINGERPRINT
 -Link 778 779 "Contains"
 +Link 778 779 "Contains"
 {
-	"" Belt  
+	"" Belt
 }
 ObjProp 123 "Scripts"
 {

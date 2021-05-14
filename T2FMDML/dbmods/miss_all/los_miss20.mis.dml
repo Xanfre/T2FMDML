@@ -20,7 +20,7 @@ FINGERPRINT
 	"Type" None
 	"# Submodels" 0
 }
-+ObjProp 401 "Scale"           
++ObjProp 401 "Scale"
 {
 	"" 0.8,0.8,0.8
 }

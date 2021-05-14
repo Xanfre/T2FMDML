@@ -190,37 +190,37 @@ FINGERPRINT
 	"Pitch" 4000
 	"Bank" 0
 }
-+ObjProp 70 "Loot"              
++ObjProp 70 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 99 "Loot"              
++ObjProp 99 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 100 "Loot"              
++ObjProp 100 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 818 "Loot"              
++ObjProp 818 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 101 "Loot"              
++ObjProp 101 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 70 "Loot"              
++ObjProp 70 "Loot"
 {
 	"Gold" 0
 	"Gems" 0

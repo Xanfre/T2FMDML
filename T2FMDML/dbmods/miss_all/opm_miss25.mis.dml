@@ -16,7 +16,7 @@ FINGERPRINT
 }
 
 //cell A2 key
-ObjProp 437 "KeyDst"           
+ObjProp 437 "KeyDst"
 {
 	"LockID" 6
 }

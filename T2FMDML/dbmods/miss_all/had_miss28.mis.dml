@@ -22,7 +22,7 @@ FINGERPRINT
 	"Script 1" NVRelayTrap
 	"Script 2" NVTrapSetQVar
 }
-+ObjProp 464 "DesignNote"  
++ObjProp 464 "DesignNote"
 {
 	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest="[me]"; NVRelayTrapTOn="[100.00]Touch"; NVRelayTrapOff="Null"; NVTrapSetQVarOn="FrobWorldEnd"
 }

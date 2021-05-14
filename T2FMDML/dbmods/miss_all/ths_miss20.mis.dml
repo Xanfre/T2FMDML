@@ -19,85 +19,85 @@ FINGERPRINT
 {
 	"Script 0" TrigDoorOpen
 }
-+ObjProp 55 "Loot" 
++ObjProp 55 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 541 "Loot" 
++ObjProp 541 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 542 "Loot" 
++ObjProp 542 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 543 "Loot" 
++ObjProp 543 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 544 "Loot" 
++ObjProp 544 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 545 "Loot" 
++ObjProp 545 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 546 "Loot" 
++ObjProp 546 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 547 "Loot" 
++ObjProp 547 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 548 "Loot" 
++ObjProp 548 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 549 "Loot" 
++ObjProp 549 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 550 "Loot" 
++ObjProp 550 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 551 "Loot" 
++ObjProp 551 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 553 "Loot" 
++ObjProp 553 "Loot"
 {
 	"Gold" 0
 	"Gems" 0
 	"Art" 0
 }
-+ObjProp 555 "Loot" 
++ObjProp 555 "Loot"
 {
 	"Gold" 0
 	"Gems" 0

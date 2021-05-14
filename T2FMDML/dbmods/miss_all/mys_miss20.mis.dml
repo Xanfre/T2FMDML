@@ -27,7 +27,7 @@ FINGERPRINT
 	"Location" 7.378, 33.815, 34.0
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 -ObjProp 608 "PhysType"
 +ObjProp 608 "PhysType"
@@ -41,7 +41,7 @@ FINGERPRINT
 	"Location" 221.37, 597.7, -74.31
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }
 -ObjProp 792 "PhysType"
 +ObjProp 792 "PhysType"
@@ -55,7 +55,7 @@ FINGERPRINT
 	"Location" -89.52, 328.21, 13.925
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 4000 
+	"Bank" 4000
 }
 -ObjProp 1326 "PhysType"
 +ObjProp 1326 "PhysType"
@@ -69,5 +69,5 @@ FINGERPRINT
 	"Location" -7.27, 33.815, 34.0
 	"Heading" 0
 	"Pitch" 0
-	"Bank" 0 
+	"Bank" 0
 }

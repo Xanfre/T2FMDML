@@ -182,7 +182,7 @@ Create -464 "GoaltypeSwitch"
 }
 +ObjProp 914 "Scripts"
 {
-    "Script 0" TrapSetQVar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 914 "TrapQVar"
 {
@@ -409,11 +409,11 @@ ObjProp 202 "ParticleGroup"
 //Thieves
 +ObjProp 1821 "AI_IgCam"
 {
-    "" true
+	"" true
 }
 +ObjProp 1491 "AI_IgCam"
 {
-    "" true
+	"" true
 }
 -ObjProp 1821 "Position"
 +ObjProp 1821 "Position"
@@ -483,8 +483,8 @@ ObjProp 202 "ParticleGroup"
 	"Type" None
 	"# Submodels" 0
 }
--ObjProp  168 "Position"
-+ObjProp  168 "Position"
+-ObjProp 168 "Position"
++ObjProp 168 "Position"
 {
 	"Location" -214.2,-53.18,48.45
 	"Heading" 0
@@ -494,8 +494,8 @@ ObjProp 202 "ParticleGroup"
 -Link 227 -2099 "Contains"
 -Link 227 -2099 "Contains"
 -ObjProp 322 "AI_IdleDirs"
--ObjProp  1779 "Position"
-+ObjProp  1779 "Position"
+-ObjProp 1779 "Position"
++ObjProp 1779 "Position"
 {
 	"Location" -278.8,-52.53,70.2
 	"Heading" 0

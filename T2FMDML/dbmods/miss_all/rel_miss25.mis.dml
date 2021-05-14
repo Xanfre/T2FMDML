@@ -17,7 +17,7 @@ FINGERPRINT
 
 #script "tnhscript"
 
-+ObjProp 1151 "DiffScript"   
++ObjProp 1151 "DiffScript"
 {
 	"quest var values" 0,1,2
 }

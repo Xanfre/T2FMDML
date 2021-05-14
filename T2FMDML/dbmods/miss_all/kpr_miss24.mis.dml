@@ -39,7 +39,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
-+ObjProp 1297 "PhysAIColl"  
++ObjProp 1297 "PhysAIColl"
 {
 	"" false
 }

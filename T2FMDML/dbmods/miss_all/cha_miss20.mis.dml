@@ -89,7 +89,7 @@ FINGERPRINT
 	"Type" OBB
 	"# Submodels" 6
 }
-+ObjProp 423 "Scale"             
++ObjProp 423 "Scale"
 {
 	"" 0.8,1.0,1.0
 }
@@ -285,7 +285,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
-+ObjProp 259 "ModelName"       
++ObjProp 259 "ModelName"
 {
 	"" key3a
 }

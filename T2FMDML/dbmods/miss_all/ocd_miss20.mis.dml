@@ -17,7 +17,7 @@ FINGERPRINT
 
 +ObjProp 185 "CfgTweqJoints"
 {
-	"Halt" "Stop Tweq"    
+	"Halt" "Stop Tweq"
 	"AnimC" Sim
 	"MiscC" Scripts
 	"CurveC" None
