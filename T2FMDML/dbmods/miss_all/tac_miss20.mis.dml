@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: The Abandoned Castle v2 by Beltzer / Fixes
+
+FINGERPRINT
+{
+	2329 [319 784 510]
+	711 [359 487 477]
+	1603 [435 582 458]
+	1841 [470 839 459]
+	415 [422 529 441]
+	375 [440 524 441]
+	1154 [301 873 457]
+	2050 [378 857 477]
+	QVAR "goal_target_9" == 2493
+}
+
+//final goal
++ObjProp 2522 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 2522 1599 "ControlDevice"
+{
+}
++ObjProp 1599 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1599 "TrapQVar"
+{
+	"" =0:goal_irreversible_9
+}
+//haunt
++ObjProp 1941 "AI_Hearing"
+{
+	"" Below Average
+}

@@ -39,6 +39,21 @@ FINGERPRINT
 {
 	"" =1:goal_state_1
 }
++ObjProp 531 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 531 128 "ControlDevice"
+{
+}
++ObjProp 128 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 128 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
 //mantling
 +ObjProp 23 "PhysCanMant"
 {

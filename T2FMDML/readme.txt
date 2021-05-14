@@ -4,6 +4,7 @@ issues with NewDark and other problems. To install, simply copy everything accom
 T2FMDML currently addresses issues in the following fan missions and campaigns:
 
 A. K. A. Noah
+The Abandoned Castle
 Ack! There's a Zombie in the Basement
 After Dark
 Akhenaten's Tomb
