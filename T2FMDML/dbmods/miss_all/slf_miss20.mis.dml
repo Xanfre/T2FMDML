@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Gold Skull of Lord Frobb (Contest 3) by Rachel Yvonne (Cookiedough) / Fix objectives not showing
+//T2 FM: The Golden Skull of Lord Frobb (Contest 3) by Rachel Yvonne (Cookiedough) / Fixes
 
 FINGERPRINT
 {
@@ -15,8 +15,44 @@ FINGERPRINT
 	QVAR "goal_target_0" == 22
 }
 
+//goals
 TagBlock "DARKMISS"
 {
 	"Mission Number" 20
 	"Mission Pathname" miss20
+}
++ObjProp 20 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 20 "TrapQVar"
+{
+	"" =1:goal_final_1
+}
++ObjProp 21 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 21 "TrapQVar"
+{
+	"" =0:goal_state_1
+}
++Link 25 20 "ControlDevice"
+{
+}
++Link 25 21 "ControlDevice"
+{
+}
++ObjProp 25 "Scripts"
+{
+	"Script 0" TrigContained
+}
+//gold skull
++ObjProp 22 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 22 "NoDrop"
+{
+	"" true
 }
