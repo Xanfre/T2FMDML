@@ -1,0 +1,92 @@
+DML1
+
+//T2 FM: The Taffers' Bank (Novice Contest) by Thief0 / Fixes
+
+FINGERPRINT
+{
+	157 [-38 95 131]
+	44 [25 125 130]
+	161 [1 162 151]
+	334 [61 129 147]
+	269 [29 146 149]
+	35 [-59 136 129]
+	308 [19 147 130]
+	152 [-51 159 127]
+	QVAR "goal_target_2" == 334
+}
+
+//doors
++Link 156 158 "ScriptParams"
+{
+	"" Double
+}
++Receptron 156 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 158 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 337 "FrobInfo"
+{
+}
+//chest
+-ObjProp 193 "PhysType"
+ObjProp 193 "Position"
+{
+	"Heading" 0
+}
++ObjProp 193 "PhysType"
+{
+	"Type" OBB
+}
+//flash bombs
+-ObjProp 213 "DeathStage"
+//AIs
++ObjProp 256 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 257 "AI_Hearing"
+{
+	"" Average
+}
++ObjProp 293 "AI_Hearing"
+{
+	"" Average
+}
++ObjProp 294 "AI_Hearing"
+{
+	"" Average
+}
++ObjProp 295 "AI_Hearing"
+{
+	"" Well Below Average
+}
+//safe keys
++ObjProp 289 "SlayResult"
+{
+}
++ObjProp 290 "SlayResult"
+{
+}
++ObjProp 291 "SlayResult"
+{
+}
++ObjProp 296 "SlayResult"
+{
+}
++ObjProp 297 "SlayResult"
+{
+}
++ObjProp 309 "SlayResult"
+{
+}
++ObjProp 333 "SlayResult"
+{
+}

@@ -1,0 +1,129 @@
+DML1
+
+//T2 FM: After the Party (Contest 3) by Robert Lee (ChangelingJane) / Fixes
+
+FINGERPRINT
+{
+	132 [25 19 2]
+	21 [30 4 -6]
+	162 [32 0 -7]
+	164 [-9 15 -8]
+	49 [-37 -5 0]
+	32 [-12 12 4]
+	140 [25 13 1]
+	200 [0 -10 2]
+	QVAR "goal_target_2" == 172
+}
+
+//doors
+ObjProp 7 "RotDoor"
+{
+	"Open Angle" 89
+}
++Receptron 10 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 22 "FrobInfo"
+{
+}
++ObjProp 24 "FrobInfo"
+{
+}
++Receptron 26 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//rope arrows
+-ObjProp 20 "DeathStage"
+//switches
+ObjProp 86 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 86 "StTweqJoints"
+{
+	"Joint1AnimS" None
+}
+ObjProp 90 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 90 "StTweqJoints"
+{
+	"Joint1AnimS" None
+}
+ObjProp 151 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 151 "StTweqJoints"
+{
+	"Joint1AnimS" None
+}
+ObjProp 173 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 173 "StTweqJoints"
+{
+	"Joint1AnimS" None
+}
+//unused keys
++ObjProp 87 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 88 "RenderType"
+{
+	"" Not Rendered
+}
+//AIs
++ObjProp 94 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 136 "AI_Hearing"
+{
+	"" Null
+}
++ObjProp 141 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 176 "AI_Hearing"
+{
+	"" Below Average
+}
+//buttons
+ObjProp 170 "AmbientHacked"
+{
+	"Flags" Environmental, TurnedOff, DoAutoOff
+}
++ObjProp 170 "Scripts"
+{
+	"Script 0" ActivateAmbient
+}
+-Link 226 170 "ControlDevice"
+-Link 228 89 "ControlDevice"
++Link 228 86 "ControlDevice"
+{
+}
+-Link 229 91 "ControlDevice"
++Link 229 90 "ControlDevice"
+{
+}
++Link 230 170 "ControlDevice"
+{
+}
++Link 231 170 "ControlDevice"
+{
+}
