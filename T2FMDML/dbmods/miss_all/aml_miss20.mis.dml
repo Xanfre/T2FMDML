@@ -1,0 +1,123 @@
+DML1
+
+//T2 FM: A Mother's Love (Contest 4) by Katy Fortner (Kfort) / Fixes
+
+FINGERPRINT
+{
+	667 [70 120 107]
+	330 [82 86 100]
+	523 [138 110 105]
+	169 [87 72 90]
+	41 [124 130 87]
+	111 [96 101 96]
+	440 [68 84 112]
+	253 [90 131 100]
+	QVAR "goal_target_5" == 179
+}
+
+//final goal
++ObjProp 495 "TrapFlags"
+{
+	"" Once
+}
+//secrets
++ObjProp 7 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 7 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 7 "TrapQVar"
+{
+	"" =0:DrSSecrets
+}
+-Link 212 389 "ControlDevice"
+-Link 212 180 "ControlDevice"
++Link 652 526 "ControlDevice"
+{
+}
++ObjProp 543 "DiffDestroy"
+{
+	"quest var values" 0, 1
+}
++ObjProp 629 "DiffDestroy"
+{
+	"quest var values" 1, 2
+}
++ObjProp 710 "DiffDestroy"
+{
+	"quest var values" 0, 2
+}
+//quest items
++ObjProp 511 "StackCount"
+{
+}
+ObjProp 523 "FrobInfo"
+{
+	"Inv Action" None
+}
++ObjProp 523 "NoDrop"
+{
+	"" true
+}
++Link 616 287 "ControlDevice"
+{
+}
++ObjProp 620 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 707 "TrapFlags"
+{
+	"" Once
+}
+//torches
++ObjProp 10 "FrobInfo"
+{
+}
++ObjProp 15 "FrobInfo"
+{
+}
++ObjProp 88 "FrobInfo"
+{
+}
++ObjProp 91 "FrobInfo"
+{
+}
++ObjProp 243 "FrobInfo"
+{
+}
++ObjProp 253 "FrobInfo"
+{
+}
++ObjProp 256 "FrobInfo"
+{
+}
++ObjProp 265 "FrobInfo"
+{
+}
++ObjProp 268 "FrobInfo"
+{
+}
++ObjProp 282 "FrobInfo"
+{
+}
++ObjProp 283 "FrobInfo"
+{
+}
++ObjProp 304 "FrobInfo"
+{
+}
+//doors
+-ObjProp 189 "JointPos"
+-ObjProp 190 "JointPos"
++ObjProp 259 "FrobInfo"
+{
+}
+//DeathStage 12
+-ObjProp 394 "DeathStage"
+-ObjProp 398 "DeathStage"
+-ObjProp 401 "DeathStage"
+-ObjProp 634 "DeathStage"

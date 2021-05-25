@@ -15,18 +15,16 @@ FINGERPRINT
 	QVAR "goal_target_5" == 113
 }
 
-#script "nvscript"
-
 //goals
-+ObjProp 4 "DesignNote"
++ObjProp 8 "DiffTurnOn"
 {
-	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+	"quest var values" 0, 1, 2
 }
-+ObjProp 4 "Scripts"
++ObjProp 8 "Scripts"
 {
-	"Script 0" NVTrapSetQVar
+	"Script 0" TrapSetQVar
 }
-+ObjProp 4 "TrapQVar"
++ObjProp 8 "TrapQVar"
 {
 	"" =0:goal_state_0
 }

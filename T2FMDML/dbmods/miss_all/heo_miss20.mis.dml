@@ -1,0 +1,54 @@
+DML1
+
+//T2 FM: Heading Out by Camus / Fixes
+
+FINGERPRINT
+{
+	537 [-212 359 48]
+	455 [-44 415 19]
+	860 [-181 509 55]
+	587 [-119 448 51]
+	1115 [-188 776 45]
+	192 [-114 424 49]
+	1313 [-148 557 53]
+	659 [-90 440 11]
+	QVAR "goal_target_2" == 1230
+}
+
+//mantling
++ObjProp 477 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 478 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 632 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1085 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1087 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1090 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1095 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1097 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1099 "PhysCanMant"
+{
+	"" false
+}

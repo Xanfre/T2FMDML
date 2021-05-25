@@ -27,6 +27,7 @@ The Bathhouse
 The Blackheart's Recording
 Bloodmist Tower
 Bloodsport
+The Bloody Flounder's Inn
 Bloody Ruins
 Book of Prophecy part 1: Dead Letter Box
 The Box
@@ -85,6 +86,7 @@ Elevator Mission
 Evendale
 Evirath's Misery
 The Eye of the Gems: Shadows and Fog
+The Fall of Anduin Karol
 The Fever
 Fierce Competition
 First Day of Winter
@@ -115,6 +117,7 @@ Hammerite's Brutality
 Happy New Year, Mister Lambert!
 The Hashishans
 The Haunting
+Heading Out
 Heartcliff Islands
 Heist Society
 Heretics and Pagans
@@ -166,8 +169,10 @@ Meeting
 Merchant's Manor
 Midday Escape
 Mind Master
+A Mother's Love
 Mountain Monastery
 Mr. J's Ring
+Mylokh's Tower
 Mysterious Invitation
 Mystery at the St. Anne Inn
 Mystic Gems I - Unlucky Soul

@@ -36,7 +36,7 @@ ObjProp 638 "Scripts"
 }
 ObjProp 853 "AI_Converation"
 {
-	"  Argument 1" 500
+	"   Argument 1" 500
 }
 +ObjProp 1067 "TrapFlags"
 {

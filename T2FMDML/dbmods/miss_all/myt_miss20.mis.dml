@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Mylokh's Tower (Contest 4) by Paul D. Rotter (eepcat) / Fixes
+
+FINGERPRINT
+{
+	317 [151 160 152]
+	367 [129 159 167]
+	247 [173 140 136]
+	450 [174 140 122]
+	159 [139 146 195]
+	251 [148 159 137]
+	95 [157 145 137]
+	363 [151 122 105]
+	QVAR "goal_target_4" == 466
+}
+
+//loot
+ObjProp 360 "Position"
+{
+	"Location" 125.46, 139.58, 163.82
+}
+ObjProp 397 "Position"
+{
+	"Location" 125.46, 139.19, 163.82
+}
+//door
+-ObjProp 43 "JointPos"
+//quest items
++ObjProp 60 "NoDrop"
+{
+	"" true
+}
++ObjProp 466 "NoDrop"
+{
+	"" true
+}

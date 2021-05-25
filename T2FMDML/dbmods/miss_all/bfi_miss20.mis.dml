@@ -1,0 +1,177 @@
+DML1
+
+//T2 FM: The Bloody Flounder's Inn by Adrian Rieck (Master_edd) / Fixes
+
+FINGERPRINT
+{
+	297 [559 445 514]
+	41 [537 498 497]
+	282 [489 508 500]
+	320 [459 409 504]
+	82 [510 476 495]
+	285 [533 485 518]
+	103 [555 461 518]
+	234 [583 488 515]
+	QVAR "goal_target_0" == 386
+}
+
+#script "script-t2"
+#script "squirrel"
+
+//goals
++ObjProp 320 "DesignNote"
+{
+	"" initqv=-1325
+}
++ObjProp 320 "Scripts"
+{
+	"Script 0" TrapMissionQVar
+}
++ObjProp 320 "TrapQVar"
+{
+	"" =+0:goal_target_5
+}
++ObjProp 408 "DesignNote"
+{
+	"" initqv=-14
+}
++ObjProp 408 "Scripts"
+{
+	"Script 0" TrapMissionQVar
+}
++ObjProp 408 "TrapQVar"
+{
+	"" =+0:goal_target_6
+}
++ObjProp 409 "DesignNote"
+{
+	"" initqv=43
+}
++ObjProp 409 "Scripts"
+{
+	"Script 0" TrapMissionQVar
+}
++ObjProp 409 "TrapQVar"
+{
+	"" =+0:goal_target_9
+}
+//barrels
++ObjProp 31 "DesignNote"
+{
+	"" RepositionLoc=0.0,0.0,0.6
+}
++ObjProp 31 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 132 "DesignNote"
+{
+	"" RepositionLoc=542.103,511.942,501.252
+}
++ObjProp 132 "Scripts"
+{
+	"Script 0" SimRepositionAbs
+}
++ObjProp 321 "DesignNote"
+{
+	"" RepositionLoc=0.4,0.0,0.0
+}
++ObjProp 321 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 323 "DesignNote"
+{
+	"" RepositionLoc=0.2,0.0,0.0
+}
++ObjProp 323 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 324 "DesignNote"
+{
+	"" RepositionLoc=0.4,0.0,0.0
+}
++ObjProp 324 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+//footlockers
+-ObjProp 184 "PhysType"
+ObjProp 184 "Scale"
+{
+	"" 0.6, 0.6, 0.6
+}
++ObjProp 184 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 305 "PhysType"
+-ObjProp 305 "Scale"
+ObjProp 305 "Position"
+{
+	"Location" 559.892, 496.957, 513.763
+	"Heading" c000
+}
++ObjProp 305 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 311 "PhysType"
+ObjProp 311 "Scale"
+{
+	"" 0.4, 0.4, 0.4
+}
+ObjProp 311 "Position"
+{
+	"Location" 549.516, 499.138, 512.679
+}
++ObjProp 311 "PhysType"
+{
+	"Type" OBB
+}
+//goblet
++ObjProp 231 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.3,0.0
+}
++ObjProp 231 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
+//wax cylinder
+ObjProp 265 "Position"
+{
+	"Location" 533.857, 487.967, 473.132
+}
+//guard
+ObjProp 280 "Position"
+{
+	"Location" 535.719, 496.295, 513.502
+	"Heading" 8000
+}
+//coins
+ObjProp 275 "Position"
+{
+	"Location" 551.921, 483.656, 514.988
+	"Pitch" 4000
+}
+ObjProp 276 "Position"
+{
+	"Location" 550.946, 484.182, 514.988
+	"Pitch" 4000
+}
+ObjProp 278 "Position"
+{
+	"Location" 552.987, 482.762, 514.988
+	"Pitch" 4000
+}
+ObjProp 112 "Position"
+{
+	"Location" 513.167, 488.484, 446.323
+}
+ObjProp 262 "Position"
+{
+	"Location" 510.924, 484.516, 446.112
+	"Pitch" 4000
+}

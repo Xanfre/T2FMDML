@@ -1,0 +1,225 @@
+DML1
+
+//T2 FM: The Fall of Anduin Karol by mtk / Fixes
+
+FINGERPRINT
+{
+	268 [-3 0 -3]
+	379 [23 9 5]
+	233 [-40 -13 -6]
+	366 [28 -42 6]
+	380 [23 10 7]
+	94 [-44 -42 -5]
+	121 [-4 -44 0]
+	364 [28 -42 6]
+	QVAR "goal_target_2" == 415
+}
+
+#script "nvscript"
+
+//goal 0
++ObjProp 208 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 208 319 "ControlDevice"
+{
+}
++ObjProp 319 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 319 "TrapQVar"
+{
+	"" =1:goal_irreversible_0
+}
+//scrolls
++ObjProp 62 "NoDrop"
+{
+	"" true
+}
++ObjProp 269 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest="[Me]"; NVRelayTrapOnDelay=100; NVRelayTrapCount=1; NVRelayTrapTOn="InitialSelect"; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
+ObjProp 269 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+//doors
++Receptron 55 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 55 "Locked"
+{
+	"" false
+}
++ObjProp 55 "Scripts"
+{
+	"Script 0" StdDoor
+	"Script 1" Lock
+	"Script 2" LockSounds
+	"Don't Inherit" true
+}
++Link 67 55 "ControlDevice"
+{
+}
++ObjProp 67 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 67 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-Link 128 55 "ControlDevice"
++Link 128 67 "ControlDevice"
+{
+}
++ObjProp 80 "FrobInfo"
+{
+}
++ObjProp 92 "FrobInfo"
+{
+}
++Receptron 115 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 115 "FrobInfo"
+{
+}
++Receptron 118 "EarthStim"
+{
+	Min 9
+	Max None
+	Target 308
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 118 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapOff="Null"; NVRelayTrapCount=1
+}
++ObjProp 118 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 129 "FrobInfo"
+{
+}
++ObjProp 130 "BlockFrob"
+{
+	"" true
+}
+ObjProp 133 "TransDoor"
+{
+	"Open Position" -3.00
+}
++Receptron 191 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 192 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 192 "FrobInfo"
+{
+}
++ObjProp 245 "FrobInfo"
+{
+}
++ObjProp 308 "FrobInfo"
+{
+}
++ObjProp 308 "BlockFrob"
+{
+	"" true
+}
++MetaProp 336 -2420
+ObjProp 343 "TransDoor"
+{
+	"Open Position" -0.50
+}
++ObjProp 343 "Locked"
+{
+	"" true
+}
+//gaslights
++ObjProp 37 "FrobInfo"
+{
+}
++ObjProp 45 "FrobInfo"
+{
+}
++ObjProp 58 "FrobInfo"
+{
+}
++ObjProp 64 "FrobInfo"
+{
+}
++ObjProp 180 "FrobInfo"
+{
+}
++ObjProp 184 "FrobInfo"
+{
+}
++ObjProp 186 "FrobInfo"
+{
+}
+//switches
+ObjProp 47 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 47 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 61 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 61 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+//keys
++ObjProp 122 "SlayResult"
+{
+}
++ObjProp 123 "SlayResult"
+{
+}
++ObjProp 267 "SlayResult"
+{
+}
+//barrel
+-ObjProp 135 "PhysType"
+ObjProp 135 "Position"
+{
+	"Location" -16.9, -31, -15.13
+}
++ObjProp 135 "PhysType"
+{
+	"Type" Sphere Hat
+}
