@@ -1,0 +1,114 @@
+DML1
+
+//T2 FM: No More Clients for Monty (Contest 4) by Duodecimal / Fixes
+
+FINGERPRINT
+{
+	199 [70 114 64]
+	373 [85 112 83]
+	37 [58 96 74]
+	68 [84 88 82]
+	350 [60 108 79]
+	361 [69 99 68]
+	332 [87 87 83]
+	398 [65 108 67]
+	QVAR "goal_target_1" == 343
+}
+
+#script "nvscript"
+
+//final goal
+Create -2086 "GoalFix"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=148
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 91.4, 125.6, 69.6
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Script 1" NVLinkBuilder
+		"Don't Inherit" true
+	}
+}
++ObjProp 146 "DesignNote"
+{
+	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+}
++ObjProp 146 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 146 "TrapQVar"
+{
+	"" =426:goal_target_3
+}
++ObjProp 147 "DesignNote"
+{
+	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+}
++ObjProp 147 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+}
++ObjProp 147 "TrapQVar"
+{
+	"" =0:goal_satisfied_3
+}
++Link 148 "GoalFix" "ControlDevice"
+{
+}
++ObjProp 148 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 148 "Scripts"
+{
+	"Script 0" TrapNonFinalComplete
+	"Script 1" TrapSetQVar
+}
++ObjProp 148 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
+//doors
++Receptron 14 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 82 "JointPos"
++Receptron 82 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//paintings
++ObjProp 276 "BlockFrob"
+{
+	"" true
+}
++ObjProp 282 "BlockFrob"
+{
+	"" true
+}
+//quest items
++ObjProp 343 "NoDrop"
+{
+	"" true
+}
++ObjProp 415 "NoDrop"
+{
+	"" true
+}
