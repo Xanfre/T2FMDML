@@ -17,7 +17,42 @@ FINGERPRINT
 
 #script "nvscript"
 
-//goal 0
+//goals
+Create -2086 "GoalFix"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=431
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 29, -24.5, -14
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Script 1" NVLinkBuilder
+		"Don't Inherit" true
+	}
+}
+-Link 196 431 "ControlDevice"
+-Link 196 414 "ControlDevice"
++Link 431 "GoalFix" "ControlDevice"
+{
+}
++ObjProp 431 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 431 "Scripts"
+{
+	"Script 0" TrapNonFinalComplete
+}
 +ObjProp 208 "Scripts"
 {
 	"Script 0" TrigContained
@@ -212,6 +247,16 @@ ObjProp 61 "StTweqJoints"
 }
 +ObjProp 267 "SlayResult"
 {
+}
+//cave ladder
+-ObjProp 328 "PhysType"
+ObjProp 328 "Position"
+{
+	"Location" -37.5586, 3.60081, -23.6582
+}
++ObjProp 328 "PhysType"
+{
+	"Type" OBB
 }
 //barrel
 -ObjProp 135 "PhysType"
