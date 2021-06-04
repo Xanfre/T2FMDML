@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Relic (Contest 5) by Timon / Fix a hidden loot objective
+//T2 FM: The Relic (Contest 5) by Timon / Fixes
 
 FINGERPRINT
 {
@@ -15,61 +15,196 @@ FINGERPRINT
 	QVAR "goal_target_3" == 1031
 }
 
-#script "tnhscript"
-
-+ObjProp 1151 "DiffScript"
-{
-	"quest var values" 0,1,2
-}
-+ObjProp 1151 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1151 "TrapQVar"
-{
-	"" =3:goal_type_11
-}
-+ObjProp 59 "TrapQVar"
-{
-	"" =1:goal_visible_11
-}
-+Link 1151 59 "ControlDevice"
+//mantling
++ObjProp 368 "PhysCanMant"
 {
 }
-+ObjProp 59 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 55 "Scripts"
-{
-	"Script 2" TrapSetQVar
-}
-+ObjProp 55 "TrapQVar"
-{
-	"" =1:goal_state_11
-}
-+Link 1151 55 "ControlDevice"
++ObjProp 549 "PhysCanMant"
 {
 }
-+ObjProp 506 "TrapQVar"
+//goals
++Link 460 1380 "ControlDevice"
 {
-	"" =3888:goal_loot_11
 }
-+ObjProp 506 "Scripts"
++Link 460 1381 "ControlDevice"
 {
-	"Script 0" TrapSetQVar
 }
-+ObjProp 43 "Scripts"
++ObjProp 460 "Scripts"
 {
 	"Script 0" TrigContained
 }
-+Link 43 506 "ControlDevice"
++ObjProp 1380 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1380 "TrapQVar"
+{
+	"" =3888:goal_loot_11
+}
++ObjProp 1381 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1381 "TrapQVar"
+{
+	"" =3:goal_type_11
+}
+-Link 885 1198 "ControlDevice"
++Link 885 371 "ControlDevice"
 {
 }
-+Link 43 1151 "ControlDevice"
++ObjProp 371 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 371 1198 "ControlDevice"
 {
 }
-+ObjProp 339 "Scripts"
+//doors
++MetaProp 35 -2420
++ObjProp 48 "BlockFrob"
 {
-	"Script 2" LootStats
+	"" true
+}
++ObjProp 124 "BlockFrob"
+{
+	"" true
+}
++ObjProp 126 "BlockFrob"
+{
+	"" true
+}
++ObjProp 387 "BlockFrob"
+{
+	"" true
+}
++ObjProp 522 "BlockFrob"
+{
+	"" true
+}
++ObjProp 523 "BlockFrob"
+{
+	"" true
+}
++ObjProp 618 "BlockFrob"
+{
+	"" true
+}
++ObjProp 728 "BlockFrob"
+{
+	"" true
+}
++MetaProp 877 -2420
++Receptron 936 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1048 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1182 "BlockFrob"
+{
+	"" true
+}
+//quest items
++ObjProp 117 "FrobInfo"
+{
+	"World Action" Move
+	"Tool Action" Script
+}
++ObjProp 268 "NoDrop"
+{
+	"" true
+}
+++Receptron 358 "KnifeStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 496 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 733 "FrobInfo"
+{
+	"World Action" Move
+	"Tool Action" Script
+}
+-ObjProp 733 "Class Tags"
++ObjProp 745 "FrobInfo"
+{
+	"World Action" Move
+	"Tool Action" Script
+}
+ObjProp 843 "FrobInfo"
+{
+	"Inv Action" None
+}
+++Receptron 845 "Ward1Stim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 851 "Ward2Stim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 863 "FrobInfo"
+{
+	"World Action" Move
+	"Tool Action" Script
+}
+++Receptron 1133 "TibiaStim"
+{
+	Min None
+	Max None
+	Target 843
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 1370 "FrobInfo"
+{
+	"World Action" Move
+}
+//painting
+-ObjProp 119 "PhysType"
+ObjProp 119 "Position"
+{
+	"Location" 128.65, 50.85, 99
+}
++ObjProp 119 "PhysType"
+{
+	"Type" OBB
+}
+//tomb button
++ObjProp 1112 "RenderType"
+{
+	"" Not Rendered
 }
