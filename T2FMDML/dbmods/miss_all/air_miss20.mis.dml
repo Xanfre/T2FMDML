@@ -1,0 +1,115 @@
+DML1
+
+//T2 FM: The Airship (Contest 1) by Dave Angel / Fixes
+
+FINGERPRINT
+{
+	142 [-19 104 83]
+	11 [-1 77 89]
+	37 [10 124 86]
+	202 [-4 94 87]
+	216 [6 105 90]
+	149 [3 125 87]
+	44 [4 113 95]
+	100 [3 112 115]
+	QVAR "goal_target_0" == 212
+}
+
+//final goal (expert)
++ObjProp 129 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 129 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 129 "TrapQVar"
+{
+	"" =1:goal_final_4
+}
++ObjProp 130 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 130 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 130 "TrapQVar"
+{
+	"" =0:goal_state_4
+}
+//shutters
++Link 18 84 "ScriptParams"
+{
+	"" Double
+}
+//unused book / scroll
++ObjProp 38 "FrobInfo"
+{
+}
+ObjProp 66 "FrobInfo"
+{
+	"World Action" None
+}
+//switches
+-ObjProp 112 "DiffDestroy"
++ObjProp 112 "DiffDestroy"
+{
+	"quest var values" 2
+}
+ObjProp 112 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 112 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 123 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 123 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 180 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 180 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 182 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 182 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+//mechanist priest
+ObjProp 222 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 222 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
+}
