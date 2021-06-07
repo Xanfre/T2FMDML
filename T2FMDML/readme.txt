@@ -7,6 +7,7 @@ A. K. A. Noah
 The Abandoned Castle
 Ack! There's a Zombie in the Basement
 After Dark
+The Airship
 Akhenaten's Tomb
 All Torc
 Amnesia
@@ -183,6 +184,7 @@ A Night in Rocksbourg: A New Beginning
 A Night in Rocksbourg: Discovery
 A Night in the Pub
 Night Watch
+No More Clients for Monty
 Nostalgia
 Obligatory Prison Mission
 Old Comrades, Old Debts
@@ -258,7 +260,6 @@ The Ties that Bind
 Time for Culture
 Torn Apart
 Torner Island
-TrainSpotting
 Treason and Plot
 TTGM: Chasm of the Lost
 TTGM: Errand Boy

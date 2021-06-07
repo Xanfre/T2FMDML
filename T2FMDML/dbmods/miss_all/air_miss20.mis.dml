@@ -54,11 +54,6 @@ ObjProp 66 "FrobInfo"
 	"World Action" None
 }
 //switches
--ObjProp 112 "DiffDestroy"
-+ObjProp 112 "DiffDestroy"
-{
-	"quest var values" 2
-}
 ObjProp 112 "JointPos"
 {
 	"Joint 1" 0.00

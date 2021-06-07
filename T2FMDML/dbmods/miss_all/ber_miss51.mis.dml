@@ -15,10 +15,148 @@ FINGERPRINT
 	QVAR "goal_target_0" == 253
 }
 
+//mantling
++ObjProp 231 "PhysCanMant"
+{
+}
 //loot
+ObjProp 313 "Position"
+{
+	"Location" -55.038, 18.6737, -2.01
+}
+ObjProp 325 "Position"
+{
+	"Location" -5.17413, 118.642, 7.22
+}
+ObjProp 326 "Position"
+{
+	"Location" -6.29796, 118.095, 7.22
+}
+ObjProp 327 "Position"
+{
+	"Location" -6.57892, 118.642, 7.22
+}
++ObjProp 351 "PickDist"
+{
+	"" 5.00
+}
 +ObjProp 353 "Loot"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
+}
+//evidence (hard, expert)
++ObjProp 292 "DiffPermit"
+{
+	"quest var values" 1, 2
+}
++ObjProp 292 "NoDrop"
+{
+	"" true
+}
++ObjProp 292 "GameName"
+{
+	"" Name_Evidence: "Evidence"
+}
+//medallion (expert only)
++ObjProp 91 "DiffPermit"
+{
+	"quest var values" 2
+}
++ObjProp 176 "DiffRemoveProp"
+{
+	"quest var values" 2
+	"alt quest var values" 0, 1
+	"Properties" FrobInfo
+}
++ObjProp 176 "FrobInfo"
+{
+}
++ObjProp 308 "StackCount"
+{
+}
++ObjProp 309 "DiffPermit"
+{
+	"quest var values" 2
+}
++ObjProp 309 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 309 "Scripts"
+{
+	"Script 0" StdBook
+}
+//doors
++ObjProp 6 "FrobInfo"
+{
+}
++ObjProp 7 "FrobInfo"
+{
+}
++ObjProp 8 "FrobInfo"
+{
+}
++ObjProp 9 "FrobInfo"
+{
+}
++ObjProp 10 "FrobInfo"
+{
+}
++ObjProp 14 "FrobInfo"
+{
+}
++ObjProp 15 "FrobInfo"
+{
+}
++ObjProp 16 "FrobInfo"
+{
+}
++ObjProp 80 "FrobInfo"
+{
+}
++ObjProp 81 "FrobInfo"
+{
+}
++ObjProp 83 "FrobInfo"
+{
+}
++ObjProp 84 "FrobInfo"
+{
+}
++ObjProp 86 "FrobInfo"
+{
+}
++ObjProp 112 "FrobInfo"
+{
+}
++ObjProp 113 "BlockFrob"
+{
+	"" true
+}
++ObjProp 113 "PickDist"
+{
+	"" 4.00
+}
++ObjProp 114 "FrobInfo"
+{
+}
++ObjProp 115 "FrobInfo"
+{
+}
++ObjProp 116 "FrobInfo"
+{
+}
++ObjProp 117 "FrobInfo"
+{
+}
++ObjProp 118 "FrobInfo"
+{
+}
++ObjProp 129 "FrobInfo"
+{
+}
++ObjProp 130 "FrobInfo"
+{
+}
++ObjProp 131 "FrobInfo"
+{
 }
