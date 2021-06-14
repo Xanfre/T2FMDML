@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Shining Standards by Aaron Pettett (Spanker) / Fix two bonus goals and the back door key
+//T2 FM: Shining Standards (Lord Vernstien's Manor) by Aaron Pettett (Spanker) / Fixes
 
 FINGERPRINT
 {
@@ -15,194 +15,256 @@ FINGERPRINT
 	QVAR "goal_target_4" == 1737
 }
 
-#script "nvscript"
-
-+ObjProp 1402 "PhysType"
+//goals
++ObjProp 1960 "DiffTurnOn"
 {
-	"Type" None
-	"# Submodels" 0
+	"quest var values" 0, 1, 2
 }
--ObjProp 1402 "PhysControl"
-+ObjProp 1402 "Position"
-{
-}
-+ObjProp 1402 "Position"
-{
-	"Location" -93.5, -237.8, -19.5
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 4000
-}
-+ObjProp 577 "TrapQVar"
-{
-	"" =2252:goal_loot_9
-}
-+ObjProp 577 "Scripts"
-{
-	"Script 0" NVTrapSetQVar
-	"Script 1" NVTrigQVar
-}
-+ObjProp 895 "Scripts"
-{
-	"Script 0" NVTrapSetQVar
-	"Script 1" NVTrigQVar
-}
-+ObjProp 895 "TrapQVar"
-{
-	"" =0:goal_visible_9
-}
-+Link 7 895 "ControlDevice"
-{
-}
-+ObjProp 7 "Scripts"
-{
-	"Script 0" TrigContained
-}
-+Link 7 577 "ControlDevice"
-{
-}
-+ObjProp 1737 "Scripts"
-{
-	"Script 1" TrigRoomPlayer
-}
-+ObjProp 716 "Scripts"
-{
-	"Script 0" NVTrapSetQVar
-}
-+ObjProp 716 "TrapQVar"
-{
-	"" =0:goal_visible_10
-}
-+Link 7 716 "ControlDevice"
-{
-}
-+ObjProp 896 "Scripts"
++ObjProp 1960 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 886 "TrapQVar"
++ObjProp 1960 "TrapQVar"
 {
-	"" =1:goal_state_6
+	"" =1:goal_final_4
 }
-+ObjProp 936 "Scripts"
++ObjProp 1961 "DiffTurnOn"
 {
-	"Script 0" TrapSetQVar
+	"quest var values" 0, 1, 2
 }
-+Link 1737 896 "ControlDevice"
-{
-}
-+Link 1737 936 "ControlDevice"
-{
-}
-+ObjProp 1039 "Scripts"
-{
-	"Script 0" NVTrapSetQVar
-}
-+ObjProp 1039 "TrapQVar"
-{
-	"" =847:goal_target_10
-}
-+Link 7 1039 "ControlDevice"
-{
-}
-+ObjProp 1161 "Scripts"
++ObjProp 1961 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+Link 7 1161 "ControlDevice"
-{
-}
-+ObjProp 5 "Scripts"
-{
-	"Script 0" NVTrapSetQVar
-}
-+ObjProp 5 "TrapQVar"
-{
-	"" =1:goal_bonus_10
-}
-+ObjProp 1515 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1515 "TrapQVar"
-{
-	"" =1:goal_bonus_9
-}
-+Link 7 5 "ControlDevice"
-{
-}
-+Link 7 1515 "ControlDevice"
-{
-}
-+Link 7 914 "ControlDevice"
-{
-}
-+Link 7 932 "ControlDevice"
-{
-}
-+ObjProp 912 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 912 "TrapQVar"
-{
-	"" =0:goal_visible_8
-}
-+ObjProp 913 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 913 "TrapQVar"
++ObjProp 1961 "TrapQVar"
 {
 	"" =0:goal_state_8
 }
-+ObjProp 2066 "Scripts"
++ObjProp 1962 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 1962 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 2066 "TrapQVar"
++ObjProp 1962 "TrapQVar"
 {
-	"" =0:goal_type_8
+	"" =0:goal_visible_10
 }
-+Link 7 912 "ControlDevice"
-{
-}
-+Link 7 913 "ControlDevice"
+-Receptron 804 "CrateStim"
++Link 804 2109 "ControlDevice"
 {
 }
-+Link 7 2066 "ControlDevice"
++Link 804 1737 "Route"
 {
+}
++ObjProp 804 "Scripts"
+{
+	"Script 0" TrigRoomObject
+}
+-StimSource 2109 "CrateStim"
++ObjProp 2109 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2109 "TrapQVar"
+{
+	"" =1:goal_state_7
+}
+-Link 805 2110 "ControlDevice"
++Link 805 535 "ControlDevice"
+{
+}
++Link 535 2110 "ControlDevice"
+{
+}
++ObjProp 535 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+//secrets
++Receptron 430 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 430 "DiffRemoveProp"
+{
+	"quest var values" 0
+	"alt quest var values" 1, 2
+	"Properties" DarkStat
+}
++Receptron 792 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 792 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1109 "DiffRemoveProp"
+{
+	"quest var values" 0, 1
+	"alt quest var values" 2
+	"Properties" DarkStat
+}
++ObjProp 1132 "DiffRemoveProp"
+{
+	"quest var values" 2
+	"alt quest var values" 0, 1
+	"Properties" FrobInfo
+}
++ObjProp 1132 "FrobInfo"
+{
+}
++ObjProp 1177 "DiffRemoveProp"
+{
+	"quest var values" 0
+	"alt quest var values" 1, 2
+	"Properties" DarkStat
+}
++ObjProp 1261 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1682 "DiffRemoveProp"
+{
+	"quest var values" 0, 1
+	"alt quest var values" 2
+	"Properties" DarkStat
+}
++ObjProp 1823 "DiffRemoveProp"
+{
+	"quest var values" 0, 1
+	"alt quest var values" 2
+	"Properties" DarkStat
+}
+//loot
++ObjProp 441 "DiffDestroy"
+{
+	"quest var values" 0
+}
++ObjProp 442 "DiffDestroy"
+{
+	"quest var values" 0
 }
 +ObjProp 1093 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
 +ObjProp 1094 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
 +ObjProp 1096 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
 +ObjProp 1098 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
 +ObjProp 1099 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
 +ObjProp 1104 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
 +ObjProp 1131 "DiffDestroy"
 {
-	"quest var values" 0,1
+	"quest var values" 0, 1
 }
--Link 1396 1694 "Contains"
-+Link 1909 1694 "Contains"
+-ObjProp 1402 "PhysType"
+ObjProp 1402 "Position"
 {
-	"" Belt
+	"Location" -93.48, -237.87, -19.6
+}
+//doors
++Receptron 152 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 473 "RotDoor"
+{
+	"Open Angle" 272
+}
++Receptron 562 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 563 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 582 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//fireplaces
+ObjProp 616 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 618 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+ObjProp 668 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 670 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+ObjProp 778 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 780 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+//AIs
++ObjProp 1448 "AI_Hearing"
+{
+	"" Below Average
+}
+ObjProp 1449 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1452 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1454 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 1588 "AI_Hearing"
+{
+	"" Below Average
 }

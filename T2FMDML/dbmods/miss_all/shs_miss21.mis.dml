@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Shining Standards by Aaron Pettett (Spanker) / Fixes
+//T2 FM: Shining Standards (The Prometheus) by Aaron Pettett (Spanker) / Fixes
 
 FINGERPRINT
 {
@@ -15,7 +15,69 @@ FINGERPRINT
 	QVAR "goal_target_0" == 452
 }
 
-+ObjProp 182 "Locked"
+#script "miss10"
+#script "nvscript"
+
+//loot stats, goals
++ObjProp 90 "DiffTurnOn"
 {
-	"" false
+	"quest var values" 0, 1, 2
+}
++ObjProp 90 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 90 "TrapQVar"
+{
+	"" =0:DrSCmLoot
+}
+ObjProp 569 "Scripts"
+{
+	"Script 1" FixLootGoal
+}
++ObjProp 569 "TrapQVar"
+{
+	"" 7
+}
++ObjProp 91 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 91 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++Link 91 573 "ControlDevice"
+{
+}
+-Link 573 574 "ControlDevice"
++ObjProp 573 "DesignNote"
+{
+	"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=574
+}
++ObjProp 573 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+}
++ObjProp 574 "TrapFlags"
+{
+	"" NoOff
+}
+//secrets / loot
+-ObjProp 182 "Scripts"
+-ObjProp 496 "Scripts"
++ObjProp 470 "BlockFrob"
+{
+	"" true
+}
+//AIs
++ObjProp 10 "AI_Hearing"
+{
+	"" Well Below Average
+}
+-MetaProp 403 -1688
++MetaProp 403 -1688
++ObjProp 403 "AI_Hearing"
+{
+	"" Well Below Average
 }
