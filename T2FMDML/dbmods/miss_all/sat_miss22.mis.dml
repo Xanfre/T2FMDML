@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Saints and Thieves by Jani Saarijärvi (Spitter) / Fix deposit scroll objective
+//T2 FM: Saints and Thieves by Jani Saarijärvi (Spitter) / Fixes
 
 FINGERPRINT
 {
@@ -15,36 +15,40 @@ FINGERPRINT
 	QVAR "goal_target_2" == 1142
 }
 
-+Link 1869 1872 "ControlDevice"
+//goals
+-MetaProp 183 -6937
+-Link 183 1869 "ControlDevice"
+-Link 183 1857 "ControlDevice"
+-Link 183 1856 "ControlDevice"
++Link 183 1872 "ControlDevice"
 {
 }
-+Link 183 1023 "ControlDevice"
++ObjProp 183 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=1856; NVRelayTrapCount=1
+}
++ObjProp 183 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrigRoomDeposit
+}
+-Link 1870 183 "ScriptParams"
+-Link 1870 183 "ScriptParams"
++Link 1762 1751 "ControlDevice"
 {
 }
-+ObjProp 1023 "Scripts"
++ObjProp 1751 "Scripts"
 {
-	"Script 0" StdDoor
-	"Script 1" TrigDoorOpen
+	"Script 0" TrapSetQVar
 }
-+Link 1023 1872 "ControlDevice"
++ObjProp 1751 "TrapQVar"
 {
+	"" =1:goal_state_10
 }
-+ObjProp 1023 "TransDoor"
-{
-	"Closed Position" 0
-	"Open Position" 1
-	"Base Speed" 6
-	"Axis" X-Axis
-	"Status" Closed
-	"Hard Limits?" false
-	"Blocks Vision?" false
-	"Blocks Sound %" 0
-	"Lean Blocks Sound %" 0
-	"Push Mass" 0
-}
+//storage key
 -ObjProp 706 "PhysType"
-+ObjProp 706 "PhysType"
+//door
+ObjProp 1453 "RotDoor"
 {
-	"Type" None
-	"# Submodels" 0
+	"Open Angle" 271
 }
