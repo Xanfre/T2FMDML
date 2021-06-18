@@ -25,12 +25,13 @@ FINGERPRINT
 }
 +ObjProp 183 "DesignNote"
 {
-	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=1856; NVRelayTrapCount=1
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=1856; NVRelayTrapCount=1; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2TDest=1857; NVRelayTrap2Count=1
 }
 +ObjProp 183 "Scripts"
 {
 	"Script 0" NVRelayTrap
-	"Script 1" TrigRoomDeposit
+	"Script 1" NVRelayTrap2
+	"Script 2" TrigRoomDeposit
 }
 -Link 1870 183 "ScriptParams"
 -Link 1870 183 "ScriptParams"
