@@ -73,6 +73,7 @@ Dead Flower
 The Dead of Winter
 Death's Cold Embrace
 A Debt Repaid
+Deep Trouble: City Under the Sea
 Delford Abbey
 The Den
 The Diamond

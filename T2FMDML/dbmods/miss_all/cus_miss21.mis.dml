@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: Deep Trouble: City Under the Sea (Mother's Playground) by John D. & Dark Assassin / Fixes
+
+FINGERPRINT
+{
+	1139 [-11 32 141]
+	1057 [244 -45 121]
+	964 [-103 -24 127]
+	1056 [191 -45 121]
+	1165 [51 -28 135]
+	2322 [51 -136 157]
+	2127 [135 -159 133]
+	1928 [120 10 142]
+	QVAR "goal_target_3" == 1160
+}
+
+//hidden goals
++Link 777 3129 "ControlDevice"
+{
+}
++Link 777 1840 "ControlDevice"
+{
+}
++Link 1569 1840 "ControlDevice"
+{
+}
++ObjProp 1569 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 1840 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1840 "TrapQVar"
+{
+	"" =1:goal_visible_7
+}
++Link 1841 1840 "ControlDevice"
+{
+}
