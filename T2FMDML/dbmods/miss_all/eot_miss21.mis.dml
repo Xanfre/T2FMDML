@@ -1,0 +1,112 @@
+DML1
+
+//T2 FM: Five Tigers: Eye of the Tiger by W. Scott Thune (Catman) / Fixes
+
+FINGERPRINT
+{
+	1484 [-4 -51 55]
+	1999 [-67 -18 11]
+	1205 [-63 62 18]
+	1283 [-79 138 18]
+	2328 [-138 48 19]
+	701 [126 33 11]
+	1801 [-90 -92 67]
+	1820 [36 -84 74]
+	QVAR "goal_target_0" == 1390
+}
+
+#script "squirrel"
+
+//paintings
+-ObjProp 1539 "PhysType"
+ObjProp 1539 "Position"
+{
+	"Location" -68, -40.21, 50
+}
++ObjProp 1539 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1540 "PhysType"
+ObjProp 1540 "Position"
+{
+	"Location" -68, -95.79, 50
+	"Heading" 8000
+}
++ObjProp 1540 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1541 "PhysType"
+ObjProp 1541 "Position"
+{
+	"Location" -48, -95.79, 50
+	"Heading" 8000
+}
++ObjProp 1541 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1542 "PhysType"
+ObjProp 1542 "Position"
+{
+	"Location" -88, -95.79, 50
+	"Heading" 8000
+}
++ObjProp 1542 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1852 "PhysType"
+ObjProp 1852 "Position"
+{
+	"Location" 16, -72.21, 72
+}
++ObjProp 1852 "PhysType"
+{
+	"Type" OBB
+}
+//windows
++ObjProp 316 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" false
+}
++ObjProp 316 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.02,0.0
+}
++ObjProp 330 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" false
+}
++ObjProp 330 "DesignNote"
+{
+	"" RepositionLoc=0.02,0.0,0.0
+}
+//locker doors
+-ObjProp 331 "PhysType"
++ObjProp 331 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 331 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 2254 "PhysType"
++ObjProp 2254 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 2254 "BlockFrob"
+{
+	"" true
+}

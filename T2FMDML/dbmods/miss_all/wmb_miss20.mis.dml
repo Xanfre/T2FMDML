@@ -1,0 +1,72 @@
+DML1
+
+//T2 FM: We Miss You, Bob! by Monastiri / Fixes
+
+FINGERPRINT
+{
+	248 [18 -97 -3]
+	76 [-15 -80 -3]
+	194 [-1 -118 -5]
+	184 [-16 -82 -2]
+	389 [-32 -70 -3]
+	89 [-15 -112 -4]
+	47 [-4 -119 0]
+	226 [15 -88 -5]
+	QVAR "goal_target_0" == 312
+}
+
+#script "squirrel"
+
+//plate
+-ObjProp 280 "PhysType"
+ObjProp 280 "Position"
+{
+	"Location" 31.3564, -65.9583, -5.39894
+}
+//shovel
+-ObjProp 196 "PhysType"
+ObjProp 196 "Position"
+{
+	"Location" -1.81154, -118.704, -3.48015
+}
+//barrels
++ObjProp 57 "DesignNote"
+{
+	"" RepositionLoc=0.2,-0.2,0.0
+}
++ObjProp 57 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 128 "DesignNote"
+{
+	"" RepositionLoc=0.2,0.0,0.0
+}
++ObjProp 128 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 129 "DesignNote"
+{
+	"" RepositionLoc=0.0,-0.5,0.0
+}
++ObjProp 129 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 130 "DesignNote"
+{
+	"" RepositionLoc=0.2,-0.2,0.0
+}
++ObjProp 130 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}
++ObjProp 131 "DesignNote"
+{
+	"" RepositionLoc=0.2,0.0,0.0
+}
++ObjProp 131 "Scripts"
+{
+	"Script 0" SimRepositionOfst
+}

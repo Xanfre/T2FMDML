@@ -92,6 +92,7 @@ The Fall of Anduin Karol
 The Fever
 Fierce Competition
 First Day of Winter
+Five Tigers: Eye of the Tiger
 Five Tigers: HBS Iron Butterfly
 Fletcher's Final Mistake
 Flowers for a Friend
@@ -282,6 +283,7 @@ Walkin' Da Moon
 A Water Arrow in the Fire
 The WaterWay Tunnel part 2
 The Way of the Sword
+We Miss You, Bob!
 The Wedding of Lady Dark
 What Lies Below
 What a Drag!
