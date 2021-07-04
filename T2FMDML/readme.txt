@@ -40,6 +40,7 @@ Burglary in Blackbrook
 Calendra's Legacy
 Carkess Escape
 Carneval
+The Cathedral
 Cathedral of the Damned
 The Cell Next Door
 Children of the Future

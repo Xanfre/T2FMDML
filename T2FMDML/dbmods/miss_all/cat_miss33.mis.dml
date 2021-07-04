@@ -1,0 +1,88 @@
+DML1
+
+//T2 FM: The Cathedral by Meshpit / Fixes
+
+FINGERPRINT
+{
+	77 [12 -91 17]
+	84 [-44 -21 41]
+	173 [-86 -61 8]
+	302 [-16 2 33]
+	306 [32 -160 20]
+	111 [-36 -44 13]
+	272 [-61 -52 29]
+	407 [-12 -10 35]
+	QVAR "goal_target_0" == 193
+}
+
+//final goal
++ObjProp 8 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 8 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 8 "TrapQVar"
+{
+	"" =1:goal_final_3
+}
++ObjProp 9 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 9 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 9 "TrapQVar"
+{
+	"" =0:goal_state_3
+}
++ObjProp 10 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 10 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 10 "TrapQVar"
+{
+	"" =373:goal_target_3
+}
++ObjProp 11 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 11 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 11 "TrapQVar"
+{
+	"" =4:goal_type_3
+}
++ObjProp 12 "DiffTurnOn"
+{
+	"quest var values" 2
+}
++ObjProp 12 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 12 "TrapQVar"
+{
+	"" =1:goal_visible_3
+}
+//doors
+-ObjProp 15 "JointPos"
++Link 317 318 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 356 "Locked"
+{
+	"" true
+}
