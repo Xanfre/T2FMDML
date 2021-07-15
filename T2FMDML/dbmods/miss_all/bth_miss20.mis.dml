@@ -70,6 +70,8 @@ ObjProp 78 "RotDoor"
 +ObjProp 553 "PhysCanMant"
 {
 }
+//gas arrow
+-ObjProp 595 "DeathStage"
 //bafford's sceptre
 -ObjProp 979 "DiffPermit"
 +ObjProp 979 "PickDist"

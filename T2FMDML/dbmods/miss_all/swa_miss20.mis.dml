@@ -42,6 +42,8 @@ FINGERPRINT
 +Link 686 418 "ControlDevice"
 {
 }
+//fire arrow
+-ObjProp 136 "DeathStage"
 //secret doors
 +MetaProp 279 -2420
 +MetaProp 508 -2420

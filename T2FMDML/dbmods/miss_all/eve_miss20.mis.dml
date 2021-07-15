@@ -82,6 +82,11 @@ FINGERPRINT
 +ObjProp 573 "PhysCanMant"
 {
 }
+//arrows
+-ObjProp 27 "DeathStage"
+-ObjProp 119 "DeathStage"
+-ObjProp 124 "DeathStage"
+-ObjProp 341 "DeathStage"
 //safe
 -ObjProp 78 "PhysType"
 ObjProp 78 "Position"
@@ -174,16 +179,19 @@ ObjProp 268 "GameName"
 {
 	"" Name_ThrowingDart: "Throwing Dart"
 }
+-ObjProp 424 "DeathStage"
 -ObjProp 424 "PhysType"
 +ObjProp 424 "GameName"
 {
 	"" Name_ThrowingDart: "Throwing Dart"
 }
+-ObjProp 425 "DeathStage"
 -ObjProp 425 "PhysType"
 +ObjProp 425 "GameName"
 {
 	"" Name_ThrowingDart: "Throwing Dart"
 }
+-ObjProp 426 "DeathStage"
 -ObjProp 426 "PhysType"
 +ObjProp 426 "GameName"
 {
@@ -199,6 +207,7 @@ ObjProp 268 "GameName"
 {
 	"" Name_ThrowingDart: "Throwing Dart"
 }
+-ObjProp 433 "DeathStage"
 -ObjProp 433 "PhysType"
 +ObjProp 433 "GameName"
 {

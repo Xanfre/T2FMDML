@@ -269,6 +269,8 @@ ObjProp 609 "PGLaunchInfo"
 {
 	"Max time" 2.00
 }
+//broadhead arrows
+-ObjProp 203 "DeathStage"
 //switches
 +Link 615 706 "FrobProxy"
 {

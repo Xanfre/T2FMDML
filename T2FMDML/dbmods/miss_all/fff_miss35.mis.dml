@@ -193,6 +193,8 @@ ObjProp 206 "Position"
 	"Type" OBB
 }
 //arrows
+-ObjProp 115 "DeathStage"
+-ObjProp 310 "DeathStage"
 -ObjProp 326 "PhysType"
 -ObjProp 327 "PhysType"
 -ObjProp 328 "PhysType"

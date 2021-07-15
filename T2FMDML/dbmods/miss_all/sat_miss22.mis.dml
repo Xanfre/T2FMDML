@@ -46,6 +46,9 @@ FINGERPRINT
 {
 	"" =1:goal_state_10
 }
+//DeathStage 12
+-ObjProp 111 "DeathStage"
+-ObjProp 1946 "DeathStage"
 //storage key
 -ObjProp 706 "PhysType"
 //door

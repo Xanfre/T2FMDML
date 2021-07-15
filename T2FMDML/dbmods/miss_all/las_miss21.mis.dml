@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Lord Ashton Series by Christine Schneider / Fix door
+//T2 FM: The Lord Ashton Series (A Night's Stroll) by Christine Schneider / Fixes
 
 FINGERPRINT
 {
@@ -15,26 +15,26 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1139
 }
 
+//secret door
 -ObjProp 7 "TransDoor"
--ObjProp 7 "RotDoor"
-+ObjProp 7 "TransDoor"
+//lord ashton's rosary
++ObjProp 258 "FrobInfo"
 {
-	"Closed Position" 0.00
-	"Open Position" 7.00
-	"Base Speed" 3.00
-	"Axis" "X-Axis"
-	"Status" "Closed"
-	"Hard Limits?" false
-	"Blocks Vision?" false
-	"Blocks Sound %" 60.00
-	"Lean Blocks Sound %" 0.00
-	"Push Mass" 25.00
+	"World Action" Move
 }
-ObjProp 469 "FrobInfo"
+//lord bufford's painting
++ObjProp 359 "FrobInfo"
 {
-	"World Action" Move,Script
+	"World Action" Move
 }
-ObjProp 1020 "FrobInfo"
++ObjProp 359 "NoDrop"
 {
-	"World Action" Move,Script
+	"" true
+}
+//loot
++ObjProp 469 "Loot"
+{
+}
++ObjProp 1020 "Loot"
+{
 }

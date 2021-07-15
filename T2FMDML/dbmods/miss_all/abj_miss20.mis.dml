@@ -108,6 +108,10 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
+//DeathStage 12
+-ObjProp 86 "DeathStage"
+-ObjProp 438 "DeathStage"
+-ObjProp 1119 "DeathStage"
 //chests
 -ObjProp 146 "StTweqLock"
 -ObjProp 147 "StTweqLock"

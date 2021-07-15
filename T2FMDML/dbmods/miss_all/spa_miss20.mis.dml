@@ -40,7 +40,7 @@ Create -2086 "GoalFix"
 }
 +ObjProp 297 "TrapFlags"
 {
-	"" Once, NoOff
+	"" Once
 }
 +ObjProp 297 "Scripts"
 {
@@ -69,6 +69,8 @@ Create -2086 "GoalFix"
 	"Script 0" NVRelayTrap
 	"Script 1" NVLinkBuilder
 }
+//broadhead arrows
+-ObjProp 39 "DeathStage"
 //mechanist priest
 +ObjProp 285 "InvRendType"
 {

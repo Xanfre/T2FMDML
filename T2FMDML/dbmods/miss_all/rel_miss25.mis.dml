@@ -193,6 +193,10 @@ ObjProp 843 "FrobInfo"
 {
 	"World Action" Move
 }
+//arrows
+-ObjProp 113 "DeathStage"
+-ObjProp 614 "DeathStage"
+-ObjProp 744 "DeathStage"
 //painting
 -ObjProp 119 "PhysType"
 ObjProp 119 "Position"

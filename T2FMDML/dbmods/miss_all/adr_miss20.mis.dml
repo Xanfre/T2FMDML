@@ -230,6 +230,19 @@ ObjProp 2030 "Position"
 {
 	"Script 0" NVRemovePropertyTrap
 }
+//arrows / gas bombs
+-ObjProp 234 "DeathStage"
+-ObjProp 355 "DeathStage"
+-ObjProp 358 "DeathStage"
+-ObjProp 658 "DeathStage"
+-ObjProp 1269 "DeathStage"
+-ObjProp 1270 "DeathStage"
+-ObjProp 1271 "DeathStage"
+-ObjProp 1272 "DeathStage"
+-ObjProp 1804 "DeathStage"
+-ObjProp 1995 "DeathStage"
+-ObjProp 2543 "DeathStage"
+-ObjProp 2636 "DeathStage"
 //mantling
 +ObjProp 928 "PhysCanMant"
 {
@@ -246,8 +259,6 @@ ObjProp 2030 "Position"
 +ObjProp 2708 "PhysCanMant"
 {
 }
-//gas bombs
--ObjProp 1269 "DeathStage"
 //chemicals
 +ObjProp 1355 "CombineType"
 {

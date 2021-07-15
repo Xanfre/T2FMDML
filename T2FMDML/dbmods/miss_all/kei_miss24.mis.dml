@@ -1,0 +1,44 @@
+DML1
+
+//T2 FM: Keeper Investigations (Returning Home) by Steffen Lehnert (intruder) / Fixes
+
+FINGERPRINT
+{
+	1477 [-76 155 -56]
+	1066 [-48 173 -62]
+	464 [-87 19 -50]
+	1991 [-22 -49 -48]
+	1522 [-80 206 -63]
+	233 [-103 54 -47]
+	1900 [-48 444 -76]
+	662 [-126 104 -24]
+	QVAR "goal_target_6" == 1198
+}
+
+//chest
+-ObjProp 417 "Scripts"
+-Link 417 302 "ControlDevice"
++Link 417 384 "ControlDevice"
+{
+}
++Link 384 302 "ControlDevice"
+{
+}
++ObjProp 384 "TrapFlags"
+{
+	"" Once, Invert
+}
++ObjProp 384 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+//doors
+-ObjProp 369 "JointPos"
+ObjProp 1156 "TransDoor"
+{
+	"Open Position" 9.00
+}
+//arrows
+-ObjProp 66 "DeathStage"
+-ObjProp 524 "DeathStage"
+-ObjProp 2035 "DeathStage"

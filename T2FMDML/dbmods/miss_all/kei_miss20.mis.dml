@@ -1,0 +1,73 @@
+DML1
+
+//T2 FM: Keeper Investigations (Dawn of a New Age) by Steffen Lehnert (intruder) / Fixes
+
+FINGERPRINT
+{
+	685 [-130 100 -4]
+	946 [-103 -163 -76]
+	1146 [-225 -42 -23]
+	1336 [-266 -140 -37]
+	218 [-105 287 -4]
+	1718 [-56 250 -14]
+	667 [114 102 -20]
+	253 [-220 261 -5]
+	QVAR "goal_target_0" == 699
+}
+
+//roof
+-ObjProp 71 "PhysType"
++ObjProp 71 "PhysType"
+{
+	"Type" OBB
+}
+//mantling
+Create -2819
+{
+	-ObjProp "PhysType"
+	ObjProp "Position"
+	{
+		"Location" 23.3482, 132.04, 10.5
+	}
+	+ObjProp "Scale"
+	{
+		"" 11.8571, 0.0770154, 0.142857
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -2819
+{
+	-ObjProp "PhysType"
+	ObjProp "Position"
+	{
+		"Location" 44.04, 127, 10.5
+		"Heading" 4000
+	}
+	+ObjProp "Scale"
+	{
+		"" 2.85714, 0.0770154, 0.142857
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}

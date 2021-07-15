@@ -40,7 +40,7 @@ ObjProp 853 "AI_Converation"
 }
 +ObjProp 1067 "TrapFlags"
 {
-	"" Once, NoOff
+	"" Once
 }
 //keys
 +ObjProp 20 "SlayResult"
@@ -220,6 +220,8 @@ ObjProp 206 "Position"
 {
 	"Type" OBB
 }
+//moss arrow
+-ObjProp 684 "DeathStage"
 //elevator button
 +Link 733 949 "ControlDevice"
 {

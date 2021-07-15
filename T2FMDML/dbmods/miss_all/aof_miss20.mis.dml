@@ -104,6 +104,12 @@ Create -2086 "GoalFix"
 {
 	"" Double
 }
+//arrows
+-ObjProp 7 "DeathStage"
+-ObjProp 8 "DeathStage"
+-ObjProp 86 "DeathStage"
+-ObjProp 172 "DeathStage"
+-ObjProp 299 "DeathStage"
 //levers
 -Link 78 79 "ControlDevice"
 -Link 79 78 "ControlDevice"
