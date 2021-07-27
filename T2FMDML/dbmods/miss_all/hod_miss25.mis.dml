@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Homeless Dude (Thief Anniversary Contest) by John The Beggar / Fix loot goal and the torc
+//T2 FM: The Homeless Dude (Thief Anniversary Contest) by John The Beggar / Fixes
 
 FINGERPRINT
 {
@@ -15,33 +15,58 @@ FINGERPRINT
 	QVAR "goal_target_1" == 200
 }
 
-+ObjProp 32 "Scripts"
+//goals
++ObjProp 42 "DiffTurnOn"
 {
-	"Script 0" TrigDoorOpen
+	"quest var values" 0, 1, 2
 }
-+Link 32 45 "ControlDevice"
++ObjProp 42 "Scripts"
 {
+	"Script 0" TrapSetQVar
 }
-+Link 32 46 "ControlDevice"
++ObjProp 42 "TrapQVar"
 {
+	"" =250:goal_loot_2
 }
-+Link 32 47 "ControlDevice"
++ObjProp 43 "DiffTurnOn"
 {
+	"quest var values" 0, 1, 2
 }
-+Link 200 65 "ControlDevice"
++ObjProp 43 "Scripts"
 {
+	"Script 0" TrapSetQVar
+}
++ObjProp 43 "TrapQVar"
+{
+	"" =500:goal_loot_3
+}
++ObjProp 44 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 44 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 44 "TrapQVar"
+{
+	"" =1000:goal_loot_4
+}
++ObjProp 45 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
 }
 +ObjProp 45 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 65 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
 +ObjProp 45 "TrapQVar"
 {
-	"" =250:goal_loot_2
+	"" =0:goal_specials_2
+}
++ObjProp 46 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
 }
 +ObjProp 46 "Scripts"
 {
@@ -49,7 +74,11 @@ FINGERPRINT
 }
 +ObjProp 46 "TrapQVar"
 {
-	"" =500:goal_loot_3
+	"" =0:goal_specials_3
+}
++ObjProp 47 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
 }
 +ObjProp 47 "Scripts"
 {
@@ -57,9 +86,9 @@ FINGERPRINT
 }
 +ObjProp 47 "TrapQVar"
 {
-	"" =1000:goal_loot_4
+	"" =0:goal_specials_4
 }
-+ObjProp 46 "Scripts"
++ObjProp 65 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
@@ -67,72 +96,10 @@ FINGERPRINT
 {
 	"" =1:goal_state_1
 }
++Link 200 65 "ControlDevice"
+{
+}
 +ObjProp 200 "Scripts"
 {
 	"Script 0" TrigContained
-}
-+ObjProp 200 "FrobInfo"
-{
-	"World Action" Move,Script
-}
-+ObjProp 45 "DiffDestroy"
-{
-	"quest var values" 1,2
-}
-+ObjProp 46 "DiffDestroy"
-{
-	"quest var values" 0,2
-}
-+ObjProp 47 "DiffDestroy"
-{
-	"quest var values" 0,1
-}
-+ObjProp 102 "DiffDestroy"
-{
-	"quest var values" 1,2
-}
-+ObjProp 163 "DiffDestroy"
-{
-	"quest var values" 0,2
-}
-+ObjProp 164 "DiffDestroy"
-{
-	"quest var values" 0,1
-}
-+ObjProp 45 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 102 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 102 "TrapQVar"
-{
-	"" =0:goal_specials_2
-}
-+ObjProp 163 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 163 "TrapQVar"
-{
-	"" =0:goal_specials_3
-}
-+ObjProp 164 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 164 "TrapQVar"
-{
-	"" =0:goal_specials_4
-}
-+Link 32 102 "ControlDevice"
-{
-}
-+Link 32 163 "ControlDevice"
-{
-}
-+Link 32 164 "ControlDevice"
-{
 }

@@ -16,21 +16,19 @@ FINGERPRINT
 }
 
 //final goal
-+ObjProp 2522 "Scripts"
++ObjProp 123 "DiffTurnOn"
 {
-	"Script 0" TrigContained
+	"quest var values" 0, 1, 2
 }
-+Link 2522 1599 "ControlDevice"
-{
-}
-+ObjProp 1599 "Scripts"
++ObjProp 123 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 1599 "TrapQVar"
++ObjProp 123 "TrapQVar"
 {
 	"" =0:goal_irreversible_9
 }
+
 //haunt
 +ObjProp 1941 "AI_Hearing"
 {
