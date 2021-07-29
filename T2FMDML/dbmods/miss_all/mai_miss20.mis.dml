@@ -16,18 +16,15 @@ FINGERPRINT
 }
 
 //final goal
-+Link 1094 863 "ControlDevice"
++ObjProp 70 "DiffTurnOn"
 {
+	"quest var values" 0, 1, 2
 }
-+ObjProp 1094 "Scripts"
-{
-	"Script 0" TrigContained
-}
-+ObjProp 863 "Scripts"
++ObjProp 70 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 863 "TrapQVar"
++ObjProp 70 "TrapQVar"
 {
 	"" =1:goal_final_1
 }

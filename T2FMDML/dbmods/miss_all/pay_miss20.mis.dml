@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Payback (Small Stock Resource Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fix no kill objective
+//T2 FM: Payback (Small Stock Resource Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes
 
 FINGERPRINT
 {
@@ -15,199 +15,81 @@ FINGERPRINT
 	QVAR "goal_target_6" == 1033
 }
 
-//Nokill expert
-+ObjProp 339 "Scripts"
+//goals
++ObjProp 860 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 860 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 339 "TrapQVar"
++ObjProp 860 "TrapQVar"
 {
-	"" -7:goal_target_5
+	"" -52:goal_target_4
 }
-+Link 5 318 "ControlDevice"
++ObjProp 861 "DiffTurnOn"
 {
+	"quest var values" 0, 1, 2
 }
-+Link 5 329 "ControlDevice"
-{
-}
-+Link 5 339 "ControlDevice"
-{
-}
-+ObjProp 318 "Scripts"
++ObjProp 861 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 318 "TrapQVar"
++ObjProp 861 "TrapQVar"
 {
-	"" =2:goal_type_5
+	"" -14:goal_target_5
 }
-+ObjProp 329 "Scripts"
+//doors
++MetaProp 19 -2420
++MetaProp 737 -2420
+ObjProp 201 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 690 "BlockFrob"
+{
+	"" true
+}
+//AIs
++ObjProp 313 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 329 "TrapQVar"
++ObjProp 313 "TrapQVar"
 {
-	"" =1:goal_reverse_5
+	"" =3:goal_state_4
 }
-+ObjProp 5 "Scripts"
++ObjProp 964 "AI_Hearing"
 {
-	"Script 0" TrigContained
+	"" Below Average
 }
-//Nokill hard
-+ObjProp 317 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+Link 5 316 "ControlDevice"
++Link 965 313 "ControlDevice"
 {
 }
-+Link 5 316 "ControlDevice"
+ObjProp 965 "Position"
 {
+	"Location" 492.478, 395.896, 516.4
 }
-+Link 5 506 "ControlDevice"
++ObjProp 965 "Scripts"
 {
+	"Script 0" TrigSlain
 }
-+ObjProp 316 "Scripts"
++ObjProp 967 "AI_Hearing"
 {
-	"Script 0" TrapSetQVar
+	"" Below Average
 }
-+ObjProp 316 "TrapQVar"
+ObjProp 978 "AI_Hearing"
 {
-	"" =2:goal_type_4
+	"" Well Below Average
 }
-+ObjProp 506 "Scripts"
+//barrel
+ObjProp 908 "Position"
 {
-	"Script 0" TrapSetQVar
+	"Location" 529.27, 507.57, 493.87
 }
-+ObjProp 506 "TrapQVar"
+//list
++ObjProp 1027 "NoDrop"
 {
-	"" =1:goal_reverse_4
-}
-Create -464 "GoalDiffSwitch"
-{
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrigProximity
-	}
-	+ObjProp "designnote"
-	{
-		"" Proximity=2000
-	}
-}
-Create -1823 "GoalDiffTrap1a"
-{
-	+ObjProp "TrapQVar"
-	{
-		"" -26:goal_target_4
-	}
-}
-+Link "GoalDiffSwitch" "GoalDiffTrap1a" "ControlDevice"
-{
-}
-//objects
-+StimSource 206 "PingStim"
-{
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
-}
-+Receptron 206 "PingStim"
-{
-	Min 3
-	Max 7
-	Target -506
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 527.4, 503.26, 494.1
-		"Heading" 0
-		"Pitch" 0
-		"Bank" 0
-	}
-}
-+StimSource 469 "PingStim"
-{
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
-}
-+Receptron 469 "PingStim"
-{
-	Min 3
-	Max 7
-	Target -506
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 529.56, 503.29, 494.1
-		"Heading" 0
-		"Pitch" 0
-		"Bank" 0
-	}
-}
-+ObjProp 928 "CfgTweqDelete"
-{
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
-}
-+ObjProp 928 "StTweqDelete"
-{
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
-}
--ObjProp 965 "Position"
-+ObjProp 965 "Position"
-{
-	"Location" 492.47,395.8,516.4
-	"Heading" c000
-	"Pitch" 0
-	"Bank" 0
-}
-+ObjProp 929 "CfgTweqDelete"
-{
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
-}
-+ObjProp 929 "StTweqDelete"
-{
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
+	"" true
 }
