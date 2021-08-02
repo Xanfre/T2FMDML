@@ -15,31 +15,18 @@ FINGERPRINT
 	QVAR "goal_target_0" == 757
 }
 
-+ObjProp 379 "Scripts"
+//goal 2
++ObjProp 515 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 515 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 394 "Scripts"
-{
-	"Script 1" TrigContained
-}
-+ObjProp 379 "TrapQVar"
++ObjProp 515 "TrapQVar"
 {
 	"" =500:goal_loot_2
 }
-+Link 394 379 "ControlDevice"
-{
-}
-+ObjProp 752 "Scripts"
-{
-	"Script 1" TrigContained
-}
-+Link 752 379 "ControlDevice"
-{
-}
--ObjProp 261 "Position"
-+ObjProp 261 "Position"
-{
-	"Location" 448.23,493.79,520.2
-	"Heading" 4000
-}
+//broadhead arrows
+-ObjProp 261 "PhysType"

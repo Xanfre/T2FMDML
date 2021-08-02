@@ -15,26 +15,16 @@ FINGERPRINT
 	QVAR "goal_target_5" == 210
 }
 
-//fix loot objective
-Create -464 "QVarFixSwitch"
+//bonus goal
++ObjProp 928 "DiffTurnOn"
 {
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrigProximity
-	}
-	+ObjProp "designnote"
-	{
-		"" Proximity=2000
-	}
+	"quest var values" 0, 1, 2
 }
-+ObjProp 1087 "Scripts"
++ObjProp 928 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 1087 "TrapQVar"
++ObjProp 928 "TrapQVar"
 {
 	"" =735:goal_loot_8
-}
-+Link "QVarFixSwitch" 1087 "ControlDevice"
-{
 }
