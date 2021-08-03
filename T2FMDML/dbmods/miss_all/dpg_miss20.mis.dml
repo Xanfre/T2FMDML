@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: In dubio pro Garrett by Dainem and PsymH / Fix final goal and two bonus objectives
+//T2 FM: In Dubio pro Garrett by Dainem & PsymH / Fixes
 
 FINGERPRINT
 {
@@ -15,148 +15,251 @@ FINGERPRINT
 	QVAR "goal_target_1" == 580
 }
 
-+ObjProp 1211 "Scripts"
+//goal 6, 10, 14
++ObjProp 36 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 36 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 581 "Scripts"
-{
-	"Script 1" TrigRoomPlayer
-}
-+ObjProp 1211 "TrapQVar"
-{
-	"" =1:goal_state_11
-}
-+Link 581 1211 "ControlDevice"
-{
-}
-+ObjProp 1212 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1212 "TrapQVar"
-{
-	"" =1:goal_state_14
-}
-+Link 581 1212 "ControlDevice"
-{
-}
-+ObjProp 1214 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1214 "TrapQVar"
-{
-	"" =1:goal_state_9
-}
-+Link 581 1214 "ControlDevice"
-{
-}
-+ObjProp 1204 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1204 "TrapQVar"
-{
-	"" =1:goal_state_10
-}
-+Link 581 1204 "ControlDevice"
-{
-}
-+ObjProp 1203 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1203 "TrapQVar"
-{
-	"" =1:goal_state_8
-}
-+Link 581 1203 "ControlDevice"
-{
-}
-+ObjProp 1201 "Scripts"
-{
-	"Script 0" TrapSetQVar
-	"Script 1" TrigQVar
-}
-+ObjProp 1201 "TrapQVar"
-{
-	"" =1:goal_visible_12
-}
-+Link 1800 1201 "ControlDevice"
-{
-}
-+Link 632 1273 "ControlDevice"
-{
-}
-+ObjProp 1273 "Scripts"
-{
-	"Script 0" TrigQVar
-	"Script 1" TrapSetQVar
-}
-+ObjProp 1273 "TrapQVar"
-{
-	"" =1:goal_visible_13
-}
-+ObjProp 303 "Scripts"
-{
-	"Script 0" TrapSetQVar
-	"Script 1" TrigQVar
-}
-+ObjProp 303 "TrapQVar"
-{
-	"" =1:goal_state_13
-}
-+Link 632 303 "ControlDevice"
-{
-}
-+ObjProp 1456 "Scripts"
-{
-	"Script 3" TrigWorldFrob
-}
-+ObjProp 716 "Scripts"
-{
-	"Script 3" TrigWorldFrob
-}
-+ObjProp 1467 "Scripts"
-{
-	"Script 3" TrigWorldFrob
-}
-+ObjProp 1457 "Scripts"
-{
-	"Script 3" TrigWorldFrob
-}
-ObjProp 632 "NoDrop"
-{
-	"" false
-}
-+ObjProp 1794 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 1794 "TrapQVar"
++ObjProp 36 "TrapQVar"
 {
 	"" =1:goal_irreversible_6
 }
-+ObjProp 4 "Scripts"
++ObjProp 37 "DiffTurnOn"
 {
-	"Script 1" TrigContained
+	"quest var values" 0, 1, 2
 }
-+Link 4 1794 "ControlDevice"
-{
-}
-+ObjProp 1067 "TrapQVar"
-{
-	"" =1:goal_state_6
-}
-+Link 632 1067 "ControlDevice"
-{
-}
-+Link 1273 1067 "ControlDevice"
-{
-}
-+ObjProp 1067 "Scripts"
++ObjProp 37 "Scripts"
 {
 	"Script 0" TrapSetQVar
-	"Script 1" TrigQVar
+}
++ObjProp 37 "TrapQVar"
+{
+	"" =1:goal_reverse_14
+}
++ObjProp 38 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 38 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 38 "TrapQVar"
+{
+	"" =38:goal_target_10
+}
+//goal 12 (bonus)
++Link 797 1800 "ControlDevice"
+{
+}
++Link 1800 1465 "ControlDevice"
+{
+}
++ObjProp 1465 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1465 "TrapQVar"
+{
+	"" =1:goal_visible_12
+}
+ObjProp 1457 "Scripts"
+{
+	"Script 1" TrigWorldFrob
+}
+//goal 13 (bonus)
++ObjProp 303 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 303 "TrapQVar"
+{
+	"" =1:goal_visible_13
+}
+-ObjProp 632 "NoDrop"
++Link 632 303 "ControlDevice"
+{
+}
+-ObjProp 632 "PhysType"
++ObjProp 632 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 632 "Scripts"
+{
+	"Script 1" StdScroll
+	"Don't Inherit" true
+}
++ObjProp 1650 "DiffDestroy"
+{
+	"quest var values" 0
+}
+//doors
+-ObjProp 137 "TransDoor"
++MetaProp 137 -2420
+ObjProp 156 "RotDoor"
+{
+	"Open Angle" 274
+}
+ObjProp 167 "RotDoor"
+{
+	"Open Angle" 290
+}
+ObjProp 177 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 184 "RotDoor"
+{
+	"Open Angle" 85
+}
+ObjProp 229 "RotDoor"
+{
+	"Open Angle" 272
+}
+-ObjProp 248 "TransDoor"
+ObjProp 445 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 446 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1297 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++MetaProp 1654 -2420
++ObjProp 2029 "FrobInfo"
+{
+}
+//scrolls
+ObjProp 523 "Position"
+{
+	"Heading" 8000
+}
+ObjProp 538 "Position"
+{
+	"Heading" c000
+}
+ObjProp 580 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 580 "Material Tags"
+{
+	"1: Tags" "Material Carpet"
+}
+//AIs
++ObjProp 651 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard2
+}
++ObjProp 652 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 660 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 661 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 662 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 663 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 664 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 694 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 695 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 861 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 861 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 1074 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1075 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 1328 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cthfm02
+}
++Link 1328 1321 "ControlDevice"
+{
+}
++ObjProp 1328 "Scripts"
+{
+	"Script 0" TrigSlain
+}
++ObjProp 1321 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1321 "TrapQVar"
+{
+	"" =3:goal_state_7
+}
+//pedestal
+-ObjProp 825 "PhysPPlate"
+//painting
+ObjProp 1550 "CollisionType"
+{
+	"" None
+}
+//fireplace
+ObjProp 1582 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 1584 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+//banner
++ObjProp 1817 "BlockFrob"
+{
+	"" true
 }

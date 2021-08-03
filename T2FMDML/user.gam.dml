@@ -1,0 +1,12 @@
+DML1
+
+//T2 FM: In Dubio pro Garrett by Dainem & PsymH / Fixes
+
+FINGERPRINT
+{
+	NAME -8097 "sg310102"
+	NAME -7004 "t_fam/old_ramirez/r07"
+}
+
+//book
+-ObjProp -22 "PhysType"
