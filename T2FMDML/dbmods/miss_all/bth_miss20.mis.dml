@@ -17,14 +17,129 @@ FINGERPRINT
 
 #script "nvscript"
 
-//tulip's ledger (goal 8)
+//goal 8
++Receptron 258 "EarthStim"
+{
+	Min 9
+	Max None
+	Target -3458
+	Effect "create_obj"
+	{
+		"Position" 107, 46.7, 40.5
+		"Heading" 180
+	}
+}
+++Receptron 258 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Effect "slay"
+}
+-ObjProp 258 "StackCount"
++ObjProp 258 "FrobInfo"
+{
+	"World Action" Move
+	"Tool Action" Script
+}
+ObjProp 258 "NoDrop"
+{
+	"" true
+}
+-Link 258 1100 "Route"
+-Link 258 1101 "ControlDevice"
+-Link 258 1105 "ControlDevice"
++Link 258 337 "ControlDevice"
+{
+}
+ObjProp 258 "Scripts"
+{
+	"Script 0" TrigSlain
+}
++Receptron 290 "EarthStim"
+{
+	Min 9
+	Max None
+	Target -34
+	Effect "create_obj"
+	{
+		"Position" 107, 45, 39.6
+		"Pitch" 90
+	}
+}
+++Receptron 290 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Effect "slay"
+}
 +ObjProp 290 "DesignNote"
 {
-	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapTDest=1098
+}
++ObjProp 290 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Tool Action" Script
+}
+ObjProp 290 "NoDrop"
+{
+	"" true
+}
+-Link 290 1100 "Route"
+-Link 290 1106 "ControlDevice"
+-Link 290 1104 "ControlDevice"
+-Link 290 1098 "ControlDevice"
++Link 290 337 "ControlDevice"
+{
 }
 ObjProp 290 "Scripts"
 {
-	"Script 2" NVRelayTrap
+	"Script 1" NVRelayTrap
+	"Script 2" TrigSlain
+}
++StimSource 337 "EarthStim"
+{
+	Intensity 10
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob World -> Inv
+		}
+	}
+}
++ObjProp 337 "DesignNote"
+{
+	"" NVRemovePropertyTrapCapacitor=2; NVRemovePropertyTrapProp="FrobInfo"
+}
++Link 337 1103 "ControlDevice"
+{
+}
++ObjProp 337 "Scripts"
+{
+	"Script 0" TrapRequireAll
+	"Script 1" NVRemovePropertyTrap
+}
++Receptron 1098 "EarthStim"
+{
+	Min 9
+	Max None
+	Target 337
+	Agent -471
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 1098 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
+}
++ObjProp 1098 "Scripts"
+{
+	"Script 0" NVRelayTrap
 }
 //doors
 +ObjProp 48 "BlockFrob"
@@ -65,6 +180,13 @@ ObjProp 78 "RotDoor"
 	Min None
 	Max None
 	Effect "Abort"
+}
+//switches
+-Link 263 264 "ControlDevice"
+-Link 264 263 "ControlDevice"
++Link 264 263 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
 }
 //mantling
 +ObjProp 553 "PhysCanMant"
