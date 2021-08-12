@@ -1,0 +1,22 @@
+DML1
+
+//T2 FM: The Legend of the Four Elements: The Last Hope by Theker / Fixes
+
+FINGERPRINT
+{
+	830 [-18 132 -6]
+	352 [37 102 -14]
+	853 [-21 132 -15]
+	758 [-35 108 -15]
+	672 [125 127 -11]
+	550 [-32 223 7]
+	1078 [30 -73 -14]
+	819 [-39 155 -9]
+	QVAR "goal_target_1" == 709
+}
+
+//loot
+-ObjProp 733 "PhysType"
++ObjProp 64 "Loot"
+{
+}

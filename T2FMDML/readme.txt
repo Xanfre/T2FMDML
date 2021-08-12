@@ -149,6 +149,7 @@ Kill Factory
 Kill Factory II: Escape from the Planet of the Robots
 Konkurrenten
 Last Caress
+The Legend of the Four Elements: The Last Hope
 The Librarian
 Library pt 1: The Town
 Lord Alan's Basement
