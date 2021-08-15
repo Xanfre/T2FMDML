@@ -40,25 +40,25 @@ Create -2086 "GoalFix"
 		"Don't Inherit" true
 	}
 }
-+ObjProp 146 "DesignNote"
++ObjProp 146 "DiffTurnOn"
 {
-	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+	"quest var values" 0, 1, 2
 }
 +ObjProp 146 "Scripts"
 {
-	"Script 0" NVTrapSetQVar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 146 "TrapQVar"
 {
 	"" =426:goal_target_3
 }
-+ObjProp 147 "DesignNote"
++ObjProp 147 "DiffTurnOn"
 {
-	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+	"quest var values" 0, 1, 2
 }
 +ObjProp 147 "Scripts"
 {
-	"Script 0" NVTrapSetQVar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 147 "TrapQVar"
 {

@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Strife Campaign by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: Strife Campaign v1c (Borderlands) by Terry DeLaney (Ricebug) / Fixes
 
 FINGERPRINT
 {
@@ -15,23 +15,20 @@ FINGERPRINT
 	QVAR "goal_target_1" == 660
 }
 
-//fix for the mirror lock brass key setup not working properly
--Link 710 439 "FrobProxy"
--Link 209 710 "Lock"
--Link 204 710 "Lock"
-+Link 209 710 "Lock"
-{
-	"" 1
-}
-+Link 204 710 "Lock"
-{
-	"" 1
-}
-+Link 209 439 "Lock"
+//lockboxes
+Link 204 710 "Lock"
 {
 	"" 1
 }
 +Link 204 439 "Lock"
+{
+	"" 1
+}
+Link 209 710 "Lock"
+{
+	"" 1
+}
++Link 209 439 "Lock"
 {
 	"" 1
 }

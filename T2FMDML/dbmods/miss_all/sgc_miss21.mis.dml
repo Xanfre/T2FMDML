@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Skygem Connection by David Dyal (Dyald) / Fix loot goals
+//T2 FM: The Skygem Connection (The Skygem Connection) by David Dyal (Dyald) / Fixes
 
 FINGERPRINT
 {
@@ -15,92 +15,476 @@ FINGERPRINT
 	QVAR "goal_target_8" == 1377
 }
 
-#script "tnhscript"
-#script "nvscript"
-
-Create -464 "GoalLootSwitch"
+//goals
++ObjProp 550 "DiffTurnOn"
 {
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrigProximity
-	}
-	+ObjProp "DesignNote"
-	{
-		"" Proximity=2000
-	}
+	"quest var values" 0, 1, 2
 }
-+Link "GoalLootSwitch" 1233 "ControlDevice"
-{
-}
-+Link "GoalLootSwitch" 1233 "ControlDevice"
-{
-}
-+Link 1233 455 "ControlDevice"
-{
-}
-+Link 1233 399 "ControlDevice"
-{
-}
-+ObjProp 455 "Scripts"
++ObjProp 550 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 455 "TrapQVar"
++ObjProp 550 "TrapQVar"
 {
-	"" =1:goal_visible_6
+	"" =0:door_combo
 }
-+ObjProp 399 "Scripts"
++ObjProp 551 "DiffTurnOn"
 {
-	"Script 0" TrapSetQVar
+	"quest var values" 0, 1, 2
 }
-+ObjProp 399 "TrapQVar"
-{
-	"" =1:goal_visible_7
-}
-+ObjProp 1233 "Scripts"
-{
-	"Script 0" TrapTimedRelay
-}
-+ObjProp 1233 "ScriptTiming"
-{
-	"" 1000
-}
-+Link "GoalLootSwitch" 442 "ControlDevice"
-{
-}
-+Link "GoalLootSwitch" 1234 "ControlDevice"
-{
-}
-+ObjProp 442 "Scripts"
++ObjProp 551 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 442 "TrapQVar"
++ObjProp 551 "TrapQVar"
+{
+	"" =0:goal_max_diff_3
+}
++ObjProp 552 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 552 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 552 "TrapQVar"
+{
+	"" =0:goal_state_2
+}
++ObjProp 553 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 553 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 553 "TrapQVar"
+{
+	"" =0:goal_state_4
+}
++ObjProp 554 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 554 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 554 "TrapQVar"
 {
 	"" =0:goal_state_6
 }
-+ObjProp 1234 "Scripts"
++ObjProp 555 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 555 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 1234 "TrapQVar"
++ObjProp 555 "TrapQVar"
 {
 	"" =0:goal_state_7
 }
-+ObjProp 646 "PhysType"
++ObjProp 556 "DiffTurnOn"
 {
-	"Type" None
-	"# Submodels" 0
+	"quest var values" 0, 1, 2
 }
--ObjProp 646 "Position"
-+ObjProp 646 "Position"
++ObjProp 556 "Scripts"
 {
-	"Location" 427.88,116.224,450.73
-	"Heading" 0
-	"Pitch" 0
-	"Bank" d60b
+	"Script 0" TrapSetQVar
 }
-+ObjProp 647 "Scripts"
++ObjProp 556 "TrapQVar"
 {
-	"Script 1" NVDeleteTrap
+	"" -6725:goal_target_4
+}
++ObjProp 557 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 557 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 557 "TrapQVar"
+{
+	"" =2:goal_type_4
+}
++ObjProp 558 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 558 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 558 "TrapQVar"
+{
+	"" =1:goal_visible_2
+}
++ObjProp 559 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 559 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 559 "TrapQVar"
+{
+	"" =1:goal_visible_4
+}
++ObjProp 560 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 560 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 560 "TrapQVar"
+{
+	"" =1:goal_visible_6
+}
++ObjProp 561 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 561 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 561 "TrapQVar"
+{
+	"" =1:goal_visible_7
+}
++ObjProp 562 "DiffRemoveProp"
+{
+	"quest var values" 0, 1
+	"alt quest var values" 2
+	"Properties" TrapQVar
+}
++ObjProp 562 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 562 "TrapQVar"
+{
+	"" =3:goal_state_2
+}
++Link 835 562 "ControlDevice"
+{
+}
++ObjProp 563 "DiffRemoveProp"
+{
+	"quest var values" 0
+	"alt quest var values" 1, 2
+	"Properties" TrapQVar
+}
++ObjProp 563 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 563 "TrapQVar"
+{
+	"" =3:goal_state_4
+}
++ObjProp 564 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 564 "TrapQVar"
+{
+	"" =2:goal_state_9
+}
+//keepers
++ObjProp 68 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 68 563 "ControlDevice"
+{
+}
++Receptron 216 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 216 "KOGas"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 216 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 216 "NoFlash"
+{
+	"" true
+}
++Link 428 563 "ControlDevice"
+{
+}
+ObjProp 429 "AI_Hearing"
+{
+	"" Below Average
+}
+ObjProp 429 "AI_AlrtRsp"
+{
+	"Priority" Very high
+	"Response: Step 4" Frob object(Target Object,With Object)
+	"   Argument 1"[3] 835
+}
++Link 429 563 "ControlDevice"
+{
+}
++Link 430 563 "ControlDevice"
+{
+}
++ObjProp 432 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 432 563 "ControlDevice"
+{
+}
++ObjProp 435 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 435 563 "ControlDevice"
+{
+}
++ObjProp 456 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 456 563 "ControlDevice"
+{
+}
++Link 838 563 "ControlDevice"
+{
+}
++Link 845 563 "ControlDevice"
+{
+}
++Link 846 563 "ControlDevice"
+{
+}
++ObjProp 1083 "AI_VisDesc"
+{
+	"Cone 8: Angle" 170
+}
++ObjProp 1083 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 1083 563 "ControlDevice"
+{
+}
++ObjProp 1475 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
+ObjProp 1475 "AI_Hearing"
+{
+	"" Well Below Average
+}
++Link 1475 563 "ControlDevice"
+{
+}
++ObjProp 1497 "AI_VisDesc"
+{
+	"Cone 8: Angle" 170
+}
++ObjProp 1497 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 1497 563 "ControlDevice"
+{
+}
++ObjProp 1501 "AI_VisDesc"
+{
+	"Cone 8: Angle" 210
+}
++ObjProp 1501 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++Link 1501 563 "ControlDevice"
+{
+}
++ObjProp 1738 "AI_AlrtRsp"
+{
+	"Alert level" (3) High
+	"Priority" Absolute
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"   Argument 1" 835
+}
++ObjProp 1738 "AI_Hearing"
+{
+	"" Below Average
+}
++Link 1738 563 "ControlDevice"
+{
+}
+//sarah
++Link 1179 564 "ControlDevice"
+{
+}
++ObjProp 1179 "Scripts"
+{
+	"Script 0" TrigSlain
+}
+//doors
++MetaProp 379 -2420
++MetaProp 479 -2420
++ObjProp 479 "BlockFrob"
+{
+	"" true
+}
++Receptron 788 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 788 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 788 "BlockFrob"
+{
+	"" true
+}
++Receptron 789 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 789 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 789 "BlockFrob"
+{
+	"" true
+}
++ObjProp 807 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1158 "BlockFrob"
+{
+	"" true
+}
++MetaProp 1059 -2420
++MetaProp 1349 -2420
++ObjProp 1349 "BlockFrob"
+{
+	"" true
+}
+//DeathStage 12
+-ObjProp 59 "DeathStage"
+-ObjProp 199 "DeathStage"
+-ObjProp 199 "PhysType"
+-ObjProp 210 "DeathStage"
+-ObjProp 249 "DeathStage"
+-ObjProp 233 "DeathStage"
+-ObjProp 267 "DeathStage"
+-ObjProp 270 "DeathStage"
+-ObjProp 296 "DeathStage"
+-ObjProp 424 "DeathStage"
+-ObjProp 678 "DeathStage"
+-ObjProp 974 "DeathStage"
+-ObjProp 976 "DeathStage"
+-ObjProp 1172 "DeathStage"
+-ObjProp 1175 "DeathStage"
+-ObjProp 1479 "DeathStage"
+-ObjProp 1546 "DeathStage"
+-ObjProp 1547 "DeathStage"
+-ObjProp 1547 "PhysType"
+-ObjProp 1569 "PhysType"
+-ObjProp 1569 "DeathStage"
+-ObjProp 1618 "DeathStage"
+//broadhead arrows
+-ObjProp 267 "PhysType"
+-ObjProp 270 "PhysType"
++ObjProp 409 "RenderType"
+{
+	"" Not Rendered
+}
+-ObjProp 1250 "PhysType"
+-ObjProp 1252 "PhysType"
+-ObjProp 1253 "PhysType"
+//beds
+-ObjProp 607 "PhysType"
+ObjProp 607 "Position"
+{
+	"Location" 408.03, 108.75, 416
+}
++ObjProp 607 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 607 "Scale"
+{
+	"" 0.733, 0.75, 1
+}
+-ObjProp 1171 "PhysType"
+ObjProp 1171 "Position"
+{
+	"Location" 432.14, 108.75, 416
+}
++ObjProp 1171 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1171 "Scale"
+{
+	"" 0.733, 0.75, 1
+}
+//mantling
++ObjProp 1600 "PhysCanMant"
+{
+}
++ObjProp 1601 "PhysCanMant"
+{
 }

@@ -38,25 +38,25 @@ Create -2086 "GoalFix"
 		"Script 0" NVLinkBuilder
 	}
 }
-+ObjProp 204 "DesignNote"
++ObjProp 204 "DiffTurnOn"
 {
-	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+	"quest var values" 0, 1, 2
 }
 +ObjProp 204 "Scripts"
 {
-	"Script 0" NVTrapSetQVar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 204 "TrapQVar"
 {
 	"" =484:goal_target_2
 }
-+ObjProp 205 "DesignNote"
++ObjProp 205 "DiffTurnOn"
 {
-	"" NVTrapSetQVarOn="BeginScript"; NVTrapSetQVarCount=1
+	"quest var values" 0, 1, 2
 }
 +ObjProp 205 "Scripts"
 {
-	"Script 0" NVTrapSetQVar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 205 "TrapQVar"
 {

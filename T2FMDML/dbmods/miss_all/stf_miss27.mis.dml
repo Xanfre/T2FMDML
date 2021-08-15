@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Strife Campaign by Terry DeLaney (Ricebug) / Fix final goal
+//T2 FM: Strife Campaign v1c/v2 (The Bailey) by Terry DeLaney (Ricebug) / Fixes
 
 FINGERPRINT
 {
@@ -15,33 +15,28 @@ FINGERPRINT
 	QVAR "goal_target_0" == 528
 }
 
-+ObjProp 569 "Scripts"
+//goals
++ObjProp 620 "DiffTurnOn"
 {
-	"Script 1" TrigRoomPlayer
+	"quest var values" 0, 1, 2
 }
-+ObjProp 44 "TrapQVar"
-{
-	"" =1:goal_state_1
-}
-+ObjProp 44 "Scripts"
++ObjProp 620 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+Link 320 44 "ControlDevice"
++ObjProp 620 "TrapQVar"
 {
+	"" =0:goal_irreversible_4
 }
-+ObjProp 47 "TrapQVar"
++ObjProp 621 "DiffTurnOn"
 {
-	"" =1:goal_state_4
+	"quest var values" 0, 1, 2
 }
-+ObjProp 47 "Scripts"
++ObjProp 621 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+Link 569 47 "ControlDevice"
++ObjProp 621 "TrapQVar"
 {
-}
-+ObjProp 320 "Scripts"
-{
-	"Script 1" TrigUnlock
+	"" =621:goal_target_1
 }

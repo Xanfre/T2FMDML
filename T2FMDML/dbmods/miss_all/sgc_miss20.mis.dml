@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Skygem Connection by David Dyal (Dyald) / Fix fences
+//T2 FM: The Skygem Connection (Rest and Relaxation) by David Dyal (Dyald) / Fixes
 
 FINGERPRINT
 {
@@ -15,23 +15,39 @@ FINGERPRINT
 	NAME 37 "William"
 }
 
--ObjProp 35 "PhysType"
-+ObjProp 35 "PhysType"
+#script "nvscript"
+
++ObjProp 8 "DesignNote"
 {
-	"Type" None
-	"# Submodels" 0
+	"" NVRelayTrapOn="BeginScript"; NVRelayTrapOnDelay=200; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVLinkBuilderLinkType="PhysAttach"; NVLinkBuilderLinkSource="Player"; NVLinkBuilderLinkDest=35
 }
--ObjProp 35 "Position"
-+ObjProp 35 "Position"
++ObjProp 8 "Scripts"
 {
-	"Location" 510.06,495.25,498.04
+	"Script 0" NVRelayTrap
+	"Script 1" NVLinkBuilder
+}
++ObjProp 35 "MovingTerrain"
+{
+	"Active" false
+}
+-ObjProp 35 "PhysType"
+ObjProp 35 "Position"
+{
+	"Location" 510.507, 495.176, 495.392
 	"Heading" 4000
 	"Pitch" 4000
 	"Bank" 0
 }
--ObjProp 35 "PhysType"
 +ObjProp 35 "PhysType"
 {
 	"Type" OBB
-	"# Submodels" 6
+}
+//buttons
++ObjProp 24 "Class Tags"
+{
+	"1: Tags" ""
+}
++ObjProp 59 "Class Tags"
+{
+	"1: Tags" ""
 }
