@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Mountain Monastery by Christine Schneider / Fixes
+//T2 FM: The Mountain Monastery by Christine Schneider (incl. rework by Soul Tear) / Fixes
 
 FINGERPRINT
 {
@@ -15,28 +15,89 @@ FINGERPRINT
 	QVAR "goal_target_9" == 993
 }
 
-+ObjProp 1349 "AI_ObjAvoid"
+#script "nvscript"
+
+//secrets
++ObjProp 1572 "DarkStat"
 {
-	"Flags" Block pathfind,Repel
 }
-+ObjProp 1349 "PhysAIColl"
++ObjProp 1573 "DarkStat"
 {
-	"" false
 }
-Create -5746
+//high priest
++Receptron 1557 "EarthStim"
 {
-	-ObjProp "PhysType"
-	+ObjProp "Position"
+	Min 9
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
 	{
-		"Location" 315.47,64.5,-13.81
+		"Prop Name" FrobInfo
 	}
-	+ObjProp "PhysType"
-	{
-		"Type" OBB
-		"# Submodels" 6
-	}
-	+ObjProp "RenderType"
-	{
-		"" Not Rendered
-	}
+}
++ObjProp 1557 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
+}
++ObjProp 1557 "Scripts"
+{
+	"Script 2" NVRelayTrap
+}
+//high priest's notes
++ObjProp 1631 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=1630; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1000; NVRelayTrap2TDest=1018
+}
++ObjProp 1631 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+}
+//doors
++Link 51 52 "ScriptParams"
+{
+	"" Double
+}
++Receptron 496 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 668 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 701 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 727 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 986 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1029 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1124 -2420
++MetaProp 1560 -2420
+//junk
++ObjProp 287 "InvType"
+{
 }
