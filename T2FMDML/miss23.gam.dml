@@ -1,0 +1,14 @@
+DML1
+
+//T2 FM: Memoirs of a Dead God (Preparations) by Nick Dablin (nicked) / Fixes
+
+FINGERPRINT
+{
+	NAME -6972 "t_fam/VicM04/m04ceilm"
+	NAME -7074 "sleeppiano"
+}
+
+ObjProp -14 "Scripts"
+{
+	"Script 0" CorpseFrobFixed
+}

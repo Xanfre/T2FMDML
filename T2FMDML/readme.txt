@@ -171,11 +171,12 @@ Mask of Agamemnon
 McLeod's Revenge
 Mech Bank
 Meeting
+Memoirs of a Dead God
 Merchant's Manor
 Midday Escape
 Mind Master
 A Mother's Love
-Mountain Monastery
+The Mountain Monastery
 Mr. J's Ring
 Mylokh's Tower
 Mysterious Invitation

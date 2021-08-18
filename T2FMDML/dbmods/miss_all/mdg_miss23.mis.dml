@@ -1,0 +1,87 @@
+DML1
+
+//T2 FM: Memoirs of a Dead God (Preparations) by Nick Dablin (nicked) / Fixes
+
+FINGERPRINT
+{
+	877 [-309 227 -66]
+	1522 [-264 201 -71]
+	471 [-319 387 -29]
+	682 [-390 233 -46]
+	256 [-397 278 -68]
+	1313 [-366 231 -46]
+	912 [-391 367 -62]
+	1470 [-397 322 -29]
+	QVAR "goal_target_0" == 1131
+}
+
+//goals
++ObjProp 157 "DesignNote"
+{
+	"" NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest=1521
+}
+ObjProp 157 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++Link 1500 1521 "ControlDevice"
+{
+}
++ObjProp 1521 "DesignNote"
+{
+	"" NVTrapSetQVarOff="Null"; NVLinkBuilderOn="Null"; NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=1500; NVLinkBuilderLinkDest="[Me]"
+}
++ObjProp 1521 "Scripts"
+{
+	"Script 0" NVTrapSetQVar
+	"Script 1" NVLinkBuilder
+}
++ObjProp 1521 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
+ObjProp 165 "TrapQVar"
+{
+	"" >6:DrSSecrets
+}
+ObjProp 172 "TrapQVar"
+{
+	"" >3:DrSSecrets
+}
+//AIs
++ObjProp 234 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1416 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ccavad
+}
+ObjProp 1416 "Scripts"
+{
+	"Script 0" CorpseFrobFixed
+}
+//morego conv
++ObjProp 1530 "AI_SaveConverse"
+{
+	"" true
+}
+//doors
++Link 60 61 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 293 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapOnDelay=2000; NVMetaTrapMeta="FrobInert"
+}
+-ObjProp 293 "PhysType"
++ObjProp 293 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 293 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
