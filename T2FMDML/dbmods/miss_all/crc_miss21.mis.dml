@@ -1,0 +1,170 @@
+DML1
+
+//T2 FM: Cataclysmic Revelations Campaign (The Mission) by DarthsLair / Fixes
+
+FINGERPRINT
+{
+	1091 [280 -83 -30]
+	1402 [-94 -46 -7]
+	2071 [-51 14 -31]
+	1999 [317 14 -44]
+	289 [249 -132 -32]
+	2302 [166 -11 -11]
+	837 [121 -218 -15]
+	2131 [31 -41 1]
+	QVAR "goal_target_7" == 2028
+}
+
+//loot
++ObjProp 3040 "Loot"
+{
+}
++ObjProp 3041 "Loot"
+{
+}
++ObjProp 3042 "Loot"
+{
+}
++ObjProp 3043 "Loot"
+{
+}
++ObjProp 3044 "Loot"
+{
+}
++ObjProp 3045 "Loot"
+{
+}
++ObjProp 3046 "Loot"
+{
+}
+//plate
+ObjProp 479 "Position"
+{
+	"Location" 269.496, -236.532, -54.9922
+}
+//chest
+-ObjProp 3226 "PhysType"
+ObjProp 3226 "Position"
+{
+	"Location" 203.045, -235.196, -17.3022
+}
++ObjProp 3226 "PhysType"
+{
+	"Type" OBB
+}
+//traps
++ObjProp 54 "Class Tags"
+{
+	"1: Tags" WeaponType Emitter
+}
++ObjProp 54 "CfgTweqEmit"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Grav
+	"Rate" 1
+	"Max frames" 1
+	"Emit what" broadhead
+}
+ObjProp 54 "Position"
+{
+	"Location" 287.234, -55.9054, -35
+}
++ObjProp 145 "Class Tags"
+{
+	"1: Tags" WeaponType Emitter
+}
++ObjProp 145 "CfgTweqEmit"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Grav
+	"Rate" 1
+	"Max frames" 1
+	"Emit what" broadhead
+}
++ObjProp 145 "Position"
+{
+	"Location" 274.75, -75.5, -33
+}
++ObjProp 161 "Class Tags"
+{
+	"1: Tags" WeaponType Emitter
+}
++ObjProp 161 "CfgTweqEmit"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Grav
+	"Rate" 1
+	"Max frames" 1
+	"Emit what" broadhead
+}
+ObjProp 161 "Position"
+{
+	"Location" 286.961, -76.6097, -33
+	"Heading" 540a
+}
++ObjProp 214 "Class Tags"
+{
+	"1: Tags" WeaponType Emitter
+}
++ObjProp 214 "CfgTweqEmit"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Grav
+	"Rate" 1
+	"Max frames" 1
+	"Emit what" broadhead
+}
++ObjProp 214 "Position"
+{
+	"Location" 273.25, -60.6, -35
+}
++ObjProp 222 "Class Tags"
+{
+	"1: Tags" WeaponType Emitter
+}
++ObjProp 222 "CfgTweqEmit"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Grav
+	"Rate" 1
+	"Max frames" 1
+	"Emit what" broadhead
+}
++ObjProp 222 "Position"
+{
+	"Location" 287.37, -52.797, -34
+}
++ObjProp 223 "Class Tags"
+{
+	"1: Tags" WeaponType Emitter
+}
++ObjProp 223 "CfgTweqEmit"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Grav
+	"Rate" 1
+	"Max frames" 1
+	"Emit what" broadhead
+}
++ObjProp 223 "Position"
+{
+	"Location" 276.3, -45.4711, -33
+}
+ObjProp 891 "Position"
+{
+	"Location" 274.5, -28, -42
+	"Heading" c000
+	"Bank" 4000
+}
+ObjProp 942 "Position"
+{
+	"Location" 298.5, -28, -42
+	"Heading" c000
+	"Bank" 4000
+}

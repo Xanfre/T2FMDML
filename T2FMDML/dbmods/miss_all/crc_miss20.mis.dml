@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: Cataclysmic Revelations Campaign (Cataclysmic Revelations) by DarthsLair / Fixes
+
+FINGERPRINT
+{
+	321 [71 19 -1]
+	1153 [-110 45 -121]
+	2056 [185 8 -18]
+	625 [-107 -9 -6]
+	1549 [21 -18 -116]
+	951 [-62 -53 6]
+	538 [-101 2 -118]
+	1004 [-75 -63 -105]
+	QVAR "goal_target_16" == 1819
+}
+
+//graves
++ObjProp 534 "BlockFrob"
+{
+	"" true
+}
++ObjProp 595 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1249 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1466 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2184 "BlockFrob"
+{
+	"" true
+}
