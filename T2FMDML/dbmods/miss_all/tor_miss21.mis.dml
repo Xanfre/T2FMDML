@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Torner Island by Harald Lootze (Haman) / Fix loot and a skull
+//T2 FM: Torner Island by Harald Lootze (Haman) / Fixes
 
 FINGERPRINT
 {
@@ -15,31 +15,27 @@ FINGERPRINT
 	QVAR "goal_target_0" == 616
 }
 
+//loot
 +ObjProp 437 "Loot"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
 }
 +ObjProp 750 "Loot"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
 }
 +ObjProp 753 "Loot"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
 }
 +ObjProp 754 "Loot"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
 }
-+ObjProp 954 "InvType"
-{
-	"" Item
-}
+//arrows
+-ObjProp 151 "DeathStage"
+-ObjProp 247 "DeathStage"
+-ObjProp 322 "DeathStage"
+-ObjProp 411 "DeathStage"
+-ObjProp 414 "DeathStage"
+-ObjProp 416 "DeathStage"
+-ObjProp 586 "DeathStage"
+-ObjProp 1123 "DeathStage"
+-ObjProp 1143 "DeathStage"
+-ObjProp 1241 "DeathStage"

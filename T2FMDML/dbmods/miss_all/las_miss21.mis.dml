@@ -15,8 +15,667 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1139
 }
 
-//secret door
+//goal 5
++ObjProp 25 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 25 "PhysCanMant"
+{
+}
++ObjProp 25 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 25 "TrapQVar"
+{
+	"" =1:goal_irreversible_5
+}
+//secrets (rework)
++ObjProp 1560 "PickDist"
+{
+	"" 5.00
+}
++Link 1560 1241 "ControlDevice"
+{
+}
++Link 1560 1561 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+//loot (single)
++ObjProp 469 "Loot"
+{
+}
++ObjProp 1020 "Loot"
+{
+}
+//loot
++ObjProp 1004 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 1005 "PickDist"
+{
+	"" 4.00
+}
++ObjProp 1006 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 1093 "PickDist"
+{
+	"" 4.00
+}
+-ObjProp 1091 "PickDist"
+-ObjProp 1097 "PickDist"
+-ObjProp 1102 "PickDist"
+-ObjProp 1103 "PickDist"
+-ObjProp 1104 "PickDist"
+//doors
 -ObjProp 7 "TransDoor"
++ObjProp 7 "PhysCanMant"
+{
+}
++Receptron 18 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 18 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 186 "BlockFrob"
+{
+	"" true
+}
++Receptron 276 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 276 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 277 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 277 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 425 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 425 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 426 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 426 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 427 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 427 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 532 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 532 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 533 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 533 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 544 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 544 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 549 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 549 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 580 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 580 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 636 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+-ObjProp 746 "TransDoor"
++ObjProp 746 "RotDoor"
+{
+	"Open Angle" 90
+}
++ObjProp 746 "PickBias"
+{
+	"" 20.00
+}
++Receptron 818 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 818 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 819 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 819 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 927 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 927 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 973 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+-ObjProp 989 "JointPos"
++Receptron 989 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 989 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1007 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1007 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1007 "TransDoor"
+{
+	"Closed Position" 0.00
+	"Open Position" -3.75
+}
+-ObjProp 1007 "PhysType"
+ObjProp 1007 "Position"
+{
+	"Location" 133.54, 318.75, 2
+}
++ObjProp 1007 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1007 "Scale"
+{
+	"" 0.85, 0.85, 0.85
+}
++MetaProp 1007 -2425
++Receptron 1046 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1046 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1046 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 1046 "PhysType"
++ObjProp 1046 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 1483 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1483 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1483 "BlockFrob"
+{
+	"" true
+}
++MetaProp 1483 -2422
++Receptron 1484 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1484 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1484 -2422
++Receptron 1485 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1485 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1485 -2422
++Receptron 1486 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1486 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1486 -2422
++Receptron 1490 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1490 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1490 "BlockFrob"
+{
+	"" true
+}
++MetaProp 1490 -2422
++Receptron 1491 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1491 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1492 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1492 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1493 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1493 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1493 -2422
++Receptron 1494 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1494 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1494 -2422
++Receptron 1495 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1495 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 1495 -2422
++MetaProp 1559 -2420
++Receptron 1594 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1594 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1597 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1597 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1659 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1659 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1660 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Receptron 1708 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1708 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1710 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1710 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1741 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Receptron 1830 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1830 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1847 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1857 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1858 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1951 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 2379 "JointPos"
++Receptron 2379 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2379 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//mantling
++ObjProp 26 "PhysCanMant"
+{
+}
++ObjProp 27 "PhysCanMant"
+{
+}
++ObjProp 28 "PhysCanMant"
+{
+}
++ObjProp 29 "PhysCanMant"
+{
+}
++ObjProp 32 "PhysCanMant"
+{
+}
++ObjProp 33 "PhysCanMant"
+{
+}
++ObjProp 126 "PhysCanMant"
+{
+}
++ObjProp 375 "PhysCanMant"
+{
+}
++ObjProp 376 "PhysCanMant"
+{
+}
++ObjProp 445 "PhysCanMant"
+{
+}
++ObjProp 451 "PhysCanMant"
+{
+}
++ObjProp 482 "PhysCanMant"
+{
+}
++ObjProp 513 "PhysCanMant"
+{
+}
++ObjProp 523 "PhysCanMant"
+{
+}
++ObjProp 579 "PhysCanMant"
+{
+}
++ObjProp 661 "PhysCanMant"
+{
+}
++ObjProp 675 "PhysCanMant"
+{
+}
++ObjProp 706 "PhysCanMant"
+{
+}
++ObjProp 784 "PhysCanMant"
+{
+}
++ObjProp 794 "PickDist"
+{
+	"" 4.00
+}
++ObjProp 794 "PhysCanMant"
+{
+}
++ObjProp 974 "PhysCanMant"
+{
+}
++ObjProp 975 "PhysCanMant"
+{
+}
++ObjProp 1162 "PhysCanMant"
+{
+}
++ObjProp 1163 "PhysCanMant"
+{
+}
++ObjProp 1164 "PhysCanMant"
+{
+}
++ObjProp 1176 "PhysCanMant"
+{
+}
++ObjProp 1197 "PhysCanMant"
+{
+}
++ObjProp 1210 "PhysCanMant"
+{
+}
++ObjProp 1215 "PhysCanMant"
+{
+}
++ObjProp 1216 "PhysCanMant"
+{
+}
 //lord ashton's rosary
 +ObjProp 258 "FrobInfo"
 {
@@ -31,10 +690,130 @@ FINGERPRINT
 {
 	"" true
 }
-//loot
-+ObjProp 469 "Loot"
+//pub button
++ObjProp 354 "Class Tags"
+{
+	"1: Tags" ""
+}
+//AIs
++ObjProp 424 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 615 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprisw01
+}
++ObjProp 621 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cbasso
+}
++ObjProp 951 "AI_Efficiency"
+{
+	"Enabled" false
+}
++ObjProp 963 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 1613 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cwomsv02
+}
++ObjProp 1656 "NoFlash"
+{
+	"" true
+}
++ObjProp 1707 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cjenv
+}
++ObjProp 1709 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 1765 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 1766 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 1767 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 1789 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1803 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 2053 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cjenv
+}
++ObjProp 2213 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+//fences
+-ObjProp 554 "PhysType"
++ObjProp 554 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 555 "PhysType"
++ObjProp 555 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1352 "PhysType"
++ObjProp 1352 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1362 "PhysType"
++ObjProp 1362 "PhysType"
+{
+	"Type" OBB
+}
+//moneybox
+-ObjProp 634 "PhysType"
+ObjProp 634 "Position"
+{
+	"Location" 150.05, 262.9, -0.78
+}
++ObjProp 634 "PhysType"
+{
+	"Type" OBB
+}
+//torc
++ObjProp 720 "StackCount"
 {
 }
-+ObjProp 1020 "Loot"
-{
-}
+//lantern
+-ObjProp 924 "FrobInfo"
+//arrows (single, original campaign)
+-ObjProp 148 "DeathStage"
+-ObjProp 259 "DeathStage"
+-ObjProp 643 "DeathStage"
+-ObjProp 665 "DeathStage"
+-ObjProp 710 "DeathStage"

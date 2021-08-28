@@ -59,7 +59,19 @@ FINGERPRINT
 {
 	"" Double
 }
++Receptron 496 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
 +Receptron 496 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 668 "FireStim"
 {
 	Min None
 	Max None
@@ -71,13 +83,31 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
++Receptron 701 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
 +Receptron 701 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
 }
++Receptron 727 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
 +Receptron 727 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 986 "FireStim"
 {
 	Min None
 	Max None
@@ -97,6 +127,12 @@ FINGERPRINT
 }
 +MetaProp 1124 -2420
 +MetaProp 1560 -2420
+//arrows (original)
+-ObjProp 39 "DeathStage"
+-ObjProp 443 "DeathStage"
+-ObjProp 557 "DeathStage"
+-ObjProp 577 "DeathStage"
+-ObjProp 1065 "DeathStage"
 //junk
 +ObjProp 287 "InvType"
 {
