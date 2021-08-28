@@ -193,7 +193,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 1337 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1336 "DesignNote"
 {
@@ -201,7 +201,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 1336 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1339 "DesignNote"
 {
@@ -209,7 +209,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 1339 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 391 "DesignNote"
 {
@@ -217,7 +217,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 391 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 224 "DesignNote"
 {
@@ -225,7 +225,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 224 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 485 "DesignNote"
 {
@@ -233,7 +233,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 485 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 482 "DesignNote"
 {
@@ -241,7 +241,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 482 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 483 "DesignNote"
 {
@@ -249,7 +249,7 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 483 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 484 "DesignNote"
 {
@@ -257,5 +257,5 @@ ObjProp 373 "PGLaunchInfo"
 }
 +ObjProp 484 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }

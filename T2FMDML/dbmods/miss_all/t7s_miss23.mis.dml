@@ -19,7 +19,7 @@ FINGERPRINT
 
 +ObjProp 176 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 176 "DesignNote"
 {
@@ -39,7 +39,7 @@ FINGERPRINT
 }
 +ObjProp 2761 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 2761 "DesignNote"
 {
@@ -47,7 +47,7 @@ FINGERPRINT
 }
 +ObjProp 2760 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 2760 "DesignNote"
 {
@@ -55,7 +55,7 @@ FINGERPRINT
 }
 +ObjProp 2759 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 2759 "DesignNote"
 {
@@ -63,7 +63,7 @@ FINGERPRINT
 }
 +ObjProp 2758 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 2758 "DesignNote"
 {
@@ -71,7 +71,7 @@ FINGERPRINT
 }
 +ObjProp 2757 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 2757 "DesignNote"
 {
@@ -79,7 +79,7 @@ FINGERPRINT
 }
 +ObjProp 2756 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 2756 "DesignNote"
 {

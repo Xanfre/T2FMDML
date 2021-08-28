@@ -59,7 +59,7 @@ ObjProp 1504 "Position"
 }
 +ObjProp 1172 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 	"Script 1" ""
 	"Script 2" ""
 	"Script 3" ""

@@ -69,7 +69,7 @@ ObjProp 1852 "Position"
 //windows
 +ObjProp 316 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 	"Script 1" ""
 	"Script 2" ""
 	"Script 3" ""
@@ -81,7 +81,7 @@ ObjProp 1852 "Position"
 }
 +ObjProp 330 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 	"Script 1" ""
 	"Script 2" ""
 	"Script 3" ""

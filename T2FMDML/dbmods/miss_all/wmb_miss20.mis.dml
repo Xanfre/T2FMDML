@@ -36,7 +36,7 @@ ObjProp 196 "Position"
 }
 +ObjProp 57 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 128 "DesignNote"
 {
@@ -44,7 +44,7 @@ ObjProp 196 "Position"
 }
 +ObjProp 128 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 129 "DesignNote"
 {
@@ -52,7 +52,7 @@ ObjProp 196 "Position"
 }
 +ObjProp 129 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 130 "DesignNote"
 {
@@ -60,7 +60,7 @@ ObjProp 196 "Position"
 }
 +ObjProp 130 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 131 "DesignNote"
 {
@@ -68,5 +68,5 @@ ObjProp 196 "Position"
 }
 +ObjProp 131 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }

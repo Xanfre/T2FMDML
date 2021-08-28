@@ -31,7 +31,7 @@ FINGERPRINT
 }
 +ObjProp 1366 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1367 "DesignNote"
 {
@@ -39,7 +39,7 @@ FINGERPRINT
 }
 +ObjProp 1367 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1370 "DesignNote"
 {
@@ -47,7 +47,7 @@ FINGERPRINT
 }
 +ObjProp 1370 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1639 "DesignNote"
 {
@@ -55,7 +55,7 @@ FINGERPRINT
 }
 +ObjProp 1639 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 //pedestal
 +ObjProp 14 "BlockFrob"

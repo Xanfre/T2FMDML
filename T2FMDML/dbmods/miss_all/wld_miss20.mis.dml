@@ -42,7 +42,7 @@ ObjProp 1138 "Scripts"
 }
 +ObjProp 779 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1184 "Scale"
 {
@@ -99,7 +99,7 @@ ObjProp 1138 "Scripts"
 }
 +ObjProp 346 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 345 "Scale"
 {
@@ -111,7 +111,7 @@ ObjProp 1138 "Scripts"
 }
 +ObjProp 345 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 354 "DesignNote"
 {
@@ -119,7 +119,7 @@ ObjProp 1138 "Scripts"
 }
 +ObjProp 354 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 351 "DesignNote"
 {
@@ -127,7 +127,7 @@ ObjProp 1138 "Scripts"
 }
 +ObjProp 351 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 ObjProp 794 "Scale"
 {

@@ -61,7 +61,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 390 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 391 "DesignNote"
 {
@@ -69,7 +69,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 391 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 375 "DesignNote"
 {
@@ -77,7 +77,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 375 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 383 "DesignNote"
 {
@@ -85,7 +85,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 383 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1032 "DesignNote"
 {
@@ -93,7 +93,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 1032 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1410 "DesignNote"
 {
@@ -101,7 +101,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 1410 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 800 "DesignNote"
 {
@@ -109,7 +109,7 @@ ObjProp 300 "PGLaunchInfo"
 }
 +ObjProp 800 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 //prevent mantling on extendable bridge
 +ObjProp 791 "PhysCanMant"

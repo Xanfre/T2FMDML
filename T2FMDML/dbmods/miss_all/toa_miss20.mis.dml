@@ -62,7 +62,7 @@ FINGERPRINT
 }
 ObjProp 79 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 	"Don't Inherit" true
 }
 +ObjProp 79 "DesignNote"

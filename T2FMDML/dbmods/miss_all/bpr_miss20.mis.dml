@@ -54,7 +54,7 @@ FINGERPRINT
 }
 +ObjProp 720 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 110 "DesignNote"
 {
@@ -62,7 +62,7 @@ FINGERPRINT
 }
 +ObjProp 110 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 //fix flames escaping fireplace
 ObjProp 269 "PGLaunchInfo"

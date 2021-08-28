@@ -168,7 +168,7 @@ ObjProp 2686 "Position"
 }
 +ObjProp 1012 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1815 "DesignNote"
 {
@@ -176,7 +176,7 @@ ObjProp 2686 "Position"
 }
 +ObjProp 1815 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1277 "Scale"
 {

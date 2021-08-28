@@ -62,7 +62,7 @@ FINGERPRINT
 }
 +ObjProp 31 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 132 "DesignNote"
 {
@@ -70,7 +70,7 @@ FINGERPRINT
 }
 +ObjProp 132 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 321 "DesignNote"
 {
@@ -78,7 +78,7 @@ FINGERPRINT
 }
 +ObjProp 321 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 323 "DesignNote"
 {
@@ -86,7 +86,7 @@ FINGERPRINT
 }
 +ObjProp 323 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 324 "DesignNote"
 {
@@ -94,7 +94,7 @@ FINGERPRINT
 }
 +ObjProp 324 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 //footlockers
 -ObjProp 184 "PhysType"
@@ -137,7 +137,7 @@ ObjProp 311 "Position"
 }
 +ObjProp 231 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 //wax cylinder
 ObjProp 265 "Position"

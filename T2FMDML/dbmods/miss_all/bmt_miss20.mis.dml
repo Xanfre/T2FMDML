@@ -49,7 +49,7 @@ FINGERPRINT
 }
 +ObjProp 1695 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 1717 "CfgTweqDelete"
 {
@@ -72,7 +72,7 @@ FINGERPRINT
 }
 +ObjProp 1698 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 263 "DesignNote"
 {
@@ -80,7 +80,7 @@ FINGERPRINT
 }
 +ObjProp 263 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 1699 "DesignNote"
 {
@@ -88,7 +88,7 @@ FINGERPRINT
 }
 +ObjProp 1699 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 257 "DesignNote"
 {
@@ -96,7 +96,7 @@ FINGERPRINT
 }
 +ObjProp 257 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 258 "DesignNote"
 {
@@ -104,7 +104,7 @@ FINGERPRINT
 }
 +ObjProp 258 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 259 "DesignNote"
 {
@@ -112,7 +112,7 @@ FINGERPRINT
 }
 +ObjProp 259 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 252 "DesignNote"
 {
@@ -120,7 +120,7 @@ FINGERPRINT
 }
 +ObjProp 252 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 253 "DesignNote"
 {
@@ -128,7 +128,7 @@ FINGERPRINT
 }
 +ObjProp 253 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 254 "DesignNote"
 {
@@ -136,7 +136,7 @@ FINGERPRINT
 }
 +ObjProp 254 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 255 "DesignNote"
 {
@@ -144,7 +144,7 @@ FINGERPRINT
 }
 +ObjProp 255 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 256 "DesignNote"
 {
@@ -152,7 +152,7 @@ FINGERPRINT
 }
 +ObjProp 256 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 2944 "DesignNote"
 {
@@ -160,7 +160,7 @@ FINGERPRINT
 }
 +ObjProp 2944 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 2947 "DesignNote"
 {
@@ -168,7 +168,7 @@ FINGERPRINT
 }
 +ObjProp 2947 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 1093 "PhysType"
 {

@@ -40,7 +40,7 @@ FINGERPRINT
 }
 +ObjProp 1376 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 1360 "DesignNote"
 {
@@ -48,7 +48,7 @@ FINGERPRINT
 }
 +ObjProp 1360 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 857 "DesignNote"
 {
@@ -56,7 +56,7 @@ FINGERPRINT
 }
 +ObjProp 857 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 +ObjProp 1764 "PhysType"
 {

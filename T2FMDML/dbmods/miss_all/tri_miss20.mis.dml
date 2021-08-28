@@ -32,7 +32,7 @@ FINGERPRINT
 }
 +ObjProp 1503 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 //Skull Creeper
 ObjProp 964 "AI_Alertness"

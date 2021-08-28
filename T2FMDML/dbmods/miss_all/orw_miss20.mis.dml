@@ -238,7 +238,7 @@ Create -4533
 }
 +ObjProp 1448 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 1449 "DesignNote"
 {
@@ -246,7 +246,7 @@ Create -4533
 }
 +ObjProp 1449 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 +ObjProp 502 "CfgTweqDelete"
 {

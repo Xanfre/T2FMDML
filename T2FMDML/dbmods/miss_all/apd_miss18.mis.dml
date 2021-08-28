@@ -75,7 +75,7 @@ FINGERPRINT
 }
 +ObjProp 726 "Scripts"
 {
-	"Script 0" SimRepositionAbs
+	"Script 0" T2FMDMLSimReposAbs
 }
 -ObjProp 679 "Position"
 +ObjProp 679 "Position"

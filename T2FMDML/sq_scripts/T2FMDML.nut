@@ -2,7 +2,7 @@
  * FMDML Helper Scripts
  */
 
-class RepositionBase extends SqRootScript {
+class T2FMDMLReposBase extends SqRootScript {
 
 	// Get the specified location
 	function GetLoc(def) {
@@ -34,7 +34,7 @@ class RepositionBase extends SqRootScript {
 
 }
 
-class SimRepositionOfst extends RepositionBase {
+class T2FMDMLSimReposOfst extends T2FMDMLReposBase {
 
 	// Teleport this object to its current position and rotation plus the retrieved offsets on Sim start
 	function OnSim() {
@@ -45,7 +45,7 @@ class SimRepositionOfst extends RepositionBase {
 
 }
 
-class SimRepositionAbs extends RepositionBase {
+class T2FMDMLSimReposAbs extends T2FMDMLReposBase {
 
 	// Teleport this object to the retrieved location and rotation on Sim start
 	function OnSim() {

@@ -28,7 +28,7 @@ FINGERPRINT
 }
 +ObjProp 251 "Scripts"
 {
-	"Script 0" SimRepositionOfst
+	"Script 0" T2FMDMLSimReposOfst
 }
 Create -6082 "BrokenWinBlock"
 {
