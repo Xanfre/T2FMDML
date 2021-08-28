@@ -30,7 +30,7 @@ Create -464 "QVarFixSwitch"
 }
 +ObjProp 367 "Scripts"
 {
-	"Script 0" TrapSetQvar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 367 "TrapQVar"
 {
@@ -38,38 +38,6 @@ Create -464 "QVarFixSwitch"
 }
 +Link "QVarFixSwitch" 367 "ControlDevice"
 {
-}
-+ObjProp 383 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 384 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 385 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 1034 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 1046 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 1047 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 1049 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
-}
-+ObjProp 1050 "AI_ObjAvoid"
-{
-	"Flags" Block pathfind,Repel
 }
 +ObjProp 1040 "Scripts"
 {

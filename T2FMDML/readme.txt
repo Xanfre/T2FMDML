@@ -131,7 +131,6 @@ The Hightowne Museum
 Home Sweet Home
 The Homeless Dude
 Horns of Canzo pt. 1: A Long way Up
-The House
 House of Random
 In dubio pro Garrett
 In These Enlightened Times

@@ -40,36 +40,6 @@ Create -464 "QVarFixSwitch"
 {
 }
 -Link 1998 2009 "ControlDevice"
-+ObjProp 1831 "CfgTweqDelete"
-{
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
-}
-+ObjProp 1831 "StTweqDelete"
-{
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
-}
-+ObjProp 1829 "CfgTweqDelete"
-{
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
-}
-+ObjProp 1829 "StTweqDelete"
-{
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
-}
 ObjProp 339 "Position"
 {
 	"Location" -52.04,-156.442,137.676

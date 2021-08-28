@@ -84,26 +84,18 @@ Create -464 "StartTrigger"
 {
 }
 //fix object positions
-+ObjProp 736 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
+-ObjProp 736 "PhysType"
 +ObjProp 736 "Position"
 {
-	"Location" 15.9,37.85,-176.0
+	"Location" 15.9,37.85,-176.152
 }
-+ObjProp 735 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
+-ObjProp 735 "PhysType"
 +ObjProp 735 "Position"
 {
-	"Location" 16.4,37.87,-176.0
+	"Location" 16.4,37.87,-176.152
 }
 -ObjProp 352 "PhysType"
-+ObjProp 352 "Position"
+ObjProp 352 "Position"
 {
 	"Location" 72.35,-7.9,-164.9
 	"Heading" 4000
@@ -111,10 +103,9 @@ Create -464 "StartTrigger"
 +ObjProp 352 "PhysType"
 {
 	"Type" OBB
-	"# Submodels" 6
 }
 -ObjProp 356 "PhysType"
-+ObjProp 356 "Position"
+ObjProp 356 "Position"
 {
 	"Location" 75.8,-7.9,-164.9
 	"Heading" c000
@@ -122,9 +113,8 @@ Create -464 "StartTrigger"
 +ObjProp 356 "PhysType"
 {
 	"Type" OBB
-	"# Submodels" 6
 }
-+ObjProp 678 "Position"
+ObjProp 678 "Position"
 {
 	"Location" 43.81,26.1,-151.36
 	"Heading" f53c
@@ -220,172 +210,4 @@ Create -2123 "MoveBarrel4"
 }
 +Link "StartTrigger" "MoveBarrel4" "ControlDevice"
 {
-}
-+StimSource 568 "PingStim"
-{
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 2.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
-}
-++Receptron 568 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysControl"
-	}
-}
-++Receptron 568 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysType"
-	}
-}
-+StimSource 471 "PingStim"
-{
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 2.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
-}
-++Receptron 471 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysControl"
-	}
-}
-++Receptron 471 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysType"
-	}
-}
-+StimSource 552 "PingStim"
-{
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 2.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
-}
-++Receptron 552 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysControl"
-	}
-}
-++Receptron 552 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysType"
-	}
-}
-+StimSource 930 "PingStim"
-{
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 2.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
-}
-++Receptron 930 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysControl"
-	}
-}
-++Receptron 930 "PingStim"
-{
-	Min 3
-	Max 7
-	Target Me
-	Agent -2099
-	Effect "add_prop"
-	{
-		"Prop Name" "PhysType"
-	}
 }

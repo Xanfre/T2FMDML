@@ -49,7 +49,6 @@ FINGERPRINT
 {
 	"Script 0" SimRepositionOfst
 }
-
 +ObjProp 1639 "DesignNote"
 {
 	"" RepositionLoc=-0.2,0.0,0.0
@@ -76,7 +75,6 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
-
 +Receptron 1893 "FireStim"
 {
 	Min None
@@ -89,7 +87,6 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
-
 +Receptron 1894 "FireStim"
 {
 	Min None
@@ -102,7 +99,6 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
-
 +Receptron 1895 "FireStim"
 {
 	Min None

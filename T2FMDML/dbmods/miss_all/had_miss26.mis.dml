@@ -408,15 +408,15 @@ Create -36 "EnableTPKV"
 	"" NVRelayTrapOn="ControlDevice"; NVRelayTrapTDest="235"; NVRelayTrapTOn="[10.00]HolyStim";
 }
 //fix goal type for goal 0
-Create -36
+Create -36 "Goal0Fix"
 {
 	+ObjProp "DesignNote"
 	{
-		"" NVTrapSetQVarOn="EndScript"; NVDeleteTrapOn="EndScript"; NVDeleteTrapDeleteSelf=1
+		"" NVDeleteTrapDeleteSelf=1
 	}
 	+ObjProp "Scripts"
 	{
-		"Script 0" NVTrapSetQVar
+		"Script 0" TrapSetQVar
 		"Script 1" NVDeleteTrap
 		"Script 2" ""
 		"Script 3" ""
@@ -426,4 +426,7 @@ Create -36
 	{
 		"" =2:goal_type_0
 	}
+}
++Link 485 "Goal0Fix" "ControlDevice"
+{
 }

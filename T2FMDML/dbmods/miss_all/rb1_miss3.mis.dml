@@ -59,9 +59,9 @@ Create -2123 "SecretMessage"
 	{
 		"" M03ST01
 	}
-	+ObjProp "TrapFlags"
+	+ObjProp "DesignNote"
 	{
-		"" Once
+		"" NVOnScreenTextCount=1
 	}
 	+ObjProp "Scripts"
 	{
