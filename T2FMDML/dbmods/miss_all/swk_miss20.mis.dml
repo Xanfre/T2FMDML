@@ -1,0 +1,120 @@
+DML1
+
+//T2 FM: Sir William's Keep by Ville Paavolainen (Wille) / Fixes
+
+FINGERPRINT
+{
+	516 [-1 -50 -13]
+	226 [-27 64 36]
+	1013 [-19 -33 48]
+	985 [-19 -55 44]
+	185 [-55 64 -36]
+	488 [-24 -3 -10]
+	700 [-35 -31 46]
+	647 [-44 -69 -9]
+	QVAR "goal_target_0" == 700
+}
+
+//goal 6 (expert)
++ObjProp 109 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 109 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 109 "TrapQVar"
+{
+	"" =2:goal_state_6
+}
++ObjProp 110 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 110 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 110 "TrapQVar"
+{
+	"" =0:goal_visible_6
+}
+//doors
++Receptron 141 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 165 "BlockFrob"
+{
+	"" true
+}
++ObjProp 298 "BlockFrob"
+{
+	"" true
+}
++ObjProp 414 "BlockFrob"
+{
+	"" true
+}
++ObjProp 417 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 501 "JointPos"
++ObjProp 905 "BlockFrob"
+{
+	"" true
+}
++ObjProp 906 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1020 "BlockFrob"
+{
+	"" true
+}
+//secret
++ObjProp 129 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 129 "StTweqJoints"
+{
+	"AnimS" Reverse
+}
++ObjProp 198 "PickDist"
+{
+	"" 2.50
+}
++ObjProp 208 "PickDist"
+{
+	"" 2.00
+}
+//candlesticks
+-ObjProp 587 "FrobInfo"
+-ObjProp 588 "FrobInfo"
+//keys
++ObjProp 740 "SlayResult"
+{
+}
++ObjProp 830 "SlayResult"
+{
+}
+//AIs
++ObjProp 959 "AI_Hearing"
+{
+	"" Below Average
+}
+//moneybox
+-ObjProp 995 "PhysType"
+ObjProp 995 "Position"
+{
+	"Heading" c000
+}
++ObjProp 995 "PhysType"
+{
+	"Type" OBB
+}

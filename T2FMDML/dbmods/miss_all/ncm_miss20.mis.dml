@@ -22,7 +22,7 @@ Create -2086 "GoalFix"
 {
 	+ObjProp "DesignNote"
 	{
-		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=148
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=138
 	}
 	-ObjProp "PhysType"
 	+ObjProp "Position"
@@ -40,43 +40,31 @@ Create -2086 "GoalFix"
 		"Don't Inherit" true
 	}
 }
-+ObjProp 146 "DiffTurnOn"
++ObjProp 137 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
 }
-+ObjProp 146 "Scripts"
++ObjProp 137 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 146 "TrapQVar"
++ObjProp 137 "TrapQVar"
 {
 	"" =426:goal_target_3
 }
-+ObjProp 147 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
-}
-+ObjProp 147 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 147 "TrapQVar"
-{
-	"" =0:goal_satisfied_3
-}
-+Link 148 "GoalFix" "ControlDevice"
++Link 138 "GoalFix" "ControlDevice"
 {
 }
-+ObjProp 148 "TrapFlags"
++ObjProp 138 "TrapFlags"
 {
 	"" NoOff
 }
-+ObjProp 148 "Scripts"
++ObjProp 138 "Scripts"
 {
 	"Script 0" TrapNonFinalComplete
 	"Script 1" TrapSetQVar
 }
-+ObjProp 148 "TrapQVar"
++ObjProp 138 "TrapQVar"
 {
 	"" =1:goal_state_3
 }

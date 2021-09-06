@@ -1,0 +1,175 @@
+DML1
+
+//T2 FM: Shadow Moon (Classic Contest) by P Forth / Fixes
+
+FINGERPRINT
+{
+	365 [251 68 21]
+	483 [145 169 28]
+	147 [131 9 5]
+	933 [258 94 19]
+	969 [154 136 68]
+	528 [76 206 26]
+	302 [235 57 38]
+	505 [145 209 15]
+	QVAR "goal_target_4" == 1129
+}
+
+#script "nvscript"
+
+//final goal
+Create -5317 "FG"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=203
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 61, 46, 10
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVLinkBuilder
+	}
+}
+Create -5317 "FG2"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=203
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 61, 37, 10
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVLinkBuilder
+	}
+}
++Link 203 "FG" "ControlDevice"
+{
+}
++Link 203 "FG2" "ControlDevice"
+{
+}
++ObjProp 203 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 203 "Scripts"
+{
+	"Script 0" TrapNonFinalComplete
+	"Script 1" TrapSetQVar
+}
++ObjProp 203 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++ObjProp 204 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 204 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 204 "TrapQVar"
+{
+	"" =0:goal_type_4
+}
+//toolbox
+-ObjProp 197 "PhysType"
+ObjProp 197 "Position"
+{
+	"Location" 158.2, 116.44, 54.11
+}
++ObjProp 197 "PhysType"
+{
+	"Type" OBB
+}
+//doors
++ObjProp 254 "FrobInfo"
+{
+}
++Link 444 445 "ScriptParams"
+{
+	"" Double
+}
++Receptron 583 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 654 "TransDoor"
+{
+	"Open Position" -3.00
+}
+-ObjProp 722 "JointPos"
+-ObjProp 911 "JointPos"
+//key
++ObjProp 577 "SlayResult"
+{
+}
+//switch
+-Link 585 583 "ControlDevice"
++Link 585 852 "ControlDevice"
+{
+}
++ObjProp 705 "DesignNote"
+{
+	"" NVAmbientSoundTrapOn="FrobWorldEnd"
+}
++Link 705 -776 "SoundDescription"
+{
+}
++ObjProp 705 "Class Tags"
+{
+	"1: Tags" ""
+}
++ObjProp 705 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+}
+ObjProp 705 "StTweqJoints"
+{
+	"AnimS" None
+}
++Link 852 705 "ControlDevice"
+{
+}
++ObjProp 852 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 852 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+//fireplace
+-ObjProp 656 "PhysType"
+ObjProp 656 "Position"
+{
+	"Location" 53.2, 70.437, 7
+}
++ObjProp 656 "PhysType"
+{
+	"Type" OBB
+}
+//gold stack
+ObjProp 1066 "Position"
+{
+	"Location" 130.675, 7.18, 49.1
+}
