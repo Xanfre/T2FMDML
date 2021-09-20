@@ -1,0 +1,168 @@
+DML1
+
+//T2 FM: Garrett to the Rescue 2: The Auction House by Apache / Fixes
+
+FINGERPRINT
+{
+	531 [19 31 21]
+	436 [4 -49 44]
+	126 [36 -35 12]
+	288 [50 -39 55]
+	405 [7 -45 34]
+	376 [35 -16 25]
+	610 [65 -27 -20]
+	434 [10 -17 47]
+	QVAR "goal_target_6" == 379
+}
+
+#script "nvscript"
+
+//tabitha (goal 7)
++ObjProp 251 "AI_Mode"
+{
+	"" Dead
+}
++Receptron 251 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent 255
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
++ObjProp 251 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest=426; NVRelayTrapCount=1; NVRelayTrap2On="Slain"; NVRelayTrap2TDest=255; NVRelayTrap3On="Slain"; NVRelayTrap3TDest="[Me]"; NVRelayTrap3TOn="[10.00]EarthStim"
+}
++ObjProp 251 "PickDist"
+{
+	"" 2.50
+}
+-Link 251 426 "ControlDevice"
++Link 251 429 "ControlDevice"
+{
+}
++Link 251 258 "Route"
+{
+}
+ObjProp 251 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+	"Script 2" NVRelayTrap3
+	"Script 3" TrigRoomObject
+}
+-MetaProp 251 -1832
++ObjProp 254 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 254 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 254 "TrapQVar"
+{
+	"" =1:goal_final_7
+}
++ObjProp 255 "GameName"
+{
+	"" Name_TabCorpse: "Tabitha's corpse"
+}
++ObjProp 255 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 255 "TrapQVar"
+{
+	"" =3:goal_state_7
+}
+-ObjProp 440 "TrapQVar"
++ObjProp 440 "Scripts"
+{
+	"Script 0" TrapNonFinalComplete
+	"Don't Inherit" true
+}
++ObjProp 441 "TrapFlags"
+{
+	"" Once
+}
+//easter egg
++ObjProp 244 "TrapFlags"
+{
+	"" Once
+}
+ObjProp 599 "AmbientHacked"
+{
+	"Flags" TurnedOff, RemoveProp (OneShot)
+}
+ObjProp 599 "Scripts"
+{
+	"Don't Inherit" true
+}
+//doors
++ObjProp 24 "BlockFrob"
+{
+	"" true
+}
++MetaProp 51 -2420
++MetaProp 59 -2420
+ObjProp 82 "TransDoor"
+{
+	"Blocks Vision?" true
+}
+//keys
+-ObjProp 250 "HasRefs"
+-ObjProp 410 "HasRefs"
+-ObjProp 347 "BeltLink"
+//diary (expert only)
+ObjProp 379 "DiffDestroy"
+{
+	"quest var values" 0, 1
+}
+//scrolls
++ObjProp 448 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapOnDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
++ObjProp 448 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
++ObjProp 506 "FrobInfo"
+{
+	"World Action" Script
+}
+-ObjProp 506 "PhysType"
+ObjProp 506 "Position"
+{
+	"Location" 9.8, -48.314, 44.36
+	"Heading" 8b68
+}
++ObjProp 506 "Scripts"
+{
+	"Script 0" StdBook
+}
++ObjProp 585 "FrobInfo"
+{
+	"World Action" Script
+}
+-ObjProp 585 "PhysType"
+ObjProp 585 "Position"
+{
+	"Heading" c000
+}
++ObjProp 585 "PhysType"
+{
+	"Type" Sphere
+}
++ObjProp 585 "Scripts"
+{
+	"Script 0" StdBook
+}
+//water arrows
+-ObjProp 485 "DeathStage"

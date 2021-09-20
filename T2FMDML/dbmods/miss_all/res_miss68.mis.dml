@@ -1,0 +1,171 @@
+DML1
+
+//T2 FM: Rescue! by RicknMel / Fixes
+
+FINGERPRINT
+{
+	11 [-14 412 -5]
+	47 [2 468 -5]
+	62 [0 447 -2]
+	81 [0 431 -15]
+	12 [5 361 1]
+	15 [2 438 -5]
+	136 [-23 366 -5]
+	102 [6 474 -7]
+	QVAR "goal_target_0" == 153
+}
+
+#script "nvscript"
+
+//goal 2
+Create -5317 "G2"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 4.5, 365.5, -2.5
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Don't Inherit" true
+	}
+}
++Link "G2" 136 "ControlDevice"
+{
+}
++ObjProp 136 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 136 154 "ControlDevice"
+{
+}
++Link 151 136 "ControlDevice"
+{
+}
++ObjProp 151 "GameName"
+{
+	"" Name_GumDrop: "Gum Drop"
+}
++ObjProp 151 "Scripts"
+{
+	"Script 0" NVTrigContained
+}
+-Link 157 151 "AIWatchObj"
++ObjProp 154 "TrapFlags"
+{
+	"" Once
+}
+//goal 5 (expert)
++ObjProp 53 "DesignNote"
+{
+	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+}
+-Link 53 53 "AIWatchObj"
++Link 53 158 "ControlDevice"
+{
+}
++ObjProp 53 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 101 "DesignNote"
+{
+	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+}
+-Link 101 101 "AIWatchObj"
++Link 101 158 "ControlDevice"
+{
+}
++ObjProp 101 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 108 "DesignNote"
+{
+	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+}
+-Link 108 108 "AIWatchObj"
++Link 108 158 "ControlDevice"
+{
+}
++ObjProp 108 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 113 "DesignNote"
+{
+	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+}
+-Link 113 113 "AIWatchObj"
++Link 113 158 "ControlDevice"
+{
+}
++ObjProp 113 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 123 "DesignNote"
+{
+	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+}
+-Link 123 123 "AIWatchObj"
++Link 123 158 "ControlDevice"
+{
+}
++ObjProp 123 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 158 "DiffDestroy"
+{
+	"quest var values" 0, 1
+}
+//doors
++ObjProp 13 "FrobInfo"
+{
+}
++ObjProp 47 "FrobInfo"
+{
+}
+-ObjProp 67 "JointPos"
++Receptron 67 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//keys
++ObjProp 88 "SlayResult"
+{
+}
++ObjProp 143 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 143 "NoDrop"
+{
+	"" true
+}
+//arrows / flash bomb
+-ObjProp 127 "DeathStage"
+ObjProp 130 "Position"
+{
+	"Location" -24.85, 374.85, -0.68
+}
+-ObjProp 140 "DeathStage"
+-ObjProp 140 "PhysType"
++ObjProp 140 "PhysType"
+{
+	"Type" Sphere
+}

@@ -107,6 +107,8 @@ Freedo Finds One
 Freedom for Nepumuk
 Frozen Mines
 Garrett and the Beanstalk
+Garrett to the Rescue
+Garrett to the Rescue 2: The Auction House
 Gathering at the Inn
 Gearheart
 The Ghost House and The Haunted Hospital
@@ -215,6 +217,7 @@ The Rebellion of the Builder
 Reflections
 The Relic
 Relics
+Rescue!
 Retaliation
 Reunion with Basso
 The Rise of the Mechanists

@@ -73,8 +73,53 @@ FINGERPRINT
 -ObjProp 1103 "PickDist"
 -ObjProp 1104 "PickDist"
 //doors
+Create -2091 "SD"
+{
+	+ObjProp "TransDoor"
+	{
+		"Open Position" 6.00
+		"Base Speed" 3.00
+		"Axis" Y-Axis
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 24.2, 9.82, -0.22
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" StdDoor
+	}
+}
++Receptron "SD" "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -1262
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource "SD" "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 7 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
 -ObjProp 7 "TransDoor"
-+ObjProp 7 "PhysCanMant"
++ObjProp 7 "HasRefs"
 {
 }
 +Receptron 18 "FireStim"
@@ -642,6 +687,10 @@ ObjProp 1741 "RotDoor"
 +ObjProp 794 "PickDist"
 {
 	"" 4.00
+}
+-Link 794 7 "ControlDevice"
++Link 794 "SD" "ControlDevice"
+{
 }
 +ObjProp 794 "PhysCanMant"
 {

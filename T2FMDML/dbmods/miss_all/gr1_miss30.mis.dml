@@ -1,0 +1,228 @@
+DML1
+
+//T2 FM: Garrett to the Rescue by Apache & KidGarrett / Fixes
+
+FINGERPRINT
+{
+	327 [-28 -71 17]
+	292 [-21 -74 20]
+	394 [-28 -65 10]
+	381 [8 -77 21]
+	337 [-24 -63 1]
+	523 [-13 -67 51]
+	141 [-25 -63 -2]
+	138 [-28 -54 0]
+	QVAR "goal_target_0" == 428
+}
+
+#script "nvscript"
+
+//books (goals) / scroll
++ObjProp 67 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 67 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 67 "TrapQVar"
+{
+	"" =67:goal_target_1
+}
++ObjProp 68 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 68 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 68 "TrapQVar"
+{
+	"" =68:goal_target_2
+}
++ObjProp 137 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 137 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++ObjProp 138 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 138 "FrobInfo"
+{
+	"Inv Action" Script
+}
++ObjProp 138 "NoDrop"
+{
+	"" true
+}
++Link 138 137 "ControlDevice"
+{
+}
++ObjProp 138 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" StdScroll
+}
+-ObjProp 319 "PhysType"
++ObjProp 398 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=455; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1000; NVRelayTrap2TDest=456
+}
+ObjProp 398 "FrobInfo"
+{
+	"Inv Action" Script
+}
++ObjProp 398 "NoDrop"
+{
+	"" true
+}
++ObjProp 398 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+	"Script 2" StdScroll
+}
++ObjProp 455 "DesignNote"
+{
+	"" NVText="Objective Complete"
+}
++ObjProp 455 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" NVOnscreenText
+	"Don't Inherit" true
+}
++ObjProp 456 "DesignNote"
+{
+	"" NVText="New Objectives"
+}
+-Link 456 455 "ControlDevice"
++ObjProp 456 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" NVOnscreenText
+	"Don't Inherit" true
+}
+//water arrows
+-ObjProp 36 "DeathStage"
+//switches
+ObjProp 109 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 109 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 113 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 113 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+ObjProp 180 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 180 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+ObjProp 262 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 262 "StTweqJoints"
+{
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 277 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 277 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+ObjProp 287 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 287 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+//doors
++ObjProp 141 "BlockFrob"
+{
+	"" true
+}
++ObjProp 142 "BlockFrob"
+{
+	"" true
+}
++ObjProp 143 "BlockFrob"
+{
+	"" true
+}
++ObjProp 144 "BlockFrob"
+{
+	"" true
+}
++ObjProp 145 "BlockFrob"
+{
+	"" true
+}
++ObjProp 146 "BlockFrob"
+{
+	"" true
+}
++ObjProp 147 "BlockFrob"
+{
+	"" true
+}
++ObjProp 148 "BlockFrob"
+{
+	"" true
+}
++Receptron 245 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 466 "TransDoor"
+{
+	"Open Position" 4.00
+}
+//masks
++ObjProp 176 "CombineType"
+{
+	"" LCMask
+}
+//toolbox
+-ObjProp 260 "PhysType"
+ObjProp 260 "Position"
+{
+	"Heading" 7400
+}
++ObjProp 260 "PhysType"
+{
+	"Type" OBB
+}
