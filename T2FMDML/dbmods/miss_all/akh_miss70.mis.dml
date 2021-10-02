@@ -28,6 +28,8 @@ FINGERPRINT
 {
 	"" =0:goal_state_0
 }
+//bug cloud
+-ObjProp 28 "DeathStage"
 //water talisman
 +ObjProp 65 "PickDist"
 {

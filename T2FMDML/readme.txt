@@ -98,6 +98,7 @@ Five Tigers: Eye of the Tiger
 Five Tigers: HBS Iron Butterfly
 Fletcher's Final Mistake
 Flowers for a Friend
+The Flying Age
 The Focus
 The Folly of Youth
 Forbidden Rites
@@ -197,6 +198,7 @@ Obligatory Prison Mission
 Old Comrades, Old Debts
 An Old Friend
 Orthodox Wedding
+Oswald's Patisserie
 Partytime (Demo Rework)
 Payback
 Pereira's Mansion
@@ -214,6 +216,7 @@ Ranstall Keep
 Ravencourt's Mansion
 Rebel
 The Rebellion of the Builder
+Redemption
 Reflections
 The Relic
 Relics

@@ -115,9 +115,15 @@ ObjProp 82 "TransDoor"
 	"Blocks Vision?" true
 }
 //keys
--ObjProp 250 "HasRefs"
--ObjProp 410 "HasRefs"
+ObjProp 250 "HasRefs"
+{
+	"" false
+}
 -ObjProp 347 "BeltLink"
+ObjProp 410 "HasRefs"
+{
+	"" false
+}
 //diary (expert only)
 ObjProp 379 "DiffDestroy"
 {

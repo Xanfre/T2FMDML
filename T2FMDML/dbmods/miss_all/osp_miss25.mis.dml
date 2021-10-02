@@ -1,0 +1,87 @@
+DML1
+
+//T2 FM: Oswald's Patisserie (Contest 1) by Chris Howcroft (Pseudonymouse) / Fixes
+
+FINGERPRINT
+{
+	113 [5 8 40]
+	277 [-29 24 50]
+	242 [8 -11 34]
+	187 [0 8 56]
+	146 [13 -9 71]
+	303 [29 15 56]
+	74 [-18 -21 44]
+	287 [-4 6 56]
+	QVAR "goal_target_2" == 218
+}
+
+//quest items (goal 0, 1, 5)
++ObjProp 80 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 80 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
+-ObjProp 80 "InvType"
++ObjProp 80 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 80 "TrapQVar"
+{
+	"" =1:goal_irreversible_5
+}
++ObjProp 201 "NoDrop"
+{
+	"" true
+}
++Receptron 234 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++StimSource 236 "EarthStim"
+{
+	Intensity 10
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 236 "StackCount"
+{
+}
++ObjProp 236 "SlayResult"
+{
+}
++ObjProp 236 "NoDrop"
+{
+	"" true
+}
++ObjProp 236 "Class Tags"
+{
+	"1: Tags" ""
+}
+//doors
++Link 14 267 "ScriptParams"
+{
+	"" Double
+}
++Link 18 19 "ScriptParams"
+{
+	"" Double
+}
++MetaProp 85 -2420
+//rope arrow
+-ObjProp 261 "DeathStage"

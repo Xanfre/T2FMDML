@@ -77,9 +77,8 @@ Create -2091 "SD"
 {
 	+ObjProp "TransDoor"
 	{
-		"Open Position" 6.00
+		"Open Position" 3.50
 		"Base Speed" 3.00
-		"Axis" Y-Axis
 	}
 	+ObjProp "PhysCanMant"
 	{
@@ -102,8 +101,10 @@ Create -2091 "SD"
 +Receptron "SD" "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -1262
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags

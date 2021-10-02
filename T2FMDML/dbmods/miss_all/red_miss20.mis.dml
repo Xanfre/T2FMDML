@@ -1,0 +1,403 @@
+DML1
+
+//T2 FM: Redemption by Brynolf / Fixes
+
+FINGERPRINT
+{
+	1113 [592 159 475]
+	350 [583 403 488]
+	521 [524 397 484]
+	1744 [433 253 488]
+	308 [448 420 506]
+	2318 [370 167 491]
+	2291 [482 172 488]
+	891 [588 178 476]
+	QVAR "goal_target_2" == 2773
+}
+
+//mantling
++ObjProp 1243 "PhysCanMant"
+{
+}
++ObjProp 1245 "PhysCanMant"
+{
+}
++ObjProp 1261 "PhysCanMant"
+{
+}
++ObjProp 1264 "PhysCanMant"
+{
+}
++ObjProp 1343 "PhysCanMant"
+{
+}
++ObjProp 1345 "PhysCanMant"
+{
+}
++ObjProp 1348 "PhysCanMant"
+{
+}
++ObjProp 1350 "PhysCanMant"
+{
+}
++ObjProp 1353 "PhysCanMant"
+{
+}
++ObjProp 1354 "PhysCanMant"
+{
+}
++ObjProp 2352 "PhysCanMant"
+{
+}
++ObjProp 2361 "PhysCanMant"
+{
+}
++ObjProp 2361 "Material Tags"
+{
+}
++ObjProp 2362 "PhysCanMant"
+{
+}
++ObjProp 2574 "PhysCanMant"
+{
+}
++ObjProp 2611 "PhysCanMant"
+{
+}
++ObjProp 2992 "PhysCanMant"
+{
+}
++ObjProp 2992 "Material Tags"
+{
+}
+//doors
++ObjProp 90 "BlockFrob"
+{
+	"" true
+}
++Receptron 448 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 448 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 510 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 510 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 676 "FrobInfo"
+{
+}
++ObjProp 677 "FrobInfo"
+{
+}
++ObjProp 785 "BlockFrob"
+{
+	"" true
+}
++Receptron 1159 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1159 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1168 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1168 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1169 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1169 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1170 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1170 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1642 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1642 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1784 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1837 "FrobInfo"
+{
+}
++ObjProp 1838 "FrobInfo"
+{
+}
++ObjProp 2060 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2091 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2093 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2109 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2135 "BlockFrob"
+{
+	"" true
+}
++Receptron 2148 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2148 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2149 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2149 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 2317 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2382 "FrobInfo"
+{
+}
++ObjProp 2594 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 326 "JointPos"
+-ObjProp 394 "JointPos"
+-ObjProp 395 "JointPos"
+-ObjProp 439 "JointPos"
+-ObjProp 609 "JointPos"
+-ObjProp 1247 "JointPos"
+-ObjProp 1441 "JointPos"
+-ObjProp 1758 "JointPos"
+-ObjProp 1759 "JointPos"
+-ObjProp 1760 "JointPos"
+-ObjProp 1761 "JointPos"
+-ObjProp 1762 "JointPos"
+-ObjProp 2044 "JointPos"
+-ObjProp 2297 "JointPos"
+-ObjProp 2488 "JointPos"
+-ObjProp 2508 "JointPos"
+-ObjProp 2528 "JointPos"
+-ObjProp 2767 "JointPos"
+//AIs
++ObjProp 131 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1068 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 1102 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 1109 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1115 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1221 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafegca
+}
++ObjProp 1367 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 1839 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 1840 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hamprsca
+}
++ObjProp 1842 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hamprsca
+}
++ObjProp 1927 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" zombieca
+}
++ObjProp 1956 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
+-ObjProp 2087 "AI_Vision"
++ObjProp 2286 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
+ObjProp 2450 "AI_Mode"
+{
+	"" Dead
+}
+ObjProp 2451 "AI_Mode"
+{
+	"" Dead
+}
+ObjProp 2452 "AI_Mode"
+{
+	"" Dead
+}
+ObjProp 2456 "AI_Mode"
+{
+	"" Dead
+}
++ObjProp 2514 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 2554 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 3110 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" csherif2
+}
+//arrows
+-ObjProp 705 "PhysType"
+-ObjProp 706 "PhysType"
+-ObjProp 707 "PhysType"
+//explosive charges
++ObjProp 798 "CombineType"
+{
+	"" ExplosiveCharge
+}
++ObjProp 2364 "CombineType"
+{
+	"" ExplosiveCharge
+}
+//junk
++ObjProp 1729 "NoDrop"
+{
+}
++ObjProp 1730 "InvType"
+{
+}
++ObjProp 1774 "InvType"
+{
+}
++ObjProp 2206 "InvType"
+{
+}
++ObjProp 2446 "GameName"
+{
+}
+//quest items
+ObjProp 1741 "FrobInfo"
+{
+	"Inv Action" None
+}
++ObjProp 1741 "StackCount"
+{
+}
+ObjProp 1756 "FrobInfo"
+{
+	"Inv Action" None
+}
++ObjProp 1756 "StackCount"
+{
+}
+ObjProp 2968 "FrobInfo"
+{
+	"Inv Action" None
+}
++ObjProp 2968 "StackCount"
+{
+}

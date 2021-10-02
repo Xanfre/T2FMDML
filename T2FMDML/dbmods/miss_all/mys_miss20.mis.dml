@@ -15,59 +15,209 @@ FINGERPRINT
 	QVAR "goal_target_6" == 2990
 }
 
+//doors
+ObjProp 9 "TransDoor"
+{
+	"Open Position" -10.00
+}
+ObjProp 164 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 166 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 167 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 169 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 269 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 270 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 383 "TransDoor"
+{
+	"Open Position" -10.00
+}
+-ObjProp 505 "JointPos"
+ObjProp 848 "PhysAttr"
+{
+	"COG Offset" 2, 0, 0
+}
++ObjProp 848 "PhysCanMant"
+{
+}
+-ObjProp 848 "PhysType"
++ObjProp 848 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 2642 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 2644 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 2674 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 2868 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 2872 "RotDoor"
+{
+	"Open Angle" 89
+}
+//windows
+Create -448 "Blocker1"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 209.3, 608, -67.3
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+Create -448 "Blocker2"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 209.3, 588.5, -67.3
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
++ObjProp 258 "BlockFrob"
+{
+	"" true
+}
++ObjProp 790 "BlockFrob"
+{
+	"" true
+}
++ObjProp 793 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1192 "BlockFrob"
+{
+	"" true
+}
+//AIs
++ObjProp 318 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 2876 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 2877 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
+//frogbeast / captain's office key
++Receptron 459 "Knockout"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//duncan's heart
+-ObjProp 1060 "PickDist"
++ObjProp 2165 "BlockFrob"
+{
+	"" true
+}
+//control panel
+-Link 1671 1592 "ControlDevice"
++Link 1671 1586 "ControlDevice"
+{
+}
++Link 1671 1897 "ControlDevice"
+{
+}
++ObjProp 1671 "JointPos"
+{
+	"Joint 4" 0.95
+}
+ObjProp 1671 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint4AnimS" On, Reverse
+}
+//deer leg
+-ObjProp 608 "PhysType"
+ObjProp 608 "Position"
+{
+	"Location" 221.3, 598, -74.3
+}
+//gas arrows
+ObjProp 792 "Position"
+{
+	"Location" -89.52, 328.2, 13.9
+}
+//banners
+Create -535 "PBanner"
+{
+	+ObjProp "Position"
+	{
+		"Location" -7.4, 33.85, 34
+	}
+	+ObjProp "Scale"
+	{
+		"" 0.5425, 1, 1.127
+	}
+}
+-ObjProp "PBanner" "PhysType"
++ObjProp "PBanner" "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1641 "Position"
+{
+	"Location" 7.38, 33.85, 34
+}
 -ObjProp 1641 "PhysType"
 +ObjProp 1641 "PhysType"
 {
-	"Type" None
-	"# Submodels" 0
-}
--ObjProp 1641 "PhysControl"
-+ObjProp 1641 "Position"
-{
-	"Location" 7.378, 33.815, 34.0
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
-}
--ObjProp 608 "PhysType"
-+ObjProp 608 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
--ObjProp 608 "PhysControl"
-+ObjProp 608 "Position"
-{
-	"Location" 221.37, 597.7, -74.31
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
-}
--ObjProp 792 "PhysType"
-+ObjProp 792 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
--ObjProp 792 "PhysControl"
-+ObjProp 792 "Position"
-{
-	"Location" -89.52, 328.21, 13.925
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 4000
-}
--ObjProp 1326 "PhysType"
-+ObjProp 1326 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
--ObjProp 1326 "PhysControl"
-+ObjProp 1326 "Position"
-{
-	"Location" -7.27, 33.815, 34.0
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
+	"Type" OBB
 }
