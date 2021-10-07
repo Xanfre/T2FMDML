@@ -105,6 +105,10 @@ FINGERPRINT
 +ObjProp 677 "FrobInfo"
 {
 }
+ObjProp 678 "Scripts"
+{
+	"Don't Inherit" true
+}
 +ObjProp 785 "BlockFrob"
 {
 	"" true

@@ -101,10 +101,8 @@ Create -2091 "SD"
 +Receptron "SD" "EarthStim"
 {
 	Max None
-
 	Target Me
 	Agent -1262
-
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags

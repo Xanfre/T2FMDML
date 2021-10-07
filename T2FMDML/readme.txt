@@ -298,3 +298,4 @@ What Lies Below
 What a Drag!
 Working the Mines
 Worlds Collide
+Zealot's Hollow

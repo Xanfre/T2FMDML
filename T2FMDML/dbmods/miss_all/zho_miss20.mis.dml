@@ -1,0 +1,181 @@
+DML1
+
+//T2 FM: Zealot's Hollow (NewDark 64 Cubed Contest) by Christopher Lafond (Xorak) / Fixes
+
+FINGERPRINT
+{
+	2389 [125 116 82]
+	1682 [77 78 106]
+	962 [106 84 124]
+	663 [89 122 73]
+	1583 [88 69 95]
+	1445 [119 85 107]
+	1341 [102 113 68]
+	1177 [82 121 82]
+	QVAR "goal_target_14" == 1767
+}
+
+//goals
++Link 1470 2535 "ControlDevice"
+{
+}
++ObjProp 1470 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1470 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++Link 1471 1477 "ControlDevice"
+{
+}
++ObjProp 1471 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1471 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++Link 1472 1477 "ControlDevice"
+{
+}
++ObjProp 1472 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1472 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++Link 1475 1477 "ControlDevice"
+{
+}
++ObjProp 1475 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1475 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++Link 1476 2535 "ControlDevice"
+{
+}
++ObjProp 1476 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1476 "TrapQVar"
+{
+	"" =1:goal_state_10
+}
++Link 1477 2535 "ControlDevice"
+{
+}
++ObjProp 1477 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 1478 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1478 "TrapQVar"
+{
+	"" =1:goal_state_14
+}
++ObjProp 1479 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1479 "TrapQVar"
+{
+	"" =0:goal_type_14
+}
++Receptron 2231 "Knockout"
+{
+	Min None
+	Max None
+	Effect "SetQvar"
+	{
+		"Quest Variable" goal_state_9
+		"Operation" Set To
+		"Operand" 2
+	}
+}
+-Link 1767 2533 "ControlDevice"
++Link 1767 2535 "ControlDevice"
+{
+}
+-Link 2399 2535 "ControlDevice"
+-Link 2522 2533 "ControlDevice"
++Link 2522 2525 "ControlDevice"
+{
+}
++Link 2525 1478 "ControlDevice"
+{
+}
++Link 2525 1479 "ControlDevice"
+{
+}
++ObjProp 2525 "TrapFlags"
+{
+	"" NoOff
+}
+-Link 2530 2526 "ControlDevice"
+-Link 2531 2530 "ControlDevice"
+-Link 2531 2529 "ControlDevice"
+-Link 2533 2535 "ControlDevice"
+-Link 2905 2533 "ControlDevice"
+-Link 2538 2399 "ControlDevice"
++Link 2538 2535 "ControlDevice"
+{
+}
+//AIs
+-ObjProp 2118 "CretPose"
+ObjProp 2226 "Position"
+{
+	"Location" 86.3, 91.337, 81.5
+}
+//doors
++ObjProp 1951 "RotDoor"
+{
+	"Blocks Vision?" true
+}
++ObjProp 1952 "RotDoor"
+{
+	"Blocks Vision?" true
+}
++ObjProp 1953 "RotDoor"
+{
+	"Blocks Vision?" true
+}
++ObjProp 1954 "RotDoor"
+{
+	"Blocks Vision?" true
+}
++ObjProp 2376 "PickDist"
+{
+	"" 4.00
+}
++ObjProp 2376 "PickBias"
+{
+	"" 15.00
+}
+//chests
+-ObjProp 905 "PhysType"
+ObjProp 905 "Position"
+{
+	"Location" 119.77, 122, 90.513
+}
++ObjProp 905 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1765 "StTweqLock"
+//junk
++ObjProp 1500 "InvType"
+{
+}
