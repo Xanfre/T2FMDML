@@ -30,7 +30,8 @@ Bloodmist Tower
 Bloodsport
 The Bloody Flounder's Inn
 Bloody Ruins
-Book of Prophecy part 1: Dead Letter Box
+Book of Prophecy: Dead Letter Box
+Book of Prophecy: The Hidden City
 The Box
 Brawl in the Tombs
 Breaking the Stone
@@ -71,6 +72,7 @@ CZSK Council
 Damsel in Distress
 Dancing with the Dead
 Dark Messiah
+A Dark Night
 Dead Flower
 The Dead of Winter
 Death's Cold Embrace
@@ -155,6 +157,7 @@ Last Caress
 The Legend of the Four Elements: The Last Hope
 The Librarian
 Library pt 1: The Town
+A Living Nightmare
 Lord Alan's Basement
 Lord Ashton Series
 Lord Burkhard
@@ -226,6 +229,7 @@ Reunion with Basso
 The Rise of the Mechanists
 The Ritual
 Rosaries are Red
+Rowena's Curse
 Ruined
 Ruins of Originia
 Safe Haven
@@ -271,6 +275,7 @@ The Ties that Bind
 Time for Culture
 Torn Apart
 Torner Island
+The Tower
 Treason and Plot
 TTGM: Chasm of the Lost
 TTGM: Errand Boy

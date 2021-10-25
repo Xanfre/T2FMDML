@@ -1,0 +1,587 @@
+DML1
+
+//T2 FM: Rowena's Curse v3 by Lady Rowena / Fixes
+
+FINGERPRINT
+{
+	221 [-215 9 -4]
+	1364 [-139 -163 -62]
+	355 [-187 -18 -5]
+	1156 [-131 68 10]
+	472 [-177 -2 14]
+	1229 [-234 147 -27]
+	1954 [-103 -9 -6]
+	1968 [-139 -23 -38]
+	QVAR "goal_target_3" == 2037
+}
+
+#script "nvscript"
+
+//goals
++ObjProp 32 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=2475; NVRelayTrapCount=1
+}
+-Link 32 2475 "ControlDevice"
+ObjProp 32 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 767 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=2462; NVRelayTrapCount=1
+}
+-Link 767 2462 "ControlDevice"
+ObjProp 767 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1379 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=2463; NVRelayTrapCount=1; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1000; NVRelayTrap2Count=1
+}
+-Link 1379 2463 "ControlDevice"
+ObjProp 1379 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+}
++ObjProp 2431 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+ObjProp 2431 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 2470 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+ObjProp 2470 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 2543 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=2458; NVRelayTrapCount=1; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1000; NVRelayTrap2Count=1
+}
+-Link 2543 2458 "ControlDevice"
+ObjProp 2543 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+}
++ObjProp 1654 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"
+}
++Link 1654 2473 "ControlDevice"
+{
+}
++ObjProp 1654 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVDeleteTrap
+}
++ObjProp 1654 "TrapQVar"
+{
+	"" =1:mission_complete
+}
+ObjProp 2037 "Scripts"
+{
+	"Script 0" TrigRoomDeposit
+}
+ObjProp 2102 "Scripts"
+{
+	"Script 0" TrigRoomDeposit
+}
+//mantling
++ObjProp 171 "PhysCanMant"
+{
+}
++ObjProp 187 "PhysCanMant"
+{
+}
++ObjProp 190 "PhysCanMant"
+{
+}
++ObjProp 191 "PhysCanMant"
+{
+}
++ObjProp 1167 "PhysCanMant"
+{
+}
++ObjProp 1168 "PhysCanMant"
+{
+}
++ObjProp 1169 "PhysCanMant"
+{
+}
++ObjProp 1231 "PhysCanMant"
+{
+}
++ObjProp 1530 "PhysCanMant"
+{
+}
++ObjProp 1534 "PhysCanMant"
+{
+}
++ObjProp 1537 "PhysCanMant"
+{
+}
++ObjProp 1570 "PhysCanMant"
+{
+}
++ObjProp 1571 "PhysCanMant"
+{
+}
++ObjProp 1572 "PhysCanMant"
+{
+}
++ObjProp 1573 "PhysCanMant"
+{
+}
++ObjProp 1578 "PhysCanMant"
+{
+}
++ObjProp 1579 "PhysCanMant"
+{
+}
++ObjProp 1580 "PhysCanMant"
+{
+}
++ObjProp 1582 "PhysCanMant"
+{
+}
++ObjProp 1610 "PhysCanMant"
+{
+}
++ObjProp 1611 "PhysCanMant"
+{
+}
++ObjProp 1612 "PhysCanMant"
+{
+}
++ObjProp 1614 "PhysCanMant"
+{
+}
++ObjProp 1618 "PhysCanMant"
+{
+}
++ObjProp 1631 "PhysCanMant"
+{
+}
++ObjProp 1647 "PhysCanMant"
+{
+}
++ObjProp 1648 "PhysCanMant"
+{
+}
++ObjProp 1657 "PhysCanMant"
+{
+}
++ObjProp 1684 "PhysCanMant"
+{
+}
++ObjProp 2246 "PhysCanMant"
+{
+}
++ObjProp 2247 "PhysCanMant"
+{
+}
++ObjProp 2248 "PhysCanMant"
+{
+}
++ObjProp 2249 "PhysCanMant"
+{
+}
++ObjProp 2250 "PhysCanMant"
+{
+}
++ObjProp 2352 "PhysCanMant"
+{
+}
+-ObjProp 1292 "PhysType"
+ObjProp 1292 "Position"
+{
+	"Location" -110.94, 37.7, 14.6
+}
++ObjProp 1292 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1432 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
+ObjProp 2011 "Scale"
+{
+	"" 1, 3, 1
+}
+-ObjProp 2011 "PhysType"
+ObjProp 2011 "Position"
+{
+	"Location" -223.5, -58.2, 17.6
+}
++ObjProp 2011 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 2278 "Scale"
+{
+	"" 1, 2.5, 1.2
+}
+-ObjProp 2278 "PhysType"
+ObjProp 2278 "Position"
+{
+	"Location" -101.8, 42.9, 14.9
+}
++ObjProp 2278 "PhysType"
+{
+	"Type" OBB
+}
+//doors
++ObjProp 185 "BlockFrob"
+{
+	"" true
+}
+ObjProp 207 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 211 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 213 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 214 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 227 "BlockFrob"
+{
+	"" true
+}
+ObjProp 234 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 234 "BlockFrob"
+{
+	"" true
+}
+ObjProp 235 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 235 "BlockFrob"
+{
+	"" true
+}
++ObjProp 238 "BlockFrob"
+{
+	"" true
+}
+ObjProp 413 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 414 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 443 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 476 "BlockFrob"
+{
+	"" true
+}
++ObjProp 752 "BlockFrob"
+{
+	"" true
+}
++ObjProp 927 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1055 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 1151 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 1152 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1318 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 1318 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1384 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1751 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2559 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2569 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2762 "BlockFrob"
+{
+	"" true
+}
++MetaProp 564 -2420
++MetaProp 744 -2420
++MetaProp 783 -2420
++MetaProp 813 -2420
++MetaProp 988 -2420
++MetaProp 1030 -2420
++MetaProp 1031 -2420
++MetaProp 1032 -2420
++MetaProp 1164 -2420
++MetaProp 1339 -2420
++MetaProp 1351 -2420
++MetaProp 1743 -2420
++MetaProp 1751 -2420
++MetaProp 2550 -2420
++MetaProp 2749 -2420
+-ObjProp 1566 "RotDoor"
+-ObjProp 1832 "RotDoor"
+-ObjProp 2416 "RotDoor"
+-ObjProp 2417 "RotDoor"
+-ObjProp 2675 "RotDoor"
+-ObjProp 2676 "RotDoor"
+-ObjProp 2677 "RotDoor"
+-ObjProp 2678 "RotDoor"
+//fireplaces
+-ObjProp 266 "Scale"
+ObjProp 243 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 248 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 569 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 716 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+//secrets
++ObjProp 1033 "PickDist"
+{
+	"" 3.00
+}
++ObjProp 1736 "PickDist"
+{
+	"" 3.00
+}
+ObjProp 2645 "PickDist"
+{
+	"" 4.00
+}
+-ObjProp 2497 "PickDist"
+-ObjProp 2620 "PickDist"
+-ObjProp 2621 "PickDist"
+-ObjProp 2625 "PickDist"
++ObjProp 2213 "DesignNote"
+{
+	"" NVAmbientSoundTrapOn="FrobWorldEnd"
+}
++Link 2213 -776 "SoundDescription"
+{
+}
++ObjProp 2213 "Class Tags"
+{
+	"1: Tags" ""
+}
++ObjProp 2213 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+}
++ObjProp 2584 "DesignNote"
+{
+	"" NVAmbientSoundTrapOn="FrobWorldEnd"
+}
++Link 2584 -776 "SoundDescription"
+{
+}
++ObjProp 2584 "Class Tags"
+{
+	"1: Tags" ""
+}
++ObjProp 2584 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+}
++Link 2762 2584 "ControlDevice"
+{
+}
+//chests
+-ObjProp 409 "StTweqLock"
++ObjProp 2238 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="FrobWorldEnd"; NVRemovePropertyTrapProp="FrobInfo"
+}
+ObjProp 2238 "Scripts"
+{
+	"Script 1" NVRemovePropertyTrap
+}
+//lockboxes
++ObjProp 933 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 933 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 951 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 951 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 956 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 956 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 1174 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1174 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+//misplaced objects
+-ObjProp 272 "PhysType"
+ObjProp 272 "Position"
+{
+	"Location" -197.2, -44.11, -6.87
+}
++ObjProp 272 "PhysType"
+{
+	"Type" Sphere
+}
+-ObjProp 385 "PhysType"
++ObjProp 385 "PhysType"
+{
+	"Type" Sphere Hat
+}
+-ObjProp 551 "PhysType"
++ObjProp 551 "PhysType"
+{
+	"Type" Sphere Hat
+}
++Receptron 1515 "EarthStim"
+{
+	Max None
+	Target 2762
+	Agent Me
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 1515 "EarthStim"
+{
+	Max None
+	Target 157
+	Agent Me
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 1515 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 1515 "Scale"
+{
+	"" 8.33, 0.011, 0.6
+}
+-ObjProp 1515 "PhysType"
++ObjProp 1515 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2366 "PhysType"
+ObjProp 2366 "Position"
+{
+	"Location" -190.675, -40.2, -7.408
+}
++ObjProp 2366 "PhysType"
+{
+	"Type" OBB
+}
+//AIs
++ObjProp 2122 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ccopm
+}
++Receptron 2421 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2421 "Knockout"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2421 "PokeStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 2421 "NoFlash"
+{
+	"" true
+}
++ObjProp 2421 "FrobInfo"
+{
+}
+//junk
++ObjProp 1742 "FrobInfo"
+{
+}
++ObjProp 2355 "StackCount"
+{
+}

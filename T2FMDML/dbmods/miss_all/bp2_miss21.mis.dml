@@ -1,0 +1,440 @@
+DML1
+
+//T2 FM: The Book of Prophecy: The Hidden City by Schattengilde / Fixes
+
+FINGERPRINT
+{
+	1430 [226 291 86]
+	1978 [-72 414 115]
+	632 [222 186 96]
+	245 [255 200 103]
+	2010 [-68 321 119]
+	576 [274 230 97]
+	2032 [-59 350 116]
+	1617 [112 401 115]
+	QVAR "goal_target_0" == 1165
+}
+
+#script "nvscript"
+
+//goals
++ObjProp 147 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 147 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 147 "TrapQVar"
+{
+	"" =1:goal_final_4
+}
++ObjProp 148 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 148 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 148 "TrapQVar"
+{
+	"" =1:goal_irreversible_0
+}
++ObjProp 149 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 149 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 149 "TrapQVar"
+{
+	"" =149:goal_target_2
+}
+//drugs
+-Link 506 1377 "ControlDevice"
+-Link 506 1371 "ControlDevice"
+-Link 506 273 "Route"
+-Link 506 1372 "Route"
+-ObjProp 506 "Scripts"
+++Receptron 506 "HolyStim"
+{
+	Max None
+	Effect "SetQvar"
+	{
+		"Quest Variable" goal_state_10
+		"Operation" Set To
+		"Operand" 1
+	}
+}
+++Receptron 506 "HolyStim"
+{
+	Max None
+	Effect "SetQvar"
+	{
+		"Quest Variable" goal_state_11
+		"Operation" Set To
+		"Operand" 1
+	}
+}
++ObjProp 514 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapCount=1
+}
+ObjProp 514 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
+//secrets
++Link 358 363 "ControlDevice"
+{
+}
++ObjProp 363 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 363 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 363 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++ObjProp 454 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 454 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 454 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++ObjProp 456 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 456 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 456 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++ObjProp 457 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 457 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 457 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++Link 459 454 "ControlDevice"
+{
+}
++Link 459 456 "ControlDevice"
+{
+}
++Link 459 457 "ControlDevice"
+{
+}
++ObjProp 495 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 495 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 495 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++ObjProp 509 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOnDelay=200; NVRelayTrapTDest=565; NVRelayTrapCount=1; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2OnDelay=1000; NVRelayTrap2Count=1; NVRemovePropertyTrapProp="RenderType"
+}
+-ObjProp 509 "NoDrop"
++ObjProp 509 "RenderType"
+{
+	"" Not Rendered
+}
+ObjProp 509 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+	"Script 3" NVRemovePropertyTrap
+}
++ObjProp 565 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 565 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
+ObjProp 566 "CollisionType"
+{
+	"" None
+}
++Link 567 509 "ControlDevice"
+{
+}
+//doors
++MetaProp 74 -2420
++MetaProp 105 -2420
++MetaProp 220 -2420
++MetaProp 489 -2420
++MetaProp 1366 -2420
++MetaProp 1922 -2420
+-ObjProp 241 "JointPos"
+-ObjProp 1816 "JointPos"
+-ObjProp 2037 "JointPos"
+ObjProp 214 "RotDoor"
+{
+	"Open Angle" 89
+}
++Receptron 354 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 354 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 666 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1125 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 1868 "PickDist"
+{
+	"" 4.00
+}
++Receptron 1988 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1988 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 2362 "PickDist"
+{
+	"" 4.00
+}
+//switches
+ObjProp 121 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 121 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 122 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 122 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
++ObjProp 421 "PickDist"
+{
+	"" 5.00
+}
++Link 421 495 "ControlDevice"
+{
+}
++ObjProp 421 "CfgTweqRotate"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Scripts
+	"Primary Axis" 3
+	"z rate-low-high" 10, 0, 60
+}
+ObjProp 757 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 757 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 759 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 759 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 805 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 805 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+//painting
+-ObjProp 525 "PhysType"
+ObjProp 525 "Position"
+{
+	"Location" 196.25, 226.5, 101
+}
++ObjProp 525 "PhysType"
+{
+	"Type" OBB
+}
+//scrolls
+-ObjProp 72 "PhysType"
+ObjProp 72 "Position"
+{
+	"Heading" c000
+}
++ObjProp 72 "PhysType"
+{
+	"Type" Sphere
+}
++ObjProp 860 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
++ObjProp 860 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+//bloodstains
++ObjProp 900 "RenderAlpha"
+{
+	"" 1.00
+}
++ObjProp 915 "RenderAlpha"
+{
+	"" 1.00
+}
++ObjProp 953 "RenderAlpha"
+{
+	"" 1.00
+}
++ObjProp 954 "RenderAlpha"
+{
+	"" 1.00
+}
++ObjProp 965 "RenderAlpha"
+{
+	"" 1.00
+}
++ObjProp 971 "RenderAlpha"
+{
+	"" 1.00
+}
+//junk
++ObjProp 955 "InvType"
+{
+}
+//victrola
+Create -2803 "VicOnOff"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 35.7, 345.5, 104.5
+		"Heading" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Class Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "CfgTweqJoints"
+	{
+		"    rate-low-high" 15, 0, 30
+	}
+}
++Link "VicOnOff" 980 "ControlDevice"
+{
+}
++Link 980 "VicOnOff" "FrobProxy"
+{
+}
+ObjProp 980 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+	"Script 1" ""
+	"Don't Inherit" true
+}
+//AIs
+-ObjProp 1005 "AI_Vision"
+ObjProp 1005 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 1534 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 1995 "AI_Hearing"
+{
+	"" Below Average
+}
+//bookcases
+-ObjProp 1203 "PhysType"
++ObjProp 1203 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1753 "PhysType"
++ObjProp 1753 "PhysType"
+{
+	"Type" OBB
+}

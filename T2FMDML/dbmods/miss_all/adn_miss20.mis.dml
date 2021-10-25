@@ -1,0 +1,56 @@
+DML1
+
+//T2 FM: A Dark Night by JewelThief / Fixes
+
+FINGERPRINT
+{
+	617 [-162 74 91]
+	154 [-164 -38 83]
+	520 [-116 122 91]
+	258 [-132 151 90]
+	269 [-192 105 118]
+	494 [-147 161 90]
+	221 [-124 92 117]
+	453 [-199 155 90]
+	QVAR "goal_target_0" == 631
+}
+
+//goal 0
++ObjProp 389 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 389 "TrapQVar"
+{
+	"" =1:goal_irreversible_0
+}
++Link 469 389 "ControlDevice"
+{
+}
++ObjProp 469 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 469 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
+//doors
++ObjProp 123 "PhysCanMant"
+{
+}
++ObjProp 124 "PhysCanMant"
+{
+}
++Receptron 322 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//AI
++ObjProp 452 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}

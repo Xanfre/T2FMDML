@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Ack! There's a Zombie in the Basement by Polygon / Fixes
+//T2 FM: Ack! There's a Zombie in the Basement by M. Schotte (Polygon) / Fixes
 
 FINGERPRINT
 {
@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_3" == 361
 }
 
-//fix zombie objective
+//zombie (goal 6)
 -Receptron 63 "BashStim"
 -Receptron 63 "SlashStim"
 +Receptron 63 "BashStim"
@@ -56,4 +56,19 @@ FINGERPRINT
 		"Multiply By" -1.00
 		"Then Add" 0
 	}
+}
+//candlestick / flame
++ObjProp 423 "Scripts"
+{
+	"Script 0" FrobSlay
+}
+//AI
+ObjProp 543 "AI_Hearing"
+{
+	"" Well Below Average
+}
+//secret door
++ObjProp 584 "BlockFrob"
+{
+	"" true
 }

@@ -1,0 +1,91 @@
+DML1
+
+//T2 FM: A Living Nightmare by John Denison (john9818a) / Fixes
+
+FINGERPRINT
+{
+	1518 [117 61 8]
+	760 [-31 -78 -46]
+	492 [-3 128 -15]
+	1786 [73 172 29]
+	516 [27 136 -23]
+	1155 [-18 216 7]
+	986 [-21 69 -26]
+	557 [157 40 -47]
+	QVAR "goal_target_2" == 557
+}
+
+//goals
+-Link 73 1369 "ControlDevice"
+-Link 73 1368 "ControlDevice"
+-Link 73 1256 "ControlDevice"
++ObjProp 116 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 116 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 116 "TrapQVar"
+{
+	"" =0:goal_irreversible_7
+}
++ObjProp 117 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 117 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 117 "TrapQVar"
+{
+	"" =1:goal_reverse_6
+}
++ObjProp 118 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 118 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 118 "TrapQVar"
+{
+	"" =73:goal_target_7
+}
+//quest items
++ObjProp 557 "StackCount"
+{
+}
++ObjProp 625 "StackCount"
+{
+}
++ObjProp 1385 "InvType"
+{
+}
++ObjProp 1588 "NoDrop"
+{
+	"" true
+}
++ObjProp 1592 "NoDrop"
+{
+	"" true
+}
++ObjProp 1616 "NoDrop"
+{
+	"" true
+}
++ObjProp 1658 "NoDrop"
+{
+	"" true
+}
++ObjProp 1659 "NoDrop"
+{
+	"" true
+}
++ObjProp 1662 "NoDrop"
+{
+	"" true
+}

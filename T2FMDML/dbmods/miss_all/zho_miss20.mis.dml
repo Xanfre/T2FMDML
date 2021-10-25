@@ -92,7 +92,7 @@ FINGERPRINT
 }
 +ObjProp 1479 "TrapQVar"
 {
-	"" =0:goal_type_14
+	"" =1:goal_irreversible_14
 }
 +Receptron 2231 "Knockout"
 {
