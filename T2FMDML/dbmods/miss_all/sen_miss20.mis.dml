@@ -1,0 +1,71 @@
+DML1
+
+//T2 FM: Simple Enough by Tom N. Harris (Telliamed) / Fixes
+
+FINGERPRINT
+{
+	623 [-83 215 24]
+	1316 [-75 160 3]
+	591 [-39 190 10]
+	215 [-104 177 3]
+	641 [-20 121 2]
+	812 [-39 115 5]
+	1382 [-2 185 18]
+	553 [13 225 25]
+	QVAR "goal_target_4" == 77
+}
+
+//doors
++Receptron 13 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 15 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 18 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 24 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 25 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 186 "FrobInfo"
+{
+}
++ObjProp 187 "FrobInfo"
+{
+}
++Receptron 233 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 779 "PhysCanMant"
+{
+}
+//watering can
+-ObjProp 652 "PhysType"
+ObjProp 652 "Position"
+{
+	"Location" -6.725, 93.98, 4
+}
++ObjProp 652 "PhysType"
+{
+	"Type" Sphere
+}
+//chest key
++ObjProp 1116 "SlayResult"
+{
+}
+//pickpocketing
+-Link 1170 1169 "ControlDevice"

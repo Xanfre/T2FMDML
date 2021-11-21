@@ -22,9 +22,13 @@ FINGERPRINT
 {
 	"quest var values" 0, 1, 2
 }
++Link 147 145 "ControlDevice"
+{
+}
 +ObjProp 147 "Scripts"
 {
 	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
 }
 +ObjProp 147 "TrapQVar"
 {
@@ -53,6 +57,15 @@ FINGERPRINT
 +ObjProp 149 "TrapQVar"
 {
 	"" =149:goal_target_2
+}
+//pickpocketing
++ObjProp 145 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 145 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
 }
 //drugs
 -Link 506 1377 "ControlDevice"
@@ -376,41 +389,14 @@ ObjProp 72 "Position"
 {
 }
 //victrola
-Create -2803 "VicOnOff"
++ObjProp 980 "DesignNote"
 {
-	-ObjProp "PhysType"
-	+ObjProp "Position"
-	{
-		"Location" 35.7, 345.5, 104.5
-		"Heading" c000
-	}
-	+ObjProp "PhysType"
-	{
-		"Type" OBB
-	}
-	+ObjProp "RenderType"
-	{
-		"" Not Rendered
-	}
-	+ObjProp "Class Tags"
-	{
-		"1: Tags" ""
-	}
-	+ObjProp "CfgTweqJoints"
-	{
-		"    rate-low-high" 15, 0, 30
-	}
-}
-+Link "VicOnOff" 980 "ControlDevice"
-{
-}
-+Link 980 "VicOnOff" "FrobProxy"
-{
+	"" NVFrobToggleTDest="[Me]"
 }
 ObjProp 980 "Scripts"
 {
-	"Script 0" NVAmbientSoundTrap
-	"Script 1" ""
+	"Script 0" NVFrobToggle
+	"Script 1" NVAmbientSoundTrap
 	"Don't Inherit" true
 }
 //AIs

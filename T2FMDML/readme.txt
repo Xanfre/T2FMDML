@@ -36,6 +36,7 @@ The Box
 Brawl in the Tombs
 Breaking the Stone
 Breakout from Apocalypse Prison
+Bruder Snuck
 The Builder's Hammer
 Burglary in Blackbrook
 Calendra's Legacy
@@ -51,6 +52,8 @@ Choose Your Own Adventure
 Christmas Present
 Chronicle of the Metal Age
 Citadel of Douro
+The Citadel of Wrath-Amon
+City Conflict
 Claire's Harbour
 The Clean Out
 The Clocktower
@@ -77,6 +80,7 @@ Dead Flower
 The Dead of Winter
 Death's Cold Embrace
 A Debt Repaid
+Dedicated to the People of TTLG
 Deep Trouble: City Under the Sea
 Delford Abbey
 The Den
@@ -152,6 +156,7 @@ The Keepers are Thirsty
 Keyhunt
 Kill Factory
 Kill Factory II: Escape from the Planet of the Robots
+The Kindred Vault
 Konkurrenten
 Last Caress
 The Legend of the Four Elements: The Last Hope
@@ -164,6 +169,7 @@ Lord Burkhard
 Lord Fishkill's Curse
 Lord Gibson's Estate
 Lord Hammerarse Manor
+The Lost Castle
 The Lost Crusade
 Lost Souls
 A Love Story II
@@ -243,6 +249,7 @@ Shadow Plans
 Shadows in our Blood
 Shining Standards
 A Shopping Stopover
+Simple Enough
 Sisterhood of Azura part 1: Estheridge
 Sisterhood of Azura part 2: The House
 The Skygem Connection

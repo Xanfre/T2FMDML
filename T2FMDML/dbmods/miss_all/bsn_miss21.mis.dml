@@ -1,0 +1,51 @@
+DML1
+
+//T2 FM: Brother Snuck (Bruder Snuck) by Silencium18 / Fixes
+
+FINGERPRINT
+{
+	135 [64 88 -19]
+	14 [-34 76 5]
+	87 [49 79 -18]
+	168 [59 35 -16]
+	143 [29 43 -15]
+	105 [3 -9 -8]
+	152 [-20 39 -5]
+	82 [-7 37 -1]
+	QVAR "goal_target_1" == 169
+}
+
+//pickpocketing
++ObjProp 9 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 9 10 "ControlDevice"
+{
+}
++ObjProp 9 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 10 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 10 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}
+//arrows
+-ObjProp 50 "DeathStage"
+-ObjProp 105 "DeathStage"
+-ObjProp 117 "DeathStage"
+-ObjProp 118 "DeathStage"
+//evidence scroll
++ObjProp 188 "NoDrop"
+{
+	"" true
+}
++ObjProp 188 "GameName"
+{
+	"" Name_Evidence
+}

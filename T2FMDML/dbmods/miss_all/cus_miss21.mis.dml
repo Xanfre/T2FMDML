@@ -40,3 +40,23 @@ FINGERPRINT
 +Link 1841 1840 "ControlDevice"
 {
 }
+//pickpocketing
++ObjProp 1593 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 1593 1594 "ControlDevice"
+{
+}
++ObjProp 1593 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 1594 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1594 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}

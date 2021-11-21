@@ -146,6 +146,12 @@ ObjProp 201 "Position"
 {
 	"" true
 }
+//key
+-Link 456 459 "CreatureAttachment"
++Link 456 459 "Contains"
+{
+	"" Belt
+}
 //coin
 ObjProp 493 "Position"
 {

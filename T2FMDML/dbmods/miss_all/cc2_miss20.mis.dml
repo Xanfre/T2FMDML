@@ -1,0 +1,91 @@
+DML1
+
+//T2 FM: City Conflict (part 2) by Silencium18 / Fixes
+
+FINGERPRINT
+{
+	302 [-136 138 5]
+	43 [12 96 -2]
+	146 [112 244 -31]
+	224 [9 196 -6]
+	444 [120 282 -37]
+	351 [-131 151 7]
+	469 [136 270 -38]
+	378 [146 274 -37]
+	QVAR "goal_target_0" == 277
+}
+
+//pickpocketing
++ObjProp 39 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 39 40 "ControlDevice"
+{
+}
++ObjProp 39 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 40 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 40 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
+//secret door
++MetaProp 165 -2420
+//mantling
++ObjProp 209 "PhysCanMant"
+{
+}
+//barrels
+ObjProp 212 "Position"
+{
+	"Location" -59.2, 164.87, -5.13
+}
+ObjProp 213 "Position"
+{
+	"Location" -36.87, 164.87, -5.13
+}
+//toolbox
+-ObjProp 268 "PhysType"
+ObjProp 268 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 268 "PhysType"
+{
+	"Type" OBB
+}
+//DeathStage 12
+-ObjProp 269 "DeathStage"
+-ObjProp 285 "DeathStage"
+-ObjProp 305 "DeathStage"
+//information scroll
++ObjProp 277 "NoDrop"
+{
+	"" true
+}
+//bottle
+-Link 318 325 "Contains"
++Link 318 325 "CreatureAttachment"
+{
+	"Joint" Left Fingers
+}
++ObjProp 325 "FrobInfo"
+{
+}
+//AIs
++ObjProp 320 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" malesvca
+}
++ObjProp 378 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
+}

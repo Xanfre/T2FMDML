@@ -48,6 +48,26 @@ ObjProp 172 "TrapQVar"
 {
 	"" >3:DrSSecrets
 }
+//pickpocketing
++ObjProp 251 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 251 252 "ControlDevice"
+{
+}
++ObjProp 251 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 252 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 252 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}
 //AIs
 +ObjProp 234 "AI_Hearing"
 {

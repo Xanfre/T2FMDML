@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: All Torc (Fort Montoya) by Robin Collier (R Soul) / Fixes
+
+FINGERPRINT
+{
+	1627 [-177 139 -28]
+	827 [-125 79 40]
+	1336 [-26 115 14]
+	1204 [-158 24 30]
+	299 [-134 150 31]
+	1166 [-175 62 35]
+	1791 [-146 29 14]
+	1177 [-100 72 20]
+	QVAR "goal_target_0" == 1173
+}
+
+//arrows
+-ObjProp 1062 "DeathStage"
+//pickpocketing
+-Link 1392 1849 "ControlDevice"

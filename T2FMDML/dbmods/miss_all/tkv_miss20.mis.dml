@@ -1,0 +1,39 @@
+DML1
+
+//T2 FM: The Kindred Vault (Thief Anniversary Contest) by Paul D. Rotter (eepcat) / Fixes
+
+FINGERPRINT
+{
+	316 [78 59 72]
+	327 [112 87 107]
+	304 [80 87 102]
+	200 [62 96 105]
+	347 [69 66 105]
+	284 [70 80 72]
+	301 [110 58 88]
+	295 [76 58 104]
+	QVAR "goal_target_0" == 312
+}
+
+//doors
++ObjProp 6 "BlockFrob"
+{
+	"" true
+}
++ObjProp 6 "PickDist"
+{
+	"" 5.00
+}
++Link 19 337 "ScriptParams"
+{
+	"" Double
+}
++MetaProp 36 -2420
++MetaProp 199 -2420
++MetaProp 355 -2420
+//pickpocketing
+-Link 99 101 "ControlDevice"
+//mantling
++ObjProp 130 "PhysCanMant"
+{
+}

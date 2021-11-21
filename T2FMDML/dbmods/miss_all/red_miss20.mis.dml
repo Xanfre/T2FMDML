@@ -374,8 +374,18 @@ ObjProp 2456 "AI_Mode"
 +ObjProp 1730 "InvType"
 {
 }
++ObjProp 1730 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
 +ObjProp 1774 "InvType"
 {
+}
++ObjProp 1774 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
 }
 +ObjProp 2206 "InvType"
 {

@@ -1,0 +1,49 @@
+DML1
+
+//T2 FM: The Citadel of Wrath-Amon (Polish Contest) by Marcin Pawelec (Paweuek) / Fixes
+
+FINGERPRINT
+{
+	95 [540 499 538]
+	355 [556 534 537]
+	249 [589 511 537]
+	207 [530 449 535]
+	94 [540 499 538]
+	215 [543 521 547]
+	315 [517 550 506]
+	140 [611 511 492]
+	QVAR "goal_target_1" == 276
+}
+
+//pickpocketing
++ObjProp 17 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 17 20 "ControlDevice"
+{
+}
++ObjProp 17 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 20 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 20 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}
+//doors
++MetaProp 249 -2420
++MetaProp 285 -2420
++ObjProp 285 "Locked"
+{
+	"" true
+}
+//cure for hangover
++ObjProp 322 "NoDrop"
+{
+	"" true
+}

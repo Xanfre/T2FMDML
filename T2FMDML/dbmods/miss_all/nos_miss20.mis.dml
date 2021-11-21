@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Nostalgia by Rob Strain (Random_Taffer) and Devin Reynolds (Drysils Chosen) / Fix conversation
+//T2 FM: Nostalgia (Memento Mori) by Rob Strain (Random_Taffer) & Devin Reynolds (Drysils Chosen) / Fixes
 
 FINGERPRINT
 {
@@ -15,7 +15,324 @@ FINGERPRINT
 	QVAR "goal_target_2" == 319
 }
 
+//goals / pickpocketing
++ObjProp 13 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 13 14 "ControlDevice"
+{
+}
++Link 13 16 "ControlDevice"
+{
+}
++ObjProp 13 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
+}
++ObjProp 13 "TrapQVar"
+{
+	"" =0:goal_irreversible_3
+}
++ObjProp 14 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 14 "TrapQVar"
+{
+	"" =0:goal_irreversible_4
+}
++ObjProp 16 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 16 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}
+//keys / locks / levers
+-Link 7 628 "ControlDevice"
+-Link 205 188 "ControlDevice"
+-Link 216 61 "ControlDevice"
+-Link 244 198 "ControlDevice"
+-Link 281 190 "ControlDevice"
+-Link 294 312 "ControlDevice"
+-Link 312 311 "ControlDevice"
+-Link 313 290 "ControlDevice"
+-Link 319 216 "ControlDevice"
+-Link 405 590 "ControlDevice"
+-ObjProp 600 "PhysType"
+-ObjProp 601 "PhysType"
+-ObjProp 606 "PhysType"
+-Link 608 603 "ControlDevice"
+-Link 609 602 "ControlDevice"
+-Link 628 588 "ControlDevice"
+-Link 637 638 "ControlDevice"
++ObjProp 188 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++ObjProp 190 "SlayResult"
+{
+}
++ObjProp 198 "SlayResult"
+{
+}
++ObjProp 229 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="NowUnlocked"; NVRemovePropertyTrapProp="FrobInfo"
+}
+-Link 229 244 "ControlDevice"
+ObjProp 229 "Scripts"
+{
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 280 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+-Link 280 205 "ControlDevice"
+-Link 280 281 "ControlDevice"
++Link 280 188 "ControlDevice"
+{
+}
+ObjProp 280 "Scripts"
+{
+	"Script 1" NVMetaTrap
+}
++ObjProp 290 "SlayResult"
+{
+}
++ObjProp 290 "NoDrop"
+{
+	"" true
+}
+-Link 291 313 "ControlDevice"
++ObjProp 291 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" Scripts
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 15, 0, 90
+}
++ObjProp 291 "CfgTweqModels"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"MiscC" AnchorVhot
+	"Rate" 1
+	"Model 0" ironlev
+}
++ObjProp 311 "StackCount"
+{
+}
++ObjProp 311 "SlayResult"
+{
+}
++ObjProp 311 "NoDrop"
+{
+	"" true
+}
+-Link 311 637 "ControlDevice"
++Link 311 638 "ControlDevice"
+{
+}
++ObjProp 314 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 406 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+-Link 406 405 "ControlDevice"
++ObjProp 406 "Class Tags"
+{
+}
+ObjProp 406 "Scripts"
+{
+	"Script 1" NVMetaTrap
+}
++Link 484 61 "ControlDevice"
+{
+}
++Link 484 652 "ControlDevice"
+{
+}
++ObjProp 530 "StackCount"
+{
+}
++ObjProp 588 "StackCount"
+{
+}
++ObjProp 588 "SlayResult"
+{
+}
++ObjProp 588 "NoDrop"
+{
+	"" true
+}
++ObjProp 590 "StackCount"
+{
+}
++ObjProp 590 "SlayResult"
+{
+}
++ObjProp 590 "NoDrop"
+{
+	"" true
+}
++ObjProp 593 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+-Link 593 609 "ControlDevice"
++ObjProp 593 "Class Tags"
+{
+}
+ObjProp 593 "Scripts"
+{
+	"Script 1" NVMetaTrap
+}
++ObjProp 598 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+-Link 598 608 "ControlDevice"
++ObjProp 598 "Class Tags"
+{
+}
+ObjProp 598 "Scripts"
+{
+	"Script 1" NVMetaTrap
+}
++ObjProp 602 "StackCount"
+{
+}
++ObjProp 602 "SlayResult"
+{
+}
++ObjProp 602 "NoDrop"
+{
+	"" true
+}
++Receptron 603 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -2369
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 603 "EarthStim"
+{
+	Max None
+	Target 602
+	Agent -2369
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 603 "EarthStim"
+{
+	Max None
+	Target 590
+	Agent -2369
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 603 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 603 "StackCount"
+{
+}
++ObjProp 603 "SlayResult"
+{
+}
++ObjProp 603 "NoDrop"
+{
+	"" true
+}
++ObjProp 638 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+//mantling
++ObjProp 31 "PhysCanMant"
+{
+}
+//doors
+-ObjProp 34 "JointPos"
+-ObjProp 60 "JointPos"
+-ObjProp 98 "JointPos"
+-ObjProp 100 "JointPos"
+-ObjProp 496 "JointPos"
+-ObjProp 575 "JointPos"
+ObjProp 146 "RotDoor"
+{
+	"Open Angle" 274
+}
+ObjProp 320 "TransDoor"
+{
+	"Base Speed" 2.50
+}
+ObjProp 321 "TransDoor"
+{
+	"Base Speed" 2.50
+}
++ObjProp 729 "Locked"
+{
+	"" true
+}
++ObjProp 730 "Locked"
+{
+	"" true
+}
+//scrolls
++ObjProp 211 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobInvEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+-ObjProp 211 "PhysType"
+ObjProp 211 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 521 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+ObjProp 521 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" ""
+}
+//conv
 +ObjProp 218 "AI_Efficiency"
 {
 	"Enabled" false
+}
+//fish
++ObjProp 282 "CombineType"
+{
+	"" Sushi
+}
++ObjProp 283 "CombineType"
+{
+	"" Sushi
+}
++ObjProp 284 "CombineType"
+{
+	"" Sushi
 }

@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Lord Ashton Series (A Visit to Lord Ashton's) by Christine Schneider / Fix door
+//T2 FM: The Lord Ashton Series (A Visit to Lord Ashton) by Christine Schneider / Fixes
 
 FINGERPRINT
 {
@@ -15,4 +15,561 @@ FINGERPRINT
 	QVAR "goal_target_1" == 1345
 }
 
+//shields, lanterns, junk
+-ObjProp 9 "FrobInfo"
+-ObjProp 9 "PhysType"
+-ObjProp 514 "FrobInfo"
+-ObjProp 514 "PhysType"
+-ObjProp 520 "FrobInfo"
+-ObjProp 520 "PhysType"
+-ObjProp 1075 "FrobInfo"
+-ObjProp 1081 "FrobInfo"
+-ObjProp 1717 "FrobInfo"
+-ObjProp 1717 "PhysType"
+-ObjProp 1908 "FrobInfo"
+-ObjProp 1909 "FrobInfo"
+-ObjProp 1911 "FrobInfo"
+-ObjProp 2027 "FrobInfo"
+-ObjProp 2029 "FrobInfo"
+-ObjProp 2031 "FrobInfo"
++ObjProp 628 "FrobInfo"
+{
+}
++ObjProp 727 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 727 "InvType"
+{
+}
++ObjProp 728 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 728 "InvType"
+{
+}
++ObjProp 729 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 729 "InvType"
+{
+}
++ObjProp 1343 "InvType"
+{
+}
++ObjProp 1634 "FrobInfo"
+{
+}
+//doors
++MetaProp 37 -2420
+ObjProp 168 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 171 "RotDoor"
+{
+	"Open Angle" 86
+}
+ObjProp 172 "RotDoor"
+{
+	"Open Angle" 83
+}
+ObjProp 179 "RotDoor"
+{
+	"Open Angle" 77
+}
+ObjProp 185 "RotDoor"
+{
+	"Open Angle" 89
+}
++Receptron 186 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 186 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 186 "BlockFrob"
+{
+	"" true
+}
++ObjProp 187 "BlockFrob"
+{
+	"" true
+}
++ObjProp 188 "BlockFrob"
+{
+	"" true
+}
++Receptron 189 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 189 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 189 "BlockFrob"
+{
+	"" true
+}
++ObjProp 191 "BlockFrob"
+{
+	"" true
+}
+ObjProp 195 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 198 "RotDoor"
+{
+	"Open Angle" 89
+}
++Receptron 200 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 200 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 200 "BlockFrob"
+{
+	"" true
+}
++ObjProp 201 "BlockFrob"
+{
+	"" true
+}
++ObjProp 202 "BlockFrob"
+{
+	"" true
+}
++Receptron 203 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 203 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 203 "BlockFrob"
+{
+	"" true
+}
++Receptron 235 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 235 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 236 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 236 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 236 "BlockFrob"
+{
+	"" true
+}
+ObjProp 242 "RotDoor"
+{
+	"Open Angle" 271
+}
++Receptron 258 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 258 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 259 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 259 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 263 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 266 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 267 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 276 "Locked"
+{
+	"" true
+}
++Receptron 279 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 819 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 819 "PhysType"
++ObjProp 819 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1033 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 1216 "PhysType"
++ObjProp 1216 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 1216 -2420
++Receptron 1265 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -2425
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 1265 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 1265 "RotDoor"
++ObjProp 1265 "TransDoor"
+{
+	"Open Position" 4.00
+	"Base Speed" 2.00
+	"Axis" Y-Axis
+	"Blocks Vision?" false
+}
++MetaProp 1339 -2420
++MetaProp 1722 -2420
++MetaProp 1944 -2420
 -ObjProp 1944 "TransDoor"
++Receptron 2012 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2012 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2013 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 2013 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//arrows (original campaign)
+-ObjProp 103 "DeathStage"
+-ObjProp 109 "DeathStage"
+-ObjProp 130 "DeathStage"
+-ObjProp 159 "DeathStage"
+-ObjProp 211 "DeathStage"
+-ObjProp 1256 "DeathStage"
+-ObjProp 1328 "DeathStage"
+-ObjProp 1392 "DeathStage"
+-ObjProp 1494 "DeathStage"
+-ObjProp 1498 "DeathStage"
+-ObjProp 1544 "DeathStage"
+//mantling
++ObjProp 112 "PhysCanMant"
+{
+}
++ObjProp 113 "PhysCanMant"
+{
+}
++ObjProp 117 "PhysCanMant"
+{
+}
++ObjProp 1881 "PhysCanMant"
+{
+}
++ObjProp 1882 "PhysCanMant"
+{
+}
++ObjProp 1886 "PhysCanMant"
+{
+}
++ObjProp 1890 "PhysCanMant"
+{
+}
+//AIs
++ObjProp 523 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 525 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 525 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 527 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 1393 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 1495 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1495 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 1580 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cjenv
+}
++ObjProp 1701 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cbasso
+}
++ObjProp 1714 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 1831 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 1988 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 2042 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
+//fireplace
+ObjProp 534 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 536 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+//misplaced objects
+-ObjProp 563 "PhysType"
+ObjProp 563 "Position"
+{
+	"Location" -97.93, -20.135, -30.5
+}
++ObjProp 563 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 680 "PhysType"
+ObjProp 680 "Position"
+{
+	"Location" -169.61, -90.9, -30.5
+}
++ObjProp 680 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1197 "PhysType"
+-ObjProp 1252 "PhysType"
+ObjProp 1252 "Position"
+{
+	"Location" -94.844, 152.63, 6
+}
++ObjProp 1252 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 1379 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent 1380
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1379 "EarthStim"
+{
+	Max None
+	Target 1594
+	Agent 1380
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 1379 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 1763 "PhysType"
+ObjProp 1763 "Position"
+{
+	"Location" -30.9, 98, -17.3
+}
++ObjProp 1763 "PhysType"
+{
+	"Type" OBB
+}
+//loot
+ObjProp 1013 "Position"
+{
+	"Pitch" c000
+}
++ObjProp 1497 "StackCount"
+{
+}
+-ObjProp 1499 "PickDist"
+-ObjProp 1500 "PickDist"
+-ObjProp 1501 "PickDist"
+-ObjProp 1548 "PickDist"
+-ObjProp 1552 "PickDist"
+-ObjProp 1553 "PickDist"
+-ObjProp 1554 "PickDist"
++ObjProp 1789 "FrobInfo"
+{
+}
++ObjProp 1789 "NoDrop"
+{
+	"" true
+}
++ObjProp 2043 "PickDist"
+{
+	"" 8.00
+}
+ObjProp 2043 "Position"
+{
+	"Pitch" c000
+}
++ObjProp 2044 "PickDist"
+{
+	"" 8.00
+}
+ObjProp 2044 "Position"
+{
+	"Pitch" c000
+}
++ObjProp 2045 "PickDist"
+{
+	"" 8.00
+}
++ObjProp 2047 "PickDist"
+{
+	"" 8.00
+}
++ObjProp 2048 "PickDist"
+{
+	"" 8.00
+}
+//pickpocketing
++ObjProp 704 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 704 705 "ControlDevice"
+{
+}
++ObjProp 704 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 705 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 705 "TrapQVar"
+{
+	"" =5:DrSPocketCnt
+}

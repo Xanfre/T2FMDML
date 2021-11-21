@@ -240,8 +240,18 @@ ObjProp 78 "RotDoor"
 +ObjProp 1327 "InvType"
 {
 }
++ObjProp 1327 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
 +ObjProp 1329 "InvType"
 {
+}
++ObjProp 1329 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
 }
 +ObjProp 1783 "InvType"
 {

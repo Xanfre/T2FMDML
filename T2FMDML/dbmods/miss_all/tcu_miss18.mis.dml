@@ -15,25 +15,104 @@ FINGERPRINT
 	QVAR "goal_target_0" == 317
 }
 
-//vase (loot)
-+ObjProp 770 "HitPoints"
+//pickpocketing
++ObjProp 7 "DiffTurnOn"
 {
-	"" 100
+	"quest var values" 0, 1, 2
 }
-//secret doors
++Link 7 8 "ControlDevice"
+{
+}
++ObjProp 7 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 8 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 8 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}
+//doors
 +MetaProp 150 -2420
 +MetaProp 747 -2420
-//crypt doors
 +ObjProp 187 "PhysCanMant"
 {
 }
 +ObjProp 188 "PhysCanMant"
 {
 }
-//crown
+//quest items
 +ObjProp 317 "StackCount"
 {
 }
+++Receptron 348 "Fetish1Stim"
+{
+	Min 0
+	Max None
+	Target 439
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 348 "NoDrop"
+{
+	"" true
+}
+++Receptron 356 "Fetish2Stim"
+{
+	Min 0
+	Max None
+	Target 440
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 356 "NoDrop"
+{
+	"" true
+}
+++Receptron 371 "RedGStim"
+{
+	Min 0
+	Max None
+	Target 538
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 375 "GreenGStim"
+{
+	Min 0
+	Max None
+	Target 537
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 376 "BlueGStim"
+{
+	Min 0
+	Max None
+	Target 536
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+-ObjProp 439 "PhysType"
+-ObjProp 440 "PhysType"
 //switches
 -Link 334 335 "ControlDevice"
 +Link 334 263 "ControlDevice"
@@ -46,15 +125,6 @@ ObjProp 334 "StTweqJoints"
 -Link 511 574 "ControlDevice"
 +Link 336 574 "ControlDevice"
 {
-}
-//dolls
-+ObjProp 348 "NoDrop"
-{
-	"" true
-}
-+ObjProp 356 "NoDrop"
-{
-	"" true
 }
 //chests
 -ObjProp 507 "PhysType"
@@ -75,71 +145,8 @@ ObjProp 548 "Position"
 {
 	"Type" OBB
 }
-//plates
--ObjProp 439 "PhysType"
--ObjProp 440 "PhysType"
-++Receptron 348 "Fetish1Stim"
+//vase (loot)
++ObjProp 770 "HitPoints"
 {
-	Min 0
-	Max None
-
-	Target 439
-	Agent -1
-
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
-}
-++Receptron 356 "Fetish2Stim"
-{
-	Min 0
-	Max None
-
-	Target 440
-	Agent -1
-
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
-}
-++Receptron 371 "RedGStim"
-{
-	Min 0
-	Max None
-
-	Target 538
-	Agent -1
-
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
-}
-++Receptron 375 "GreenGStim"
-{
-	Min 0
-	Max None
-
-	Target 537
-	Agent -1
-
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
-}
-++Receptron 376 "BlueGStim"
-{
-	Min 0
-	Max None
-
-	Target 536
-	Agent -1
-
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
+	"" 100
 }

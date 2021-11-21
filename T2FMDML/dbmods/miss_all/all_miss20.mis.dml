@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: All Torc by Robin Collier (R Soul) / Fixes
+//T2 FM: All Torc (Welcome to Robington) by Robin Collier (R Soul) / Fixes
 
 FINGERPRINT
 {
@@ -27,4 +27,9 @@ FINGERPRINT
 +ObjProp 928 "TrapQVar"
 {
 	"" =735:goal_loot_8
+}
+//pickpocketing
+ObjProp 1776 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
 }

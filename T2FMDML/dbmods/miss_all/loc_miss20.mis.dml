@@ -1,0 +1,22 @@
+DML1
+
+//T2 FM: The Lost Castle by Pedro Quintela (Cardia) / Fixes
+
+FINGERPRINT
+{
+	560 [-2 -208 -1]
+	801 [8 -426 -44]
+	249 [40 -299 -52]
+	625 [8 -379 -11]
+	677 [84 -518 8]
+	172 [-39 6 -68]
+	556 [31 -179 -8]
+	1154 [72 -293 -12]
+	QVAR "goal_target_0" == 1398
+}
+
+//purse
+-Link 904 898 "AIAttack"
++Link 898 904 "Contains"
+{
+}

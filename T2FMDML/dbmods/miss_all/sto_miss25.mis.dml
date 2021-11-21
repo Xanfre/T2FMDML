@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Stowaway by Finial / Fix spice goal and various objects
+//T2 FM: Stowaway by Mike Peers (Finial) / Fixes
 
 FINGERPRINT
 {
@@ -15,25 +15,155 @@ FINGERPRINT
 	QVAR "goal_target_0" == 288
 }
 
-+ObjProp 498 "TrapQVar"
+//goals
++ObjProp 512 "DiffTurnOn"
 {
-	"" =1:goal_state_5
+	"quest var values" 0, 1, 2
 }
-+ObjProp 498 "Scripts"
++ObjProp 512 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+Link 146 498 "ControlDevice"
++ObjProp 512 "TrapQVar"
 {
+	"" =1:goal_final_6
 }
-+ObjProp 146 "FrobInfo"
++ObjProp 513 "DiffTurnOn"
 {
-	"World Action" Move,Script
+	"quest var values" 0, 1, 2
+}
++ObjProp 513 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 513 "TrapQVar"
+{
+	"" =0:goal_state_6
+}
++ObjProp 514 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 514 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 514 "TrapQVar"
+{
+	"" =0:goal_state_7
+}
++ObjProp 515 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 515 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 515 "TrapQVar"
+{
+	"" =515:goal_target_0
+}
++ObjProp 516 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
++ObjProp 516 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++Link 146 516 "ControlDevice"
+{
 }
 +ObjProp 146 "Scripts"
 {
-	"Script 0" TrigWorldFrob
+	"Script 0" TrigContained
 }
++ObjProp 103 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 103 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++Link 135 318 "ControlDevice"
+{
+}
++ObjProp 135 "Scripts"
+{
+	"Script 0" TrigRoomPlayer
+}
++Link 288 103 "ControlDevice"
+{
+}
++Link 288 135 "Route"
+{
+}
++ObjProp 288 "Scripts"
+{
+	"Script 0" TrigRoomObject
+}
++Link 316 103 "ControlDevice"
+{
+}
++ObjProp 316 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapDestroy
+}
++ObjProp 316 "TrapQVar"
+{
+	"" =1:goal_state_6
+}
++ObjProp 317 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 317 "TrapQVar"
+{
+	"" =1:goal_irreversible_6
+}
++Link 318 316 "ControlDevice"
+{
+}
++Link 318 317 "ControlDevice"
+{
+}
++ObjProp 318 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 319 318 "ControlDevice"
+{
+}
++ObjProp 319 "Scripts"
+{
+	"Script 0" TrapNonFinalComplete
+}
+//doors
++ObjProp 19 "PickCfg"
+{
+	"LockBits 1" 1
+	"Pins 1" 1
+	"TimePct 1" 3
+}
+ObjProp 21 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 121 "RotDoor"
+{
+	"Open Angle" 89
+	"Clockwise?" false
+}
+ObjProp 340 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+//trophies
 +ObjProp 136 "FrobInfo"
 {
 }
@@ -56,14 +186,44 @@ FINGERPRINT
 {
 	"" true
 }
+//misplaced objects
++Receptron 143 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent 200
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 143 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 352 "PhysType"
+ObjProp 352 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 352 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 745 "PhysType"
+ObjProp 745 "Position"
+{
+	"Location" 68.17, 89.88, 25.15
+}
+//safe keys
 +ObjProp 296 "SlayResult"
 {
-	"Effect" Normal
 }
 +ObjProp 587 "SlayResult"
 {
-	"Effect" Normal
 }
+//junk
 +ObjProp 519 "FrobInfo"
 {
 	"World Action" Move

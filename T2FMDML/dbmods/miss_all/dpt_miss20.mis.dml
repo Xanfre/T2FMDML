@@ -1,0 +1,32 @@
+DML1
+
+//T2 FM: Dedicated to the People of TTLG (Contest 3) by Rachel Yvonne (Cookiedough) / Fixes
+
+FINGERPRINT
+{
+	42 [3 31 6]
+	51 [29 -9 -2]
+	33 [-2 -14 6]
+	37 [-2 19 6]
+	13 [17 19 -3]
+	23 [13 -27 -3]
+	29 [-17 -23 6]
+	32 [8 -14 6]
+	NAME 20 "Frosty the Fish"
+}
+
+//goal
+TagBlock "DARKMISS"
+{
+	"Mission Number" 20
+	"Mission Pathname" miss20
+}
+//doors
+-ObjProp 2 "JointPos"
+-ObjProp 3 "JointPos"
+-ObjProp 6 "JointPos"
+-ObjProp 7 "JointPos"
++Link 11 12 "ScriptParams"
+{
+	"" Double
+}

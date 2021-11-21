@@ -346,9 +346,13 @@ ObjProp 1318 "RotDoor"
 {
 	"" true
 }
+-ObjProp 2762 "RotDoor"
 +ObjProp 2762 "BlockFrob"
 {
 	"" true
+}
++Link 2762 2584 "ControlDevice"
+{
 }
 +MetaProp 564 -2420
 +MetaProp 744 -2420
@@ -438,9 +442,6 @@ ObjProp 2645 "PickDist"
 {
 	"Script 0" NVAmbientSoundTrap
 }
-+Link 2762 2584 "ControlDevice"
-{
-}
 //chests
 -ObjProp 409 "StTweqLock"
 +ObjProp 2238 "DesignNote"
@@ -504,7 +505,23 @@ ObjProp 272 "Position"
 {
 	"Type" Sphere Hat
 }
++ObjProp 1113 "TransDoor"
+{
+	"Open Position" -4.50
+	"Base Speed" 2.00
+	"Blocks Vision?" false
+}
 +Receptron 1515 "EarthStim"
+{
+	Max None
+	Target 2762
+	Agent 1113
+	Effect "add_prop"
+	{
+		"Prop Name" TransDoor
+	}
+}
+++Receptron 1515 "EarthStim"
 {
 	Max None
 	Target 2762

@@ -1,0 +1,89 @@
+DML1
+
+//T2 FM: City Conflict (part 1) by Silencium18 / Fixes
+
+FINGERPRINT
+{
+	147 [99 11 7]
+	103 [-39 -31 -5]
+	178 [109 10 19]
+	137 [-22 18 -20]
+	81 [81 20 20]
+	94 [105 7 7]
+	119 [54 45 -8]
+	225 [-3 -21 -15]
+	QVAR "goal_target_5" == 186
+}
+
+//doors
+-ObjProp 15 "JointPos"
+-ObjProp 34 "JointPos"
+-ObjProp 35 "JointPos"
+-ObjProp 52 "JointPos"
++Receptron 34 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 35 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 83 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+//cart
+-ObjProp 51 "PhysType"
+ObjProp 51 "Position"
+{
+	"Location" -5.2, -37.02, -6.5
+}
++ObjProp 51 "PhysType"
+{
+	"Type" OBB
+}
+//AIs
++ObjProp 96 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprism02
+}
++ObjProp 103 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprisw01
+}
++ObjProp 116 "GameName"
+{
+	"" Name_Manus: "Manus' corpse"
+}
++ObjProp 171 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
+}
+//bottle
++ObjProp 99 "FrobInfo"
+{
+}
+//information scroll
++ObjProp 118 "NoDrop"
+{
+	"" true
+}
+//moneybox
+-ObjProp 148 "PhysType"
+ObjProp 148 "Position"
+{
+	"Heading" 0
+}
++ObjProp 148 "PhysType"
+{
+	"Type" OBB
+}

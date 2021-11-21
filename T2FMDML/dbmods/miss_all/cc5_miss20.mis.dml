@@ -1,0 +1,189 @@
+DML1
+
+//T2 FM: City Conflict (part 5) by Silencium18 / Fixes
+
+FINGERPRINT
+{
+	397 [-10 -306 5]
+	44 [-39 -25 -10]
+	340 [-142 -321 -34]
+	491 [-134 -150 -3]
+	447 [-133 -247 -32]
+	586 [31 -165 -14]
+	183 [-120 -208 -23]
+	418 [-75 -297 -14]
+	QVAR "goal_target_0" == 342
+}
+
+#script "nvscript"
+
+//painting
+-ObjProp 14 "PhysType"
+ObjProp 14 "Position"
+{
+	"Pitch" 0
+}
++ObjProp 14 "PhysType"
+{
+	"Type" OBB
+}
+//cart
+-ObjProp 53 "PhysType"
+ObjProp 53 "Position"
+{
+	"Location" -40.1, -132.74, -14.5
+}
++ObjProp 53 "PhysType"
+{
+	"Type" OBB
+}
+//DeathStage 12
+-ObjProp 73 "DeathStage"
+-ObjProp 226 "DeathStage"
+-ObjProp 227 "DeathStage"
+//AIs
++ObjProp 79 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprism02
+}
++ObjProp 80 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 81 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprisw01
+}
++ObjProp 214 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 342 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
+}
+//mantling
++ObjProp 91 "PhysCanMant"
+{
+}
++ObjProp 115 "PhysCanMant"
+{
+}
++ObjProp 204 "PhysCanMant"
+{
+}
++ObjProp 205 "PhysCanMant"
+{
+}
++ObjProp 263 "PhysCanMant"
+{
+}
++ObjProp 264 "PhysCanMant"
+{
+}
++ObjProp 300 "PhysCanMant"
+{
+}
++ObjProp 453 "PhysCanMant"
+{
+}
+//footlocker
+-ObjProp 97 "PhysType"
+ObjProp 97 "Position"
+{
+	"Heading" c000
+}
++ObjProp 97 "PhysType"
+{
+	"Type" OBB
+}
+//switches
++Link 148 193 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 503 "StTweqJoints"
+{
+	"AnimS" Reverse
+}
+//bottles
+-ObjProp 169 "PhysType"
+ObjProp 169 "Position"
+{
+	"Location" -120.76, -208, -23.366
+}
++ObjProp 169 "PhysType"
+{
+	"Type" Sphere
+}
+-ObjProp 170 "PhysType"
+ObjProp 170 "Position"
+{
+	"Location" -120.03, -208, -23.366
+}
++ObjProp 170 "PhysType"
+{
+	"Type" Sphere
+}
+//toolbox
+-ObjProp 194 "PhysType"
+ObjProp 194 "Position"
+{
+	"Heading" 26c4
+}
++ObjProp 194 "PhysType"
+{
+	"Type" OBB
+}
+//alarm
++ObjProp 382 "Scripts"
+{
+	"Script 0" FrobSounds
+	"Script 1" NVFrobToggle
+	"Don't Inherit" true
+}
++ObjProp 571 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 572 "TrapFlags"
+{
+	"" Once
+}
+//plaques
++ObjProp 425 "FrobInfo"
+{
+}
++ObjProp 435 "FrobInfo"
+{
+}
++ObjProp 436 "FrobInfo"
+{
+}
++ObjProp 437 "FrobInfo"
+{
+}
+//doors
++Receptron 478 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 608 "JointPos"
+-ObjProp 624 "JointPos"
++ObjProp 612 "BlockFrob"
+{
+	"" true
+}
+//bucket
+-ObjProp 646 "PhysType"
++ObjProp 646 "PhysType"
+{
+	"Type" Sphere
+}

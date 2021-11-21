@@ -1,0 +1,62 @@
+DML1
+
+//T2 FM: City Conflict (part 3) by Silencium18 / Fixes
+
+FINGERPRINT
+{
+	293 [-98 -184 -16]
+	122 [-86 38 9]
+	184 [-114 117 -3]
+	172 [-88 80 -3]
+	356 [-159 -5 -17]
+	340 [-50 33 0]
+	48 [-174 -171 -26]
+	265 [-129 -22 -17]
+	QVAR "goal_target_0" == 283
+}
+
+//footlocker
+-ObjProp 82 "PhysType"
+ObjProp 82 "Position"
+{
+	"Heading" 4000
+}
++ObjProp 82 "PhysType"
+{
+	"Type" OBB
+}
+//banner / doors
++ObjProp 149 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 163 "StTweqLock"
+-ObjProp 318 "StTweqLock"
+//arrows
+-ObjProp 218 "DeathStage"
+-ObjProp 381 "DeathStage"
+//hammer spell
++ObjProp 258 "ModelName"
+{
+	"" HamShot
+}
+//mask
++ObjProp 283 "StackCount"
+{
+}
+//loot
++ObjProp 340 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
+//book
+-ObjProp 352 "PhysType"
+ObjProp 352 "Position"
+{
+	"Heading" 0
+	"Bank" c000
+}
++ObjProp 352 "PhysType"
+{
+	"Type" OBB
+}

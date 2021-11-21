@@ -49,10 +49,6 @@ ObjProp 383 "TransDoor"
 	"Open Position" -10.00
 }
 -ObjProp 505 "JointPos"
-ObjProp 848 "PhysAttr"
-{
-	"COG Offset" 2, 0, 0
-}
 +ObjProp 848 "PhysCanMant"
 {
 }

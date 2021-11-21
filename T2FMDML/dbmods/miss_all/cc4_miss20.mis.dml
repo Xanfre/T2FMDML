@@ -1,0 +1,232 @@
+DML1
+
+//T2 FM: City Conflict (part 4) by Silencium18 / Fixes
+
+FINGERPRINT
+{
+	444 [39 -288 4]
+	106 [51 -11 11]
+	119 [69 -68 -7]
+	211 [99 22 9]
+	321 [110 -37 -4]
+	307 [74 -34 -5]
+	232 [62 -135 -2]
+	248 [49 40 -5]
+	QVAR "goal_target_4" == 488
+}
+
+//pickpocketing
++ObjProp 130 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 130 131 "ControlDevice"
+{
+}
++ObjProp 130 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 131 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 131 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
+//keys
++ObjProp 72 "SlayResult"
+{
+}
++ObjProp 106 "SlayResult"
+{
+}
+-ObjProp 106 "PhysType"
++ObjProp 106 "PhysType"
+{
+	"Type" Sphere
+}
+//mantling
++ObjProp 114 "PhysCanMant"
+{
+}
++ObjProp 115 "PhysCanMant"
+{
+}
++ObjProp 205 "PhysCanMant"
+{
+}
++ObjProp 208 "PhysCanMant"
+{
+}
+//secret door
++MetaProp 119 -2420
+//footlocker
+-ObjProp 298 "PhysType"
+ObjProp 298 "Position"
+{
+	"Location" 50.28, -140.15, -6.1
+}
++ObjProp 298 "PhysType"
+{
+	"Type" OBB
+}
+//DeathStage 12
+-ObjProp 317 "DeathStage"
+-ObjProp 365 "DeathStage"
+-ObjProp 421 "DeathStage"
+//mask
++ObjProp 386 "StackCount"
+{
+}
+//bottle
++ObjProp 484 "FrobInfo"
+{
+}
+//AIs
++ObjProp 16 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 25 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 100 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 196 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 306 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 307 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 313 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 316 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 321 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 324 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 327 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 332 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 333 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 334 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 335 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 336 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 337 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 338 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 339 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 342 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 349 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 350 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 351 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 358 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 359 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 362 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 364 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 373 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
++ObjProp 380 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" conhumca
+}
