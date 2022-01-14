@@ -1,0 +1,38 @@
+DML1
+
+//T2 FM: Whispers in the Desert by Nick Dablin (nicked) / Fixes
+
+FINGERPRINT
+{
+	875 [577 484 -171]
+	1227 [463 467 -156]
+	1041 [432 310 -132]
+	413 [310 226 -178]
+	596 [598 366 -198]
+	1408 [564 280 -236]
+	586 [554 394 -198]
+	1254 [368 455 -236]
+	QVAR "goal_target_2" == 1001
+}
+
+#script "nvscript"
+
+//blocker
++Receptron 160 "EarthStim"
+{
+	Min 9
+	Max None
+	Target -6812
+	Effect "create_obj"
+	{
+		"Position" 232, 184, -174
+	}
+}
++ObjProp 160 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
+}
+ObjProp 160 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}

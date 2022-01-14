@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Cold Feet by The Independent Thief / Fixes
+
+FINGERPRINT
+{
+	228 [-139 358 -135]
+	65 [-122 14 -81]
+	388 [-487 -436 -83]
+	165 [-376 32 501]
+	214 [-116 204 -114]
+	198 [-116 204 -112]
+	280 [-241 -294 -101]
+	387 [-487 -428 -83]
+	QVAR "goal_target_0" == 159
+}
+
+//pickpocketing
++ObjProp 80 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 80 81 "ControlDevice"
+{
+}
++ObjProp 80 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 81 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 81 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}

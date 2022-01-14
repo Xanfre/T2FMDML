@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Good Samaritian by Vaughan Cooper (Sluggs) / Add goal and task notifications
+//T2 FM: The Good Samaritan by Vaughan Cooper (Sluggs) / Fixes
 
 FINGERPRINT
 {
@@ -17,181 +17,477 @@ FINGERPRINT
 
 #script "nvscript"
 
-+ObjProp 461 "Scripts"
+//equipment notifications
++ObjProp 10 "DesignNote"
 {
-	"Script 0" TrigQVar
+	"" NVOnscreenTextOn="InvSelect"; NVText="Blackjack Selected"
 }
-+ObjProp 461 "TrapQVar"
-{
-	"" =1:goal_state_0
-}
-+ObjProp 763 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 763 "TrapQVar"
-{
-	"" =1:goal_state_1
-}
-+ObjProp 821 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 821 "TrapQVar"
-{
-	"" =1:goal_state_2
-}
-+ObjProp 823 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 823 "TrapQVar"
-{
-	"" =1:goal_state_3
-}
-+ObjProp 429 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 429 "TrapQVar"
-{
-	"" =1:goal_state_4
-}
-+ObjProp 680 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 680 "TrapQVar"
-{
-	"" =1:goal_state_5
-}
-+ObjProp 831 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 831 "TrapQVar"
-{
-	"" =1:goal_state_6
-}
-+ObjProp 899 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 899 "TrapQVar"
-{
-	"" =1:goal_state_7
-}
-+ObjProp 829 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 829 "TrapQVar"
-{
-	"" =1:goal_state_8
-}
-+ObjProp 328 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 328 "TrapQVar"
-{
-	"" =1:goal_state_9
-}
-+ObjProp 340 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 340 "TrapQVar"
-{
-	"" =1:goal_state_10
-}
-+ObjProp 570 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 570 "TrapQVar"
-{
-	"" =1:goal_state_11
-}
-+ObjProp 74 "Scripts"
-{
-	"Script 0" TrigQVar
-}
-+ObjProp 74 "TrapQVar"
-{
-	"" =1:goal_state_12
-}
-+ObjProp 88 "Scripts"
++ObjProp 10 "Scripts"
 {
 	"Script 0" NVOnscreenText
 }
-+ObjProp 88 "DesignNote"
+-MetaProp 10 -3058
+-MetaProp 76 -3058
++ObjProp 76 "DesignNote"
 {
-	"" NVText=Objective Complete
+	"" NVOnscreenTextOn="InvSelect"; NVText="Sword Selected"
 }
-+Link 461 88 "ControlDevice"
-{
-}
-+Link 763 88 "ControlDevice"
-{
-}
-+Link 821 88 "ControlDevice"
-{
-}
-+Link 823 88 "ControlDevice"
-{
-}
-+Link 429 88 "ControlDevice"
-{
-}
-+Link 680 88 "ControlDevice"
-{
-}
-+Link 899 88 "ControlDevice"
-{
-}
-+Link 829 88 "ControlDevice"
-{
-}
-+Link 328 88 "ControlDevice"
-{
-}
-+Link 340 88 "ControlDevice"
-{
-}
-+Link 570 88 "ControlDevice"
-{
-}
-+Link 461 88 "ControlDevice"
-{
-}
-+Link 74 88 "ControlDevice"
-{
-}
-//Task
-+Link 236 89 "ControlDevice"
-{
-}
-+Link 295 89 "ControlDevice"
-{
-}
-+ObjProp 89 "Scripts"
++ObjProp 76 "Scripts"
 {
 	"Script 0" NVOnscreenText
 }
-+ObjProp 89 "DesignNote"
+//quest sounds / notifications
++ObjProp 38 "DesignNote"
 {
-	"" NVText=Task Complete
+	"" NVAmbientSoundTrapCount=1
 }
-+Link 771 89 "ControlDevice"
++ObjProp 38 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+	"Don't Inherit" true
+}
++ObjProp 157 "DiffRemoveProp"
+{
+	"quest var values" 0, 2
+	"alt quest var values" 1
+	"Properties" DesignNote
+}
++ObjProp 157 "DesignNote"
+{
+	"" NVRelayTrapOn="BeginScript"; NVRelayTrapDelay=1000; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVText="10:30 PM"
+}
++ObjProp 157 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVOnscreenText
+}
++ObjProp 200 "DesignNote"
+{
+	"" NVText="Quest Complete"
+}
++Link 200 -6716 "SoundDescription"
 {
 }
-+Link 396 89 "ControlDevice"
++ObjProp 200 "Scripts"
+{
+	"Script 0" NVOnscreenText
+	"Script 1" NVAmbientSoundTrap
+}
++ObjProp 230 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+	"Don't Inherit" true
+}
+//mantling
+ObjProp 23 "CollisionType"
+{
+	"" None
+}
++ObjProp 23 "PhysCanMant"
 {
 }
-+Link 464 89 "ControlDevice"
++ObjProp 67 "PhysCanMant"
 {
 }
-+Link 758 89 "ControlDevice"
+ObjProp 70 "CollisionType"
+{
+	"" None
+}
++ObjProp 70 "PhysCanMant"
 {
 }
+ObjProp 282 "CollisionType"
+{
+	"" None
+}
++ObjProp 282 "PhysCanMant"
+{
+}
+ObjProp 320 "CollisionType"
+{
+	"" None
+}
++ObjProp 320 "PhysCanMant"
+{
+}
+//quests
+-Link 27 253 "ControlDevice"
++Link 27 28 "ControlDevice"
+{
+}
++ObjProp 28 "DesignNote"
+{
+	"" NVRelayTrapDelay=2000; NVRelayTrapCount=1
+}
++Link 28 221 "ControlDevice"
+{
+}
++Link 28 230 "ControlDevice"
+{
+}
++Link 28 209 "ControlDevice"
+{
+}
++ObjProp 28 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+-Link 195 406 "ControlDevice"
+-Link 195 757 "ControlDevice"
+-Link 195 600 "ControlDevice"
+-Link 195 75 "ControlDevice"
+-Link 195 843 "ControlDevice"
+-Link 195 197 "ControlDevice"
++Link 195 405 "ControlDevice"
+{
+}
++ObjProp 211 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"
+}
++ObjProp 211 "InvType"
+{
+	"" Item
+}
++ObjProp 211 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++Receptron 236 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 236 "DesignNote"
+{
+	"" NVRelayTrapOn="NowUnlocked"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
+}
++Link 236 200 "ControlDevice"
+{
+}
+ObjProp 236 "Scripts"
+{
+	"Script 2" NVRelayTrap
+}
++ObjProp 253 "DesignNote"
+{
+	"" NVRelayTrapDelay=5000; NVRelayTrapCount=1
+}
+-ObjProp 253 "ScriptTiming"
+-ObjProp 253 "TrapFlags"
++ObjProp 253 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
+-Link 295 195 "ControlDevice"
+Receptron 299 "WaterStim" 0021001D
+{
+	Target 396
+	Effect "frob_obj"
+}
+++Receptron 299 "WaterStim"
+{
+	Max None
+	Target -399
+	Effect "create_obj"
+	{
+		"Position" -28, 47.5, 13.22
+	}
+}
+++Receptron 299 "WaterStim"
+{
+	Max None
+	Target 897
+	Effect "destroy_obj"
+}
+++Receptron 299 "WaterStim"
+{
+	Max None
+	Target Me
+	Effect "destroy_obj"
+}
++Link 322 195 "ControlDevice"
+{
+}
++Link 322 200 "ControlDevice"
+{
+}
++ObjProp 389 "DesignNote"
+{
+	"" NVRelayTrapDelay=2000; NVRelayTrapCount=1
+}
+-Link 389 441 "ControlDevice"
+-Link 389 295 "ControlDevice"
++Link 389 195 "ControlDevice"
+{
+}
++Link 389 200 "ControlDevice"
+{
+}
+-ObjProp 389 "ScriptTiming"
+-ObjProp 389 "TrapFlags"
++ObjProp 389 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++Link 396 200 "ControlDevice"
+{
+}
++Link 396 430 "ControlDevice"
+{
+}
++ObjProp 396 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Don't Inherit" true
+}
++ObjProp 405 "DesignNote"
+{
+	"" NVRelayTrapDelay=2000
+}
+-Link 405 816 "ControlDevice"
++Link 405 197 "ControlDevice"
+{
+}
++Link 405 406 "ControlDevice"
+{
+}
++Link 405 600 "ControlDevice"
+{
+}
++Link 405 757 "ControlDevice"
+{
+}
++Link 405 75 "ControlDevice"
+{
+}
++Link 405 843 "ControlDevice"
+{
+}
++ObjProp 405 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 418 "DesignNote"
+{
+	"" NVRelayTrapDelay=200
+}
+-ObjProp 418 "ScriptTiming"
+-ObjProp 418 "TrapFlags"
++ObjProp 418 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
+-Link 464 195 "ControlDevice"
+-Link 510 536 "ControlDevice"
+-Link 536 535 "ControlDevice"
++Link 510 535 "ControlDevice"
+{
+}
++ObjProp 535 "DesignNote"
+{
+	"" NVRelayTrapDelay=3000; NVRelayTrapCountOnly=1
+}
+-ObjProp 535 "ScriptTiming"
+-ObjProp 535 "TrapFlags"
++ObjProp 535 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 557 "DesignNote"
+{
+	"" NVRelayTrapDelay=5000; NVRelayTrapCount=1
+}
+-ObjProp 557 "ScriptTiming"
+-ObjProp 557 "TrapFlags"
++ObjProp 557 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 568 "DesignNote"
+{
+	"" NVRelayTrapDelay=5000; NVRelayTrapCount=1
+}
+-ObjProp 568 "ScriptTiming"
+-ObjProp 568 "TrapFlags"
++ObjProp 568 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
+ObjProp 622 "FrobInfo"
+{
+	"Inv Action" Script
+}
++ObjProp 622 "NoDrop"
+{
+}
++ObjProp 622 "InvType"
+{
+	"" Item
+}
++ObjProp 716 "DesignNote"
+{
+	"" NVRelayTrapOnDelay=9000; NVRelayTrapOffDelay=100; NVRelayTrapExclusiveDelay=1
+}
+-ObjProp 716 "ScriptTiming"
+-ObjProp 716 "TrapFlags"
++ObjProp 716 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 722 "DesignNote"
+{
+	"" NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+-ObjProp 722 "ScriptTiming"
+-ObjProp 722 "TrapFlags"
++ObjProp 722 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 755 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000; NVRelayTrapCount=1
+}
+-ObjProp 755 "ScriptTiming"
+-ObjProp 755 "TrapFlags"
++ObjProp 755 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++Link 758 200 "ControlDevice"
+{
+}
+-Link 771 195 "ControlDevice"
++ObjProp 806 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000; NVRelayTrapExclusiveDelay=1; NVRelayTrap2TDest=211
+}
+-Link 806 771 "ControlDevice"
++Link 806 195 "ControlDevice"
+{
+}
++Link 806 200 "ControlDevice"
+{
+}
+-ObjProp 806 "ScriptTiming"
+-ObjProp 806 "TrapFlags"
++ObjProp 806 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+	"Don't Inherit" true
+}
+-Link 816 396 "ControlDevice"
+//scrolls
+-Link 302 303 "CreatureAttachment"
+ObjProp 303 "FrobInfo"
+{
+	"Inv Action" Script
+}
+ObjProp 551 "FrobInfo"
+{
+	"Inv Action" Script
+}
+//misplaced objects
+-ObjProp 166 "PhysType"
+ObjProp 166 "Position"
+{
+	"Location" 32, -1.125, -6.03
+}
++ObjProp 166 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 304 "PhysType"
+ObjProp 304 "Position"
+{
+	"Location" -45.5, -15.07, 34.9
+}
++ObjProp 304 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 745 "PhysType"
+ObjProp 745 "Position"
+{
+	"Location" 140, 10.5, 0.4
+}
++ObjProp 745 "PhysType"
+{
+	"Type" Sphere
+}
+-ObjProp 838 "PhysType"
+ObjProp 838 "Position"
+{
+	"Location" 80.125, -18, -6.3
+}
++ObjProp 838 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 891 "PhysType"
+ObjProp 891 "Position"
+{
+	"Location" -36.125, -103, -6.3
+}
++ObjProp 891 "PhysType"
+{
+	"Type" OBB
+}
+//pickpocketing
++ObjProp 519 "DiffTurnOn"
+{
+	"quest var values" 1
+}
++Link 519 520 "ControlDevice"
+{
+}
++ObjProp 519 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 519 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 520 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 520 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
+//flashlight
++ObjProp 554 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="TurnOff"; NVRemovePropertyTrapProp="ModelName"; NVRemovePropertyTrapReAdd=1
+}
++ObjProp 554 "Scripts"
+{
+	"Script 0" NVFrobToggle
+	"Script 1" TweqOnOff
+	"Script 2" NVRemovePropertyTrap
+	"Don't Inherit" true
+}
+//invalid scaling
+-ObjProp 59 "Scale"
+-ObjProp 62 "Scale"
+-ObjProp 164 "Scale"

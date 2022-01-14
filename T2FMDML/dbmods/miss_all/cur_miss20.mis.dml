@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Curiosity by Demonreaver / Fix loot and guard patrols
+//T2 FM: Curiosity by Demonreaver / Fixes
 
 FINGERPRINT
 {
@@ -15,35 +15,197 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1471
 }
 
-+ObjProp 84 "Scripts"
+//goals / pickpocketing
++ObjProp 35 "DiffTurnOn"
 {
-	"Script 0" TrigContained
+	"quest var values" 0, 1, 2
 }
-+ObjProp 32 "Scripts"
++Link 35 37 "ControlDevice"
+{
+}
++ObjProp 35 "Scripts"
 {
 	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
 }
-+ObjProp 32 "TrapQVar"
++ObjProp 35 "TrapQVar"
 {
 	"" =2800:goal_loot_1
 }
-+Link 84 32 "ControlDevice"
++ObjProp 37 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 37 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
++Link 1339 1340 "ControlDevice"
 {
 }
++ObjProp 1339 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 1339 "TrapQVar"
+{
+	"" =1:mission_complete
+}
++Link 1340 604 "ControlDevice"
+{
+}
++ObjProp 1340 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+//arrows
+-ObjProp 85 "DeathStage"
+-ObjProp 86 "DeathStage"
+-ObjProp 90 "DeathStage"
+//doors
+-ObjProp 132 "JointPos"
+-ObjProp 141 "JointPos"
+-ObjProp 226 "JointPos"
+-ObjProp 229 "JointPos"
+-ObjProp 292 "JointPos"
+-ObjProp 371 "JointPos"
+-ObjProp 372 "JointPos"
+-ObjProp 447 "JointPos"
+-ObjProp 451 "JointPos"
+-ObjProp 549 "JointPos"
+-ObjProp 1007 "JointPos"
+-ObjProp 1010 "JointPos"
+-ObjProp 1338 "JointPos"
+-ObjProp 1350 "JointPos"
+-ObjProp 1351 "JointPos"
+-ObjProp 1571 "JointPos"
+-ObjProp 1587 "JointPos"
+-ObjProp 1588 "JointPos"
+-ObjProp 1589 "JointPos"
++MetaProp 1220 -5661
++MetaProp 1222 -5661
++MetaProp 1223 -5661
++MetaProp 1277 -5661
++MetaProp 1290 -5661
++MetaProp 1359 -5661
++MetaProp 1455 -5661
++MetaProp 1590 -2420
 +ObjProp 233 "BlockFrob"
 {
 	"" true
 }
-+ObjProp 246 "Loot"
+-ObjProp 233 "PhysType"
++ObjProp 233 "PhysType"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
+	"Type" OBB
 }
+ObjProp 387 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 403 "Locked"
+{
+	"" false
+}
++ObjProp 509 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1126 "FrobInfo"
+{
+}
++ObjProp 1126 "Locked"
+{
+	"" true
+}
++ObjProp 1277 "Material Tags"
+{
+}
++ObjProp 1359 "Material Tags"
+{
+}
++ObjProp 1455 "Material Tags"
+{
+}
+ObjProp 1609 "RotDoor"
+{
+	"Clockwise?" false
+}
+//mantling
++ObjProp 163 "PhysCanMant"
+{
+}
++ObjProp 189 "PhysCanMant"
+{
+}
++ObjProp 224 "PhysCanMant"
+{
+}
++ObjProp 289 "PhysCanMant"
+{
+}
++ObjProp 343 "PhysCanMant"
+{
+}
++ObjProp 1129 "PhysCanMant"
+{
+}
++ObjProp 1135 "PhysCanMant"
+{
+}
++ObjProp 1163 "PhysCanMant"
+{
+}
++ObjProp 1291 "PhysCanMant"
+{
+}
++ObjProp 1294 "PhysCanMant"
+{
+}
++ObjProp 1308 "PhysCanMant"
+{
+}
++ObjProp 1311 "PhysCanMant"
+{
+}
++ObjProp 1312 "PhysCanMant"
+{
+}
++ObjProp 1314 "PhysCanMant"
+{
+}
++ObjProp 1320 "PhysCanMant"
+{
+}
++ObjProp 1322 "PhysCanMant"
+{
+}
++ObjProp 1323 "PhysCanMant"
+{
+}
++ObjProp 1325 "PhysCanMant"
+{
+}
++ObjProp 1326 "PhysCanMant"
+{
+}
++ObjProp 1327 "PhysCanMant"
+{
+}
++ObjProp 1328 "PhysCanMant"
+{
+}
++ObjProp 1576 "PhysCanMant"
+{
+}
+//loot
 -ObjProp 236 "ModelName"
 +ObjProp 236 "Scale"
 {
-	"" 0.30,0.30,0.30
+	"" 0.3, 0.3, 0.3
+}
++ObjProp 246 "Loot"
+{
 }
 -ObjProp 247 "FrobInfo"
 -ObjProp 248 "FrobInfo"
@@ -54,7 +216,45 @@ FINGERPRINT
 -ObjProp 326 "FrobInfo"
 -ObjProp 369 "FrobInfo"
 -ObjProp 423 "FrobInfo"
-ObjProp 403 "Locked"
+//AIs
+-ObjProp 266 "PhysType"
++ObjProp 266 "PhysType"
 {
-	"" false
+	"Type" OBB
+}
++ObjProp 278 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1025 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cthfw01
+}
++ObjProp 1546 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" fmageca
+}
++ObjProp 1555 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" fmageca
+}
++ObjProp 1574 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cthfm02
+}
++ObjProp 1810 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" malesvca
+}
+//victrolas
++ObjProp 1281 "FrobInfo"
+{
+}
++ObjProp 1282 "FrobInfo"
+{
 }

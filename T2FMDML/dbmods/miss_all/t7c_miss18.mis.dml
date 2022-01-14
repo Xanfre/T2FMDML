@@ -1,0 +1,264 @@
+DML1
+
+//T2 FM: The 7th Crystal v2 (Act 2) by David Tonkinson (Saturnine) / Fixes
+
+FINGERPRINT
+{
+	1324 [381 335 -6]
+	1013 [388 433 2]
+	190 [311 287 3]
+	121 [421 452 11]
+	1086 [399 434 -4]
+	557 [390 409 -19]
+	2009 [539 293 -7]
+	736 [331 249 -2]
+	QVAR "goal_target_1" == 943
+}
+
+//goals / pickpocketing
++ObjProp 270 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 270 271 "ControlDevice"
+{
+}
++Link 270 272 "ControlDevice"
+{
+}
++Link 270 273 "ControlDevice"
+{
+}
++ObjProp 270 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
+}
++ObjProp 270 "TrapQVar"
+{
+	"" =1:goal_final_3
+}
++ObjProp 271 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 271 "TrapQVar"
+{
+	"" =1:goal_irreversible_2
+}
++ObjProp 272 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 272 "TrapQVar"
+{
+	"" =1472:goal_target_2
+}
++ObjProp 273 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 273 "TrapQVar"
+{
+	"" =6:DrSPocketCnt
+}
+-Link 1830 2299 "ControlDevice"
++Link 2351 2299 "ControlDevice"
+{
+}
+//mantling
++ObjProp 136 "PhysCanMant"
+{
+}
++ObjProp 140 "PhysCanMant"
+{
+}
++ObjProp 153 "PhysCanMant"
+{
+}
++ObjProp 158 "PhysCanMant"
+{
+}
++ObjProp 1202 "PhysCanMant"
+{
+}
++ObjProp 1219 "PhysCanMant"
+{
+}
++ObjProp 1690 "PhysCanMant"
+{
+}
++ObjProp 1691 "PhysCanMant"
+{
+}
++ObjProp 1725 "PhysCanMant"
+{
+}
++ObjProp 1726 "PhysCanMant"
+{
+}
++ObjProp 1727 "PhysCanMant"
+{
+}
+//doors
++Link 172 173 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 681 "RotDoor"
+{
+	"Open Angle" 88
+}
+ObjProp 731 "RotDoor"
+{
+	"Open Angle" 275
+}
++Link 731 732 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 857 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1156 "RotDoor"
+{
+	"Open Angle" 89
+}
++Link 1216 1217 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 1394 "RotDoor"
+{
+	"Open Angle" 88
+}
+ObjProp 1657 "Scale"
+{
+	"" 1, 1, 0.42
+}
++Receptron 1819 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1819 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Link 1875 1876 "ScriptParams"
+{
+	"" Double
+}
+-ObjProp 1875 "PhysType"
++ObjProp 1875 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1876 "PhysType"
++ObjProp 1876 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 2330 "RotDoor"
+{
+	"Open Angle" 273
+}
+ObjProp 2437 "RotDoor"
+{
+	"Open Angle" 85
+}
+ObjProp 2439 "RotDoor"
+{
+	"Open Angle" 88
+}
+ObjProp 2441 "RotDoor"
+{
+	"Open Angle" 274
+}
+ObjProp 2447 "RotDoor"
+{
+	"Open Angle" 272
+}
+//AIs
++ObjProp 220 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 229 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1581 "AI_Hearing"
+{
+	"" Well Below Average
+}
+//buckets
++Receptron 1407 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent 2315
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1407 "EarthStim"
+{
+	Max None
+	Target 1429
+	Agent 2315
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1407 "EarthStim"
+{
+	Max None
+	Target 830
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1407 "EarthStim"
+{
+	Max None
+	Target 854
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1407 "EarthStim"
+{
+	Max None
+	Target 857
+	Agent -2425
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1407 "EarthStim"
+{
+	Max None
+	Target 919
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 1407 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}

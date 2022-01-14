@@ -1,0 +1,17 @@
+DML1
+
+//T2 FM: The Good Samaritan by Vaughan Cooper (Sluggs) / Fixes
+
+FINGERPRINT
+{
+	NAME -7010 "FanControlSign"
+	NAME -7075 "ToxicMan!"
+}
+
+/* remove "//" if you want to mantle out of the canal on your own */
+//-ObjProp -4487 "PhysCanMant"
+//speech
+ObjProp -2677 "SchPlayParams"
+{
+	"Initial Delay" 1000
+}

@@ -1,0 +1,437 @@
+DML1
+
+//T2 FM: Lonmore (mission 1) by Beltzer / Fixes
+
+FINGERPRINT
+{
+	1716 [232 -107 445]
+	1225 [482 257 439]
+	1537 [252 -98 456]
+	470 [474 382 432]
+	2192 [327 321 429]
+	735 [227 347 470]
+	512 [569 305 456]
+	122 [533 -94 460]
+	QVAR "goal_target_0" == 3964
+}
+
+// Street-shrouding particles:
+// Reduce the size and number (and increase alpha to compensate).
+// And disable simulation when not on screen.
+ObjProp 984 "ParticleGroup"
+{
+	"number of particles" 50
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 2065 "ParticleGroup"
+{
+	"number of particles" 100
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 3589 "ParticleGroup"
+{
+	"number of particles" 100
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 3591 "ParticleGroup"
+{
+	"number of particles" 150
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4344 "ParticleGroup"
+{
+	"number of particles" 40
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4359 "ParticleGroup"
+{
+	"number of particles" 180
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4360 "ParticleGroup"
+{
+	"number of particles" 300
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4362 "ParticleGroup"
+{
+	"number of particles" 280
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4363 "ParticleGroup"
+{
+	"number of particles" 280
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4364 "ParticleGroup"
+{
+	"number of particles" 260
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4365 "ParticleGroup"
+{
+	"number of particles" 250
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4366 "ParticleGroup"
+{
+	"number of particles" 450
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4367 "ParticleGroup"
+{
+	"number of particles" 300
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4368 "ParticleGroup"
+{
+	"number of particles" 100
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4369 "ParticleGroup"
+{
+	"number of particles" 300
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4370 "ParticleGroup"
+{
+	"number of particles" 300
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4371 "ParticleGroup"
+{
+	"number of particles" 300
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4372 "ParticleGroup"
+{
+	"number of particles" 250
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4373 "ParticleGroup"
+{
+	"number of particles" 200
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4374 "ParticleGroup"
+{
+	"number of particles" 150
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4375 "ParticleGroup"
+{
+	"number of particles" 260
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4379 "ParticleGroup"
+{
+	"number of particles" 50
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4380 "ParticleGroup"
+{
+	"number of particles" 260
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4381 "ParticleGroup"
+{
+	"number of particles" 60
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4382 "ParticleGroup"
+{
+	"number of particles" 100
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4383 "ParticleGroup"
+{
+	"number of particles" 350
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4384 "ParticleGroup"
+{
+	"number of particles" 200
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4457 "ParticleGroup"
+{
+	"number of particles" 200
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4579 "ParticleGroup"
+{
+	"number of particles" 400
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4694 "ParticleGroup"
+{
+	"number of particles" 50
+	"size of particle" 8.0
+	"alpha" 200
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+// Room-filling particle effects:
+// Disable simulation when not on screen.
+ObjProp 4122 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4123 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4124 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4125 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4126 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4127 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4128 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4129 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4130 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4131 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4132 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4133 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4134 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4135 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4137 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4140 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4141 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4142 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4143 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4146 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4147 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4152 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4153 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4158 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4160 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4161 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4165 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4166 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4167 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4168 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4170 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4171 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4178 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4181 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}
+ObjProp 4182 "ParticleGroup"
+{
+	"always simulate (slow)" 0
+	"always simulate group" 0
+}

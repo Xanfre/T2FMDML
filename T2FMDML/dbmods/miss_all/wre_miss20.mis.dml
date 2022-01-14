@@ -1,0 +1,497 @@
+DML1
+
+//T2 FM: Wicked Relics by Katy Fortner (Kfort) / Fixes
+
+FINGERPRINT
+{
+	1874 [-53 457 15]
+	748 [76 340 51]
+	692 [23 467 11]
+	2102 [32 526 -3]
+	440 [-5 563 -30]
+	2143 [62 552 -3]
+	177 [47 508 9]
+	489 [74 299 12]
+	NAME 217 "Lord_Dasherville2"
+}
+
++ObjProp 2062 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 2062 2066 "ControlDevice"
+{
+}
++Link 2062 2073 "ControlDevice"
+{
+}
++Link 2062 2074 "ControlDevice"
+{
+}
++Link 2062 2075 "ControlDevice"
+{
+}
++Link 2062 2079 "ControlDevice"
+{
+}
++Link 2062 2086 "ControlDevice"
+{
+}
++Link 2062 2105 "ControlDevice"
+{
+}
++Link 2062 2106 "ControlDevice"
+{
+}
++Link 2062 2107 "ControlDevice"
+{
+}
++Link 2062 2108 "ControlDevice"
+{
+}
++Link 2062 2135 "ControlDevice"
+{
+}
++Link 2062 2136 "ControlDevice"
+{
+}
++ObjProp 2062 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
+}
++ObjProp 2062 "TrapQVar"
+{
+	"" =1:goal_visible_13
+}
++ObjProp 2066 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2066 "TrapQVar"
+{
+	"" =1:goal_bonus_8
+}
++ObjProp 2073 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2073 "TrapQVar"
+{
+	"" =1:goal_bonus_15
+}
++ObjProp 2074 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2074 "TrapQVar"
+{
+	"" =1:goal_bonus_20
+}
++ObjProp 2075 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2075 "TrapQVar"
+{
+	"" =0:goal_optional_4
+}
++ObjProp 2079 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2079 "TrapQVar"
+{
+	"" =0:goal_optional_8
+}
++ObjProp 2086 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2086 "TrapQVar"
+{
+	"" =0:goal_optional_10
+}
++ObjProp 2105 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2105 "TrapQVar"
+{
+	"" =0:goal_optional_11
+}
++ObjProp 2106 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2106 "TrapQVar"
+{
+	"" =0:goal_optional_13
+}
++ObjProp 2107 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2107 "TrapQVar"
+{
+	"" =1:goal_reverse_13
+}
++ObjProp 2108 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2108 "TrapQVar"
+{
+	"" =1:goal_reverse_14
+}
++ObjProp 2135 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2135 "TrapQVar"
+{
+	"" =2499:goal_target_9
+}
++ObjProp 2136 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2136 "TrapQVar"
+{
+	"" =4:goal_type_9
+}
+-Link 2499 1376 "ControlDevice"
+-Link 2499 3059 "ControlDevice"
+-Link 2499 2500 "ControlDevice"
+-Link 2499 3020 "ControlDevice"
++Link 174 175 "ControlDevice"
+{
+}
++ObjProp 174 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 174 "TrapQVar"
+{
+	"" >9:DrSKnockout
+}
++ObjProp 175 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 175 "TrapQVar"
+{
+	"" =2:goal_state_13
+}
+ObjProp 406 "TrapQVar"
+{
+	"" >60:DrSKnockout
+}
+ObjProp 2468 "TrapQVar"
+{
+	"" >4:DrSKnockout
+}
+//shadowjack
++ObjProp 63 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++Link 2750 63 "ControlDevice"
+{
+}
+//fireplaces
+ObjProp 166 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 169 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 171 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 173 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+//doors, windows, banners
++MetaProp 199 -5661
++MetaProp 412 -5661
++MetaProp 450 -5661
++MetaProp 451 -5661
++MetaProp 452 -5661
++MetaProp 1945 -2420
++MetaProp 1946 -2420
++MetaProp 2495 -2420
++MetaProp 3667 -5661
++MetaProp 3668 -5661
++Receptron 253 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -2425
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 253 "EarthStim"
+{
+	Max None
+	Target 2155
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 253 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 275 "Scale"
+{
+	"" 1.25, 1.25, 1.25
+}
+ObjProp 281 "Scale"
+{
+	"" 1.25, 1.25, 1.25
+}
+ObjProp 569 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 695 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 738 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 953 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1230 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1231 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1233 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1274 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1275 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1276 "RotDoor"
+{
+	"Open Angle" 272
+}
+ObjProp 1278 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1280 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1282 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1283 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 1565 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1567 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1572 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1580 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1582 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1590 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1596 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1995 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 2061 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2072 "BlockFrob"
+{
+	"" true
+}
+ObjProp 2078 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 2497 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 3354 "BlockFrob"
+{
+	"" true
+}
++ObjProp 3512 "BlockFrob"
+{
+	"" true
+}
+ObjProp 3624 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 3661 "RotDoor"
+{
+	"Open Angle" 89
+}
+//AIs
++ObjProp 208 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 208 "PhysType"
+{
+	"Type" Sphere
+}
++ObjProp 421 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 692 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 693 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 703 "TrapFlags"
+{
+	"" Once
+}
+ObjProp 932 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cjenv
+}
++ObjProp 970 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1637 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 1758 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+//switches
++ObjProp 256 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 256 "TrapFlags"
+ObjProp 256 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
++ObjProp 1053 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 1053 "TrapFlags"
+ObjProp 1053 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
++ObjProp 1321 "PickDist"
+{
+	"" 4.00
+}
+-ObjProp 1321 "DarkStat"
+-Link 1321 1331 "ControlDevice"
++Link 1321 1331 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+-Link 1331 186 "ControlDevice"
+-Link 1331 1319 "ControlDevice"
+-Link 1331 1321 "ControlDevice"
+ObjProp 1394 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1394 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 1782 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1782 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 3021 "Scripts"
+{
+	"Script 0" AmbientSounds
+	"Script 1" ""
+	"Script 2" ""
+}
+//mantling
++ObjProp 1386 "PhysCanMant"
+{
+}
++ObjProp 1387 "PhysCanMant"
+{
+}

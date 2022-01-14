@@ -1,0 +1,74 @@
+DML1
+
+//T2 FM: Island of Iron 2: Confrontation by John D. Head (John D.) / Fixes
+
+FINGERPRINT
+{
+	864 [186 118 -8]
+	1553 [52 212 27]
+	1249 [236 205 33]
+	370 [37 0 29]
+	1301 [11 141 47]
+	1495 [-1 -5 1]
+	413 [33 158 87]
+	38 [623 210 -44]
+	QVAR "goal_target_3" == 777
+}
+
+//pickpocketing
++ObjProp 57 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 57 67 "ControlDevice"
+{
+}
++ObjProp 57 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 67 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 67 "TrapQVar"
+{
+	"" =2:DrSPocketCnt
+}
+//doors
++MetaProp 19 -2419
++MetaProp 24 -2419
++MetaProp 28 -2419
++MetaProp 98 -2420
++MetaProp 239 -5661
++MetaProp 239 -2257
++MetaProp 1136 -2419
++MetaProp 1637 -2420
++MetaProp 1638 -2420
++MetaProp 1640 -5661
++MetaProp 1640 -2257
++MetaProp 1641 -5661
++MetaProp 1641 -2257
+-ObjProp 459 "TrapFlags"
+ObjProp 459 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
++ObjProp 1079 "BlockFrob"
+{
+	"" true
+}
+//items
++ObjProp 447 "FrobInfo"
+{
+}
++ObjProp 478 "StackCount"
+{
+}
++ObjProp 478 "InvType"
+{
+}
++ObjProp 777 "StackCount"
+{
+}

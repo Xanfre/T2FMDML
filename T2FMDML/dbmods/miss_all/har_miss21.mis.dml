@@ -1,0 +1,171 @@
+DML1
+
+//T2 FM: The Harlequin (Uncontest) by Doug Brainard (Balboa) / Fixes
+
+FINGERPRINT
+{
+	572 [526 353 506]
+	117 [456 391 503]
+	382 [537 413 504]
+	300 [502 395 509]
+	526 [524 409 505]
+	587 [480 372 486]
+	599 [531 357 507]
+	132 [506 368 484]
+	QVAR "goal_target_5" == 502
+}
+
+//mantling
++ObjProp 215 "PhysCanMant"
+{
+}
++ObjProp 219 "PhysCanMant"
+{
+}
++ObjProp 222 "PhysCanMant"
+{
+}
++ObjProp 228 "PhysCanMant"
+{
+}
++ObjProp 231 "PhysCanMant"
+{
+}
++ObjProp 241 "PhysCanMant"
+{
+}
++ObjProp 276 "PhysCanMant"
+{
+}
++ObjProp 277 "PhysCanMant"
+{
+}
++ObjProp 452 "PhysCanMant"
+{
+}
++ObjProp 454 "PhysCanMant"
+{
+}
+//quest items
++ObjProp 273 "StackCount"
+{
+}
++ObjProp 316 "StackCount"
+{
+}
++ObjProp 383 "StackCount"
+{
+}
++ObjProp 464 "StackCount"
+{
+}
++ObjProp 464 "Class Tags"
+{
+}
++ObjProp 467 "StackCount"
+{
+}
++ObjProp 467 "Class Tags"
+{
+}
+//benny
+ObjProp 501 "AI_Converation"
+{
+	"Actor"[1] Unused
+	"Conversation: Action 1" Nothing()
+	"  Argument 1"[1] ""
+	"  Argument 1"[7] 1000
+	"  Argument 1"[13] 2000
+}
++ObjProp 501 "AI_SaveConverse"
+{
+	"" true
+}
+ObjProp 517 "AI_Converation"
+{
+	"Actor"[44] Unused
+	"Conversation: Action 2"[7] Nothing()
+	"  Argument 1"[44] ""
+}
+//pickpocketing
+-Link 509 619 "ControlDevice"
+//blockers
+Create -445 "Blocker1"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 524, 408.35, 509
+		"Pitch" 4000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 0.6
+	}
+}
+-ObjProp "Blocker1" "PhysType"
++ObjProp "Blocker1" "PhysType"
+{
+	"Type" OBB
+}
+Create -1550 "Blocker2"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 517.4, 408, 509.1
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+Create -1550 "Blocker3"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 536.5, 413.8, 511
+		"Bank" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}

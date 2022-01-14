@@ -1,0 +1,61 @@
+DML1
+
+//T2 FM: Midday Eclipse (Uncontest) by Sxerks / Fixes
+
+FINGERPRINT
+{
+	264 [-42 41 3]
+	495 [-47 44 24]
+	163 [-102 100 7]
+	191 [-103 28 3]
+	230 [-86 63 3]
+	121 [-137 48 5]
+	249 [-42 99 2]
+	402 [-48 88 2]
+	NAME 388 "moveable barrier"
+}
+
+//pickpocketing
++ObjProp 400 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 400 401 "ControlDevice"
+{
+}
++ObjProp 400 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 401 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 401 "TrapQVar"
+{
+	"" =7:DrSPocketCnt
+}
+//doors
+-ObjProp 202 "JointPos"
+-ObjProp 386 "JointPos"
+-ObjProp 429 "JointPos"
+//keys
++ObjProp 278 "SlayResult"
+{
+}
++ObjProp 282 "SlayResult"
+{
+}
+//misplaced objects
+ObjProp 387 "Position"
+{
+	"Pitch" 8000
+}
+ObjProp 476 "Position"
+{
+	"Location" -77.38, 80.68, 3.25
+}
+ObjProp 477 "Position"
+{
+	"Location" -77.38, 79.78, 3.25
+}

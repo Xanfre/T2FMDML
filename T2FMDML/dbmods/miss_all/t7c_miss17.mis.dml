@@ -1,0 +1,74 @@
+DML1
+
+//T2 FM: The 7th Crystal v2 (Act 1) by David Tonkinson (Saturnine) / Fixes
+
+FINGERPRINT
+{
+	1487 [342 654 -98]
+	623 [347 639 -93]
+	241 [382 699 -75]
+	2250 [413 611 -102]
+	338 [350 577 -66]
+	594 [397 613 -101]
+	615 [410 611 -90]
+	236 [380 721 -68]
+	NAME 1120 "Friendly_bug_conv"
+}
+
+//camvator
+Link 371 372 "TPath"
+{
+	"Speed" 0.75
+}
+Link 372 594 "TPath"
+{
+	"Speed" 0.75
+}
+Link 594 595 "TPath"
+{
+	"Speed" 1.25
+}
+Link 595 596 "TPath"
+{
+	"Speed" 1.50
+}
+Link 596 592 "TPath"
+{
+	"Speed" 2.00
+}
+Link 592 593 "TPath"
+{
+	"Speed" 1.50
+}
+Link 593 597 "TPath"
+{
+	"Speed" 2.50
+}
+Link 597 598 "TPath"
+{
+	"Speed" 1.00
+}
+Link 598 599 "TPath"
+{
+	"Speed" 2.50
+}
+Link 599 609 "TPath"
+{
+	"Speed" 1.00
+}
+Link 609 610 "TPath"
+{
+	"Speed" 1.50
+}
+Link 610 605 "TPath"
+{
+	"Speed" 1.00
+}
+Link 605 606 "TPath"
+{
+	"Speed" 1.50
+}
+Link 606 607 "TPath"
+{
+	"Speed" 0.75
+}

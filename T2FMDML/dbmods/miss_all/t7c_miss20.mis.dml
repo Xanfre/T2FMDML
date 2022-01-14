@@ -1,0 +1,44 @@
+DML1
+
+//T2 FM: The 7th Crystal v2 (Act 4) by David Tonkinson (Saturnine) / Fixes
+
+FINGERPRINT
+{
+	118 [411 818 -70]
+	215 [438 984 -86]
+	248 [422 809 -65]
+	441 [380 706 -87]
+	317 [431 835 -67]
+	260 [408 699 -68]
+	282 [424 858 -50]
+	423 [438 978 -88]
+	NAME 638 "Bridge_conv_froggy"
+}
+
+//loot
++ObjProp 47 "Loot"
+{
+}
++ObjProp 133 "Loot"
+{
+}
+//pickpocketing
++ObjProp 411 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 411 412 "ControlDevice"
+{
+}
++ObjProp 411 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 412 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 412 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}

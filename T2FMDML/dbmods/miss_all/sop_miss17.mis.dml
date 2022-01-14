@@ -1,0 +1,75 @@
+DML1
+
+//T2 FM: Sinful Opportunities by M. Schotte (Polygon) / Fixes
+
+FINGERPRINT
+{
+	169 [561 492 500]
+	45 [541 513 501]
+	99 [526 476 506]
+	354 [467 500 510]
+	316 [486 494 508]
+	461 [574 479 495]
+	218 [502 489 501]
+	455 [563 477 495]
+	QVAR "goal_target_6" == 505
+}
+
+//ankh (goal 1)
+ObjProp 47 "FrobInfo"
+{
+	"Inv Action" None
+}
+//doors
+-ObjProp 160 "JointPos"
+-ObjProp 458 "JointPos"
+-ObjProp 475 "JointPos"
+-ObjProp 529 "JointPos"
+ObjProp 367 "RotDoor"
+{
+	"Open Angle" 89
+}
+//powder keg
++ObjProp 189 "StackCount"
+{
+}
++ObjProp 189 "Class Tags"
+{
+}
++ObjProp 189 "Scripts"
+{
+	"Script 0" LootSounds
+}
+//fire arrow
+-ObjProp 207 "DeathStage"
+//buckets
++Receptron 322 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent 416
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 322 "EarthStim"
+{
+	Max None
+	Target 352
+	Agent 416
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 322 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+//scroll
+ObjProp 452 "Position"
+{
+	"Location" 540.446, 489.64, 502
+}

@@ -3,6 +3,7 @@ issues with NewDark and other problems. To install, simply copy everything accom
 
 T2FMDML currently addresses issues in the following fan missions and campaigns:
 
+The 7th Crystal
 A. K. A. Noah
 The Abandoned Castle
 Ack! There's a Zombie in the Basement
@@ -59,6 +60,7 @@ The Clean Out
 The Clocktower
 The Cloisters of St. Lazarius
 Coalport
+Cold Feet
 Complications
 Conspiracies in the Dark
 Cragscright Prison
@@ -129,6 +131,7 @@ Guardsmen of Haddur
 Haddur
 Hammerite's Brutality
 Happy New Year, Mister Lambert!
+The Harlequin
 The Hashishans
 The Haunting
 Heading Out
@@ -144,6 +147,8 @@ House of Random
 In dubio pro Garrett
 In These Enlightened Times
 Insurrection
+Island of Iron 1: Fortress of Steel
+Island of Iron 2: Confrontation
 JailBreak
 The Jarlson Manor
 The Jewel of Ghandar
@@ -159,10 +164,12 @@ Kill Factory II: Escape from the Planet of the Robots
 The Kindred Vault
 Konkurrenten
 Last Caress
+The League of Grim Thieves
 The Legend of the Four Elements: The Last Hope
 The Librarian
 Library pt 1: The Town
 A Living Nightmare
+Lonmore
 Lord Alan's Basement
 Lord Ashton Series
 Lord Burkhard
@@ -185,6 +192,7 @@ Mech Bank
 Meeting
 Memoirs of a Dead God
 Merchant's Manor
+Midday Eclipse
 Midday Escape
 Mind Master
 A Mother's Love
@@ -204,6 +212,7 @@ Night Watch
 No More Clients for Monty
 Nostalgia
 Obligatory Prison Mission
+Oh, l'amour
 Old Comrades, Old Debts
 An Old Friend
 Orthodox Wedding
@@ -250,10 +259,12 @@ Shadows in our Blood
 Shining Standards
 A Shopping Stopover
 Simple Enough
+Sinful Opportunities
 Sisterhood of Azura part 1: Estheridge
 Sisterhood of Azura part 2: The House
 The Skygem Connection
 Slow But Steady Progress
+Sluggs' FM Pack
 A Smuggler's Request
 Sneaking Through Venice
 Snobs part 1
@@ -292,11 +303,13 @@ Ultima Ratio
 Undead Reckoning
 Under Templehill
 Underneath
+Unholy Vivid Innocence
 Uninvited Guest
 United Bank of Auldale
 Unknown Treasure
 UnMasked
 Unnecessary Risk
+Vagabond
 Viktor Gaspar
 Volcano Island Prison Facility
 Von Ratten, Spinnen un einer Flucht
@@ -308,6 +321,8 @@ We Miss You, Bob!
 The Wedding of Lady Dark
 What Lies Below
 What a Drag!
+Whispers in the Desert
+Wicked Relics
 Working the Mines
 Worlds Collide
 Zealot's Hollow

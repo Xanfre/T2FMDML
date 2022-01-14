@@ -105,3 +105,13 @@ ObjProp 293 "Scripts"
 {
 	"Script 0" NVMetaTrap
 }
+//vase
+-ObjProp 1559 "PhysType"
+ObjProp 1559 "Position"
+{
+	"Location" -380, 390.425, -28.35
+}
++ObjProp 1559 "PhysType"
+{
+	"Type" Sphere Hat
+}

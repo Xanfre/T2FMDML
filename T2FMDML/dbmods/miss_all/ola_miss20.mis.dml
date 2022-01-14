@@ -1,0 +1,138 @@
+DML1
+
+//T2 FM: Oh, l'amour by Rufus / Fixes
+
+FINGERPRINT
+{
+	157 [412 466 489]
+	494 [426 342 502]
+	826 [426 435 488]
+	827 [435 429 494]
+	632 [385 297 489]
+	496 [430 369 504]
+	808 [392 408 492]
+	533 [342 480 496]
+	QVAR "goal_target_2" == 920
+}
+
+//goals
++Link 21 575 "ControlDevice"
+{
+}
++ObjProp 575 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 575 "TrapQVar"
+{
+	"" =3:goal_state_3
+}
+-Link 587 586 "ControlDevice"
++Link 587 575 "ControlDevice"
+{
+}
+//AIs
++ObjProp 10 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 10 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 21 "GameName"
+{
+	"" Name_Lola: "Lola"
+}
++ObjProp 25 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 42 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 326 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
+-Receptron 683 "failifharm"
++ObjProp 683 "GameName"
+{
+	"" Name_Carmen: "Carmen"
+}
++ObjProp 981 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
+//misplaced objects / junk
+ObjProp 150 "Position"
+{
+	"Location" 421.09, 463.55, 492.45
+	"Heading" 8000
+}
+ObjProp 150 "Scale"
+{
+	"" 0.665, 0.5, 1.0355
+}
+ObjProp 151 "Position"
+{
+	"Location" 424.67, 463.506, 492.45
+	"Heading" 0
+}
+ObjProp 151 "Scale"
+{
+	"" 0.665, 0.5, 1.0355
+}
++ObjProp 343 "FrobInfo"
+{
+}
++Receptron 668 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -10
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 668 "EarthStim"
+{
+	Max None
+	Target 800
+	Agent -10
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 668 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 1077 "InvType"
+{
+}
+//fireplace
+ObjProp 335 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+ObjProp 338 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+//doors
++MetaProp 376 -5661
++MetaProp 377 -5661
++MetaProp 588 -5661
+-ObjProp 588 "JointPos"

@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Midday Escape (Contest 5) by Sxerks / Fix goals
+//T2 FM: Midday Escape (Contest 5) by Sxerks / Fixes
 
 FINGERPRINT
 {
@@ -15,51 +15,256 @@ FINGERPRINT
 	QVAR "goal_target_0" == 291
 }
 
-+ObjProp 11 "Scripts"
+//goals / pickpocketing
++ObjProp 98 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 11 "TrapQVar"
-{
-	"" =2:goal_min_diff_4
-}
-+ObjProp 11 "Scripts"
-{
-	"Script 1" TrigSim
-}
-+ObjProp 13 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 13 "TrapQVar"
++ObjProp 98 "TrapQVar"
 {
 	"" =1:goal_visible_4
 }
-+ObjProp 212 "Scripts"
++Link 150 98 "ControlDevice"
+{
+}
++ObjProp 379 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 379 369 "ControlDevice"
+{
+}
++Link 379 380 "ControlDevice"
+{
+}
++Link 379 381 "ControlDevice"
+{
+}
++ObjProp 379 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 380 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 212 "TrapQVar"
++ObjProp 380 "TrapQVar"
 {
-	"" =1:goal_min_diff_3
+	"" =1:goal_irreversible_2
 }
-+ObjProp 171 "Scripts"
++ObjProp 381 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 171 "TrapQVar"
++ObjProp 381 "TrapQVar"
 {
-	"" =1:goal_irreversible_4
+	"" =20:DrSPocketCnt
 }
-+Link 150 11 "ControlDevice"
+//doors
+-ObjProp 17 "JointPos"
+-ObjProp 61 "JointPos"
+-ObjProp 67 "JointPos"
+-ObjProp 89 "JointPos"
+-ObjProp 90 "JointPos"
+-ObjProp 163 "JointPos"
+-ObjProp 330 "JointPos"
+-ObjProp 331 "JointPos"
+-ObjProp 386 "JointPos"
+-ObjProp 475 "JointPos"
+//mantling
++ObjProp 18 "PhysCanMant"
 {
 }
-+Link 150 13 "ControlDevice"
++ObjProp 41 "PhysCanMant"
 {
 }
-+Link 150 212 "ControlDevice"
++ObjProp 78 "PhysCanMant"
 {
 }
-+Link 11 171 "ControlDevice"
++ObjProp 161 "PhysCanMant"
 {
+}
++ObjProp 162 "PhysCanMant"
+{
+}
++ObjProp 188 "PhysCanMant"
+{
+}
++ObjProp 189 "PhysCanMant"
+{
+}
++ObjProp 222 "PhysCanMant"
+{
+}
++ObjProp 264 "PhysCanMant"
+{
+}
++ObjProp 277 "PhysCanMant"
+{
+}
++ObjProp 309 "PhysCanMant"
+{
+}
+-ObjProp 309 "PhysType"
+ObjProp 309 "Position"
+{
+	"Location" -8, -36, 3
+}
++ObjProp 309 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 333 "PhysCanMant"
+{
+}
+ObjProp 368 "CollisionType"
+{
+	"" None
+}
++ObjProp 368 "PhysCanMant"
+{
+}
+ObjProp 368 "Scale"
+{
+	"" 1, 1, 2.7
+}
+-ObjProp 368 "PhysType"
+ObjProp 368 "Position"
+{
+	"Location" -27.75, 6, 14.25
+}
++ObjProp 368 "PhysType"
+{
+	"Type" OBB
+}
++Link 369 370 "ControlDevice"
+{
+}
++Link 369 371 "ControlDevice"
+{
+}
++Link 369 372 "ControlDevice"
+{
+}
++Link 369 373 "ControlDevice"
+{
+}
++Link 369 374 "ControlDevice"
+{
+}
++Link 369 375 "ControlDevice"
+{
+}
++Link 369 376 "ControlDevice"
+{
+}
++Link 369 377 "ControlDevice"
+{
+}
++Link 369 378 "ControlDevice"
+{
+}
++ObjProp 369 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++ObjProp 406 "PhysCanMant"
+{
+}
++ObjProp 407 "PhysCanMant"
+{
+}
++ObjProp 407 "Scale"
+{
+	"" 1, 1, 1.5
+}
+-ObjProp 407 "PhysType"
+ObjProp 407 "Position"
+{
+	"Location" -85.75, -40, 25.25
+}
++ObjProp 407 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 408 "PhysCanMant"
+{
+}
+-ObjProp 408 "PhysType"
+ObjProp 408 "Position"
+{
+	"Location" -23.5, -49.25, 7.5
+	"Heading" 0
+	"Pitch" 4000
+}
++ObjProp 408 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 409 "PhysCanMant"
+{
+}
+-ObjProp 409 "PhysType"
+ObjProp 409 "Position"
+{
+	"Location" -26.5, -80.25, 9.2
+	"Heading" 0
+	"Pitch" 4000
+}
++ObjProp 409 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 448 "PhysCanMant"
+{
+}
++ObjProp 451 "PhysCanMant"
+{
+}
++ObjProp 453 "PhysCanMant"
+{
+}
++ObjProp 454 "PhysCanMant"
+{
+}
+//keys
++ObjProp 81 "SlayResult"
+{
+}
++ObjProp 81 "NoDrop"
+{
+	"" true
+}
+ObjProp 121 "PickDist"
+{
+	"" 2.00
+}
++ObjProp 126 "SlayResult"
+{
+}
+-ObjProp 127 "PhysType"
++ObjProp 127 "PhysType"
+{
+	"Type" OBB
+}
+//fireplaces
+ObjProp 486 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.00
+}
+ObjProp 488 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}
+ObjProp 491 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.00
+}
+ObjProp 493 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
 }

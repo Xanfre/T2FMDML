@@ -1,0 +1,58 @@
+DML1
+
+//T2 FM: Island of Iron 1: Fortress of Steel by John D. Head (John D.) / Fixes
+
+FINGERPRINT
+{
+	339 [-517 -43 -96]
+	699 [-512 -166 -79]
+	988 [-462 -151 -78]
+	1136 [-560 -147 -78]
+	1700 [-521 -12 -96]
+	928 [-468 -72 -80]
+	1722 [-351 -168 -61]
+	416 [-507 -56 -92]
+	QVAR "goal_target_3" == 1662
+}
+
+//pickpocketing
++ObjProp 165 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 165 166 "ControlDevice"
+{
+}
++ObjProp 165 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 166 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 166 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}
+//warrior's blade (goal 5)
++Link 845 1536 "ControlDevice"
+{
+}
++ObjProp 845 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
++ObjProp 1536 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+//doors
++Link 19 22 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 764 "BlockFrob"
+{
+	"" true
+}

@@ -1,0 +1,30 @@
+DML1
+
+//T2 FM: The 7th Crystal v2 (Act 3) by David Tonkinson (Saturnine) / Fixes
+
+FINGERPRINT
+{
+	425 [369 598 -97]
+	1512 [357 468 -22]
+	427 [384 584 -74]
+	2191 [367 580 -46]
+	1566 [452 590 -118]
+	1529 [491 575 -129]
+	1100 [419 584 -115]
+	19 [330 429 -14]
+	QVAR "goal_target_0" == 1321
+}
+
+//loot stats
++ObjProp 10 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 10 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 10 "TrapQVar"
+{
+	"" =0:DrSCmLoot
+}

@@ -1,0 +1,383 @@
+DML1
+
+//T2 FM: Vagabond (Memento Mori) by Rob Strain (Random_Taffer) / Fixes
+
+FINGERPRINT
+{
+	994 [478 469 541]
+	190 [408 284 571]
+	826 [505 316 548]
+	799 [505 324 541]
+	470 [494 285 556]
+	197 [395 323 557]
+	1283 [469 319 541]
+	1175 [457 275 557]
+	QVAR "goal_target_12" == 913
+}
+
+//goals
++ObjProp 67 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 67 68 "ControlDevice"
+{
+}
++Link 67 69 "ControlDevice"
+{
+}
++Link 67 70 "ControlDevice"
+{
+}
++ObjProp 67 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
+}
++ObjProp 67 "TrapQVar"
+{
+	"" =1:goal_final_0
+}
++ObjProp 68 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 68 "TrapQVar"
+{
+	"" =0:goal_final_12
+}
++ObjProp 69 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 69 "TrapQVar"
+{
+	"" =0:goal_target_12
+}
++ObjProp 70 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 70 "TrapQVar"
+{
+	"" =4:goal_type_0
+}
++ObjProp 1096 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1096 "TrapQVar"
+{
+	"" =913:goal_target_0
+}
++Link 1165 1096 "ControlDevice"
+{
+}
+ObjProp 1307 "TrapQVar"
+{
+	"" =1:goal_state_12
+}
+//mantling
++ObjProp 14 "PhysCanMant"
+{
+}
++ObjProp 23 "PhysCanMant"
+{
+}
++ObjProp 57 "PhysCanMant"
+{
+}
++ObjProp 58 "PhysCanMant"
+{
+}
++ObjProp 59 "PhysCanMant"
+{
+}
++ObjProp 74 "PhysCanMant"
+{
+}
++ObjProp 80 "PhysCanMant"
+{
+}
++ObjProp 156 "PhysCanMant"
+{
+}
++ObjProp 219 "PhysCanMant"
+{
+}
+//pickpocketing
+ObjProp 251 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}
+//quest items
+-Link 189 928 "ControlDevice"
+-Link 511 1267 "ControlDevice"
+-Link 635 1171 "ControlDevice"
+-Link 918 925 "ControlDevice"
+-Link 928 927 "ControlDevice"
+-Link 998 252 "ControlDevice"
+-Link 1000 998 "ControlDevice"
+-Link 1047 1046 "ControlDevice"
+-Link 1083 1095 "ControlDevice"
+-Link 1090 1093 "ControlDevice"
+-Link 1095 1093 "ControlDevice"
+-Link 1101 1100 "ControlDevice"
+-Link 1111 1101 "ControlDevice"
+-Link 1129 1135 "ControlDevice"
+-Link 1137 1129 "ControlDevice"
+-Link 1141 1139 "ControlDevice"
+-Link 1142 1141 "ControlDevice"
+-Link 1171 829 "ControlDevice"
+-Link 1178 1183 "ControlDevice"
+-Link 1183 1181 "ControlDevice"
+-Link 1267 975 "ControlDevice"
+-Link 1490 1047 "ControlDevice"
++ObjProp 252 "SlayResult"
+{
+}
++ObjProp 252 "NoDrop"
+{
+	"" true
+}
++ObjProp 829 "SlayResult"
+{
+}
+-Link 925 918 "ControlDevice"
++Link 925 94 "ControlDevice"
+{
+}
+ObjProp 925 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" FrobSlay
+}
++ObjProp 927 "SlayResult"
+{
+}
++ObjProp 927 "NoDrop"
+{
+	"" true
+}
++ObjProp 975 "SlayResult"
+{
+}
++ObjProp 975 "NoDrop"
+{
+	"" true
+}
++ObjProp 1046 "SlayResult"
+{
+}
++ObjProp 1093 "SlayResult"
+{
+}
++ObjProp 1093 "NoDrop"
+{
+	"" true
+}
++ObjProp 1100 "SlayResult"
+{
+}
++ObjProp 1100 "NoDrop"
+{
+	"" true
+}
++ObjProp 1135 "SlayResult"
+{
+}
++ObjProp 1135 "NoDrop"
+{
+	"" true
+}
++ObjProp 1139 "SlayResult"
+{
+}
++ObjProp 1139 "NoDrop"
+{
+	"" true
+}
++ObjProp 1181 "SlayResult"
+{
+}
++ObjProp 1237 "FrobInfo"
+{
+	"World Action" Move
+}
+//doors
+-ObjProp 100 "TransDoor"
+++Receptron 444 "SavingsStim"
+{
+	Max None
+	Target 1225
+	Agent 443
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
+++Receptron 444 "SavingsStim"
+{
+	Max None
+	Target 1225
+	Agent 443
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++MetaProp 509 -2420
+//AIs
++Link 94 488 "ControlDevice"
+{
+}
++ObjProp 94 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
+Link 910 488 "AIWatchObj"
+{
+	"Response: Step 2" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"  Argument 1"[1] Add
+	"  Argument 2"[1] FrobInert
+	"  Argument 3"[1] 488
+}
++ObjProp 912 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Don't Inherit" true
+}
++Receptron 962 "EarthStim"
+{
+	Min 9
+	Max None
+	Target Me
+	Agent 996
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
++ObjProp 962 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
+}
++ObjProp 962 "GameName"
+{
+	"" Name_Rynolf: "Rynolf"
+}
++ObjProp 962 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 996 "GameName"
+{
+	"" Name_RynolfC: "Rynolf's corpse"
+}
++ObjProp 1251 "DesignNote"
+{
+	"" NVLinkBuilderLinkType="AICurrentPatrol"; NVLinkBuilderLinkSource="1250"; NVLinkBuilderLinkDest="1253"
+}
++ObjProp 1251 "Scripts"
+{
+	"Script 0" TrapTeleporter
+	"Script 1" NVLinkBuilder
+	"Don't Inherit" true
+}
+//scrolls
++ObjProp 951 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobInvEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+ObjProp 951 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1146 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobInvEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
+-Link 1146 510 "ControlDevice"
+-Link 1146 1360 "ControlDevice"
++Link 1146 1166 "ControlDevice"
+{
+}
++Link 1146 1156 "ControlDevice"
+{
+}
+ObjProp 1146 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1254 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1000; NVRelayTrap2TDest=1301; NVRelayTrap2Count=1
+}
+-Link 1254 1301 "ControlDevice"
+ObjProp 1254 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+}
+//conv
++Link 977 979 "ControlDevice"
+{
+}
++Link 979 984 "ControlDevice"
+{
+}
++ObjProp 979 "DesignNote"
+{
+	"" NVDeleteTrapOn="TurnOff"
+}
++ObjProp 979 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
++ObjProp 1298 "Class Tags"
+{
+}
+//misplaced objects
+-ObjProp 116 "PhysType"
+ObjProp 116 "Position"
+{
+	"Location" 465, 288, 582.46
+}
++ObjProp 116 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 128 "PhysType"
+ObjProp 128 "Position"
+{
+	"Location" 465, 288, 568.46
+}
++ObjProp 128 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1074 "Position"
+{
+	"Location" 392.2, 286.28, 558.12
+	"Pitch" f79c
+}
+-ObjProp 1204 "PhysType"
+ObjProp 1204 "Position"
+{
+	"Location" 295.2, 214.85, 524.085
+}
++ObjProp 1204 "PhysType"
+{
+	"Type" Sphere Hat
+}
+//fireplaces
+ObjProp 140 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 570 "PGLaunchInfo"
+{
+	"Min time" 1.50
+	"Max time" 1.50
+}

@@ -1,0 +1,188 @@
+DML1
+
+//T2 FM: Sluggs' FM Pack (Setup) by Vaughan Cooper (Sluggs) / Fixes
+
+FINGERPRINT
+{
+	106 [10 -38 -1]
+	60 [-15 -31 -4]
+	206 [2 -42 7]
+	80 [4 -39 12]
+	205 [6 -54 7]
+	76 [19 -50 7]
+	198 [17 -55 -1]
+	145 [7 -48 2]
+	NAME 223 "Oops! Delay"
+}
+
+//windows, door
++MetaProp 60 -5661
++MetaProp 93 -5661
++MetaProp 107 -5661
++MetaProp 108 -5661
++MetaProp 117 -5661
++MetaProp 131 -5661
++MetaProp 175 -5661
++MetaProp 176 -5661
+-ObjProp 3 "DeathStage"
+-ObjProp 60 "DeathStage"
+-ObjProp 93 "DeathStage"
+-ObjProp 107 "DeathStage"
+-ObjProp 108 "DeathStage"
+-ObjProp 117 "DeathStage"
+-ObjProp 131 "DeathStage"
+-ObjProp 175 "DeathStage"
+-ObjProp 176 "DeathStage"
+-ObjProp 186 "DeathStage"
+//statement (goal 1)
++StimSource 65 "EarthStim"
+{
+	Intensity 1
+	Propagator "Contact"
+}
+-Link 196 160 "ControlDevice"
+-Link 196 4 "Route"
+-ObjProp 196 "Scripts"
++Receptron 196 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -1
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 196 "EarthStim"
+{
+	Max None
+	Effect "SetQvar"
+	{
+		"Quest Variable" goal_state_1
+		"Operation" Set To
+		"Operand" 1
+	}
+}
+//switches
+ObjProp 15 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 15 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+ObjProp 42 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 73 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 75 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 78 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 86 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 87 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 87 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+ObjProp 102 "JointPos"
+{
+	"Joint 1" -0.06
+	"Joint 2" -0.06
+}
+ObjProp 102 "StTweqJoints"
+{
+	"Joint2AnimS" On
+}
+//AIs
++ObjProp 91 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard2
+}
+ObjProp 123 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+//painting
+-ObjProp 95 "PhysType"
+ObjProp 95 "Position"
+{
+	"Location" 22, -55.93, 13
+}
++ObjProp 95 "PhysType"
+{
+	"Type" OBB
+}
+//alarm
++Receptron 183 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -1259
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 183 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 183 "ScriptTiming"
+{
+	"" 2
+}
++ObjProp 183 "Scripts"
+{
+	"Script 0" OnOffSounds
+}
+//mantling
++ObjProp 201 "PhysCanMant"
+{
+}
++ObjProp 208 "PhysCanMant"
+{
+}
++ObjProp 209 "PhysCanMant"
+{
+}
++ObjProp 216 "PhysCanMant"
+{
+}
++ObjProp 217 "PhysCanMant"
+{
+}
++ObjProp 224 "PhysCanMant"
+{
+}
++ObjProp 226 "PhysCanMant"
+{
+}
++ObjProp 227 "PhysCanMant"
+{
+}

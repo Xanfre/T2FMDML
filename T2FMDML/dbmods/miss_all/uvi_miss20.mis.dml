@@ -1,0 +1,242 @@
+DML1
+
+//T2 FM: Unholy Vivid Innocence (Uncontest) by Ali Pouladi (Haplo) / Fixes
+
+FINGERPRINT
+{
+	510 [121 85 77]
+	732 [210 113 66]
+	1043 [192 180 84]
+	947 [46 296 48]
+	250 [130 185 33]
+	695 [74 168 78]
+	1082 [-11 136 88]
+	688 [81 192 83]
+	QVAR "goal_target_13" == 328
+}
+
+//doors
++MetaProp 15 -2420
++MetaProp 22 -2420
++MetaProp 32 -2420
++MetaProp 64 -2420
++MetaProp 317 -2420
++MetaProp 706 -2420
++MetaProp 755 -2420
++MetaProp 1025 -2420
+ObjProp 113 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 117 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 135 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 161 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 162 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 214 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 230 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 266 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 755 "Locked"
+{
+	"" true
+}
+-ObjProp 755 "PhysType"
++ObjProp 755 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 841 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 943 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 999 "Material Tags"
+{
+}
++ObjProp 1060 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 1060 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+//books
++ObjProp 127 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 127 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 186 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 186 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
+ObjProp 249 "Position"
+{
+	"Location" 132.5, 183, 32.075
+}
++ObjProp 249 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 605 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000
+}
+ObjProp 605 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 606 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000
+}
+ObjProp 606 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 608 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000
+}
+ObjProp 608 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 610 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 610 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 614 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 614 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1086 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000
+}
+ObjProp 1086 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
+//quest items
++Receptron 309 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -10
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 309 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 537 "NoDrop"
+{
+	"" true
+}
+//blockers
+Create -445 "Blocker1"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 90.4, 202.65, 77
+		"Pitch" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+Create -445 "Blocker2"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 90.4, 206.35, 77
+		"Pitch" c000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}

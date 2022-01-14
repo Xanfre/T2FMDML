@@ -1,0 +1,420 @@
+DML1
+
+//T2 FM: The League of Grim Thieves by Niklas Schwenkschuster (The Niggster) / Fixes
+
+FINGERPRINT
+{
+	812 [-53 -155 0]
+	702 [-157 92 4]
+	1091 [-79 98 -1]
+	1312 [-96 102 -35]
+	124 [-138 76 -7]
+	336 [101 -212 1]
+	1260 [-97 97 -38]
+	676 [-9 -72 -50]
+	QVAR "goal_target_4" == 750
+}
+
+//mantling
++ObjProp 78 "PhysCanMant"
+{
+}
++ObjProp 272 "PhysCanMant"
+{
+}
++ObjProp 539 "PhysCanMant"
+{
+}
++ObjProp 542 "PhysCanMant"
+{
+}
++ObjProp 565 "PhysCanMant"
+{
+}
++ObjProp 566 "PhysCanMant"
+{
+}
++ObjProp 650 "PhysCanMant"
+{
+}
++ObjProp 651 "PhysCanMant"
+{
+}
++ObjProp 761 "PhysCanMant"
+{
+}
++ObjProp 785 "PhysCanMant"
+{
+}
++ObjProp 786 "PhysCanMant"
+{
+}
++ObjProp 852 "PhysCanMant"
+{
+}
++ObjProp 857 "PhysCanMant"
+{
+}
++ObjProp 872 "PhysCanMant"
+{
+}
++ObjProp 898 "PhysCanMant"
+{
+}
++ObjProp 918 "PhysCanMant"
+{
+}
++ObjProp 919 "PhysCanMant"
+{
+}
++ObjProp 925 "PhysCanMant"
+{
+}
++ObjProp 941 "PhysCanMant"
+{
+}
++ObjProp 942 "PhysCanMant"
+{
+}
++ObjProp 943 "PhysCanMant"
+{
+}
++ObjProp 988 "PhysCanMant"
+{
+}
++ObjProp 1019 "PhysCanMant"
+{
+}
++ObjProp 1024 "PhysCanMant"
+{
+}
++ObjProp 1025 "PhysCanMant"
+{
+}
++ObjProp 1043 "PhysCanMant"
+{
+}
++ObjProp 1103 "PhysCanMant"
+{
+}
++ObjProp 1107 "PhysCanMant"
+{
+}
++ObjProp 1114 "PhysCanMant"
+{
+}
++ObjProp 1142 "PhysCanMant"
+{
+}
+//doors
++ObjProp 148 "BlockFrob"
+{
+	"" true
+}
+ObjProp 285 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+-ObjProp 285 "PhysType"
+ObjProp 285 "Position"
+{
+	"Heading" 0
+}
++ObjProp 285 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 305 "TransDoor"
++ObjProp 305 "RotDoor"
+{
+	"Open Angle" 90
+	"Base Speed" 1.50
+}
+-ObjProp 305 "PhysType"
+ObjProp 305 "Position"
+{
+	"Heading" c000
+}
++ObjProp 305 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 381 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Receptron 382 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 382 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 389 "BlockFrob"
+{
+	"" true
+}
++ObjProp 390 "BlockFrob"
+{
+	"" true
+}
++ObjProp 647 "BlockFrob"
+{
+	"" true
+}
++Receptron 707 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -1263
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 707 "EarthStim"
+{
+	Max None
+	Target Me
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 707 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 707 "TransDoor"
++ObjProp 707 "RotDoor"
+{
+	"Open Angle" 270
+	"Base Speed" 2.00
+	"Axis" Y-Axis
+	"Clockwise?" true
+}
++ObjProp 818 "BlockFrob"
+{
+	"" true
+}
+ObjProp 932 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 978 "BlockFrob"
+{
+	"" true
+}
++ObjProp 980 "BlockFrob"
+{
+	"" true
+}
++ObjProp 981 "BlockFrob"
+{
+	"" true
+}
++ObjProp 982 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1295 "TransDoor"
+{
+	"Open Position" 4.75
+}
+ObjProp 1298 "TransDoor"
+{
+	"Open Position" 4.75
+}
+//scroll / book
++ObjProp 205 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 205 "Scripts"
+{
+	"Script 0" StdBook
+}
+-Link 652 662 "ControlDevice"
+-Link 662 652 "ControlDevice"
+-Link 1212 1214 "ControlDevice"
+-Link 295 1214 "ControlDevice"
+-Link 295 652 "ControlDevice"
+-Link 295 279 "ControlDevice"
+-Link 295 1212 "ControlDevice"
++Link 295 357 "ControlDevice"
+{
+}
++Link 295 359 "ControlDevice"
+{
+}
++Link 357 1212 "ControlDevice"
+{
+}
++ObjProp 357 "ScriptTiming"
+{
+	"" 200
+}
++ObjProp 357 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 359 279 "ControlDevice"
+{
+}
++Link 359 652 "ControlDevice"
+{
+}
++ObjProp 359 "ScriptTiming"
+{
+	"" 1200
+}
++ObjProp 359 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
+//AIs
++ObjProp 307 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
+ObjProp 821 "AI_Hearing"
+{
+	"" Well Below Average
+}
++ObjProp 843 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+-Link 1175 1460 "AIPatrol"
++Link 1175 1165 "AIPatrol"
+{
+}
++Link 1165 1460 "AIPatrol"
+{
+}
++ObjProp 1211 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+//misplaced objects
+-ObjProp 479 "PhysType"
+ObjProp 479 "Position"
+{
+	"Location" -55, -254.7, 16.9
+}
++ObjProp 479 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 517 "PhysType"
+ObjProp 517 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 517 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 616 "PhysType"
+ObjProp 616 "Position"
+{
+	"Location" -100.3, 104.25, -36.5
+}
++ObjProp 616 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 742 "PhysType"
+ObjProp 742 "Position"
+{
+	"Location" 132.45, -197.5, 2.65
+}
++ObjProp 742 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 743 "PhysType"
+ObjProp 743 "Position"
+{
+	"Location" 140.7, -209, 2.65
+}
++ObjProp 743 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 874 "PhysType"
+ObjProp 874 "Position"
+{
+	"Location" -157.2, 91.1, 9.75
+}
++ObjProp 874 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 956 "PhysType"
+ObjProp 956 "Position"
+{
+	"Location" -120.98, 130.53, -3.4
+}
++ObjProp 956 "PhysType"
+{
+	"Type" Sphere
+}
+//eddie's key (goal 4)
++ObjProp 750 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 750 "NoDrop"
+{
+	"" true
+}
+//junk
++ObjProp 944 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 944 "InvType"
+{
+}
++ObjProp 996 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 996 "InvType"
+{
+}
++ObjProp 997 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 997 "InvType"
+{
+}
++ObjProp 1030 "FrobInfo"
+{
+}
++ObjProp 1035 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 1035 "InvType"
+{
+}
