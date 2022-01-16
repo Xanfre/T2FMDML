@@ -1,0 +1,211 @@
+DML1
+
+//T2 FM: La Fete du Voleur (The Thief's Christmas Eve) by Jordan Maf (FireMage) / Fixes
+
+FINGERPRINT
+{
+	1008 [-60 98 -15]
+	229 [13 84 -26]
+	1051 [60 -85 -16]
+	503 [-40 86 -22]
+	158 [21 59 -29]
+	601 [24 -178 -19]
+	607 [56 -194 -19]
+	729 [72 -102 -31]
+	QVAR "goal_target_3" == 887
+}
+
+//goal 4
+-Receptron 433 "EarthStim" 00210002
+Receptron 433 "EarthStim" 00210001
+{
+	Agent -1629
+}
++ObjProp 433 "GameName"
+{
+	"" Name_Sonia: "Sonia"
+}
+-Link 433 679 "Route"
+-Link 433 863 "ControlDevice"
++Link 433 810 "ControlDevice"
+{
+}
+-ObjProp 433 "Scripts"
++ObjProp 433 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" TrapDestroy
+}
+StimSource 473 "EarthStim"
+{
+	Propagator "Radius"
+	{
+		Life
+		{
+			"Period" 1000
+		}
+	}
+}
++Link 473 810 "ControlDevice"
+{
+}
+ObjProp 473 "Position"
+{
+	"Heading" c000
+}
++ObjProp 473 "Scripts"
+{
+	"Script 0" TrigBrainDead
+	"Script 1" TrapDestroy
+}
++Link 679 811 "ControlDevice"
+{
+}
+ObjProp 679 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
+-Link 681 863 "ControlDevice"
++ObjProp 810 "SlayResult"
+{
+	"Effect" No Effect
+}
++ObjProp 810 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 810 "TrapQVar"
+{
+	"" =3:goal_state_4
+}
++Link 811 812 "ControlDevice"
+{
+}
++ObjProp 811 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 811 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 812 433 "ControlDevice"
+{
+}
++Link 812 473 "ControlDevice"
+{
+}
++ObjProp 812 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 863 812 "ControlDevice"
+{
+}
++ObjProp 863 "Scripts"
+{
+	"Script 0" TrigQVar
+	"Don't Inherit" true
+}
+ObjProp 863 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
+//AIs
++ObjProp 224 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hamprsca
+}
++ObjProp 236 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 237 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 238 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 239 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 247 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hamprsca
+}
++ObjProp 424 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 425 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 426 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 429 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 460 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 650 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem1
+}
+//doors
+ObjProp 393 "RotDoor"
+{
+	"Open Angle" 89
+}
+-ObjProp 393 "PhysType"
+ObjProp 393 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 393 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 1106 -5661
+//quest item
++ObjProp 887 "StackCount"
+{
+}
+//gold hammer
+-ObjProp 901 "PhysType"
+ObjProp 901 "Position"
+{
+	"Location" 117.6, 18, -23.8
+}
++ObjProp 901 "PhysType"
+{
+	"Type" Sphere
+}
+//arrows
+-ObjProp 907 "PhysType"
+-ObjProp 908 "PhysType"
+-ObjProp 909 "PhysType"
+-ObjProp 910 "PhysType"
+-ObjProp 911 "PhysType"
+-ObjProp 912 "PhysType"

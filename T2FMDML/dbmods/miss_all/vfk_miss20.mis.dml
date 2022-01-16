@@ -1,0 +1,60 @@
+DML1
+
+//T2 FM: A Visit for the Knights by Max Breuillot (DarkMax) / Fixes
+
+FINGERPRINT
+{
+	1131 [-160 -163 15]
+	1021 [-61 -120 -9]
+	1106 [100 4 38]
+	626 [-86 19 -6]
+	609 [-25 -199 16]
+	613 [-33 -215 19]
+	1272 [50 -225 16]
+	187 [29 -38 -3]
+	QVAR "goal_target_5" == 1442
+}
+
+//doors
++MetaProp 478 -5661
++MetaProp 479 -5661
++MetaProp 815 -5661
+-ObjProp 581 "JointPos"
+-ObjProp 1213 "JointPos"
+-ObjProp 1243 "JointPos"
+-ObjProp 1244 "JointPos"
++ObjProp 740 "BlockFrob"
+{
+	"" true
+}
++ObjProp 742 "BlockFrob"
+{
+	"" true
+}
++ObjProp 764 "BlockFrob"
+{
+	"" true
+}
+//arrows
+-ObjProp 82 "DeathStage"
+-ObjProp 244 "DeathStage"
+-ObjProp 248 "DeathStage"
+//misplaced objects
+ObjProp 757 "Position"
+{
+	"Location" -85, -122, 13.7
+}
+-ObjProp 799 "PhysType"
+ObjProp 799 "Position"
+{
+	"Location" -16, 24.75, 32
+}
++ObjProp 799 "PhysType"
+{
+	"Type" OBB
+}
+//banner
++ObjProp 1455 "BlockFrob"
+{
+	"" true
+}
