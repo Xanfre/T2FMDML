@@ -377,6 +377,14 @@ ObjProp 1318 "RotDoor"
 -ObjProp 2676 "RotDoor"
 -ObjProp 2677 "RotDoor"
 -ObjProp 2678 "RotDoor"
+-ObjProp 1566 "PhysType"
+-ObjProp 1832 "PhysType"
+-ObjProp 2416 "PhysType"
+-ObjProp 2417 "PhysType"
+-ObjProp 2675 "PhysType"
+-ObjProp 2676 "PhysType"
+-ObjProp 2677 "PhysType"
+-ObjProp 2678 "PhysType"
 //fireplaces
 -ObjProp 266 "Scale"
 ObjProp 243 "PGLaunchInfo"
@@ -511,6 +519,10 @@ ObjProp 272 "Position"
 	"Base Speed" 2.00
 	"Blocks Vision?" false
 }
++ObjProp 1113 "PhysType"
+{
+	"Type" OBB
+}
 +Receptron 1515 "EarthStim"
 {
 	Max None
@@ -548,7 +560,7 @@ ObjProp 272 "Position"
 }
 ObjProp 1515 "Scale"
 {
-	"" 8.33, 0.011, 0.6
+	"" 8.33332, 0.010884, 0.601938
 }
 -ObjProp 1515 "PhysType"
 +ObjProp 1515 "PhysType"
