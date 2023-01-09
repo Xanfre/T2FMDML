@@ -1,0 +1,91 @@
+DML1
+
+//T2 FM: Crooked Town by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	598 [-231 423 -9]
+	943 [-94 347 -1]
+	805 [-84 667 -69]
+	841 [-44 647 -140]
+	1120 [106 459 -89]
+	206 [-132 652 -97]
+	427 [-105 322 3]
+	468 [-160 182 -1]
+	QVAR "goal_target_2" == 321
+}
+
+//goals
+ObjProp 369 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++ObjProp 369 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
++ObjProp 305 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 305 "TrapQVar"
+{
+	"" =0:goal_state_0
+}
++Link 369 305 "ControlDevice"
+{
+}
+
+//objects
+MetaProp 1187 -1629
++ObjProp 1187 "BlockFrob"
+{
+	"" true
+}
+Create -2789 "ScrollFix"
+{
+	+ObjProp "Position"
+	{
+		"Location" 181.049, 433.681, -68.6171
+		"Heading" f774
+		"Pitch" 8000
+		"Bank" 8000
+	}
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0
+	}
+}
++Link "ScrollFix" 1249 "ControlDevice"
+{
+}
+-ObjProp 566 "PhysType"
+ObjProp 566 "Position"
+{
+	"Location" -240.717, 427.324, 3.54
+}
+-ObjProp 567 "PhysType"
+ObjProp 567 "Position"
+{
+	"Location" -231.861, 427.244, 3.54
+}
+-ObjProp 568 "PhysType"
+ObjProp 568 "Position"
+{
+	"Location" -222.886, 427.364, 3.54
+}
+-ObjProp 569 "PhysType"
+ObjProp 569 "Position"
+{
+	"Location" -222.801, 410.86, 3.54
+}
+-ObjProp 570 "PhysType"
+ObjProp 570 "Position"
+{
+	"Location" -232.01, 411.031, 3.54
+}
+-ObjProp 571 "PhysType"
+ObjProp 571 "Position"
+{
+	"Location" -240.964, 410.93, 3.54
+}

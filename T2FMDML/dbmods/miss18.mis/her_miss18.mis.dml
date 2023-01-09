@@ -1,0 +1,533 @@
+DML1
+
+//T2 FM: The Azure Fortress (Heretic) by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	93 [0 0 0]
+	581 [-6 1 0]
+	44 [-81 0 31]
+	279 [-188 -84 -46]
+	708 [-567 -76 -33]
+	684 [-656 162 -46]
+	269 [-506 48 -47]
+	43 [-418 -8 -40]
+	QVAR "goal_target_0" == 91
+}
+
+//broken sword
+ObjProp 44 "Position"
+{
+	"Location" -75.8, 0, 0
+}
+-ObjProp 44 "PhysType"
++ObjProp 44 "PhysType"
+{
+	"Type" Sphere
+}
+
+//final goal
++Link 91 586 "ControlDevice"
+{
+}
++Link 751 581 "ControlDevice"
+{
+}
++ObjProp 467 "TrapFlags"
+{
+	"" Once, NoOff
+}
+ObjProp 581 "TrapFlags"
+{
+	"" Once, NoOff
+}
+ObjProp 581 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 581 "TrapQVar"
+{
+	"" =3:goal_state_0
+}
+-ObjProp 586 "TrapQVar"
+ObjProp 586 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+
+//quest items / keys
+Create -236 "Staff2"
+{
+	+ObjProp "FrobInfo"
+	{
+		"World Action" Move
+		"Inv Action" None
+		"Tool Action" None
+	}
+	+ObjProp "GameName"
+	{
+		"" Name_staff
+	}
+	+ObjProp "Position"
+	{
+		"Location" -242.835, 3.825, -42.75
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigContained
+		"Don't Inherit" true
+	}
+	+ObjProp "ModelName"
+	{
+		"" stoco
+	}
+	+ObjProp "CfgTweqRotate"
+	{
+		"Halt" Continue
+		"AnimC" Sim
+		"Primary Axis" 1
+		"z rate-low-high" 5, 0, 360
+	}
+	+ObjProp "StTweqRotate"
+	{
+		"AnimS" On
+		"Axis 1AnimS" On
+	}
+}
++StimSource "Staff2" "StaffStim"
+{
+	Intensity 5
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob in Inv
+		}
+	}
+}
++Link "Staff2" 112 "ControlDevice"
+{
+}
++Link "Staff2" 113 "ControlDevice"
+{
+}
++Link "Staff2" 586 "ControlDevice"
+{
+}
+Create -2651 "ND127"
+{
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0, 1, 2
+	}
+}
++Link "ND127" 91 "ControlDevice"
+{
+}
++ObjProp 113 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 113 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
++ObjProp 494 "NoDrop"
+{
+	"" true
+}
++ObjProp 674 "NoDrop"
+{
+	"" true
+}
++ObjProp 679 "NoDrop"
+{
+	"" true
+}
++StimSource 548 "Stench"
+{
+	Intensity 4
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+ObjProp 548 "FrobInfo"
+{
+	"Tool Action" Script
+}
++ObjProp 548 "SlayResult"
+{
+}
++StimSource 549 "Stench"
+{
+	Intensity 7
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+ObjProp 549 "FrobInfo"
+{
+	"Tool Action" Script
+}
++ObjProp 549 "SlayResult"
+{
+}
++StimSource 550 "Stench"
+{
+	Intensity 10
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+ObjProp 550 "FrobInfo"
+{
+	"Tool Action" Script
+}
++ObjProp 550 "SlayResult"
+{
+}
++StimSource 719 "Stench"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+ObjProp 719 "FrobInfo"
+{
+	"Tool Action" Script
+}
++ObjProp 719 "SlayResult"
+{
+}
++Receptron 713 "Stench"
+{
+	Max 2
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++ObjProp 713 "Class Tags"
+{
+}
++Receptron 715 "Stench"
+{
+	Min 3
+	Max 5
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++ObjProp 715 "Class Tags"
+{
+}
++Receptron 716 "Stench"
+{
+	Min 6
+	Max 8
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++ObjProp 716 "Class Tags"
+{
+}
++Receptron 717 "Stench"
+{
+	Min 9
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++ObjProp 717 "Class Tags"
+{
+}
+
+//levers
+ObjProp 90 "Position"
+{
+	"Location" -164, -272.43, -43
+}
+-ObjProp 90 "PhysType"
++ObjProp 90 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 144 "Position"
+{
+	"Location" -153.5, 40.57, -58.5
+}
+-ObjProp 144 "PhysType"
++ObjProp 144 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 146 "Position"
+{
+	"Location" -143, 37.43, -57
+}
+-ObjProp 146 "PhysType"
++ObjProp 146 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 757 "Position"
+{
+	"Location" -487.57, 27, -44
+}
+-ObjProp 757 "PhysType"
++ObjProp 757 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 777 "Position"
+{
+	"Location" -319.57, 27, -44
+}
+-ObjProp 777 "PhysType"
++ObjProp 777 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 778 "Position"
+{
+	"Location" -488.57, 21.5, -44
+}
+-ObjProp 778 "PhysType"
++ObjProp 778 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 780 "Position"
+{
+	"Location" -320.57, 21.5, -44
+}
+-ObjProp 780 "PhysType"
++ObjProp 780 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 785 "Position"
+{
+	"Location" -448.57, 104.5, -43
+}
+-ObjProp 785 "PhysType"
++ObjProp 785 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 786 "Position"
+{
+	"Location" -448.57, 115.5, -43
+}
+-ObjProp 786 "PhysType"
++ObjProp 786 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 787 "Position"
+{
+	"Location" -359.43, 104, -43
+}
+-ObjProp 787 "PhysType"
++ObjProp 787 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 788 "Position"
+{
+	"Location" -359.43, 114, -43
+}
+-ObjProp 788 "PhysType"
++ObjProp 788 "PhysType"
+{
+	"Type" OBB
+}
+
+//footlockers
++ObjProp 92 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 106 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 137 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//doors
++MetaProp 149 -2420
++MetaProp 206 -2420
++MetaProp 208 -2420
++MetaProp 212 -2420
++MetaProp 217 -2420
++MetaProp 233 -2420
++MetaProp 473 -2420
++MetaProp 491 -2420
++MetaProp 517 -2420
++Receptron 284 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 284 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 284 "BlockFrob"
+{
+	"" true
+}
++ObjProp 319 "Locked"
+{
+	"" true
+}
++MetaProp 319 -2420
+ObjProp 322 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 322 "Locked"
+{
+	"" true
+}
++Link 456 510 "ControlDevice"
+{
+}
+ObjProp 474 "TransDoor"
+{
+	"Open Position" 8.00
+	"Blocks Vision?" true
+}
+ObjProp 477 "TransDoor"
+{
+	"Open Position" 8.00
+	"Blocks Vision?" true
+}
++ObjProp 477 "BlockFrob"
+{
+	"" true
+}
+ObjProp 492 "TransDoor"
+{
+	"Blocks Vision?" true
+}
++ObjProp 506 "PickDist"
+{
+	"" -5.00
+}
+-ObjProp 506 "PhysType"
++ObjProp 506 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 506 -2420
+ObjProp 509 "TransDoor"
+{
+	"Blocks Vision?" true
+}
+ObjProp 510 "TransDoor"
+{
+	"Base Speed" 2.00
+	"Blocks Vision?" true
+}
++MetaProp 511 -2420
++ObjProp 511 "Locked"
+{
+	"" true
+}
+
+//mantling
++ObjProp 219 "PhysCanMant"
+{
+}
++ObjProp 223 "PhysCanMant"
+{
+}
++ObjProp 224 "PhysCanMant"
+{
+}
++ObjProp 343 "PhysCanMant"
+{
+}
++ObjProp 551 "PhysCanMant"
+{
+}
++ObjProp 553 "PhysCanMant"
+{
+}
++ObjProp 554 "PhysCanMant"
+{
+}
+
+//AIs
++ObjProp 305 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 497 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
+}
++ObjProp 681 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 682 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 683 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 690 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 754 "TrapFlags"
+{
+	"" Once, NoOff
+}

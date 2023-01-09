@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Torn Apart by Devin Reynolds (Drysils Chosen) / Fix rogue door and final goal
+//T2 FM: Torn Apart by Devin Reynolds (Drysils Chosen) / Fixes
 
 FINGERPRINT
 {
@@ -15,72 +15,76 @@ FINGERPRINT
 	QVAR "goal_target_3" == 912
 }
 
-#script "squirrel"
-#script "script-t2"
+#script "nvscript"
 
+//goal 3
 +ObjProp 1095 "TrapFlags"
 {
 	"" Once,NoOff
 }
-+ObjProp 561 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
-+ObjProp 559 "PhysType"
-{
-	"Type" None
-	"# Submodels" 0
-}
--ObjProp 561 "Position"
-+ObjProp 561 "Position"
+
+//items
+-ObjProp 561 "PhysType"
+ObjProp 561 "Position"
 {
 	"Location" 401.023,249.159,-43.8419
-	"Heading" d3cc
 }
--ObjProp 559 "Position"
-+ObjProp 559 "Position"
+-ObjProp 559 "PhysType"
+ObjProp 559 "Position"
 {
 	"Location" 394.385,225.855,-43.8419
-	"Heading" 7233
 }
--Link 79 78 "ControlDevice"
--Link 73 79 "ControlDevice"
--Link 750 78 "ControlDevice"
-+MetaProp 79 -1629
-+MetaProp 113 -1629
-+MetaProp 114 -1629
--ObjProp 79 "FrobInfo"
-+Link 73 79 "ScriptParams"
+
+//doors
+-ObjProp 70 "FrobInfo"
+MetaProp 70 "FrobInert"
++ObjProp 70 "Scripts"
 {
-	"" rFrobInert
+	"Script 0" TrigWorldFrob
 }
-+ObjProp 73 "Scripts"
++Link 70 78 "ControlDevice"
+{
+}
++Link 70 72 "ControlDevice"
+{
+}
++ObjProp 76 "Scripts"
 {
 	"Script 0" TrapMetaProp
 	"Don't Inherit" true
 }
-ObjProp 79 "Scripts"
+-Link 76 70 "ControlDevice"
+-Link 80 73 "ControlDevice"
++Link 76 "FrobInert" "ScriptParams"
 {
-	"Script 0" T2FMDMLSimReposAbs
-	"Don't Inherit" true
+	"" SFrobInert
 }
-+ObjProp 79 "DesignNote"
++Link 76 70 "ScriptParams"
 {
-	"" RepositionLoc="180,238,-27.0018"
+	"" R@FrobInert
 }
-+ObjProp 70 "CfgTweqDelete"
++Link 823 78 "ControlDevice"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 70 "StTweqDelete"
++ObjProp 733 "Scripts"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
+	"Script 0" NVDeleteTrap
+}
+-Link 733 79 "ControlDevice"
++Link 733 70 "ControlDevice"
+{
+}
++ObjProp 750 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
++ObjProp 1048 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
+-ObjProp 1046 "RotDoor"
+-ObjProp 1046 "PhysType"
++ObjProp 1046 "PhysType"
+{
+	"Type" OBB
 }

@@ -1,0 +1,57 @@
+DML1
+
+//T2 FM: Just Friends Part 2 by Chris Moyer (bassmanret) / Fixes
+
+FINGERPRINT
+{
+	204 [611 558 623]
+	1983 [626 574 623]
+	978 [598 462 575]
+	374 [568 527 621]
+	469 [680 457 630]
+	313 [593 543 626]
+	748 [673 540 574]
+	2176 [673 492 501]
+	QVAR "goal_target_1" == 2163
+}
+
+//goals
++ObjProp 2154 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+ObjProp 2154 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++ObjProp 2376 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2376 "TrapQVar"
+{
+	"" =0:goal_state_20
+}
++Link 2154 2376 "ControlDevice"
+{
+}
+
+//objects
+-ObjProp 2065 "PhysType"
+-ObjProp 2504 "PhysType"
+ObjProp 2504 "Position"
+{
+	"Location" 621.945, 500.461, 600
+}
++ObjProp 2504 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 2061 "Position"
+{
+	"Location" 628.35, 506.903, 594.787
+}
++ObjProp 576 "BlockFrob"
+{
+	"" true
+}

@@ -1,0 +1,129 @@
+DML1
+
+//T2 FM: The Beginning of Era Karath-Din by Zmey / Fixes
+
+FINGERPRINT
+{
+	2071 [72 -299 -45]
+	1429 [234 3 -58]
+	1553 [220 259 -32]
+	1188 [302 67 -33]
+	1482 [388 189 -20]
+	2322 [95 -356 46]
+	1388 [294 186 -34]
+	181 [32 -196 -39]
+	QVAR "goal_target_0" == 2378
+}
+
+//goals
++ObjProp 2378 "NoDrop"
+{
+	"" true
+}
+
+//loot
++ObjProp 1477 "Loot"
+{
+}
+ObjProp 1478 "Loot"
+{
+	"Gems" 0
+}
+ObjProp 1479 "Loot"
+{
+	"Gems" 0
+}
+
+//pickpockets
+Link 1435 1436 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1435 "MeshAttach"
+{
+	"attached obj 1" 1436
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 20000
+	"offset" 0.5, -1.25, -0.1
+}
+
+//object names
++ObjProp 794 "GameName"
+{
+	"" Name_Lantern: "Lantern"
+}
++ObjProp 405 "GameName"
+{
+	"" Name_Bucket: "Bucket"
+}
++ObjProp 583 "GameName"
+{
+	"" Name_Bucket: "Bucket"
+}
++ObjProp 1668 "GameName"
+{
+	"" Name_Bucket: "Bucket"
+}
++ObjProp 1669 "GameName"
+{
+	"" Name_Bucket: "Bucket"
+}
++ObjProp 1674 "GameName"
+{
+	"" Name_Bucket: "Bucket"
+}
++ObjProp 2378 "GameName"
+{
+	"" Name_Evidence: "Evidence"
+}
+
+//objects
+-ObjProp 1650 "PhysType"
+ObjProp 1650 "Position"
+{
+	"Location" 126.697, 86.4264, -46.7116
+}
++ObjProp 1650 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3031 "PhysType"
+Create -2789 "ScrollFix"
+{
+	+ObjProp "Position"
+	{
+		"Location" 62.2961, -144.321, -60.0542
+	}
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0, 1, 2
+	}
+}
++Link "ScrollFix" 3236 "ControlDevice"
+{
+}
++ObjProp 2966 "BlockFrob"
+{
+	"" true
+}
+
+//AI patrols
+Create -2865 "NobleKey"
+{
+	+ObjProp "KeySrc"
+	{
+		"MasterBit" false
+		"RegionMask" 11000
+		"LockID" 20
+	}
+	+ObjProp "HasRefs"
+	{
+		"" false
+	}
+}
++Link 1292 "NobleKey" "Contains"
+{
+	"" Generic Contents
+}

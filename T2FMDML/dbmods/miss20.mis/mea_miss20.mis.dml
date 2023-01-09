@@ -1,0 +1,247 @@
+DML1
+
+//T2 FM: Mech Angelo by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	381 [-17 -77 -98]
+	721 [-310 -139 -36]
+	187 [-238 -365 -21]
+	497 [-235 -296 -37]
+	444 [-129 -211 -28]
+	855 [-133 -214 -162]
+	861 [20 -452 -165]
+	1159 [-187 -257 -28]
+	QVAR "goal_target_0" == 437
+}
+
+#script "nvscript"
+
+//pickpocketing
+-Link 294 293 "ControlDevice"
+
+//mantling
++ObjProp 306 "PhysCanMant"
+{
+}
++ObjProp 693 "PhysCanMant"
+{
+}
+
+//mech angelo's pay
+-Receptron 433 "PingStim"
+++Receptron 433 "HolyStim"
+{
+	Min 9
+	Max 11
+
+	Target 801
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++Receptron 509 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -2420
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 509 "EarthStim"
+{
+	Max None
+
+	Target 138
+	Agent -2420
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 509 "EarthStim"
+{
+	Max None
+
+	Target 801
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 509 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 801 "Scale"
++MetaProp 801 -5661
++ObjProp 801 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 801 "ExtraLight"
+{
+	"Amount (-1..1)" 0.10
+	"Additive?" true
+}
+
+//tree mushrooms
+ObjProp 463 "OTxtRepr0"
+{
+	"" obj\txt\mush1
+}
+ObjProp 702 "OTxtRepr0"
+{
+	"" obj\txt\mush1
+}
+ObjProp 991 "OTxtRepr0"
+{
+	"" obj\txt\mush1
+}
+ObjProp 1121 "OTxtRepr0"
+{
+	"" obj\txt\mush1
+}
+ObjProp 1122 "OTxtRepr0"
+{
+	"" obj\txt\mush1
+}
+
+//talismans
+-ObjProp 549 "FrobInfo"
++ObjProp 549 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 549 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-ObjProp 1132 "FrobInfo"
++ObjProp 1132 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 1132 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-ObjProp 1135 "FrobInfo"
++ObjProp 1135 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 1135 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-ObjProp 1139 "FrobInfo"
++ObjProp 1139 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1139 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 553 "NoDrop"
+{
+	"" true
+}
++ObjProp 1131 "NoDrop"
+{
+	"" true
+}
++ObjProp 1136 "NoDrop"
+{
+	"" true
+}
++ObjProp 1140 "NoDrop"
+{
+	"" true
+}
+
+//misplaced objects
+-ObjProp 590 "PhysType"
+ObjProp 590 "Position"
+{
+	"Location" -141.63, -27.725, -116.325
+	"Bank" 4000
+}
+-ObjProp 936 "PhysType"
+-ObjProp 1197 "PhysType"
+ObjProp 1197 "Position"
+{
+	"Heading" 7000
+}
++ObjProp 1197 "PhysType"
+{
+	"Type" OBB
+}
+
+//scrolls
++ObjProp 678 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 678 "FrobInfo"
+{
+	"World Action" Move, Script
+}
+ObjProp 678 "Scripts"
+{
+	"Script 1" NVRelayTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 985 "Scale"
+{
+	"" 0.5, 0.5, 0.5
+}
+
+//doors
+ObjProp 1037 "RotDoor"
+{
+	"Open Angle" 275
+}
+-ObjProp 1037 "PhysType"
++ObjProp 1037 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1038 "RotDoor"
+{
+	"Open Angle" 85
+}
++ObjProp 1038 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 1038 "PhysType"
++ObjProp 1038 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1179 "JointPos"
+-ObjProp 1205 "JointPos"
+-ObjProp 1212 "JointPos"
++MetaProp 1179 -2255
++MetaProp 1205 -2255
++MetaProp 1212 -2255
+
+//footlocker
++ObjProp 254 "JointPos"
+{
+	"Joint 1" 90.00
+}

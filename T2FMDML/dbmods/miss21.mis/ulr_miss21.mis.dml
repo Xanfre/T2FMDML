@@ -91,3 +91,9 @@ ObjProp 2931 "Scripts"
 	"Location" -275.406,376.469,-48.3191
 	"Bank" 4000
 }
+ObjProp 2396 "Scripts"
+{
+	"Script 1" Corpsed
+	"Script 2" CorpseFrobHack
+	"Script 3" SuspiciousReactions
+}

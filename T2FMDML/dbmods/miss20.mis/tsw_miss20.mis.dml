@@ -1,0 +1,41 @@
+DML1
+
+// T2 FM: The Sun Within and the Sun Without by Qolelis / Fixes
+
+FINGERPRINT
+{
+	1960 [-494 -419 162]
+	719 [-404 -414 228]
+	1547 [-442 -442 317]
+	232 [-421 -441 320]
+	1943 [-496 -428 162]
+	437 [-391 -476 202]
+	627 [-464 -438 192]
+	1997 [-498 -424 240]
+	QVAR "goal_target_3" == 651
+}
+
+#script "script-t2"
+
+//thief
+ObjProp 1049 "DesignNote"
+{
+	"" NVDeleteTrapOn="TakeMeToYourLeaders"; NVDeleteTrapDeleteSelf=1; NVRelayTrapOn="CloseDoor"; NVRelayTrapOff="OpenDoor"; NVRelayTrapTDest="&ScriptParams"
+}
+
+//hanging arrows
+-ObjProp 99 "TransDoor"
+-ObjProp 99 "PhysType"
++ObjProp 99 "PhysType"
+{
+	"Type" Sphere Hat
+}
++ObjProp 99 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+	"Script 1" PhysModelCorrect
+}
++ObjProp 99 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapCount=1; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}

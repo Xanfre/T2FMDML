@@ -1,0 +1,91 @@
+DML1
+
+//T2 FM: Impious Pilgrimage (Godbreaker) by Rob Strain (Random_Taffer) / Fixes
+
+FINGERPRINT
+{
+	801 [288 273 432]
+	1858 [160 114 436]
+	2240 [504 481 456]
+	1067 [180 247 436]
+	2141 [20 288 466]
+	1907 [280 53 424]
+	1027 [297 366 456]
+	1850 [172 124 441]
+	QVAR "goal_target_0" == 1953
+}
+
+//bugs
+-MetaProp 3314 -7688
+-MetaProp 3325 -7688
+-MetaProp 3329 -7688
+-MetaProp 3340 -7688
+-MetaProp 3347 -7688
++Receptron 3314 "BugStim"
+{
+	Max 1.10
+	Target 3508
+	Effect "frob_obj"
+}
+++Receptron 3314 "BugStim"
+{
+	Max 1.10
+	Target Me
+	Effect "slay"
+}
++Receptron 3325 "BugStim"
+{
+	Max 1.10
+	Target 3508
+	Effect "frob_obj"
+}
+++Receptron 3325 "BugStim"
+{
+	Max 1.10
+	Target Me
+	Effect "slay"
+}
++Receptron 3329 "BugStim"
+{
+	Max 1.10
+	Target 3508
+	Effect "frob_obj"
+}
+++Receptron 3329 "BugStim"
+{
+	Max 1.10
+	Target Me
+	Effect "slay"
+}
++Receptron 3340 "BugStim"
+{
+	Max 1.10
+	Target 3508
+	Effect "frob_obj"
+}
+++Receptron 3340 "BugStim"
+{
+	Max 1.10
+	Target Me
+	Effect "slay"
+}
++Receptron 3347 "BugStim"
+{
+	Max 1.10
+	Target 3508
+	Effect "frob_obj"
+}
+++Receptron 3347 "BugStim"
+{
+	Max 1.10
+	Target Me
+	Effect "slay"
+}
++ObjProp 3508 "DesignNote"
+{
+	"" NVDeleteTrapOn="FrobWorldEnd"; NVDeleteTrapTarget=3505; NVDeleteTrapCount=1
+}
++ObjProp 3508 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}

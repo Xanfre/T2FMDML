@@ -1,0 +1,63 @@
+DML1
+
+//T2 FM: Katharsis by Personne / Fixes
+
+FINGERPRINT
+{
+	1492 [-191 66 -389]
+	2243 [-191 66 -369]
+	1347 [-499 78 -320]
+	254 [-474 206 -327]
+	787 [-397 115 -390]
+	2301 [-259 84 -337]
+	532 [-464 -439 -470]
+	1601 [-448 76 -330]
+	QVAR "goal_target_0" == 5849
+}
+
+//scroll
+ObjProp 3693 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Script
+}
+
+//floorboard
++Receptron 3395 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 3395 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 3395 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 3395 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 3395 "PhysType"
++ObjProp 3395 "PhysType"
+{
+	"Type" OBB
+}

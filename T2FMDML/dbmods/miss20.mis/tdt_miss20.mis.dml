@@ -1,0 +1,83 @@
+DML1
+
+//T2 FM: The Deadly Triangle by DarthsLair / Fixes
+
+FINGERPRINT
+{
+	1322 [80 -125 26]
+	533 [-47 -301 64]
+	1370 [6 -69 15]
+	1459 [213 -23 -28]
+	1487 [9 182 8]
+	542 [53 -342 46]
+	477 [1 -382 62]
+	1214 [244 -86 -25]
+	QVAR "goal_target_21" == 496
+}
+
+//final objective
++ObjProp 427 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 427 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 427 "TrapQVar"
+{
+	"" =0:goal_irreversible_21
+}
+
+//secrets
++Link 1813 534 "ControlDevice"
+{
+}
++Link 1815 534 "ControlDevice"
+{
+}
++Link 1864 534 "ControlDevice"
+{
+}
++Link 1866 534 "ControlDevice"
+{
+}
+
+//objects
+ObjProp 695 "Scale"
+{
+	"" 0.493941, 0.529346, 0.4
+}
+ObjProp 696 "Scale"
+{
+	"" 0.493941, 0.529346, 0.4
+}
+ObjProp 697 "Scale"
+{
+	"" 0.493941, 0.529346, 0.4
+}
+ObjProp 698 "Scale"
+{
+	"" 0.493941, 0.529346, 0.4
+}
+ObjProp 699 "Scale"
+{
+	"" 0.493941, 0.529346, 0.4
+}
+ObjProp 700 "Scale"
+{
+	"" 0.493941, 0.529346, 0.4
+}
+ObjProp 408 "Position"
+{
+	"Location" -5.5, -256.5, 62.1299
+}
+-ObjProp 1723 "PhysType"
+ObjProp 1723 "Position"
+{
+	"Location" 22.5433, -366.623, 60.694
+}
++ObjProp 1879 "BlockFrob"
+{
+	"" true
+}

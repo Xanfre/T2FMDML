@@ -1,0 +1,49 @@
+DML1
+
+//T2 FM: Down with Mechanists by Max Breuillot (DarkMax) / Fixes
+
+FINGERPRINT
+{
+	66 [-48 21 26]
+	43 [-7 18 30]
+	364 [-43 -5 -9]
+	362 [-24 15 -3]
+	416 [-4 -7 -39]
+	373 [-43 -5 -7]
+	400 [-10 11 -25]
+	350 [-43 4 -11]
+	QVAR "goal_target_0" == 426
+}
+
+//pickpocketing
++ObjProp 5 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 5 6 "ControlDevice"
+{
+}
++ObjProp 5 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 6 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 6 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}
+
+//junk
++ObjProp 155 "InvType"
+{
+}
+
+//door
+ObjProp 250 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}

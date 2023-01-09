@@ -1,0 +1,353 @@
+DML1
+
+//T2 FM: When Still... (Lord Robert Lelder) by Eternauta / Fixes
+
+FINGERPRINT
+{
+	1975 [-4 -310 3]
+	2218 [-15 14 -7]
+	1952 [85 -71 20]
+	1238 [10 -216 -2]
+	135 [99 -64 17]
+	1537 [7 -70 -30]
+	531 [99 -288 -2]
+	1902 [81 -216 6]
+	QVAR "goal_target_11" == 1873
+}
+
+#script "nvscript"
+
+//pickpocketing
+-Link 1641 1638 "ControlDevice"
+
+//final goal
+-Link 1873 184 "ControlDevice"
+
+//envelope (goal 8)
+Receptron 436 "HolyStim" 00210000
+{
+	Min 12
+	Max None
+	Target 1730
+}
++ObjProp 436 "DiffRemoveProp"
+{
+	"quest var values" 0, 1
+	"alt quest var values" 2
+	"Properties" Scripts
+}
++ObjProp 436 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"; NVRelayTrapOff="Null"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[13.00]HolyStim"
+}
++ObjProp 436 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVRelayTrap
+}
++ObjProp 436 "TrapQVar"
+{
+	"" =1:goal_state_8
+}
+
+//bricks, bureau
++ObjProp 596 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTOn="TurnOff"
+}
++Link 596 597 "ControlDevice"
+{
+}
+ObjProp 596 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 597 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"
+}
++MetaProp 597 -1629
+ObjProp 597 "Scripts"
+{
+	"Script 1" NVMetaTrap
+}
++Link 1176 1259 "ControlDevice"
+{
+}
++Link 1176 1272 "ControlDevice"
+{
+}
++ObjProp 1259 "DesignNote"
+{
+	"" NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1259 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++MetaProp 1259 -1629
++MetaProp 1272 -1629
++ObjProp 1272 "DesignNote"
+{
+	"" NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1272 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 1547 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTOn="TurnOff"
+}
++ObjProp 1547 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Inv Action" Move
+}
++Link 1547 1564 "ControlDevice"
+{
+}
++ObjProp 1547 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 1564 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"
+}
+-ObjProp 1564 "FrobInfo"
++MetaProp 1564 -1629
+ObjProp 1564 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+
+//AIs
++ObjProp 43 "PhysAIColl"
+{
+	"" false
+}
+-ObjProp 43 "InvRendType"
+-ObjProp 22 "InvRendType"
+-ObjProp 112 "InvRendType"
+-ObjProp 183 "InvRendType"
+-ObjProp 223 "InvRendType"
+-ObjProp 282 "InvRendType"
+-ObjProp 399 "InvRendType"
+-ObjProp 642 "InvRendType"
+-ObjProp 1201 "InvRendType"
+-ObjProp 1218 "InvRendType"
+-ObjProp 1230 "InvRendType"
+-ObjProp 1422 "InvRendType"
+-ObjProp 1529 "InvRendType"
+-ObjProp 1545 "InvRendType"
+-ObjProp 1586 "InvRendType"
+-ObjProp 1601 "InvRendType"
+-ObjProp 1602 "InvRendType"
+-ObjProp 1606 "InvRendType"
+-ObjProp 1611 "InvRendType"
+-ObjProp 1612 "InvRendType"
+-ObjProp 1639 "InvRendType"
+-ObjProp 1640 "InvRendType"
+-ObjProp 1647 "InvRendType"
+-ObjProp 1656 "InvRendType"
+-ObjProp 1657 "InvRendType"
+-ObjProp 1661 "InvRendType"
+-ObjProp 1674 "InvRendType"
+-ObjProp 1687 "InvRendType"
+-ObjProp 1692 "InvRendType"
+-ObjProp 1701 "InvRendType"
+-ObjProp 1703 "InvRendType"
+-ObjProp 1706 "InvRendType"
+-ObjProp 1834 "InvRendType"
+-ObjProp 1836 "InvRendType"
+-ObjProp 1842 "InvRendType"
+-ObjProp 1844 "InvRendType"
+-ObjProp 1848 "InvRendType"
+-ObjProp 1882 "InvRendType"
+-ObjProp 1887 "InvRendType"
+-ObjProp 1888 "InvRendType"
+-ObjProp 1931 "InvRendType"
+-ObjProp 1938 "InvRendType"
+-ObjProp 1939 "InvRendType"
+-ObjProp 1979 "InvRendType"
+-ObjProp 1985 "InvRendType"
+ObjProp 787 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
+ObjProp 1593 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+ObjProp 1643 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
+ObjProp 1671 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+ObjProp 1675 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
+ObjProp 1709 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
+ObjProp 1912 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+ObjProp 1989 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+
+//music box, victrola
++ObjProp 298 "AmbientHacked"
+{
+	"Radius" 30
+	"Flags" NoSharpCurve, TurnedOff
+	"Schema Name" kar0610J
+}
++ObjProp 298 "DesignNote"
+{
+	"" NVFrobToggleTDest="[Me]"
+}
+-Link 298 -4116 "SoundDescription"
+ObjProp 298 "Scripts"
+{
+	"Script 0" NVFrobToggle
+	"Script 1" TweqOnOff
+	"Script 2" ActivateAmbient
+	"Don't Inherit" true
+}
+ObjProp 298 "CfgTweqRotate"
+{
+	"z rate-low-high" 1, 0.75, 165
+}
+ObjProp 298 "StTweqRotate"
+{
+	"AnimS" None
+}
++ObjProp 1002 "DesignNote"
+{
+	"" NVFrobToggleTDest="[Me]"
+}
+ObjProp 1002 "Scripts"
+{
+	"Script 0" NVFrobToggle
+	"Script 1" NVAmbientSoundTrap
+	"Script 2" ""
+	"Don't Inherit" true
+}
+
+//switches
+ObjProp 361 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 685 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1226 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1312 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1363 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1374 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1872 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1901 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 2047 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+
+//chests
++ObjProp 809 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1378 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1583 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 1583 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 1967 "StTweqLock"
+{
+	"Target Angle" 0.00
+}
+
+//doors
++MetaProp 1046 -2420
++MetaProp 1582 -2420
+
+//misplaced objects
+-ObjProp 1184 "PhysType"
+ObjProp 1184 "Position"
+{
+	"Location" 52, -118, 35.2
+	"Heading" 0
+	"Pitch" f800
+	"Bank" 4000
+}
++Receptron 1828 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 1828 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}

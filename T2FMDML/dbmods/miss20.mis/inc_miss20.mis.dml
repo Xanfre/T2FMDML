@@ -1,0 +1,19 @@
+DML1
+
+//T2 FM: Insanity's Crescendo by Ali Pouladi (Haplo) / Fixes
+
+FINGERPRINT
+{
+	794 [467 515 476]
+	1460 [548 450 488]
+	593 [512 458 460]
+	1344 [689 605 379]
+	1350 [611 754 406]
+	671 [466 521 461]
+	672 [474 509 461]
+	732 [548 457 491]
+	QVAR "goal_target_1" == 989
+}
+
+//load new NVScript
+#script "nvscript"

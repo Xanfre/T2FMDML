@@ -1,0 +1,361 @@
+DML1
+
+//T2 FM: The Plot Thickens: Act 1 (Classic Contest) by Jason Otto (Ottoj55) / Fixes
+
+FINGERPRINT
+{
+	136 [-163 -116 30]
+	871 [-111 -103 51]
+	716 [27 -1 67]
+	256 [-159 -102 30]
+	564 [-41 -30 98]
+	293 [-134 43 67]
+	669 [-82 46 40]
+	647 [-126 20 35]
+	NAME 373 "Farkus"
+}
+
+#script "nvscript"
+
+//goals
+Create -134 "HideoutKey"
+{
+	+ObjProp "KeySrc"
+	{
+		"RegionMask" 1
+		"LockID" 1
+	}
+}
+Create -5784 "Blocker"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -84, 59.2, 53.5
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
++MetaProp "Blocker" -2255
++MetaProp "Blocker" -2257
++ObjProp 55 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 217 "DesignNote"
+{
+	"" NVText="New Objectives"
+}
++ObjProp 217 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" NVOnscreenText
+	"Don't Inherit" true
+}
+-Link 311 591 "ControlDevice"
++Link 311 590 "ControlDevice"
+{
+}
++Link 311 591 "ControlDevice"
+{
+}
++Link 311 852 "ControlDevice"
+{
+}
+-Link 314 387 "AIWatchObj"
++Link 314 "HideoutKey" "Contains"
+{
+}
+ObjProp 314 "Scripts"
+{
+	"Script 2" TrigAIAlert
+}
+-Link 330 331 "AIPatrol"
++Link 330 332 "AIPatrol"
+{
+}
+-Link 345 343 "AIPatrol"
++Link 345 350 "AIPatrol"
+{
+}
+-Link 381 382 "AIPatrol"
++Link 381 337 "AIPatrol"
+{
+}
++ObjProp 360 "Locked"
+{
+}
++ObjProp 360 "Scripts"
+{
+	"Script 0" NonAutoDoor
+	"Don't Inherit" true
+}
++ObjProp 361 "DesignNote"
+{
+	"" NVRelayTrapDelay=1000
+}
++Link 361 310 "ControlDevice"
+{
+}
++Link 361 217 "ControlDevice"
+{
+}
++Link 361 362 "ControlDevice"
+{
+}
++Link 361 919 "ControlDevice"
+{
+}
++Link 361 920 "ControlDevice"
+{
+}
++ObjProp 361 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++Link 362 761 "ControlDevice"
+{
+}
++Link 362 314 "ControlDevice"
+{
+}
++Link 362 395 "ControlDevice"
+{
+}
++Link 362 394 "ControlDevice"
+{
+}
++Link 362 "HideoutKey" "ControlDevice"
+{
+}
++Link 362 "Blocker" "ControlDevice"
+{
+}
++ObjProp 362 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
++Receptron 388 "EarthStim"
+{
+	Min 9
+	Max None
+
+	Target Me
+	Agent -1953
+
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
++ObjProp 388 "DesignNote"
+{
+	"" NVRelayTrapOn="TurnOff"; NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapTDest="[Me]"; NVRelayTrapTCount=1; NVMetaTrapMeta="FrobInert"; NVMetaTrapOffDelay=1000
+}
++ObjProp 388 "KeyDst"
+{
+	"RegionMask" 1
+	"LockID" 1
+}
++ObjProp 388 "Locked"
+{
+	"" true
+}
+-Link 388 389 "Lock"
++Link 388 391 "ControlDevice"
+{
+}
++ObjProp 388 "Scripts"
+{
+	"Script 0" TrigUnlock
+	"Script 1" NVRelayTrap
+	"Script 2" NVMetaTrap
+}
+ObjProp 388 "JointPos"
+{
+	"Joint 1" 0.00
+}
+ObjProp 388 "StTweqLock"
+{
+	"AnimS" On, Reverse
+	"Target Angle" 0.00
+}
++MetaProp 388 -5661
++MetaProp 388 -1629
+-ObjProp 389 "Locked"
++Link 389 388 "ControlDevice"
+{
+}
++ObjProp 389 "TrapFlags"
+{
+	"" Invert
+}
+ObjProp 389 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 391 "DesignNote"
+{
+	"" NVRelayTrapDelay=4000; NVRelayTrapCount=1
+}
++Link 391 361 "ControlDevice"
+{
+}
+-Link 391 918 "ControlDevice"
+-Link 391 917 "ControlDevice"
+-Link 391 217 "ControlDevice"
+-Link 391 310 "ControlDevice"
++ObjProp 391 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Don't Inherit" true
+}
++ObjProp 394 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
+ObjProp 394 "Scripts"
+{
+	"Script 2" TrigAIAlert
+	"Script 3" ""
+}
+ObjProp 595 "Scripts"
+{
+	"Script 0" TrigOBBPlayer
+	"Don't Inherit" true
+}
++ObjProp 596 "TrapFlags"
+{
+	"" Once
+}
+-Link 587 314 "ControlDevice"
+-Link 589 852 "ControlDevice"
+-Link 589 590 "ControlDevice"
+-Link 619 394 "ControlDevice"
+-Link 801 587 "ControlDevice"
+-Link 801 619 "ControlDevice"
++Receptron 852 "EarthStim"
+{
+	Max None
+
+	Target 388
+	Agent 360
+
+	Effect "add_prop"
+	{
+		"Prop Name" Scripts
+	}
+}
+++Receptron 852 "EarthStim"
+{
+	Max None
+
+	Target 388
+	Agent 360
+
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
++ObjProp 852 "DesignNote"
+{
+	"" NVRelayTrapTOn="[10.00]EarthStim"; NVRelayTrapTDest="[Me]"; NVRelayTrapTCount=1; NVAmbientSoundTrapCount=1
+}
++Link 852 -925 "SoundDescription"
+{
+}
++ObjProp 852 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVAmbientSoundTrap
+}
++ObjProp 919 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 919 "RenderType"
+{
+	"" Not Rendered
+}
+ObjProp 919 "Scripts"
+{
+	"Script 1" NVRemovePropertyTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 920 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="RenderType"
+}
++ObjProp 920 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 920 "RenderType"
+{
+	"" Not Rendered
+}
+ObjProp 920 "Scripts"
+{
+	"Script 1" NVRemovePropertyTrap
+	"Script 2" ""
+	"Script 3" ""
+}
+
+//pickpocketing
++ObjProp 395 "DesignNote"
+{
+	"" NVDeleteTrapOn="Contained"; NVRelayTrapOn="Contained"; NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest="[Me]"; NVRelayTrapTCount=1; NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=362; NVLinkBuilderLinkDest="[Me]"
+}
++Link 395 921 "ControlDevice"
+{
+}
++ObjProp 395 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+	"Script 1" NVRelayTrap
+	"Script 2" NVLinkBuilder
+}
++ObjProp 761 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest="[Me]"; NVRelayTrapTCount=1; NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=362; NVLinkBuilderLinkDest="[Me]"
+}
++ObjProp 761 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVLinkBuilder
+}
+
+//AIs
++ObjProp 373 "GameName"
+{
+	"" Name_Farkus: "Corpse of Fakrus Jr."
+}
++ObjProp 668 "AI_Hearing"
+{
+	"" Well Below Average
+}
+
+//barrels
++ObjProp 455 "FrobInfo"
+{
+}
++ObjProp 840 "FrobInfo"
+{
+}
+
+//water arrow
+-ObjProp 911 "DeathStage"

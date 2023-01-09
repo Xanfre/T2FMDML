@@ -1,0 +1,310 @@
+DML1
+
+//T2 FM: Defense Assassination 2 by John the Beggar / Fixes
+
+FINGERPRINT
+{
+	1669 [147 -674 -44]
+	1769 [91 -534 -47]
+	101 [-214 -536 -53]
+	347 [52 -717 -57]
+	601 [16 -492 -118]
+	1432 [-42 -583 -39]
+	899 [82 -694 -61]
+	1203 [39 -608 -125]
+	QVAR "goal_target_2" == 1305
+}
+
+#script "tnhscript"
+
+//quest items
++ObjProp 1218 "NoDrop"
+{
+	"" true
+}
++ObjProp 1670 "NoDrop"
+{
+	"" true
+}
+
+//missing loot
+ObjProp 73 "Position"
+{
+	"Location" -165.82, -470.058, -61.1869
+	"Heading" 1a2d
+}
+
+//objects
+-ObjProp 466 "PhysType"
+ObjProp 466 "Position"
+{
+	"Location" -23.68, -599.733, -45.9875
+}
+-ObjProp 473 "PhysType"
+-ObjProp 1576 "PhysType"
+ObjProp 1576 "Position"
+{
+	"Location" 19.6431, -547.627, -45.5193
+}
++ObjProp 1576 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1512 "Position"
+{
+	"Location" 70.0951, -653.95, -44.815
+}
+
+//lockers
++ObjProp 532 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 532 1037 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1037 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1037 532 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 552 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 552 1103 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1103 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1103 552 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 796 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 796 1102 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1102 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1102 796 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 880 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 880 1035 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 880 1036 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1035 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1035 880 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1036 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1036 880 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 974 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 974 1282 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 974 1283 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1282 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1282 974 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1283 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1283 974 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 978 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 978 1284 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1284 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1284 978 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 980 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 980 1354 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1354 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1354 980 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 982 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 982 1281 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1281 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1281 982 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 986 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 986 1101 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1101 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1101 986 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1304 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 1304 1668 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1668 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1668 1304 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1323 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 1323 1321 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1321 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1321 1323 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1374 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 1374 1303 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 1374 1335 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 1374 1344 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 1374 1345 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1303 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1303 1374 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1335 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1335 1374 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1344 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1344 1374 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 1345 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 1345 1374 "ScriptParams"
+{
+	"" Unlink
+}

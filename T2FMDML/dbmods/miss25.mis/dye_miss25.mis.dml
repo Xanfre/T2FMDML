@@ -1,0 +1,637 @@
+DML1
+
+//T2 FM: Dyers' Eve by Patrick Woolsey (Metalhead) / Fixes
+
+FINGERPRINT
+{
+	585 [-4 5 46]
+	296 [23 13 -11]
+	452 [10 -24 20]
+	407 [-15 53 14]
+	677 [-146 113 12]
+	475 [60 42 13]
+	754 [15 51 -2]
+	583 [-31 11 64]
+	QVAR "goal_target_1" == 831
+}
+
+#script "nvscript"
+
+//goals / pickpockets
++ObjProp 41 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 41 43 "ControlDevice"
+{
+}
++ObjProp 41 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
+}
++ObjProp 41 "TrapQVar"
+{
+	"" =0:goal_optional_1
+}
++ObjProp 43 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 43 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
+}
++ObjProp 370 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 370 "TrapQVar"
+{
+	"" =1:goal_visible_8
+}
++ObjProp 371 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 371 "TrapQVar"
+{
+	"" =2:goal_state_9
+}
++ObjProp 513 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"; NVRemovePropertyTrapProp="TrapQVar"; NVRemovePropertyTrapTarget=518
+}
++ObjProp 513 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 513 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++ObjProp 514 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"; NVRemovePropertyTrapProp="TrapQVar"; NVRemovePropertyTrapTarget=519
+}
++ObjProp 514 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 514 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++ObjProp 515 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"; NVRemovePropertyTrapProp="TrapQVar"; NVRemovePropertyTrapTarget=520
+}
++ObjProp 515 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 515 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++ObjProp 516 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"; NVRemovePropertyTrapProp="TrapQVar"; NVRemovePropertyTrapTarget=521
+}
++ObjProp 516 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 516 "TrapQVar"
+{
+	"" =1:goal_state_4
+}
++ObjProp 517 "DesignNote"
+{
+	"" NVTrigQVarTDest="[Me]"; NVRemovePropertyTrapProp="TrapQVar"; NVRemovePropertyTrapTarget=522
+}
++ObjProp 517 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 517 "TrapQVar"
+{
+	"" =1:goal_state_5
+}
++ObjProp 518 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 518 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 518 "TrapQVar"
+{
+	"" =3:goal_state_1
+}
++ObjProp 519 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 519 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 519 "TrapQVar"
+{
+	"" =3:goal_state_2
+}
++ObjProp 520 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 520 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 520 "TrapQVar"
+{
+	"" =3:goal_state_3
+}
++ObjProp 521 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 521 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 521 "TrapQVar"
+{
+	"" =3:goal_state_4
+}
++ObjProp 522 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 522 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 522 "TrapQVar"
+{
+	"" =3:goal_state_5
+}
++Link 613 370 "ControlDevice"
+{
+}
++Link 613 371 "ControlDevice"
+{
+}
++Link 835 518 "ControlDevice"
+{
+}
++Link 835 519 "ControlDevice"
+{
+}
++Link 835 520 "ControlDevice"
+{
+}
++Link 835 521 "ControlDevice"
+{
+}
++Link 835 522 "ControlDevice"
+{
+}
++ObjProp 836 "TrapFlags"
+{
+	"" NoOff
+}
+ObjProp 836 "TrapQVar"
+{
+	"" =1:goal_state_8
+}
+
+//mantling
++ObjProp 120 "PhysCanMant"
+{
+}
++ObjProp 250 "PhysCanMant"
+{
+}
++ObjProp 251 "PhysCanMant"
+{
+}
++ObjProp 253 "PhysCanMant"
+{
+}
++ObjProp 254 "PhysCanMant"
+{
+}
++ObjProp 255 "PhysCanMant"
+{
+}
++ObjProp 257 "PhysCanMant"
+{
+}
++ObjProp 258 "PhysCanMant"
+{
+}
++ObjProp 259 "PhysCanMant"
+{
+}
++ObjProp 261 "PhysCanMant"
+{
+}
++ObjProp 266 "PhysCanMant"
+{
+}
+
+//doors
+ObjProp 19 "Scale"
+{
+	"" 2, 2, 1.143
+}
++ObjProp 19 "FrobInfo"
+{
+}
++ObjProp 20 "FrobInfo"
+{
+}
+ObjProp 20 "Scale"
+{
+	"" 2, 2, 1.143
+}
+ObjProp 36 "Scale"
+{
+	"" 1.25, 1.25, 1
+}
+ObjProp 37 "Scale"
+{
+	"" 1.25, 1.25, 1
+}
+ObjProp 49 "Scale"
+{
+	"" 1.333, 1.333, 1.143
+}
+ObjProp 58 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 59 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 60 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 61 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 64 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 65 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 67 "Scale"
+{
+	"" 2, 2, 1.143
+}
+ObjProp 70 "Scale"
+{
+	"" 2, 2, 1.143
+}
+ObjProp 71 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 72 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 74 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 75 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 76 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 84 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 85 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 86 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 87 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 159 "Scale"
+{
+	"" 0.667, 0.667, 1.143
+}
+ObjProp 160 "Scale"
+{
+	"" 0.667, 0.667, 1.143
+}
+ObjProp 190 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 390 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 399 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 400 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 410 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
++MetaProp 143 -2420
++MetaProp 146 -2420
++MetaProp 148 -2420
++MetaProp 150 -2420
++MetaProp 151 -2420
++MetaProp 152 -2420
++MetaProp 153 -2420
++MetaProp 154 -2420
++MetaProp 155 -2420
++MetaProp 156 -2420
++MetaProp 157 -2420
++MetaProp 175 -2420
++MetaProp 290 -2420
++MetaProp 294 -2420
++MetaProp 631 -2420
++MetaProp 672 -2420
+
+//quest items
++Link 23 396 "ControlDevice"
+{
+}
+ObjProp 23 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-MetaProp 23 -2418
+-ObjProp 24 "FrobInfo"
++Link 24 395 "ControlDevice"
+{
+}
++ObjProp 24 "Scripts"
+{
+	"Script 0" TrigContained
+}
++Link 31 394 "ControlDevice"
+{
+}
++ObjProp 114 "InvType"
+{
+	"" Item
+}
++ObjProp 178 "NoDrop"
+{
+	"" true
+}
+-ObjProp 394 "Scale"
++ObjProp 394 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++ObjProp 395 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++ObjProp 396 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++Link 423 424 "ControlDevice"
+{
+}
+-ObjProp 424 "Scale"
++ObjProp 424 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++ObjProp 768 "DiffRemoveProp"
+{
+	"quest var values" 1, 2
+	"alt quest var values" 0
+	"Properties" FrobInfo
+}
++ObjProp 768 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move
+}
++ObjProp 831 "DiffDestroy"
+{
+	"quest var values" 0
+}
+ObjProp 831 "Position"
+{
+	"Location" -13.26, 45.56, 9.5
+}
+-ObjProp 831 "PhysType"
++ObjProp 831 "PhysType"
+{
+	"Type" Sphere
+}
+
+//scrolls
+-ObjProp 555 "PhysType"
+ObjProp 555 "Position"
+{
+	"Heading" 78be
+}
++ObjProp 557 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 557 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Inv Action" Script
+}
+ObjProp 557 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 760 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 760 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" ""
+}
+
+//invalid scaling
+-ObjProp 6 "Scale"
+-ObjProp 394 "Scale"
+-ObjProp 395 "Scale"
+-ObjProp 424 "Scale"
+
+//deathstage
+-ObjProp 24 "DeathStage"
+-ObjProp 130 "DeathStage"
+-ObjProp 202 "DeathStage"
+
+//AIs
++ObjProp 35 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard2
+}
++ObjProp 316 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard2
+}
++ObjProp 317 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard2
+}
+
+//misplaced objects
+ObjProp 374 "Position"
+{
+	"Location" -7.55, -10.9, 9.5
+}
+-ObjProp 374 "PhysType"
++ObjProp 374 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 378 "Position"
+{
+	"Location" -42, 11.35, 9.5
+}
+-ObjProp 378 "PhysType"
++ObjProp 378 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 448 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 448 "Stench"
+{
+	Max None
+
+	Target 597
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 448 "Stench"
+{
+	Max None
+
+	Target 763
+	Agent -2602
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 448 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 448 "Position"
+{
+	"Location" 16.92, -23, 21.3
+}
+-ObjProp 448 "PhysType"
++ObjProp 448 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 597 "Position"
+{
+	"Location" -32.87, -14.75, 68.55
+}
+-ObjProp 597 "PhysType"
++ObjProp 597 "PhysType"
+{
+	"Type" OBB
+}
+
+//footlockers
++ObjProp 446 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 665 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 669 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 669 "Position"
+{
+	"Location" 10.7635, -50.15, -23.237
+}
+-ObjProp 669 "PhysType"
++ObjProp 669 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 670 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 671 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//switch
+ObjProp 565 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}

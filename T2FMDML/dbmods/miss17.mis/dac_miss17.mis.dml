@@ -1,0 +1,19 @@
+DML1
+
+//T2 FM: Dangerous Conditions (Water Contest) by Robin Collier (R Soul) / Fixes
+
+FINGERPRINT
+{
+	180 [107 303 1]
+	36 [88 359 2]
+	252 [103 380 2]
+	162 [85 376 10]
+	18 [108 356 1]
+	250 [49 389 18]
+	251 [84 363 11]
+	177 [105 370 3]
+	QVAR "goal_target_7" == 186
+}
+
+//pickpocketing
+-Link 195 187 "ControlDevice"

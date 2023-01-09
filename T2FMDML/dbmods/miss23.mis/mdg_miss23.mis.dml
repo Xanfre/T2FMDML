@@ -49,24 +49,18 @@ ObjProp 172 "TrapQVar"
 	"" >3:DrSSecrets
 }
 //pickpocketing
-+ObjProp 251 "DiffTurnOn"
+Link 1416 1478 "Contains"
 {
-	"quest var values" 0, 1, 2
+	"" Generic Contents
 }
-+Link 251 252 "ControlDevice"
+ObjProp 1416 "MeshAttach"
 {
-}
-+ObjProp 251 "Scripts"
-{
-	"Script 0" TrapRelay
-}
-+ObjProp 252 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 252 "TrapQVar"
-{
-	"" =1:DrSPocketCnt
+	"attached obj 1" 1478
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" -15536
+	"z angle (0-65535)" 17000
+	"offset" 0.2, -1.5, 0
 }
 //AIs
 +ObjProp 234 "AI_Hearing"
@@ -77,10 +71,6 @@ ObjProp 172 "TrapQVar"
 {
 	"Type" Alternate Bitmap
 	"Resource" ccavad
-}
-ObjProp 1416 "Scripts"
-{
-	"Script 0" CorpseFrobFixed
 }
 //morego conv
 +ObjProp 1530 "AI_SaveConverse"

@@ -1,0 +1,655 @@
+DML1
+
+//T2 FM: The Revenge of Lt. Hagen by Jordan Maf (FireMage) / Fixes
+
+FINGERPRINT
+{
+	2204 [57 -314 -33]
+	2202 [-66 -292 -32]
+	1026 [33 102 -45]
+	1840 [209 121 -21]
+	2067 [22 -34 -45]
+	1607 [75 50 -44]
+	516 [43 190 -46]
+	1005 [139 158 -49]
+	QVAR "goal_target_9" == -6832
+}
+
+#script "nvscript"
+
+//arrows
+-ObjProp 1536 "DeathStage"
+-ObjProp 2085 "DeathStage"
+-ObjProp 2087 "DeathStage"
+-ObjProp 2100 "DeathStage"
+-ObjProp 2518 "DeathStage"
+
+//loot
+ObjProp 76 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++ObjProp 2578 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Inv Action" Script
+}
+
+//Alonzo
+-MetaProp 2277 -2886
+
+//Melinda
+Link 2278 2637 "AIWatchObj"
+{
+	"Response: Step 1" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1" amb wind gate
+	"Response: Step 2" Frob object(Target Object,With Object)
+	"   Argument 1"[1] gatelever
+	"Response: Step 3" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[2] REMOVE
+	"   Argument 2"[2] M-ISLOCK
+	"   Argument 3"[2] JAILDR
+	"Response: Step 4" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1"[3] amb in gate2
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+	"Response: Step 5" Frob object(Target Object,With Object)
+	"   Argument 1"[4] 1633
+	"Response: Step 6" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1"[5] 2253
+}
+ObjProp 2278 "AI_AlrtRsp"
+{
+	"Priority" Very high
+}
++ObjProp 2278 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Incapacitated"; NVSetPropertyTrapProperty="ModelName"; NVSetPropertyTrapValue="Melinda"; NVSetPropertyTrapType="string"; NVDeleteTrapOn="Incapacitated"; NVDeleteTrapTarget=2638; NVDeleteTrapCount=1
+}
+ObjProp 2278 "Scripts"
+{
+	"Script 1" NVIncapacitatedMessages
+	"Script 2" NVSetPropertyTrap
+	"Script 3" NVDeleteTrap
+}
++ObjProp 74 "DesignNote"
+{
+	"" NVDeleteTrapOn="Incapacitated"; NVDeleteTrapTarget=2749; NVDeleteTrapCount=1
+}
++ObjProp 74 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVDeleteTrap
+}
++ObjProp 196 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="Incapacitated"; NVRemovePropertyTrapProp="Scripts"; NVRemovePropertyTrapTarget="music start prison"
+}
++ObjProp 196 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 197 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="Incapacitated"; NVRemovePropertyTrapProp="Scripts"; NVRemovePropertyTrapTarget="amb in prison"
+}
++ObjProp 197 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRemovePropertyTrap
+}
+
+//John
+Create -136 "JohnKey"
+{
+	+ObjProp "KeySrc"
+	{
+		"MasterBit" false
+		"RegionMask" 1
+		"LockID" 21
+	}
+	+ObjProp "HasRefs"
+	{
+		"" false
+	}
+}
++Link 997 "JohnKey" "Contains"
+{
+	"" Generic Contents
+}
+
+//Logan
+ObjProp 549 "Position"
+{
+	"Heading" c000
+}
++ObjProp 233 "DesignNote"
+{
+	"" NVMetaTrapOn="Null"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="M-ISLOCK"; NVMetaTrapTarget="BlackDoor"; NVMetaTrap2Off="Null"; NVMetaTrap2Meta="M-DontGoHome"; NVMetaTrap2Target="FrendlyLog"; NVMetaTrap2Count=1
+}
+ObjProp 233 "Scripts"
+{
+	"Script 1" NVMetaTrap
+	"Script 2" NVMetaTrap2
+}
+-Link 363 2544 "AIWatchObj"
++ObjProp 363 "AI_AlertCap"
+{
+	"Max level" (0) None
+	"Min level" (0) None
+	"Min relax after peak" (0) None
+}
++ObjProp 495 "DesignNote"
+{
+	"" NVMetaTrapOn="Null"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="M-ISLOCK"; NVMetaTrapTarget="BlackDoor"
+}
++ObjProp 495 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Script 1" NVDeleteTrap
+}
++Link 363 495 "ControlDevice"
+{
+}
+-Link 2548 2549 "ControlDevice"
+-Link 549 2548 "ControlDevice"
++ObjProp 2549 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 745 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 2548 745 "ControlDevice"
+{
+}
++Link 679 745 "ControlDevice"
+{
+}
++ObjProp 679 "DesignNote"
+{
+	"" NVMetaTrapOff="Null"; NVMetaTrapTarget="BlackDoor"; NVMetaTrapMeta="M-ISLOCK"; NVMetaTrapCount=1; NVRelayTrapOff="Null"; NVRelayTrapTOn="Close"; NVRelayTrapTDest="BlackDoor"; NVRelayTrapCount=1; NVRelayTrap2Off="Null"; NVRelayTrap2Count=1
+}
++ObjProp 679 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+}
+Create -5317 "UBBoundsTrig"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 172.256, 165.028, -47.7876
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Don't Inherit" true
+	}
+}
+Create -5317 "UBBoundsTrig2"
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" 156.256, 165.028, -47.7876
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Don't Inherit" true
+	}
+}
++Link "UBBoundsTrig" 679 "ControlDevice"
+{
+}
++Link "UBBoundsTrig2" 679 "ControlDevice"
+{
+}
++Link 745 2546 "ControlDevice"
+{
+}
++Link 745 2528 "ControlDevice"
+{
+}
++Link 745 2549 "ControlDevice"
+{
+}
++Link 495 "UBBoundsTrig" "ControlDevice"
+{
+}
++Link 495 "UBBoundsTrig2" "ControlDevice"
+{
+}
+ObjProp 233 "AI_Converation"
+{
+	"Conversation: Action 3" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1"[3] GetHappen
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+	"Conversation: Action 4" Face(Angle,Object(-1 for angle relative to self))
+	"   Argument 1"[4] ""
+	"   Argument 2"[4] 1407
+	"Conversation: Action 5" Frob object(Target Object,With Object)
+	"   Argument 1"[5] Holog
+}
++ObjProp 233 "AI_SaveConverse"
+{
+	"" true
+}
+-Link 2547 549 "AIWatchObj"
+-Link 2547 2547 "AIWatchObj"
++ObjProp 2547 "DesignNote"
+{
+	"" NVDeleteTrapOn="Sim"; NVDeleteTrapDeleteSelf=1
+}
++ObjProp 2547 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
+-ObjProp 2529 "ScriptTiming"
+ObjProp 2544 "Position"
+{
+	"Location" 167.598, 178.935, -47.9796
+	"Heading" c000
+}
+ObjProp 2549 "Position"
+{
+	"Location" 167.598, 178.935, -48.5476
+	"Heading" c000
+}
++ObjProp 549 "AI_FleeConds"
+{
+	"Condition" Never
+}
+-Link 2753 234 "ControlDevice"
+-Link 2753 2615 "ControlDevice"
+ObjProp 234 "AI_Converation"
+{
+	"Conversation: Action 0" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1" cLogan
+	"   Argument 2" LineNo 5
+	"Conversation: Action 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[1] Remove
+	"   Argument 2"[1] M-Front Gate Guard
+	"   Argument 3"[1] ""
+	"Conversation: Action 2" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1"[2] Player
+	"   Argument 2"[2] fast
+	"Conversation: Action 3" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[3] Add
+	"   Argument 2"[3] M-GetKO
+	"   Argument 3"[3] FrendlyLog
+	"Actor"[4] Unused
+	"Conversation: Action 4" Nothing()
+	"   Argument 1"[4] ""
+	"   Argument 2"[4] ""
+	"Actor"[5] Unused
+	"Conversation: Action 5" Nothing()
+	"   Argument 1"[5] ""
+	"   Argument 2"[5] ""
+	"Actor"[6] Unused
+	"Conversation: Action 0"[1] Nothing()
+	"   Argument 1"[6] ""
+	"   Argument 2"[6] ""
+	"Actor"[7] Unused
+	"Conversation: Action 1"[1] Nothing()
+	"   Argument 1"[7] ""
+	"   Argument 2"[7] ""
+	"   Argument 3"[7] ""
+}
++Link 745 234 "ControlDevice"
+{
+}
+
+//AIs
++ObjProp 2152 "DesignNote"
+{
+	"" NVLinkBuilderOn="AIModeChange"; NVLinkBuilderCount=1; NVLinkBuilderLinkSource=2152; NVLinkBuilderLinkDest="bw16"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkData1Value=0; NVLinkBuilderModifyExistingLink=1; NVLinkBuilder2On="BowStimStimulus"; NVLinkBuilder2Count=1; NVLinkBuilder2LinkSource=2152; NVLinkBuilder2LinkDest="bw16"; NVLinkBuilder2LinkType="Contains"; NVLinkBuilder2LinkData1Value=-3; NVLinkBuilder2ModifyExistingLink=1; NVRemovePropertyTrapOn="BowStimStimulus"; NVRemovePropertyTrapProp="MeshAttach"
+}
++ObjProp 2152 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" NVLinkBuilder2
+	"Script 2" NVRemovePropertyTrap
+}
+ObjProp 2152 "MeshAttach"
+{
+	"attached obj 1" 2153
+	"joint of skeleton" 8
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 9300
+	"z angle (0-65535)" 15000
+	"offset" -0.3, -0.3, 1.3
+}
++Receptron 2152 "BowStim"
+{
+	Min None
+	Max None
+	Effect "stim_script_msg"
+	{
+	}
+}
+++Receptron 131 "WaterStim"
+{
+	Min None
+	Max None
+	Target 2152
+	Agent Source
+	Effect "stimulate"
+	{
+		"Stimulus" bowstim
+		"Multiply By" 1.0
+		"Then Add" 1.0
+	}
+}
+Link 660 660 "AIWatchObj"
+{
+	"Priority" Very high
+}
+Link 662 662 "AIWatchObj"
+{
+	"Priority" Very high
+}
+Link 713 713 "AIWatchObj"
+{
+	"Priority" Very high
+}
+Link 724 724 "AIWatchObj"
+{
+	"Priority" Very high
+}
+Link 854 854 "AIWatchObj"
+{
+	"Priority" Very high
+}
+
+//bombs
+-ObjProp 2674 "FrobInfo"
+-ObjProp 2683 "FrobInfo"
+-ObjProp 2699 "FrobInfo"
+-MetaProp 2699 -1629
+-ObjProp 2702 "FrobInfo"
+-ObjProp 2711 "FrobInfo"
++ObjProp 2689 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 2742 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 2743 "TrapFlags"
+{
+	"" NoOff
+}
+-ObjProp 1348 "AI_WtchPnt"
+ObjProp 1348 "AI_AlrtRsp"
+{
+	"Priority" Very high
+}
+ObjProp 2669 "AI_Converation"
+{
+	"Conversation: Action 3" Nothing()
+	"   Argument 1"[3] ""
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+	"Conversation: Action 3"[1] Nothing()
+	"   Argument 1"[9] ""
+	"   Argument 2"[9] ""
+	"   Argument 3"[9] ""
+	"Conversation: Action 5"[2] Nothing()
+	"   Argument 1"[17] ""
+	"   Argument 2"[17] ""
+	"   Argument 3"[17] ""
+	"Conversation: Action 3"[3] Nothing()
+	"   Argument 1"[21] ""
+	"   Argument 2"[21] ""
+	"   Argument 3"[21] ""
+	"Conversation: Action 5"[4] Nothing()
+	"   Argument 1"[29] ""
+	"   Argument 2"[29] ""
+	"   Argument 3"[29] ""
+	"Conversation: Action 1"[5] Nothing()
+	"   Argument 1"[31] ""
+	"   Argument 2"[31] ""
+	"   Argument 3"[31] ""
+	"Conversation: Action 3"[6] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[39] Remove
+	"   Argument 2"[39] FireProof
+	"Conversation: Action 4"[6] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[40] Add
+	"   Argument 2"[40] M-Vincible
+}
+MetaProp 1375 -2257
+
+//journal
+-ObjProp 1002 "PhysType"
+-ObjProp 1002 "FrobInfo"
+MetaProp 1002 -1629
++ObjProp 2733 "DesignNote"
+{
+	"" NVMetaTrapOn="Null"; NVMetaTrapOff="Contained"; NVMetaTrapTarget=1002; NVMetaTrapMeta="FrobInert"; NVMetaTrapCount=1; NVSetPropertyTrapOn="Contained"; NVSetPropertyTrapTarget=1002; NVSetPropertyTrapProperty="FrobInfo"; NVSetPropertyTrapSubProperty="World Action"; NVSetPropertyTrapValue=3; NVSetPropertyTrapCount=1
+}
++ObjProp 2733 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Script 1" NVSetPropertyTrap
+}
+
+//objects
+ObjProp 642 "Position"
+{
+	"Location" -51.2127, -433.1, -66.4424
+}
+-ObjProp 1271 "PhysType"
+-ObjProp 888 "PhysType"
+ObjProp 653 "Position"
+{
+	"Location" -51.024, -432.607, -66.159
+}
+ObjProp 670 "Position"
+{
+	"Location" -51.2758, -433.372, -66.3011
+	"Heading" 9c71
+}
+ObjProp 944 "Position"
+{
+	"Location" -51.024, -432.607, -66.159
+}
+-ObjProp 1055 "PhysType"
+ObjProp 949 "Position"
+{
+	"Location" -51.2758, -433.372, -66.3011
+	"Heading" 9c71
+}
+-ObjProp 1080 "PhysType"
+ObjProp 1264 "Position"
+{
+	"Location" -51.2992, -433.25, -66.4425
+}
+-ObjProp 1248 "PhysType"
+ObjProp 1246 "Position"
+{
+	"Location" -51.2992, -433.25, -66.4425
+}
+-ObjProp 1247 "PhysType"
+-ObjProp 2568 "PhysType"
+ObjProp 2568 "Position"
+{
+	"Location" 62.2431, 7.10838, -36.9985
+}
++ObjProp 78 "BlockFrob"
+{
+	"" true
+}
++ObjProp 79 "BlockFrob"
+{
+	"" true
+}
++ObjProp 93 "BlockFrob"
+{
+	"" true
+}
++ObjProp 481 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1374 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1398 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1400 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 2447 "PhysType"
+ObjProp 2447 "Position"
+{
+	"Location" 43.0458, 202.553, -45.1508
+}
+-ObjProp 2477 "PhysType"
+ObjProp 2477 "Position"
+{
+	"Location" -92.1792, 124.187, -46.7861
+}
++ObjProp 2477 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2488 "PhysType"
+ObjProp 2488 "Position"
+{
+	"Location" -92.1933, 119.158, -46.7861
+}
++ObjProp 2488 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 897 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
++ObjProp 897 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}
++ObjProp 922 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
++ObjProp 922 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}
++ObjProp 1093 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
++ObjProp 1093 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}
+Create -2789 "HFruitReloc"
+{
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0, 1, 2
+	}
+	+ObjProp "Position"
+	{
+		"Location" 28.9468, -59.3381, -32.7302
+		"Heading" f966
+		"Bank" ceba
+	}
+}
++Link "HFruitReloc" 2243 "ControlDevice"
+{
+}
+-ObjProp 1918 "PhysType"
+ObjProp 1918 "Position"
+{
+	"Location" 23.093, 0.0925751, -29.9993
+}
++ObjProp 1918 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1920 "PhysType"
+ObjProp 1920 "Position"
+{
+	"Location" 23.091, 29.5014, -30.2493
+}
++ObjProp 1920 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2442 "PhysType"
+ObjProp 2442 "Position"
+{
+	"Location" -91.5396, 119.455, -43.6543
+}
+-ObjProp 2444 "PhysType"
+ObjProp 2444 "Position"
+{
+	"Location" -92.0407, 121.061, -43.6543
+}
+-ObjProp 2445 "PhysType"
+ObjProp 2445 "Position"
+{
+	"Location" -86.8857, 126.304, -43.6564
+}
+
+//mantling
++ObjProp 55 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 107 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 235 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 505 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 646 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1578 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 1668 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 2256 "PhysCanMant"
+{
+	"" false
+}
++ObjProp 2262 "PhysCanMant"
+{
+	"" false
+}

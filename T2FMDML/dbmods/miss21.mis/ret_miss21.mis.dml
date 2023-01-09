@@ -15,38 +15,172 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1456
 }
 
-//banners
-+ObjProp 1760 "BlockFrob"
+#script "nvscript"
+
+//goals
++ObjProp 50 "DesignNote"
 {
-	"" true
+	"" NVMetaTrapOn="Sim"; NVMetaTrapTarget="@-1256"; NVMetaTrapMeta=-3058; NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapTarget=@-1256; NVSetPropertyTrapProperty="Scripts"; NVSetPropertyTrapSubProperty="Script 0"; NVSetPropertyTrapValue="NVRelayTrap"; NVSetPropertyTrapType="string"
 }
++ObjProp 50 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Script 1" NVSetPropertyTrap
+}
++ObjProp 51 "DesignNote"
+{
+	"" NVRelayTrapOn="Sim"; NVRelayTrapDelay=1000; NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest=50; NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapTarget=@-1256; NVSetPropertyTrapProperty="DesignNote"; NVSetPropertyTrapValue="NVRelayTrapOn=Slain; NVRelayTrapTDest=1452"; NVSetPropertyTrapType="string"
+}
++ObjProp 51 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSetPropertyTrap
+}
++ObjProp 1452 "DesignNote"
+{
+	"" NVTrapSetQVarOn="Sim"; NVRelayTrapCapacitor=4
+}
+ObjProp 1452 "TrapQVar"
+{
+	"" =0:goal_optional_9
+}
++ObjProp 1452 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVTrapSetQVar
+	"Don't Inherit" true
+}
++Link 1465 1452 "ControlDevice"
+{
+}
++ObjProp 1465 "Scripts"
+{
+	"Script 0" TrigSlain
+}
+
+//quest items
++ObjProp 1253 "DiffRemoveProp"
+{
+	"quest var values" 0, 1
+	"alt quest var values" 2
+	"Properties" FrobInfo
+}
++ObjProp 1407 "DiffRemoveProp"
+{
+	"quest var values" 1, 2
+	"alt quest var values" 0
+	"Properties" FrobInfo
+}
++ObjProp 1407 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 2008 "DiffDestroy"
+{
+	"quest var values" 0, 1
+}
+-Link 2008 514 "ControlDevice"
+-Link 2008 510 "ControlDevice"
++Link 2008 515 "ControlDevice"
+{
+}
++Link 515 514 "ControlDevice"
+{
+}
++Link 515 510 "ControlDevice"
+{
+}
++ObjProp 515 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+
+//doors
+-ObjProp 209 "TransDoor"
+-ObjProp 498 "TransDoor"
+-ObjProp 499 "TransDoor"
+-ObjProp 1785 "TransDoor"
+-ObjProp 1786 "TransDoor"
+-ObjProp 778 "JointPos"
+-ObjProp 779 "JointPos"
+
+//banners
 +ObjProp 455 "BlockFrob"
 {
 	"" true
 }
-//goals
-+ObjProp 1739 "Scripts"
++ObjProp 1760 "BlockFrob"
 {
-	"Script 0" TrapSetQVar
+	"" true
 }
-+ObjProp 1739 "TrapQVar"
-{
-	"" =1:goal_state_9
-}
-+Link 2008 1739 "ControlDevice"
+
+//AIs
++ObjProp 511 "DarkStat"
 {
 }
-+ObjProp 514 "DiffDestroy"
++ObjProp 1010 "InvRendType"
 {
-	"quest var values" 0,1
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
 }
-+ObjProp 1739 "DiffDestroy"
++ObjProp 1096 "InvRendType"
 {
-	"quest var values" 0,1
+	"Type" Alternate Bitmap
+	"Resource" cmecprs
 }
-+ObjProp 510 "DiffDestroy"
++MetaProp 1116 -3088
+ObjProp 1965 "AI_FleePoint"
 {
-	"quest var values" 0,1
+	"" 10
 }
-//door
--ObjProp 209 "TransDoor"
+
+//misplaced objects
+-ObjProp 1226 "PhysType"
+ObjProp 1226 "Position"
+{
+	"Location" -343.925, 252.35, -2.91
+}
++ObjProp 1226 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1597 "Position"
+{
+	"Location" -90.75, -53.81, 0.35
+}
+-ObjProp 1606 "PhysType"
+ObjProp 1606 "Position"
+{
+	"Location" 124.5, 315.2, -10.5
+}
++ObjProp 1606 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1623 "PhysType"
+ObjProp 1623 "Position"
+{
+	"Location" -71.1, -88.75, 15.1
+}
++ObjProp 1623 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1956 "PhysType"
+ObjProp 1956 "Position"
+{
+	"Location" -38, -63, 16
+}
++ObjProp 1956 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2069 "PhysType"
+ObjProp 2069 "Position"
+{
+	"Heading" 4000
+}
++ObjProp 2069 "PhysType"
+{
+	"Type" OBB
+}

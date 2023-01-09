@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Keyhunt (Small Stock Resource Contest) by Renzo Thonen (Eshaktaar) / Fixes
+//T2 FM: Keyhunt (SSR Contest) by Renzo Thonen (Eshaktaar) / Fixes
 
 FINGERPRINT
 {
@@ -22,13 +22,7 @@ FINGERPRINT
 +ObjProp 11 "PhysCanMant"
 {
 }
-+ObjProp 12 "PhysCanMant"
-{
-}
 +ObjProp 13 "PhysCanMant"
-{
-}
-+ObjProp 16 "PhysCanMant"
 {
 }
 +ObjProp 17 "PhysCanMant"
@@ -46,6 +40,18 @@ FINGERPRINT
 +ObjProp 55 "PhysCanMant"
 {
 }
++ObjProp 110 "PhysCanMant"
+{
+}
++ObjProp 111 "PhysCanMant"
+{
+}
++ObjProp 112 "PhysCanMant"
+{
+}
++ObjProp 113 "PhysCanMant"
+{
+}
 +ObjProp 115 "PhysCanMant"
 {
 }
@@ -55,15 +61,21 @@ FINGERPRINT
 +ObjProp 578 "PhysCanMant"
 {
 }
-+ObjProp 612 "PhysCanMant"
-{
-}
+
 //doors
+ObjProp 126 "RotDoor"
+{
+	"Open Angle" 89
+}
 +Receptron 199 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
+}
+ObjProp 199 "Scale"
+{
+	"" 0.875, 0.875, 0.875
 }
 +Receptron 223 "WeaponStim"
 {
@@ -71,20 +83,87 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
-//mysterious keys
-+ObjProp 132 "NoDrop"
+ObjProp 223 "Scale"
 {
-	"" true
+	"" 0.875, 0.875, 0.875
 }
++Receptron 408 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 408 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent 29
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 408 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 612 "PickDist"
+{
+	"" 2.00
+}
++ObjProp 612 "PhysCanMant"
+{
+}
+
+//quest items
 +ObjProp 139 "NoDrop"
 {
 	"" true
 }
-+ObjProp 302 "NoDrop"
+++Receptron 155 "PseudoStim"
 {
-	"" true
+	Max None
+
+	Target Me
+	Agent -1707
+
+	Effect "add_prop"
+	{
+		"Prop Name" NoDrop
+	}
 }
-+ObjProp 377 "NoDrop"
+
+//AIs
++ObjProp 420 "InvRendType"
 {
-	"" true
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 675 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 676 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 677 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 678 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 679 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
 }

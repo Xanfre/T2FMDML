@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Horns of Canzo pt. 1: A Long Way Up by Menguzzo Stefano (Sterlino) / Fixes
+//T2 FM: Horns of Canzo: A Long Way Up by Menguzzo Stefano (Sterlino) / Fixes
 
 FINGERPRINT
 {
@@ -15,26 +15,55 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1487
 }
 
-+ObjProp 398 "Position"
+//mantling
+Create -445 "MF"
 {
-	"Location" 109.13, 400.14,580.69
-	"Heading" 0
-	"Pitch" 4000
-	"Bank" 0
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "Position"
+	{
+		"Location" 353, 600.07, 494
+		"Pitch" c000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 0.5
+	}
 }
--ObjProp 1234 "FrobInfo"
-+ObjProp 1234 "FrobInfo"
+
+//loot
+ObjProp 1234 "FrobInfo"
 {
-	"World Action" Move,Script
+	"World Action" Move
 }
--Link 2259 2266 "ControlDevice"
+
+//portal
++Link 2251 1609 "ControlDevice"
+{
+}
 -Link 2259 2373 "ControlDevice"
+-Link 2259 2266 "ControlDevice"
++Link 2259 1609 "ControlDevice"
+{
+}
 +ObjProp 1609 "Scripts"
 {
 	"Script 0" TrapRelay
-}
-+Link 2251 1609 "ControlDevice"
-{
 }
 +Link 1609 1675 "ControlDevice"
 {
@@ -42,12 +71,69 @@ FINGERPRINT
 +Link 1609 1657 "ControlDevice"
 {
 }
-+Link 2259 1609 "ControlDevice"
-{
-}
 +Link 1609 2266 "ControlDevice"
 {
 }
 +Link 1609 2373 "ControlDevice"
 {
+}
+
+//quiver arrows
++Link 395 398 "Contains"
+{
+	"" Alternate
+}
+
+//doors
+ObjProp 523 "RotDoor"
+{
+	"Open Angle" 273
+}
++MetaProp 845 -2420
++MetaProp 1132 -2420
++MetaProp 1966 -2420
++MetaProp 1871 -2420
+-ObjProp 1871 "PhysType"
++ObjProp 1871 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 2080 "BlockFrob"
+{
+	"" true
+}
+
+//deathstage
+-ObjProp 374 "DeathStage"
+-ObjProp 423 "DeathStage"
+-ObjProp 875 "DeathStage"
+-ObjProp 914 "DeathStage"
+-ObjProp 923 "DeathStage"
+-ObjProp 1012 "DeathStage"
+-ObjProp 1213 "DeathStage"
+-ObjProp 1260 "DeathStage"
+-ObjProp 1423 "DeathStage"
+
+//invalid scaling
+-ObjProp 709 "Scale"
+-ObjProp 933 "Scale"
+-ObjProp 1293 "Scale"
+-ObjProp 1415 "Scale"
+
+//chests
++ObjProp 1081 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1116 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1732 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1924 "JointPos"
+{
+	"Joint 1" 90.00
 }

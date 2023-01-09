@@ -15,7 +15,135 @@ FINGERPRINT
 	QVAR "goal_target_12" == 834
 }
 
-+ObjProp 563 "Scripts"
+//fix hanging arrows
++ObjProp 153 "CollisionType"
 {
-	"Script 0" NVDeleteTrap
+}
+-ObjProp 153 "PhysType"
++ObjProp 153 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 202 "CollisionType"
+{
+}
+-ObjProp 202 "PhysType"
++ObjProp 202 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 203 "CollisionType"
+{
+}
+-ObjProp 203 "PhysType"
++ObjProp 203 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 248 "CollisionType"
+{
+}
+-ObjProp 248 "PhysType"
++ObjProp 248 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 249 "CollisionType"
+{
+}
+-ObjProp 249 "PhysType"
++ObjProp 249 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 250 "CollisionType"
+{
+}
+-ObjProp 250 "PhysType"
++ObjProp 250 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 251 "CollisionType"
+{
+}
+-ObjProp 251 "PhysType"
++ObjProp 251 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 271 "CollisionType"
+{
+}
+-ObjProp 271 "PhysType"
++ObjProp 271 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 272 "CollisionType"
+{
+}
+-ObjProp 272 "PhysType"
++ObjProp 272 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 273 "CollisionType"
+{
+}
+-ObjProp 273 "PhysType"
++ObjProp 273 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 274 "CollisionType"
+{
+}
+-ObjProp 274 "PhysType"
++ObjProp 274 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 275 "CollisionType"
+{
+}
+-ObjProp 275 "PhysType"
++ObjProp 275 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 276 "CollisionType"
+{
+}
+-ObjProp 276 "PhysType"
++ObjProp 276 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 278 "CollisionType"
+{
+}
+-ObjProp 278 "PhysType"
++ObjProp 278 "PhysType"
+{
+	"Type" OBB
+}
+
+//doors
+-ObjProp 622 "JointPos"
+-ObjProp 989 "JointPos"
+
+//quest items
++ObjProp 886 "NoDrop"
+{
+	"" true
+}
++ObjProp 1399 "StackCount"
+{
+}
+
+//bloodstains
++ObjProp 994 "RenderAlpha"
+{
+	"" 0.90
 }

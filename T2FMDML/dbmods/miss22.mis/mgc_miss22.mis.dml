@@ -1,0 +1,29 @@
+DML1
+
+//T2 FM: Mistress Guennean's Castle (Reunification Campaign) by Beltzer / Fixes
+
+FINGERPRINT
+{
+	156 [375 504 498]
+	303 [222 589 485]
+	601 [292 765 519]
+	832 [213 630 521]
+	496 [152 644 522]
+	345 [377 463 486]
+	840 [221 835 506]
+	826 [139 698 499]
+	QVAR "goal_target_4" == 916
+}
+
+//secrets
+-Link 55 400 "ControlDevice"
++ObjProp 55 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 149 "PickDist"
+-Link 313 400 "ControlDevice"
++MetaProp 313 -2420
+-ObjProp 398 "DarkStat"
+-Link 400 1052 "ControlDevice"
+-Link 970 1052 "ControlDevice"

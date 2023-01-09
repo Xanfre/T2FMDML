@@ -36,8 +36,64 @@ FINGERPRINT
 }
 //swordsmen (auto-equip)
 -ObjProp 594 "Scripts"
+Link 594 593 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 594 "MeshAttach"
+{
+	"attached obj 1" 593
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 20000
+	"offset" 0.5, -1.25, -0.1
+}
++ObjProp 594 "HasRefs"
+{
+	"" false
+}
 -ObjProp 598 "Scripts"
+Link 598 604 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 598 "MeshAttach"
+{
+	"attached obj 1" 604
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 20000
+	"offset" 0.5, -1.25, -0.1
+}
++ObjProp 598 "HasRefs"
+{
+	"" false
+}
 //elise
+Link 756 835 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 756 "MeshAttach"
+{
+	"attached obj 1" 835
+	"joint of skeleton" 15
+	"x angle (0-65535)" 1000
+	"y angle (0-65535)" -1000
+	"z angle (0-65535)" 24000
+	"offset" 0.1, -0.5, -0.2
+}
+-Link 846 867 "ControlDevice"
+ObjProp 664 "AI_Converation"
+{
+	"Actor"[8] ActorOne
+	"Conversation: Action 2"[1] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[8] Add
+	"   Argument 2"[8] M-LetterGhost
+	"   Argument 3"[8] KeeperKlon
+}
 ++Receptron 756 "EliseBrief"
 {
 	Min 1

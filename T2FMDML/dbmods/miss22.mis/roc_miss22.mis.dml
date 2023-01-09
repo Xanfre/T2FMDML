@@ -1,0 +1,342 @@
+DML1
+
+//T2 FM: Rose Cottage by David Tonkinson (Saturnine) / Fixes
+
+FINGERPRINT
+{
+	1943 [-282 -3 -54]
+	1345 [-138 -172 -74]
+	2083 [-221 167 -105]
+	2386 [-176 -192 -60]
+	2106 [-227 211 -106]
+	337 [-152 -113 -36]
+	1948 [-237 -192 -58]
+	1340 [-144 -121 -56]
+	QVAR "goal_target_3" == 1095
+}
+
+//mantling
++ObjProp 19 "PhysCanMant"
+{
+}
++ObjProp 129 "PhysCanMant"
+{
+}
++ObjProp 907 "PhysCanMant"
+{
+}
++ObjProp 941 "PhysCanMant"
+{
+}
++ObjProp 968 "PhysCanMant"
+{
+}
++ObjProp 969 "PhysCanMant"
+{
+}
++ObjProp 976 "PhysCanMant"
+{
+}
++ObjProp 979 "PhysCanMant"
+{
+}
++ObjProp 980 "PhysCanMant"
+{
+}
++ObjProp 981 "PhysCanMant"
+{
+}
++ObjProp 996 "PhysCanMant"
+{
+}
++ObjProp 1150 "PhysCanMant"
+{
+}
++ObjProp 2053 "PhysCanMant"
+{
+}
++ObjProp 2417 "PhysCanMant"
+{
+}
++ObjProp 2419 "PhysCanMant"
+{
+}
++ObjProp 2420 "PhysCanMant"
+{
+}
+
+//goals
++ObjProp 705 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 705 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 705 "TrapQVar"
+{
+	"" =1:goal_optional_2
+}
++ObjProp 824 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 824 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1095 "NoDrop"
+{
+	"" true
+}
+
+//mortician's note
++ObjProp 318 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
++ObjProp 318 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+
+//quest items
++ObjProp 736 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"
+}
+-ObjProp 736 "FrobInfo"
++ObjProp 736 "FrobInfo"
+{
+}
+-ObjProp 736 "PhysType"
++ObjProp 736 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
++Link 974 736 "ControlDevice"
+{
+}
++ObjProp 974 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 990 "StackCount"
+{
+}
++ObjProp 1579 "StackCount"
+{
+}
++ObjProp 1579 "NoDrop"
+{
+	"" true
+}
++Link 1864 3262 "ControlDevice"
+{
+}
++ObjProp 1864 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
++ObjProp 3262 "DesignNote"
+{
+	"" NVRemovePropertyTrapProp="FrobInfo"
+}
+-ObjProp 3262 "FrobInfo"
++ObjProp 3262 "FrobInfo"
+{
+}
+-ObjProp 3262 "PhysType"
++ObjProp 3262 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+}
+
+//doors
+Create -5784 "Blocker"
+{
+	+ObjProp "Position"
+	{
+	  "Location" -135.5, -138.5, -40
+	  "Heading" c000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+	  "Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+	  "" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+	  "1: Tags" ""
+	}
+}
++ObjProp 217 "DesignNote"
+{
+	"" NVMetaTrapOn="DoorOpening"; NVMetaTrapMeta="FrobInert"; NVMetaTrapCount=1; NVRemovePropertyTrapOn="DoorOpening"; NVRemovePropertyTrapProp="DesignNote"; NVRemovePropertyTrapTarget=220
+}
+ObjProp 217 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Script 1" NVRemovePropertyTrap
+	"Don't Inherit" false
+}
++ObjProp 220 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=217
+}
++Link 220 1019 "ControlDevice"
+{
+}
++ObjProp 220 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 220 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Script 1" NVMetaTrap
+}
++ObjProp 221 "DesignNote"
+{
+	"" NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=1019; NVRemovePropertyTrapProp="DesignNote"; NVRemovePropertyTrapTarget=217
+}
++Link 221 "Blocker" "ControlDevice"
+{
+}
++ObjProp 221 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Script 1" NVDeleteTrap
+	"Script 2" NVRemovePropertyTrap
+}
++Link 916 220 "ControlDevice"
+{
+}
++Link 916 221 "ControlDevice"
+{
+}
++Link 916 309 "ControlDevice"
+{
+}
++Link 916 757 "ControlDevice"
+{
+}
+ObjProp 1019 "PickDist"
+{
+	"" 2.00
+}
+ObjProp 1019 "StTweqJoints"
+{
+	"AnimS" On
+}
+ObjProp 1590 "AI_Converation"
+{
+	"Conversation: Action 0" Frob object(Target Object,With Object)
+	"  Argument 1" 1325
+	"  Argument 2" ""
+	"  Argument 3" ""
+	"Conversation: Action 1" Wait(Time(ms),Motion Tags)
+	"  Argument 1"[1] 2000
+	"  Argument 2"[1] ""
+	"  Argument 3"[1] ""
+	"  Argument 1"[2] 93
+	"Conversation: Action 3" Frob object(Target Object,With Object)
+	"  Argument 1"[3] 1464
+	"Conversation: Action 4" Nothing()
+	"  Argument 1"[4] ""
+	"Conversation: Action 5" Nothing()
+	"  Argument 1"[5] ""
+	"Actor"[9] Unused
+	"Conversation: Action 3"[1] Nothing()
+	"  Argument 1"[9] ""
+	"  Argument 2"[9] ""
+	"  Argument 3"[9] ""
+}
+ObjProp 1041 "RotDoor"
+{
+	"Open Angle" 88
+}
+-ObjProp 2634 "PhysType"
++ObjProp 2634 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2640 "PhysType"
++ObjProp 2640 "PhysType"
+{
+	"Type" OBB
+}
+
+//incorrect physdims
+-ObjProp 1313 "PhysType"
++ObjProp 1313 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1320 "PhysType"
++ObjProp 1320 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2175 "PhysType"
++ObjProp 2175 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2694 "PhysType"
++ObjProp 2694 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2718 "PhysType"
++ObjProp 2718 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3393 "PhysType"
++ObjProp 3393 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3401 "PhysType"
++ObjProp 3401 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3406 "PhysType"
++ObjProp 3406 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3424 "PhysType"
++ObjProp 3424 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3425 "PhysType"
++ObjProp 3425 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 3433 "PhysType"
++ObjProp 3433 "PhysType"
+{
+	"Type" OBB
+}
+
+//invalid scaling
+-ObjProp 1305 "Scale"
+-ObjProp 1963 "Scale"
+
+//cemetery key
+-ObjProp 2517 "PhysType"
+ObjProp 2517 "Position"
+{
+	"Location" -138.75, -187.15, -88.5
+}

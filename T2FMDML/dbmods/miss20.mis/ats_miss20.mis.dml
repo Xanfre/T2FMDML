@@ -49,7 +49,104 @@ FINGERPRINT
 +ObjProp 942 "PhysCanMant"
 {
 }
-//pans (kitchen)
+
+//AIs
++ObjProp 203 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 484 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 424 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ""
+}
++ObjProp 504 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ""
+}
++ObjProp 745 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 748 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 766 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 800 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 950 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 951 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+
+//elevator button
+-Receptron 410 "PetrolStim" 00210008
+-Receptron 410 "PetrolStim" 00210007
++Receptron 413 "PetrolStim"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 413 "PetrolStim"
+{
+	Max None
+
+	Target 419
+	Agent 421
+
+	Effect "move_obj"
+}
+++Receptron 413 "PetrolStim"
+{
+	Max None
+
+	Target 421
+
+	Effect "destroy_obj"
+}
+ObjProp 413 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOff="Null"; NVRelayTrapTOn="[10.00]PetrolStim"; NVRelayTrapTDest="[Me]"
+}
+ObjProp 413 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
+
+//chest
+ObjProp 638 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//misplaced objects
 -ObjProp 671 "PhysType"
 ObjProp 671 "Position"
 {
@@ -67,4 +164,57 @@ ObjProp 673 "Position"
 +ObjProp 673 "PhysType"
 {
 	"Type" OBB
+}
+
+//palmer's note
++ObjProp 1189 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
++ObjProp 1189 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+-ObjProp 1189 "NoDrop"
+-ObjProp 1190 "NoDrop"
++ObjProp 1190 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
++ObjProp 1190 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+
+//vines
++Receptron 22 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -2602
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 22 "EarthStim"
+{
+	Max None
+
+	Target 156
+	Agent -2602
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 22 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
 }

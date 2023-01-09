@@ -33,7 +33,7 @@ FINGERPRINT
 }
 +ObjProp 13 "TrapQVar"
 {
-	"" =0:goal_irreversible_3
+	"" =0:goal_irreversible_4
 }
 +ObjProp 14 "Scripts"
 {
@@ -41,7 +41,7 @@ FINGERPRINT
 }
 +ObjProp 14 "TrapQVar"
 {
-	"" =0:goal_irreversible_4
+	"" =0:goal_target_3
 }
 +ObjProp 16 "Scripts"
 {
@@ -51,13 +51,37 @@ FINGERPRINT
 {
 	"" =1:DrSPocketCnt
 }
++ObjProp 182 "DesignNote"
+{
+	"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=515; NVLinkBuilderLinkDest=466; NVLinkBuilderCount=1; NVLinkBuilderOff="Null"
+}
++ObjProp 182 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+}
++ObjProp 466 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 466 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 466 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++ObjProp 515 "Scripts"
+{
+	"Script 0" TrigRoomPlayer
+}
+
 //keys / locks / levers
 -Link 7 628 "ControlDevice"
 -Link 205 188 "ControlDevice"
 -Link 216 61 "ControlDevice"
 -Link 244 198 "ControlDevice"
 -Link 281 190 "ControlDevice"
--Link 294 312 "ControlDevice"
 -Link 312 311 "ControlDevice"
 -Link 313 290 "ControlDevice"
 -Link 319 216 "ControlDevice"
@@ -109,6 +133,16 @@ ObjProp 280 "Scripts"
 	"" true
 }
 -Link 291 313 "ControlDevice"
+ObjProp 291 "Position"
+{
+	"Location" 502.4, 333, 377.7
+	"Heading" c000
+}
+-ObjProp 291 "PhysType"
++ObjProp 291 "PhysType"
+{
+	"Type" OBB
+}
 +ObjProp 291 "CfgTweqJoints"
 {
 	"Halt" Stop Tweq
@@ -116,7 +150,7 @@ ObjProp 280 "Scripts"
 	"MiscC" Scripts
 	"Primary Joint" 1
 	"Joint1AnimC" Sim
-	"    rate-low-high" 15, 0, 90
+	"    rate-low-high" 15, 0, 75
 }
 +ObjProp 291 "CfgTweqModels"
 {
@@ -125,6 +159,15 @@ ObjProp 280 "Scripts"
 	"MiscC" AnchorVhot
 	"Rate" 1
 	"Model 0" ironlev
+}
++ObjProp 294 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+-Link 294 312 "ControlDevice"
+ObjProp 294 "Scripts"
+{
+	"Script 1" NVMetaTrap
 }
 +ObjProp 311 "StackCount"
 {
@@ -222,8 +265,10 @@ ObjProp 598 "Scripts"
 +Receptron 603 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -2369
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
@@ -232,8 +277,10 @@ ObjProp 598 "Scripts"
 ++Receptron 603 "EarthStim"
 {
 	Max None
+
 	Target 602
 	Agent -2369
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
@@ -242,8 +289,10 @@ ObjProp 598 "Scripts"
 ++Receptron 603 "EarthStim"
 {
 	Max None
+
 	Target 590
 	Agent -2369
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
@@ -268,10 +317,12 @@ ObjProp 598 "Scripts"
 {
 	"Script 0" TrapDestroy
 }
+
 //mantling
 +ObjProp 31 "PhysCanMant"
 {
 }
+
 //doors
 -ObjProp 34 "JointPos"
 -ObjProp 60 "JointPos"
@@ -299,6 +350,7 @@ ObjProp 321 "TransDoor"
 {
 	"" true
 }
+
 //scrolls
 +ObjProp 211 "DesignNote"
 {
@@ -318,11 +370,13 @@ ObjProp 521 "Scripts"
 	"Script 1" NVRelayTrap
 	"Script 2" ""
 }
-//conv
+
+//AI
 +ObjProp 218 "AI_Efficiency"
 {
 	"Enabled" false
 }
+
 //fish
 +ObjProp 282 "CombineType"
 {
@@ -335,4 +389,15 @@ ObjProp 521 "Scripts"
 +ObjProp 284 "CombineType"
 {
 	"" Sushi
+}
+
+//ladder
+ObjProp 464 "Position"
+{
+	"Location" 527.96, 366.1, 498.1
+}
+-ObjProp 464 "PhysType"
++ObjProp 464 "PhysType"
+{
+	"Type" OBB
 }

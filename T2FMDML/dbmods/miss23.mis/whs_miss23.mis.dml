@@ -1,0 +1,126 @@
+DML1
+
+//T2 FM: When Still... (The Mystery) by Eternauta / Fixes
+
+FINGERPRINT
+{
+	889 [501 604 -96]
+	524 [570 567 -92]
+	1060 [376 411 -78]
+	1019 [491 461 -116]
+	936 [272 527 9]
+	572 [385 504 -59]
+	375 [392 631 -91]
+	370 [287 502 -33]
+	QVAR "goal_target_6" == 203
+}
+
+//pickpocketing
+-Link 148 153 "ControlDevice"
+ObjProp 955 "TrapQVar"
+{
+	"" =2:DrSPocketCnt
+}
+
+//secrets
+-ObjProp 794 "DarkStat"
+-ObjProp 1192 "DarkStat"
+
+//chests
+ObjProp 18 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 882 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//lanterns
+-ObjProp 23 "PhysType"
+ObjProp 23 "Position"
+{
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+-ObjProp 530 "PhysType"
+ObjProp 530 "Position"
+{
+	"Heading" c000
+	"Pitch" 0
+	"Bank" 0
+}
+
+//AIs
+-ObjProp 30 "InvRendType"
+-ObjProp 386 "InvRendType"
+-ObjProp 418 "InvRendType"
+-ObjProp 424 "InvRendType"
+-ObjProp 473 "InvRendType"
+-ObjProp 493 "InvRendType"
+-ObjProp 525 "InvRendType"
+-ObjProp 597 "InvRendType"
+-ObjProp 645 "InvRendType"
+-ObjProp 646 "InvRendType"
+-ObjProp 671 "InvRendType"
+-ObjProp 673 "InvRendType"
+-ObjProp 748 "InvRendType"
+-ObjProp 946 "InvRendType"
+-ObjProp 947 "InvRendType"
+-ObjProp 952 "InvRendType"
+ObjProp 1083 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ""
+}
+ObjProp 1084 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ""
+}
+ObjProp 1085 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ""
+}
+
+//doors
+ObjProp 338 "TransDoor"
+{
+	"Open Position" -6.00
+}
++Receptron 437 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 437 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 649 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1029 "Material Tags"
+{
+}
+
+//silver nuggets
+ObjProp 775 "PickDist"
+{
+	"" 7.00
+}
+ObjProp 776 "PickDist"
+{
+	"" 7.00
+}

@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: DarkWood 2 by Shadowhide / Fixes
+
+FINGERPRINT
+{
+	334 [187 -15 1]
+	76 [-15 23 -34]
+	215 [77 -33 -2]
+	34 [2 2 -5]
+	546 [174 -24 8]
+	113 [180 -48 -3]
+	298 [45 62 0]
+	159 [68 18 -31]
+	QVAR "goal_target_0" == 395
+}
+
+//doors
++ObjProp 90 "ModelName"
+{
+	"" door92
+}
++ObjProp 90 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
++ObjProp 422 "ModelName"
+{
+	"" door92
+}
++ObjProp 422 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
+
+//objects
+-ObjProp 244 "PhysType"

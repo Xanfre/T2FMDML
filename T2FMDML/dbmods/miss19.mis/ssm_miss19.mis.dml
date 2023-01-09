@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Seven Shades Of Mercury by The Hammerite Imperium Team / Fix bookcase
+//T2 FM: The Seven Shades Of Mercury by The Hammerite Imperium Team / Fixes
 
 FINGERPRINT
 {
@@ -15,18 +15,117 @@ FINGERPRINT
 	QVAR "goal_target_3" == 1866
 }
 
-+ObjProp 2732 "CfgTweqDelete"
+//bookcase
++ObjProp 2732 "RenderType"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" Sim
-	"MiscC" None
-	"CurveC" None
-	"Rate" 0
+	"" Not Rendered
 }
-+ObjProp 2732 "StTweqDelete"
+
+//physics
+-ObjProp 268 "PhysType"
+Create -10343
 {
-	"AnimS" On
-	"MiscS" None
-	"Cur Time" 0
-	"Frame #" 0
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -167.48, 37.0493, 172.376
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 1526 "PhysType"
+Create -10343
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -362.856, 47.2595, 184.29
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+-ObjProp 1527 "PhysType"
+Create -10343
+{
+	-ObjProp "PhysType"
+	+ObjProp "Position"
+	{
+		"Location" -362.776, 32.9815, 184.29
+		"Heading" 4000
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
+
+//positions
+-ObjProp 120 "PhysType"
+ObjProp 120 "Position"
+{
+	"Location" 56.3907, -57.0746, 195.735
+}
++ObjProp 120 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 122 "PhysType"
+ObjProp 122 "Position"
+{
+	"Location" 56.757, -58.7905, 195.71
+}
++ObjProp 122 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1817 "Position"
+{
+	"Location" -279.171, -2.17743, 303.115
+}
+-ObjProp 1016 "PhysType"
+ObjProp 1016 "Position"
+{
+	"Location" -70.8146, -69.6102, 210.183
+}
+-ObjProp 715 "PhysType"
+ObjProp 715 "Position"
+{
+	"Location" -279.215, 2.61929, 304.426
+}
++ObjProp 715 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1744 "Position"
+{
+	"Location" 28.2582, 33.9068, 193.792
+}
+
+//tower
+-ObjProp 2872 "PhysType"
+ObjProp 2872 "Position"
+{
+	"Location" 28.1733, -28.0596, 250.572
+}
++ObjProp 2872 "PhysType"
+{
+	"Type" OBB
 }

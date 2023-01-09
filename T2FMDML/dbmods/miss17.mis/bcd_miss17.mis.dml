@@ -1,0 +1,59 @@
+DML1
+
+//T2 FM: Behind Closed Doors by Nick Dablin (nicked) / Fixes
+
+FINGERPRINT
+{
+	715 [48 100 489]
+	1750 [-110 69 496]
+	1965 [273 -27 478]
+	1655 [234 -64 488]
+	2204 [-93 476 495]
+	2009 [-131 496 475]
+	2124 [-124 467 497]
+	2394 [273 -31 477]
+	QVAR "goal_target_11" == 2428
+}
+
+//keys / locks
++ObjProp 2095 "StackCount"
+{
+}
++ObjProp 2591 "StackCount"
+{
+}
++ObjProp 4028 "StackCount"
+{
+}
++ObjProp 4044 "StackCount"
+{
+}
++ObjProp 4343 "StackCount"
+{
+}
++ObjProp 4640 "StackCount"
+{
+}
++ObjProp 5023 "StackCount"
+{
+}
+ObjProp 5023 "KeySrc"
+{
+	"LockID" 5
+}
+ObjProp 5020 "KeyDst"
+{
+	"LockID" 5
+}
+ObjProp 5024 "KeyDst"
+{
+	"LockID" 5
+}
+ObjProp 5027 "KeyDst"
+{
+	"LockID" 5
+}
+ObjProp 5037 "KeyDst"
+{
+	"LockID" 5
+}

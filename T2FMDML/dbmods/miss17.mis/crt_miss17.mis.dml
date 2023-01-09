@@ -1,0 +1,96 @@
+DML1
+
+//T2 FM: Crooked Town by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	254 [300 876 -296]
+	586 [6 606 -159]
+	112 [435 664 -35]
+	410 [218 863 -227]
+	89 [497 642 -26]
+	278 [213 959 -201]
+	683 [-132 677 -138]
+	589 [83 613 -167]
+	QVAR "goal_target_2" == 296
+}
+
+//secrets
++ObjProp 195 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+-ObjProp 195 "DarkStat"
+-ObjProp 196 "Darkstat"
+-ObjProp 560 "DarkStat"
+ObjProp 560 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+	"Script 2" ""
+}
+
+//pickpockets
+-Link 412 679 "ControlDevice"
+
+//doors
++ObjProp 512 "ModelName"
+{
+	"" door92
+}
++ObjProp 512 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
++ObjProp 566 "ModelName"
+{
+	"" door92
+}
++ObjProp 566 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
++ObjProp 570 "ModelName"
+{
+	"" door92
+}
++ObjProp 570 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
++ObjProp 574 "ModelName"
+{
+	"" door92
+}
++ObjProp 574 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
++ObjProp 600 "ModelName"
+{
+	"" door92
+}
++ObjProp 600 "Scale"
+{
+	"" 1.0, 1.0, 0.875
+}
+//goals
++ObjProp 625 "NoDrop"
+{
+	"" true
+}
+
+//objects
+-ObjProp 689 "PhysType"
+ObjProp 689 "Position"
+{
+	"Location" -58.6378, 645.806, -132.645
+}
++ObjProp 519 "HasRefs"
+{
+	"" false
+}
++ObjProp 533 "HasRefs"
+{
+	"" false
+}

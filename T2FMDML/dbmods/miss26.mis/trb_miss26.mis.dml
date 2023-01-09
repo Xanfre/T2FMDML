@@ -1,0 +1,216 @@
+DML1
+
+//T2 FM: Tribal Breeze by Ticky and ScaryKitties / Fixes
+
+FINGERPRINT
+{
+	545 [-4 391 11]
+	455 [-78 364 12]
+	406 [49 382 -4]
+	1364 [-220 331 108]
+	932 [-166 263 97]
+	1491 [-160 257 103]
+	1613 [-192 310 111]
+	701 [-15 278 100]
+	QVAR "goal_target_0" == 392
+}
+
+#script "nvscript"
+
+//missing loot
+ObjProp 711 "Loot"
+{
+	"Gold" 0
+}
++Objprop 884 "Loot"
+{
+}
++Objprop 894 "Loot"
+{
+}
++Objprop 1040 "Loot"
+{
+}
++Objprop 1041 "Loot"
+{
+}
++Objprop 1334 "Loot"
+{
+}
++Objprop 1396 "Loot"
+{
+}
+Create -5576 "LootMask"
+{
+}
+ObjProp 266 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 266 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" Container
+	"Script 2" StdButton
+}
++ObjProp 266 "DesignNote"
+{
+	"" NVLinkBuilderOn="FrobWorldEnd"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkSource="[me]"; NVLinkBuilderLinkDest="LootMask"
+}
++ObjProp 266 "Loot"
+{
+}
++Link 691 266 "ControlDevice"
+{
+}
+ObjProp 581 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 581 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" Container
+	"Script 2" StdButton
+}
++ObjProp 581 "DesignNote"
+{
+	"" NVLinkBuilderOn="FrobWorldEnd"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkSource="[me]"; NVLinkBuilderLinkDest="LootMask"
+}
++ObjProp 581 "Loot"
+{
+}
++Link 692 581 "ControlDevice"
+{
+}
+ObjProp 1555 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 1555 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" Container
+	"Script 2" StdButton
+}
++ObjProp 1555 "DesignNote"
+{
+	"" NVLinkBuilderOn="FrobWorldEnd"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkSource="[me]"; NVLinkBuilderLinkDest="LootMask"
+}
++ObjProp 1555 "Loot"
+{
+}
++Link 1571 1555 "ControlDevice"
+{
+}
+Create -1977 "LootNecklace"
+{
+}
+ObjProp 358 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 358 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" Container
+	"Script 2" StdButton
+}
++ObjProp 358 "DesignNote"
+{
+	"" NVLinkBuilderOn="FrobWorldEnd"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkSource="[me]"; NVLinkBuilderLinkDest="LootNecklace"
+}
++ObjProp 358 "Loot"
+{
+}
++Link 683 358 "ControlDevice"
+{
+}
+ObjProp 586 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 586 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" Container
+	"Script 2" StdButton
+}
++ObjProp 586 "DesignNote"
+{
+	"" NVLinkBuilderOn="FrobWorldEnd"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkSource="[me]"; NVLinkBuilderLinkDest="LootNecklace"
+}
++ObjProp 586 "Loot"
+{
+}
++Link 684 586 "ControlDevice"
+{
+}
+ObjProp 1560 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 1560 "Scripts"
+{
+	"Script 0" NVLinkBuilder
+	"Script 1" Container
+	"Script 2" StdButton
+}
++ObjProp 1560 "DesignNote"
+{
+	"" NVLinkBuilderOn="FrobWorldEnd"; NVLinkBuilderLinkType="Contains"; NVLinkBuilderLinkSource="[me]"; NVLinkBuilderLinkDest="LootNecklace"
+}
++ObjProp 1560 "Loot"
+{
+}
++Link 1569 1560 "ControlDevice"
+{
+}
+
+//secrets
+-ObjProp 711 "DarkStat"
+
+//objects
++ObjProp 318 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+	"Script 1" NVRandomPropertyTrap
+}
++ObjProp 318 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysType"; NVSetPropertyTrapSubProperty="Type"; NVSetPropertyTrapValue=0; NVRandomPropertyTrapOn="Sim"; NVRandomPropertyTrapProperty="PhysControl"; NVRandomPropertyTrapSubProperty="Controls Active"; NVRandomPropertyTrapValue=24
+}
++ObjProp 205 "BlockFrob"
+{
+	"" true
+}
++ObjProp 206 "BlockFrob"
+{
+	"" true
+}
++ObjProp 207 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1493 "BlockFrob"
+{
+	"" true
+}
+ObjProp 819 "Position"
+{
+	"Heading" cfa4
+}
+Create -2789 "BarrelFix"
+{
+	+ObjProp "Position"
+	{
+		"Location" 51.5412, 252.116, 7.314
+	}
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0, 1, 2
+	}
+}
++Link "BarrelFix" 324 "ControlDevice"
+{
+}

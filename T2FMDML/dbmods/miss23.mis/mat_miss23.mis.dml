@@ -1,0 +1,71 @@
+DML1
+
+//T2 FM: TTGM: Making Tracks by Steven Hindley (Belboz) / Fixes
+
+FINGERPRINT
+{
+	605 [426 -102 10]
+	2175 [404 -187 37]
+	2182 [399 -179 35]
+	662 [197 -216 59]
+	1392 [216 -240 0]
+	1132 [387 -163 24]
+	704 [370 -296 8]
+	802 [52 -590 13]
+	QVAR "goal_target_5" == 1622
+}
+
+//Loot
+Create -1972 "FallingGem"
+{
+}
+ObjProp 2016 "CfgTweqEmit"
+{
+	"Emit what" FallingGem
+}
+
+//Death and Indy
++Receptron 1457 "PokeStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1457 "HolyStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1457 "LightBright"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1457 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1457 "NoFlash"
+{
+	"" true
+}
++Receptron 464 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 464 "KOGas"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 464 "NoFlash"
+{
+	"" true
+}

@@ -1,0 +1,99 @@
+DML1
+
+//T2 FM: When Still... (The Way) by Eternauta / Fixes
+
+FINGERPRINT
+{
+	1362 [-21 162 -28]
+	531 [-236 -13 3]
+	205 [-194 -162 -19]
+	516 [-128 31 6]
+	667 [-213 -9 -4]
+	615 [-199 -50 5]
+	100 [-71 33 -10]
+	992 [-137 93 6]
+	QVAR "goal_target_0" == 922
+}
+
+//pickpocketing
+-Link 1392 1391 "ControlDevice"
+
+//AIs
+ObjProp 81 "CretPose"
+{
+	"Ballistic" false
+}
+ObjProp 81 "Position"
+{
+	"Location" -220.8, 35.74, 27.71
+}
+ObjProp 276 "CretPose"
+{
+	"Ballistic" false
+}
+ObjProp 276 "Position"
+{
+	"Location" -194.8, -159.6, -18.1
+}
+-ObjProp 924 "InvRendType"
+-ObjProp 931 "InvRendType"
+-ObjProp 941 "InvRendType"
+-ObjProp 946 "InvRendType"
+-ObjProp 947 "InvRendType"
+-ObjProp 975 "InvRendType"
+-ObjProp 983 "InvRendType"
+-ObjProp 984 "InvRendType"
+-ObjProp 985 "InvRendType"
+-ObjProp 986 "InvRendType"
+-ObjProp 987 "InvRendType"
+-ObjProp 988 "InvRendType"
+-ObjProp 995 "InvRendType"
+-ObjProp 996 "InvRendType"
+-ObjProp 997 "InvRendType"
+-ObjProp 998 "InvRendType"
+-ObjProp 1019 "InvRendType"
+-ObjProp 1020 "InvRendType"
+-ObjProp 1105 "InvRendType"
+-ObjProp 1106 "InvRendType"
+-ObjProp 1130 "InvRendType"
+-ObjProp 1163 "InvRendType"
+-ObjProp 1172 "InvRendType"
+ObjProp 1353 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ccop
+}
+
+//chests
++ObjProp 772 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 791 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 881 "StTweqLock"
+{
+	"Target Angle" 0.00
+}
++ObjProp 1082 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1085 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1096 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1110 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1360 "JointPos"
+{
+	"Joint 1" 90.00
+}

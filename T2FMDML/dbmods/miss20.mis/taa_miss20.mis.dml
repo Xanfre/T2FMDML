@@ -1,0 +1,218 @@
+DML1
+
+//T2 FM: The Ashen Age by Marcus Zuppinger (Sliptip) / Fixes
+
+FINGERPRINT
+{
+	541 [61 86 -60]
+	903 [-44 -78 -75]
+	222 [-17 70 -40]
+	972 [-104 -90 -32]
+	605 [63 149 -70]
+	439 [-105 -108 -16]
+	561 [60 85 -60]
+	235 [42 83 -41]
+	QVAR "goal_target_4" == 957
+}
+
+//goals
++ObjProp 1052 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 1053 "TrapFlags"
+{
+	"" Once
+}
+
+//doors, windows
++Receptron 99 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 99 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 100 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 100 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 144 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 428 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 428 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 499 "BlockFrob"
+{
+	"" true
+}
+ObjProp 528 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 596 "BlockFrob"
+{
+	"" true
+}
++ObjProp 597 "BlockFrob"
+{
+	"" true
+}
++MetaProp 694 -2420
++MetaProp 995 -2420
++Receptron 1029 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1037 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1037 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 1065 "RotDoor"
+{
+	"Open Angle" 89
+}
+
+//AIs
++ObjProp 193 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 193 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 369 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 383 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 481 "AI_AlrtRsp"
+{
+	"Alert level" (2) Moderate
+	"Priority" Absolute
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-SittingDown
+}
++ObjProp 481 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 664 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew4
+}
++ObjProp 666 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
+
+//misplaced objects
+-ObjProp 112 "PhysType"
+ObjProp 112 "Position"
+{
+	"Location" -40, 108.15, -47
+}
++ObjProp 112 "PhysType"
+{
+	"Type" Sphere Hat
+}
+-ObjProp 113 "PhysType"
+ObjProp 113 "Position"
+{
+	"Location" -39, 125.5, -46
+}
++ObjProp 113 "PhysType"
+{
+	"Type" Sphere Hat
+}
++Receptron 115 "EarthStim"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+	"Prop Name" PhysControl
+	}
+}
++StimSource 115 "EarthStim"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 115 "PhysType"
+ObjProp 115 "Position"
+{
+	"Location" -40, 112.5, -47.02
+}
++ObjProp 115 "PhysType"
+{
+	"Type" Sphere Hat
+}
+-ObjProp 361 "PhysType"
+ObjProp 361 "Position"
+{
+	"Location" -38.4, 95, -30.2
+}
+ObjProp 405 "Scale"
+{
+	"" 0.65, 0.65, 0.83
+}
+ObjProp 408 "Scale"
+{
+	"" 0.65, 0.65, 0.83
+}
+
+//switches
+-Link 691 694 "ControlDevice"
++Link 789 691 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}

@@ -15,6 +15,7 @@ Amnesia
 Among Two Storms
 Arac Attack
 Ashcourt
+The Ashen Age
 Ashes and Dust
 Assault at the Gas Station
 Auldale Chess Tournament
@@ -26,11 +27,14 @@ Bane 1 - Keep of Deceit
 Bane 2 - Cult of the Damned
 A Bank Job
 The Bathhouse
+The Beginning of Era Karath-Din
+Behind Closed Doors
 The Blackheart's Recording
 Bloodmist Tower
 Bloodsport
 The Bloody Flounder's Inn
 Bloody Ruins
+The Bodysnatchers
 Book of Prophecy: Dead Letter Box
 Book of Prophecy: The Hidden City
 The Box
@@ -40,6 +44,7 @@ Breakout from Apocalypse Prison
 Bruder Snuck
 The Builder's Hammer
 Burglary in Blackbrook
+The Burrick's Head Inn
 Calendra's Legacy
 Carkess Escape
 Carneval
@@ -66,6 +71,7 @@ Conspiracies in the Dark
 Cragscright Prison
 The Creepy Temple
 Crom's Blade
+Crooked Town
 Cryptic Cravings
 The Cube
 Curiosity
@@ -76,22 +82,28 @@ Curse of the Hammerites
 CZSK Council
 Damsel in Distress
 Dancing with the Dead
+Dangerous Conditions
 Dark Messiah
 A Dark Night
+DarkWood 2
 Dead Flower
 The Dead of Winter
+The Deadly Triangle
 Death's Cold Embrace
 A Debt Repaid
 Dedicated to the People of TTLG
 Deep Trouble: City Under the Sea
+Defense Assassination 2
 Delford Abbey
 The Den
 The Diamond
 Doschtles Beginn
+Down with the Mechanists
 The Dream of Tyrus
 The Drop
 The Drymian Codex
 Dwelling Insanity
+Dyers' Eve
 Eastwater Bank Gold
 Easy Bank
 Elevator Mission
@@ -122,6 +134,7 @@ Gathering at the Inn
 Gearheart
 The Ghost House and The Haunted Hospital
 Ghost Town
+Godbreaker
 The Gold Skull of Lord Frobb
 The Good Samaritan
 Greenbay
@@ -137,6 +150,7 @@ The Haunting
 Heading Out
 Heartcliff Islands
 Heist Society
+Heretic
 Heretics and Pagans
 The Hidden Stone
 The Hightowne Museum
@@ -146,15 +160,18 @@ Horns of Canzo pt. 1: A Long way Up
 House of Random
 In dubio pro Garrett
 In These Enlightened Times
+Insanity's Crescendo
 Insurrection
 Island of Iron 1: Fortress of Steel
 Island of Iron 2: Confrontation
 JailBreak
 The Jarlson Manor
 The Jewel of Ghandar
-Just Friends part 1
+Just Friends Part 1
+Just Friends Part 1
 Just for Show
 The Karrassinian Threat
+Katharsis
 Keeper of the Prophecies
 A Keeper's Betrayal
 The Keepers are Thirsty
@@ -188,6 +205,7 @@ Mad as a Hatter
 Main Shock
 Mask of Agamemnon
 McLeod's Revenge
+Mech Angelo
 Mech Bank
 Meeting
 Memoirs of a Dead God
@@ -195,6 +213,7 @@ Merchant's Manor
 Midday Eclipse
 Midday Escape
 Mind Master
+Mistress Guennean's Castle
 A Mother's Love
 The Mountain Monastery
 Mr. J's Ring
@@ -212,6 +231,7 @@ Night Watch
 No More Clients for Monty
 Nostalgia
 Obligatory Prison Mission
+Of the Sinister Awakening
 Oh, l'amour
 Old Comrades, Old Debts
 An Old Friend
@@ -223,9 +243,11 @@ Pereira's Mansion
 A Pirate's Downfall
 Pirates Ahoy!
 Plagiarism
+The Plot Thickens
 Podroz do Krainy Biedakow
 Portisco Head
 Precarious Business
+Prisoner's Revenge
 Properly Paranoid
 Quamtotius Purgamentum
 The Quiet Heat
@@ -241,12 +263,15 @@ Relics
 Rescue!
 Retaliation
 Reunion with Basso
+The Revenge of Lt. Hagen
 The Rise of the Mechanists
 The Ritual
 Rosaries are Red
+Rose Cottage
 Rowena's Curse
 Ruined
 Ruins of Originia
+Rust Belt Prison
 Safe Haven
 The Saint
 Saints and Thieves
@@ -277,6 +302,7 @@ Stowaway
 Strife Campaign
 Stronghold
 The Suffer Catalyst
+The Sun Within and the Sun Without
 Sunset in Darkdale
 Swamped
 Temple of the Tides
@@ -295,6 +321,7 @@ Torn Apart
 Torner Island
 The Tower
 Treason and Plot
+Tribal Breeze
 TTGM: Chasm of the Lost
 TTGM: Errand Boy
 TTGM: Up Shit Creek
@@ -321,8 +348,10 @@ We Miss You, Bob!
 The Wedding of Lady Dark
 What Lies Below
 What a Drag!
+When Still...
 Whispers in the Desert
 Wicked Relics
+Wicked Webs We Weave
 Working the Mines
 Worlds Collide
 Zealot's Hollow

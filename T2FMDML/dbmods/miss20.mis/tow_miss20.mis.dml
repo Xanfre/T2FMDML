@@ -15,50 +15,292 @@ FINGERPRINT
 	QVAR "goal_target_1" == 592
 }
 
-//goal 9
+//starting point
+ObjProp 470 "Position"
+{
+	"Location" -94, -7, -29
+}
+
+//goals
 -Link 161 549 "ControlDevice"
 +Link 161 575 "ControlDevice"
 {
 }
-//secret
-+ObjProp 664 "PickDist"
++ObjProp 459 "DesignNote"
 {
-	"" 5.50
+	"" NVTrigQVarTDest="[Me]"
+}
++Link 459 294 "ControlDevice"
+{
+}
++ObjProp 459 "Scripts"
+{
+	"Script 0" NVTrigQVar
+	"Script 1" NVDeleteTrap
+}
++ObjProp 459 "TrapQVar"
+{
+	"" =1:mission_complete
+}
+ObjProp 547 "ScriptTiming"
+{
+	"" 500
+}
+-ObjProp 553 "PhysType"
++ObjProp 553 "PhysType"
+{
+	"Type" OBB
+}
+-Link 553 555 "ControlDevice"
+-Link 553 589 "ControlDevice"
+-Link 555 554 "ControlDevice"
+-Link 589 590 "ControlDevice"
+-Link 587 556 "ControlDevice"
++Link 587 554 "ControlDevice"
+{
+}
++Link 588 590 "ControlDevice"
+{
+}
++Link 588 556 "ControlDevice"
+{
+}
+
+//AIs
++ObjProp 9 "AI_Hearing"
+{
+	"" Null
+}
++ObjProp 9 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ""
+}
++ObjProp 529 "FrobInfo"
+{
+}
+
+//doors
++Receptron 14 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 73 "Scale"
+{
+	"" 1.05, 0.7, 1.05
+}
++ObjProp 84 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 145 "TransDoor"
++ObjProp 145 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 146 "TransDoor"
++ObjProp 146 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 147 "TransDoor"
++ObjProp 147 "BlockFrob"
+{
+	"" true
+}
++Receptron 228 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 260 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 263 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 300 "RotDoor"
+{
+	"Open Angle" 272
+}
+-ObjProp 344 "TransDoor"
++MetaProp 344 -2420
++Receptron 426 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 427 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+-ObjProp 475 "PhysType"
++ObjProp 475 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 597 "RotDoor"
+{
+	"Open Angle" 272
+}
+ObjProp 598 "RotDoor"
+{
+	"Open Angle" 272
+}
+-ObjProp 628 "TransDoor"
+-ObjProp 637 "TransDoor"
+-ObjProp 637 "PhysType"
++ObjProp 637 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 636 "PhysType"
++ObjProp 636 "PhysType"
+{
+	"Type" OBB
 }
 +ObjProp 665 "PickDist"
 {
-	"" 5.50
+	"" 6.00
 }
-+ObjProp 666 "PickDist"
+
+//misplaced objects
++Receptron 236 "Stench"
 {
-	"" 5.50
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
 }
-//pen holder
--ObjProp 236 "PhysType"
++StimSource 236 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
 ObjProp 236 "Position"
 {
-	"Location" -94.03, -33.108, -22.25
+	"Location" -94, -33, -22.25
 }
+-ObjProp 236 "PhysType"
 +ObjProp 236 "PhysType"
 {
-	"Type" Sphere
+	"Type" OBB
 }
-//doors
-+MetaProp 344 -2420
--ObjProp 344 "TransDoor"
--ObjProp 628 "TransDoor"
--ObjProp 637 "TransDoor"
-//banner
--ObjProp 393 "PhysType"
 ObjProp 393 "Position"
 {
-	"Location" -53.89, 20.92, -0.568
+	"Location" -53.89, 21, -0.57
 }
+-ObjProp 393 "PhysType"
 +ObjProp 393 "PhysType"
 {
 	"Type" OBB
 }
-//AI
-+ObjProp 529 "FrobInfo"
++ObjProp 677 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 677 "Scripts"
+ObjProp 677 "Position"
+{
+	"Location" -32.2, -1.1, -23.5
+}
+-ObjProp 677 "PhysType"
++ObjProp 677 "PhysType"
+{
+	"Type" OBB
+}
+
+//keys
++ObjProp 269 "StackCount"
 {
 }
++ObjProp 382 "StackCount"
+{
+}
++ObjProp 383 "StackCount"
+{
+}
++ObjProp 390 "StackCount"
+{
+}
++ObjProp 419 "StackCount"
+{
+}
++ObjProp 439 "StackCount"
+{
+}
++ObjProp 441 "StackCount"
+{
+}
++ObjProp 492 "StackCount"
+{
+}
++ObjProp 541 "StackCount"
+{
+}
++ObjProp 586 "StackCount"
+{
+}
++ObjProp 586 "GameName"
+{
+	"" Name_GuardsKey
+}
++ObjProp 599 "StackCount"
+{
+}
++ObjProp 686 "StackCount"
+{
+}
++ObjProp 686 "NoDrop"
+{
+	"" true
+}
+
+//containers
++ObjProp 507 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 1
+	"    rate-low-highJoint" 10, 0, 90
+}
++ObjProp 508 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 1
+	"    rate-low-highJoint" 10, 0, 90
+}
++ObjProp 729 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="FrobWorldEnd"; NVRemovePropertyTrapProp="FrobInfo"
+}
+ObjProp 729 "Scripts"
+{
+	"Script 1" NVRemovePropertyTrap
+}
+
+//bloodstain
+ObjProp 567 "CollisionType"
+{
+	"" None
+}
+
+//rope arrow
+-ObjProp 617 "PhysType"

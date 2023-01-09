@@ -1,0 +1,60 @@
+DML1
+
+// T2 FM: Wicked Webs We Weave by DarthsLair / Fixes
+
+FINGERPRINT
+{
+	177 [-70 60 10]
+	365 [-38 60 -11]
+	2189 [8 -12 18]
+	595 [52 141 7]
+	485 [11 -12 5]
+	871 [-45 122 -9]
+	1892 [98 -288 13]
+	1716 [-110 -161 38]
+	QVAR "goal_target_1" == 1518
+}
+
+#script "nvscript"
+
+//goal 19
+ObjProp 1030 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRelayTrap
+	"Script 2" ""
+}
++ObjProp 1030 "DesignNote"
+{
+	"" NVRelayTrapOn="Incapacitated" NVRelayTrapOff="Null"; NVRelayTrapTDest="failpresseen"
+}
+
+//bucket
++ObjProp 126 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}
++ObjProp 126 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
+
+//positions
+-ObjProp 1667 "PhysType"
+ObjProp 1667 "Position"
+{
+	"Location" -52.3921, 84.5154, 21.3918
+}
+-ObjProp 1236 "PhysType"
+ObjProp 1236 "Position"
+{
+	"Location" 49.7088, 34.0911, 36
+}
++ObjProp 1236 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 859 "Position"
+{
+	"Location" 53, -152, 19.884
+}

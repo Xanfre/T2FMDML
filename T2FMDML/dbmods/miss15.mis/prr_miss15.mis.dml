@@ -1,0 +1,345 @@
+DML1
+
+//T2 FM: Prisoner's Revenge by Jan Vitek (Vitus) & Adam Prenosil (Preno) / Fixes
+
+FINGERPRINT
+{
+	104 [-72 -68 -29]
+	195 [-82 -57 -28]
+	187 [-305 -71 -20]
+	239 [6 42 5]
+	62 [-73 -15 -15]
+	298 [-156 -43 -37]
+	289 [-142 -42 -37]
+	427 [-72 -66 -31]
+	QVAR "goal_target_0" == 119
+}
+
+#script "nvscript"
+
+//final goal
+Create -2086 "FG"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=138
+	}
+	+ObjProp "Position"
+	{
+		"Location" -265, -43, -19.5
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" NVLinkBuilder
+		"Script 1" TrigOBBPlayer
+		"Don't Inherit" true
+	}
+}
++ObjProp 134 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 134 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 134 "TrapQVar"
+{
+	"" =277:goal_target_0
+}
++Link 135 137 "ControlDevice"
+{
+}
++ObjProp 135 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 135 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
++Link 136 137 "ControlDevice"
+{
+}
++ObjProp 136 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 136 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++Link 137 "FG" "ControlDevice"
+{
+}
++ObjProp 137 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++ObjProp 138 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 138 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 138 "TrapQVar"
+{
+	"" =1:goal_state_0
+}
+
+//note
++ObjProp 492 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+}
++ObjProp 492 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVSelectTrap
+}
+
+//fireplaces
+ObjProp 35 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 39 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 48 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 53 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+
+//doors
+ObjProp 58 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 58 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 58 "PhysType"
++ObjProp 58 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 59 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 59 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 59 "PhysType"
++ObjProp 59 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 77 "FrobInfo"
+{
+}
++ObjProp 79 "FrobInfo"
+{
+}
++ObjProp 120 "Scale"
+{
+	"" 1.025, 1, 1
+}
+ObjProp 120 "Position"
+{
+	"Location" -165.8, -160.725, -36.5
+}
+-ObjProp 120 "PhysType"
++ObjProp 120 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 187 "RotDoor"
+{
+	"Open Angle" 271
+}
++Receptron 188 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 188 "Scale"
+-ObjProp 195 "Scale"
+-ObjProp 196 "Scale"
+-ObjProp 241 "Scale"
+-ObjProp 242 "Scale"
+ObjProp 202 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 202 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 202 "PhysType"
++ObjProp 202 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 208 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 208 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 208 "PhysType"
++ObjProp 208 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 232 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 232 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 232 "PhysType"
++ObjProp 232 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 232 "FrobInfo"
+{
+}
++ObjProp 264 "FrobInfo"
+{
+}
++ObjProp 481 "FrobInfo"
+{
+}
++ObjProp 481 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++MetaProp 481 -2422
+
+//buttons
++ObjProp 83 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 84 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 87 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 88 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 90 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 91 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 92 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 105 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 106 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 107 "PickDist"
+{
+	"" 5.00
+}
+
+//spike ceilings
++ObjProp 143 "Scale"
+{
+	"" 1, 1, 1.05
+}
++ObjProp 144 "Scale"
+{
+	"" 1, 1, 1.05
+}
++ObjProp 145 "Scale"
+{
+	"" 1, 1, 1.05
+}
+
+//beds
+-ObjProp 262 "PhysType"
++ObjProp 262 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 457 "PhysType"
++ObjProp 457 "PhysType"
+{
+	"Type" OBB
+}
+
+//keys
+ObjProp 322 "HasRefs"
+{
+	"" false
+}
+ObjProp 325 "HasRefs"
+{
+	"" false
+}
+ObjProp 401 "HasRefs"
+{
+	"" false
+}
+ObjProp 402 "HasRefs"
+{
+	"" false
+}
+
+//footlocker
++ObjProp 437 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//broadhead arrows
+-ObjProp 484 "PhysType"
+-ObjProp 490 "PhysType"
+-ObjProp 493 "PhysType"

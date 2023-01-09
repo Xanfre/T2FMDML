@@ -1,0 +1,19 @@
+DML1
+
+//T2 FM: Rust Belt Prison by John Denison (john9818a) / Fixes
+
+FINGERPRINT
+{
+	2362 [-96 -360 -17]
+	2391 [-148 -75 -31]
+	1795 [-166 -213 -31]
+	1902 [44 -155 -38]
+	1693 [-210 -73 -28]
+	342 [86 -215 -32]
+	1883 [72 -163 -38]
+	1154 [-142 -225 32]
+	QVAR "goal_target_8" == 2842
+}
+
+//pickpocketing
+-Link 2173 2172 "ControlDevice"

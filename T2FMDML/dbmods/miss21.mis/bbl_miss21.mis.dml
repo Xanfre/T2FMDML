@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Bad Blood by Terry DeLaney / Fixes
+//T2 FM: Bad Blood v3 by Terry DeLaney (Ricebug) / Fixes
 
 FINGERPRINT
 {
@@ -15,591 +15,1017 @@ FINGERPRINT
 	QVAR "goal_target_0" == 628
 }
 
-+Receptron 552 "PingStim"
+//loot
+ObjProp 1243 "Position"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
+	"Location" -240.5, 217.5, -9.1
+}
++ObjProp 1467 "ExtraLight"
+{
+	"Amount (-1..1)" 0.10
+	"Additive?" true
+}
+
+//secret
++ObjProp 1520 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++Link 1520 1484 "ControlDevice"
+{
+}
++ObjProp 1520 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+-ObjProp 1730 "DarkStat"
+ObjProp 1730 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+}
+-ObjProp 1730 "PhysType"
+ObjProp 1730 "Position"
+{
+	"Location" 212.84, 363.27, -60.9
+}
+
+//mantling
+Create -445 "Blocker"
+{
+	+ObjProp "CollisionType"
 	{
-		"Position" 121.07, 354.3, -69.84
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" -289.1, 367, -93
+		"Bank" c000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
 	}
 }
-+StimSource 552 "PingStim"
++ObjProp 76 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+StimSource 435 "PingStim"
++ObjProp 78 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 435 "PingStim"
++ObjProp 80 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 115.46, 354.3, -69.84
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+Receptron 550 "PingStim"
++ObjProp 81 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -2984
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 367.56, 311.94, -21.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 550 "PingStim"
++ObjProp 158 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 429 "PingStim"
++ObjProp 168 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -2987
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 373.34, 322.11, -21.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 429 "PingStim"
++ObjProp 169 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 1162 "PingStim"
++ObjProp 170 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 122.89, 299.93, -25.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 1162 "PingStim"
++ObjProp 171 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 977 "PingStim"
++ObjProp 208 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 123.65, 271.61, -25.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 977 "PingStim"
++ObjProp 213 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 973 "PingStim"
++ObjProp 225 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 123.65, 265.99, -25.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 973 "PingStim"
++ObjProp 226 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 771 "PingStim"
++ObjProp 264 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" -301.75, 257.86, -24.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 771 "PingStim"
++ObjProp 265 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 770 "PingStim"
++ObjProp 266 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" -306.3, 260.36, -24.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 770 "PingStim"
++ObjProp 267 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 769 "PingStim"
++ObjProp 268 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -138
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" -306.2, 265.49, -24.00
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 769 "PingStim"
++ObjProp 269 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-+Receptron 811 "PingStim"
++ObjProp 270 "PhysCanMant"
 {
-	Min 3
-	Max 7
-	Target -195
-	Agent 0
-	Effect "create_obj"
-	{
-		"Position" 243.7, 329.46, -25.49
-		"Heading" 0.00
-		"Pitch" 0.00
-		"Bank" 0.00
-	}
 }
-+StimSource 811 "PingStim"
++ObjProp 271 "PhysCanMant"
 {
-	Intensity 5
-	Propagator "Radius"
-	{
-		Life
-		{
-			"Flags" "[None]"
-			"Period" 5000
-			"Max Firings" 1
-			"Intensity Slope" 0.00
-		}
-		Shape
-		{
-			"Radius" 10.00
-			"Flags" "[None]"
-			"Dispersion" "Linear"
-		}
-	}
 }
-//Delete
-+ObjProp 436 "CfgTweqDelete"
++ObjProp 272 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 436 "StTweqDelete"
++ObjProp 273 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 437 "CfgTweqDelete"
++ObjProp 423 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 437 "StTweqDelete"
++ObjProp 581 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 1324 "CfgTweqDelete"
++ObjProp 589 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 1324 "StTweqDelete"
++ObjProp 601 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 1325 "CfgTweqDelete"
++ObjProp 602 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 1325 "StTweqDelete"
++ObjProp 658 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 1161 "CfgTweqDelete"
++ObjProp 659 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 1161 "StTweqDelete"
++ObjProp 687 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 1154 "CfgTweqDelete"
++ObjProp 690 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 1154 "StTweqDelete"
++ObjProp 691 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 1155 "CfgTweqDelete"
++ObjProp 692 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 1155 "StTweqDelete"
++ObjProp 693 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 957 "CfgTweqDelete"
++ObjProp 694 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 957 "StTweqDelete"
++ObjProp 695 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 822 "CfgTweqDelete"
++ObjProp 698 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 822 "StTweqDelete"
++ObjProp 699 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 824 "CfgTweqDelete"
++ObjProp 700 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 824 "StTweqDelete"
++ObjProp 740 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 752 "CfgTweqDelete"
++ObjProp 741 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 752 "StTweqDelete"
++ObjProp 742 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-+ObjProp 823 "CfgTweqDelete"
++ObjProp 743 "PhysCanMant"
 {
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
 }
-+ObjProp 823 "StTweqDelete"
++ObjProp 744 "PhysCanMant"
 {
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
 }
-//Other
--ObjProp 1243 "Position"
-+ObjProp 1243 "Position"
++ObjProp 749 "PhysCanMant"
 {
-	"Location" -241.07,217.89,-9.0
+}
++ObjProp 750 "PhysCanMant"
+{
+}
++ObjProp 757 "PhysCanMant"
+{
+}
++ObjProp 758 "PhysCanMant"
+{
+}
++ObjProp 840 "PhysCanMant"
+{
+}
++ObjProp 841 "PhysCanMant"
+{
+}
++ObjProp 847 "PhysCanMant"
+{
+}
++ObjProp 929 "PhysCanMant"
+{
+}
++ObjProp 930 "PhysCanMant"
+{
+}
++ObjProp 1474 "PhysCanMant"
+{
+}
++ObjProp 1766 "PhysCanMant"
+{
+}
++ObjProp 1767 "PhysCanMant"
+{
+}
+
+//doors, windows, floor
+-ObjProp 117 "Scale"
+-ObjProp 140 "Scale"
+-ObjProp 155 "Scale"
+-ObjProp 200 "Scale"
+-ObjProp 296 "Scale"
+-ObjProp 466 "Scale"
+-ObjProp 582 "Scale"
+-ObjProp 653 "Scale"
+-ObjProp 838 "Scale"
+-ObjProp 909 "Scale"
+-ObjProp 60 "PhysType"
++ObjProp 60 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 61 "PhysType"
++ObjProp 61 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 66 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 66 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 66 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 66 "PhysType"
++ObjProp 66 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 79 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
++MetaProp 98 -1629
+ObjProp 100 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
++ObjProp 135 "BlockFrob"
+{
+	"" true
+}
+ObjProp 137 "PickCfg"
+{
+	"Pins 1" 1
+}
+-ObjProp 137 "Scale"
++Receptron 167 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 167 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 167 "Scale"
+-ObjProp 250 "Scale"
+ObjProp 250 "Position"
+{
 	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
 }
-+ObjProp 1730 "Scripts"
+-ObjProp 250 "PhysType"
++ObjProp 250 "PhysType"
 {
-	"Script 3" Stdbutton
-}
-+ObjProp 1182 "CfgTweqDelete"
-{
-	"Halt" "Destroy Obj"
-	"AnimC" "Sim"
-	"MiscC" "[None]"
-	"CurveC" "[None]"
-	"Rate" 0
-}
-+ObjProp 1182 "StTweqDelete"
-{
-	"AnimS" "On"
-	"MiscS" "[None]"
-	"Cur Time" 0
-	"Frame #" 0
+	"Type" OBB
 }
 +ObjProp 320 "PhysAIColl"
 {
 	"" true
 }
--ObjProp 1730 "DarkStat"
++ObjProp 327 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 337 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 405 "Scale"
+{
+	"" 1, 1.2, 1
+}
++MetaProp 405 -1629
+ObjProp 465 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+-ObjProp 465 "Scale"
+ObjProp 465 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 465 "PhysType"
++ObjProp 465 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 473 "Scale"
+{
+	"" 1.05, 1.05, 1
+}
+ObjProp 473 "Position"
+{
+	"Location" 40.5, 468.9, -68
+}
+-ObjProp 473 "PhysType"
++ObjProp 473 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 480 "Scale"
++MetaProp 480 -1629
+-ObjProp 481 "Scale"
++MetaProp 481 -1629
+ObjProp 567 "TransDoor"
+{
+	"Open Position" 10.00
+}
+ObjProp 568 "TransDoor"
+{
+	"Open Position" -10.00
+}
+ObjProp 584 "PickCfg"
+{
+	"Pins 2" 1
+}
+-ObjProp 584 "Scale"
+ObjProp 605 "PickCfg"
+{
+	"Pins 1" 1
+	"Flags 1" None
+	"Pins 2" 1
+	"Flags 2" None
+	"LockBits 3" 10
+	"Pins 3" 1
+}
+-ObjProp 605 "Scale"
+-ObjProp 606 "Scale"
+ObjProp 606 "PickCfg"
+{
+	"Pins 1" 1
+	"Flags 1" None
+	"Pins 2" 1
+	"Flags 2" None
+	"Pins 3" 1
+	"Flags 3" None
+}
+ObjProp 625 "Scale"
+{
+	"" 1.05, 1.05, 1
+}
+ObjProp 625 "Position"
+{
+	"Location" 40.5, 479.9, -68
+}
+-ObjProp 625 "PhysType"
++ObjProp 625 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 626 "Scale"
+{
+	"" 1.05, 1.05, 1
+}
+ObjProp 626 "Position"
+{
+	"Location" 27.5, 468.9, -68
+}
+-ObjProp 626 "PhysType"
++ObjProp 626 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 627 "Scale"
+{
+	"" 1.05, 1.05, 1
+}
+ObjProp 627 "Position"
+{
+	"Location" 27.5, 479.9, -68
+}
+-ObjProp 627 "PhysType"
++ObjProp 627 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 657 "PhysType"
++ObjProp 657 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 689 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 730 "RotDoor"
+{
+	"Open Angle" 87
+}
++ObjProp 730 "BlockFrob"
+{
+	"" true
+}
++Link 730 928 "ScriptParams"
+{
+	"" Double
+}
+-ObjProp 819 "PhysType"
++ObjProp 819 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 833 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 841 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Link 841 840 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 846 "PickCfg"
+{
+	"Pins 1" 1
+}
+-ObjProp 846 "Scale"
+ObjProp 896 "Scale"
+{
+	"" 1.75, 1.75, 1
+}
+ObjProp 897 "Scale"
+{
+	"" 1.75, 1.75, 1
+}
+ObjProp 906 "TransDoor"
+{
+	"Open Position" -3.65
+}
+-ObjProp 906 "Scale"
++ObjProp 906 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 1
+	"    rate-low-highJoint" 30, 0, 90
+}
+ObjProp 925 "Scale"
+{
+	"" 1, 1, 0.875
+}
+-ObjProp 994 "PhysType"
++ObjProp 994 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 998 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 1003 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1005 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1006 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1140 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 1141 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 1142 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 1143 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+ObjProp 1174 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1174 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1174 "PhysType"
++ObjProp 1174 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1209 "BlockFrob"
+{
+	"" true
+}
++Receptron 1376 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1376 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 1376 "Scale"
++MetaProp 1376 -1629
++MetaProp 1636 -2420
++MetaProp 1731 -1629
++MetaProp 1732 -1629
+-ObjProp 1783 "JointPos"
++ObjProp 1783 "Locked"
+{
+	"" true
+}
+
+//switches
+-Link 74 46 "ControlDevice"
++Link 74 585 "ControlDevice"
+{
+}
+ObjProp 321 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 321 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 487 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 487 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
++ObjProp 634 "JointPos"
+{
+	"Joint 1" 0.70
+}
+ObjProp 634 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
++ObjProp 661 "PickDist"
+{
+	"" 4.50
+}
+ObjProp 1416 "TrapFlags"
+{
+	"" Invert, NoOff
+}
+
+//scrolls
++ObjProp 107 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 107 "Scripts"
+{
+	"Script 0" StdBook
+}
++ObjProp 206 "FrobInfo"
+{
+	"World Action" Script
+}
+ObjProp 206 "Scripts"
+{
+	"Script 0" StdBook
+	"Script 1" ""
+}
+-ObjProp 206 "PhysType"
+ObjProp 206 "Position"
+{
+	"Heading" 8000
+}
+ObjProp 575 "Position"
+{
+	"Heading" 8000
+}
++ObjProp 290 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 290 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 290 "TrapQVar"
+{
+	"" =290:goal_target_2
+}
++Link 291 915 "ControlDevice"
+{
+}
++ObjProp 291 "ScriptTiming"
+{
+	"" 200
+}
++ObjProp 291 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 295 937 "ControlDevice"
+{
+}
++ObjProp 295 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 295 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
+-Link 739 937 "ControlDevice"
+-Link 739 915 "ControlDevice"
++Link 739 291 "ControlDevice"
+{
+}
++Link 739 295 "ControlDevice"
+{
+}
+ObjProp 739 "Scripts"
+{
+	"Script 1" ""
+}
++ObjProp 1013 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 1013 "Scripts"
+{
+	"Script 0" StdBook
+}
+
+//misplaced objects
+ObjProp 436 "Position"
+{
+	"Location" 121, 354, -70
+}
+ObjProp 437 "Position"
+{
+	"Location" 115, 354, -70
+}
+ObjProp 752 "Position"
+{
+	"Location" -226.4, 256.9, -9
+}
+ObjProp 822 "Position"
+{
+	"Location" -306.4, 262, -24.35
+}
+ObjProp 824 "Position"
+{
+	"Location" -306.4, 266.4, -24.35
+}
+ObjProp 825 "Position"
+{
+	"Location" -307, 271.81, -18.1
+}
+-ObjProp 931 "PhysType"
+ObjProp 931 "Position"
+{
+	"Location" 219, 464.5, -80.95
+}
+ObjProp 957 "Position"
+{
+	"Location" -306.4, 257.6, -24.35
+}
+ObjProp 983 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 983 "PhysType"
++ObjProp 983 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 1014 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1014 "Stench"
+{
+	Max None
+
+	Target 823
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1014 "Stench"
+{
+	Max None
+
+	Target 1071
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1014 "Stench"
+{
+	Max None
+
+	Target 1161
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1014 "Stench"
+{
+	Max None
+
+	Target 337
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1014 "Stench"
+{
+	Max None
+
+	Target 657
+	Agent -1312
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 1014 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 1014 "GameName"
+{
+	"" Name_nephew
+}
+ObjProp 1071 "Position"
+{
+	"Location" -60, 214, -24.13
+}
+ObjProp 1154 "Position"
+{
+	"Location" 124, 271, -25
+}
+ObjProp 1155 "Position"
+{
+	"Location" 124, 265, -25
+}
+ObjProp 1182 "Position"
+{
+	"Location" 243.7, 328.8, -25.5
+}
+-ObjProp 1182 "PhysType"
++ObjProp 1182 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1302 "Position"
+{
+	"Location" 43, 464.8, -69.4
+}
+ObjProp 1305 "Position"
+{
+	"Location" 42.75, 465.2, -69.4
+}
+ObjProp 1464 "Position"
+{
+	"Location" 43.3, 465.2, -69.4
+}
+
+//AIs
++ObjProp 511 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 512 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 864 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1178 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 1328 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++Receptron 1427 "FireStim"
+{
+	Max None
+
+	Target Me
+	Agent 1014
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
+++Receptron 1427 "PokeStim"
+{
+	Max None
+
+	Target Me
+	Agent 1014
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
+++Receptron 1427 "SlashStim"
+{
+	Max None
+
+	Target Me
+	Agent 1014
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
+ObjProp 1427 "GameName"
+{
+	"" Name_Rapist: "Rapist"
+}
++ObjProp 1436 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 1566 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1567 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+
+//lights
++ObjProp 201 "PhysAIColl"
+{
+	"" false
+}
++ObjProp 585 "AnimLight"
+{
+	"Mode" minimum brightness
+	"millisecs to brighten" 63
+	"millisecs to dim" 63
+	"max brightness" 100.00
+	"radius (0 for infinite)" 40.00
+	"inner radius (0 for none)" 20.00
+}
++ObjProp 585 "LightColor"
+{
+	"hue" 0.00
+	"saturation" 1.00
+}
++ObjProp 585 "Scripts"
+{
+	"Script 0" AnimLight
+}
++ObjProp 585 "ModelName"
+{
+	"" mcredal2
+}
+ObjProp 585 "Position"
+{
+	"Location" 34.18, 494.19, -66.5
+	"Heading" c000
+}
+-ObjProp 585 "PhysType"
++ObjProp 585 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 987 -1629
++MetaProp 1183 -1629
+
+//banner
++ObjProp 932 "BlockFrob"
+{
+	"" true
+}
+
+//footlockers
++ObjProp 986 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 990 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1339 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1343 "JointPos"
+{
+	"Joint 1" 90.00
+}

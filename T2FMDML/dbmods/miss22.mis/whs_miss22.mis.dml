@@ -1,0 +1,259 @@
+DML1
+
+//T2 FM: When Still... (The Ritual) by Eternauta / Fixes
+
+FINGERPRINT
+{
+	104 [254 659 -58]
+	1488 [148 818 -36]
+	296 [86 779 -73]
+	814 [149 676 -74]
+	649 [113 665 -52]
+	806 [280 813 -56]
+	2137 [177 579 -67]
+	352 [331 774 -56]
+	QVAR "goal_target_0" == 1722
+}
+
+//pickpocketing
+ObjProp 99 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
+
+//secrets
+-ObjProp 1455 "DarkStat"
++ObjProp 1291 "DarkStat"
+{
+}
++ObjProp 1966 "DarkStat"
+{
+}
+
+//final goal
+-Link 1553 241 "ControlDevice"
+
+//AIs
+-ObjProp 11 "InvRendType"
+-ObjProp 12 "InvRendType"
+-ObjProp 92 "InvRendType"
+-ObjProp 154 "InvRendType"
+-ObjProp 268 "InvRendType"
+-ObjProp 979 "InvRendType"
+-ObjProp 1578 "InvRendType"
+-ObjProp 1697 "InvRendType"
+-ObjProp 1698 "InvRendType"
+-ObjProp 1704 "InvRendType"
+-ObjProp 1720 "InvRendType"
+-ObjProp 1724 "InvRendType"
+-ObjProp 1783 "InvRendType"
+-ObjProp 1786 "InvRendType"
+-ObjProp 1790 "InvRendType"
+-ObjProp 1796 "InvRendType"
+-ObjProp 1803 "InvRendType"
+-ObjProp 1806 "InvRendType"
+-ObjProp 1808 "InvRendType"
+-ObjProp 1810 "InvRendType"
+-ObjProp 1815 "InvRendType"
+-ObjProp 1820 "InvRendType"
+-ObjProp 1825 "InvRendType"
+-ObjProp 1826 "InvRendType"
+ObjProp 68 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hamprsca
+}
+ObjProp 84 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 93 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hamprsca
+}
+ObjProp 694 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" maggurca
+}
+ObjProp 699 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" maggurca
+}
+ObjProp 1688 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+ObjProp 1814 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+ObjProp 1848 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+ObjProp 1849 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+ObjProp 1863 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" maggurca
+}
+ObjProp 1873 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" maggurca
+}
+ObjProp 1874 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" maggurca
+}
+ObjProp 1876 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" maggurca
+}
+ObjProp 2089 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2096 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2099 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2103 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2105 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2108 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2111 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2122 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2123 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+ObjProp 2148 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+
+//chests
++ObjProp 116 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 835 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 936 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1186 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1297 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1385 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1387 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1608 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1637 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//doors
++MetaProp 244 -2420
++MetaProp 1484 -2420
+ObjProp 1100 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 1156 "RotDoor"
+{
+	"Open Angle" 89
+}
+
+//mantling
++ObjProp 992 "PhysCanMant"
+{
+}
++ObjProp 997 "PhysCanMant"
+{
+}
++ObjProp 1102 "PhysCanMant"
+{
+}
++ObjProp 1103 "PhysCanMant"
+{
+}
++ObjProp 1105 "PhysCanMant"
+{
+}
+
+//lantern
+-Link 1578 304 "CreatureAttachment"
+-ObjProp 304 "PhysType"
++Link 304 1578 "DetailAttachement"
+{
+	"Type" Joint
+	"joint" Left Fingers
+	"Flags" No Joint Rot
+}
+ObjProp 304 "Corona"
+{
+	"flags" Track Moving Object, Detail Attached Proxy
+}
+
+//rusty key
+-ObjProp 1691 "PickDist"

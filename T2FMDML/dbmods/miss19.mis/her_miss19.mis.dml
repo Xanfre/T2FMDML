@@ -1,0 +1,303 @@
+DML1
+
+//T2 FM: The Guard House (Heretic) by Terry DeLaney (Ricebug) / Fixes
+
+FINGERPRINT
+{
+	558 [-241 -98 22]
+	481 [-145 57 49]
+	401 [-361 12 6]
+	308 [-484 114 15]
+	276 [-338 267 21]
+	44 [-182 58 6]
+	532 [-129 -2 4]
+	187 [-352 188 22]
+	QVAR "goal_target_3" == 357
+}
+
+//pickpockets
+ObjProp 436 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}
+
+//secrets
+-ObjProp 578 "DarkStat"
+ObjProp 578 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+	"Script 2" ""
+}
+
+//doors
++Receptron 8 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 8 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 8 "FrobInfo"
++ObjProp 8 "BlockFrob"
+{
+	"" true
+}
++ObjProp 8 "PickDist"
+{
+	"" -6.00
+}
++Link 8 423 "ControlDevice"
+{
+}
++Link 8 421 "ControlDevice"
+{
+}
++Link 8 424 "ControlDevice"
+{
+}
++ObjProp 8 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+-ObjProp 8 "PhysType"
++ObjProp 8 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 23 "Locked"
+{
+	"" true
+}
++ObjProp 27 "PickDist"
+{
+	"" -5.00
+}
++MetaProp 27 -2420
+ObjProp 110 "TransDoor"
+{
+	"Open Position" 6.00
+}
++ObjProp 110 "Locked"
+{
+	"" true
+}
++MetaProp 110 -2420
+ObjProp 116 "TransDoor"
+{
+	"Open Position" 6.00
+}
++ObjProp 116 "Locked"
+{
+	"" true
+}
+-ObjProp 116 "Class Tags"
++MetaProp 116 -2420
+ObjProp 117 "TransDoor"
+{
+	"Open Position" 6.00
+}
++ObjProp 117 "Locked"
+{
+	"" true
+}
+-ObjProp 117 "Class Tags"
++MetaProp 117 -2420
+ObjProp 121 "TransDoor"
+{
+	"Open Position" 6.00
+}
++ObjProp 121 "Locked"
+{
+	"" true
+}
+-ObjProp 121 "Class Tags"
++MetaProp 121 -2420
+ObjProp 138 "TransDoor"
+{
+	"Open Position" 6.00
+}
++ObjProp 138 "Locked"
+{
+	"" true
+}
+-ObjProp 138 "Class Tags"
++MetaProp 138 -2420
+ObjProp 140 "TransDoor"
+{
+	"Open Position" 6.00
+}
++ObjProp 140 "Locked"
+{
+	"" true
+}
+-ObjProp 140 "Class Tags"
++MetaProp 140 -2420
++MetaProp 197 -2420
++MetaProp 207 -2420
++ObjProp 214 "PickDist"
+{
+	"" -5.00
+}
++ObjProp 227 "PickDist"
+{
+	"" -5.00
+}
+-ObjProp 395 "JointPos"
+ObjProp 395 "Scale"
+{
+	"" 1.25, 1.25, 1
+}
+
+//switches
+-Link 353 374 "ControlDevice"
+-Link 360 421 "ControlDevice"
+-Link 360 424 "ControlDevice"
+-Link 360 423 "ControlDevice"
+-Link 360 8 "ControlDevice"
++Link 360 8 "FrobProxy"
+{
+}
++ObjProp 375 "Locked"
+{
+	"" false
+}
++ObjProp 375 "Scripts"
+{
+	"Script 0" Lock
+}
+-Link 375 373 "ControlDevice"
++Link 420 373 "ControlDevice"
+{
+}
++Link 420 375 "Lock"
+{
+}
+-ObjProp 423 "DarkStat"
++Link 423 -795 "SoundDescription"
+{
+}
+ObjProp 423 "Position"
+{
+	"Location" -33.3, 5.43, 57.5
+}
++ObjProp 423 "Scripts"
+{
+	"Script 0" AmbientSounds
+}
++ObjProp 424 "TrapFlags"
+{
+	"" Once
+}
+ObjProp 139 "Position"
+{
+	"Location" -147.43, -87.5, 27
+}
+-ObjProp 139 "PhysType"
++ObjProp 139 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 378 "Position"
+{
+	"Location" -147.43, -82.5, 27
+}
+-ObjProp 378 "PhysType"
++ObjProp 378 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 421 "Position"
+{
+	"Location" -18.57, 0, 60.5
+}
+ObjProp 422 "Position"
+{
+	"Location" -76.5, -140.43, 28.5
+}
+-ObjProp 422 "PhysType"
++ObjProp 422 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 510 "Position"
+{
+	"Location" -356.57, 275, 20
+}
+-ObjProp 510 "PhysType"
++ObjProp 510 "PhysType"
+{
+	"Type" OBB
+}
+
+//footlockers
++ObjProp 347 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 415 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 520 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//AIs
++ObjProp 349 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 350 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 354 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 356 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 357 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 357 "GameName"
+{
+	"" Name_Foster: "Foster"
+}
+
+//scroll
+-Link 397 413 "ControlDevice"
+-Link 397 412 "ControlDevice"
++Link 397 396 "ControlDevice"
+{
+}
++Link 396 413 "ControlDevice"
+{
+}
++Link 396 412 "ControlDevice"
+{
+}
++ObjProp 396 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+
+//broken staff
++ObjProp 513 "StackCount"
+{
+}

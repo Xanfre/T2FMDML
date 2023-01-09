@@ -1,0 +1,19 @@
+DML1
+
+//T2 FM: Of the Sinister Awakening by Ali Pouladi (Haplo) / Fixes
+
+FINGERPRINT
+{
+	637 [506 477 485]
+	258 [533 502 467]
+	585 [497 607 497]
+	400 [468 466 474]
+	438 [515 542 499]
+	631 [424 414 483]
+	627 [457 603 497]
+	412 [524 518 482]
+	QVAR "goal_target_5" == 613
+}
+
+//load new NVScript
+#script "nvscript"

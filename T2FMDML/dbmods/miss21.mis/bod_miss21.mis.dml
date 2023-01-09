@@ -1,0 +1,112 @@
+DML1
+
+//T2 FM: The Bodysnatchers by DarkShadow / Fixes
+
+FINGERPRINT
+{
+	502 [-460 128 -160]
+	724 [-739 44 -142]
+	443 [-460 -64 -161]
+	475 [-509 29 -155]
+	823 [-731 19 -143]
+	1048 [-535 50 -146]
+	188 [-233 -4 -57]
+	1096 [-658 7 -70]
+	QVAR "goal_target_8" == 1193
+}
+
+//pickpockets
+Link 221 229 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 229 "HasRefs"
+{
+	"" false
+}
+Link 1193 1243 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1243 "HasRefs"
+{
+	"" false
+}
++ObjProp 1193 "MeshAttach"
+{
+	"attached obj 1" 1243
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 20000
+	"offset" 0.5, -1.4, -0.08
+	"attached obj 2" 0
+	"joint of skeleton"[1] 0
+	"x angle (0-65535)"[1] 0
+	"y angle (0-65535)"[1] 0
+	"z angle (0-65535)"[1] 0
+	"offset"[1] 0, 0, 0
+	"attached obj 3" 0
+	"joint of skeleton"[2] 0
+	"x angle (0-65535)"[2] 0
+	"y angle (0-65535)"[2] 0
+	"z angle (0-65535)"[2] 0
+	"offset"[2] 0, 0, 0
+	"attached obj 4" 0
+	"joint of skeleton"[3] 0
+	"x angle (0-65535)"[3] 0
+	"y angle (0-65535)"[3] 0
+	"z angle (0-65535)"[3] 0
+	"offset"[3] 0, 0, 0
+}
+Link 297 288 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 288 "HasRefs"
+{
+	"" false
+}
+ObjProp 297 "MeshAttach"
+{
+	"attached obj 1" 288
+	"joint of skeleton" 8
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 16384
+	"z angle (0-65535)" 9000
+	"offset" 0.24, 0.75, 0
+}
+++Receptron 304 "KOGas"
+{
+	Min None
+	Max None
+	Target 297
+	Effect "rem_prop"
+	{
+		"Prop Name" MeshAttach
+	}
+}
+++Receptron 304 "KOGas"
+{
+	Min None
+	Max None
+	Target 288
+	Effect "destroy_obj"
+}
+-Link 305 302 "ControlDevice"
+
+//objects
+ObjProp 290 "HasRefs"
+{
+	"" false
+}
++ObjProp 1104 "BlockFrob"
+{
+	"" true
+}
+
+//mantling
++ObjProp 1160 "PhysCanMant"
+{
+	"" false
+}

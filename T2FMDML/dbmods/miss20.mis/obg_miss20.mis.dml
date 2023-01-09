@@ -1,0 +1,759 @@
+DML1
+
+//T2 FM: Ominous Bequest Gold by Renzo Thonen (Eshaktaar) / Fixes
+
+FINGERPRINT
+{
+	518 [141 -1 5]
+	1559 [282 -17 24]
+	1466 [336 60 9]
+	1595 [290 -90 2]
+	759 [167 40 27]
+	1480 [199 77 2]
+	1950 [89 -6 -78]
+	2042 [10 14 -60]
+	QVAR "goal_target_16" == 2072
+}
+
+//doors
+-MetaProp 664 -2418
+-MetaProp 665 -2418
+-MetaProp 759 -2418
++MetaProp 970 -2420
++MetaProp 998 -2420
++MetaProp 1041 -2420
++MetaProp 1079 -2420
++MetaProp 1081 -2420
++MetaProp 1313 -2420
++MetaProp 1531 -2420
++MetaProp 1968 -2420
++MetaProp 1971 -2420
+ObjProp 37 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 177 "BlockFrob"
+{
+	"" true
+}
+ObjProp 195 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
++ObjProp 202 "BlockFrob"
+{
+	"" true
+}
++ObjProp 210 "BlockFrob"
+{
+	"" true
+}
+ObjProp 400 "RotDoor"
+{
+	"Open Angle" 88
+}
+ObjProp 491 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
++Receptron 781 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 783 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 796 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 797 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 868 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 868 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 868 "PhysType"
++ObjProp 868 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1138 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1143 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1144 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1181 "TransDoor"
+{
+	"Open Position" -4.50
+}
++MetaProp 1181 -2420
++ObjProp 1220 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1254 "RotDoor"
+{
+	"Open Angle" 274
+}
+ObjProp 1267 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+-ObjProp 1495 "PickBias"
++ObjProp 1495 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1556 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
++ObjProp 1557 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 1581 "Scale"
+-ObjProp 1582 "Scale"
+-ObjProp 1584 "Scale"
+-ObjProp 1661 "Scale"
++Receptron 1647 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1818 "Scale"
+{
+	"" 0.8, 0.8, 2
+}
++ObjProp 1819 "PickDist"
+{
+	"" 3.00
+}
+ObjProp 1882 "Scale"
+{
+	"" 1.75, 1.75, 1.75
+}
++MetaProp 1882 -2420
+-Link 1905 1920 "ControlDevice"
++Link 1905 1896 "ControlDevice"
+{
+}
+ObjProp 1905 "TrapFlags"
+{
+	"" Once, Invert
+}
+-Link 1906 1920 "ControlDevice"
++Link 1906 1896 "ControlDevice"
+{
+}
+ObjProp 1906 "TrapFlags"
+{
+	"" Once
+}
+-Link 1912 1896 "ControlDevice"
+ObjProp 1952 "Position"
+{
+	"Location" 75.5, -13, -75.75
+}
+-ObjProp 1952 "PhysType"
++ObjProp 1952 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 1952 -2420
+ObjProp 2317 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 2378 "BlockFrob"
+{
+	"" true
+}
+
+//banners, block
++ObjProp 787 "BlockFrob"
+{
+	"" true
+}
++ObjProp 928 "BlockFrob"
+{
+	"" true
+}
++ObjProp 2141 "BlockFrob"
+{
+	"" true
+}
+
+//quest items
++StimSource 1286 "Stench"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++Receptron 29 "Stench"
+{
+	Max 2
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++StimSource 1287 "Stench"
+{
+	Intensity 4
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++Receptron 1288 "Stench"
+{
+	Min 3
+	Max 5
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++Receptron 1291 "Stench"
+{
+	Min 6
+	Max 8
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++Receptron 1311 "Stench"
+{
+	Max 10
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 1311 "Stench"
+{
+	Max 10
+
+	Target 1367
+	Agent -22
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++StimSource 1317 "Stench"
+{
+	Intensity 9
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++StimSource 1332 "Stench"
+{
+	Intensity 11
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++StimSource 1365 "Stench"
+{
+	Intensity 7
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++Receptron 1367 "Stench"
+{
+	Max None
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+-ObjProp 1367 "FrobInfo"
++Receptron 1887 "Stench"
+{
+	Max 2
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++StimSource 1888 "Stench"
+{
+	Intensity 10
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++Receptron 1889 "Stench"
+{
+	Min 9
+	Max None
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++StimSource 1891 "Stench"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+
+//scrolls / goals
++Receptron 300 "Stench"
+{
+	Max None
+
+	Target 339
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 300 "Stench"
+{
+	Max None
+
+	Target 664
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 300 "Stench"
+{
+	Max None
+
+	Target 665
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 300 "Stench"
+{
+	Max None
+
+	Target 759
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 300 "Stench"
+{
+	Max None
+
+	Target 1818
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 300 "Stench"
+{
+	Max None
+
+	Target 2019
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 300 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 300 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 300 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 300 "TrapQVar"
+{
+	"" =300:goal_target_2
+}
++ObjProp 304 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 304 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++Link 1271 304 "ControlDevice"
+{
+}
++ObjProp 1271 "ScriptTiming"
+{
+	"" 200
+}
++ObjProp 1271 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
++Link 1272 1271 "ControlDevice"
+{
+}
++ObjProp 1373 "ScriptTiming"
+{
+	"" 1200
+}
++ObjProp 1373 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
++Link 1509 1878 "ControlDevice"
+{
+}
++Link 1509 1879 "ControlDevice"
+{
+}
++ObjProp 1878 "TransDoor"
+{
+	"Open Position" 0.20
+	"Base Speed" 10.00
+	"Axis" Z-Axis
+	"Blocks Vision?" false
+}
++ObjProp 1878 "Scripts"
+{
+	"Script 0" StdDoor
+}
+ObjProp 1878 "Position"
+{
+	"Location" 192.25, -31.75, 7.6
+}
+-ObjProp 1878 "PhysType"
++ObjProp 1878 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1879 "TransDoor"
+{
+	"Open Position" 0.20
+	"Base Speed" 10.00
+	"Axis" Z-Axis
+	"Blocks Vision?" false
+}
++ObjProp 1879 "Scripts"
+{
+	"Script 0" StdDoor
+}
+ObjProp 1879 "Position"
+{
+	"Location" 192.25, -31.75, 3.23
+}
+-ObjProp 1879 "PhysType"
++ObjProp 1879 "PhysType"
+{
+	"Type" OBB
+}
++Link 2347 1876 "ControlDevice"
+{
+}
+
+//AIs
++ObjProp 1006 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+-Receptron 1654 "FireStim" 0021003B
++Receptron 1654 "PokeStim"
+{
+	Max None
+	Effect "Abort"
+}
++Receptron 1845 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1845 "AI_IdlRetOrg"
+{
+}
++Link 1845 1849 "AIPatrol"
+{
+}
++Link 1845 1848 "AIWatchObj"
+{
+	"Watch kind" Self entry
+	"Trigger: Radius" 3
+	"        Height" 8
+	"        Maximum alertness" (3) High
+	"Exit: Link kill option" After completion
+	"Response: Step 1" Frob object(Target Object,With Object)
+	"  Argument 1" 1880
+	"Response: Step 2" Script message(Message,MsgData1,MsgData2)
+	"  Argument 1"[1] PhantomEnd
+	"Response: Step 3" Frob object(Target Object,With Object)
+	"  Argument 1"[2] 1786
+}
+ObjProp 1846 "AI_Converation"
+{
+	"Conversation: Action 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"  Argument 1"[1] Add
+	"  Argument 2"[1] M-DoesPatrol
+	"Conversation: Action 2" Nothing()
+	"  Argument 1"[2] ""
+	"Actor"[3] Unused
+	"Conversation: Action 3" Nothing()
+	"  Argument 1"[3] ""
+	"Actor"[4] Unused
+	"Conversation: Action 4" Nothing()
+	"  Argument 1"[4] ""
+	"Actor"[5] Unused
+	"Conversation: Action 5" Nothing()
+	"  Argument 1"[5] ""
+	"Actor"[6] Unused
+	"Conversation: Action 0"[1] Nothing()
+	"  Argument 1"[6] ""
+	"Actor"[7] Unused
+	"Conversation: Action 1"[1] Nothing()
+	"  Argument 1"[7] ""
+}
++ObjProp 1847 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 1847 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Don't Inherit" true
+}
++Link 1849 1850 "AIPatrol"
+{
+}
++Link 1850 1848 "AIPatrol"
+{
+}
++ObjProp 1868 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 1869 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 1870 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 1871 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+
+//footlockers
++ObjProp 206 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 273 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 568 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 777 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1695 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 1695 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 1772 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2057 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//misplaced objects
+ObjProp 618 "Position"
+{
+	"Location" 176.13, -6.4, -22.5
+}
+-ObjProp 618 "PhysType"
++ObjProp 618 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1200 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1200 "PhysType"
++ObjProp 1200 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1201 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1201 "PhysType"
++ObjProp 1201 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1202 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1202 "PhysType"
++ObjProp 1202 "PhysType"
+{
+	"Type" OBB
+}
+
+//switch
+ObjProp 1393 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1393 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+
+//broadhead arrows
+-ObjProp 1712 "PhysType"
+-ObjProp 1713 "PhysType"
+-ObjProp 1714 "PhysType"
+-ObjProp 1715 "PhysType"
+-ObjProp 1716 "PhysType"
+
+//mantling
++ObjProp 1910 "PhysCanMant"
+{
+}
+-ObjProp 1910 "PhysType"
++ObjProp 1910 "PhysType"
+{
+	"Type" OBB
+}

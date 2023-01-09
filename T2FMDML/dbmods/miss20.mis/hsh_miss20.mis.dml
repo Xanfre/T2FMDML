@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Home Sweet Home by Lady Rowena / Fix deposit box 20 key
+//T2 FM: Home Sweet Home by Lady Rowena / Fixes
 
 FINGERPRINT
 {
@@ -15,20 +15,424 @@ FINGERPRINT
 	NAME 1782 "Gim"
 }
 
-#script "nvscript"
+//mantling
++ObjProp 48 "PhysCanMant"
+{
+}
++ObjProp 69 "PhysCanMant"
+{
+}
++ObjProp 83 "PhysCanMant"
+{
+}
 
+//doors
++ObjProp 45 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 45 1874 "ScriptParams"
+{
+	"" FrobInert
+}
+-ObjProp 45 "PhysType"
++ObjProp 45 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 53 "RotDoor"
+{
+	"Open Angle" 275
+}
+ObjProp 184 "Scale"
+{
+	"" 1.167, 1.167, 1
+}
+ObjProp 225 "RotDoor"
+{
+	"Open Angle" 273
+}
++ObjProp 309 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 309 "PhysType"
++ObjProp 309 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 314 "RotDoor"
+{
+	"Open Angle" 88
+	"Clockwise?" false
+}
+-Link 383 502 "ControlDevice"
++ObjProp 502 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
+ObjProp 502 "RotDoor"
+{
+	"Open Angle" 271
+}
++Link 694 2188 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 694 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 695 2737 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 695 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 698 2759 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 698 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 700 2739 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 700 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 701 2738 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 701 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 703 2746 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 703 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 704 2229 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 704 2230 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 704 2242 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 704 2243 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 704 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 706 2220 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 706 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 707 2744 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 707 2745 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 707 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 708 2743 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 708 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 710 2741 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 710 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++ObjProp 736 "Scale"
+{
+	"" 1.05, 1, 1.05
+}
+ObjProp 736 "Position"
+{
+	"Location" 8.1, 241.9, 0.2
+}
+-ObjProp 736 "PhysType"
++ObjProp 736 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 831 "Scale"
+{
+	"" 0.75, 0.75, 0.75
+}
++ObjProp 905 "BlockFrob"
+{
+	"" true
+}
++ObjProp 908 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 1088 "PhysType"
++ObjProp 1088 "PhysType"
+{
+	"Type" OBB
+}
++Link 1089 1088 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1089 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
+-ObjProp 1089 "PhysType"
++ObjProp 1089 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1294 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1298 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1299 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1300 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1335 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1447 "RotDoor"
+{
+	"Open Angle" 273
+	"Clockwise?" true
+}
+ObjProp 1447 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1447 "PhysType"
++ObjProp 1447 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1458 "TransDoor"
+{
+	"Open Position" 3.00
+	"Base Speed" 2.00
+	"Axis" Z-Axis
+	"Blocks Vision?" false
+}
+-ObjProp 1458 "RotDoor"
+-ObjProp 1458 "FrobInfo"
+ObjProp 1458 "Scripts"
+{
+	"Script 1" DoorFrobInert
+	"Script 2" ""
+}
++ObjProp 1465 "Locked"
+{
+}
++ObjProp 1487 "TrapFlags"
+{
+	"" Once
+}
+ObjProp 1489 "AI_Converation"
+{
+	"Conversation: Action 0" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Add
+	"   Argument 2" FrobInert
+	"   Argument 3" 1465
+	"Conversation: Action 2"[2] Frob object(Target Object,With Object)
+	"   Argument 1"[14] 2569
+	"   Argument 2"[14] ""
+	"   Argument 3"[14] ""
+	"Actor"[15] Unused
+	"Conversation: Action 3"[2] Nothing()
+	"   Argument 1"[15] ""
+	"   Argument 2"[15] ""
+	"   Argument 3"[15] ""
+	"Actor"[16] Unused
+	"Conversation: Action 4"[2] Nothing()
+	"   Argument 1"[16] ""
+}
++ObjProp 1501 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 1506 "RotDoor"
+{
+	"Open Angle" 273
+	"Clockwise?" true
+}
+ObjProp 1506 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 1506 "PhysType"
++ObjProp 1506 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1784 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 1784 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 1784 "PhysType"
++ObjProp 1784 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1786 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1786 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1786 "PhysType"
++ObjProp 1786 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1803 "TransDoor"
+{
+	"Open Position" 4.25
+	"Base Speed" 2.00
+	"Blocks Vision?" false
+	"Blocks Sound %" 100.00
+}
+-ObjProp 1803 "RotDoor"
+-ObjProp 1803 "PhysType"
++ObjProp 1803 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1874 "PickDist"
++ObjProp 1908 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 1908 2371 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 2188 694 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 2188 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
+-ObjProp 2211 "PickDist"
+-ObjProp 2216 "PickDist"
+-ObjProp 2229 "PickDist"
+-ObjProp 2230 "PickDist"
+-ObjProp 2242 "PickDist"
+-ObjProp 2243 "PickDist"
+-ObjProp 2739 "PickDist"
+-ObjProp 2741 "PickDist"
+-ObjProp 2743 "PickDist"
+-ObjProp 2744 "PickDist"
+-ObjProp 2745 "PickDist"
+-ObjProp 2746 "PickDist"
+
+//trap
++ObjProp 380 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
+-Link 572 380 "ControlDevice"
+-Link 575 572 "ControlDevice"
++Link 575 380 "ControlDevice"
+{
+}
++Link 2377 575 "ControlDevice"
+{
+}
+ObjProp 2377 "PickDist"
+{
+	"" 2.50
+}
+-Link 2384 602 "ControlDevice"
+
+//keys
++ObjProp 391 "NoDrop"
+{
+	"" true
+}
++ObjProp 568 "SlayResult"
+{
+}
++ObjProp 568 "NoDrop"
+{
+	"" true
+}
++ObjProp 590 "NoDrop"
+{
+	"" true
+}
 -Link 772 2514 "ControlDevice"
 -Link 772 2515 "ControlDevice"
 +Link 772 685 "ControlDevice"
 {
 }
-+ObjProp 685 "DesignNote"
++ObjProp 685 "ScriptTiming"
 {
-	"" NVRelayDelay=1500
+	"" 1500
 }
 +ObjProp 685 "Scripts"
 {
-	"Script 0" NVRelayTrap
+	"Script 0" TrapTimedRelay
 }
 +Link 685 2514 "ControlDevice"
 {
@@ -36,3 +440,370 @@ FINGERPRINT
 +Link 685 2515 "ControlDevice"
 {
 }
+-ObjProp 1451 "FrobInfo"
+ObjProp 1451 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+	"Script 1" TrigContained
+}
+-ObjProp 1569 "FrobInfo"
+ObjProp 1569 "Scripts"
+{
+	"Script 1" TrigContained
+}
+-ObjProp 1573 "FrobInfo"
+ObjProp 1573 "Scripts"
+{
+	"Script 1" TrigContained
+}
++ObjProp 2205 "SlayResult"
+{
+}
++ObjProp 2593 "TrapFlags"
+{
+	"" Once
+}
+-ObjProp 2598 "Scripts"
++ObjProp 2598 "SlayResult"
+{
+}
+
+//AIs
++ObjProp 591 "NoFlash"
+{
+	"" true
+}
++ObjProp 892 "AI_Hearing"
+{
+	"" Average
+}
++ObjProp 1018 "NoFlash"
+{
+	"" true
+}
++ObjProp 1472 "NoFlash"
+{
+	"" true
+}
++ObjProp 113 "PhysAIColl"
+{
+	"" true
+}
+-Link 234 1800 "ControlDevice"
+ObjProp 1800 "AnimLight"
+{
+	"Mode" zero brightness
+}
+ObjProp 1800 "StTweqModels"
+{
+	"AnimS" None
+}
+
+//switches
+ObjProp 1519 "Position"
+{
+	"Location" -23.31, 101.2, 11
+}
+-ObjProp 1519 "PhysType"
++ObjProp 1519 "PhysType"
+{
+	"Type" OBB
+}
+-Link 1795 1797 "FrobProxy"
+Link 1797 1795 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+-ObjProp 1797 "ExtraLight"
++ObjProp 1797 "PickDist"
+{
+	"" 5.00
+}
+-Link 1798 1818 "FrobProxy"
+Link 1818 1798 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++ObjProp 1818 "PickDist"
+{
+	"" 5.00
+}
+
+//scrolls
++Link 1698 1696 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 1698 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
++Link 1771 1698 "ControlDevice"
+{
+}
+ObjProp 2164 "Position"
+{
+	"Location" 61.575, 524.28, 7.18
+}
+-ObjProp 2164 "PhysType"
++ObjProp 2164 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 2165 "Position"
+{
+	"Location" 60.9, 522.64, 7.2
+}
+ObjProp 2540 "ScriptTiming"
+{
+	"" 2000
+}
+ObjProp 2541 "ScriptTiming"
+{
+	"" 1000
+}
+ObjProp 2547 "ScriptTiming"
+{
+	"" 2000
+}
+ObjProp 2548 "ScriptTiming"
+{
+	"" 1000
+}
+ObjProp 2613 "ScriptTiming"
+{
+	"" 3000
+}
++ObjProp 1856 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Inv Action" Script
+}
+ObjProp 1856 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 1856 "Scripts"
+{
+	"Script 0" StdBook
+	"Script 1" TrigWorldFrob
+}
+-Link 1910 2550 "ControlDevice"
+-Link 1910 2549 "ControlDevice"
+-Link 2549 2555 "ControlDevice"
+-Link 2550 2556 "ControlDevice"
++Link 2553 2555 "ControlDevice"
+{
+}
++Link 2553 2556 "ControlDevice"
+{
+}
+ObjProp 2553 "ScriptTiming"
+{
+	"" 2000
+}
+ObjProp 2558 "ScriptTiming"
+{
+	"" 1000
+}
+-Link 2371 2571 "ControlDevice"
+-Link 2371 2570 "ControlDevice"
+-Link 2371 2516 "ControlDevice"
+-Link 2516 1769 "ControlDevice"
+-Link 2570 1769 "ControlDevice"
+-Link 2571 1769 "ControlDevice"
+
+//incorrect physdims
+-ObjProp 428 "PhysType"
++ObjProp 428 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 429 "PhysType"
++ObjProp 429 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 630 "PhysType"
++ObjProp 630 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 658 "PhysType"
++ObjProp 658 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 984 "PhysType"
++ObjProp 984 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 985 "PhysType"
++ObjProp 985 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1093 "PhysType"
++ObjProp 1093 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1156 "PhysType"
++ObjProp 1156 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1172 "PhysType"
++ObjProp 1172 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1317 "PhysType"
++ObjProp 1317 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1326 "PhysType"
++ObjProp 1326 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1360 "PhysType"
++ObjProp 1360 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1402 "PhysType"
++ObjProp 1402 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1416 "PhysType"
++ObjProp 1416 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1566 "PhysType"
++ObjProp 1566 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1595 "PhysType"
++ObjProp 1595 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1597 "PhysType"
++ObjProp 1597 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1830 "PhysType"
++ObjProp 1830 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1861 "PhysType"
++ObjProp 1861 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1862 "PhysType"
++ObjProp 1862 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1863 "PhysType"
++ObjProp 1863 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1868 "PhysType"
++ObjProp 1868 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1969 "PhysType"
++ObjProp 1969 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2088 "PhysType"
++ObjProp 2088 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2089 "PhysType"
++ObjProp 2089 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2090 "PhysType"
++ObjProp 2090 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2091 "PhysType"
++ObjProp 2091 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2092 "PhysType"
++ObjProp 2092 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2093 "PhysType"
++ObjProp 2093 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2095 "PhysType"
++ObjProp 2095 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2108 "PhysType"
++ObjProp 2108 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2112 "PhysType"
++ObjProp 2112 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2129 "PhysType"
++ObjProp 2129 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2153 "PhysType"
++ObjProp 2153 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2231 "PhysType"
++ObjProp 2231 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2373 "PhysType"
++ObjProp 2373 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2768 "PhysType"
++ObjProp 2768 "PhysType"
+{
+	"Type" OBB
+}
+
+//junk
++ObjProp 1919 "InvType"
+{
+}
+
+//broadhead arrow
+-ObjProp 2706 "PhysType"

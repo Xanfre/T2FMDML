@@ -1,0 +1,177 @@
+DML1
+
+//T2 FM: The Burrick’s Head Inn VE/v2 (Contest 4) by Russ Robbins (Yandros) / Fixes
+
+FINGERPRINT
+{
+	823 [122 102 12]
+	688 [114 108 30]
+	602 [92 107 42]
+	486 [133 86 12]
+	259 [120 112 0]
+	390 [93 87 9]
+	637 [102 98 44]
+	492 [138 84 12]
+	QVAR "goal_target_3" == 556
+}
+
+//pickpocketing
++ObjProp 88 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 88 89 "ControlDevice"
+{
+}
++ObjProp 88 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-ObjProp 89 "PhysType"
++ObjProp 89 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 89 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 89 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
+
+//doors
++ObjProp 139 "FrobInfo"
+{
+}
++ObjProp 139 "BlockFrob"
+{
+	"" true
+}
++ObjProp 140 "BlockFrob"
+{
+	"" true
+}
++ObjProp 141 "BlockFrob"
+{
+	"" true
+}
++ObjProp 142 "BlockFrob"
+{
+	"" true
+}
++ObjProp 143 "BlockFrob"
+{
+	"" true
+}
++ObjProp 144 "BlockFrob"
+{
+	"" true
+}
+ObjProp 145 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 145 "BlockFrob"
+{
+	"" true
+}
++ObjProp 198 "BlockFrob"
+{
+	"" true
+}
++ObjProp 381 "BlockFrob"
+{
+	"" true
+}
++ObjProp 516 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 516 "PhysType"
++ObjProp 516 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 535 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 535 "PhysType"
++ObjProp 535 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 547 "PhysType"
++ObjProp 547 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 800 "PhysType"
++ObjProp 800 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 954 "BlockFrob"
+{
+	"" true
+}
++ObjProp 967 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 431 "JointPos"
+-ObjProp 949 "JointPos"
+-ObjProp 950 "JointPos"
+-ObjProp 1000 "JointPos"
+-ObjProp 1013 "PhysType"
++ObjProp 1013 "PhysType"
+{
+	"Type" OBB
+}
+
+//elevator
+ObjProp 123 "Position"
+{
+	"Location" 117.75, 109, 7.05
+}
+
+//arrows
+-ObjProp 392 "DeathStage"
+-ObjProp 483 "DeathStage"
+-ObjProp 484 "DeathStage"
+-ObjProp 666 "DeathStage"
+-ObjProp 727 "DeathStage"
+-ObjProp 728 "DeathStage"
+-ObjProp 729 "DeathStage"
+-ObjProp 733 "DeathStage"
+
+//pick distance
++ObjProp 556 "StackCount"
+{
+}
+-ObjProp 556 "PickDist"
+-ObjProp 658 "PickDist"
+-ObjProp 727 "PickDist"
+-ObjProp 728 "PickDist"
+-ObjProp 729 "PickDist"
+-ObjProp 732 "PickDist"
+-ObjProp 733 "PickDist"
+-ObjProp 734 "PickDist"
+-ObjProp 791 "PickDist"
+
+//AIs
++ObjProp 819 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xserfg
+}
++ObjProp 823 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 845 "AI_Hearing"
+{
+	"" Well Below Average
+}
