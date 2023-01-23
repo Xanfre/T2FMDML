@@ -28,7 +28,10 @@ FINGERPRINT
 +ObjProp 27 "PhysCanMant"
 {
 }
-+ObjProp 231 "PhysCanMant"
++ObjProp 63 "PhysCanMant"
+{
+}
++ObjProp 64 "PhysCanMant"
 {
 }
 +ObjProp 570 "PhysCanMant"
@@ -37,25 +40,86 @@ FINGERPRINT
 +ObjProp 848 "PhysCanMant"
 {
 }
-//shutters
+//doors, windows
+ObjProp 17 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
+ObjProp 18 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 18 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
+ObjProp 59 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
+ObjProp 60 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
 +Link 66 67 "ScriptParams"
 {
 	"" Double
 }
-+Link 79 93 "ScriptParams"
-{
-	"" Double
-}
-+Link 90 91 "ScriptParams"
-{
-	"" Double
-}
-//doors
 +Receptron 68 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
+}
+ObjProp 68 "Scale"
+{
+	"" 0.8, 0.8, 1
+}
+ObjProp 75 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
++Link 79 93 "ScriptParams"
+{
+	"" Double
+}
+ObjProp 82 "RotDoor"
+{
+	"Open Angle" 273
+}
+ObjProp 82 "Scale"
+{
+	"" 0.857, 0.857, 1.143
+}
+-Link 82 83 "ControlDevice"
+-Link 83 82 "ControlDevice"
+ObjProp 83 "Scale"
+{
+	"" 0.857, 0.857, 1.143
+}
++Link 90 91 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 90 "PhysCanMant"
+{
+}
++ObjProp 91 "PhysCanMant"
+{
+}
+ObjProp 92 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 92 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 92 "PhysType"
++ObjProp 92 "PhysType"
+{
+	"Type" OBB
 }
 +Receptron 96 "FireStim"
 {
@@ -63,12 +127,24 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
+ObjProp 127 "RotDoor"
+{
+	"Open Angle" 88
+}
+ObjProp 128 "RotDoor"
+{
+	"Open Angle" 89
+}
 -ObjProp 133 "PickCfg"
 +Receptron 133 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
+}
+ObjProp 133 "Scale"
+{
+	"" 0.667, 0.667, 0.8
 }
 +Receptron 161 "WeaponStim"
 {
@@ -95,7 +171,58 @@ FINGERPRINT
 	Effect "Abort"
 }
 +MetaProp 643 -2422
++ObjProp 644 "BlockFrob"
+{
+	"" true
+}
 +MetaProp 667 -2419
++Receptron 668 "Stench"
+{
+	Max None
+	Target Me
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 668 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 727 "BlockFrob"
+{
+	"" true
+}
++ObjProp 728 "BlockFrob"
+{
+	"" true
+}
++ObjProp 760 "BlockFrob"
+{
+	"" true
+}
++ObjProp 764 "BlockFrob"
+{
+	"" true
+}
++ObjProp 765 "BlockFrob"
+{
+	"" true
+}
++ObjProp 766 "BlockFrob"
+{
+	"" true
+}
++ObjProp 767 "BlockFrob"
+{
+	"" true
+}
++ObjProp 778 "BlockFrob"
+{
+	"" true
+}
 +Receptron 870 "FireStim"
 {
 	Min None
@@ -108,7 +235,52 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
-//DeathStage 12
+//switches / turbines
++ObjProp 121 "Scripts"
+{
+	"Script 0" TweqOnOff
+}
++Link 125 121 "ControlDevice"
+{
+}
++Link 125 129 "ControlDevice"
+{
+}
++ObjProp 129 "Scripts"
+{
+	"Script 0" ActivateAmbient
+}
+-Link 230 229 "ControlDevice"
+-Link 229 230 "ControlDevice"
++Link 229 230 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++ObjProp 257 "Scripts"
+{
+	"Script 0" TweqOnOff
+}
++ObjProp 258 "Scripts"
+{
+	"Script 0" ActivateAmbient
+}
++Link 259 257 "ControlDevice"
+{
+}
++Link 259 258 "ControlDevice"
+{
+}
++ObjProp 686 "PickDist"
+{
+	"" 5.00
+}
+-Link 687 690 "ControlDevice"
+-Link 690 687 "ControlDevice"
++Link 690 687 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+//deathstage
 -ObjProp 86 "DeathStage"
 -ObjProp 438 "DeathStage"
 -ObjProp 1119 "DeathStage"
@@ -128,6 +300,16 @@ ObjProp 1093 "AI_Hearing"
 +ObjProp 1099 "AI_Hearing"
 {
 	"" Well Below Average
+}
+ObjProp 1099 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+-ObjProp 1109 "DeathStage"
++ObjProp 1109 "PickDist"
+{
+	"" 6.00
 }
 +ObjProp 1131 "AI_Hearing"
 {
