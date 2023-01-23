@@ -17,22 +17,20 @@ FINGERPRINT
 
 //goals
 -Link 57 571 "ControlDevice"
-+ObjProp 39 "Scripts"
++ObjProp 180 "DiffTurnOn"
 {
-	"Script 0" TrigContained
+	"quest var values" 0, 1, 2
 }
-+Link 39 180 "ControlDevice"
-{
-}
-+Link 39 181 "ControlDevice"
++Link 180 181 "ControlDevice"
 {
 }
-+Link 39 182 "ControlDevice"
++Link 180 182 "ControlDevice"
 {
 }
 +ObjProp 180 "Scripts"
 {
-	"Script 0" TrapSetQVar
+	"Script 0" TrapRelay
+	"Script 1" TrapSetQVar
 }
 +ObjProp 180 "TrapQVar"
 {
@@ -55,12 +53,91 @@ FINGERPRINT
 	"" =4:goal_type_4
 }
 //doors
++Receptron 16 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 16 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
 +MetaProp 50 -2419
 +ObjProp 62 "BlockFrob"
 {
 	"" true
 }
-//toolbox key
-+ObjProp 579 "SlayResult"
++Receptron 81 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 102 "Scale"
+{
+	"" 0.75, 0.75, 1
+}
+ObjProp 195 "RotDoor"
+{
+	"Open Angle" 87
+}
++Receptron 515 "Stench"
+{
+	Max None
+	Target Me
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 515 "Stench"
+{
+	Max None
+	Target 51
+	Agent -2418
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 515 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 515 "Scale"
+{
+	"" 0.8, 0.8, 1
+}
++Receptron 605 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 605 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
+ObjProp 651 "Scale"
+{
+	"" 0.75, 0.75, 1
+}
+ObjProp 698 "Scale"
+{
+	"" 0.75, 0.75, 1
+}
+//chest
++ObjProp 432 "JointPos"
+{
+	"Joint 1" 90.00
+}
+//mantling
++ObjProp 504 "PhysCanMant"
+{
+}
++ObjProp 509 "PhysCanMant"
 {
 }
