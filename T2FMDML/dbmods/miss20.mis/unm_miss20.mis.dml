@@ -29,8 +29,8 @@ FINGERPRINT
 }
 +ObjProp 180 "Scripts"
 {
-	"Script 0" TrapRelay
-	"Script 1" TrapSetQVar
+	"Script 0" TrapSetQVar
+	"Script 1" TrapRelay
 }
 +ObjProp 180 "TrapQVar"
 {
