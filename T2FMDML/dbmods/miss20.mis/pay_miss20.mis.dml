@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Payback (Small Stock Resource Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes
+//T2 FM: Payback (SSR Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes
 
 FINGERPRINT
 {
@@ -16,6 +16,14 @@ FINGERPRINT
 }
 
 //goals
++ObjProp 313 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 313 "TrapQVar"
+{
+	"" =3:goal_state_4
+}
 +ObjProp 860 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -40,36 +48,144 @@ FINGERPRINT
 {
 	"" -14:goal_target_5
 }
++ObjProp 1027 "NoDrop"
+{
+	"" true
+}
 //doors
+ObjProp 15 "Scale"
+{
+	"" 0.8, 0.8, 1.125
+}
+ObjProp 16 "RotDoor"
+{
+	"Open Angle" 274
+}
++Receptron 19 "Stench"
+{
+	Max None
+	Target Me
+	Agent -1403
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 19 "Stench"
+{
+	Max None
+	Target 690
+	Agent -2425
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 19 "Stench"
+{
+	Max None
+	Target 655
+	Agent -5826
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 19 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
 +MetaProp 19 -2420
-+MetaProp 737 -2420
++ObjProp 94 "BlockFrob"
+{
+	"" true
+}
 ObjProp 201 "RotDoor"
 {
 	"Open Angle" 89
+}
+ObjProp 291 "Scale"
+{
+	"" 0.8, 0.8, 1.125
+}
+ObjProp 296 "Scale"
+{
+	"" 0.75, 0.75, 0.875
+}
+ObjProp 373 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 500 "RotDoor"
+{
+	"Open Angle" 272
+}
+ObjProp 646 "Scale"
+{
+	"" 1, 1, 0.595
+}
++MetaProp 646 -2420
+ObjProp 655 "Scale"
+{
+	"" 0.75, 0.75, 0.4285
 }
 +ObjProp 690 "BlockFrob"
 {
 	"" true
 }
-//AIs
-+ObjProp 313 "Scripts"
+-MetaProp 690 -2418
+-MetaProp 690 -2425
+ObjProp 735 "Scale"
 {
-	"Script 0" TrapSetQVar
+	"" 0.667, 0.667, 0.8
 }
-+ObjProp 313 "TrapQVar"
+ObjProp 736 "Scale"
 {
-	"" =3:goal_state_4
+	"" 0.667, 0.667, 0.8
+}
++MetaProp 737 -2420
+ObjProp 1251 "Scale"
+{
+	"" 1.143, 1.143, 1
+}
+//secrets
++ObjProp 480 "PickDist"
+{
+	"" 4.00
+}
++ObjProp 868 "PickDist"
+{
+	"" 4.00
+}
++ObjProp 1245 "PickDist"
+{
+	"" 2.00
+}
+//banner
++ObjProp 539 "BlockFrob"
+{
+	"" true
+}
+//AIs
++ObjProp 866 "PhysAIColl"
+{
+	"" true
 }
 +ObjProp 964 "AI_Hearing"
 {
 	"" Below Average
+}
++ObjProp 965 "AI_Hearing"
+{
+	"" None
 }
 +Link 965 313 "ControlDevice"
 {
 }
 ObjProp 965 "Position"
 {
-	"Location" 492.478, 395.896, 516.4
+	"Location" 492.5, 396, 516.4
 }
 +ObjProp 965 "Scripts"
 {
@@ -77,19 +193,14 @@ ObjProp 965 "Position"
 }
 +ObjProp 967 "AI_Hearing"
 {
-	"" Below Average
+	"" Well Below Average
 }
 ObjProp 978 "AI_Hearing"
 {
 	"" Well Below Average
 }
-//barrel
+//misplaced objects
 ObjProp 908 "Position"
 {
 	"Location" 529.27, 507.57, 493.87
-}
-//list
-+ObjProp 1027 "NoDrop"
-{
-	"" true
 }
