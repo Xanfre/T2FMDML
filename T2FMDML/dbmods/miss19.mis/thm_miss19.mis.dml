@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Hightowne Museum (Contest 2) by Jani Saarijarvi (Spitter) / Fix the hatch
+//T2 FM: The Hightowne Museum (Contest 2) by Jani Saarijarvi (Spitter) / Fixes
 
 FINGERPRINT
 {
@@ -15,11 +15,172 @@ FINGERPRINT
 	QVAR "goal_target_5" == 330
 }
 
+//doors
++Receptron 11 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
 ObjProp 11 "RotDoor"
 {
 	"Open Angle" 90
 	"Clockwise?" false
 }
++ObjProp 11 "BlockFrob"
+{
+	"" true
+}
 +ObjProp 11 "PhysCanMant"
 {
+}
+ObjProp 82 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 82 "BlockFrob"
+{
+	"" true
+}
+ObjProp 82 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 82 "PhysType"
++ObjProp 82 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 161 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 161 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 162 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 162 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 189 "BlockFrob"
+{
+	"" true
+}
++Receptron 213 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 227 "BlockFrob"
+{
+	"" true
+}
++ObjProp 228 "BlockFrob"
+{
+	"" true
+}
+ObjProp 275 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 304 "Scripts"
+{
+	"Don't Inherit" true
+}
+//lockboxes / switches
++Receptron 18 "Stench"
+{
+	Max None
+	Target 35
+	Agent Me
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
+-Link 19 36 "ControlDevice"
+ObjProp 19 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 19 "PhysType"
++ObjProp 19 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 35 "Stench"
+{
+	Max None
+	Target 18
+	Agent Me
+	Effect "add_prop"
+	{
+		"Prop Name" Locked
+	}
+}
+-Link 36 19 "ControlDevice"
+-Link 36 11 "ControlDevice"
++Link 36 19 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 36 "Position"
+{
+	"Pitch" 0
+}
+-ObjProp 36 "PhysType"
++ObjProp 36 "PhysType"
+{
+	"Type" OBB
+}
++StimSource 254 "Stench"
+{
+	Intensity 1
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+//AIs
++ObjProp 91 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 93 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 433 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+//banners
++ObjProp 5 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 71 "SlayResult"
+{
+	"Effect" Destroy
 }
