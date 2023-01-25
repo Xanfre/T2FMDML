@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Gearheart by Bronze Griffin / Fixes
+//T2 FM: Gearheart by Peter Crocker (Bronze Griffin) / Fixes
 
 FINGERPRINT
 {
@@ -16,6 +16,10 @@ FINGERPRINT
 }
 
 //final goal
++ObjProp 250 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
 +ObjProp 250 "Scripts"
 {
 	"Script 0" TrapSetQVar
@@ -24,35 +28,34 @@ FINGERPRINT
 {
 	"" =1:goal_final_1
 }
-+ObjProp 251 "Scripts"
+
+//door
+ObjProp 71 "RotDoor"
 {
-	"Script 0" TrapSetQVar
+	"Open Angle" 90
+	"Clockwise?" false
 }
-+ObjProp 251 "TrapQVar"
+ObjProp 71 "Position"
 {
-	"" =0:goal_state_1
+	"Heading" 8000
 }
-+Link 345 250 "ControlDevice"
+-ObjProp 71 "PhysType"
++ObjProp 71 "PhysType"
 {
+	"Type" OBB
 }
-+Link 345 251 "ControlDevice"
-{
-}
-+ObjProp 345 "Scripts"
-{
-	"Script 0" TrigContained
-}
+-ObjProp 160 "JointPos"
+-ObjProp 161 "JointPos"
+-ObjProp 246 "JointPos"
+-ObjProp 247 "JointPos"
+
 //keys
 -ObjProp 150 "PhysType"
 +ObjProp 341 "SlayResult"
 {
 }
-//doors
--ObjProp 160 "JointPos"
--ObjProp 161 "JointPos"
--ObjProp 246 "JointPos"
--ObjProp 247 "JointPos"
-//mechanist priest
+
+//AI
 +ObjProp 277 "InvRendType"
 {
 	"Type" Alternate Bitmap
