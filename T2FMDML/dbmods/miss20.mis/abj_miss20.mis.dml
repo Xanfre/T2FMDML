@@ -40,6 +40,7 @@ FINGERPRINT
 +ObjProp 848 "PhysCanMant"
 {
 }
+
 //doors, windows
 ObjProp 17 "Scale"
 {
@@ -179,8 +180,10 @@ ObjProp 133 "Scale"
 +Receptron 668 "Stench"
 {
 	Max None
+
 	Target Me
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -235,6 +238,7 @@ ObjProp 133 "Scale"
 	Max None
 	Effect "Abort"
 }
+
 //switches / turbines
 +ObjProp 121 "Scripts"
 {
@@ -280,14 +284,17 @@ ObjProp 133 "Scale"
 {
 	"FrobProxyMask" AllowDirect
 }
+
 //deathstage
 -ObjProp 86 "DeathStage"
 -ObjProp 438 "DeathStage"
 -ObjProp 1119 "DeathStage"
+
 //chests
 -ObjProp 146 "StTweqLock"
 -ObjProp 147 "StTweqLock"
 -ObjProp 1230 "StTweqLock"
+
 //AIs
 ObjProp 1093 "AI_Hearing"
 {
