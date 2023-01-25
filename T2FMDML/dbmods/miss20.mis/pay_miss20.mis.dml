@@ -52,6 +52,7 @@ FINGERPRINT
 {
 	"" true
 }
+
 //doors
 ObjProp 15 "Scale"
 {
@@ -64,8 +65,10 @@ ObjProp 16 "RotDoor"
 +Receptron 19 "Stench"
 {
 	Max None
+
 	Target Me
 	Agent -1403
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
@@ -74,8 +77,10 @@ ObjProp 16 "RotDoor"
 ++Receptron 19 "Stench"
 {
 	Max None
+
 	Target 690
 	Agent -2425
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -84,8 +89,10 @@ ObjProp 16 "RotDoor"
 ++Receptron 19 "Stench"
 {
 	Max None
+
 	Target 655
 	Agent -5826
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysDims
@@ -149,6 +156,7 @@ ObjProp 1251 "Scale"
 {
 	"" 1.143, 1.143, 1
 }
+
 //secrets
 +ObjProp 480 "PickDist"
 {
@@ -162,11 +170,13 @@ ObjProp 1251 "Scale"
 {
 	"" 2.00
 }
+
 //banner
 +ObjProp 539 "BlockFrob"
 {
 	"" true
 }
+
 //AIs
 +ObjProp 866 "PhysAIColl"
 {
@@ -199,6 +209,7 @@ ObjProp 978 "AI_Hearing"
 {
 	"" Well Below Average
 }
+
 //misplaced objects
 ObjProp 908 "Position"
 {
