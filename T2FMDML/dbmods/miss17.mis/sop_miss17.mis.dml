@@ -15,21 +15,43 @@ FINGERPRINT
 	QVAR "goal_target_6" == 505
 }
 
-//ankh (goal 1)
+//goals
+-Link 400 553 "ControlDevice"
++Link 461 553 "ControlDevice"
+{
+}
++ObjProp 461 "Scripts"
+{
+	"Script 0" TrigBrainDead
+}
+-Receptron 461 "Knockout"
+-Receptron 462 "Knockout"
++Link 462 553 "ControlDevice"
+{
+}
++ObjProp 462 "Scripts"
+{
+	"Script 0" TrigBrainDead
+}
+-Link 537 536 "ControlDevice"
+-Link 536 538 "ControlDevice"
+-Link 536 535 "ControlDevice"
++Link 536 538 "ControlDevice"
+{
+}
++Link 536 535 "ControlDevice"
+{
+}
++ObjProp 536 "TrapFlags"
+{
+	"" Once
+}
+
+//quest items
 ObjProp 47 "FrobInfo"
 {
 	"Inv Action" None
 }
-//doors
--ObjProp 160 "JointPos"
--ObjProp 458 "JointPos"
--ObjProp 475 "JointPos"
--ObjProp 529 "JointPos"
-ObjProp 367 "RotDoor"
-{
-	"Open Angle" 89
-}
-//powder keg
 +ObjProp 189 "StackCount"
 {
 }
@@ -40,36 +62,114 @@ ObjProp 367 "RotDoor"
 {
 	"Script 0" LootSounds
 }
-//fire arrow
--ObjProp 207 "DeathStage"
-//buckets
-+Receptron 322 "EarthStim"
+
+//doors
++MetaProp 145 -2420
+-ObjProp 160 "JointPos"
+-ObjProp 458 "JointPos"
+-ObjProp 475 "JointPos"
+-ObjProp 529 "JointPos"
+ObjProp 367 "RotDoor"
+{
+	"Open Angle" 89
+}
+
+//misplaced objects
+ObjProp 317 "Position"
+{
+	"Location" 472, 503, 508.53
+}
+-ObjProp 317 "PhysType"
++ObjProp 317 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 322 "Stench"
 {
 	Max None
+
 	Target Me
-	Agent 416
+	Agent -10
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
 	}
 }
-++Receptron 322 "EarthStim"
+++Receptron 322 "Stench"
 {
 	Max None
+
 	Target 352
-	Agent 416
+	Agent -10
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
 	}
 }
-+StimSource 322 "EarthStim"
+++Receptron 322 "Stench"
+{
+	Max None
+
+	Target 458
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 322 "Stench"
+{
+	Max None
+
+	Target 475
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 322 "Stench"
+{
+	Max None
+
+	Target 529
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 322 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
 }
-//scroll
 ObjProp 452 "Position"
 {
-	"Location" 540.446, 489.64, 502
+	"Location" 540.45, 489.65, 502
+}
+ObjProp 1031 "Position"
+{
+	"Location" 473.67, 502.34, 508.51
+}
+-ObjProp 1031 "PhysType"
++ObjProp 1031 "PhysType"
+{
+	"Type" OBB
+}
+
+//various objects
++ObjProp 17 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
+-ObjProp 207 "DeathStage"
++ObjProp 224 "JointPos"
+{
+	"Joint 1" 90.00
 }
