@@ -15,60 +15,188 @@ FINGERPRINT
 	QVAR "goal_target_3" == 361
 }
 
-//zombie (goal 6)
--Receptron 63 "BashStim"
--Receptron 63 "SlashStim"
-+Receptron 63 "BashStim"
+#script "nvscript"
+
+//goals
++ObjProp 63 "DesignNote"
 {
-	Min "None"
-	Max "None"
-	Target "Me"
-	Effect "damage"
-	{
-		"Damage Type" 0
-		"Use stimulus as type" false
-		"Multiply By" -1.00
-		"Then Add" 0
-	}
+	"" NVRelayTrapOn="Destroy"
 }
-+Receptron 63 "SlashStim"
+-ObjProp 63 "Scripts"
++ObjProp 63 "Scripts"
 {
-	Min "None"
-	Max "None"
-	Target "Me"
-	Effect "damage"
-	{
-		"Damage Type" 0
-		"Use stimulus as type" false
-		"Multiply By" -1.00
-		"Then Add" 0
-	}
+	"Script 0" NVRelayTrap
 }
-+Receptron 63 "WeaponStim"
++Link 562 565 "ControlDevice"
 {
-	Min "None"
-	Max "None"
-	Target "Me"
-	Effect "damage"
-	{
-		"Damage Type" 0
-		"Use stimulus as type" false
-		"Multiply By" -1.00
-		"Then Add" 0
-	}
 }
-//candlestick / flame
++ObjProp 565 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 567 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 570 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 571 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 575 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
+
+//candlesticks
+ObjProp 423 "FrobInfo"
+{
+	"World Action" None
+}
 +ObjProp 423 "Scripts"
 {
-	"Script 0" FrobSlay
+	"Script 0" AnimLight
+	"Don't Inherit" true
 }
++ObjProp 429 "DesignNote"
+{
+	"" NVFrobToggleState=1
+}
+-Link 429 423 "FrobProxy"
++Link 429 423 "ControlDevice"
+{
+}
++ObjProp 429 "Scripts"
+{
+	"Script 0" NVFrobToggle
+}
++ObjProp 506 "DesignNote"
+{
+	"" NVFrobToggleState=1
+}
+-Link 506 516 "FrobProxy"
++Link 506 516 "ControlDevice"
+{
+}
++ObjProp 506 "Scripts"
+{
+	"Script 0" NVFrobToggle
+}
+ObjProp 516 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 516 "Scripts"
+{
+	"Script 0" AnimLight
+	"Don't Inherit" true
+}
+
+//doors
++ObjProp 435 "BlockFrob"
+{
+	"" true
+}
++ObjProp 436 "BlockFrob"
+{
+	"" true
+}
++ObjProp 584 "BlockFrob"
+{
+	"" true
+}
++Receptron 584 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 584 "Stench"
+{
+	Max None
+
+	Target 362
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 584 "Stench"
+{
+	Max None
+
+	Target 946
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 584 "Stench"
+{
+	Max None
+
+	Target 435
+	Agent -2044
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 584 "Stench"
+{
+	Max None
+
+	Target 436
+	Agent -2044
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 584 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+
 //AI
 ObjProp 543 "AI_Hearing"
 {
 	"" Well Below Average
 }
-//secret door
-+ObjProp 584 "BlockFrob"
+
+//footlockers
++ObjProp 61 "JointPos"
 {
-	"" true
+	"Joint 1" 90.00
+}
++ObjProp 364 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//book
+ObjProp 946 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 946 "PhysType"
++ObjProp 946 "PhysType"
+{
+	"Type" OBB
 }
