@@ -15,18 +15,247 @@ FINGERPRINT
 	QVAR "goal_target_10" == 596
 }
 
-//fix rendering issue with a key
+//final goal
++ObjProp 10 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 10 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 10 "TrapQVar"
+{
+	"" =0:goal_irreversible_12
+}
+
+//quest items / keys
+-Link 56 540 "ControlDevice"
+-Link 57 539 "ControlDevice"
+-Link 407 554 "ControlDevice"
+-Link 534 330 "ControlDevice"
+-Link 535 525 "ControlDevice"
+-Link 539 538 "ControlDevice"
+-Link 540 476 "ControlDevice"
+-Link 554 543 "ControlDevice"
+-Link 595 537 "ControlDevice"
+-Link 770 535 "ControlDevice"
+-Link 775 534 "ControlDevice"
++ObjProp 330 "SlayResult"
+{
+}
++ObjProp 330 "NoDrop"
+{
+	"" true
+}
++ObjProp 476 "StackCount"
+{
+}
++ObjProp 476 "SlayResult"
+{
+}
++ObjProp 476 "NoDrop"
+{
+	"" true
+}
++ObjProp 525 "SlayResult"
+{
+}
++ObjProp 525 "NoDrop"
+{
+	"" true
+}
++ObjProp 537 "SlayResult"
+{
+}
++ObjProp 537 "NoDrop"
+{
+	"" true
+}
++ObjProp 537 "Class Tags"
+{
+}
++ObjProp 538 "SlayResult"
+{
+}
++ObjProp 538 "NoDrop"
+{
+	"" true
+}
 ObjProp 538 "HasRefs"
 {
 	"" false
 }
-//have a guard return to his original location when idle
-ObjProp 536 "Position"
++ObjProp 543 "SlayResult"
 {
-	"Location" 507.025, 490.074, 515.37
-	"Heading" bc69
 }
++ObjProp 543 "NoDrop"
+{
+	"" true
+}
++ObjProp 596 "Class Tags"
+{
+}
+ObjProp 596 "Scripts"
+{
+	"Script 0" TrigContained
+	"Script 1" ""
+}
++ObjProp 765 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 767 "FrobInfo"
+{
+	"World Action" Move
+}
+
+//doors
+ObjProp 355 "Scale"
+{
+	"" 1, 1, 0.5
+}
+ObjProp 361 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 361 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 361 "PhysType"
++ObjProp 361 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 463 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 463 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 463 "PhysType"
++ObjProp 463 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 446 -2420
++MetaProp 566 -2420
++MetaProp 572 -2420
+ObjProp 572 "RotDoor"
+{
+	"Open Angle" 89
+	"Clockwise?" false
+}
+ObjProp 572 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 572 "PhysType"
++ObjProp 572 "PhysType"
+{
+	"Type" OBB
+}
+
+//switches
+ObjProp 213 "Position"
+{
+	"Location" 497.2, 494.7, 489.3
+}
+-ObjProp 213 "PhysType"
++ObjProp 213 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 415 "Position"
+{
+	"Location" 480.3, 482.4, 502.8
+}
+-ObjProp 415 "PhysType"
++ObjProp 415 "PhysType"
+{
+	"Type" OBB
+}
+
+//AIs
++ObjProp 275 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmalsv02
+}
+ObjProp 400 "AI_Converation"
+{
+	"Conversation: Action 2"[5] Add link(Flavor,Destination(s),Source(s))
+	"   Argument 1"[32] AIPatrol
+	"   Argument 2"[32] 692
+	"Actor"[33] ActorTwo
+	"Conversation: Action 3"[5] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[33] Add
+	"   Argument 2"[33] M-DoesPatrol
+}
+Link 449 365 "AIWatchObj"
+{
+	"         Line requirement" Line of sight
+}
+-ObjProp 536 "AI_Patrol"
 ObjProp 536 "AI_IdlRetOrg"
 {
 	"" true
+}
+ObjProp 536 "Position"
+{
+	"Location" 507, 490, 515.4
+}
++ObjProp 668 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 687 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
+
+//sfx
+ObjProp 373 "ParticleGroup"
+{
+	"force matching unrefs" true
+}
+ObjProp 590 "ParticleGroup"
+{
+	"force matching unrefs" true
+}
+
+//footlockers
++ObjProp 51 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 438 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//fireplace
+ObjProp 629 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+
+//victrola
++ObjProp 667 "DesignNote"
+{
+	"" NVFrobToggleTDest="[Me]"
+}
++ObjProp 667 "Scripts"
+{
+	"Script 0" NVFrobToggle
+	"Script 1" NVAmbientSoundTrap
+	"Don't Inherit" true
 }
