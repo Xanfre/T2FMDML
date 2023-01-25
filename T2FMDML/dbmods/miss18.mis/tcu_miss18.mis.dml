@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_0" == 317
 }
 
-//pickpocketing
+//pickpockets
 +ObjProp 7 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -35,6 +35,7 @@ FINGERPRINT
 {
 	"" =0:DrSPocketCnt
 }
+
 //doors
 +MetaProp 150 -2420
 +MetaProp 747 -2420
@@ -44,16 +45,35 @@ FINGERPRINT
 +ObjProp 188 "PhysCanMant"
 {
 }
-//quest items
+-ObjProp 477 "Scripts"
+-ObjProp 539 "Scripts"
+-ObjProp 574 "Scripts"
+ObjProp 657 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 657 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 657 "PhysType"
++ObjProp 657 "PhysType"
+{
+	"Type" OBB
+}
+
+//quest items / keys
 +ObjProp 317 "StackCount"
 {
 }
 ++Receptron 348 "Fetish1Stim"
 {
-	Min 0
 	Max None
+
 	Target 439
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -65,10 +85,11 @@ FINGERPRINT
 }
 ++Receptron 356 "Fetish2Stim"
 {
-	Min 0
 	Max None
+
 	Target 440
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -80,10 +101,11 @@ FINGERPRINT
 }
 ++Receptron 371 "RedGStim"
 {
-	Min 0
 	Max None
+
 	Target 538
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -91,10 +113,11 @@ FINGERPRINT
 }
 ++Receptron 375 "GreenGStim"
 {
-	Min 0
 	Max None
+
 	Target 537
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -102,10 +125,11 @@ FINGERPRINT
 }
 ++Receptron 376 "BlueGStim"
 {
-	Min 0
 	Max None
+
 	Target 536
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -113,6 +137,19 @@ FINGERPRINT
 }
 -ObjProp 439 "PhysType"
 -ObjProp 440 "PhysType"
++ObjProp 84 "StackCount"
+{
+}
++ObjProp 403 "StackCount"
+{
+}
++ObjProp 560 "StackCount"
+{
+}
++ObjProp 674 "StackCount"
+{
+}
+
 //switches
 -Link 334 335 "ControlDevice"
 +Link 334 263 "ControlDevice"
@@ -121,32 +158,97 @@ FINGERPRINT
 ObjProp 334 "StTweqJoints"
 {
 	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
 }
+-Link 335 263 "ControlDevice"
 -Link 511 574 "ControlDevice"
 +Link 336 574 "ControlDevice"
 {
 }
-//chests
--ObjProp 507 "PhysType"
++ObjProp 578 "JointPos"
+{
+	"Joint 1" 0.70
+}
+ObjProp 578 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
+
+//AIs
++Receptron 118 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 190 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 377 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 464 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 465 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 466 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+
+//misplaced objects
+ObjProp 292 "Position"
+{
+	"Location" 76, 103, 127.81
+}
+ObjProp 293 "Position"
+{
+	"Location" 70, 101.25, 127.81
+}
 ObjProp 507 "Position"
 {
 	"Location" 113.5, 103.14, 97.4185
 }
+-ObjProp 507 "PhysType"
 +ObjProp 507 "PhysType"
 {
 	"Type" OBB
 }
--ObjProp 548 "PhysType"
 ObjProp 548 "Position"
 {
 	"Heading" 8000
 }
+-ObjProp 548 "PhysType"
 +ObjProp 548 "PhysType"
 {
 	"Type" OBB
 }
-//vase (loot)
+
+//various objects
+-ObjProp 75 "DeathStage"
+-ObjProp 547 "DeathStage"
 +ObjProp 770 "HitPoints"
 {
 	"" 100
 }
++ObjProp 710 "Material Tags"
+{
+}
+-ObjProp 818 "Material Tags"
