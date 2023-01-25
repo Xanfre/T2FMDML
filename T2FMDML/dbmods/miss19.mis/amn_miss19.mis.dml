@@ -36,7 +36,54 @@ ObjProp 555 "TrapQVar"
 {
 	"" =2:goal_state_2
 }
+
 //doors
+ObjProp 13 "RotDoor"
+{
+	"Open Angle" 272
+}
+ObjProp 14 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 14 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 14 "PhysType"
++ObjProp 14 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 15 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 15 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 15 "PhysType"
++ObjProp 15 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 31 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 31 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 31 "PhysType"
++ObjProp 31 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 46 "TransDoor"
 {
 	"Open Position" -2.85
@@ -44,25 +91,28 @@ ObjProp 46 "TransDoor"
 +ObjProp 48 "FrobInfo"
 {
 }
-//lockboxes
-+Receptron 255 "EarthStim"
+
+//lockboxes / keys
++Receptron 255 "Stench"
 {
-	Min 9
 	Max None
+
 	Target 297
 	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" Locked
 	}
 }
 -Link 297 255 "FrobProxy"
-+Receptron 297 "EarthStim"
++Receptron 297 "Stench"
 {
-	Min 9
 	Max None
+
 	Target 255
 	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" Locked
@@ -72,9 +122,10 @@ ObjProp 46 "TransDoor"
 {
 	"" true
 }
-+StimSource 302 "EarthStim"
++StimSource 302 "Stench"
 {
-	Intensity 10
+	Intensity 1
+
 	Propagator "Contact"
 	{
 		Shape
@@ -83,5 +134,28 @@ ObjProp 46 "TransDoor"
 		}
 	}
 }
-//pickpocketing
++ObjProp 302 "StackCount"
+{
+}
++ObjProp 301 "StackCount"
+{
+}
++ObjProp 375 "StackCount"
+{
+}
+
+//footlockers
++ObjProp 199 "FrobInfo"
+{
+}
++ObjProp 199 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 214 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//pickpockets
 -Link 517 636 "ControlDevice"
