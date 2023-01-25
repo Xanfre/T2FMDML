@@ -102,12 +102,15 @@ ObjProp 304 "Scripts"
 {
 	"Don't Inherit" true
 }
+
 //lockboxes / switches
 +Receptron 18 "Stench"
 {
 	Max None
+
 	Target 35
 	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" Locked
@@ -126,8 +129,10 @@ ObjProp 19 "Position"
 +Receptron 35 "Stench"
 {
 	Max None
+
 	Target 18
 	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" Locked
@@ -151,6 +156,7 @@ ObjProp 36 "Position"
 +StimSource 254 "Stench"
 {
 	Intensity 1
+
 	Propagator "Contact"
 	{
 		Shape
@@ -159,6 +165,7 @@ ObjProp 36 "Position"
 		}
 	}
 }
+
 //AIs
 +ObjProp 91 "InvRendType"
 {
@@ -175,6 +182,7 @@ ObjProp 36 "Position"
 	"Type" Alternate Bitmap
 	"Resource" cswgardm
 }
+
 //banners
 +ObjProp 5 "SlayResult"
 {
