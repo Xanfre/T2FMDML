@@ -28,39 +28,43 @@ FINGERPRINT
 {
 	"" =0:goal_state_0
 }
+
 //bug cloud
 -ObjProp 28 "DeathStage"
-//water talisman
+
+//quest items
 +ObjProp 65 "PickDist"
 {
 	"" 3.90
 }
++ObjProp 113 "DiffPermit"
+{
+	"quest var values" 2
+}
+
+//switches
+-Link 71 74 "ControlDevice"
++Link 71 75 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+
 //door
 +ObjProp 74 "BlockFrob"
 {
 	"" true
 }
-//spice
+
+//misplaced objects
 +ObjProp 110 "PickDist"
 {
 	"" 5.00
 }
 ObjProp 110 "Position"
 {
-	"Location" 109.024, 102, 2.378
+	"Location" 109, 102, 2.4
 }
-//medallion (expert only)
-+ObjProp 113 "DiffPermit"
-{
-	"quest var values" 2
-}
-//mask
 ObjProp 114 "Position"
 {
-	"Location" 109.366, 119.3, -14.265
-}
-//switches
-+Link 75 71 "FrobProxy"
-{
-	"FrobProxyMask" AllowDirect
+	"Location" 109.365, 119.3, -14.265
 }
