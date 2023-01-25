@@ -52,6 +52,7 @@ FINGERPRINT
 {
 	"" =4:goal_type_4
 }
+
 //doors
 +Receptron 16 "WeaponStim"
 {
@@ -85,8 +86,10 @@ ObjProp 195 "RotDoor"
 +Receptron 515 "Stench"
 {
 	Max None
+
 	Target Me
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -95,8 +98,10 @@ ObjProp 195 "RotDoor"
 ++Receptron 515 "Stench"
 {
 	Max None
+
 	Target 51
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -129,11 +134,13 @@ ObjProp 698 "Scale"
 {
 	"" 0.75, 0.75, 1
 }
+
 //chest
 +ObjProp 432 "JointPos"
 {
 	"Joint 1" 90.00
 }
+
 //mantling
 +ObjProp 504 "PhysCanMant"
 {
