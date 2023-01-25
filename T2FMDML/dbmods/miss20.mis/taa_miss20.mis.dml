@@ -15,17 +15,66 @@ FINGERPRINT
 	QVAR "goal_target_4" == 957
 }
 
-//goals
-+ObjProp 1052 "TrapFlags"
+//mantling
++ObjProp 14 "PhysCanMant"
 {
-	"" Once
 }
-+ObjProp 1053 "TrapFlags"
++ObjProp 16 "PhysCanMant"
 {
-	"" Once
+}
++ObjProp 20 "PhysCanMant"
+{
+}
++ObjProp 39 "PhysCanMant"
+{
+}
++ObjProp 795 "PhysCanMant"
+{
+}
+
+//goals
++ObjProp 67 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 67 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 67 "TrapQVar"
+{
+	"" =1:goal_reverse_5
+}
+-Link 42 491 "ControlDevice"
+-Link 712 979 "ControlDevice"
+-Link 712 957 "ControlDevice"
+-Link 712 963 "ControlDevice"
+-Link 714 969 "ControlDevice"
+-Link 957 963 "ControlDevice"
+-Link 969 482 "ControlDevice"
+-Link 969 958 "ControlDevice"
+-Link 969 713 "ControlDevice"
++Link 969 958 "ControlDevice"
+{
+}
++Link 969 482 "ControlDevice"
+{
+}
++Link 969 713 "ControlDevice"
+{
+}
+-ObjProp 969 "TrapFlags"
++ObjProp 969 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Don't Inherit" true
 }
 
 //doors, windows
+ObjProp 66 "RotDoor"
+{
+	"Open Angle" 271
+}
 +Receptron 99 "FireStim"
 {
 	Min None
@@ -56,6 +105,43 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
+ObjProp 144 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 144 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 144 "PhysType"
++ObjProp 144 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 148 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 148 "PhysType"
++ObjProp 148 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 252 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 252 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 252 "PhysType"
++ObjProp 252 "PhysType"
+{
+	"Type" OBB
+}
 +Receptron 428 "FireStim"
 {
 	Min None
@@ -67,6 +153,20 @@ FINGERPRINT
 	Min None
 	Max None
 	Effect "Abort"
+}
+ObjProp 443 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 450 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 450 "PhysType"
++ObjProp 450 "PhysType"
+{
+	"Type" OBB
 }
 +ObjProp 499 "BlockFrob"
 {
@@ -84,8 +184,41 @@ ObjProp 528 "RotDoor"
 {
 	"" true
 }
++MetaProp 671 -2419
+ObjProp 688 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 693 "RotDoor"
+{
+	"Open Angle" 271
+}
 +MetaProp 694 -2420
++MetaProp 703 -2419
 +MetaProp 995 -2420
+ObjProp 721 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 721 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 721 "PhysType"
++ObjProp 721 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 731 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 858 "StTweqLock"
+{
+	"AnimS" None
+}
 +Receptron 1029 "FireStim"
 {
 	Min None
@@ -140,6 +273,10 @@ ObjProp 1065 "RotDoor"
 	"Type" Alternate Bitmap
 	"Resource" cnoblem2
 }
+ObjProp 529 "Position"
+{
+	"Location" -104, -77, -17.6
+}
 +ObjProp 664 "InvRendType"
 {
 	"Type" Alternate Bitmap
@@ -152,25 +289,25 @@ ObjProp 1065 "RotDoor"
 }
 
 //misplaced objects
--ObjProp 112 "PhysType"
 ObjProp 112 "Position"
 {
 	"Location" -40, 108.15, -47
 }
+-ObjProp 112 "PhysType"
 +ObjProp 112 "PhysType"
 {
 	"Type" Sphere Hat
 }
--ObjProp 113 "PhysType"
 ObjProp 113 "Position"
 {
 	"Location" -39, 125.5, -46
 }
+-ObjProp 113 "PhysType"
 +ObjProp 113 "PhysType"
 {
 	"Type" Sphere Hat
 }
-+Receptron 115 "EarthStim"
++Receptron 115 "Stench"
 {
 	Max None
 
@@ -179,19 +316,19 @@ ObjProp 113 "Position"
 
 	Effect "add_prop"
 	{
-	"Prop Name" PhysControl
+		"Prop Name" PhysControl
 	}
 }
-+StimSource 115 "EarthStim"
++StimSource 115 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
 }
--ObjProp 115 "PhysType"
 ObjProp 115 "Position"
 {
 	"Location" -40, 112.5, -47.02
 }
+-ObjProp 115 "PhysType"
 +ObjProp 115 "PhysType"
 {
 	"Type" Sphere Hat
@@ -209,9 +346,58 @@ ObjProp 408 "Scale"
 {
 	"" 0.65, 0.65, 0.83
 }
+-ObjProp 409 "PhysType"
+ObjProp 409 "Position"
+{
+	"Heading" b800
+}
+ObjProp 839 "Position"
+{
+	"Location" -124.975, -104.5, -11
+}
+
+//chests
++ObjProp 379 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 650 "Position"
+{
+	"Location" 35.5, 134.2, -63.323
+}
+-ObjProp 650 "PhysType"
++ObjProp 650 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 722 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 726 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 726 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 846 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 847 "JointPos"
+{
+	"Joint 1" 90.00
+}
+-ObjProp 848 "Scripts"
+ObjProp 848 "JointPos"
+{
+	"Joint 1" 90.00
+}
 
 //switches
--Link 691 694 "ControlDevice"
+-Link 789 694 "ControlDevice"
 +Link 789 691 "FrobProxy"
 {
 	"FrobProxyMask" AllowDirect
