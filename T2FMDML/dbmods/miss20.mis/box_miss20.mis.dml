@@ -15,6 +15,12 @@ FINGERPRINT
 	QVAR "goal_target_0" == 425
 }
 
+//debtors registry
++ObjProp 541 "NoDrop"
+{
+	"" true
+}
+
 //torches
 +ObjProp 29 "PickDist"
 {
@@ -40,26 +46,17 @@ FINGERPRINT
 {
 	"" -2.00
 }
-//debtors registry
-+ObjProp 541 "NoDrop"
+
+//doors, windows
++ObjProp 57 "BlockFrob"
 {
 	"" true
 }
-//mantling
-+ObjProp 74 "PhysCanMant"
-{
-}
-//bed
--ObjProp 78 "PhysType"
-ObjProp 78 "Position"
-{
-	"Heading" c000
-}
-+ObjProp 78 "PhysType"
+-ObjProp 57 "PhysType"
++ObjProp 57 "PhysType"
 {
 	"Type" OBB
 }
-//doors
 ObjProp 81 "RotDoor"
 {
 	"Open Angle" 89
@@ -76,8 +73,92 @@ ObjProp 81 "RotDoor"
 	Max None
 	Effect "Abort"
 }
++ObjProp 124 "BlockFrob"
+{
+	"" true
+}
++ObjProp 127 "BlockFrob"
+{
+	"" true
+}
+ObjProp 184 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 208 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
 ObjProp 372 "Scale"
 {
 	"" 0.75, 0.75, 0.75
 }
 +MetaProp 474 -2420
+
+//mantling
++ObjProp 74 "PhysCanMant"
+{
+}
+
+//bed
+ObjProp 78 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 78 "PhysType"
++ObjProp 78 "PhysType"
+{
+	"Type" OBB
+}
+
+//chests
++ObjProp 23 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 90 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 91 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 92 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//keys
++ObjProp 245 "StackCount"
+{
+}
++ObjProp 248 "StackCount"
+{
+}
++ObjProp 353 "StackCount"
+{
+}
++ObjProp 657 "StackCount"
+{
+}
++ObjProp 659 "StackCount"
+{
+}
+
+//AIs
++ObjProp 338 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 346 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 528 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cthfm02
+}
