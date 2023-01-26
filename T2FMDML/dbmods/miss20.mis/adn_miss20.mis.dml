@@ -15,6 +15,12 @@ FINGERPRINT
 	QVAR "goal_target_0" == 631
 }
 
+//starting point
+ObjProp 320 "Position"
+{
+	"Heading" 4000
+}
+
 //goal 0
 +ObjProp 389 "Scripts"
 {
@@ -35,22 +41,239 @@ FINGERPRINT
 {
 	"" =1:goal_state_5
 }
+
 //doors
-+ObjProp 123 "PhysCanMant"
++Receptron 19 "WeaponStim"
 {
+	Min None
+	Max None
+	Effect "Abort"
 }
-+ObjProp 124 "PhysCanMant"
+ObjProp 95 "Position"
 {
+	"Heading" 0
 }
+-ObjProp 95 "PhysType"
++ObjProp 95 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 103 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 103 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 103 "PhysType"
++ObjProp 103 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 106 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 106 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 106 "PhysType"
++ObjProp 106 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 197 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -1403
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 197 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2420
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 197 "Stench"
+{
+	Max None
+
+	Target 21
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 197 "Stench"
+{
+	Max None
+
+	Target 314
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 197 "Stench"
+{
+	Max None
+
+	Target 315
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 197 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 322 "Material Tags"
 +Receptron 322 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
 }
-//AI
+ObjProp 577 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 632 "RotDoor"
+{
+	"Open Angle" 89
+}
+
+//mantling
++ObjProp 29 "PhysCanMant"
+{
+}
++ObjProp 51 "PhysCanMant"
+{
+}
++ObjProp 123 "PhysCanMant"
+{
+}
++ObjProp 124 "PhysCanMant"
+{
+}
++ObjProp 390 "PhysCanMant"
+{
+}
+
+//footlockers
++ObjProp 280 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 281 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//scrolls
++ObjProp 301 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 301 "Scripts"
+{
+	"Script 0" StdBook
+}
++ObjProp 449 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 449 "Scripts"
+{
+	"Script 0" StdBook
+}
+
+//switches
+ObjProp 306 "Position"
+{
+	"Location" -185.775, 93.175, 92.55
+}
+-ObjProp 306 "PhysType"
++ObjProp 306 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 332 "Position"
+{
+	"Location" -162.875, 106.3, 92.55
+}
+-ObjProp 332 "PhysType"
++ObjProp 332 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 543 "Position"
+{
+	"Pitch" 8000
+}
+-ObjProp 543 "PhysType"
++ObjProp 543 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 544 "Position"
+{
+	"Pitch" 8000
+}
+-ObjProp 544 "PhysType"
++ObjProp 544 "PhysType"
+{
+	"Type" OBB
+}
+
+//misplaced objects
+ObjProp 337 "Position"
+{
+	"Location" -126.875, 138, 90.76
+}
+-ObjProp 337 "PhysType"
++ObjProp 337 "PhysType"
+{
+	"Type" OBB
+}
+
+//AIs
 +ObjProp 452 "InvRendType"
 {
 	"Type" Alternate Bitmap
 	"Resource" assaca
+}
++ObjProp 455 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" actmca
+}
+
+//key
++ObjProp 526 "StackCount"
+{
 }
