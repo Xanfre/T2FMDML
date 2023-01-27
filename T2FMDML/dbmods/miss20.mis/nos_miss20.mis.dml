@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_2" == 319
 }
 
-//goals / pickpocketing
+//goals / pickpockets
 +ObjProp 13 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -262,47 +262,6 @@ ObjProp 598 "Scripts"
 {
 	"" true
 }
-+Receptron 603 "EarthStim"
-{
-	Max None
-
-	Target Me
-	Agent -2369
-
-	Effect "add_prop"
-	{
-		"Prop Name" Class Tags
-	}
-}
-++Receptron 603 "EarthStim"
-{
-	Max None
-
-	Target 602
-	Agent -2369
-
-	Effect "add_prop"
-	{
-		"Prop Name" Class Tags
-	}
-}
-++Receptron 603 "EarthStim"
-{
-	Max None
-
-	Target 590
-	Agent -2369
-
-	Effect "add_prop"
-	{
-		"Prop Name" Class Tags
-	}
-}
-+StimSource 603 "EarthStim"
-{
-	Intensity 1
-	Propagator "Radius"
-}
 +ObjProp 603 "StackCount"
 {
 }
@@ -319,6 +278,47 @@ ObjProp 598 "Scripts"
 }
 
 //mantling
++Receptron 31 "Stench"
+{
+	Max None
+
+	Target 590
+	Agent -2369
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 31 "Stench"
+{
+	Max None
+
+	Target 602
+	Agent -2369
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 31 "Stench"
+{
+	Max None
+
+	Target 603
+	Agent -2369
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 31 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
 +ObjProp 31 "PhysCanMant"
 {
 }
