@@ -77,6 +77,7 @@ ObjProp 1307 "TrapQVar"
 {
 	"" =1:goal_state_12
 }
+
 //mantling
 +ObjProp 14 "PhysCanMant"
 {
@@ -105,11 +106,13 @@ ObjProp 1307 "TrapQVar"
 +ObjProp 219 "PhysCanMant"
 {
 }
-//pickpocketing
+
+//pickpockets
 ObjProp 251 "TrapQVar"
 {
 	"" =1:DrSPocketCnt
 }
+
 //quest items
 -Link 189 928 "ControlDevice"
 -Link 511 1267 "ControlDevice"
@@ -204,13 +207,16 @@ ObjProp 925 "Scripts"
 {
 	"World Action" Move
 }
+
 //doors
 -ObjProp 100 "TransDoor"
 ++Receptron 444 "SavingsStim"
 {
 	Max None
+
 	Target 1225
 	Agent 443
+
 	Effect "add_prop"
 	{
 		"Prop Name" Locked
@@ -219,14 +225,17 @@ ObjProp 925 "Scripts"
 ++Receptron 444 "SavingsStim"
 {
 	Max None
+
 	Target 1225
 	Agent 443
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
 	}
 }
 +MetaProp 509 -2420
+
 //AIs
 +Link 94 488 "ControlDevice"
 {
@@ -238,41 +247,49 @@ ObjProp 925 "Scripts"
 Link 910 488 "AIWatchObj"
 {
 	"Response: Step 2" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
-	"  Argument 1"[1] Add
-	"  Argument 2"[1] FrobInert
-	"  Argument 3"[1] 488
+	"   Argument 1"[1] Add
+	"   Argument 2"[1] FrobInert
+	"   Argument 3"[1] 488
 }
 +ObjProp 912 "Scripts"
 {
 	"Script 0" TrigWorldFrob
 	"Don't Inherit" true
 }
-+Receptron 962 "EarthStim"
++ObjProp 962 "GameName"
 {
-	Min 9
+	"" Name_Rynolf: "Rynolf"
+}
++Link 962 996 "ControlDevice"
+{
+}
++ObjProp 962 "Scripts"
+{
+	"Script 0" TrigSlain
+}
++Receptron 996 "Stench"
+{
 	Max None
-	Target Me
-	Agent 996
+
+	Target 962
+	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" GameName
 	}
 }
-+ObjProp 962 "DesignNote"
++ObjProp 996 "DesignNote"
 {
-	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
-}
-+ObjProp 962 "GameName"
-{
-	"" Name_Rynolf: "Rynolf"
-}
-+ObjProp 962 "Scripts"
-{
-	"Script 0" NVRelayTrap
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[1.00]Stench"
 }
 +ObjProp 996 "GameName"
 {
-	"" Name_RynolfC: "Rynolf's corpse"
+	"" Name_RynolfC: "Rynolf's Corpse"
+}
++ObjProp 996 "Scripts"
+{
+	"Script 0" NVRelayTrap
 }
 +ObjProp 1251 "DesignNote"
 {
@@ -284,6 +301,7 @@ Link 910 488 "AIWatchObj"
 	"Script 1" NVLinkBuilder
 	"Don't Inherit" true
 }
+
 //scrolls
 +ObjProp 951 "DesignNote"
 {
@@ -319,7 +337,8 @@ ObjProp 1254 "Scripts"
 	"Script 1" NVRelayTrap
 	"Script 2" NVRelayTrap2
 }
-//conv
+
+//convo
 +Link 977 979 "ControlDevice"
 {
 }
@@ -337,21 +356,22 @@ ObjProp 1254 "Scripts"
 +ObjProp 1298 "Class Tags"
 {
 }
+
 //misplaced objects
--ObjProp 116 "PhysType"
 ObjProp 116 "Position"
 {
 	"Location" 465, 288, 582.46
 }
+-ObjProp 116 "PhysType"
 +ObjProp 116 "PhysType"
 {
 	"Type" OBB
 }
--ObjProp 128 "PhysType"
 ObjProp 128 "Position"
 {
 	"Location" 465, 288, 568.46
 }
+-ObjProp 128 "PhysType"
 +ObjProp 128 "PhysType"
 {
 	"Type" OBB
@@ -361,15 +381,16 @@ ObjProp 1074 "Position"
 	"Location" 392.2, 286.28, 558.12
 	"Pitch" f79c
 }
--ObjProp 1204 "PhysType"
 ObjProp 1204 "Position"
 {
 	"Location" 295.2, 214.85, 524.085
 }
+-ObjProp 1204 "PhysType"
 +ObjProp 1204 "PhysType"
 {
 	"Type" Sphere Hat
 }
+
 //fireplaces
 ObjProp 140 "PGLaunchInfo"
 {
@@ -380,4 +401,10 @@ ObjProp 570 "PGLaunchInfo"
 {
 	"Min time" 1.50
 	"Max time" 1.50
+}
+
+//footlocker
++ObjProp 434 "JointPos"
+{
+	"Joint 1" 90.00
 }
