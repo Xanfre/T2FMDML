@@ -231,23 +231,25 @@ ObjProp 332 "Position"
 {
 	"Type" OBB
 }
-ObjProp 543 "Position"
+-ObjProp 543 "TrapFlags"
++ObjProp 543 "JointPos"
 {
-	"Pitch" 8000
+	"Joint 1" 0.70
 }
--ObjProp 543 "PhysType"
-+ObjProp 543 "PhysType"
+ObjProp 543 "StTweqJoints"
 {
-	"Type" OBB
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
 }
-ObjProp 544 "Position"
+-ObjProp 544 "TrapFlags"
++ObjProp 544 "JointPos"
 {
-	"Pitch" 8000
+	"Joint 1" 0.70
 }
--ObjProp 544 "PhysType"
-+ObjProp 544 "PhysType"
+ObjProp 544 "StTweqJoints"
 {
-	"Type" OBB
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
 }
 
 //misplaced objects
