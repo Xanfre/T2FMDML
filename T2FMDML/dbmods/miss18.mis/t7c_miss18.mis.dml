@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_1" == 943
 }
 
-//goals / pickpocketing
+//goals / pickpockets
 +ObjProp 270 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -66,6 +66,7 @@ FINGERPRINT
 +Link 2351 2299 "ControlDevice"
 {
 }
+
 //mantling
 +ObjProp 136 "PhysCanMant"
 {
@@ -100,6 +101,7 @@ FINGERPRINT
 +ObjProp 1727 "PhysCanMant"
 {
 }
+
 //doors
 +Link 172 173 "ScriptParams"
 {
@@ -183,6 +185,7 @@ ObjProp 2447 "RotDoor"
 {
 	"Open Angle" 272
 }
+
 //AIs
 +ObjProp 220 "AI_Hearing"
 {
@@ -196,69 +199,101 @@ ObjProp 2447 "RotDoor"
 {
 	"" Well Below Average
 }
-//buckets
-+Receptron 1407 "EarthStim"
+
+//footlockers
++ObjProp 1835 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2118 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//misplaced objects
++Receptron 2051 "Stench"
 {
 	Max None
-	Target Me
-	Agent 2315
+
+	Target 1407
+	Agent -10
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
 	}
 }
-++Receptron 1407 "EarthStim"
+++Receptron 2051 "Stench"
 {
 	Max None
+
 	Target 1429
-	Agent 2315
+	Agent -10
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
 	}
 }
-++Receptron 1407 "EarthStim"
+++Receptron 2051 "Stench"
 {
 	Max None
+
 	Target 830
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 1407 "EarthStim"
+++Receptron 2051 "Stench"
 {
 	Max None
+
 	Target 854
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 1407 "EarthStim"
+++Receptron 2051 "Stench"
 {
 	Max None
+
 	Target 857
 	Agent -2425
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 1407 "EarthStim"
+++Receptron 2051 "Stench"
 {
 	Max None
+
 	Target 919
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
 	}
 }
-+StimSource 1407 "EarthStim"
++StimSource 2051 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
+}
+ObjProp 2051 "Position"
+{
+	"Location" 307.3, 358.175, 27.767
+}
+-ObjProp 2051 "PhysType"
++ObjProp 2051 "PhysType"
+{
+	"Type" OBB
 }
