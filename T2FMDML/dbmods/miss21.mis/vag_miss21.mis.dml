@@ -209,6 +209,7 @@ ObjProp 925 "Scripts"
 }
 
 //doors
+-ObjProp 73 "Scale"
 -ObjProp 100 "TransDoor"
 ++Receptron 444 "SavingsStim"
 {
