@@ -22,7 +22,22 @@ FINGERPRINT
 +ObjProp 133 "Loot"
 {
 }
-//pickpocketing
+
+//doors
+ObjProp 112 "Scale"
+{
+	"" 1, 1, 0.47
+}
+ObjProp 113 "Scale"
+{
+	"" 1, 1, 0.47
+}
+ObjProp 118 "StTweqLock"
+{
+	"AnimS" None
+}
+
+//pickpockets
 +ObjProp 411 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
