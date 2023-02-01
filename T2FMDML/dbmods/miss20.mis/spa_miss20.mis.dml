@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Space Thief (Contest 2) by William The Taffer / Fixes
+//T2 FM: Space Thief (Contest 2) by Darrell Wimsatt (William The Taffer) / Fixes
 
 FINGERPRINT
 {
@@ -17,39 +17,51 @@ FINGERPRINT
 
 #script "nvscript"
 
-//final goal
-Create -2086 "GoalFix"
+//starting point
+ObjProp 163 "Position"
 {
-	-ObjProp "PhysType"
+	"Heading" 8000
+}
+
+//final goal
+Create -2086 "FG"
+{
 	+ObjProp "Position"
 	{
 		"Location" -33.5, 20, 6
 	}
+	-ObjProp "PhysType"
 	+ObjProp "PhysType"
 	{
 		"Type" OBB
 	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Don't Inherit" true
+	}
 }
 +ObjProp 6 "DesignNote"
 {
-	"" NVLinkBuilderOn="Contained"; NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="GoalFix"; NVLinkBuilderLinkDest=297
+	"" NVLinkBuilderOn="Contained"; NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource="FG"; NVLinkBuilderLinkDest=270
 }
 +ObjProp 6 "Scripts"
 {
 	"Script 0" NVLinkBuilder
 }
-+ObjProp 297 "TrapFlags"
++ObjProp 270 "TrapFlags"
 {
 	"" Once
 }
-+ObjProp 297 "Scripts"
++ObjProp 270 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 297 "TrapQVar"
++ObjProp 270 "TrapQVar"
 {
 	"" =1:goal_state_1
 }
+
 //scrolls
 +ObjProp 7 "DesignNote"
 {
@@ -62,16 +74,38 @@ Create -2086 "GoalFix"
 }
 +ObjProp 11 "DesignNote"
 {
-	"" NVRelayTrapOn="Contained"; NVRelayTrapTOn=TurnOff; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVLinkBuilderLinkType="CreatureAttachment"; NVLinkBuilderLinkSource=236; NVLinkBuilderLinkDest="[Me]"
+	"" NVLinkBuilderOff="Contained"; NVLinkBuilderLinkType="CreatureAttachment"; NVLinkBuilderLinkSource=236; NVLinkBuilderLinkDest="[Me]"
 }
 +ObjProp 11 "Scripts"
 {
-	"Script 0" NVRelayTrap
-	"Script 1" NVLinkBuilder
+	"Script 0" NVLinkBuilder
 }
-//broadhead arrows
+
+//misplaced objects
+ObjProp 8 "Position"
+{
+	"Location" -30.3, 3, -9.3
+}
+-ObjProp 8 "PhysType"
++ObjProp 8 "PhysType"
+{
+	"Type" OBB
+}
+
+//broadhead arrow
 -ObjProp 39 "DeathStage"
-//mechanist priest
+
+//doors
+ObjProp 101 "Scale"
+{
+	"" 1.245, 1, 0.785
+}
+ObjProp 137 "Scale"
+{
+	"" 1.23, 1, 0.785
+}
+
+//AI
 +ObjProp 285 "InvRendType"
 {
 	"Type" Alternate Bitmap
