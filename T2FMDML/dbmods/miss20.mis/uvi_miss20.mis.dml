@@ -15,6 +15,66 @@ FINGERPRINT
 	QVAR "goal_target_13" == 328
 }
 
+//blockers
+Create -445 "Blocker1"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 90.4, 202.65, 77
+		"Pitch" c000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+Create -445 "Blocker2"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 90.4, 206.35, 77
+		"Pitch" c000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+
 //doors
 +MetaProp 15 -2420
 +MetaProp 22 -2420
@@ -76,14 +136,21 @@ ObjProp 943 "RotDoor"
 +ObjProp 999 "Material Tags"
 {
 }
++MetaProp 1060 -2420
 +ObjProp 1060 "DesignNote"
 {
-	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+	"" NVAmbientSoundTrapOn="NowUnlocked"; NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
++Link 1060 -314 "SoundDescription"
+{
 }
 ObjProp 1060 "Scripts"
 {
-	"Script 0" NVMetaTrap
+	"Script 0" NVAmbientSoundTrap
+	"Script 3" NVMetaTrap
+	"Don't Inherit" true
 }
+
 //books
 +ObjProp 127 "DesignNote"
 {
@@ -105,6 +172,7 @@ ObjProp 249 "Position"
 {
 	"Location" 132.5, 183, 32.075
 }
+-ObjProp 249 "PhysType"
 +ObjProp 249 "PhysType"
 {
 	"Type" OBB
@@ -113,6 +181,8 @@ ObjProp 249 "Position"
 {
 	"" NVRelayTrapDelay=1000
 }
+-ObjProp 605 "ScriptTiming"
+-ObjProp 605 "TrapFlags"
 ObjProp 605 "Scripts"
 {
 	"Script 0" NVRelayTrap
@@ -122,6 +192,8 @@ ObjProp 605 "Scripts"
 {
 	"" NVRelayTrapDelay=1000
 }
+-ObjProp 606 "ScriptTiming"
+-ObjProp 606 "TrapFlags"
 ObjProp 606 "Scripts"
 {
 	"Script 0" NVRelayTrap
@@ -131,6 +203,8 @@ ObjProp 606 "Scripts"
 {
 	"" NVRelayTrapDelay=1000
 }
+-ObjProp 608 "ScriptTiming"
+-ObjProp 608 "TrapFlags"
 ObjProp 608 "Scripts"
 {
 	"Script 0" NVRelayTrap
@@ -156,23 +230,39 @@ ObjProp 614 "Scripts"
 {
 	"" NVRelayTrapDelay=1000
 }
+-ObjProp 1086 "ScriptTiming"
+-ObjProp 1086 "TrapFlags"
 ObjProp 1086 "Scripts"
 {
 	"Script 0" NVRelayTrap
 	"Don't Inherit" true
 }
+
+//keys
++ObjProp 220 "StackCount"
+{
+}
++ObjProp 842 "StackCount"
+{
+}
++ObjProp 1087 "StackCount"
+{
+}
+
 //quest items
-+Receptron 309 "EarthStim"
++Receptron 227 "Stench"
 {
 	Max None
-	Target Me
-	Agent -10
+
+	Target 309
+	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
 	}
 }
-+StimSource 309 "EarthStim"
++StimSource 309 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
@@ -181,62 +271,8 @@ ObjProp 1086 "Scripts"
 {
 	"" true
 }
-//blockers
-Create -445 "Blocker1"
-{
-	+ObjProp "CollisionType"
-	{
-		"" None
-	}
-	+ObjProp "PhysCanMant"
-	{
-		"" false
-	}
-	-ObjProp "PhysType"
-	+ObjProp "Position"
-	{
-		"Location" 90.4, 202.65, 77
-		"Pitch" c000
-	}
-	+ObjProp "PhysType"
-	{
-		"Type" OBB
-	}
-	+ObjProp "RenderType"
-	{
-		"" Not Rendered
-	}
-	+ObjProp "Material Tags"
-	{
-		"1: Tags" ""
-	}
-}
-Create -445 "Blocker2"
-{
-	+ObjProp "CollisionType"
-	{
-		"" None
-	}
-	+ObjProp "PhysCanMant"
-	{
-		"" false
-	}
-	-ObjProp "PhysType"
-	+ObjProp "Position"
-	{
-		"Location" 90.4, 206.35, 77
-		"Pitch" c000
-	}
-	+ObjProp "PhysType"
-	{
-		"Type" OBB
-	}
-	+ObjProp "RenderType"
-	{
-		"" Not Rendered
-	}
-	+ObjProp "Material Tags"
-	{
-		"1: Tags" ""
-	}
-}
+
+//invalid scaling
+-ObjProp 541 "Scale"
+-ObjProp 542 "Scale"
+-ObjProp 543 "Scale"
