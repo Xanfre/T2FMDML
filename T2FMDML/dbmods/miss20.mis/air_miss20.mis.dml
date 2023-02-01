@@ -40,19 +40,69 @@ FINGERPRINT
 {
 	"" =0:goal_state_4
 }
-//shutters
+
+//doors
 +Link 18 84 "ScriptParams"
 {
 	"" Double
 }
-//unused book / scroll
++ObjProp 153 "BlockFrob"
+{
+	"" true
+}
++ObjProp 154 "BlockFrob"
+{
+	"" true
+}
++ObjProp 155 "BlockFrob"
+{
+	"" true
+}
++ObjProp 156 "BlockFrob"
+{
+	"" true
+}
++ObjProp 202 "PickDist"
+{
+	"" 2.50
+}
+
+//scrolls
 +ObjProp 38 "FrobInfo"
 {
+}
+-ObjProp 64 "PhysType"
+ObjProp 64 "Position"
+{
+	"Heading" 8e38
 }
 ObjProp 66 "FrobInfo"
 {
 	"World Action" None
 }
+-ObjProp 216 "PhysType"
++ObjProp 216 "PhysType"
+{
+	"Type" OBB
+}
+
+//chests
++ObjProp 65 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 2
+	"    rate-low-highJoint" 10, 0, 90
+}
+ObjProp 65 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 127 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
 //switches
 ObjProp 112 "JointPos"
 {
@@ -98,7 +148,41 @@ ObjProp 182 "StTweqJoints"
 	"Joint1AnimS" Reverse
 	"Joint2AnimS" On, Reverse
 }
-//mechanist priest
+
+//keys
++ObjProp 118 "StackCount"
+{
+}
++ObjProp 211 "StackCount"
+{
+}
++ObjProp 213 "StackCount"
+{
+}
+
+//AIs
++ObjProp 119 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Absolute
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-SittingSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+}
++ObjProp 125 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Absolute
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-SittingSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+}
 ObjProp 222 "AI_Hearing"
 {
 	"" Well Below Average
