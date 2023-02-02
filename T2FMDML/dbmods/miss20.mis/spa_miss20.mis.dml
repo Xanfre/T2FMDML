@@ -104,8 +104,21 @@ ObjProp 137 "Scale"
 {
 	"" 1.23, 1, 0.785
 }
+ObjProp 245 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 245 "PhysType"
++ObjProp 245 "PhysType"
+{
+	"Type" OBB
+}
 
-//AI
+//AIs
+ObjProp 280 "Position"
+{
+	"Location" -25.75, -20.4, 5
+}
 +ObjProp 285 "InvRendType"
 {
 	"Type" Alternate Bitmap
