@@ -15,7 +15,47 @@ FINGERPRINT
 	QVAR "goal_target_2" == 334
 }
 
+//odometer
++ObjProp 13 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 13 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 13 "TrapQVar"
+{
+	"" =0:door_combo
+}
+
 //doors
+ObjProp 42 "RotDoor"
+{
+	"Open Angle" 271
+	"Clockwise?" true
+}
+ObjProp 69 "Scale"
+{
+	"" 1, 2, 0.72
+}
+ObjProp 70 "Scale"
+{
+	"" 1, 2, 0.72
+}
+ObjProp 71 "Scale"
+{
+	"" 0.835, 2, 0.72
+}
+ObjProp 71 "Position"
+{
+	"Location" -32.275, 159.325, 128.5
+}
+-ObjProp 71 "PhysType"
++ObjProp 71 "PhysType"
+{
+	"Type" OBB
+}
 +Link 156 158 "ScriptParams"
 {
 	"" Double
@@ -32,21 +72,200 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
+ObjProp 192 "Scale"
+{
+	"" 1.035, 2, 0.72
+}
 +ObjProp 337 "FrobInfo"
 {
 }
-//chest
--ObjProp 193 "PhysType"
+
+//chests
++ObjProp 74 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 2
+	"    rate-low-highJoint" 10, 0, 20
+}
+ObjProp 74 "StTweqLock"
+{
+	"AnimS" On
+}
++ObjProp 76 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 2
+	"    rate-low-highJoint" 10, 0, 20
+}
+ObjProp 76 "StTweqLock"
+{
+	"AnimS" On
+}
++ObjProp 108 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 109 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 111 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 112 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 113 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 114 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 115 "JointPos"
+{
+	"Joint 1" 90.00
+}
 ObjProp 193 "Position"
 {
 	"Heading" 0
 }
+-ObjProp 193 "PhysType"
 +ObjProp 193 "PhysType"
 {
 	"Type" OBB
 }
+ObjProp 281 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 282 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 284 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 285 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 286 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 287 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 288 "StTweqLock"
+{
+	"AnimS" None
+}
+
+//misplaced objects
++Receptron 129 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 129 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+
+//books
+-Link 186 254 "ControlDevice"
++Link 186 185 "ControlDevice"
+{
+}
++Link 185 254 "ControlDevice"
+{
+}
++ObjProp 185 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-Link 252 253 "ControlDevice"
++Link 252 61 "ControlDevice"
+{
+}
++Link 61 253 "ControlDevice"
+{
+}
++ObjProp 61 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-ObjProp 269 "NoDrop"
+
 //flash bombs
 -ObjProp 213 "DeathStage"
+
+//keys
++ObjProp 255 "StackCount"
+{
+}
++ObjProp 289 "StackCount"
+{
+}
++ObjProp 289 "SlayResult"
+{
+}
++ObjProp 290 "StackCount"
+{
+}
++ObjProp 290 "SlayResult"
+{
+}
++ObjProp 291 "StackCount"
+{
+}
++ObjProp 291 "SlayResult"
+{
+}
++ObjProp 296 "StackCount"
+{
+}
++ObjProp 296 "SlayResult"
+{
+}
++ObjProp 297 "StackCount"
+{
+}
++ObjProp 297 "SlayResult"
+{
+}
++ObjProp 308 "StackCount"
+{
+}
++ObjProp 309 "StackCount"
+{
+}
++ObjProp 309 "SlayResult"
+{
+}
++ObjProp 333 "StackCount"
+{
+}
++ObjProp 333 "SlayResult"
+{
+}
+
 //AIs
 +ObjProp 256 "AI_Hearing"
 {
@@ -67,26 +286,4 @@ ObjProp 193 "Position"
 +ObjProp 295 "AI_Hearing"
 {
 	"" Well Below Average
-}
-//safe keys
-+ObjProp 289 "SlayResult"
-{
-}
-+ObjProp 290 "SlayResult"
-{
-}
-+ObjProp 291 "SlayResult"
-{
-}
-+ObjProp 296 "SlayResult"
-{
-}
-+ObjProp 297 "SlayResult"
-{
-}
-+ObjProp 309 "SlayResult"
-{
-}
-+ObjProp 333 "SlayResult"
-{
 }
