@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Reunion with Basso by Zappenduster / Fix climbable fences and patrols
+//T2 FM: Reunion with Basso (Garrett Takes a Cure) by Zappenduster / Fixes
 
 FINGERPRINT
 {
@@ -15,37 +15,328 @@ FINGERPRINT
 	QVAR "goal_target_1" == 1136
 }
 
-+ObjProp 492 "PhysCanMant"
+#script "squirrel"
+
+//mantling
+Create -445 "Blocker1"
 {
-	"" false
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 3.4
+	}
+	+ObjProp "Position"
+	{
+		"Location" 160, 86.9, 9.1
+		"Pitch" 4000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+Create -2908 "Blocker2"
+{
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 424, 278.5, 20
+	}
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+}
++Receptron "Blocker2" "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource "Blocker2" "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 10 "PhysCanMant"
+{
+}
++ObjProp 343 "PhysCanMant"
+{
 }
 +ObjProp 485 "PhysCanMant"
 {
-	"" false
+}
++ObjProp 491 "PhysCanMant"
+{
+}
++ObjProp 492 "PhysCanMant"
+{
+}
++ObjProp 493 "PhysCanMant"
+{
 }
 +ObjProp 875 "PhysCanMant"
 {
-	"" false
 }
--ObjProp 1170 "CretPose"
--ObjProp 1171 "Position"
-+ObjProp 1171 "Position"
++ObjProp 979 "PhysCanMant"
 {
-	"Location" 107,224,-8.0
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
 }
--ObjProp 1253 "Position"
-+ObjProp 1253 "Position"
++Receptron 979 "Stench"
 {
-	"Location" 107,224,-8.0
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 979 "Stench"
+{
+	Max None
+
+	Target 149
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 979 "Stench"
+{
+	Max None
+
+	Target 696
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 979 "Stench"
+{
+	Max None
+
+	Target 992
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 979 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 979 "PhysType"
++ObjProp 979 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1011 "PhysCanMant"
+{
+}
++ObjProp 1292 "PhysCanMant"
+{
+}
++ObjProp 1551 "PhysCanMant"
+{
+}
++ObjProp 1578 "PhysCanMant"
+{
+}
+
+//final goals
+ObjProp 149 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+
+//AIs
++ObjProp 243 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=8,5.5,9; SetVectorPropSubProperty2="Offset 1"; SetVectorPropValue2=0,0,0
+}
++ObjProp 243 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 243 "Scripts"
+{
+	"Script 0" SetVectorProp
 }
 ObjProp 410 "AI_IdleOrgn"
 {
-	"Original Location" 119,226,-8
-	"Original Facing" 270
+	"Original Location" 119, 226, -8
+}
+-ObjProp 1170 "CretPose"
+ObjProp 1171 "Position"
+{
+	"Location" 107, 224, -8
+}
+ObjProp 1253 "Position"
+{
+	"Location" 107, 224, -8
+}
++ObjProp 1372 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
+
+//doors
+-ObjProp 260 "JointPos"
+-ObjProp 402 "JointPos"
+-ObjProp 541 "JointPos"
+-ObjProp 556 "JointPos"
+-ObjProp 645 "JointPos"
+-ObjProp 930 "JointPos"
+-ObjProp 931 "JointPos"
+-ObjProp 932 "JointPos"
+-ObjProp 934 "JointPos"
+-ObjProp 935 "JointPos"
+-ObjProp 1493 "JointPos"
++ObjProp 260 "Locked"
+{
+	"" true
+}
++ObjProp 402 "Locked"
+{
+	"" true
+}
+-ObjProp 498 "PhysType"
++ObjProp 498 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 515 "PhysType"
++ObjProp 515 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 541 "Locked"
+{
+	"" true
+}
++Receptron 552 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 552 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 556 "Locked"
+{
+	"" true
+}
++Receptron 576 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 576 "BlockFrob"
+{
+	"" true
+}
++Receptron 592 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 628 "BlockFrob"
+{
+	"" true
+}
++ObjProp 637 "BlockFrob"
+{
+	"" true
+}
++ObjProp 639 "BlockFrob"
+{
+	"" true
+}
++ObjProp 642 "BlockFrob"
+{
+	"" true
+}
++ObjProp 645 "Locked"
+{
+	"" true
+}
++ObjProp 696 "Locked"
+{
+	"" true
+}
++ObjProp 930 "Locked"
+{
+	"" true
+}
++ObjProp 934 "Locked"
+{
+	"" true
+}
++ObjProp 935 "Locked"
+{
+	"" true
+}
++ObjProp 1493 "Locked"
+{
+	"" true
+}
+
+//footlocker
++ObjProp 550 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//keys
+-ObjProp 829 "PickDist"
+ObjProp 868 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 949 "StackCount"
+{
 }
