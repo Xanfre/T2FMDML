@@ -16,9 +16,27 @@ FINGERPRINT
 }
 
 //doors
+ObjProp 3 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 3 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 3 "PhysType"
++ObjProp 3 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 7 "RotDoor"
 {
 	"Open Angle" 89
+}
++ObjProp 7 "BlockFrob"
+{
+	"" true
 }
 +Receptron 10 "WeaponStim"
 {
@@ -38,8 +56,15 @@ ObjProp 7 "RotDoor"
 	Max None
 	Effect "Abort"
 }
+-ObjProp 169 "PickBias"
++ObjProp 169 "BlockFrob"
+{
+	"" true
+}
+
 //rope arrows
 -ObjProp 20 "DeathStage"
+
 //switches
 ObjProp 86 "JointPos"
 {
@@ -77,6 +102,30 @@ ObjProp 173 "StTweqJoints"
 {
 	"Joint1AnimS" None
 }
+-ObjProp 170 "AmbientHacked"
++Link 170 -2807 "SoundDescription"
+{
+}
++ObjProp 170 "Scripts"
+{
+	"Script 0" AmbientSounds
+}
+-Link 226 170 "ControlDevice"
+-Link 228 89 "ControlDevice"
++Link 228 86 "ControlDevice"
+{
+}
+-Link 229 91 "ControlDevice"
++Link 229 90 "ControlDevice"
+{
+}
++Link 230 170 "ControlDevice"
+{
+}
++Link 231 170 "ControlDevice"
+{
+}
+
 //unused keys
 +ObjProp 87 "RenderType"
 {
@@ -86,6 +135,7 @@ ObjProp 173 "StTweqJoints"
 {
 	"" Not Rendered
 }
+
 //AIs
 +ObjProp 94 "AI_Hearing"
 {
@@ -103,27 +153,31 @@ ObjProp 173 "StTweqJoints"
 {
 	"" Below Average
 }
-//buttons
-ObjProp 170 "AmbientHacked"
+
+//misplaced objects
++Receptron 110 "Stench"
 {
-	"Flags" Environmental, TurnedOff, DoAutoOff
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
 }
-+ObjProp 170 "Scripts"
++StimSource 110 "Stench"
 {
-	"Script 0" ActivateAmbient
+	Intensity 1
+	Propagator "Radius"
 }
--Link 226 170 "ControlDevice"
--Link 228 89 "ControlDevice"
-+Link 228 86 "ControlDevice"
+ObjProp 110 "Position"
 {
+	"Location" -16.425, 17, -7.395
 }
--Link 229 91 "ControlDevice"
-+Link 229 90 "ControlDevice"
+-ObjProp 110 "PhysType"
++ObjProp 110 "PhysType"
 {
-}
-+Link 230 170 "ControlDevice"
-{
-}
-+Link 231 170 "ControlDevice"
-{
+	"Type" OBB
 }
