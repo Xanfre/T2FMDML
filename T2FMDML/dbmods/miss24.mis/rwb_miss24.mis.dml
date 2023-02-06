@@ -312,6 +312,14 @@ ObjProp 552 "RotDoor"
 {
 	"" true
 }
++ObjProp 931 "Locked"
+{
+	"" true
+}
++ObjProp 932 "Locked"
+{
+	"" true
+}
 +ObjProp 934 "Locked"
 {
 	"" true
