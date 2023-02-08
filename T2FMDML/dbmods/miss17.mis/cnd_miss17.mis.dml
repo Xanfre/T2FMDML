@@ -16,6 +16,7 @@ FINGERPRINT
 }
 
 //jersak's note
+-Link 191 311 "ScriptParams"
 +Link 191 311 "ControlDevice"
 {
 }
@@ -23,7 +24,44 @@ ObjProp 191 "Scripts"
 {
 	"Script 0" TrigInvFrob
 }
+-ObjProp 311 "Scripts"
+-ObjProp 311 "ScriptTiming"
+
 //water arrow
 -ObjProp 275 "DeathStage"
+
 //script checking
 -ObjProp 287 "Scripts"
+
+//banners
++ObjProp 15 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 20 "SlayResult"
+{
+	"Effect" Destroy
+}
+
+//keys
++ObjProp 90 "StackCount"
+{
+}
++ObjProp 122 "StackCount"
+{
+}
+ObjProp 122 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 123 "StackCount"
+{
+}
++ObjProp 124 "StackCount"
+{
+}
+-ObjProp 224 "ScriptTiming"
+ObjProp 224 "Scripts"
+{
+	"Script 0" TrapRelay
+}
