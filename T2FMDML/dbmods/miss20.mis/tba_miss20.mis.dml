@@ -81,27 +81,15 @@ ObjProp 192 "Scale"
 }
 
 //chests
-+ObjProp 74 "CfgTweqLock"
-{
-	"Halt" Stop Tweq
-	"AnimC" Sim
-	"Lock Joint" 2
-	"    rate-low-highJoint" 10, 0, 20
-}
 ObjProp 74 "StTweqLock"
 {
 	"AnimS" On
-}
-+ObjProp 76 "CfgTweqLock"
-{
-	"Halt" Stop Tweq
-	"AnimC" Sim
-	"Lock Joint" 2
-	"    rate-low-highJoint" 10, 0, 20
+	"Target Angle" 20
 }
 ObjProp 76 "StTweqLock"
 {
 	"AnimS" On
+	"Target Angle" 20
 }
 +ObjProp 108 "JointPos"
 {
