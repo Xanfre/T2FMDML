@@ -15,26 +15,34 @@ FINGERPRINT
 	QVAR "goal_target_0" == 253
 }
 
+//starting point
+ObjProp 26 "Position"
+{
+	"Location" -3, -0.25, -7.5
+	"Heading" 8000
+}
+
 //mantling
 +ObjProp 231 "PhysCanMant"
 {
 }
+
 //loot
 ObjProp 313 "Position"
 {
-	"Location" -55.038, 18.6737, -2.01
+	"Location" -55, 18.675, -2
 }
 ObjProp 325 "Position"
 {
-	"Location" -5.17413, 118.642, 7.22
+	"Location" -5.7, 118.65, 7.21
 }
 ObjProp 326 "Position"
 {
-	"Location" -6.29796, 118.095, 7.22
+	"Location" -6.2, 118, 7.21
 }
 ObjProp 327 "Position"
 {
-	"Location" -6.57892, 118.642, 7.22
+	"Location" -6.5, 118.65, 7.21
 }
 +ObjProp 351 "PickDist"
 {
@@ -43,10 +51,11 @@ ObjProp 327 "Position"
 +ObjProp 353 "Loot"
 {
 }
+
 //evidence (hard, expert)
-+ObjProp 292 "DiffPermit"
++ObjProp 292 "DiffDestroy"
 {
-	"quest var values" 1, 2
+	"quest var values" 0
 }
 +ObjProp 292 "NoDrop"
 {
@@ -56,10 +65,11 @@ ObjProp 327 "Position"
 {
 	"" Name_Evidence: "Evidence"
 }
-//medallion (expert only)
-+ObjProp 91 "DiffPermit"
+
+//medallion (expert)
++ObjProp 91 "DiffDestroy"
 {
-	"quest var values" 2
+	"quest var values" 0, 1
 }
 +ObjProp 176 "DiffRemoveProp"
 {
@@ -73,9 +83,9 @@ ObjProp 327 "Position"
 +ObjProp 308 "StackCount"
 {
 }
-+ObjProp 309 "DiffPermit"
++ObjProp 309 "DiffDestroy"
 {
-	"quest var values" 2
+	"quest var values" 0, 1
 }
 +ObjProp 309 "FrobInfo"
 {
@@ -85,6 +95,21 @@ ObjProp 327 "Position"
 {
 	"Script 0" StdBook
 }
+-ObjProp 309 "PhysType"
+ObjProp 309 "Position"
+{
+	"Location" 0.65, 101.3, 1.65
+	"Heading" 8000
+}
+ObjProp 324 "Position"
+{
+	"Location" -29.75, 89.4, 3.66
+}
++ObjProp 324 "TrapFlags"
+{
+	"" Once
+}
+
 //doors
 +ObjProp 6 "FrobInfo"
 {
@@ -116,6 +141,10 @@ ObjProp 327 "Position"
 +ObjProp 81 "FrobInfo"
 {
 }
+ObjProp 82 "StTweqLock"
+{
+	"AnimS" None
+}
 +ObjProp 83 "FrobInfo"
 {
 }
@@ -124,6 +153,20 @@ ObjProp 327 "Position"
 }
 +ObjProp 86 "FrobInfo"
 {
+}
+ObjProp 87 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 87 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 87 "PhysType"
++ObjProp 87 "PhysType"
+{
+	"Type" OBB
 }
 +ObjProp 112 "FrobInfo"
 {
@@ -159,4 +202,18 @@ ObjProp 327 "Position"
 }
 +ObjProp 131 "FrobInfo"
 {
+}
+ObjProp 274 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 274 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 274 "PhysType"
++ObjProp 274 "PhysType"
+{
+	"Type" OBB
 }
