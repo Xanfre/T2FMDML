@@ -16,6 +16,7 @@ FINGERPRINT
 }
 
 #script "nvscript"
+#script "squirrel"
 
 //mantling
 +ObjProp 4 "PhysCanMant"
@@ -90,10 +91,12 @@ FINGERPRINT
 +ObjProp 79 "PhysCanMant"
 {
 }
+
 //flowers / gravestone
-+StimSource 61 "EarthStim"
++StimSource 61 "Stench"
 {
-	Intensity 10
+	Intensity 1
+
 	Propagator "Contact"
 	{
 		Shape
@@ -111,15 +114,15 @@ FINGERPRINT
 }
 +ObjProp 61 "Class Tags"
 {
-	"1: Tags" ""
 }
 -Link 577 557 "ControlDevice"
-+Receptron 474 "EarthStim"
++Receptron 474 "Stench"
 {
-	Min 9
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -137,12 +140,40 @@ FINGERPRINT
 +ObjProp 474 "PhysCanMant"
 {
 }
++MetaProp 474 -2420
++Receptron 523 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 523 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+
 //friend / note
--Link 525 527 "AIWatchObj"
++ObjProp 525 "AI_Hearing"
+{
+	"" Null
+}
++Receptron 525 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 525 "NoFlash"
+{
+	"" true
+}
 +ObjProp 525 "DesignNote"
 {
 	"" NVPhantomAlphaMax=0.50; NVPhantomFadeOn=2000; NVPhantomFadeOff=2000; NVLinkBuilderLinkType="CreatureAttachment"; NVLinkBuilderLinkSource="[Me]"; NVLinkBuilderLinkDest=526
 }
+-Link 525 527 "AIWatchObj"
 ObjProp 525 "RenderAlpha"
 {
 	"" 0.00
@@ -154,7 +185,7 @@ ObjProp 525 "Scripts"
 }
 +ObjProp 526 "DesignNote"
 {
-	"" NVPhantomFadeOn=2000; NVRelayTrapOn="Contained"; NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest=525; NVRelayTrapCount=1; NVRelayTrap2On="FrobInvEnd"; NVRelayTrap2OnDelay=200; NVRelayTrap2Count=1
+	"" NVPhantomFadeOn=2000; NVRelayTrapOn="Contained"; NVRelayTrapTOn="TurnOff"; NVRelayTrapTDest=525; NVRelayTrapCount=1; NVRelayTrap2On="FrobInvEnd"; NVRelayTrap2OnDelay=200
 }
 +ObjProp 526 "RenderAlpha"
 {
@@ -166,32 +197,157 @@ ObjProp 526 "Scripts"
 	"Script 2" NVRelayTrap
 	"Script 3" NVRelayTrap2
 }
+
 //doors
++ObjProp 26 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.625,0,0"
+}
++ObjProp 26 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 27 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.625,0,0"
+}
++ObjProp 27 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 30 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.65,0,0"
+}
++ObjProp 30 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 30 "Scale"
+{
+	"" 0.875, 0.875, 1.03
+}
 +ObjProp 38 "BlockFrob"
 {
 	"" true
 }
++ObjProp 47 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.65,0,0"
+}
++ObjProp 47 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 47 "Scale"
+{
+	"" 0.875, 0.875, 1.03
+}
+-ObjProp 137 "Scale"
+ObjProp 137 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
 +ObjProp 137 "FrobInfo"
 {
+}
+ObjProp 138 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 138 "PhysType"
++ObjProp 138 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 150 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 150 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 150 "PhysType"
++ObjProp 150 "PhysType"
+{
+	"Type" OBB
 }
 +ObjProp 151 "FrobInfo"
 {
 }
-+MetaProp 353 -2420
+ObjProp 211 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 211 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 211 "PhysType"
++ObjProp 211 "PhysType"
+{
+	"Type" OBB
+}
 +Link 238 239 "ScriptParams"
 {
 	"" Double
 }
-//cabinet
--ObjProp 206 "PhysType"
+ObjProp 262 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 262 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 262 "PhysType"
++ObjProp 262 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 353 -2420
+ObjProp 353 "TransDoor"
+{
+	"Open Position" 2.50
+}
++ObjProp 353 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue="2.5,2.5,0.5"
+}
++ObjProp 353 "BlockFrob"
+{
+	"" true
+}
++ObjProp 353 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+
+//misplaced objects
 ObjProp 206 "Position"
 {
 	"Location" 540.35, 372, 189.48
 }
+-ObjProp 206 "PhysType"
 +ObjProp 206 "PhysType"
 {
 	"Type" OBB
 }
+ObjProp 303 "Position"
+{
+	"Location" 497.3, 393.185, 169.78
+}
+-ObjProp 303 "PhysType"
++ObjProp 303 "PhysType"
+{
+	"Type" OBB
+}
+
 //arrows
 -ObjProp 115 "DeathStage"
 -ObjProp 310 "DeathStage"
@@ -201,10 +357,161 @@ ObjProp 206 "Position"
 -ObjProp 329 "PhysType"
 -ObjProp 508 "PhysType"
 -ObjProp 510 "PhysType"
+
+//footlockers
++ObjProp 202 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 203 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 204 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 225 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 231 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 232 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 284 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 285 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 286 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 296 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 297 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 302 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 304 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 305 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 306 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 307 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 374 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 375 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 376 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 380 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 381 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 382 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 383 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 384 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 385 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 493 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 494 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 502 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 503 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//AI
++ObjProp 340 "AI_Hearing"
+{
+	"" Null
+}
++Receptron 340 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 340 "NoFlash"
+{
+	"" true
+}
+
 //keys
 +ObjProp 346 "SlayResult"
 {
 }
++ObjProp 346 "NoDrop"
+{
+	"" true
+}
 +ObjProp 354 "SlayResult"
 {
+}
++ObjProp 354 "NoDrop"
+{
+	"" true
+}
+
+//button
++ObjProp 355 "Scripts"
+{
+	"Script 0" FrobSounds
+	"Script 1" NVFrobToggle
+	"Don't Inherit" true
 }
