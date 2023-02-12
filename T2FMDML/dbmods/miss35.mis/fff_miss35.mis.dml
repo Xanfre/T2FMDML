@@ -91,6 +91,23 @@ FINGERPRINT
 +ObjProp 79 "PhysCanMant"
 {
 }
++Receptron 79 "Stench"
+{
+	Max None
+
+	Target 474
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 79 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
 
 //flowers / gravestone
 +StimSource 61 "Stench"
