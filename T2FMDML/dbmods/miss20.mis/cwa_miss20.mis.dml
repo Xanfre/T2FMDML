@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_1" == 276
 }
 
-//pickpocketing
+//pickpockets
 +ObjProp 17 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -35,13 +35,123 @@ FINGERPRINT
 {
 	"" =0:DrSPocketCnt
 }
+
 //doors
+ObjProp 11 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 11 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 16 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 89 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 89 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 96 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 111 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 115 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 119 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 120 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 121 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 127 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 172 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 224 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 252 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
 +MetaProp 249 -2420
 +MetaProp 285 -2420
 +ObjProp 285 "Locked"
 {
 	"" true
 }
+
+//misplaced objects
+ObjProp 199 "Position"
+{
+	"Location" 605, 441.79, 537
+}
+-ObjProp 199 "PhysType"
++ObjProp 199 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 253 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 253 "PhysType"
++ObjProp 253 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 255 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 255 "PhysType"
++ObjProp 255 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 259 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 259 "PhysType"
++ObjProp 259 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 260 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 260 "PhysType"
++ObjProp 260 "PhysType"
+{
+	"Type" OBB
+}
+
 //cure for hangover
 +ObjProp 322 "NoDrop"
 {
