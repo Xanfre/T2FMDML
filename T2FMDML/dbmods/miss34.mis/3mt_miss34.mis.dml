@@ -19,14 +19,75 @@ FINGERPRINT
 +ObjProp 296 "Scripts"
 {
 	"Script 0" TrigSlain
-	"Script 1" ""
-	"Script 2" ""
-	"Script 3" ""
 }
 +ObjProp 313 "TrapFlags"
 {
-	"" Once,NoOff
+	"" Once, NoOff
 }
+
+//doors
++ObjProp 12 "FrobInfo"
+{
+}
++ObjProp 199 "FrobInfo"
+{
+}
+-ObjProp 170 "PhysType"
++ObjProp 170 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 184 -2420
++MetaProp 185 -2420
++Receptron 185 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent 172
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 185 "Stench"
+{
+	Max None
+
+	Target 184
+	Agent 170
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 185 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 256 "JointPos"
+-ObjProp 257 "JointPos"
+-ObjProp 258 "JointPos"
+-ObjProp 259 "JointPos"
+-ObjProp 260 "JointPos"
+
+//deathstage
+-ObjProp 30 "DeathStage"
+-ObjProp 50 "DeathStage"
+-ObjProp 51 "DeathStage"
+-ObjProp 53 "DeathStage"
+-ObjProp 128 "DeathStage"
+-ObjProp 157 "DeathStage"
+-ObjProp 158 "DeathStage"
+-ObjProp 162 "DeathStage"
+-ObjProp 163 "DeathStage"
+-ObjProp 167 "DeathStage"
+-ObjProp 261 "DeathStage"
+-ObjProp 330 "DeathStage"
+
 //rubies
 +ObjProp 110 "CombineType"
 {
@@ -36,6 +97,10 @@ FINGERPRINT
 {
 	"" 1
 }
++ObjProp 110 "Scripts"
+{
+	"Script 1" LootSounds
+}
 +ObjProp 111 "CombineType"
 {
 	"" DeathRuby
@@ -43,6 +108,10 @@ FINGERPRINT
 +ObjProp 111 "StackCount"
 {
 	"" 1
+}
++ObjProp 111 "Scripts"
+{
+	"Script 1" LootSounds
 }
 +ObjProp 112 "CombineType"
 {
@@ -52,14 +121,12 @@ FINGERPRINT
 {
 	"" 1
 }
-//skeleton
++ObjProp 112 "Scripts"
+{
+	"Script 1" LootSounds
+}
+
+//AI
 +ObjProp 166 "FrobInfo"
-{
-}
-//portcullis
-+ObjProp 12 "FrobInfo"
-{
-}
-+ObjProp 199 "FrobInfo"
 {
 }
