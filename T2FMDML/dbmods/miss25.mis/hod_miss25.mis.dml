@@ -20,17 +20,29 @@ FINGERPRINT
 {
 	"quest var values" 0, 1, 2
 }
++Link 42 43 "ControlDevice"
+{
+}
++Link 42 44 "ControlDevice"
+{
+}
++Link 42 45 "ControlDevice"
+{
+}
++Link 42 46 "ControlDevice"
+{
+}
++Link 42 47 "ControlDevice"
+{
+}
 +ObjProp 42 "Scripts"
 {
-	"Script 0" TrapSetQVar
+	"Script 0" TrapRelay
+	"Script 1" TrapSetQVar
 }
 +ObjProp 42 "TrapQVar"
 {
 	"" =250:goal_loot_2
-}
-+ObjProp 43 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
 }
 +ObjProp 43 "Scripts"
 {
@@ -40,10 +52,6 @@ FINGERPRINT
 {
 	"" =500:goal_loot_3
 }
-+ObjProp 44 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
-}
 +ObjProp 44 "Scripts"
 {
 	"Script 0" TrapSetQVar
@@ -51,10 +59,6 @@ FINGERPRINT
 +ObjProp 44 "TrapQVar"
 {
 	"" =1000:goal_loot_4
-}
-+ObjProp 45 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
 }
 +ObjProp 45 "Scripts"
 {
@@ -64,10 +68,6 @@ FINGERPRINT
 {
 	"" =0:goal_specials_2
 }
-+ObjProp 46 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
-}
 +ObjProp 46 "Scripts"
 {
 	"Script 0" TrapSetQVar
@@ -75,10 +75,6 @@ FINGERPRINT
 +ObjProp 46 "TrapQVar"
 {
 	"" =0:goal_specials_3
-}
-+ObjProp 47 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
 }
 +ObjProp 47 "Scripts"
 {
@@ -102,4 +98,74 @@ FINGERPRINT
 +ObjProp 200 "Scripts"
 {
 	"Script 0" TrigContained
+}
+
+//doors / portcullis
+ObjProp 30 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 30 "PhysType"
++ObjProp 30 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 31 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 38 "BlockFrob"
+{
+	"" true
+}
++ObjProp 40 "BlockFrob"
+{
+	"" true
+}
+ObjProp 128 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 128 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 128 "PhysType"
++ObjProp 128 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 183 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+
+//mantling
++ObjProp 32 "PhysCanMant"
+{
+}
+
+//various objects
+-ObjProp 83 "PhysType"
+ObjProp 83 "Position"
+{
+	"Location" -36, 54.4, -7.4
+}
++ObjProp 89 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 89 "Scripts"
+{
+	"Script 0" StdBook
+}
++ObjProp 108 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 150 "Class Tags"
+{
 }
