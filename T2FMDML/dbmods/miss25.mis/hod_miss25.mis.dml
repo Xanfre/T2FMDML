@@ -100,7 +100,7 @@ FINGERPRINT
 	"Script 0" TrigContained
 }
 
-//doors / portcullis
+//doors
 ObjProp 30 "Position"
 {
 	"Heading" c000
@@ -114,14 +114,6 @@ ObjProp 31 "RotDoor"
 {
 	"Open Angle" 90
 	"Clockwise?" false
-}
-+ObjProp 38 "BlockFrob"
-{
-	"" true
-}
-+ObjProp 40 "BlockFrob"
-{
-	"" true
 }
 ObjProp 128 "RotDoor"
 {
