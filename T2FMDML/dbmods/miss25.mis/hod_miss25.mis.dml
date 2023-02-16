@@ -150,6 +150,10 @@ ObjProp 83 "Position"
 {
 	"World Action" Script
 }
++ObjProp 89 "PickDist"
+{
+	"" 6.00
+}
 +ObjProp 89 "Scripts"
 {
 	"Script 0" StdBook
