@@ -15,7 +15,7 @@ FINGERPRINT
 	NAME 223 "Oops! Delay"
 }
 
-//windows, door
+//windows, doors
 +MetaProp 60 -5661
 +MetaProp 93 -5661
 +MetaProp 107 -5661
@@ -24,7 +24,6 @@ FINGERPRINT
 +MetaProp 131 -5661
 +MetaProp 175 -5661
 +MetaProp 176 -5661
--ObjProp 3 "DeathStage"
 -ObjProp 60 "DeathStage"
 -ObjProp 93 "DeathStage"
 -ObjProp 107 "DeathStage"
@@ -34,28 +33,72 @@ FINGERPRINT
 -ObjProp 175 "DeathStage"
 -ObjProp 176 "DeathStage"
 -ObjProp 186 "DeathStage"
-//statement (goal 1)
-+StimSource 65 "EarthStim"
+-ObjProp 3 "DeathStage"
++ObjProp 3 "BlockFrob"
 {
-	Intensity 1
-	Propagator "Contact"
+	"" true
 }
--Link 196 160 "ControlDevice"
--Link 196 4 "Route"
--ObjProp 196 "Scripts"
-+Receptron 196 "EarthStim"
+-ObjProp 3 "PhysType"
++ObjProp 3 "PhysType"
 {
+	"Type" OBB
+}
++ObjProp 40 "BlockFrob"
+{
+	"" true
+}
++ObjProp 43 "BlockFrob"
+{
+	"" true
+}
++ObjProp 44 "BlockFrob"
+{
+	"" true
+}
++ObjProp 51 "BlockFrob"
+{
+	"" true
+}
++ObjProp 52 "BlockFrob"
+{
+	"" true
+}
++ObjProp 53 "BlockFrob"
+{
+	"" true
+}
++ObjProp 54 "BlockFrob"
+{
+	"" true
+}
++ObjProp 55 "BlockFrob"
+{
+	"" true
+}
++ObjProp 56 "BlockFrob"
+{
+	"" true
+}
+
+//statement (goal 1)
++Receptron 65 "Touch"
+{
+	Min 9
 	Max None
-	Target Me
+
+	Target 196
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
 	}
 }
-++Receptron 196 "EarthStim"
+++Receptron 65 "Touch"
 {
+	Min 9
 	Max None
+
 	Effect "SetQvar"
 	{
 		"Quest Variable" goal_state_1
@@ -63,6 +106,15 @@ FINGERPRINT
 		"Operand" 1
 	}
 }
+-Link 196 160 "ControlDevice"
+-Link 196 4 "Route"
+-ObjProp 196 "Scripts"
++StimSource 196 "Touch"
+{
+	Intensity 10
+	Propagator "Contact"
+}
+
 //switches
 ObjProp 15 "JointPos"
 {
@@ -116,6 +168,7 @@ ObjProp 102 "StTweqJoints"
 {
 	"Joint2AnimS" On
 }
+
 //AIs
 +ObjProp 91 "InvRendType"
 {
@@ -127,32 +180,43 @@ ObjProp 123 "InvRendType"
 	"Type" Alternate Bitmap
 	"Resource" cswgardm
 }
-//painting
--ObjProp 95 "PhysType"
-ObjProp 95 "Position"
+
+//misplaced objects
++Receptron 95 "Touch"
 {
-	"Location" 22, -55.93, 13
-}
-+ObjProp 95 "PhysType"
-{
-	"Type" OBB
-}
-//alarm
-+Receptron 183 "EarthStim"
-{
+	Min 9
 	Max None
-	Target Me
+
+	Target 183
 	Agent -1259
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
 	}
 }
-+StimSource 183 "EarthStim"
++StimSource 95 "Touch"
 {
-	Intensity 1
+	Intensity 10
 	Propagator "Radius"
 }
+ObjProp 95 "Position"
+{
+	"Location" 22, -55.93, 13
+}
+-ObjProp 95 "PhysType"
++ObjProp 95 "PhysType"
+{
+	"Type" OBB
+}
+
+//footlocker
++ObjProp 110 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//alarm
 +ObjProp 183 "ScriptTiming"
 {
 	"" 2
@@ -161,28 +225,13 @@ ObjProp 95 "Position"
 {
 	"Script 0" OnOffSounds
 }
-//mantling
-+ObjProp 201 "PhysCanMant"
+
+//loot
++ObjProp 218 "DiffTurnOn"
 {
+	"quest var values" 0, 1, 2
 }
-+ObjProp 208 "PhysCanMant"
+ObjProp 218 "Scripts"
 {
-}
-+ObjProp 209 "PhysCanMant"
-{
-}
-+ObjProp 216 "PhysCanMant"
-{
-}
-+ObjProp 217 "PhysCanMant"
-{
-}
-+ObjProp 224 "PhysCanMant"
-{
-}
-+ObjProp 226 "PhysCanMant"
-{
-}
-+ObjProp 227 "PhysCanMant"
-{
+	"Script 0" TrapRelay
 }
