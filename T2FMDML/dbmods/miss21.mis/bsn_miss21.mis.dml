@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_1" == 169
 }
 
-//pickpocketing
+//pickpockets
 +ObjProp 9 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -35,12 +35,90 @@ FINGERPRINT
 {
 	"" =1:DrSPocketCnt
 }
+
+//AIs
++ObjProp 11 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 54 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 102 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 140 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 161 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 162 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
+
+//doors
+ObjProp 42 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 42 "PhysType"
++ObjProp 42 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 78 "Scale"
+{
+	"" 1.05, 1.05, 1
+}
++ObjProp 79 "Scale"
+{
+	"" 1.05, 1.05, 1
+}
+-ObjProp 109 "FrobInfo"
++ObjProp 109 "PickDist"
+{
+	"" -5.00
+}
++Link 109 139 "ControlDevice"
+{
+}
++ObjProp 109 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+
 //arrows
 -ObjProp 50 "DeathStage"
 -ObjProp 105 "DeathStage"
 -ObjProp 117 "DeathStage"
 -ObjProp 118 "DeathStage"
-//evidence scroll
+
+//button
+-Link 104 109 "ControlDevice"
++Link 104 109 "FrobProxy"
+{
+}
++Link 139 -795 "SoundDescription"
+{
+}
++ObjProp 139 "Scripts"
+{
+	"Script 0" AmbientSounds
+	"Don't Inherit" true
+}
+
+//evidence
 +ObjProp 188 "NoDrop"
 {
 	"" true
