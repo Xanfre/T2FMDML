@@ -21,6 +21,10 @@ TagBlock "DARKMISS"
 	"Mission Number" 20
 	"Mission Pathname" miss20
 }
++ObjProp 20 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
 +ObjProp 20 "Scripts"
 {
 	"Script 0" TrapSetQVar
@@ -29,24 +33,7 @@ TagBlock "DARKMISS"
 {
 	"" =1:goal_final_1
 }
-+ObjProp 21 "Scripts"
-{
-	"Script 0" TrapSetQVar
-}
-+ObjProp 21 "TrapQVar"
-{
-	"" =0:goal_state_1
-}
-+Link 25 20 "ControlDevice"
-{
-}
-+Link 25 21 "ControlDevice"
-{
-}
-+ObjProp 25 "Scripts"
-{
-	"Script 0" TrigContained
-}
+
 //gold skull
 +ObjProp 22 "FrobInfo"
 {
@@ -55,4 +42,16 @@ TagBlock "DARKMISS"
 +ObjProp 22 "NoDrop"
 {
 	"" true
+}
+
+//AIs
++ObjProp 23 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 24 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
 }
