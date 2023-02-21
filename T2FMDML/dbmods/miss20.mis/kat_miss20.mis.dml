@@ -91,7 +91,7 @@ ObjProp 154 "Scale"
 }
 ObjProp 209 "TransDoor"
 {
-	"Open Position" -3.5
+	"Open Position" -3.50
 }
 +ObjProp 209 "JointPos"
 {
