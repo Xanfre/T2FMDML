@@ -16,15 +16,9 @@ FINGERPRINT
 }
 
 //final goal
-+ObjProp 42 "Scripts"
++ObjProp 127 "DiffTurnOn"
 {
-	"Script 0" TrigContained
-}
-+Link 42 127 "ControlDevice"
-{
-}
-+Link 42 128 "ControlDevice"
-{
+	"quest var values" 0, 1, 2
 }
 +ObjProp 127 "Scripts"
 {
@@ -34,6 +28,10 @@ FINGERPRINT
 {
 	"" =1:goal_final_1
 }
++ObjProp 128 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
 +ObjProp 128 "Scripts"
 {
 	"Script 0" TrapSetQVar
@@ -42,7 +40,8 @@ FINGERPRINT
 {
 	"" =0:goal_state_1
 }
-//missing loot: 4 x purse (400)
+
+//loot
 Link 108 208 "Contains"
 {
 	"" Belt
@@ -60,12 +59,13 @@ Link 163 206 "Contains"
 {
 	"" Belt
 }
+
 //beer
 ObjProp 135 "FrobInfo"
 {
 	"Inv Action" None
 }
-+ObjProp 135 "NoDrop"
+ObjProp 135 "NoDrop"
 {
 	"" true
 }
@@ -73,16 +73,67 @@ ObjProp 135 "GameName"
 {
 	"" Name_Guiness: "Guiness"
 }
+
+//doors
+ObjProp 38 "RotDoor"
+{
+	"Open Angle" 271
+}
++Receptron 154 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 154 "Scale"
+{
+	"" 0.5, 0.5, 0.25
+}
+ObjProp 209 "TransDoor"
+{
+	"Open Position" -3.5
+}
++ObjProp 209 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 209 "Scale"
+{
+	"" 1, 1, 0.5
+}
++Receptron 211 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 211 "Scale"
+{
+	"" 0.5, 0.5, 0.25
+}
+ObjProp 213 "TransDoor"
+{
+	"Open Position" -4.40
+}
++ObjProp 213 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 213 "Scale"
+{
+	"" 1.25, 1.25, 0.625
+}
+
 //banner
 +ObjProp 119 "BlockFrob"
 {
 	"" true
 }
--ObjProp 119 "PhysType"
-ObjProp 119 "Position"
+ObjProp 119 "Position" 
 {
 	"Location" 88.95, 86, -15
 }
+-ObjProp 119 "PhysType"
 +ObjProp 119 "PhysType"
 {
 	"Type" OBB
@@ -91,6 +142,7 @@ ObjProp 119 "Position"
 {
 	"" 1.05, 1.05, 1.05
 }
+
 //keys
 +ObjProp 125 "SlayResult"
 {
@@ -98,3 +150,6 @@ ObjProp 119 "Position"
 +ObjProp 212 "SlayResult"
 {
 }
+
+//rope arrow
+-ObjProp 188 "PhysType"
