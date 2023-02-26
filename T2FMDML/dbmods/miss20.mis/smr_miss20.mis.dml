@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: A Smuggler's Request by Richard Cull (RiCh) / Fix AI names
+//T2 FM: A Smuggler's Request by Richard Cull (RiCh) / Fixes
 
 FINGERPRINT
 {
@@ -15,11 +15,12 @@ FINGERPRINT
 	QVAR "goal_target_4" == 1870
 }
 
+// carried body names
 +ObjProp 1994 "GameName"
 {
-	"" Name_obj : "Ship Captain"
+	"" Name_obj : "Ship's Captain"
 }
 +ObjProp 685 "GameName"
 {
-	"" Name_obj : "Captain of the Guard"
+	"" Name_obj : "Captain Ash: Captain of the Guard"
 }
