@@ -15,6 +15,12 @@ FINGERPRINT
 	QVAR "goal_target_7" == 969
 }
 
+//starting point
+ObjProp 56 "Scripts"
+{
+	"Don't Inherit" false
+}
+
 //doors
 +Link 38 39 "ScriptParams"
 {
