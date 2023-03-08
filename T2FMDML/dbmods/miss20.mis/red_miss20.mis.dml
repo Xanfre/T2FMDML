@@ -70,6 +70,7 @@ FINGERPRINT
 +ObjProp 2992 "Material Tags"
 {
 }
+
 //doors
 +ObjProp 90 "BlockFrob"
 {
@@ -256,6 +257,7 @@ ObjProp 678 "Scripts"
 -ObjProp 2508 "JointPos"
 -ObjProp 2528 "JointPos"
 -ObjProp 2767 "JointPos"
+
 //AIs
 +ObjProp 131 "InvRendType"
 {
@@ -354,10 +356,30 @@ ObjProp 2456 "AI_Mode"
 	"Type" Alternate Bitmap
 	"Resource" csherif2
 }
+
+//chests
+ObjProp 297 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 298 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 960 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 2209 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
 //arrows
 -ObjProp 705 "PhysType"
 -ObjProp 706 "PhysType"
 -ObjProp 707 "PhysType"
+
 //explosive charges
 +ObjProp 798 "CombineType"
 {
@@ -367,6 +389,7 @@ ObjProp 2456 "AI_Mode"
 {
 	"" ExplosiveCharge
 }
+
 //junk
 +ObjProp 1729 "NoDrop"
 {
@@ -393,6 +416,7 @@ ObjProp 2456 "AI_Mode"
 +ObjProp 2446 "GameName"
 {
 }
+
 //quest items
 ObjProp 1741 "FrobInfo"
 {
