@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Last Caress (Horror Contest) by Tom N. Harris (Telliamed) / Fixes
+//T2 FM: Last Caress (MOH Contest) by Tom N. Harris (Telliamed) / Fixes
 
 FINGERPRINT
 {
@@ -15,38 +15,161 @@ FINGERPRINT
 	QVAR "goal_target_0" == 286
 }
 
-#script "squirrel"
-
-+MetaProp 581 -1629
-+MetaProp 582 -1629
-+MetaProp 400 -1629
-+MetaProp 579 -1629
-+MetaProp 578 -1629
-+ObjProp 591 "DesignNote"
-{
-	"" RepositionLoc=-7.48327,13.5434,119.125
-}
-+ObjProp 591 "Scripts"
-{
-	"Script 0" T2FMDMLSimReposAbs
-}
-+ObjProp 588 "DesignNote"
-{
-	"" RepositionLoc=-24.7541,9.96724,118.965; RepositionDir=0,0,0
-}
-+ObjProp 588 "Scripts"
-{
-	"Script 0" T2FMDMLSimReposAbs
-}
-+ObjProp 689 "PhysCanMant"
-{
-	"" false
-}
+//mantling
 +ObjProp 82 "PhysCanMant"
 {
-	"" false
 }
 +ObjProp 83 "PhysCanMant"
 {
-	"" false
 }
++ObjProp 232 "PhysCanMant"
+{
+}
++ObjProp 275 "PhysCanMant"
+{
+}
++ObjProp 463 "PhysCanMant"
+{
+}
++ObjProp 482 "PhysCanMant"
+{
+}
++ObjProp 483 "PhysCanMant"
+{
+}
++ObjProp 592 "PhysCanMant"
+{
+}
++ObjProp 614 "PhysCanMant"
+{
+}
++ObjProp 615 "PhysCanMant"
+{
+}
++ObjProp 689 "PhysCanMant"
+{
+}
+
+//doors
+ObjProp 112 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 112 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 112 "PhysType"
++ObjProp 112 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 121 "BlockFrob"
+{
+	"" true
+}
+ObjProp 121 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 174 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 174 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 174 "PhysType"
++ObjProp 174 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 360 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 360 "JointPos"
+-ObjProp 400 "JointPos"
+-ObjProp 581 "JointPos"
+-ObjProp 582 "JointPos"
++MetaProp 362 -1629
++MetaProp 363 -1629
++MetaProp 400 -1629
++MetaProp 578 -1629
++MetaProp 579 -1629
++MetaProp 581 -1629
++MetaProp 582 -1629
+
+//footlockers
++Link 343 837 "ControlDevice"
+{
+}
++ObjProp 343 "Scripts"
+{
+	"Script 0" TrigContained
+}
+ObjProp 394 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 526 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 698 "JointPos"
+{
+	"Joint 1" 90.00
+}
++MetaProp 698 -1629
++Link 837 698 "ScriptParams"
+{
+	"" rFrobInert
+}
++ObjProp 837 "Scripts"
+{
+	"Script 0" TrapMetaProp
+}
+
+//odometer
++ObjProp 388 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 388 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 388 "TrapQVar"
+{
+	"" =0:combo
+}
+
+//misplaced objects
+ObjProp 588 "Position"
+{
+	"Location" -25.55, 9.5, 118
+}
+ObjProp 591 "Position"
+{
+	"Location" -5.4, 15.15, 118.925
+}
+
+//plates
+ObjProp 47 "PhysPPlate"
+{
+	"Speed" 1.50
+}
+ObjProp 122 "PhysPPlate"
+{
+	"Speed" 1.50
+}
+ObjProp 546 "PhysPPlate"
+{
+	"Speed" 1.50
+}
+-ObjProp 548 "TrapFlags"
