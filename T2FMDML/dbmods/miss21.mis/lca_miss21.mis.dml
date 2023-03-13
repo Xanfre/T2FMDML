@@ -158,18 +158,3 @@ ObjProp 591 "Position"
 {
 	"Location" -5.4, 15.15, 118.925
 }
-
-//plates
-ObjProp 47 "PhysPPlate"
-{
-	"Speed" 1.50
-}
-ObjProp 122 "PhysPPlate"
-{
-	"Speed" 1.50
-}
-ObjProp 546 "PhysPPlate"
-{
-	"Speed" 1.50
-}
--ObjProp 548 "TrapFlags"
