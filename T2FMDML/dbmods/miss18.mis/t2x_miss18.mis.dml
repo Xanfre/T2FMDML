@@ -38,11 +38,6 @@ ObjProp 81 "RotDoor"
 	"FrobProxyMask" AllowDirect
 }
 
-//key
-+ObjProp 110 "StackCount"
-{
-}
-
 //chests
 ObjProp 161 "JointPos"
 {
