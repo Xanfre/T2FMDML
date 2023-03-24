@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes
+//T2X: Shadows of the Metal Age (Unexpected Shelter) by The Dark Engineering Guild
 
 FINGERPRINT
 {
@@ -15,4 +15,63 @@ FINGERPRINT
 	QVAR "goal_target_2" == 424
 }
 
+//cloud deck / celestial
+TagBlock "CLOUDOBJVAR"
+{
+	"Texture" clouds95
+}
+TagBlock "STAROBJVAR"
+{
+	"Max Sky Intensity" 1000000.00
+}
+
+//door
+ObjProp 81 "RotDoor"
+{
+	"Status" Open
+}
+
+//switches
+-Link 106 1105 "ControlDevice"
++Link 106 124 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+
+//key
++ObjProp 110 "StackCount"
+{
+}
+
+//chests
+ObjProp 161 "JointPos"
+{
+	"Joint 2" 90.00
+}
++ObjProp 1028 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//book
 -ObjProp 1336 "PickDist"
+
+//misplaced objects
+-ObjProp 1370 "PhysType"
++Receptron 1477 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 1477 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
