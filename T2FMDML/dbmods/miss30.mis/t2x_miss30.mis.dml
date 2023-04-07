@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes
+//T2X: Shadows of the Metal Age (Betrayal) by The Dark Engineering Guild
 
 FINGERPRINT
 {
@@ -15,11 +15,88 @@ FINGERPRINT
 	NAME 196 "Beasty"
 }
 
--ObjProp 766 "Position"
-+ObjProp 766 "Position"
+//mantling
++ObjProp 45 "PhysCanMant"
 {
-	"Location" 144.0,246.0,-9.94
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
+}
++ObjProp 46 "PhysCanMant"
+{
+}
++ObjProp 778 "PhysCanMant"
+{
+}
++ObjProp 779 "PhysCanMant"
+{
+}
++ObjProp 980 "PhysCanMant"
+{
+}
++ObjProp 1141 "PhysCanMant"
+{
+}
+
+//misplaced objects
+ObjProp 166 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 166 "Position"
+{
+	"Location" 310, 160.25, 88.95
+	"Heading" 2000
+}
+-ObjProp 166 "PhysType"
++ObjProp 166 "PhysType"
+{
+	"Type" OBB
+}
+
+//AIs
++ObjProp 213 "GameName"
+{
+	"" Name_Malak: "Malak"
+}
++ObjProp 726 "NoFlash"
+{
+	"" true
+}
+ObjProp 726 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+}
++Receptron 766 "LightBright"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 766 "NoFlash"
+{
+	"" true
+}
+
+//invalid scaling
+-ObjProp 533 "Scale"
+-ObjProp 588 "Scale"
+
+//doors
+ObjProp 833 "RotDoor"
+{
+	"Status" Open
+}
++MetaProp 1076 -2420
++MetaProp 1077 -2420
++MetaProp 1078 -2420
++MetaProp 1079 -2420
++ObjProp 1966 "Locked"
+{
+	"" true
+}
+-ObjProp 1966 "JointPos"
+-ObjProp 1967 "JointPos"
++ObjProp 1967 "Locked"
+{
+	"" true
 }
