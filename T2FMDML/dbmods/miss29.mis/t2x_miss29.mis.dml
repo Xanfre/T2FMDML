@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fix gem objective
+//T2X: Shadows of the Metal Age (The Cure) by The Dark Engineering Guild
 
 FINGERPRINT
 {
@@ -15,4 +15,168 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1998
 }
 
+//goal 2 (expert)
 -Link 1348 1341 "ControlDevice"
+
+//AIs
++ObjProp 1694 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
++ObjProp 1698 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
++ObjProp 1751 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
++ObjProp 1826 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
++ObjProp 1844 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
++ObjProp 1899 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
++ObjProp 1917 "Scripts"
+{
+	"Script 0" AICheatScript
+	"Don't Inherit" true
+}
+
+//doors
+ObjProp 102 "RotDoor"
+{
+	"Open Angle" 280
+	"Clockwise?" true
+}
+-ObjProp 575 "PhysType"
++ObjProp 575 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 579 "Position"
+{
+	"Location" -245.3, 19.9, 70.7
+}
+-ObjProp 579 "PhysType"
++ObjProp 579 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 580 "Position"
+{
+	"Location" -244.7, 24.1, 70.7
+}
+-ObjProp 580 "PhysType"
++ObjProp 580 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 589 -2420
++MetaProp 666 -2420
++MetaProp 732 -2420
++MetaProp 1955 -2420
++MetaProp 1961 -2420
+ObjProp 1298 "RotDoor"
+{
+	"Open Angle" 280
+	"Clockwise?" true
+}
+ObjProp 1298 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 1298 "PhysType"
++ObjProp 1298 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1868 "BlockFrob"
+{
+	"" true
+}
+
+//chests
+ObjProp 308 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 397 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 421 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 709 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 715 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 827 "JointPos"
+{
+	"Joint 2" 90.00
+}
+-ObjProp 1339 "Scripts"
+ObjProp 1339 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 1348 "JointPos"
+{
+	"Joint 2" 90.00
+}
+ObjProp 1348 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 2063 "JointPos"
+{
+	"Joint 2" 90.00
+}
+
+//misplaced objects
+ObjProp 509 "Scale"
+{
+	"" 0.75, 0.75, 0.7
+}
+-ObjProp 509 "PhysType"
++ObjProp 509 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 618 "PhysType"
++ObjProp 618 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 641 "PhysType"
+ObjProp 641 "Position"
+{
+	"Location" -430, -12, 67.1
+}
+
+//various objects
++ObjProp 530 "InvType"
+{
+}
++ObjProp 676 "SlayResult"
+{
+	"Effect" Destroy
+}
