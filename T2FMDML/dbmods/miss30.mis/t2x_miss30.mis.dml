@@ -82,6 +82,18 @@ ObjProp 726 "Scripts"
 -ObjProp 588 "Scale"
 
 //doors
++Receptron 833 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 833 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
 ObjProp 833 "RotDoor"
 {
 	"Status" Open
