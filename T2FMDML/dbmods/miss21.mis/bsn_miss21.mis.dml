@@ -77,13 +77,15 @@ ObjProp 42 "Position"
 {
 	"Type" OBB
 }
-+ObjProp 78 "Scale"
+ObjProp 78 "RotDoor"
 {
-	"" 1.05, 1.05, 1
+	"Open Angle" 0.00
+	"Status" Open
 }
-+ObjProp 79 "Scale"
+ObjProp 79 "RotDoor"
 {
-	"" 1.05, 1.05, 1
+	"Open Angle" 0.00
+	"Status" Open
 }
 -ObjProp 109 "FrobInfo"
 +ObjProp 109 "PickDist"
