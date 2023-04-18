@@ -254,7 +254,7 @@ ObjProp 1590 "AI_Converation"
 }
 +ObjProp 1590 "DesignNote"
 {
-	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=217; NVMetaTrapOff="Null"; NVMetaTrapCount=1
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=217; NVMetaTrapCount=1
 }
 ObjProp 1590 "Scripts"
 {
