@@ -15,23 +15,136 @@ FINGERPRINT
 	QVAR "goal_target_1" == 950
 }
 
-//secrets
--ObjProp 141 "DarkStat"
--ObjProp 848 "DarkStat"
-+ObjProp 384 "DarkStat"
+//mantling
++ObjProp 13 "PhysCanMant"
 {
 }
-//door mat
++ObjProp 68 "PhysCanMant"
+{
+}
++ObjProp 1647 "PhysCanMant"
+{
+}
++ObjProp 1648 "PhysCanMant"
+{
+}
++ObjProp 1678 "PhysCanMant"
+{
+}
+
+//secrets
+ObjProp 11 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+}
+-ObjProp 11 "DarkStat"
+-ObjProp 141 "DarkStat"
+-ObjProp 848 "DarkStat"
+-Receptron 848 "PlayerStim"
+-StimSource 848 "PlayerStim"
++Link 848 1037 "ControlDevice"
+{
+}
+-Receptron 1037 "ScriptStim"
+-ObjProp 1037 "FrobInfo"
+-Link 1037 1037 "ScriptParams"
+-ObjProp 1037 "Scripts"
+
+//doors, windows
+Create -445 "Blocker"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 27.25, -65.35, -3.5
+		"Bank" 4000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+}
+Create -2648 "BW"
+{
+	+ObjProp "Position"
+	{
+		"Location" 27.25, -65, -1.5
+		"Heading" 4000
+	}
+}
++Link "BW" 407 "Contains"
+{
+}
+-Link 100 98 "ControlDevice"
+ObjProp 76 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 227 "AI_BlkVis"
+{
+	"" true
+}
 +ObjProp 254 "BlockFrob"
 {
 	"" true
 }
-//doors
+-Link 254 1600 "ControlDevice"
+ObjProp 254 "Scripts"
+{
+	"Script 1" TrigWorldFrob
+	"Don't Inherit" true
+}
++ObjProp 314 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 314 "BlockFrob"
+{
+	"" true
+}
++ObjProp 402 "BlockFrob"
+{
+	"" true
+}
+-Link 402 99 "ControlDevice"
++Link 402 "BW" "ControlDevice"
+{
+}
+ObjProp 402 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" ""
+}
++ObjProp 456 "BlockFrob"
+{
+	"" true
+}
 +Receptron 469 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
+}
+ObjProp 492 "StTweqLock"
+{
+	"AnimS" None
 }
 +Receptron 493 "WeaponStim"
 {
@@ -39,17 +152,89 @@ FINGERPRINT
 	Max None
 	Effect "Abort"
 }
+ObjProp 493 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 493 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 493 "PhysType"
++ObjProp 493 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 496 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 606 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 607 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 616 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 616 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 616 "PhysType"
++ObjProp 616 "PhysType"
+{
+	"Type" OBB
+}
 +Receptron 621 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
 }
-ObjProp 621 "Scripts"
-{
-	"Don't Inherit" true
-}
+-ObjProp 621 "Scripts"
 +Receptron 711 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 711 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Receptron 834 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 834 "Scale"
+{
+	"" 1.4285, 1.4285, 0.714285
+}
+-Link 834 853 "ControlDevice"
+-ObjProp 834 "Scripts"
+-ObjProp 834 "TrapFlags"
+-ObjProp 853 "TrapFlags"
+ObjProp 907 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 980 "PhysCanMant"
+{
+}
++Receptron 980 "WeaponStim"
 {
 	Min None
 	Max None
@@ -61,19 +246,128 @@ ObjProp 621 "Scripts"
 	Max None
 	Effect "Abort"
 }
-+Receptron 1268 "WeaponStim"
+-MetaProp 1268 -2418
+ObjProp 1307 "RotDoor"
 {
-	Min None
+	"Open Angle" 90
+	"Clockwise?" false
+}
+-ObjProp 1307 "Scale"
++Receptron 1309 "Stench"
+{
 	Max None
-	Effect "Abort"
+
+	Target Me
+	Agent -1262
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
 }
-+ObjProp 1309 "Class Tags"
+++Receptron 1309 "Stench"
 {
-	"1: Tags" DoorType Slide1
+	Max None
+
+	Target 1268
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
 }
-//disguised firewand / toolbox
+++Receptron 1309 "Stench"
+{
+	Max None
+
+	Target 254
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1309 "Stench"
+{
+	Max None
+
+	Target 970
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 1309 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 1598 "StTweqLock"
+{
+	"AnimS" None
+}
+
+//chests
++ObjProp 343 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 430 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 448 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 754 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 848 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1011 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1230 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1230 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 2
+	"Joint2AnimC" Sim
+	"    rate-low-high2" 30, 0, 45
+}
++ObjProp 1231 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1248 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1249 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//quest items
 +ObjProp 351 "StackCount"
 {
+}
+ObjProp 1044 "FrobInfo"
+{
+	"World Action" None
 }
 ++Receptron 1086 "GenStim"
 {
@@ -100,13 +394,177 @@ ObjProp 621 "Scripts"
 		"Prop Name" FrobInfo
 	}
 }
-//shake in romero's hand
-ObjProp 1044 "FrobInfo"
+
+//keys
++ObjProp 20 "TrapFlags"
 {
-	"World Action" None
+	"" Once
 }
-//inn key
+-Link 503 20 "ControlDevice"
+-ObjProp 1115 "PhysType"
+-ObjProp 1115 "TrapFlags"
+ObjProp 1115 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+}
 ObjProp 1125 "Scripts"
 {
 	"Script 0" TrigContained
+	"Script 1" ""
+}
+
+//misplaced objects
+ObjProp 109 "Position"
+{
+	"Heading" b555
+}
+-ObjProp 109 "PhysType"
++ObjProp 109 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1090 "Scale"
+{
+	"" 1, 0.8, 1
+}
+ObjProp 1090 "Position"
+{
+	"Location" -169.55, -30, -3.17225
+}
+-ObjProp 1090 "PhysType"
++ObjProp 1090 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1269 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 1269 "PhysType"
++ObjProp 1269 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1354 "Position"
+{
+	"Location" -162.5, -41.95, 0.5
+}
+
+//switches
+-Link 206 834 "ControlDevice"
+-Link 217 853 "ControlDevice"
+-Link 341 1309 "ControlDevice"
+-Link 667 1014 "ControlDevice"
++Link 667 853 "ControlDevice"
+{
+}
+-Link 1014 667 "ControlDevice"
+-Link 1014 206 "ControlDevice"
+-Link 1014 217 "ControlDevice"
++Link 1014 667 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+-Link 636 807 "ControlDevice"
+-Link 807 636 "ControlDevice"
+-Link 807 1268 "ControlDevice"
++Link 807 636 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 648 "Position"
+{
+	"Location" -158.6, -107, 12
+}
+-ObjProp 648 "PhysType"
++ObjProp 648 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1077 "Position"
+{
+	"Location" -123.5, -79.9, -1
+}
+-ObjProp 1077 "PhysType"
++ObjProp 1077 "PhysType"
+{
+	"Type" OBB
+}
+
+//AIs
+Receptron 363 "GenStim" 002100C1
+{
+	Min 9998.5
+	Max 9999.5
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 363 "GenStim"
+{
+	Min 9998.5
+	Max 9999.5
+
+	Target Me
+	Agent 726
+
+	Effect "add_prop"
+	{
+		"Prop Name" Scripts
+	}
+}
+Receptron 372 "GenStim" 00210038
+{
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+Receptron 372 "GenStim" 0021008E
+{
+	Min 169.5
+	Max 170.5
+
+	Target Me
+	Agent 726
+
+	Effect "add_prop"
+	{
+		"Prop Name" Scripts
+	}
+}
+ObjProp 372 "Scripts"
+{
+	"Don't Inherit" false
+}
+Receptron 575 "GenStim" 00210045
+{
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+++Receptron 575 "GenStim"
+{
+	Min 9998.5
+	Max 9999.5
+
+	Target Me
+	Agent 726
+
+	Effect "add_prop"
+	{
+		"Prop Name" Scripts
+	}
+}
++ObjProp 726 "Scripts"
+{
+	"Script 0" TrigSlain
 }
