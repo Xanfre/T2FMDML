@@ -246,6 +246,10 @@ ObjProp 907 "RotDoor"
 	Max None
 	Effect "Abort"
 }
++ObjProp 1268 "BlockFrob"
+{
+	"" true
+}
 -MetaProp 1268 -2418
 ObjProp 1307 "RotDoor"
 {
@@ -263,6 +267,18 @@ ObjProp 1307 "RotDoor"
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
+	}
+}
+++Receptron 1309 "Stench"
+{
+	Max None
+
+	Target 1268
+	Agent 1580
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
 	}
 }
 ++Receptron 1309 "Stench"
