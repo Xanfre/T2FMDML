@@ -45,9 +45,6 @@ ObjProp 815 "Position"
 +ObjProp 483 "PhysCanMant"
 {
 }
-+ObjProp 742 "PhysCanMant"
-{
-}
 
 //doors
 -ObjProp 5 "JointPos"
@@ -112,6 +109,9 @@ ObjProp 475 "Position"
 +ObjProp 475 "PhysType"
 {
 	"Type" OBB
+}
++ObjProp 742 "PhysCanMant"
+{
 }
 ObjProp 742 "Scripts"
 {
