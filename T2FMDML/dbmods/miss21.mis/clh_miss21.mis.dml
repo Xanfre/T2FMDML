@@ -15,6 +15,40 @@ FINGERPRINT
 	NAME 696 "WindS7"
 }
 
+//teleport point
+ObjProp 815 "Position"
+{
+	"Heading" 8000
+}
+
+//mantling
++ObjProp 146 "PhysCanMant"
+{
+}
++ObjProp 171 "PhysCanMant"
+{
+}
++ObjProp 472 "PhysCanMant"
+{
+}
++ObjProp 473 "PhysCanMant"
+{
+}
+-ObjProp 473 "PhysType"
++ObjProp 473 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 474 "PhysCanMant"
+{
+}
++ObjProp 483 "PhysCanMant"
+{
+}
++ObjProp 742 "PhysCanMant"
+{
+}
+
 //doors
 -ObjProp 5 "JointPos"
 -ObjProp 6 "JointPos"
@@ -23,37 +57,141 @@ FINGERPRINT
 -ObjProp 122 "JointPos"
 -ObjProp 191 "JointPos"
 -ObjProp 235 "JointPos"
+-ObjProp 240 "Scale"
+-ObjProp 262 "Scale"
 -ObjProp 267 "JointPos"
 -ObjProp 268 "JointPos"
 -ObjProp 562 "JointPos"
+-ObjProp 57 "PickDist"
+-ObjProp 58 "PickDist"
+-ObjProp 61 "PickDist"
+-ObjProp 420 "PickDist"
+-ObjProp 421 "PickDist"
++ObjProp 34 "BlockFrob"
+{
+	"" true
+}
 +ObjProp 76 "BlockFrob"
 {
 	"" true
 }
-+ObjProp 422 "Material Tags"
++ObjProp 279 "BlockFrob"
 {
-	"1: Tags" Material Stone
+	"" true
 }
-//swordsmen (auto-equip)
--ObjProp 594 "Scripts"
+-ObjProp 279 "HitPoints"
++ObjProp 307 "Locked"
+{
+	"" true
+}
++MetaProp 422 -2420
+ObjProp 427 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 427 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 427 "PhysType"
++ObjProp 427 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 475 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 475 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 475 "PhysType"
++ObjProp 475 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 742 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+
+//AIs
++ObjProp 540 "PhysAIColl"
+{
+	"" true
+}
+ObjProp 540 "Position"
+{
+	"Location" -59.4, -24.1, -19.5
+}
+-ObjProp 540 "PhysType"
++ObjProp 540 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 584 "Scripts"
+-ObjProp 592 "Scripts"
+-ObjProp 591 "Scripts"
++ObjProp 591 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprism02
+}
++ObjProp 594 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprism03
+}
+ObjProp 594 "AI_AlrtRsp"
+{
+	"Response: Step 1" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1" Dan
+	"   Argument 2" Very Fast
+	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 594 115 "AIWatchObj"
+{
+	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 594 118 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" Dan
+	"Response: Step 7" Nothing()
+	"   Argument 1"[6] ""
+	"   Argument 2"[6] ""
+}
 Link 594 593 "Contains"
 {
 	"" Generic Contents
+}
++Link 594 834 "ControlDevice"
+{
 }
 ObjProp 594 "MeshAttach"
 {
 	"attached obj 1" 593
 	"joint of skeleton" 15
-	"x angle (0-65535)" 0
-	"y angle (0-65535)" 0
 	"z angle (0-65535)" 20000
 	"offset" 0.5, -1.25, -0.1
 }
-+ObjProp 594 "HasRefs"
+-ObjProp 594 "Scripts"
++ObjProp 594 "Scripts"
 {
-	"" false
+	"Script 0" TrigAIAlert
 }
--ObjProp 598 "Scripts"
++ObjProp 598 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cprism03
+}
 Link 598 604 "Contains"
 {
 	"" Generic Contents
@@ -62,19 +200,244 @@ ObjProp 598 "MeshAttach"
 {
 	"attached obj 1" 604
 	"joint of skeleton" 15
-	"x angle (0-65535)" 0
-	"y angle (0-65535)" 0
 	"z angle (0-65535)" 20000
 	"offset" 0.5, -1.25, -0.1
 }
-+ObjProp 598 "HasRefs"
+-ObjProp 598 "Scripts"
+ObjProp 600 "AI_Converation"
 {
-	"" false
+	"   Argument 3"[3] ""
 }
-//elise
++ObjProp 600 "TrapFlags"
+{
+	"" Once, NoOff
+}
+-ObjProp 605 "AI_AlrtRsp"
+Link 605 606 "AIWatchObj"
+{
+	"   Argument 1"[3] ""
+	"   Argument 2"[3] Hugo
+}
++Link 605 834 "ControlDevice"
+{
+}
+-ObjProp 605 "Scripts"
++ObjProp 605 "Scripts"
+{
+	"Script 0" TrigAIAlert
+}
+-ObjProp 608 "Scripts"
+-ObjProp 610 "Scripts"
+-ObjProp 607 "Scripts"
+-ObjProp 607 "CretPose"
++ObjProp 607 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
+ObjProp 607 "Position"
+{
+	"Location" -59.3, -24.1, -18.5
+}
+ObjProp 608 "Position"
+{
+	"Location" -72.5, -37.5, -17.5
+}
+ObjProp 621 "AI_AlrtRsp"
+{
+	"Response: Step 1" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1" Bronco
+	"   Argument 2" Very Fast
+	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 621 622 "AIWatchObj"
+{
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] 157
+}
+Link 621 625 "AIWatchObj"
+{
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
++Link 621 834 "ControlDevice"
+{
+}
+-ObjProp 621 "Scripts"
++ObjProp 621 "Scripts"
+{
+	"Script 0" TrigAIAlert
+}
+ObjProp 626 "AI_AlrtRsp"
+{
+	"Response: Step 1" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1" Bennet
+	"   Argument 2" Very Fast
+	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 626 627 "AIWatchObj"
+{
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
+Link 626 629 "AIWatchObj"
+{
+	"Response: Step 4" Nothing()
+	"   Argument 1"[3] ""
+	"   Argument 2"[3] ""
+}
+Link 626 631 "AIWatchObj"
+{
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
++Link 626 834 "ControlDevice"
+{
+}
+-ObjProp 626 "Scripts"
++ObjProp 626 "Scripts"
+{
+	"Script 0" TrigAIAlert
+}
+ObjProp 632 "AI_AlrtRsp"
+{
+	"Response: Step 1" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1" Dan
+	"   Argument 2" Very Fast
+	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 632 633 "AIWatchObj"
+{
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] 468
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
+Link 632 634 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" 23
+	"Response: Step 4" Nothing()
+	"   Argument 1"[3] ""
+	"   Argument 2"[3] ""
+}
+Link 632 638 "AIWatchObj"
+{
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
++Link 632 834 "ControlDevice"
+{
+}
+-ObjProp 632 "Scripts"
++ObjProp 632 "Scripts"
+{
+	"Script 0" TrigAIAlert
+}
+Link 646 647 "AIWatchObj"
+{	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+-ObjProp 646 "Scripts"
+ObjProp 659 "AI_AlrtRsp"
+{
+	"Response: Step 1" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1" Dan
+	"   Argument 2" Very Fast
+	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 659 660 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" 31
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
+Link 659 661 "AIWatchObj"
+{
+	"Response: Step 3" Nothing()
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] ""
+}
++Link 659 834 "ControlDevice"
+{
+}
+-ObjProp 659 "Scripts"
++ObjProp 659 "Scripts"
+{
+	"Script 0" TrigAIAlert
+}
+ObjProp 664 "AI_Converation"
+{
+	"Actor"[8] ActorOne
+	"Conversation: Action 2"[1] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[8] Add
+	"   Argument 2"[8] M-LetterGhost
+	"   Argument 3"[8] KeeperKlon
+}
+-Link 846 867 "ControlDevice"
+-Link 867 835 "ControlDevice"
++ObjProp 688 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cbasso
+}
+Link 688 697 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" GarrysPoint2
+	"Response: Step 5" Nothing()
+	"   Argument 1"[4] ""
+	"   Argument 2"[4] ""
+}
+Link 688 698 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" GarrysPoint
+}
+-ObjProp 688 "Scripts"
+++Receptron 756 "EliseBrief"
+{
+	Min 1
+	Max None
+
+	Target Me
+
+	Effect "rem_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 756 "GameName"
+{
+	"" Name_Elise: "Elise"
+}
++ObjProp 756 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cjenv
+}
 Link 756 835 "Contains"
 {
 	"" Generic Contents
+}
++Link 756 757 "ControlDevice"
+{
 }
 ObjProp 756 "MeshAttach"
 {
@@ -85,33 +448,10 @@ ObjProp 756 "MeshAttach"
 	"z angle (0-65535)" 24000
 	"offset" 0.1, -0.5, -0.2
 }
--Link 846 867 "ControlDevice"
-ObjProp 664 "AI_Converation"
-{
-	"Actor"[8] ActorOne
-	"Conversation: Action 2"[1] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
-	"   Argument 1"[8] Add
-	"   Argument 2"[8] M-LetterGhost
-	"   Argument 3"[8] KeeperKlon
-}
-++Receptron 756 "EliseBrief"
-{
-	Min 1
-	Max None
-	Target Me
-	Agent -1
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
-}
 -ObjProp 756 "Scripts"
 +ObjProp 756 "Scripts"
 {
 	"Script 0" TrigBrainDead
-}
-+Link 756 757 "ControlDevice"
-{
 }
 +ObjProp 757 "Scripts"
 {
@@ -120,4 +460,185 @@ ObjProp 664 "AI_Converation"
 +ObjProp 757 "TrapQVar"
 {
 	"" =3:goal_state_2
+}
+Link 764 768 "AIWatchObj"
+{	"Response: Step 2" Nothing()
+	"   Argument 1"[1] ""
+	"   Argument 2"[1] ""
+}
+Link 764 769 "AIWatchObj"
+{
+	"   Argument 1"[2] ""
+	"   Argument 2"[2] Elise
+}
+
+//books / goals
+-Link 197 804 "ControlDevice"
++Link 197 201 "ControlDevice"
+{
+}
+-Link 493 804 "ControlDevice"
++Link 493 201 "ControlDevice"
+{
+}
+ObjProp 493 "Scripts"
+{
+	"Script 1" StdBook
+}
++Link 201 804 "ControlDevice"
+{
+}
++ObjProp 201 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 201 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
+-Link 857 825 "ControlDevice"
++Link 857 228 "ControlDevice"
+{
+}
++Link 228 825 "ControlDevice"
+{
+}
++ObjProp 228 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 228 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
+-Link 294 789 "ControlDevice"
+-Link 294 787 "ControlDevice"
++Link 294 270 "ControlDevice"
+{
+}
++Link 270 789 "ControlDevice"
+{
+}
++Link 270 787 "ControlDevice"
+{
+}
++ObjProp 270 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-ObjProp 460 "PickDist"
++ObjProp 460 "PickBias"
+{
+	"" 5.00
+}
++ObjProp 722 "PickBias"
+{
+	"" 2.00
+}
+ObjProp 787 "ScriptTiming"
+{
+	"" 1000
+}
+ObjProp 794 "ScriptTiming"
+{
+	"" 1000
+}
+ObjProp 797 "ScriptTiming"
+{
+	"" 2000
+}
+ObjProp 799 "ScriptTiming"
+{
+	"" 5000
+}
+ObjProp 809 "ScriptTiming"
+{
+	"" 1000
+}
+ObjProp 812 "ScriptTiming"
+{
+	"" 500
+}
+ObjProp 818 "ScriptTiming"
+{
+	"" 6000
+}
+
+//chests
++ObjProp 100 "ModelName"
+{
+	"" footlock2
+}
+-ObjProp 199 "Scripts"
++ObjProp 480 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 717 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 740 "JointPos"
+{
+	"Joint 2" 20.00
+}
+
+//keys
++ObjProp 300 "StackCount"
+{
+}
++ObjProp 300 "NoDrop"
+{
+	"" true
+}
++ObjProp 490 "StackCount"
+{
+}
++ObjProp 490 "NoDrop"
+{
+	"" true
+}
++ObjProp 490 "PickBias"
+{
+	"" 1.00
+}
++ObjProp 491 "StackCount"
+{
+}
++ObjProp 491 "NoDrop"
+{
+	"" true
+}
++ObjProp 692 "StackCount"
+{
+}
++ObjProp 692 "NoDrop"
+{
+	"" true
+}
++ObjProp 702 "StackCount"
+{
+}
++ObjProp 702 "NoDrop"
+{
+	"" true
+}
++ObjProp 801 "StackCount"
+{
+}
++ObjProp 801 "NoDrop"
+{
+	"" true
+}
++ObjProp 801 "PickBias"
+{
+	"" 2.00
+}
+-ObjProp 820 "PhysType"
++ObjProp 869 "StackCount"
+{
+}
++ObjProp 869 "NoDrop"
+{
+	"" true
 }
