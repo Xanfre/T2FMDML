@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Mask of Agamemnon by Russ Robbins (Yandros) / Fix mantling
+//T2 FM: The Mask of Agamemnon by Russ Robbins (Yandros) / Fixes
 
 FINGERPRINT
 {
@@ -15,7 +15,42 @@ FINGERPRINT
 	QVAR "goal_target_0" == 559
 }
 
+//doors
++ObjProp 150 "BlockFrob"
+{
+	"" true
+}
+ObjProp 237 "Position"
+{
+	"Location" 363.95, 68, 230
+}
+-ObjProp 237 "PhysType"
++ObjProp 237 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 237 -2420
+-MetaProp 660 -1629
++ObjProp 678 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
+
+//ladder
+ObjProp 170 "Position"
+{
+	"Location" 257.885, 116, 245.95
+}
+-ObjProp 170 "PhysType"
++ObjProp 170 "PhysType"
+{
+	"Type" OBB
+}
+
+//mantling
 +ObjProp 224 "PhysCanMant"
 {
-	"" false
+}
++ObjProp 231 "PhysCanMant"
+{
 }
