@@ -70,6 +70,7 @@ FINGERPRINT
 +ObjProp 763 "Loot"
 {
 }
+
 //doors
 +MetaProp 114 -2420
 +MetaProp 163 -2420
@@ -103,6 +104,14 @@ ObjProp 796 "RotDoor"
 {
 	"Open Angle" 89
 }
++ObjProp 806 "BlockFrob"
+{
+	"" true
+}
++ObjProp 809 "BlockFrob"
+{
+	"" true
+}
 +Link 810 811 "ScriptParams"
 {
 	"" Double
@@ -111,13 +120,57 @@ ObjProp 796 "RotDoor"
 {
 	"" Double
 }
+
 //mask
 +ObjProp 640 "StackCount"
 {
 }
-//wall skull
+
+//misplaced objects
++Receptron 714 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 714 "Stench"
+{
+	Max None
+
+	Target 14
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 714 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
 -ObjProp 714 "PhysType"
 +ObjProp 714 "PhysType"
 {
-	"Type" Sphere
+	"Type" OBB
+}
+ObjProp 765 "Position"
+{
+	"Location" -44.14, 173.3, 20.3
+}
+-ObjProp 765 "PhysType"
++ObjProp 765 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 958 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
 }
