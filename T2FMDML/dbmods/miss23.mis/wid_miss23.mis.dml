@@ -18,21 +18,378 @@ FINGERPRINT
 #script "nvscript"
 
 //blocker
-+Receptron 160 "EarthStim"
+Create -2789 "CB"
 {
-	Min 9
-	Max None
-	Target -6812
-	Effect "create_obj"
+	+ObjProp "Position"
 	{
-		"Position" 232, 184, -174
+		"Location" 232, 184, -174
 	}
 }
+Create -6812 "CaveBlocker"
+{
+	+ObjProp "Position"
+	{
+		"Location" 212, 184, -174
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapDestroy
+	}
+}
++Link "CB" "CaveBlocker" "ControlDevice"
+{
+}
++Link 1490 "CaveBlocker" "ControlDevice"
+{
+}
+
+//goals
 +ObjProp 160 "DesignNote"
 {
-	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[10.00]EarthStim"
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=1000; NVRelayTrapTDest=1007
+}
+-Link 160 1007 "ControlDevice"
++Link 160 "CB" "ControlDevice"
+{
 }
 ObjProp 160 "Scripts"
 {
 	"Script 1" NVRelayTrap
+}
++ObjProp 967 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=1361; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1200
+}
+ObjProp 967 "Scripts"
+{
+	"Script 0" StdBook
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+}
++ObjProp 1361 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1361 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++ObjProp 1362 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 1362 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1362 "TrapQVar"
+{
+	"" =0:goal_target_3
+}
+
+//quest items
++ObjProp 44 "StackCount"
+{
+}
++ObjProp 44 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 44 "Scripts"
+{
+	"Script 1" ""
+}
++StimSource 140 "Stench"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+-ObjProp 140 "PhysType"
+ObjProp 140 "Position"
+{
+	"Location" 636, 566.25, -199.975
+}
++ObjProp 140 "StackCount"
+{
+}
++ObjProp 141 "StackCount"
+{
+}
++StimSource 141 "Stench"
+{
+	Intensity 5
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++Receptron 142 "Stench"
+{
+	Max 2
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++Receptron 143 "Stench"
+{
+	Min 3
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++ObjProp 205 "Class Tags"
+{
+}
+ObjProp 1030 "Scripts"
+{
+	"Don't Inherit" true
+}
++Receptron 1030 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
++StimSource 1031 "Stench"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 1031 "StackCount"
+{
+}
++ObjProp 1073 "PickBias"
+{
+	"" 2.00
+}
++ObjProp 1088 "Class Tags"
+{
+}
++ObjProp 1089 "Class Tags"
+{
+}
++ObjProp 1090 "Class Tags"
+{
+}
++ObjProp 1200 "Class Tags"
+{
+}
++ObjProp 1202 "Class Tags"
+{
+}
++ObjProp 1203 "Class Tags"
+{
+}
++ObjProp 1204 "Class Tags"
+{
+}
++ObjProp 1205 "Class Tags"
+{
+}
++ObjProp 1206 "Class Tags"
+{
+}
+
+//doors
+ObjProp 53 "TransDoor"
+{
+	"Open Position" -10.00
+}
+
++Link 57 974 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 57 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 73 979 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 73 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
++Link 137 1064 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 137 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++ObjProp 743 "BlockFrob"
+{
+	"" true
+}
++ObjProp 743 "PickDist"
+{
+	"" 5.00
+}
++Link 743 971 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 743 972 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 743 973 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 743 1169 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 743 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 761 980 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 761 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
++Link 764 981 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 764 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
++Link 765 982 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 765 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
+
+//switches
++Receptron 56 "Stench"
+{
+	Max None
+
+	Target 1169
+	Agent -5040
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 56 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++Link 56 1070 "ControlDevice"
+{
+}
++ObjProp 56 "TrapFlags"
+{
+	"" Invert, NoOn
+}
++ObjProp 56 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 1169 56 "ControlDevice"
+{
+}
+ObjProp 1169 "Position"
+{
+	"Location" 428.76, 175.65, -136.15
+}
+-ObjProp 1169 "PhysType"
++ObjProp 1169 "PhysType"
+{
+	"Type" OBB
+}
+-Link 1171 1070 "ControlDevice"
++Link 1171 1169 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 61 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
++ObjProp 1175 "JointPos"
+{
+	"Joint 1" 60.00
+}
+ObjProp 1175 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
+
+//misplaced objects
+ObjProp 223 "Position"
+{
+	"Location" 564, 240.5, -312
+}
+-ObjProp 223 "PhysType"
++ObjProp 223 "PhysType"
+{
+	"Type" OBB
+}
+
+//quivers
++ObjProp 1240 "DesignNote"
+{
+	"" NVMetaTrapOn="Container"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1240 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
++ObjProp 1254 "DesignNote"
+{
+	"" NVMetaTrapOn="Container"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 1254 "Scripts"
+{
+	"Script 0" NVMetaTrap
 }
