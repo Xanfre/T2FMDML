@@ -54,3 +54,8 @@ ObjProp 170 "Position"
 +ObjProp 231 "PhysCanMant"
 {
 }
+
+//invalid scaling
+-ObjProp 362 "Scale"
+-ObjProp 623 "Scale"
+-ObjProp 659 "Scale"
