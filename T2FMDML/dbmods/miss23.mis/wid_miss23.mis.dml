@@ -350,11 +350,6 @@ ObjProp 1169 "Position"
 {
 	"FrobProxyMask" AllowDirect
 }
-ObjProp 61 "JointPos"
-{
-	"Joint 1" 0.00
-	"Joint 2" 0.00
-}
 +ObjProp 1175 "JointPos"
 {
 	"Joint 1" 60.00
