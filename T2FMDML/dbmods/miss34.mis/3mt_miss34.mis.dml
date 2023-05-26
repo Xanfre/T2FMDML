@@ -29,9 +29,6 @@ FINGERPRINT
 +ObjProp 12 "FrobInfo"
 {
 }
-+ObjProp 199 "FrobInfo"
-{
-}
 -ObjProp 170 "PhysType"
 +ObjProp 170 "PhysType"
 {
@@ -68,6 +65,10 @@ FINGERPRINT
 	Intensity 1
 	Propagator "Radius"
 }
++ObjProp 199 "FrobInfo"
+{
+}
+-ObjProp 199 "Scripts"
 -ObjProp 256 "JointPos"
 -ObjProp 257 "JointPos"
 -ObjProp 258 "JointPos"
