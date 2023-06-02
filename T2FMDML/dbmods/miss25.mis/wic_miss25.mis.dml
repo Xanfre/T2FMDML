@@ -1,0 +1,138 @@
+DML1
+
+//T2 FM: The Wickerman (Contest 2) by Mark Cole (MaJiC) / Fixes
+
+FINGERPRINT
+{
+	116 [17 -52 6]
+	369 [25 -90 -30]
+	101 [21 -73 0]
+	192 [23 -90 -4]
+	119 [17 -55 -16]
+	75 [22 -49 -21]
+	29 [-19 -53 -20]
+	158 [17 -55 -12]
+	QVAR "goal_target_3" == 35
+}
+
+//goals
++ObjProp 201 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 201 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 201 "TrapQVar"
+{
+	"" =0:goal_target_8
+}
++ObjProp 181 "Scripts"
+{
+	"Script 1" ""
+}
++Link 181 205 "ControlDevice"
+{
+}
++Link 204 205 "ControlDevice"
+{
+}
++ObjProp 204 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 204 "Scripts"
+{
+	"Script 0" TrapSetQVar
+	"Script 1" TrapNonFinalComplete
+}
++ObjProp 204 "TrapQVar"
+{
+	"" =1:goal_state_8
+}
++Link 205 204 "ControlDevice"
+{
+}
++Link 205 379 "ControlDevice"
+{
+}
++ObjProp 205 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 379 215 "ControlDevice"
+{
+}
++ObjProp 379 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+
+//quest items
++ObjProp 31 "FrobInfo"
+{
+	"World Action" Move
+}
+ObjProp 214 "FrobInfo"
+{
+	"Inv Action" None
+}
+
+//AIs
+-Link 8 214 "Contains"
+-Link 8 214 "CulpableFor"
++ObjProp 91 "PhysAIColl"
+{
+	"" true
+}
++ObjProp 93 "PhysAIColl"
+{
+	"" true
+}
+ObjProp 154 "Scripts"
+{
+	"Script 0" TrigRoomObject
+	"Script 1" ""
+	"Script 2" ""
+	"Script 3" ""
+}
+
+//doors
+ObjProp 17 "Scripts"
+{
+	"Script 0" TrigUnlock
+	"Script 1" ""
+	"Script 2" ""
+}
+-ObjProp 36 "PhysType"
+ObjProp 36 "Position"
+{
+	"Location" -20, -60, -20.1
+}
+ObjProp 49 "RotDoor"
+{
+	"Open Angle" 295
+	"Clockwise?" true
+}
+
+//arrows
+-ObjProp 120 "DeathStage"
+-ObjProp 121 "DeathStage"
+-ObjProp 135 "DeathStage"
+
+//keys
++ObjProp 133 "SlayResult"
+{
+}
++ObjProp 133 "NoDrop"
+{
+	"" true
+}
++ObjProp 217 "SlayResult"
+{
+}
++ObjProp 217 "NoDrop"
+{
+	"" true
+}
