@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Shadows in our Blood by Ali Pouladi (Haplo) / Load more recent NVScript module
+//T2 FM: Shadows in our Blood by Ali Pouladi (Haplo) / Fixes
 
 FINGERPRINT
 {
@@ -16,3 +16,390 @@ FINGERPRINT
 }
 
 #script "nvscript"
+
+//blocker
+Create -445 "Blocker"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 318.65, 195, 323
+		"Bank" c000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 3
+	}
+}
+
+//pickpockets
++ObjProp 21 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 21 22 "ControlDevice"
+{
+}
++ObjProp 21 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 22 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 22 "TrapQVar"
+{
+	"" =7:DrSPocketCnt
+}
+
+//doors
++Link 9 42 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 9 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++ObjProp 13 "BlockFrob"
+{
+	"" true
+}
++ObjProp 17 "BlockFrob"
+{
+	"" true
+}
+ObjProp 27 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 27 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 27 "PhysType"
++ObjProp 27 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 39 "BlockFrob"
+{
+	"" true
+}
++ObjProp 40 "BlockFrob"
+{
+	"" true
+}
++ObjProp 42 "BlockFrob"
+{
+	"" true
+}
++Link 42 9 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 42 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++ObjProp 43 "BlockFrob"
+{
+	"" true
+}
++ObjProp 44 "BlockFrob"
+{
+	"" true
+}
+ObjProp 44 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" ""
+	"Script 2" ""
+}
++ObjProp 70 "BlockFrob"
+{
+	"" true
+}
++ObjProp 73 "BlockFrob"
+{
+	"" true
+}
++ObjProp 92 "BlockFrob"
+{
+	"" true
+}
++ObjProp 93 "BlockFrob"
+{
+	"" true
+}
+ObjProp 376 "TransDoor"
+{
+	"Open Position" -4.00
+}
+ObjProp 486 "TransDoor"
+{
+	"Open Position" -4.00
+}
+ObjProp 488 "TransDoor"
+{
+	"Open Position" -4.00
+}
++ObjProp 586 "BlockFrob"
+{
+	"" true
+}
++Link 586 91 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 586 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" DoorFrobInert
+	"Script 2" ""
+	"Don't Inherit" false
+}
++ObjProp 587 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 869 "BlockFrob"
+{
+	"" true
+}
+
+//misplaced objects
+ObjProp 15 "Position"
+{
+	"Location" 297, 297, 297.5
+}
+-ObjProp 15 "PhysType"
++ObjProp 15 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 60 "Position"
+{
+	"Location" 323.9, 304.6, 298.555
+}
+ObjProp 61 "Position"
+{
+	"Location" 325.3, 304.8, 299.255
+}
+-ObjProp 64 "PhysType"
++Receptron 96 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 96 "Stench"
+{
+	Max None
+
+	Target 55
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 96 "Stench"
+{
+	Max None
+
+	Target 93
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 96 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 96 "Position"
+{
+	"Location" 312.56, 295, 314.16
+}
+-ObjProp 96 "PhysType"
++ObjProp 96 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 192 "Position"
+{
+	"Location" 303.5, 242.9, 318
+}
+-ObjProp 192 "PhysType"
++ObjProp 192 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 194 "Position"
+{
+	"Location" 312.7, 237.7, 315.65
+}
+ObjProp 933 "Position"
+{
+	"Location" 371.1, 201, 305
+}
+-ObjProp 933 "PhysType"
++ObjProp 933 "PhysType"
+{
+	"Type" OBB
+}
+
+//AIs
+ObjProp 386 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest=850
+}
++Link 386 1257 "ControlDevice"
+{
+}
+-Link 386 386 "ControlDevice"
+ObjProp 386 "Scripts"
+{
+	"Script 0" TrigRoomDeposit
+	"Script 1" NVRelayTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 520 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
+++Receptron 570 "WeaponStim"
+{
+	Min None
+	Max None
+
+	Target 1321
+
+	Effect "destroy_obj"
+}
++ObjProp 570 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecsub
+}
++ObjProp 585 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecsub
+}
++ObjProp 838 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cmecsub
+}
+
+//goals
++Receptron 850 "Stench"
+{
+	Max None
+
+	Target 386
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
++ObjProp 850 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[1.00]Stench"
+}
++ObjProp 850 "GameName"
+{
+	"" Name_BennyC: "Benny's Corpse"
+}
++Link 850 1258 "ControlDevice"
+{
+}
++ObjProp 850 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVDeleteTrap
+}
+ObjProp 894 "DesignNote"
+{
+	"" NVRelayTrapDelay=1500
+}
+ObjProp 896 "DesignNote"
+{
+	"" NVRelayTrapDelay=500
+}
+ObjProp 898 "DesignNote"
+{
+	"" NVRelayTrapDelay=500
+}
+ObjProp 900 "DesignNote"
+{
+	"" NVRelayTrapDelay=500
+}
+ObjProp 904 "DesignNote"
+{
+	"" NVRelayTrapDelay=500
+}
+ObjProp 906 "DesignNote"
+{
+	"" NVRelayTrapDelay=1500
+}
++ObjProp 1256 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 1258 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=386
+}
++ObjProp 1258 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+
+//switches
+-Link 1176 69 "ControlDevice"
+-Link 69 1176 "ControlDevice"
++Link 69 1176 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+-Receptron 91 "FrobStim"
+-ObjProp 91 "FrobInfo"
