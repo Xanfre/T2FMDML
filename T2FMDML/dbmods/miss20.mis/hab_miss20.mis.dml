@@ -1,0 +1,192 @@
+DML1
+
+//T2 FM: Having a Ball by Kevan Swain (madwolf) & Callum / Fixes
+
+FINGERPRINT
+{
+	505 [173 118 96]
+	155 [168 163 123]
+	107 [71 205 110]
+	334 [151 188 127]
+	197 [212 220 58]
+	557 [100 132 101]
+	539 [32 129 94]
+	432 [78 209 76]
+	QVAR "goal_target_0" == 208
+}
+
+//pickpockets
+-Link 80 521 "ControlDevice"
+-ObjProp 521 "Scripts"
++ObjProp 196 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 196 521 "ControlDevice"
+{
+}
++ObjProp 196 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+
+//doors
+ObjProp 83 "Scale"
+{
+	"" 1.143, 1.143, 1.143
+}
+ObjProp 159 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 159 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 159 "PhysType"
++ObjProp 159 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 160 "KeySrc"
+ObjProp 173 "TransDoor"
+{
+	"Open Position" -10.00
+}
+ObjProp 174 "RotDoor"
+{
+	"Status" Open
+}
++ObjProp 174 "FrobInfo"
+{
+}
+ObjProp 232 "TransDoor"
+{
+	"Open Position" 5.00
+}
++ObjProp 320 "FrobInfo"
+{
+}
++ObjProp 441 "BlockFrob"
+{
+	"" true
+}
++ObjProp 483 "BlockFrob"
+{
+	"" true
+}
+
+//items
++ObjProp 123 "GameName"
+{
+	"" Name_Staff: "Staff"
+}
++ObjProp 208 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 208 "NoDrop"
+{
+	"" true
+}
++ObjProp 208 "GameName"
+{
+	"" Name_Ball: "Ball"
+}
+ObjProp 234 "GameName"
+{
+	"" Name_OP "Old Peculiar"
+}
++ObjProp 235 "CombineType"
+{
+	"" HealingPotion2
+}
+
+//lights
+-ObjProp 132 "PhysType"
+ObjProp 552 "Corona"
+{
+	"texture" corona
+}
+
+//scroll / goal
+-Link 162 496 "ControlDevice"
++Link 162 282 "ControlDevice"
+{
+}
++Link 282 496 "ControlDevice"
+{
+}
++ObjProp 282 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+
+//keys
+-ObjProp 171 "PhysType"
+ObjProp 171 "Position"
+{
+	"Location" 101.6, 209.15, 137.05
+	"Bank" 4000
+}
++ObjProp 171 "StackCount"
+{
+}
++ObjProp 240 "StackCount"
+{
+}
++ObjProp 274 "StackCount"
+{
+}
++ObjProp 378 "StackCount"
+{
+}
+-ObjProp 378 "KeyDst"
+ObjProp 378 "GameName"
+{
+	"" Name_ARKey: "Anteroom Key"
+}
+
+//switches
+ObjProp 443 "Position"
+{
+	"Location" 85.75, 250.1, 113.725
+}
+-ObjProp 443 "PhysType"
++ObjProp 443 "PhysType"
+{
+	"Type" OBB
+}
+-Link 484 483 "ControlDevice"
++Link 484 445 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+-Link 489 441 "ControlDevice"
++Link 489 446 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+
+//AIs
++ObjProp 514 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 515 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 516 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 517 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 527 "TrapFlags"
+{
+	"" Once
+}
