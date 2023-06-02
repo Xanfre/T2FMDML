@@ -1,0 +1,169 @@
+DML1
+
+// T2 FM: Tell Tale Heart by DarthsLair / Fixes
+
+FINGERPRINT
+{
+	1481 [353 280 524]
+	2004 [379 331 454]
+	1096 [379 332 386]
+	112 [418 450 492]
+	987 [529 529 498]
+	2110 [366 337 505]
+	764 [390 512 477]
+	1325 [324 573 504]
+	QVAR "goal_target_5" == 1196
+}
+
+#script "nvscript"
+
+//hanging arrows
+-ObjProp 1260 "PhysType"
++ObjProp 1260 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1260 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
+ObjProp 1260 "Scripts"
+{
+	"Script 1" NVSetPropertyTrap
+}
+-ObjProp 1275 "PhysType"
++ObjProp 1275 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1932 "PhysType"
++ObjProp 1932 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2121 "PhysType"
++ObjProp 2121 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 2121 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
+ObjProp 2121 "Scripts"
+{
+	"Script 1" NVSetPropertyTrap
+}
+-ObjProp 2199 "PhysType"
++ObjProp 2199 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 2199 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
+ObjProp 2199 "Scripts"
+{
+	"Script 1" NVSetPropertyTrap
+}
+
+//secrets
+-ObjProp 2550 "DarkStat"
+-ObjProp 2557 "DarkStat"
+-ObjProp 2572 "DarkStat"
+-ObjProp 2577 "DarkStat"
+-ObjProp 2583 "DarkStat"
+-ObjProp 2603 "DarkStat"
+-ObjProp 2609 "DarkStat"
+-ObjProp 2693 "DarkStat"
+-ObjProp 3361 "DarkStat"
+
+//phantoms
+ObjProp 1727 "AI_SaveConverse"
+{
+	"" false
+}
++ObjProp 2202 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="BeginScript"; NVSetPropertyTrapProperty="HasRefs"; NVSetPropertyTrapValue=0
+}
++ObjProp 2202 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}
+ObjProp 2168 "AI_SaveConverse"
+{
+	"" false
+}
++ObjProp 2205 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="BeginScript"; NVSetPropertyTrapProperty="HasRefs"; NVSetPropertyTrapValue=0
+}
++ObjProp 2205 "Scripts"
+{
+	"Script 0" NVSetPropertyTrap
+}
+
+//AIs
+ObjProp 1995 "Position"
+{
+	"Location" 318.161, 370.714, 513.35
+}
++ObjProp 574 "DesignNote"
+{
+	"" NVDeleteTrapTarget="&Contains"; NVDeleteTrapOn="Slain"
+}
++ObjProp 574 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
++ObjProp 613 "DesignNote"
+{
+	"" NVDeleteTrapTarget="&Contains"; NVDeleteTrapOn="Slain"
+}
++ObjProp 613 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
+
+//objects
+-ObjProp 3315 "PhysType"
+ObjProp 3315 "Position"
+{
+	"Location" 347.196, 449.485, 489.296
+}
++ObjProp 3315 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 3363 "BashStim"
+{
+	Min None
+	Max None
+	Target Me
+	Agent Source
+	Effect "damage"
+	{
+		"Damage Type" 0
+		"Use stimulus as type" true
+		"Multiply By" 0.0
+		"Then Add" -100
+	}
+}
+ObjProp 2990 "Position"
+{
+	"Location" 311.001, 574.258, 515.873
+}
+
+//plaque
+ObjProp 2692 "BookArt"
+{
+	"" stoned4
+}
+
+//mirror
++ObjProp 1757 "BlockFrob"
+{
+	"" true
+}
