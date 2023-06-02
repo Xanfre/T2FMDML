@@ -1,0 +1,140 @@
+DML1
+
+//T2 FM: Vampire Skull (Thief Anniversary Contest) by Nick Dablin (nicked) / Fixes
+
+FINGERPRINT
+{
+	83 [93 72 121]
+	200 [108 87 87]
+	61 [95 81 119]
+	101 [123 88 122]
+	111 [127 92 121]
+	22 [74 92 119]
+	178 [122 118 75]
+	209 [129 103 93]
+	QVAR "goal_target_0" == 134
+}
+
+#script "squirrel"
+
+//final goal
+-Link 201 113 "ControlDevice"
++ObjProp 112 "TrapFlags"
+{
+	"" Once
+}
+
+//vampire skull
++ObjProp 134 "FrobInfo"
+{
+	"World Action" Move
+}
++Link 134 113 "ControlDevice"
+{
+}
++ObjProp 134 "Scripts"
+{
+	"Script 0" TrigContained
+}
+
+//doors
+ObjProp 9 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 9 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.65,0,0"
+}
++Link 9 100 "ScriptParams"
+{
+	"" Double
+}
++ObjProp 9 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 25 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 99 "TransDoor"
+{
+	"Open Position" -4.00
+}
+ObjProp 100 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 100 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.65,0,0"
+}
++ObjProp 100 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 101 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 101 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.65,0,0"
+}
++ObjProp 101 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 102 "RotDoor"
+{
+	"Open Angle" 89
+	"Clockwise?" false
+}
++ObjProp 102 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue="1.65,0,0"
+}
++ObjProp 102 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+-ObjProp 149 "JointPos"
+
+
+//containers
+ObjProp 11 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 11 "PhysType"
++ObjProp 11 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 167 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//AIs
++ObjProp 177 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 178 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 179 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
++ObjProp 180 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
