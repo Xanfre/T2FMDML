@@ -1,0 +1,115 @@
+DML1
+
+//T2 FM: Cathedral of St. Vincent by Pedro Quintela (Cardia) & Rod Peirson (DarthsLair) / Fixes
+
+FINGERPRINT
+{
+	396 [-127 223 57]
+	488 [232 375 40]
+	385 [-85 122 55]
+	1974 [-268 210 107]
+	2178 [282 115 38]
+	1063 [154 35 45]
+	2139 [-275 140 55]
+	2107 [237 362 41]
+	QVAR "goal_target_14" == 1566
+}
+
+//goals
+-Link 27 458 "ControlDevice"
++Link 27 460 "ControlDevice"
+{
+}
+ObjProp 27 "Scripts"
+{
+	"Script 0" TrigContained
+	"Script 1" ""
+}
+-Link 243 2652 "ControlDevice"
+-Link 2652 238 "ControlDevice"
++Link 460 238 "ControlDevice"
+{
+}
++Link 460 458 "ControlDevice"
+{
+}
+-ObjProp 460 "TrapQVar"
+ObjProp 460 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-Link 1119 1122 "ControlDevice"
++Link 1119 1124 "ControlDevice"
+{
+}
++ObjProp 1119 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+}
+-Link 1122 1124 "ControlDevice"
++ObjProp 1122 "TrapFlags"
+{
+	"" Once
+}
+-Link 1124 1122 "ControlDevice"
++Link 1124 547 "ControlDevice"
+{
+}
++ObjProp 1124 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Don't Inherit" true
+}
+-Link 1147 1539 "ControlDevice"
+-Link 1539 1147 "ControlDevice"
++ObjProp 1539 "TrapFlags"
+{
+	"" Once
+}
+
+//keys
+-ObjProp 1123 "Scripts"
++ObjProp 1123 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1570 "Scripts"
++ObjProp 1570 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1571 "Scripts"
++ObjProp 1571 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1574 "Scripts"
++ObjProp 1574 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1575 "Scripts"
++ObjProp 1575 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1576 "Scripts"
++ObjProp 1576 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1864 "Scripts"
++ObjProp 1864 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 1867 "Scripts"
++ObjProp 1867 "Scripts"
+{
+	"Script 0" TrigContained
+}
++ObjProp 2040 "BlockFrob"
+{
+	"" true
+}
