@@ -1,0 +1,24 @@
+DML1
+
+//T2 FM: Jenivere De Ja Vu by John Denison (john9818a) / Fixes
+
+FINGERPRINT
+{
+	1384 [120 -195 5]
+	1489 [88 -422 12]
+	965 [-79 -367 47]
+	1161 [-79 -468 23]
+	2060 [-60 -87 -2]
+	1018 [15 -156 19]
+	25 [83 40 -10]
+	1841 [-52 -459 31]
+	QVAR "goal_target_3" == 1237
+}
+
+//pickpockets
+-Link 1203 585 "CreatureAttachment"
++Link 1203 585 "Contains"
+{
+	"" Belt
+}
+
