@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Relic - Left for Dead by Baddcog and J. Knez (Schwaa) / Fixes
+
+FINGERPRINT
+{
+	56 [-46 373 0]
+	128 [-100 315 -1]
+	160 [-32 337 5]
+	42 [-202 317 -4]
+	29 [-80 384 21]
+	134 [-191 380 1]
+	74 [-27 333 -4]
+	109 [-269 326 24]
+	QVAR "goal_target_0" == 135
+}
+
+//pickpockets
++ObjProp 91 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 91 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 91 92 "ControlDevice"
+{
+}
++ObjProp 92 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 92 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}
