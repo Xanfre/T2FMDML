@@ -52,3 +52,17 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
+//pickpockets
+Link 569 663 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 569 "MeshAttach"
+{
+	"attached obj 1" 663
+	"joint of skeleton" 8
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 16384
+	"z angle (0-65535)" 9000
+	"offset" 0.24, 0.75, 0
+}
