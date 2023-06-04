@@ -55,6 +55,22 @@ Create -2123 "FixLoot"
 		"" =0:TOTAL_LOOT
 	}
 }
+Create -2123 "FixPockets"
+{
+	+ObjProp "DesignNote"
+	{
+		"" NVDeleteTrapDeleteSelf=1
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapSetQVar
+		"Script 1" NVDeleteTrap
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" =6:DrSPocketCnt
+	}
+}
 Create -464 "StartTrigger"
 {
 	+ObjProp "Scripts"
@@ -81,6 +97,9 @@ Create -464 "StartTrigger"
 {
 }
 +Link "StartTrigger" "FixLoot" "ControlDevice"
+{
+}
++Link "StartTrigger" "FixPockets" "ControlDevice"
 {
 }
 //fix object positions
