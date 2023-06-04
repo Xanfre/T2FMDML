@@ -15,7 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_12" == 834
 }
 
-//fix hanging arrows
+//fix hanging objects
 +ObjProp 153 "CollisionType"
 {
 }
@@ -130,15 +130,102 @@ FINGERPRINT
 }
 
 //doors
+-ObjProp 489 "Scale"
+-ObjProp 430 "Scale"
+-ObjProp 424 "Scale"
+-ObjProp 424 "JointPos"
 -ObjProp 622 "JointPos"
 -ObjProp 989 "JointPos"
-
-//quest items
-+ObjProp 886 "NoDrop"
+ObjProp 142 "RotDoor"
+{
+	"Open Angle" 275
+}
+ObjProp 491 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 507 "BlockFrob"
 {
 	"" true
 }
+-ObjProp 507 "PhysType"
++ObjProp 507 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 675 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 675 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 675 "PhysType"
++ObjProp 675 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 811 "Material Tags"
+{
+}
+ObjProp 857 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 857 "PhysType"
++ObjProp 857 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 946 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 946 "PhysType"
++ObjProp 946 "PhysType"
+{
+	"Type" OBB
+}
+
+//quest item / keys
++ObjProp 100 "StackCount"
+{
+}
++ObjProp 223 "StackCount"
+{
+}
++ObjProp 226 "StackCount"
+{
+}
++ObjProp 589 "StackCount"
+{
+}
++ObjProp 589 "NoDrop"
+{
+	"" true
+}
++ObjProp 815 "StackCount"
+{
+}
++ObjProp 893 "StackCount"
+{
+}
++ObjProp 943 "StackCount"
+{
+}
 +ObjProp 1399 "StackCount"
+{
+}
++ObjProp 1684 "StackCount"
+{
+}
+
+//switch
+-Link 363 -795 "SoundDescription"
++Link 363 -775 "SoundDescription"
 {
 }
 
@@ -146,4 +233,44 @@ FINGERPRINT
 +ObjProp 994 "RenderAlpha"
 {
 	"" 0.90
+}
+
+//misplaced objects
++Receptron 1682 "Stench"
+{
+	Max None
+
+	Target 340
+	Agent -5078
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 1682 "Stench"
+{
+	Max None
+
+	Target 377
+	Agent -3628
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 1682 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 1682 "Position"
+{
+	"Location" 55.565, 374.5, 3.308
+}
+-ObjProp 1682 "PhysType"
++ObjProp 1682 "PhysType"
+{
+	"Type" OBB
 }
