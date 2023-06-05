@@ -1,0 +1,30 @@
+DML1
+
+//T2 FM: A New Place for Ghosts (The Mansion) by Pedro Quintela (Cardia) / Fixes
+
+FINGERPRINT
+{
+	83 [-119 143 -63]
+	305 [-76 211 -61]
+	717 [-108 289 -30]
+	1120 [-89 147 -50]
+	1007 [-33 169 -36]
+	641 [-60 373 -39]
+	555 [-80 282 -58]
+	523 [-94 250 -59]
+	QVAR "goal_target_4" == 1263
+}
+
+//pickpockets
++ObjProp 881 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 881 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 881 "TrapQVar"
+{
+	"" =1:PickTotal
+}

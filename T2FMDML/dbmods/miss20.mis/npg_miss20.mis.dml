@@ -1,0 +1,30 @@
+DML1
+
+//T2 FM: A New Place for Ghosts (The Garden) by Pedro Quintela (Cardia) / Fixes
+
+FINGERPRINT
+{
+	1632 [-311 -264 -49]
+	398 [-172 249 -22]
+	1211 [-322 -119 -38]
+	347 [-76 105 -25]
+	971 [-572 48 -68]
+	134 [17 44 -29]
+	1134 [-283 187 -34]
+	1261 [-192 16 -39]
+	QVAR "goal_target_9" == 1715
+}
+
+//pickpockets
++ObjProp 176 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 176 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 176 "TrapQVar"
+{
+	"" =2:PickTotal
+}
