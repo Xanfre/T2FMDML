@@ -1,0 +1,22 @@
+DML1
+
+//T2 FM: Raid on Washout Central by Steven Hindley (Belboz): Fixes
+
+FINGERPRINT
+{
+	728 [-42 -204 30]
+	1784 [8 -112 65]
+	316 [112 201 33]
+	588 [-28 -152 4]
+	527 [-57 87 9]
+	100 [42 36 28]
+	1874 [-144 -99 56]
+	1627 [16 103 74]
+	QVAR "goal_target_3" == 1007
+}
+
+//pickpockets
+Link 990 1007 "Contains"
+{
+	"" Generic Contents
+}
