@@ -145,15 +145,6 @@ ObjProp 491 "RotDoor"
 	"Open Angle" 90
 	"Clockwise?" false
 }
-+ObjProp 507 "BlockFrob"
-{
-	"" true
-}
--ObjProp 507 "PhysType"
-+ObjProp 507 "PhysType"
-{
-	"Type" OBB
-}
 ObjProp 675 "RotDoor"
 {
 	"Open Angle" 90
@@ -190,7 +181,7 @@ ObjProp 946 "Position"
 	"Type" OBB
 }
 
-//quest item / keys
+//quest items / loot / keys
 +ObjProp 100 "StackCount"
 {
 }
@@ -210,12 +201,27 @@ ObjProp 946 "Position"
 +ObjProp 815 "StackCount"
 {
 }
++ObjProp 870 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="Contained"; NVRemovePropertyTrapProp="StTweqRotate"
+}
+ObjProp 870 "Scripts"
+{
+	"Script 1" NVRemovePropertyTrap
+}
+-ObjProp 886 "Material Tags"
++ObjProp 886 "Scripts"
+{
+	"Script 0" LootSounds
+}
 +ObjProp 893 "StackCount"
 {
 }
 +ObjProp 943 "StackCount"
 {
 }
+-ObjProp 1145 "Class Tags"
+-ObjProp 1145 "Scripts"
 +ObjProp 1399 "StackCount"
 {
 }
@@ -223,16 +229,198 @@ ObjProp 946 "Position"
 {
 }
 
-//switch
+//switch / lockbox
 -Link 363 -795 "SoundDescription"
 +Link 363 -775 "SoundDescription"
 {
+}
++ObjProp 580 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 580 "Scripts"
+{
+	"Script 1" NVMetaTrap
 }
 
 //bloodstains
 +ObjProp 994 "RenderAlpha"
 {
 	"" 0.90
+}
+
+//AIs
+++Receptron 1566 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1566 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1567 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1567 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1568 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1568 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1569 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1569 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1570 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1570 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1571 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1571 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1572 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1572 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
+++Receptron 1579 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+++Receptron 1579 "HolyStimEx"
+{
+	Max None
+
+	Target Me
+	Agent -5117
+
+	Effect "add_prop"
+	{
+		"Prop Name" RenderAlpha
+	}
+}
++ObjProp 1755 "RenderAlpha"
+{
+	"" 0.75
 }
 
 //misplaced objects
