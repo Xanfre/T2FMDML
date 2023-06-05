@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Lord Fishkill's Curse by Randy Sybel (Shadowspawn) / Fix loot
+//T2 FM: Lord Fishkill's Curse by Randy Sybel (Shadowspawn) / Fixes
 
 FINGERPRINT
 {
@@ -148,4 +148,27 @@ FINGERPRINT
 	"   Argument 1"[17] ""
 	"   Argument 2"[17] ""
 	"   Argument 3"[17] ""
+}
+-ObjProp 1165 "DeathStage"
+-ObjProp 1181 "DeathStage"
+//pickpockets
+-Link 1382 2395 "ControlDevice"
++ObjProp 280 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 280 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 280 104 "ControlDevice"
+{
+}
++ObjProp 104 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 104 "TrapQVar"
+{
+	"" -2:DrSPocketCnt
 }
