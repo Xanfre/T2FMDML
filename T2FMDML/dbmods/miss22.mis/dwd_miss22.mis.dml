@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Dancing with the Dead by Gregorius / Fix secret
+
+FINGERPRINT
+{
+	741 [322 613 473]
+	1680 [423 622 484]
+	2295 [301 636 450]
+	1171 [147 697 540]
+	1069 [256 624 543]
+	2018 [320 590 470]
+	1017 [244 634 470]
+	1502 [385 533 457]
+	QVAR "goal_target_15" == 5
+}
+
+//pickpockets
++ObjProp 1497 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 1497 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 1497 1509 "ControlDevice"
+{
+}
++ObjProp 1509 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1509 "TrapQVar"
+{
+	"" =6:goal_target_15
+}
