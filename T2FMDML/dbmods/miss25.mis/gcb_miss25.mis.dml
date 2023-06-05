@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: A Guard Called Benny by Jari Mäkinen (Dark Arrow) / Fix loot
+//T2 FM: A Guard Called Benny by Jari Mäkinen (Dark Arrow) / Fixes
 
 FINGERPRINT
 {
@@ -15,6 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_4" == 965
 }
 
+//loot
 +ObjProp 1294 "PhysType"
 {
 	"Type" None
@@ -57,4 +58,24 @@ FINGERPRINT
 +Link 1016 1294 "ScriptParams"
 {
 	"" R@2
+}
+//pickpockets
++ObjProp 356 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 356 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 356 385 "ControlDevice"
+{
+}
++ObjProp 385 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 385 "TrapQVar"
+{
+	"" =1:DrSPocketCnt
 }
