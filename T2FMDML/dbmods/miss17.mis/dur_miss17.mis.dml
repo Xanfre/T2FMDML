@@ -1,0 +1,46 @@
+DML1
+
+//T2 FM: Durant by Donald F. Mazur / Fixes
+
+FINGERPRINT
+{
+	1806 [63 592 -32]
+	893 [99 515 -25]
+	1741 [203 536 -26]
+	1073 [49 367 -24]
+	1240 [131 292 -24]
+	2237 [118 307 -12]
+	970 [14 533 -56]
+	2173 [168 323 -11]
+	QVAR "goal_target_12" == 222
+}
+
+//pickpockets
+Link 728 824 "Contains"
+{
+	"" Generic Contents
+}
++ObjProp 728 "MeshAttach"
+{
+	"attached obj 1" 824
+	"joint of skeleton" 15
+	"x angle (0-65535)" 6000
+	"y angle (0-65535)" 4030
+	"z angle (0-65535)" 29000
+	"offset" 0.5, -0.5, 0.1
+}
+//arrows
+-ObjProp 490 "DeathStage"
+-ObjProp 520 "DeathStage"
+-ObjProp 521 "DeathStage"
+-ObjProp 522 "DeathStage"
+-ObjProp 555 "DeathStage"
+-ObjProp 563 "DeathStage"
+-ObjProp 1166 "DeathStage"
+-ObjProp 1168 "DeathStage"
+-ObjProp 1484 "DeathStage"
+-ObjProp 1528 "DeathStage"
+-ObjProp 1622 "DeathStage"
+-ObjProp 1776 "DeathStage"
+-ObjProp 2046 "DeathStage"
+-ObjProp 2444 "DeathStage"
