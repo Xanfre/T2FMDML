@@ -554,3 +554,20 @@ ObjProp 202 "ParticleGroup"
 {
 	"" SpellScroll
 }
+//pickpockets
++ObjProp 1500 "Loot"
+{
+}
+Link 1509 1500 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1509 "MeshAttach"
+{
+	"attached obj 1" 1500
+	"joint of skeleton" 15
+	"x angle (0-65535)" -8000
+	"y angle (0-65535)" 16384
+	"z angle (0-65535)" -16000
+	"offset" 0.6, -0.8, -0.1
+}
