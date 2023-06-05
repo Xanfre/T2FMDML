@@ -90,6 +90,21 @@ FINGERPRINT
 {
 	"" false
 }
+//pickpockets
+Link 1631 773 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1631 "MeshAttach"
+{
+	"attached obj 1" 773
+	"joint of skeleton" 14
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 16384
+	"z angle (0-65535)" 9000
+	"offset" 0.24, 0.75, 0
+}
+-MetaProp 773 -9135
 //Barrels
 +ObjProp 1763 "CfgTweqDelete"
 {
