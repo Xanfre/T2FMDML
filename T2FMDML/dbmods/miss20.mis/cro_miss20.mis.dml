@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Crom's Blade by J. Knex (Schwaa) / Fix coin stack
+//T2 FM: Crom's Blade by J. Knex (Schwaa) / Fixes
 
 FINGERPRINT
 {
@@ -15,6 +15,70 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1024
 }
 
+//pickpockets
+Link 652 696 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 652 "MeshAttach"
+{
+	"attached obj 1" 696
+	"joint of skeleton" 14
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 9000
+	"offset" 0.1, 0.2, 0
+}
++MetaProp 696 -1629
+Link 851 850 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 851 "MeshAttach"
+{
+	"attached obj 1" 850
+	"joint of skeleton" 12
+	"x angle (0-65535)" 35000
+	"y angle (0-65535)" 47000
+	"z angle (0-65535)" 42000
+	"offset" 0.5, 1.1, 0
+}
+ObjProp 850 "HasRefs"
+{
+	"" false
+}
+Link 1139 1135 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1139 "MeshAttach"
+{
+	"attached obj 1" 1135
+	"joint of skeleton" 12
+	"x angle (0-65535)" 35000
+	"y angle (0-65535)" 47000
+	"z angle (0-65535)" 42000
+	"offset" 0.5, 1.1, 0
+}
+//arrows
+-ObjProp 76 "DeathStage"
+-ObjProp 113 "DeathStage"
+-ObjProp 644 "DeathStage"
+-ObjProp 716 "DeathStage"
+-ObjProp 1020 "DeathStage"
+-ObjProp 1022 "DeathStage"
+-ObjProp 1040 "DeathStage"
+-ObjProp 1179 "DeathStage"
+-ObjProp 1231 "DeathStage"
+-ObjProp 1232 "DeathStage"
+-ObjProp 1290 "DeathStage"
+-ObjProp 1342 "DeathStage"
+-ObjProp 1494 "DeathStage"
+-ObjProp 1497 "DeathStage"
+-ObjProp 1618 "DeathStage"
+-ObjProp 1920 "DeathStage"
+-ObjProp 2017 "DeathStage"
+//coinstack
 +ObjProp 1872 "PhysType"
 {
 	"Type" None
