@@ -1,0 +1,21 @@
+DML1
+
+//T2 FM: Keeper of the Prophecies (The Inheritance) by Ken Ramsley (frobber) / Fixes
+
+FINGERPRINT
+{
+	189 [-264 -75 2]
+	297 [-342 -6 8]
+	991 [-208 -172 -6]
+	1356 [-140 -68 2]
+	1147 [-277 -182 1]
+	124 [-285 -62 2]
+	1281 [-173 -62 4]
+	885 [-290 -122 -1]
+	NAME 1849 "SmokeZoneA9"
+}
+
+//pickpockets
+-Link 2111 1071 "ControlDevice"
+-Link 2111 1335 "ControlDevice"
+-Link 2111 1414 "ControlDevice"

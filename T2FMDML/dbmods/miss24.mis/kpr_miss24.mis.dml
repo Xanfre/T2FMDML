@@ -43,3 +43,5 @@ FINGERPRINT
 {
 	"" false
 }
+//pickpockets
+-Link 835 146 "ControlDevice"

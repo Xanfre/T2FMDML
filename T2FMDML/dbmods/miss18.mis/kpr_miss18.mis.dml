@@ -25,3 +25,7 @@ FINGERPRINT
 }
 -MetaProp 2594 -5704
 +MetaProp 2594 -1688
+//pickpockets
+-Link 2111 1071 "ControlDevice"
+-Link 2111 1335 "ControlDevice"
+-Link 2111 1414 "ControlDevice"
