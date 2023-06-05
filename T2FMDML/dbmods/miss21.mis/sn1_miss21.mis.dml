@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Snobs part 1 by Naks / Fix the goblet
+//T2 FM: Snobs part 1 by Naks / Fixes
 
 FINGERPRINT
 {
@@ -15,8 +15,49 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1151
 }
 
+//goblet
 +ObjProp 695 "PhysType"
 {
 	"Type" None
 	"# Submodels" 0
+}
+//pickpockets
+Link 750 257 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 750 "MeshAttach"
+{
+	"attached obj 1" 257
+	"joint of skeleton" 14
+	"x angle (0-65535)" -50000
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 0
+	"offset" 0, -4.8, 0.5
+}
+Link 489 544 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 489 "MeshAttach"
+{
+	"attached obj 1" 544
+	"joint of skeleton" 8
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 16384
+	"z angle (0-65535)" 9000
+	"offset" 0.1, 1, -0.2
+}
+Link 606 210 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 606 "MeshAttach"
+{
+	"attached obj 1" 210
+	"joint of skeleton" 14
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 100000
+	"offset" 0, 1, -0.1
 }
