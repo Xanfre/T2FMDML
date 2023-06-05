@@ -1,0 +1,63 @@
+DML1
+
+//T2 FM: The Abominable Dr. Dragon by Chiefdreams / Fixes
+
+FINGERPRINT
+{
+	703 [-28 130 -6]
+	616 [36 131 -7]
+	177 [-69 296 -4]
+	1612 [-8 -10 -45]
+	1418 [-147 102 0]
+	1227 [65 130 -4]
+	1079 [-15 180 10]
+	319 [-167 227 -4]
+	QVAR "goal_target_4" == 390
+}
+
+//goals
++ObjProp 909 "NoDrop"
+{
+	"" true
+}
+//pickpockets
+Link 705 707 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 705 "MeshAttach"
+{
+	"attached obj 1" 707
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 0
+	"offset" 0.55, -0.1, 0.44
+}
+Link 893 894 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 893 "MeshAttach"
+{
+	"attached obj 1" 894
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 32000
+	"offset" -0.25, 0, -0.5
+}
+Link 1169 1208 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1169 "MeshAttach"
+{
+	"attached obj 1" 1208
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 0
+	"offset" 0.1, -0.1, 0.44
+}
++MetaProp 1208 -1629
