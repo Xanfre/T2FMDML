@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Calendra's Legacy by Anthony Huso (Purah) / Fix beast and loot in vault
+//T2 FM: Calendra's Legacy by Anthony Huso (Purah) / Fixes
 
 FINGERPRINT
 {
@@ -15,6 +15,7 @@ FINGERPRINT
 	QVAR "goal_target_5" == 929
 }
 
+//loot
 +ObjProp 1532 "Position"
 {
 	"Location" -13.20, -242.0, -173.5
@@ -25,6 +26,7 @@ FINGERPRINT
 	"Location" -13.20, -251.0, -173.5
 	"Heading" 8000
 }
+//beast
 +ObjProp 2286 "SlayResult"
 {
 	"Effect" "No Effect"
@@ -43,6 +45,7 @@ FINGERPRINT
 {
 	"" true
 }
+-ObjProp 2034 "DeathStage"
 ObjProp 707 "Scripts"
 {
 	"Script 0" AnimLight

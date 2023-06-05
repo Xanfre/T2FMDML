@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Calendra's Legacy by Anthony Huso (Purah) / Fix loot and objects
+//T2 FM: Calendra's Legacy by Anthony Huso (Purah) / Fixes
 
 FINGERPRINT
 {
@@ -15,6 +15,33 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1817
 }
 
+//hanging arrows
+-ObjProp 485 "PhysType"
++ObjProp 485 "PhysType"
+{
+	"Type" OBB
+}
+//pickpockets
++ObjProp 981 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 981 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 981 1129 "ControlDevice"
+{
+}
++ObjProp 1129 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1129 "TrapQVar"
+{
+	"" -1:DrSPocketCnt
+}
+//objects
 +ObjProp 697 "PhysType"
 {
 	"Type" None
@@ -28,6 +55,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 4000
 }
+//loot
 +ObjProp 1661 "SlayResult"
 {
 	"Effect" "No Effect"
