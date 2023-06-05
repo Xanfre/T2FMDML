@@ -18,6 +18,7 @@ FINGERPRINT
 #script "nvscript"
 #script "squirrel"
 
+//goals
 +ObjProp 363 "TrapQVar"
 {
 	"" =3:goal_state_12
@@ -353,4 +354,24 @@ Create -4533
 +ObjProp 604 "Scripts"
 {
 	"Script 0" NVSetPropertyTrap
+}
+//pickpockets
++ObjProp 590 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 590 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 590 591 "ControlDevice"
+{
+}
++ObjProp 591 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 591 "TrapQVar"
+{
+	"" -3:DrSPocketCnt
 }
