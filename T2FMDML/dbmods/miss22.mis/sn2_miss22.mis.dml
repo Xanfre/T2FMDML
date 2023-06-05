@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: Snobs part 2 by Naks / Fixes
+
+FINGERPRINT
+{
+	1447 [97 14 89]
+	1500 [93 -54 102]
+	547 [328 -23 131]
+	66 [154 113 110]
+	1448 [97 14 96]
+	1380 [140 -23 92]
+	1178 [127 -13 92]
+	1861 [131 -41 94]
+	QVAR "goal_target_0" == 1609
+}
+
+//pickpockets
++ObjProp 31 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 31 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 31 1605 "ControlDevice"
+{
+}
++ObjProp 1605 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1605 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}

@@ -403,6 +403,7 @@ Create -439
 	"Pitch" 0
 	"Bank" 0
 }
++MetaProp 1669 -1629
 +ObjProp 277 "PhysAIColl"
 {
 	"" true
@@ -555,4 +556,83 @@ Create -439
 }
 +Link 76 711 "ControlDevice"
 {
+}
+//pickpockets
+Link 1556 1558 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1556 "MeshAttach"
+{
+	"attached obj 1" 1558
+	"joint of skeleton" 8
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 17350
+	"offset" 0.3, 0, 0.1
+}
+Link 1685 1686 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1685 "MeshAttach"
+{
+	"attached obj 1" 1686
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 17000
+	"offset" 0.35, -0.1, 0.6
+}
+Link 1690 1692 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1690 "MeshAttach"
+{
+	"attached obj 1" 1692
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 3000
+	"z angle (0-65535)" 0
+	"offset" 0.2, -0.6, 0
+}
+Link 1744 1745 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1744 "MeshAttach"
+{
+	"attached obj 1" 1745
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 0
+	"offset" 0.16, -0.1, 1.2
+}
+Link 1830 1831 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1830 "MeshAttach"
+{
+	"attached obj 1" 1831
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 17000
+	"offset" 0.35, -0.1, 0.5
+}
+Link 1732 1886 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1732 "MeshAttach"
+{
+	"attached obj 1" 1886
+	"joint of skeleton" 9
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 16000
+	"z angle (0-65535)" 0
+	"offset" 0.6, -0.1, 0.35
 }
