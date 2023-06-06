@@ -57,3 +57,17 @@ FINGERPRINT
 	"" true
 }
 -ObjProp 2258 "DarkStat"
+//pickpockets
+Link 2875 2882 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 2875 "MeshAttach"
+{
+	"attached obj 1" 2882
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 20000
+	"offset" 0.5, -1.25, -0.1
+}
