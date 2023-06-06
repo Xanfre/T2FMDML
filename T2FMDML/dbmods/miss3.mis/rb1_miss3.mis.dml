@@ -239,3 +239,34 @@ ObjProp 747 "Position"
 {
 	"Location" -51.4951,10.5471,12.3315
 }
+//death stage
+-ObjProp 50 "DeathStage"
+-ObjProp 297 "DeathStage"
+-ObjProp 481 "DeathStage"
+//pickpockets
+Link 2292 1558 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 2292 "MeshAttach"
+{
+	"attached obj 1" 1558
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 20000
+	"offset" 0.5, -1.25, -0.1
+}
+Link 2143 2124 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 2143 "MeshAttach"
+{
+	"attached obj 1" 2124
+	"joint of skeleton" 14
+	"x angle (0-65535)" 4300
+	"y angle (0-65535)" 10750
+	"z angle (0-65535)" 2650
+	"offset" 0.1, 0.35, -0.25
+}

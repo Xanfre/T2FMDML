@@ -30,7 +30,7 @@ Create -464 "QVarFixSwitch"
 }
 +ObjProp 1976 "Scripts"
 {
-	"Script 0" TrapSetQvar
+	"Script 0" TrapSetQVar
 }
 +ObjProp 1976 "TrapQVar"
 {
@@ -55,17 +55,6 @@ ObjProp 339 "Position"
 {
 	"Location" -480.875,239.461,138.003
 	"Heading" e400
-}
-ObjProp 1998 "Scripts"
-{
-	"Script 2" TrapText
-}
-+ObjProp 1998 "DesignNote"
-{
-	"" "New Objectives"
-}
-+Link 1998 1998 "ControlDevice"
-{
 }
 -MetaProp 1203 -2424
 -ObjProp 1141 "PickDist"
@@ -177,7 +166,7 @@ ObjProp 1929 "AI_Converation"
 }
 +ObjProp 1998 "Scripts"
 {
-	"Script 3" TrigWorldfrob
+	"Script 3" TrigWorldFrob
 }
 -Link 1771 1998 "Contains"
 +Link 1771 1998 "Contains"
@@ -231,4 +220,18 @@ ObjProp 1929 "AI_Converation"
 	"   Argument 1"[6] "Donelookback"
 	"   Argument 2"[6] ""
 	"   Argument 3"[6] ""
+}
+//pickpockets
+Link 1468 1726 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1468 "MeshAttach"
+{
+	"attached obj 1" 1726
+	"joint of skeleton" 14
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 5000
+	"z angle (0-65535)" 2000
+	"offset" 0, 0.25, -0.25
 }
