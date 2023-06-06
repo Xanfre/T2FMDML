@@ -15,7 +15,42 @@ FINGERPRINT
 	QVAR "goal_target_3" == 556
 }
 
-//pickpocketing
+//mantling
+Create -445 "Blocker"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 86.4, 100.25, 83.8
+		"Bank" c000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 5
+	}
+}
+-ObjProp "Blocker" "PhysType"
++ObjProp "Blocker" "PhysType"
+{
+	"Type" OBB
+}
+
+//pickpockets
 +ObjProp 88 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -40,8 +75,41 @@ FINGERPRINT
 {
 	"" -1:DrSPocketCnt
 }
++Link 90 91 "ControlDevice"
+{
+}
++ObjProp 90 "Scripts"
+{
+	"Script 0" TrigQVar
+}
++ObjProp 90 "TrapQVar"
+{
+	"" =4:DrSPocketOK
+}
++ObjProp 91 "TrapFlags"
+{
+	"" NoOff
+}
++ObjProp 91 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 91 "TrapQVar"
+{
+	"" +1:DrSPocketCnt
+}
 
 //doors
++ObjProp 16 "PickDist"
+{
+	"" -3.00
+}
+-ObjProp 16 "PickBias"
+-ObjProp 19 "PickBias"
++ObjProp 19 "PickDist"
+{
+	"" -3.00
+}
 +ObjProp 139 "FrobInfo"
 {
 }
@@ -77,9 +145,58 @@ ObjProp 145 "RotDoor"
 {
 	"" true
 }
++ObjProp 146 "BlockFrob"
+{
+	"" true
+}
+ObjProp 150 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
++ObjProp 160 "BlockFrob"
+{
+	"" true
+}
+ObjProp 160 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 161 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 172 "Scale"
+{
+	"" 0.75, 0.75, 1
+}
+ObjProp 172 "RotDoor"
+{
+	"Open Angle" 274
+}
 +ObjProp 198 "BlockFrob"
 {
 	"" true
+}
+ObjProp 198 "Scripts"
+{
+	"Script 2" ""
+	"Don't Inherit" false
+}
+ObjProp 248 "RotDoor"
+{
+	"Open Angle" 275
+}
+ObjProp 262 "RotDoor"
+{
+	"Open Angle" 274
+}
+ObjProp 262 "Scale"
+{
+	"" 0.75, 0.75, 1
+}
+ObjProp 277 "Scale"
+{
+	"" 0.75, 0.75, 1
 }
 +ObjProp 381 "BlockFrob"
 {
@@ -89,19 +206,299 @@ ObjProp 145 "RotDoor"
 {
 	"" true
 }
--ObjProp 516 "PhysType"
-+ObjProp 516 "PhysType"
+ObjProp 516 "Scripts"
 {
-	"Type" OBB
+	"Script 1" ""
+}
+ObjProp 535 "Scripts"
+{
+	"Script 1" ""
 }
 +ObjProp 535 "BlockFrob"
 {
 	"" true
 }
--ObjProp 535 "PhysType"
-+ObjProp 535 "PhysType"
++ObjProp 954 "BlockFrob"
+{
+	"" true
+}
++ObjProp 956 "BlockFrob"
+{
+	"" true
+}
++ObjProp 958 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 967 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 967 "PhysType"
++ObjProp 967 "PhysType"
 {
 	"Type" OBB
+}
+ObjProp 968 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 970 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 1002 "Scale"
+{
+	"" 0.875, 0.875, 1
+}
+-ObjProp 1002 "Scripts"
+-ObjProp 1013 "Scripts"
+-ObjProp 1013 "PhysType"
++ObjProp 1013 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 431 "JointPos"
+-ObjProp 968 "JointPos"
+-ObjProp 1000 "JointPos"
+
+//elevator
+ObjProp 123 "Position"
+{
+	"Location" 117.75, 109, 7.05
+}
+
+//switches
+ObjProp 211 "Position"
+{
+	"Location" 102.35, 94.5, 22.25
+}
+-ObjProp 211 "PhysType"
++ObjProp 211 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 222 "Position"
+{
+	"Location" 102.35, 94.5, 42.25
+}
+-ObjProp 222 "PhysType"
++ObjProp 222 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 227 "Position"
+{
+	"Location" 102.35, 94.5, 32.25
+}
+-ObjProp 227 "PhysType"
++ObjProp 227 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 228 "Position"
+{
+	"Location" 115.15, 94.5, 32.25
+}
+-ObjProp 228 "PhysType"
++ObjProp 228 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 229 "Position"
+{
+	"Location" 115.85, 94.5, 32.25
+}
+-ObjProp 229 "PhysType"
++ObjProp 229 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 230 "Position"
+{
+	"Location" 101.15, 94.5, 32.25
+}
+-ObjProp 230 "PhysType"
++ObjProp 230 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 231 "StTweqJoints"
+{
+	"AnimS" None
+}
+ObjProp 231 "Position"
+{
+	"Location" 113.85, 94.5, 62.25
+}
+-ObjProp 231 "PhysType"
++ObjProp 231 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 280 "Position"
+{
+	"Location" 102.35, 94.5, 52.25
+}
+-ObjProp 280 "PhysType"
++ObjProp 280 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 289 "Position"
+{
+	"Location" 115.15, 94.5, 52.25
+}
+-ObjProp 289 "PhysType"
++ObjProp 289 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 290 "Position"
+{
+	"Location" 115.85, 94.5, 52.25
+}
+-ObjProp 290 "PhysType"
++ObjProp 290 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 291 "Position"
+{
+	"Location" 101.15, 94.5, 52.25
+}
+-ObjProp 291 "PhysType"
++ObjProp 291 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 312 "Position"
+{
+	"Location" 89.35, 100.25, 72.25
+}
+-ObjProp 312 "PhysType"
++ObjProp 312 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 731 "CollisionType"
+{
+	"" None
+}
+
+//physdims / materials
++Receptron 308 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2420
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 198
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 314
+	Agent -1437
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 900
+	Agent -2420
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 948
+	Agent -1437
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 951
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 1013
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 516
+	Agent -5818
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 308 "Stench"
+{
+	Max None
+
+	Target 535
+	Agent -5818
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 308 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
 }
 -ObjProp 547 "PhysType"
 +ObjProp 547 "PhysType"
@@ -113,29 +510,19 @@ ObjProp 145 "RotDoor"
 {
 	"Type" OBB
 }
-+ObjProp 954 "BlockFrob"
-{
-	"" true
-}
-+ObjProp 967 "BlockFrob"
-{
-	"" true
-}
--ObjProp 431 "JointPos"
--ObjProp 949 "JointPos"
--ObjProp 950 "JointPos"
--ObjProp 1000 "JointPos"
--ObjProp 1013 "PhysType"
-+ObjProp 1013 "PhysType"
+-ObjProp 978 "PhysType"
++ObjProp 978 "PhysType"
 {
 	"Type" OBB
 }
 
-//elevator
-ObjProp 123 "Position"
-{
-	"Location" 117.75, 109, 7.05
-}
+//loot
+-ObjProp 375 "CombineType"
+-ObjProp 375 "FrobInfo"
+-ObjProp 375 "NoDrop"
+-ObjProp 375 "InvType"
+-ObjProp 375 "Scripts"
++MetaProp 375 -1706
 
 //arrows
 -ObjProp 392 "DeathStage"
@@ -152,7 +539,10 @@ ObjProp 123 "Position"
 {
 }
 -ObjProp 556 "PickDist"
--ObjProp 658 "PickDist"
+ObjProp 658 "PickDist"
+{
+	"" 3.50
+}
 -ObjProp 727 "PickDist"
 -ObjProp 728 "PickDist"
 -ObjProp 729 "PickDist"
@@ -160,6 +550,68 @@ ObjProp 123 "Position"
 -ObjProp 733 "PickDist"
 -ObjProp 734 "PickDist"
 -ObjProp 791 "PickDist"
+
+//footlockers
+ObjProp 633 "Locked"
+{
+	"" false
+}
++ObjProp 633 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 633 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 633 "Position"
+{
+	"Location" 90.5, 103.5, 18.66
+}
+-ObjProp 633 "PhysType"
++ObjProp 633 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 656 "Position"
+{
+	"Location" 90.5, 103.5, 38.66
+}
+-ObjProp 656 "PhysType"
++ObjProp 656 "PhysType"
+{
+	"Type" OBB
+}
+
+//keys
+-ObjProp 801 "PickDist"
++ObjProp 801 "StackCount"
+{
+}
++ObjProp 802 "StackCount"
+{
+}
++ObjProp 803 "StackCount"
+{
+}
++ObjProp 804 "StackCount"
+{
+}
++ObjProp 805 "StackCount"
+{
+}
++ObjProp 806 "StackCount"
+{
+}
++ObjProp 877 "StackCount"
+{
+}
++ObjProp 881 "StackCount"
+{
+}
++ObjProp 887 "StackCount"
+{
+}
 
 //AIs
 +ObjProp 819 "InvRendType"
@@ -174,4 +626,15 @@ ObjProp 123 "Position"
 +ObjProp 845 "AI_Hearing"
 {
 	"" Well Below Average
+}
++ObjProp 845 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Absolute
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-SittingSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
 }
