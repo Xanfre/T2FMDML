@@ -189,6 +189,14 @@ ObjProp 1030 "Scripts"
 +ObjProp 1031 "StackCount"
 {
 }
+ObjProp 1031 "Class Tags"
+{
+	"1: Tags" ""
+}
++ObjProp 1031 "Scripts"
+{
+	"Script 0" LootSounds
+}
 +ObjProp 1073 "PickBias"
 {
 	"" 2.00
@@ -315,6 +323,18 @@ ObjProp 765 "Scripts"
 	Effect "add_prop"
 	{
 		"Prop Name" PhysDims
+	}
+}
+++Receptron 56 "Stench"
+{
+	Max None
+
+	Target 44
+	Agent -2872
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
 	}
 }
 +StimSource 56 "Stench"
