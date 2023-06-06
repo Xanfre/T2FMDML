@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fix frobbable AI
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes
 
 FINGERPRINT
 {
@@ -15,4 +15,25 @@ FINGERPRINT
 	QVAR "goal_target_2" == 244
 }
 
+//AI
 -ObjProp 194 "FrobInfo"
+//pickpockets
++ObjProp 1888 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 1888 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 1888 1891 "ControlDevice"
+{
+}
++ObjProp 1891 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1891 "TrapQVar"
+{
+	"" -2:DrSPocketCnt
+}

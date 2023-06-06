@@ -1,0 +1,55 @@
+DML1
+
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes
+
+FINGERPRINT
+{
+	375 [533 143 -18]
+	669 [639 -87 -12]
+	1946 [611 58 -38]
+	2053 [634 -190 -18]
+	720 [640 56 -9]
+	530 [484 83 -18]
+	2386 [482 61 7]
+	939 [788 98 -18]
+	QVAR "goal_target_0" == 1074
+}
+
+//pickpockets
++ObjProp 2192 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 2192 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 2192 2660 "ControlDevice"
+{
+}
++ObjProp 2660 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2660 "TrapQVar"
+{
+	"" -7:DrSPocketCnt
+}
+Create -36 "PocketFixExp"
+{
+	+ObjProp "DiffDestroy"
+	{
+		"quest var values" 0, 1
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapSetQVar
+	}
+	+ObjProp "TrapQVar"
+	{
+		"" -1:DrSPocketCnt
+	}
+}
++Link 2192 "PocketFixExp" "ControlDevice"
+{
+}
