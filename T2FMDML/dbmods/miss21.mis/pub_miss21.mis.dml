@@ -17,14 +17,37 @@ FINGERPRINT
 
 #script "nvscript"
 
+//starting point
+ObjProp 114 "Position"
+{
+	"Heading" 4000
+}
+
+//mantling
++ObjProp 212 "PhysCanMant"
+{
+}
++ObjProp 340 "PhysCanMant"
+{
+}
++ObjProp 343 "PhysCanMant"
+{
+}
++ObjProp 344 "PhysCanMant"
+{
+}
++ObjProp 359 "PhysCanMant"
+{
+}
+
 //goals
 Create -2086 "FG1"
 {
-	-ObjProp "PhysType"
 	+ObjProp "Position"
 	{
-		"Location" -101.5, -198, -28
+		"Location" -101, -198, -29
 	}
+	-ObjProp "PhysType"
 	+ObjProp "PhysType"
 	{
 		"Type" OBB
@@ -37,11 +60,11 @@ Create -2086 "FG1"
 }
 Create -5317 "FG2"
 {
-	-ObjProp "PhysType"
 	+ObjProp "Position"
 	{
-		"Location" -77.5, -203, -28
+		"Location" -77, -205, -29
 	}
+	-ObjProp "PhysType"
 	+ObjProp "PhysType"
 	{
 		"Type" OBB
@@ -54,11 +77,11 @@ Create -5317 "FG2"
 }
 Create -5317 "FG3"
 {
-	-ObjProp "PhysType"
 	+ObjProp "Position"
 	{
-		"Location" -77.5, -193, -28
+		"Location" -77, -191, -29
 	}
+	-ObjProp "PhysType"
 	+ObjProp "PhysType"
 	{
 		"Type" OBB
@@ -88,19 +111,9 @@ Create -5317 "FG3"
 {
 	"Script 0" TrapNonFinalComplete
 }
-+ObjProp 201 "DesignNote"
-{
-	"" NVTrigRoomPlayerTCount=1
-}
-ObjProp 201 "Scripts"
-{
-	"Script 0" NVTrigRoomPlayer
-}
--Link 201 565 "ControlDevice"
--Link 201 195 "ControlDevice"
 +ObjProp 425 "DesignNote"
 {
-	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=500; NVRelayTrapCount=1
 }
 -Link 425 575 "ControlDevice"
 -Link 425 571 "ControlDevice"
@@ -114,14 +127,57 @@ ObjProp 425 "Scripts"
 {
 	"Script 1" NVRelayTrap
 }
+-Link 567 566 "ControlDevice"
+-Link 571 570 "ControlDevice"
+-Link 571 569 "ControlDevice"
+-Link 576 591 "ControlDevice"
+-Link 576 567 "ControlDevice"
+-Link 576 566 "ControlDevice"
+-Link 555 626 "ControlDevice"
+-Link 555 579 "ControlDevice"
+-Link 555 574 "ControlDevice"
++ObjProp 555 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 555 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-ObjProp 555 "Scale"
+ObjProp 555 "Position"
+{
+	"Location" -207, -269.35, -0.93
+}
+-ObjProp 555 "PhysType"
++ObjProp 555 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 557 "DesignNote"
+{
+	"" NVRelayTrapTOn="[10.00]HolyStim"; NVRelayTrapTDest="&ScriptParams"
+}
+-Link 557 364 "ControlDevice"
+-Link 557 540 "ControlDevice"
++Link 557 364 "ScriptParams"
+{
+}
++Link 557 540 "ScriptParams"
+{
+}
 +ObjProp 557 "Scripts"
 {
-	"Script 0" NVDeleteTrap
-	"Don't Inherit" true
+	"Script 0" NVRelayTrap
 }
+-ObjProp 561 "DeathStage"
+-ObjProp 563 "Scripts"
+-Link 574 573 "ControlDevice"
+-Link 574 572 "ControlDevice"
+-Link 579 578 "ControlDevice"
 +ObjProp 600 "DesignNote"
 {
-		"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=627; NVLinkBuilderLinkDest=628; NVLinkBuilder2LinkType="ControlDevice"; NVLinkBuilder2LinkSource="FG1"; NVLinkBuilder2LinkDest=628; NVLinkBuilder3LinkType="ControlDevice"; NVLinkBuilder3LinkSource="FG2"; NVLinkBuilder3LinkDest=628; NVLinkBuilder4LinkType="ControlDevice"; NVLinkBuilder4LinkSource="FG3"; NVLinkBuilder4LinkDest=628
+	"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=627; NVLinkBuilderLinkDest=628; NVLinkBuilder2LinkType="ControlDevice"; NVLinkBuilder2LinkSource="FG1"; NVLinkBuilder2LinkDest=628; NVLinkBuilder3LinkType="ControlDevice"; NVLinkBuilder3LinkSource="FG2"; NVLinkBuilder3LinkDest=628; NVLinkBuilder4LinkType="ControlDevice"; NVLinkBuilder4LinkSource="FG3"; NVLinkBuilder4LinkDest=628
 }
 +ObjProp 600 "Scripts"
 {
@@ -130,17 +186,41 @@ ObjProp 425 "Scripts"
 	"Script 2" NVLinkBuilder3
 	"Script 3" NVLinkBuilder4
 }
+-Link 626 627 "ControlDevice"
 -Link 627 628 "ControlDevice"
++ObjProp 627 "Scripts"
+{
+	"Script 0" TrigOBBPlayer
+	"Don't Inherit" true
+}
+ObjProp 627 "Position"
+{
+	"Location" -116, -187, -39
+}
+-ObjProp 627 "PhysType"
++ObjProp 627 "PhysType"
+{
+	"Type" OBB
+}
 +ObjProp 628 "TrapFlags"
 {
-	"" Once
+	"" NoOff
 }
+
 //doors
 +Receptron 7 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
+}
+ObjProp 7 "TransDoor"
+{
+	"Base Speed" 1.50
+}
++ObjProp 7 "Locked"
+{
+	"" true
 }
 +ObjProp 12 "PhysCanMant"
 {
@@ -150,35 +230,88 @@ ObjProp 425 "Scripts"
 {
 	"Type" OBB
 }
+ObjProp 22 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 22 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 22 "PhysType"
++ObjProp 22 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 82 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+ObjProp 158 "RotDoor"
+{
+	"Open Angle" 87
+}
+ObjProp 159 "RotDoor"
+{
+	"Open Angle" 273
+}
 +Receptron 189 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
 }
-//sparks
-ObjProp 69 "Position"
+ObjProp 409 "StTweqLock"
 {
-	"Location" 9.45, -223.4, -30.5
+	"AnimS" None
 }
-//junk
-+ObjProp 173 "InvType"
-{
-}
-+ObjProp 188 "FrobInfo"
-{
-}
-+ObjProp 221 "StackCount"
-{
-}
-+ObjProp 609 "FrobInfo"
-{
-}
-+ObjProp 633 "InvType"
-{
-}
+
 //AIs
++ObjProp 26 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
+Link 48 49 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" 181
+}
+Link 48 190 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" 23
+}
++ObjProp 71 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 72 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 81 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
+Link 136 137 "AIWatchObj"
+{
+	"   Argument 1" ""
+}
++ObjProp 226 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"
+}
 -ObjProp 226 "FrobInfo"
+-ObjProp 226 "Scripts"
++ObjProp 226 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
 +ObjProp 226 "InvRendType"
 {
 	"Type" Alternate Bitmap
@@ -198,6 +331,11 @@ ObjProp 69 "Position"
 {
 	"" Well Below Average
 }
++ObjProp 321 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
 +ObjProp 346 "InvRendType"
 {
 	"Type" Alternate Bitmap
@@ -207,6 +345,10 @@ ObjProp 69 "Position"
 {
 	"Type" Alternate Bitmap
 	"Resource" cham01
+}
+ObjProp 402 "Position"
+{
+	"Location" -87.5, -209.45, -30.15
 }
 +ObjProp 494 "InvRendType"
 {
@@ -218,13 +360,46 @@ ObjProp 69 "Position"
 	"Type" Alternate Bitmap
 	"Resource" hauntca
 }
--ObjProp 504 "FrobInfo"
--ObjProp 504 "Scripts"
 +ObjProp 504 "InvRendType"
 {
 	"Type" Alternate Bitmap
 	"Resource" hauntca
 }
+-Receptron 504 "Knockout"
++ObjProp 504 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"
+}
+-ObjProp 504 "FrobInfo"
+-ObjProp 504 "Scripts"
++ObjProp 504 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+
+//sparks
+ObjProp 69 "Position"
+{
+	"Location" 9.45, -223.4, -30.5
+}
+
+//junk
++ObjProp 173 "InvType"
+{
+}
++ObjProp 188 "FrobInfo"
+{
+}
++ObjProp 221 "StackCount"
+{
+}
++ObjProp 609 "FrobInfo"
+{
+}
++ObjProp 633 "InvType"
+{
+}
+
 //candlestick / flame
 +ObjProp 336 "DesignNote"
 {
@@ -241,30 +416,51 @@ ObjProp 69 "Position"
 {
 	"Script 0" NVDeleteTrap
 }
-//control panel
-+ObjProp 555 "DesignNote"
-{
-	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapMeta="FrobInert"
-}
--Link 555 579 "ControlDevice"
--Link 555 574 "ControlDevice"
--ObjProp 555 "Scale"
--ObjProp 555 "PhysType"
-ObjProp 555 "Position"
-{
-	"Location" -207, -269.4, -0.93
-}
-+ObjProp 555 "PhysType"
-{
-	"Type" OBB
-}
-+ObjProp 555 "Scripts"
-{
-	"Script 0" NVMetaTrap
-}
+
 //lanterns / arrows
 -ObjProp 224 "DeathStage"
 -ObjProp 516 "DeathStage"
 -ObjProp 595 "PhysType"
 -ObjProp 595 "DeathStage"
 -ObjProp 625 "DeathStage"
+
+//banners
++ObjProp 316 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 393 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 394 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 404 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 405 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 620 "SlayResult"
+{
+	"Effect" Destroy
+}
+
+//footlockers
++ObjProp 319 "JointPos"
+{
+	"Joint 1" 90.00
+}
+-ObjProp 320 "Scripts"
++ObjProp 320 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 621 "JointPos"
+{
+	"Joint 1" 90.00
+}
