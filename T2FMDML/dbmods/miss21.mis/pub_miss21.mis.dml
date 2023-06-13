@@ -111,6 +111,28 @@ Create -5317 "FG3"
 {
 	"Script 0" TrapNonFinalComplete
 }
++Link 195 561 "ControlDevice"
+{
+}
++Link 195 564 "ControlDevice"
+{
+}
++ObjProp 195 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 195 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Don't Inherit" true
+}
+-Link 201 565 "ControlDevice"
+-Link 201 564 "ControlDevice"
+-Link 201 561 "ControlDevice"
+-Link 201 613 "ControlDevice"
+-Link 565 564 "ControlDevice"
+-Link 565 561 "ControlDevice"
+-ObjProp 561 "DeathStage"
 +ObjProp 425 "DesignNote"
 {
 	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=500; NVRelayTrapCount=1
@@ -170,7 +192,6 @@ ObjProp 555 "Position"
 {
 	"Script 0" NVRelayTrap
 }
--ObjProp 561 "DeathStage"
 -ObjProp 563 "Scripts"
 -Link 574 573 "ControlDevice"
 -Link 574 572 "ControlDevice"
