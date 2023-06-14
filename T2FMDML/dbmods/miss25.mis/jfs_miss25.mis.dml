@@ -16,217 +16,908 @@ FINGERPRINT
 }
 
 #script "nvscript"
-#script "tnhscript"
 
-//fix difficulties
--MetaProp 125 -3994
+//starting point
 -ObjProp 125 "AirSupply"
-//fix final goal
--ObjProp 965 "Scripts"
-Create -2123 "FinalGoalFix"
+-MetaProp 125 -3994
+ObjProp 125 "Position"
 {
-	+ObjProp "DesignNote"
-	{
-		"" NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapSetQVar
-		"Script 1" NVDeleteTrap
-	}
-	+ObjProp "TrapQVar"
-	{
-		"" =0:goal_irreversible_6
-	}
+	"Location" 295, 127.5, -165.5
 }
-Create -2123 "FixLoot"
+ObjProp 125 "Scripts"
 {
-	+ObjProp "DesignNote"
-	{
-		"" NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapSetQVar
-		"Script 1" NVDeleteTrap
-	}
-	+ObjProp "TrapQVar"
-	{
-		"" =0:TOTAL_LOOT
-	}
+	"Script 1" ""
 }
-Create -2123 "FixPockets"
+
+//final goal / loot / secrets / pickpockets
++ObjProp 193 "DiffTurnOn"
 {
-	+ObjProp "DesignNote"
-	{
-		"" NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapSetQVar
-		"Script 1" NVDeleteTrap
-	}
-	+ObjProp "TrapQVar"
-	{
-		"" =6:DrSPocketCnt
-	}
+	"quest var values" 0, 1, 2
 }
-Create -464 "StartTrigger"
-{
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrigProximity
-	}
-	+ObjProp "DesignNote"
-	{
-		"" Proximity=2000
-	}
-	+ObjProp "StTweqJoints"
-	{
-		"AnimS" "On"
-		"MiscS" "[None]"
-		"Joint1AnimS" "[None]"
-		"Joint2AnimS" "[None]"
-		"Joint3AnimS" "[None]"
-		"Joint4AnimS" "[None]"
-		"Joint5AnimS" "[None]"
-		"Joint6AnimS" "[None]"
-	}
-}
-+Link "StartTrigger" "FinalGoalFix" "ControlDevice"
++Link 193 194 "ControlDevice"
 {
 }
-+Link "StartTrigger" "FixLoot" "ControlDevice"
++Link 193 195 "ControlDevice"
 {
 }
-+Link "StartTrigger" "FixPockets" "ControlDevice"
++Link 193 196 "ControlDevice"
 {
 }
-//fix object positions
--ObjProp 736 "PhysType"
-+ObjProp 736 "Position"
++ObjProp 193 "Scripts"
 {
-	"Location" 15.9,37.85,-176.152
+	"Script 0" TrapRelay
+	"Script 1" TrapSetQVar
 }
--ObjProp 735 "PhysType"
-+ObjProp 735 "Position"
++ObjProp 193 "TrapQVar"
 {
-	"Location" 16.4,37.87,-176.152
+	"" =0:goal_irreversible_6
 }
--ObjProp 352 "PhysType"
++ObjProp 194 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 194 "TrapQVar"
+{
+	"" =6:DrSPocketCnt
+}
++ObjProp 195 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 195 "TrapQVar"
+{
+	"" =2:DrSScrtCnt
+}
++ObjProp 196 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 196 "TrapQVar"
+{
+	"" =0:total_loot
+}
+-ObjProp 650 "PhysType"
+-ObjProp 654 "PhysType"
+
+//loadout
++ObjProp 232 "Scripts"
+{
+	"Don't Inherit" true
+}
++ObjProp 604 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="BeginScript"; NVRemovePropertyTrapProp="Scripts"
+}
++ObjProp 604 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+	"Don't Inherit" true
+}
++ObjProp 647 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="BeginScript"; NVRemovePropertyTrapProp="Scripts"
+}
++ObjProp 647 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+	"Don't Inherit" true
+}
++ObjProp 834 "Class Tags"
+{
+}
++ObjProp 834 "Scripts"
+{
+	"Don't Inherit" true
+}
++ObjProp 890 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="BeginScript"; NVRemovePropertyTrapProp="Scripts"
+}
++ObjProp 890 "Scripts"
+{
+	"Script 0" NVRemovePropertyTrap
+	"Don't Inherit" true
+}
++ObjProp 958 "Scripts"
+{
+	"Script 0" LockPick
+	"Don't Inherit" true
+}
++ObjProp 959 "Scripts"
+{
+	"Script 0" LockPick
+	"Don't Inherit" true
+}
+
+//mantling
++ObjProp 404 "PhysCanMant"
+{
+}
+
+//doors
+ObjProp 31 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 31 "Position"
+{
+	"Location" 29, -2, -176.5
+}
+-ObjProp 31 "PhysType"
++ObjProp 31 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 136 "Position"
+{
+	"Location" -10, 13, -150.5
+}
+-ObjProp 136 "PhysType"
++ObjProp 136 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 337 "Position"
+{
+	"Location" 22, 11.05, -176.5
+}
+-ObjProp 337 "PhysType"
++ObjProp 337 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 338 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 377 "Position"
+{
+	"Location" -10, 13, -163.5
+}
+-ObjProp 377 "PhysType"
++ObjProp 377 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 381 "BlockFrob"
+{
+	"" true
+}
++ObjProp 383 "Locked"
+{
+	"" true
+}
++ObjProp 393 "Locked"
+{
+	"" true
+}
+ObjProp 444 "Position"
+{
+	"Location" 46.95, 56, -163.5
+	"Heading" c000
+}
+-ObjProp 444 "PhysType"
++ObjProp 444 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 519 "Position"
+{
+	"Location" 11.05, -32, -163.5
+}
+-ObjProp 519 "PhysType"
++ObjProp 519 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 556 "RotDoor"
+{
+	"Open Angle" 275
+}
++ObjProp 556 "DesignNote"
+{
+	"" NVAmbientSoundTrapOn="NowLocked"; NVAmbientSoundTrapOff="Null"
+}
++Link 556 556 "ControlDevice"
+{
+}
++Link 556 699 "ControlDevice"
+{
+}
++Link 556 -927 "SoundDescription"
+{
+}
++ObjProp 556 "Scripts"
+{
+	"Script 0" TrigUnlock
+	"Script 1" NVAmbientSoundTrap
+}
+ObjProp 563 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 563 "Position"
+{
+	"Location" 28, 15, -150.5
+	"Heading" 0
+}
+-ObjProp 563 "PhysType"
++ObjProp 563 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 570 "Position"
+{
+	"Location" 29, 46, -191
+}
+-ObjProp 570 "PhysType"
++ObjProp 570 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 719 "BlockFrob"
+{
+	"" true
+}
++Link 719 719 "ControlDevice"
+{
+}
++ObjProp 719 "Scripts"
+{
+	"Script 0" TrigUnlock
+}
+ObjProp 822 "RotDoor"
+{
+	"Open Angle" 273
+}
++Link 822 822 "ControlDevice"
+{
+}
++ObjProp 822 "Scripts"
+{
+	"Script 0" TrigUnlock
+}
++ObjProp 939 "Scripts"
+{
+	"Script 0" FrobSounds
+	"Script 1" NVFrobToggle
+	"Don't Inherit" true
+}
+
+//AIs
++ObjProp 48 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
+ObjProp 678 "Position"
+{
+	"Location" 43.7, 26, -151.37
+}
++ObjProp 678 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Very high
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-SittingSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+}
++ObjProp 752 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Very high
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-NewSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+	"Response: Step 3" Face(Angle,Object(-1 for angle relative to self))
+	"   Argument 2"[2] Player
+}
++ObjProp 752 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
++ObjProp 753 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew2
+}
++ObjProp 753 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Very high
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-NewSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+	"Response: Step 3" Face(Angle,Object(-1 for angle relative to self))
+	"   Argument 2"[2] Player
+}
++ObjProp 753 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 761 "AI_Hearing"
+{
+	"" Below Average
+}
++ObjProp 761 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Very high
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-NewSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+	"Response: Step 3" Face(Angle,Object(-1 for angle relative to self))
+	"   Argument 2"[2] Player
+}
+
+//misplaced objects
+ObjProp 78 "Position"
+{
+	"Location" 32, -27, -178.612
+}
+-ObjProp 78 "PhysType"
++ObjProp 78 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 80 "Position"
+{
+	"Location" -5.875, -35.5, -178.612
+}
+-ObjProp 80 "PhysType"
++ObjProp 80 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 352 "Position"
 {
-	"Location" 72.35,-7.9,-164.9
-	"Heading" 4000
+	"Location" 71.685, -6.5, -164.985
 }
+-ObjProp 352 "PhysType"
 +ObjProp 352 "PhysType"
 {
 	"Type" OBB
 }
--ObjProp 356 "PhysType"
 ObjProp 356 "Position"
 {
-	"Location" 75.8,-7.9,-164.9
-	"Heading" c000
+	"Location" 76.115, -6.5, -164.985
 }
+-ObjProp 356 "PhysType"
 +ObjProp 356 "PhysType"
 {
 	"Type" OBB
 }
-ObjProp 678 "Position"
+-ObjProp 639 "PhysType"
++ObjProp 639 "Position"
 {
-	"Location" 43.81,26.1,-151.36
-	"Heading" f53c
+	"Location" 18, 50.15, -189.9
 }
-Create -2123 "MoveBarrel1"
++ObjProp 727 "Position"
 {
-	+ObjProp "DesignNote"
-	{
-		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Position"
-	{
-		"Location" 43.1202,37.7436,-191.927
-		"Heading" cc7
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapTeleporter
-		"Script 1" NVDeleteTrap
-	}
+	"Location" 15.5, 46.85, -176
 }
-Create -2123 "MoveBarrel2"
+-ObjProp 727 "PhysType"
++ObjProp 727 "PhysType"
 {
-	+ObjProp "DesignNote"
-	{
-		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Position"
-	{
-		"Location" 43.1202,42.2436,-191.927
-		"Heading" 8b8
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapTeleporter
-		"Script 1" NVDeleteTrap
-	}
+	"Type" OBB
 }
-Create -2123 "MoveBarrel3"
+-ObjProp 735 "PhysType"
++ObjProp 735 "Position"
 {
-	+ObjProp "DesignNote"
-	{
-		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Position"
-	{
-		"Location" 43.1202,47.1372,-191.927
-		"Heading" f606
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapTeleporter
-		"Script 1" NVDeleteTrap
-	}
+	"Location" 16.45, 37.85, -176.15
 }
-Create -2123 "MoveBarrel4"
+-ObjProp 736 "PhysType"
++ObjProp 736 "Position"
 {
-	+ObjProp "DesignNote"
+	"Location" 15.95, 37.85, -176.15
+}
+ObjProp 941 "Position"
+{
+	"Location" 44, 27.85, -178.612
+}
+-ObjProp 941 "PhysType"
++ObjProp 941 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 942 "Position"
+{
+	"Location" 49.5, 27.85, -178.612
+}
+-ObjProp 942 "PhysType"
++ObjProp 942 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 943 "Position"
+{
+	"Location" 46.75, 27.85, -178.612
+}
+-ObjProp 943 "PhysType"
++ObjProp 943 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 985 "PhysType"
++ObjProp 985 "Position"
+{
+	"Location" 18, 50.75, -189.975
+	"Bank" c000
+}
++Receptron 913 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
 	{
-		"" NVDeleteTrapTarget="[me]"; NVDeleteTrapDeleteSelf=1
-	}
-	+ObjProp "Position"
-	{
-		"Location" 43.1202,-12.3804,-188.57
-		"Heading" c000
-	}
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrapTeleporter
-		"Script 1" NVDeleteTrap
+		"Prop Name" PhysControl
 	}
 }
-+Link "MoveBarrel1" 568 "ControlDevice"
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 914
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 915
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 916
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 917
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 918
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 919
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 471
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 552
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 913 "Stench"
+{
+	Max None
+
+	Target 568
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 913 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 913 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 913 "Position"
+{
+	"Location" 43.5, -12.5, -188.77
+}
++ObjProp 914 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 914 "Position"
+{
+	"Location" 43.5, -9, -188.77
+}
++ObjProp 915 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 915 "Position"
+{
+	"Location" 43.5, -5.5, -188.77
+}
++ObjProp 916 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 916 "Position"
+{
+	"Location" 43.5, -2, -188.77
+}
++ObjProp 917 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 917 "Position"
+{
+	"Location" 43.5, 8.5, -188.77
+}
++ObjProp 918 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 918 "Position"
+{
+	"Location" 43.5, 5, -188.77
+}
++ObjProp 919 "Scale"
+{
+	"" 1, 1, 0.8
+}
+ObjProp 919 "Position"
+{
+	"Location" 43.5, 1.5, -188.77
+}
+ObjProp 921 "Position"
+{
+	"Location" 13, 2.5, -188.77
+}
+ObjProp 922 "Position"
+{
+	"Location" 13, 5.5, -188.77
+}
+ObjProp 923 "Position"
+{
+	"Location" 13, 8.5, -188.77
+}
+ObjProp 924 "Position"
+{
+	"Location" 13, -0.5, -188.77
+}
+ObjProp 925 "Position"
+{
+	"Location" 13, -3.5, -188.77
+}
+ObjProp 927 "Position"
+{
+	"Location" 13, -6.5, -188.77
+}
+ObjProp 928 "Position"
+{
+	"Location" 13, -9.5, -188.77
+}
+ObjProp 930 "Position"
+{
+	"Location" 13, -12.5, -188.77
+}
++Receptron 930 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 921
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 922
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 923
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 924
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 925
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 927
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 928
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 930 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+
+//fireplaces
+ObjProp 71 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 73 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 424 "PGLaunchInfo"
+{
+	"Min time" 2.50
+	"Max time" 3.00
+}
+ObjProp 426 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 431 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+ObjProp 433 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 436 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+ObjProp 438 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 449 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+ObjProp 454 "PGLaunchInfo"
+{
+	"Min time" 2.50
+	"Max time" 3.00
+}
+ObjProp 456 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 468 "PGLaunchInfo"
+{
+	"Min time" 2.50
+	"Max time" 3.00
+}
+ObjProp 470 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+
+//elevator
+ObjProp 493 "Position"
+{
+	"Location" 36, 54, -167.845
+}
+ObjProp 755 "Scale"
+{
+	"" 0.595, 0.625, 0.5
+}
+ObjProp 755 "Position"
+{
+	"Location" 36, 54, -167.845
+}
+-ObjProp 755 "PhysType"
++ObjProp 755 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 797 "Position"
+{
+	"Location" 36, 54, -180.445
+}
+
+//locks
++ObjProp 640 "DesignNote"
+{
+	"" NVRelayTrapOn="NowUnlocked"; NVAmbientSoundTrapOn="NowLocked"
+}
++Link 640 699 "ControlDevice"
 {
 }
-+Link "MoveBarrel2" 471 "ControlDevice"
++Link 640 -927 "SoundDescription"
 {
 }
-+Link "MoveBarrel3" 552 "ControlDevice"
++ObjProp 640 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVAmbientSoundTrap
+}
++Link 699 -925 "SoundDescription"
 {
 }
-+Link "MoveBarrel4" 930 "ControlDevice"
++ObjProp 699 "Scripts"
+{
+	"Script 0" NVAmbientSoundTrap
+}
++ObjProp 789 "DesignNote"
+{
+	"" NVRelayTrapOn="NowLocked"; NVRelayTrapTDest=775; NVAmbientSoundTrapOn="NowUnlocked"
+}
++Link 789 -925 "SoundDescription"
 {
 }
-+Link "StartTrigger" "MoveBarrel1" "ControlDevice"
++ObjProp 789 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVAmbientSoundTrap
+}
++Link 775 -927 "SoundDescription"
 {
 }
-+Link "StartTrigger" "MoveBarrel2" "ControlDevice"
++ObjProp 775 "Scripts"
 {
+	"Script 0" NVAmbientSoundTrap
 }
-+Link "StartTrigger" "MoveBarrel3" "ControlDevice"
+
+//banners
++ObjProp 617 "SlayResult"
 {
+	"Effect" Destroy
 }
-+Link "StartTrigger" "MoveBarrel4" "ControlDevice"
++ObjProp 618 "SlayResult"
 {
+	"Effect" Destroy
+}
+
+//chests
+ObjProp 757 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 986 "JointPos"
+{
+	"Joint 1" 90.00
 }
