@@ -196,16 +196,25 @@ ObjProp 555 "Position"
 -Link 574 573 "ControlDevice"
 -Link 574 572 "ControlDevice"
 -Link 579 578 "ControlDevice"
-+ObjProp 600 "DesignNote"
++ObjProp 600 "AI_Converation"
 {
-	"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=627; NVLinkBuilderLinkDest=628; NVLinkBuilder2LinkType="ControlDevice"; NVLinkBuilder2LinkSource="FG1"; NVLinkBuilder2LinkDest=628; NVLinkBuilder3LinkType="ControlDevice"; NVLinkBuilder3LinkSource="FG2"; NVLinkBuilder3LinkDest=628; NVLinkBuilder4LinkType="ControlDevice"; NVLinkBuilder4LinkSource="FG3"; NVLinkBuilder4LinkDest=628
+	"Actor" ActorOne
+	"Conversation: Action 0" Add link(Flavor,Destination(s),Source(s))
+	"   Argument 1" ControlDevice
+	"   Argument 2" 628
+	"   Argument 3" 627,FG1,FG2,FG3
+}
++ObjProp 600 "AI_SaveConverse"
+{
+	"" true
+}
++Link 600 611 "AIConversationActor"
+{
+	"Actor ID" 1
 }
 +ObjProp 600 "Scripts"
 {
-	"Script 0" NVLinkBuilder
-	"Script 1" NVLinkBuilder2
-	"Script 2" NVLinkBuilder3
-	"Script 3" NVLinkBuilder4
+	"Script 0" TrapConverse
 }
 -Link 626 627 "ControlDevice"
 -Link 627 628 "ControlDevice"
@@ -323,15 +332,11 @@ Link 136 137 "AIWatchObj"
 {
 	"   Argument 1" ""
 }
-+ObjProp 226 "DesignNote"
-{
-	"" NVRelayTrapOn="Contained"
-}
 -ObjProp 226 "FrobInfo"
 -ObjProp 226 "Scripts"
 +ObjProp 226 "Scripts"
 {
-	"Script 0" NVRelayTrap
+	"Script 0" TrigContained
 }
 +ObjProp 226 "InvRendType"
 {
@@ -387,15 +392,11 @@ ObjProp 402 "Position"
 	"Resource" hauntca
 }
 -Receptron 504 "Knockout"
-+ObjProp 504 "DesignNote"
-{
-	"" NVRelayTrapOn="Contained"
-}
 -ObjProp 504 "FrobInfo"
 -ObjProp 504 "Scripts"
 +ObjProp 504 "Scripts"
 {
-	"Script 0" NVRelayTrap
+	"Script 0" TrigContained
 }
 
 //sparks
