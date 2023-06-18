@@ -2,6 +2,19 @@ DML1
 
 //T2 FM: Firefly by Lobster / Fixes
 
+FINGERPRINT
+{
+	1085 [391 260 506]
+	1533 [505 294 502]
+	1073 [268 571 499]
+	864 [487 282 489]
+	868 [275 540 477]
+	1594 [293 593 487]
+	763 [421 294 502]
+	775 [317 441 484]
+	QVAR "goal_target_0" == 471
+}
+
 //arrows
 -ObjProp 1181 "DeathStage"
 //pickpockets
