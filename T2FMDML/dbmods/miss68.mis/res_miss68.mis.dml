@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Rescue! by RicknMel / Fixes
+//T2 FM: Rescue! by RicknMel / Fixes: miss68.mis.dml
 
 FINGERPRINT
 {
@@ -64,33 +64,9 @@ Create -5317 "G2"
 }
 -Link 156 154 "ControlDevice"
 -Link 157 151 "AIWatchObj"
-+Receptron 154 "Stench"
-{
-	Max None
-
-	Target 151
-	Agent Me
-
-	Effect "add_prop"
-	{
-		"Prop Name" FrobInfo
-	}
-}
-+ObjProp 154 "DesignNote"
-{
-	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[1.00]Stench"; NVRelayTrapCount=1
-}
-+ObjProp 154 "FrobInfo"
-{
-	"Inv Action" Move
-}
 +ObjProp 154 "TrapFlags"
 {
-	"" NoOff
-}
-+ObjProp 154 "Scripts"
-{
-	"Script 0" NVRelayTrap
+	"" Once
 }
 
 //goal 5 (expert)
