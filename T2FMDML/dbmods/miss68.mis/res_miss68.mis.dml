@@ -17,14 +17,20 @@ FINGERPRINT
 
 #script "nvscript"
 
+//starting point
+ObjProp 100 "Position"
+{
+	"Heading" 8000
+}
+
 //goal 2
 Create -5317 "G2"
 {
-	-ObjProp "PhysType"
 	+ObjProp "Position"
 	{
 		"Location" 4.5, 365.5, -2.5
 	}
+	-ObjProp "PhysType"
 	+ObjProp "PhysType"
 	{
 		"Type" OBB
@@ -56,28 +62,46 @@ Create -5317 "G2"
 {
 	"Script 0" NVTrigContained
 }
+-Link 156 154 "ControlDevice"
 -Link 157 151 "AIWatchObj"
++Receptron 154 "Stench"
+{
+	Max None
+
+	Target 151
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
++ObjProp 154 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[1.00]Stench"; NVRelayTrapCount=1
+}
++ObjProp 154 "FrobInfo"
+{
+	"Inv Action" Move
+}
 +ObjProp 154 "TrapFlags"
 {
-	"" Once
+	"" NoOff
 }
-//goal 5 (expert)
-+ObjProp 53 "DesignNote"
++ObjProp 154 "Scripts"
 {
-	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+	"Script 0" NVRelayTrap
 }
+
+//goal 5 (expert)
+-Link 155 158 "ControlDevice"
 -Link 53 53 "AIWatchObj"
 +Link 53 158 "ControlDevice"
 {
 }
 +ObjProp 53 "Scripts"
 {
-	"Script 0" NVRelayTrap
-	"Script 1" NVRemovePropertyTrap
-}
-+ObjProp 101 "DesignNote"
-{
-	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+	"Script 0" TrigAIAlert
 }
 -Link 101 101 "AIWatchObj"
 +Link 101 158 "ControlDevice"
@@ -85,12 +109,7 @@ Create -5317 "G2"
 }
 +ObjProp 101 "Scripts"
 {
-	"Script 0" NVRelayTrap
-	"Script 1" NVRemovePropertyTrap
-}
-+ObjProp 108 "DesignNote"
-{
-	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+	"Script 0" TrigAIAlert
 }
 -Link 108 108 "AIWatchObj"
 +Link 108 158 "ControlDevice"
@@ -98,12 +117,7 @@ Create -5317 "G2"
 }
 +ObjProp 108 "Scripts"
 {
-	"Script 0" NVRelayTrap
-	"Script 1" NVRemovePropertyTrap
-}
-+ObjProp 113 "DesignNote"
-{
-	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+	"Script 0" TrigAIAlert
 }
 -Link 113 113 "AIWatchObj"
 +Link 113 158 "ControlDevice"
@@ -111,12 +125,7 @@ Create -5317 "G2"
 }
 +ObjProp 113 "Scripts"
 {
-	"Script 0" NVRelayTrap
-	"Script 1" NVRemovePropertyTrap
-}
-+ObjProp 123 "DesignNote"
-{
-	"" NVRelayTrapOn="HighAlert"; NVRemovePropertyTrapOn="IgnorePotion"; NVRemovePropertyTrapProp="Scripts"
+	"Script 0" TrigAIAlert
 }
 -Link 123 123 "AIWatchObj"
 +Link 123 158 "ControlDevice"
@@ -124,31 +133,150 @@ Create -5317 "G2"
 }
 +ObjProp 123 "Scripts"
 {
-	"Script 0" NVRelayTrap
-	"Script 1" NVRemovePropertyTrap
+	"Script 0" TrigAIAlert
 }
-+ObjProp 158 "DiffDestroy"
-{
-	"quest var values" 0, 1
-}
-//doors
+
+//doors, windows
 +ObjProp 13 "FrobInfo"
 {
+}
++ObjProp 24 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 24 "PhysType"
++ObjProp 24 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 46 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 46 "PhysType"
++ObjProp 46 "PhysType"
+{
+	"Type" OBB
 }
 +ObjProp 47 "FrobInfo"
 {
 }
++ObjProp 48 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 48 "PhysType"
++ObjProp 48 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 49 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 49 "PhysType"
++ObjProp 49 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 50 "PhysType"
++ObjProp 50 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 52 "PhysType"
++ObjProp 52 "PhysType"
+{
+	"Type" OBB
+}
 -ObjProp 67 "JointPos"
+-Receptron 67 "BashStim"
 +Receptron 67 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
 }
-//keys
-+ObjProp 88 "SlayResult"
++Receptron 80 "Stench"
 {
+	Max None
+
+	Target Me
+	Agent -1284
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
 }
+++Receptron 80 "Stench"
+{
+	Max None
+
+	Target 72
+	Agent -1284
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 80 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 82 "PhysType"
++ObjProp 82 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 83 "PhysType"
++ObjProp 83 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 84 "PhysType"
++ObjProp 84 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 85 "PhysType"
++ObjProp 85 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 86 "PhysType"
++ObjProp 86 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 87 "PhysType"
++ObjProp 87 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 89 "PhysType"
++ObjProp 89 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 90 "PhysType"
++ObjProp 90 "PhysType"
+{
+	"Type" OBB
+}
+
+//arrows / flash bomb
+ObjProp 130 "Position"
+{
+	"Location" -24.85, 374.85, -0.68
+}
+-ObjProp 127 "DeathStage"
+-ObjProp 140 "DeathStage"
+-ObjProp 140 "PhysType"
+
+//key
 +ObjProp 143 "FrobInfo"
 {
 	"World Action" Move
@@ -157,15 +285,9 @@ Create -5317 "G2"
 {
 	"" true
 }
-//arrows / flash bomb
--ObjProp 127 "DeathStage"
-ObjProp 130 "Position"
+-ObjProp 143 "PhysType"
+ObjProp 143 "Position"
 {
-	"Location" -24.85, 374.85, -0.68
-}
--ObjProp 140 "DeathStage"
--ObjProp 140 "PhysType"
-+ObjProp 140 "PhysType"
-{
-	"Type" Sphere
+	"Location" 25.05, 505.9, -10
+	"Bank" 4000
 }
