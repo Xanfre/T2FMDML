@@ -1,0 +1,642 @@
+DML1
+//T2 FM: Resonance by Jeremy Catlin (HipBreaker) / Fixes: miss19.mis.dml
+
+FINGERPRINT
+{
+	444 [-179 42 7]
+	873 [-172 62 42]
+	802 [-3 5 -4]
+	346 [-217 78 -4]
+	1080 [-202 71 14]
+	344 [-216 92 -3]
+	906 [-146 62 -5]
+	135 [-100 -12 20]
+	QVAR "goal_target_0" == 3
+}
+
+#script "squirrel"
+
+//mantling
++ObjProp 439 "PhysCanMant"
+{
+}
+
+//goals
+-ObjProp 721 "TrapFlags"
+-Link 701 721 "ControlDevice"
+-Link 719 823 "ControlDevice"
+-Link 719 822 "ControlDevice"
+-Link 719 827 "ControlDevice"
+-Link 807 806 "ControlDevice"
+-Link 807 811 "ControlDevice"
+-Link 810 813 "ControlDevice"
+-Link 812 805 "ControlDevice"
+-Link 814 816 "ControlDevice"
+-Link 817 818 "ControlDevice"
+-Link 820 819 "ControlDevice"
+-Link 821 822 "ControlDevice"
+-Link 824 823 "ControlDevice"
+-Link 828 822 "ControlDevice"
+-Link 828 823 "ControlDevice"
+-Link 828 827 "ControlDevice"
+ObjProp 230 "TrapQVar"
+{
+	"" >3:DrSKills
+}
+ObjProp 232 "TrapQVar"
+{
+	"" >0:DrSKills
+}
+-Link 232 233 "ControlDevice"
++Link 232 394 "ControlDevice"
+{
+}
++ObjProp 233 "DiffDestroy"
+{
+	"quest var values" 0, 1
+}
++Link 233 395 "ControlDevice"
+{
+}
++ObjProp 233 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 394 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 394 "TrapQVar"
+{
+	"" =3:goal_state_8
+}
++ObjProp 395 "Book"
+{
+	"" GF
+}
++ObjProp 395 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 395 "Scripts"
+{
+	"Script 0" OnScreenText
+}
++ObjProp 518 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 518 519 "ControlDevice"
+{
+}
++Link 518 520 "ControlDevice"
+{
+}
++Link 518 521 "ControlDevice"
+{
+}
++Link 518 522 "ControlDevice"
+{
+}
++ObjProp 518 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Script 1" TrapSetQVar
+}
++ObjProp 518 "TrapQVar"
+{
+	"" =0:DrSKills
+}
++ObjProp 519 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 519 "TrapQVar"
+{
+	"" =1:goal_reverse_7
+}
++ObjProp 520 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 520 "TrapQVar"
+{
+	"" =1:goal_reverse_8
+}
++ObjProp 521 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 521 "TrapQVar"
+{
+	"" =719:goal_target_9
+}
++ObjProp 522 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 522 "TrapQVar"
+{
+	"" =4:goal_type_9
+}
+
+//doors
+ObjProp 313 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 382 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 382 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 382 "PhysType"
++ObjProp 382 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 617 "BlockFrob"
+{
+	"" true
+}
++Receptron 640 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 640 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++MetaProp 680 -2420
++ObjProp 680 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 680 561 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 682 566 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 682 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
+-ObjProp 682 "PhysType"
++ObjProp 682 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 756 "Scale"
+{
+	"" 1.25, 1.25, 0.5
+}
++ObjProp 815 "Locked"
+{
+	"" true
+}
+ObjProp 815 "Position"
+{
+	"Location" -64, -72.26, -9
+}
+-ObjProp 815 "PhysType"
++ObjProp 815 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 815 "Scripts"
++MetaProp 815 -2420
++ObjProp 851 "BlockFrob"
+{
+	"" true
+}
++ObjProp 851 "PickDist"
+{
+	"" 4.00
+}
+ObjProp 851 "Scripts"
+{
+	"Script 1" ""
+}
++ObjProp 1050 "BlockFrob"
+{
+	"" true
+}
+-MetaProp 1070 -1629
+-MetaProp 1073 -1629
+-MetaProp 1148 -1629
+-Link 1074 1148 "ScriptParams"
+-Link 1075 1073 "ScriptParams"
+-Link 1077 1070 "ScriptParams"
+-Link 1170 1077 "ControlDevice"
+-Link 1170 1075 "ControlDevice"
+-Link 1170 1074 "ControlDevice"
+
+//quest items
+ObjProp 561 "Scripts"
+{
+	"Script 0" TrigContained
+}
+-ObjProp 561 "FrobInfo"
+-ObjProp 566 "FrobInfo"
+ObjProp 566 "Scripts"
+{
+	"Script 0" TrigContained
+}
+
+//AIs
++ObjProp 4 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="&ScriptParams"
+}
+-Link 4 1101 "ControlDevice"
+-Link 4 809 "ControlDevice"
+-Link 4 808 "ControlDevice"
+-Link 4 825 "ControlDevice"
++Link 4 825 "ScriptParams"
+{
+}
++Link 4 809 "ScriptParams"
+{
+}
++Link 4 808 "ScriptParams"
+{
+}
++Link 4 1101 "ScriptParams"
+{
+}
+ObjProp 4 "Scripts"
+{
+	"Script 0" TrigAIAlert
+	"Script 1" NVRelayTrap
+	"Script 2" ""
+	"Script 3" ""
+}
++Receptron 6 "Stench"
+{
+	Max None
+
+	Target 604
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
+++Receptron 6 "Stench"
+{
+	Max None
+
+	Target 799
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
++ObjProp 6 "GameName"
+{
+	"" Name_BassoD: "Basso (Dead)"
+}
+Link 190 192 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" Lookatme1
+}
+Link 190 193 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" Lookatme2
+}
++ObjProp 374 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" ccop
+}
+ObjProp 470 "AI_Converation"
+{
+	"Actor"[18] Unused
+	"Conversation: Action 0"[3] Nothing()
+	"   Argument 1"[18] ""
+}
+-ObjProp 470 "TrapFlags"
+-ObjProp 489 "TrapFlags"
+-ObjProp 489 "MotActorTagList"
++ObjProp 489 "AI_SaveConverse"
+{
+	"" true
+}
++ObjProp 490 "Scripts"
+{
+	"Script 0" OnScreenText
+	"Don't Inherit" true
+}
++ObjProp 604 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTOn="[1.00]Stench"
+}
++ObjProp 604 "GameName"
+{
+	"" Name_Basso
+}
++ObjProp 604 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cbasso
+}
+ObjProp 604 "CollisionType"
+{
+	"" Bounce, No Collision Sound
+}
+ObjProp 604 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVRelayTrap
+	"Script 2" TrigBrainDead
+	"Script 3" ""
+}
++ObjProp 799 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTOn="[1.00]Stench"
+}
++ObjProp 799 "GameName"
+{
+	"" Name_Basso
+}
++ObjProp 799 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cbasso
+}
++Link 799 6 "ControlDevice"
+{
+}
++ObjProp 799 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" NVRelayTrap
+	"Script 2" TrigBrainDead
+}
++ObjProp 799 "SpchVoice"
+{
+	"" vbasso
+}
++Receptron 825 "Stench"
+{
+	Max None
+
+	Target 4
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" GameName
+	}
+}
++ObjProp 825 "DesignNote"
+{
+	"" NVRelayTrapTOn="[1.00]Stench"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1
+}
++ObjProp 825 "GameName"
+{
+	"" Name_VLD: "Veil Leader (Dead)"
+}
++ObjProp 825 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+
+//switches / secrets
++Link 550 785 "ControlDevice"
+{
+}
++ObjProp 550 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Don't Inherit" true
+}
+ObjProp 583 "JointPos"
+{
+	"Joint 1" 0.70
+}
+ObjProp 583 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
++ObjProp 665 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapMeta="FrobInert"
+}
++ObjProp 665 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-Link 665 1099 "ControlDevice"
+-Link 665 785 "ControlDevice"
+-Link 829 815 "ControlDevice"
+-Link 1099 665 "ScriptParams"
++ObjProp 767 "JointPos"
+{
+	"Joint 1" 0.70
+}
+ObjProp 767 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
+-ObjProp 785 "TrapFlags"
++ObjProp 785 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+	"Don't Inherit" true
+}
+-ObjProp 664 "TrapFlags"
+-ObjProp 764 "TrapFlags"
+-ObjProp 838 "TrapFlags"
+-ObjProp 839 "TrapFlags"
+
+//incorrect physdims
++ObjProp 553 "CollisionType"
+{
+	"" Bounce
+}
+-ObjProp 553 "PhysType"
++ObjProp 553 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 576 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0.5
+}
++ObjProp 576 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 588 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0.5
+}
++ObjProp 588 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 591 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0.5
+}
++ObjProp 591 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 615 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 615 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 634 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 634 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 636 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 636 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 645 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 645 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 656 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 656 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 657 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 657 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 659 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 659 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 660 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 660 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++Receptron 712 "Stench"
+{
+	Max None
+
+	Target 553
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 712 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 712 "PhysType"
++ObjProp 712 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 749 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 749 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 754 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Offset 1"; SetVectorPropValue=0,0,0
+}
++ObjProp 754 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+-ObjProp 947 "PhysType"
+-ObjProp 948 "PhysType"
+-ObjProp 949 "PhysType"
+-ObjProp 951 "PhysType"
+-ObjProp 952 "PhysType"
+
+//footlocker
++ObjProp 622 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 622 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 2
+	"Joint2AnimC" Sim
+	"    rate-low-high2" 25, 0, 60
+}
+
+//junk
+-ObjProp 840 "NoDrop"
++ObjProp 840 "InvType"
+{
+}
+
+//crates
++ObjProp 841 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 842 "AI_BlkVis"
+{
+	"" true
+}
