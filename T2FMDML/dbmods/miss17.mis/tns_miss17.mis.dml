@@ -15,6 +15,17 @@ FINGERPRINT
 	QVAR "goal_target_6" == 615
 }
 
+//mantling
++ObjProp 107 "PhysCanMant"
+{
+}
++ObjProp 505 "PhysCanMant"
+{
+}
++ObjProp 646 "PhysCanMant"
+{
+}
+
 //secrets
 -ObjProp 222 "DarkStat"
 ObjProp 2044 "DarkStat"
@@ -25,13 +36,16 @@ ObjProp 2045 "DarkStat"
 {
 	"" None
 }
-//mantling
-+ObjProp 107 "PhysCanMant"
+
+//cake
++ObjProp 2089 "CombineType"
+{
+	"" cake
+}
++ObjProp 2089 "StackCount"
 {
 }
-+ObjProp 505 "PhysCanMant"
++ObjProp 2089 "NoDrop"
 {
-}
-+ObjProp 646 "PhysCanMant"
-{
+	"" true
 }
