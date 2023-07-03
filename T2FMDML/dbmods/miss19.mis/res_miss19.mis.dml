@@ -1,5 +1,6 @@
 DML1
-//T2 FM: Resonance by Jeremy Catlin (HipBreaker) / Fixes: miss19.mis.dml
+
+//T2 FM: Resonance by Jeremy Catlin (HipBreaker) / Fixes
 
 FINGERPRINT
 {
@@ -229,9 +230,22 @@ ObjProp 851 "Scripts"
 {
 	"Script 1" ""
 }
+ObjProp 1050 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 1050 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=-2,0,0
+}
 +ObjProp 1050 "BlockFrob"
 {
 	"" true
+}
++ObjProp 1050 "Scripts"
+{
+	"Script 0" SetVectorProp
 }
 -MetaProp 1070 -1629
 -MetaProp 1073 -1629
