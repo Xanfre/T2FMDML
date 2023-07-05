@@ -40,6 +40,9 @@ FINGERPRINT
 +ObjProp 397 "PhysCanMant"
 {
 }
++ObjProp 937 "PhysCanMant"
+{
+}
 +ObjProp 940 "PhysCanMant"
 {
 }
@@ -50,7 +53,108 @@ FINGERPRINT
 {
 }
 
+//doors
+ObjProp 107 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 154 "Scale"
+{
+	"" 0.9375, 0.9375, 0.875
+}
+ObjProp 247 "TransDoor"
+{
+	"Open Position" -3.50
+}
++ObjProp 247 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 1
+	"    rate-low-highJoint" 30, 0, 90
+}
+ObjProp 331 "RotDoor"
+{
+	"Open Angle" 275
+}
+ObjProp 340 "TransDoor"
+{
+	"Open Position" -3.50
+}
++ObjProp 340 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
 //AIs
++ObjProp 187 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="&ScriptParams"
+}
+-Link 187 927 "ControlDevice"
+-Link 187 925 "ControlDevice"
++Link 189 333 "ControlDevice"
+{
+}
++Link 187 394 "ControlDevice"
+{
+}
++Link 187 981 "Route"
+{
+}
++Link 187 925 "ScriptParams"
+{
+}
++Link 187 927 "ScriptParams"
+{
+}
+-ObjProp 187 "Scripts"
++ObjProp 187 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrigRoomObject
+}
++ObjProp 189 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="&ScriptParams"
+}
+-Link 189 927 "ControlDevice"
+-Link 189 924 "ControlDevice"
++Link 189 333 "ControlDevice"
+{
+}
++Link 189 394 "ControlDevice"
+{
+}
++Link 189 981 "Route"
+{
+}
++Link 189 924 "ScriptParams"
+{
+}
++Link 189 927 "ScriptParams"
+{
+}
+-ObjProp 189 "Scripts"
++ObjProp 189 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" TrigRoomObject
+}
++Link 333 972 "ControlDevice"
+{
+}
++ObjProp 333 "Scripts"
+{
+	"Script 0" TrapRequireAll
+}
++Link 394 982 "ControlDevice"
+{
+}
++ObjProp 394 "Scripts"
+{
+	"Script 0" TrapRequireAny
+}
 +ObjProp 203 "InvRendType"
 {
 	"Type" Alternate Bitmap
@@ -70,6 +174,11 @@ FINGERPRINT
 {
 	"Type" Alternate Bitmap
 	"Resource" ""
+}
++ObjProp 610 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cthfm02
 }
 +ObjProp 745 "InvRendType"
 {
@@ -101,8 +210,66 @@ FINGERPRINT
 	"Type" Alternate Bitmap
 	"Resource" cnoblem3
 }
+-Link 971 972 "ControlDevice"
++Link 971 333 "ControlDevice"
+{
+}
++Link 971 938 "ControlDevice"
+{
+}
++ObjProp 972 "TrapFlags"
+{
+	"" Once
+}
++Link 981 333 "ControlDevice"
+{
+}
++Link 981 982 "ControlDevice"
+{
+}
++ObjProp 981 "Scripts"
+{
+	"Script 0" TrigRoomPlayer
+}
+-ObjProp 982 "TrapFlags"
++ObjProp 982 "Scripts"
+{
+	"Script 0" TrapRequireAll
+	"Don't Inherit" true
+}
++ObjProp 983 "TrapFlags"
+{
+	"" Once
+}
++ObjProp 938 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 938 1087 "ControlDevice"
+{
+}
++Link 1087 972 "ControlDevice"
+{
+}
++Link 1087 983 "ControlDevice"
+{
+}
++ObjProp 1087 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
 
-//elevator button
+//chests
++ObjProp 296 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 638 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//elevator
 -Receptron 410 "PetrolStim" 00210008
 -Receptron 410 "PetrolStim" 00210007
 +Receptron 413 "PetrolStim"
@@ -139,37 +306,38 @@ ObjProp 413 "Scripts"
 {
 	"Script 1" NVRelayTrap
 }
-
-//chest
-ObjProp 638 "JointPos"
++ObjProp 420 "BlockFrob"
 {
-	"Joint 1" 90.00
+	"" true
 }
 
-//misplaced objects
--ObjProp 671 "PhysType"
-ObjProp 671 "Position"
+//scrolls
++ObjProp 603 "DesignNote"
 {
-	"Location" 555.719, 741.473, 475.985
+	"" NVRelayTrapDelay=500
 }
-+ObjProp 671 "PhysType"
++Link 603 917 "ControlDevice"
 {
-	"Type" OBB
 }
--ObjProp 673 "PhysType"
-ObjProp 673 "Position"
++ObjProp 603 "Scripts"
 {
-	"Location" 554.778, 743.587, 475.965
+	"Script 0" NVRelayTrap
 }
-+ObjProp 673 "PhysType"
+-Link 780 916 "ControlDevice"
++Link 780 603 "ControlDevice"
 {
-	"Type" OBB
 }
-
-//palmer's note
+ObjProp 918 "DesignNote"
+{
+	"" NVRelayTrapDelay=500
+}
+ObjProp 919 "DesignNote"
+{
+	"" NVRelayTrapDelay=500
+}
 +ObjProp 1189 "DesignNote"
 {
-	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapItem="[Me]"
 }
 +ObjProp 1189 "Scripts"
 {
@@ -180,7 +348,7 @@ ObjProp 673 "Position"
 -ObjProp 1190 "NoDrop"
 +ObjProp 1190 "DesignNote"
 {
-	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTOn="InitialSelect"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapOn="InitialSelect"; NVSelectTrapItem="[Me]"
+	"" NVRelayTrapOn="Contained"; NVRelayTrapDelay=200; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1; NVSelectTrapItem="[Me]"
 }
 +ObjProp 1190 "Scripts"
 {
@@ -188,8 +356,59 @@ ObjProp 673 "Position"
 	"Script 1" NVSelectTrap
 }
 
+//misplaced objects
+ObjProp 671 "Position"
+{
+	"Location" 555.719, 741.473, 475.985
+}
+-ObjProp 671 "PhysType"
++ObjProp 671 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 673 "Position"
+{
+	"Location" 554.778, 743.587, 475.965
+}
+-ObjProp 673 "PhysType"
++ObjProp 673 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 695 "PhysType"
++ObjProp 695 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1039 "Position"
+{
+	"Location" 594.165, 620.2, 478
+}
+
+//banners
++ObjProp 888 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 889 "SlayResult"
+{
+	"Effect" Destroy
+}
+
+//magic cheese
++ObjProp 1197 "CombineType"
+{
+	"" MagicCheese
+}
+ObjProp 1197 "Scripts"
+{
+	"Script 0" LootSounds
+	"Script 1" ""
+	"Script 2" ""
+}
+
 //vines
-+Receptron 22 "EarthStim"
++Receptron 22 "Stench"
 {
 	Max None
 
@@ -201,7 +420,7 @@ ObjProp 673 "Position"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 22 "EarthStim"
+++Receptron 22 "Stench"
 {
 	Max None
 
@@ -213,7 +432,31 @@ ObjProp 673 "Position"
 		"Prop Name" Material Tags
 	}
 }
-+StimSource 22 "EarthStim"
+++Receptron 22 "Stench"
+{
+	Max None
+
+	Target 695
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 22 "Stench"
+{
+	Max None
+
+	Target 713
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 22 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
