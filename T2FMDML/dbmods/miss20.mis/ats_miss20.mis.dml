@@ -93,9 +93,6 @@ ObjProp 340 "TransDoor"
 }
 -Link 187 927 "ControlDevice"
 -Link 187 925 "ControlDevice"
-+Link 189 333 "ControlDevice"
-{
-}
 +Link 187 394 "ControlDevice"
 {
 }
@@ -300,7 +297,7 @@ ObjProp 638 "JointPos"
 }
 ObjProp 413 "DesignNote"
 {
-	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapOff="Null"; NVRelayTrapTOn="[10.00]PetrolStim"; NVRelayTrapTDest="[Me]"
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTOn="[1.00]PetrolStim"; NVRelayTrapTDest="[Me]"; NVRelayTrapCount=1
 }
 ObjProp 413 "Scripts"
 {
