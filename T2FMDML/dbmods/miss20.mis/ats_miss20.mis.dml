@@ -248,9 +248,6 @@ ObjProp 340 "TransDoor"
 +Link 1087 972 "ControlDevice"
 {
 }
-+Link 1087 983 "ControlDevice"
-{
-}
 +ObjProp 1087 "Scripts"
 {
 	"Script 0" NVDeleteTrap
