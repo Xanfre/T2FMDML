@@ -81,6 +81,7 @@ Create -445 "Blocker2"
 +MetaProp 32 -2420
 +MetaProp 64 -2420
 +MetaProp 317 -2420
++MetaProp 318 -2420
 +MetaProp 706 -2420
 +MetaProp 755 -2420
 +MetaProp 1025 -2420
@@ -238,6 +239,18 @@ ObjProp 1086 "Scripts"
 	"Don't Inherit" true
 }
 
+//AIs
++ObjProp 166 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
++ObjProp 250 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" assaca
+}
+
 //keys
 +ObjProp 220 "StackCount"
 {
@@ -255,14 +268,26 @@ ObjProp 1086 "Scripts"
 	Max None
 
 	Target 309
-	Agent Me
+	Agent -10
 
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
 	}
 }
-+StimSource 309 "Stench"
+++Receptron 227 "Stench"
+{
+	Max None
+
+	Target 221
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 227 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
