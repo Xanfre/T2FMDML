@@ -159,7 +159,8 @@ ObjProp 1060 "Scripts"
 }
 ObjProp 127 "Scripts"
 {
-	"Script 1" NVRelayTrap
+	"Script 0" NVRelayTrap
+	"Script 1" ""
 }
 +ObjProp 186 "DesignNote"
 {
@@ -167,7 +168,8 @@ ObjProp 127 "Scripts"
 }
 ObjProp 186 "Scripts"
 {
-	"Script 1" NVRelayTrap
+	"Script 0" NVRelayTrap
+	"Script 1" ""
 }
 ObjProp 249 "Position"
 {
@@ -217,7 +219,8 @@ ObjProp 608 "Scripts"
 }
 ObjProp 610 "Scripts"
 {
-	"Script 1" NVRelayTrap
+	"Script 0" NVRelayTrap
+	"Script 1" ""
 }
 +ObjProp 614 "DesignNote"
 {
@@ -225,7 +228,8 @@ ObjProp 610 "Scripts"
 }
 ObjProp 614 "Scripts"
 {
-	"Script 1" NVRelayTrap
+	"Script 0" NVRelayTrap
+	"Script 1" ""
 }
 +ObjProp 1086 "DesignNote"
 {
