@@ -61,6 +61,18 @@ FINGERPRINT
 +ObjProp 69 "PhysCanMant"
 {
 }
++ObjProp 92 "PhysCanMant"
+{
+}
++ObjProp 95 "PhysCanMant"
+{
+}
++ObjProp 96 "PhysCanMant"
+{
+}
++ObjProp 98 "PhysCanMant"
+{
+}
 +ObjProp 130 "PhysCanMant"
 {
 }
@@ -97,22 +109,181 @@ FINGERPRINT
 +ObjProp 462 "PhysCanMant"
 {
 }
+
+//doors
+ObjProp 14 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 28 "Scale"
+{
+	"" 0.857143, 0.857143, 1
+}
+ObjProp 29 "Scale"
+{
+	"" 0.857143, 0.857143, 1
+}
++ObjProp 30 "BlockFrob"
+{
+	"" true
+}
+ObjProp 30 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 36 "Scale"
+{
+	"" 0.857143, 0.857143, 0.857143
+}
+ObjProp 36 "RotDoor"
+{
+	"Open Angle" 272
+}
+ObjProp 38 "RotDoor"
+{
+	"Open Angle" 85
+}
++ObjProp 38 "BlockFrob"
+{
+	"" true
+}
+ObjProp 38 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+ObjProp 47 "Scale"
+{
+	"" 1.1429, 1.1429, 1
+}
+ObjProp 48 "Scale"
+{
+	"" 1, 1, 0.875
+}
+ObjProp 49 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
++ObjProp 49 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 55 "Scale"
+ObjProp 90 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 104 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 104 "Scale"
+ObjProp 121 "Scale"
+{
+	"" 0.857143, 0.857143, 1
+}
+ObjProp 244 "CollisionType"
+{
+	"" None
+}
+ObjProp 245 "CollisionType"
+{
+	"" None
+}
++ObjProp 245 "BlockFrob"
+{
+	"" true
+}
+ObjProp 245 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
+-ObjProp 245 "PhysType"
++ObjProp 245 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 266 "PickBias"
++ObjProp 266 "BlockFrob"
+{
+	"" true
+}
+ObjProp 266 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
+-ObjProp 354 "Scripts"
++ObjProp 354 "BlockFrob"
+{
+	"" true
+}
++ObjProp 356 "BlockFrob"
+{
+	"" true
+}
++ObjProp 369 "BlockFrob"
+{
+	"" true
+}
+ObjProp 369 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
++ObjProp 375 "BlockFrob"
+{
+	"" true
+}
+ObjProp 375 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
+ObjProp 472 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
++ObjProp 540 "Locked"
+{
+	"" true
+}
++ObjProp 578 "Locked"
+{
+	"" true
+}
++ObjProp 595 "Locked"
+{
+	"" true
+}
++Receptron 631 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 631 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 631 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 631 "PhysType"
++ObjProp 631 "PhysType"
+{
+	"Type" OBB
+}
+
 //railings
--ObjProp 59 "PhysType"
 ObjProp 59 "Position"
 {
 	"Location" -3.2475, -0.05, 12.62
 }
+-ObjProp 59 "PhysType"
 +ObjProp 59 "PhysType"
-{
-	"Type" OBB
-}
--ObjProp 61 "PhysType"
-ObjProp 61 "Position"
-{
-	"Location" -6.2, -4.875, 12.62
-}
-+ObjProp 61 "PhysType"
 {
 	"Type" OBB
 }
@@ -120,11 +291,20 @@ ObjProp 61 "Scale"
 {
 	"" 0.925, 1, 1
 }
--ObjProp 62 "PhysType"
+ObjProp 61 "Position"
+{
+	"Location" -6.2, -4.875, 12.62
+}
+-ObjProp 61 "PhysType"
++ObjProp 61 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 62 "Position"
 {
 	"Location" -0.20185, 3.125, 12.62
 }
+-ObjProp 62 "PhysType"
 +ObjProp 62 "PhysType"
 {
 	"Type" OBB
@@ -133,37 +313,213 @@ ObjProp 62 "Scale"
 {
 	"" 0.575, 1, 1
 }
--ObjProp 187 "PhysType"
 ObjProp 187 "Position"
 {
 	"Location" -0.24625, 0, 12.716
 }
+-ObjProp 187 "PhysType"
 +ObjProp 187 "PhysType"
 {
 	"Type" OBB
 }
--ObjProp 188 "PhysType"
 ObjProp 188 "Position"
 {
 	"Location" -6.25, 0, 12.716
 }
+-ObjProp 188 "PhysType"
 +ObjProp 188 "PhysType"
 {
 	"Type" OBB
 }
-//paintings
-+ObjProp 375 "BlockFrob"
+ObjProp 559 "Position"
 {
-	"" true
+	"Location" -12.65, -29.88, -31.5
 }
+-ObjProp 559 "PhysType"
++ObjProp 559 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 559 "Scale"
+{
+	"" 0.64, 1, 0.5725
+}
+
+//misplaced objects / physdims
+-ObjProp 142 "PhysType"
++ObjProp 142 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 150 "PhysType"
++ObjProp 150 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 175 "PhysType"
++ObjProp 175 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 189 "PhysType"
++ObjProp 189 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 216 "PhysType"
++ObjProp 216 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 217 "PhysType"
++ObjProp 217 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 240 "Position"
+{
+	"Location" -4, -5.27, -13.7
+}
+-ObjProp 240 "PhysType"
++ObjProp 240 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 243 "PhysType"
++ObjProp 243 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 284 "Position"
+{
+	"Location" -6.1, -2.5, -3.75
+}
+-ObjProp 284 "PhysType"
++ObjProp 284 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 293 "PhysType"
++ObjProp 293 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 325 "PhysType"
++ObjProp 325 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 359 "PhysType"
++ObjProp 359 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 362 "Position"
+{
+	"Location" -10.75, -4.2, 6
+}
+-ObjProp 385 "PhysType"
++ObjProp 385 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 480 "PhysType"
++ObjProp 480 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 641 "PhysType"
+ObjProp 641 "Position"
+{
+	"Location" -16.43, -15.65, -32.85
+}
+
+//switch
+ObjProp 144 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 144 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+
+//keys
++ObjProp 230 "StackCount"
+{
+}
++ObjProp 231 "StackCount"
+{
+}
++ObjProp 235 "StackCount"
+{
+}
++ObjProp 236 "StackCount"
+{
+}
+-ObjProp 236 "PickDist"
+-ObjProp 236 "PhysType"
+ObjProp 236 "Position"
+{
+	"Location" -7, -5, -4.625
+}
++ObjProp 237 "StackCount"
+{
+}
+-ObjProp 237 "PickDist"
+-ObjProp 238 "PickDist"
++ObjProp 238 "StackCount"
+{
+}
++ObjProp 257 "StackCount"
+{
+}
+ObjProp 257 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 635 "StackCount"
+{
+}
+
+//pick distance
+-ObjProp 300 "PickDist"
+-ObjProp 317 "PickDist"
+-ObjProp 318 "PickDist"
+-ObjProp 319 "PickDist"
+-ObjProp 320 "PickDist"
+-ObjProp 335 "PickDist"
+-ObjProp 377 "PickDist"
+-ObjProp 381 "PickDist"
+-ObjProp 382 "PickDist"
+-ObjProp 383 "PickDist"
+-ObjProp 386 "PickDist"
++ObjProp 367 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 384 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 459 "PickDist"
+{
+	"" 5.00
+}
+
+//arrows
+-ObjProp 309 "DeathStage"
+-ObjProp 330 "DeathStage"
+-ObjProp 394 "DeathStage"
+-ObjProp 458 "DeathStage"
+-ObjProp 535 "DeathStage"
+-ObjProp 518 "PhysType"
+
+//quest item
 +ObjProp 387 "NoDrop"
 {
 	"" true
-}
-//basement door
-+Receptron 631 "WeaponStim"
-{
-	Min None
-	Max None
-	Effect "Abort"
 }
