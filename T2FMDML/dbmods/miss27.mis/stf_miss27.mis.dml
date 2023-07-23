@@ -15,10 +15,164 @@ FINGERPRINT
 	QVAR "goal_target_0" == 528
 }
 
+//mantling
+Create -445 "Blocker1"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" -147.15, -16, -2.5
+		"Bank" 4000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 1.7
+	}
+}
+Create -445 "Blocker2"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" -147.15, 0, -2.5
+		"Bank" 4000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 1.7
+	}
+}
+Create -445 "Blocker3"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" -168.15, 66.5, 5.5
+		"Bank" 4000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 1.7
+	}
+}
+-ObjProp "Blocker1" "PhysType"
++ObjProp "Blocker1" "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp "Blocker2" "PhysType"
++ObjProp "Blocker2" "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp "Blocker3" "PhysType"
++ObjProp "Blocker3" "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 399 "Material Tags"
+{
+}
++ObjProp 403 "Material Tags"
+{
+}
+
 //goals
-+ObjProp 620 "DiffTurnOn"
+-Link 179 709 "ControlDevice"
++ObjProp 179 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 179 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
++Link 320 709 "ControlDevice"
+{
+}
+-Link 528 703 "ControlDevice"
++Link 528 621 "ControlDevice"
+{
+}
+ObjProp 528 "Scripts"
+{
+	"Script 0" TrigInvFrob
+	"Script 1" ""
+	"Script 2" ""
+}
+-ObjProp 565 "ScriptTiming"
++ObjProp 618 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
+}
++Link 618 619 "ControlDevice"
+{
+}
++Link 618 620 "ControlDevice"
+{
+}
++ObjProp 618 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Script 1" TrapSetQVar
+}
++ObjProp 618 "TrapQVar"
+{
+	"" =0:goal_irreversible_4
+}
++ObjProp 619 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 619 "TrapQVar"
+{
+	"" =0:goal_target_0
 }
 +ObjProp 620 "Scripts"
 {
@@ -26,17 +180,282 @@ FINGERPRINT
 }
 +ObjProp 620 "TrapQVar"
 {
-	"" =0:goal_irreversible_4
+	"" =0:goal_target_1
 }
-+ObjProp 621 "DiffTurnOn"
++Link 621 631 "ControlDevice"
 {
-	"quest var values" 0, 1, 2
+}
++Link 621 703 "ControlDevice"
+{
 }
 +ObjProp 621 "Scripts"
 {
+	"Script 0" TrapRelay
+}
++ObjProp 631 "Scripts"
+{
 	"Script 0" TrapSetQVar
 }
-+ObjProp 621 "TrapQVar"
++ObjProp 631 "TrapQVar"
 {
-	"" =621:goal_target_1
+	"" =1:goal_state_0
+}
++ObjProp 703 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 703 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
+
+//doors
+-ObjProp 19 "PhysType"
++ObjProp 19 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 37 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 89 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 89 "BlockFrob"
+{
+	"" true
+}
++ObjProp 127 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 132 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 168 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 187 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 187 "FrobInfo"
+{
+}
++ObjProp 237 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 241 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 269 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 284 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 284 "FrobInfo"
+{
+}
++ObjProp 298 "FrobInfo"
+{
+}
++ObjProp 298 "AI_BlkVis"
+{
+	"" true
+}
++MetaProp 358 -2420
++MetaProp 367 -2420
++MetaProp 372 -2420
++MetaProp 373 -2420
++MetaProp 374 -2420
++MetaProp 496 -2420
++ObjProp 416 "AI_BlkVis"
+{
+	"" true
+}
+ObjProp 422 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 422 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 422 "PhysType"
++ObjProp 422 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 489 "PhysType"
++ObjProp 489 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 534 "AI_BlkVis"
+{
+	"" true
+}
++ObjProp 552 "AI_BlkVis"
+{
+	"" true
+}
+-ObjProp 552 "PhysType"
++ObjProp 552 "PhysType"
+{
+	"Type" OBB
+}
+
+//bounds triggers
+ObjProp 109 "Position"
+{
+	"Location" -94, 163, 10.5
+}
+-ObjProp 109 "PhysType"
++ObjProp 109 "PhysType"
+{
+	"Type" OBB
+}
+-Link 605 535 "ControlDevice"
+-Link 511 605 "ControlDevice"
++Link 511 535 "ControlDevice"
+{
+}
+ObjProp 511 "Position"
+{
+	"Location" -88.5, 157, 18.5
+}
+-ObjProp 511 "PhysType"
++ObjProp 511 "PhysType"
+{
+	"Type" OBB
+}
+
+//misplaced objects / physdims
+-ObjProp 178 "PhysType"
++ObjProp 178 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 274 "PhysType"
++ObjProp 274 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 357 "PhysType"
++ObjProp 357 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 400 "PhysType"
++ObjProp 400 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 401 "PhysType"
++ObjProp 401 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 402 "PhysType"
++ObjProp 402 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 613 "PhysType"
++ObjProp 613 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 672 "PhysType"
+ObjProp 672 "Position"
+{
+	"Location" -200.7, 56.75, 5.7
+}
+-ObjProp 673 "PhysType"
++ObjProp 673 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 806 "PhysType"
+-ObjProp 710 "PhysType"
+-ObjProp 713 "PhysType"
+ObjProp 713 "Position"
+{
+	"Location" -236.365, 25.1, 10.1
+}
+
+//AIs
++ObjProp 329 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 445 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 529 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 553 "MotActorTagList"
+{
+	"tags" WithSword 0
+}
++ObjProp 570 "MotActorTagList"
+{
+	"tags" WithSword 0
+}
++ObjProp 577 "MotActorTagList"
+{
+	"tags" WithSword 0
+}
++ObjProp 653 "FrobInfo"
+{
+}
+-ObjProp 843 "CfgTweqBlink"
++ObjProp 843 "SlayResult"
+{
+	"Effect" Destroy
+}
+
+//keys / lockbox
++ObjProp 443 "NoDrop"
+{
+	"" true
+}
++ObjProp 644 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 649 "NoDrop"
+{
+	"" true
+}
++ObjProp 738 "NoDrop"
+{
+	"" true
+}
+
+//footlockers
++ObjProp 723 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 724 "JointPos"
+{
+	"Joint 1" 90.00
 }
