@@ -432,7 +432,7 @@ ObjProp 713 "Position"
 	"Effect" Destroy
 }
 
-//keys / lockbox
+//keys / unused lockbox
 +ObjProp 443 "NoDrop"
 {
 	"" true
