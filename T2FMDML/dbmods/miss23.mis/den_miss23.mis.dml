@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Den by Gaetane / Fix conversation bug
+//T2 FM: The Den (L'Arsene) by Gaetane / Fixes
 
 FINGERPRINT
 {
@@ -15,11 +15,14 @@ FINGERPRINT
 	QVAR "goal_target_0" == 511
 }
 
--ObjProp 1063 "Position"
-+ObjProp 1063 "Position"
+//AI
+ObjProp 1063 "Position"
 {
-	"Location" -296.9,-53.09,74.0
-	"Heading" 0
-	"Pitch" 0
-	"Bank" 0
+	"Location" -297, -53, 74
+}
+
+//sword
+ObjProp 1490 "GameName"
+{
+	"" Name_ConSword
 }
