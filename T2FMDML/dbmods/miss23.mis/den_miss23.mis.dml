@@ -26,3 +26,47 @@ ObjProp 1490 "GameName"
 {
 	"" Name_ConSword
 }
+
+//footlockers
++ObjProp 33 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 225 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1194 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2057 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2065 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2089 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2414 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2714 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//deathstage
+-ObjProp 245 "DeathStage"
+-ObjProp 306 "DeathStage"
+-ObjProp 523 "DeathStage"
+-ObjProp 747 "DeathStage"
+-ObjProp 1113 "DeathStage"
+-ObjProp 1867 "DeathStage"
+-ObjProp 2382 "DeathStage"
+-ObjProp 2687 "DeathStage"
