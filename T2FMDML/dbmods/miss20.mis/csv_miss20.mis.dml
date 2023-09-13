@@ -113,3 +113,15 @@ ObjProp 460 "Scripts"
 {
 	"" true
 }
+
+//hanging objects bug
+ObjProp 2098 "Scripts"
+{
+	"Script 0" StdDoor
+	"Script 1" ""
+}
+-ObjProp 2098 "PhysType"
++ObjProp 2098 "PhysType"
+{
+	"Type" OBB
+}
