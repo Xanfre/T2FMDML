@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The Rise of the Mechanists by Pedro Quintela (Cardia) / Fix final goal
+//T2 FM: The Rise of the Mechanists (Mechanist Tribulation) by Cardia, DarthsLair & Ravenhook / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -15,28 +15,17 @@ FINGERPRINT
 	QVAR "goal_target_10" == 1975
 }
 
-#script "tnhscript"
-
-Create -464 "QVarFixSwitch"
+//final goal
++ObjProp 86 "DiffTurnOn"
 {
-	+ObjProp "Scripts"
-	{
-		"Script 0" TrigProximity
-	}
-	+ObjProp "designnote"
-	{
-		"" Proximity=2000
-	}
+	"quest var values" 0, 1, 2
 }
-+ObjProp 273 "Scripts"
++ObjProp 86 "Scripts"
 {
 	"Script 0" TrapSetQVar
 }
-+ObjProp 273 "TrapQVar"
++ObjProp 86 "TrapQVar"
 {
 	"" =0:goal_irreversible_10
-}
-+Link "QVarFixSwitch" 273 "ControlDevice"
-{
 }
 -ObjProp 1975 "Scripts"
