@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Breaking the Stone by Jeremy Catlin (HipBreaker) / Fix coronas
+//T2 FM: Breaking the Stone (Part 1) by Jeremy Catlin (HipBreaker) / Fixes
 
 FINGERPRINT
 {
@@ -15,39 +15,137 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1083
 }
 
--ObjProp 1856 "Corona"
-+ObjProp 1856 "Corona"
+//mantling
++ObjProp 2797 "PhysCanMant"
 {
-	"flags" Track Moving Object
-	"radius up close" 1
-	"radius at max dist" 2
-	"max. dist. visible" 48
-	"alpha" 0.6
-	"texture" coron01.tga
-	"color" 255,255,255
-	"spot angle scale" 1.00
 }
--ObjProp 2439 "Corona"
-+ObjProp 2439 "Corona"
++ObjProp 2801 "PhysCanMant"
 {
-	"flags" Track Moving Object
-	"radius up close" 1
-	"radius at max dist" 2
-	"max. dist. visible" 48
-	"alpha" 0.6
-	"texture" coron01.tga
-	"color" 255,255,255
-	"spot angle scale" 1.00
 }
--ObjProp 343 "Corona"
-+ObjProp 343 "Corona"
+
+//keys
+ObjProp 343 "Corona"
 {
 	"flags" Track Moving Object
-	"radius up close" 1
-	"radius at max dist" 2
-	"max. dist. visible" 48
-	"alpha" 0.6
-	"texture" coron01.tga
-	"color" 255,255,255
-	"spot angle scale" 1.00
+	"alpha" 0.60
+}
+ObjProp 1856 "Corona"
+{
+	"flags" Track Moving Object
+}
+ObjProp 2439 "Corona"
+{
+	"flags" Track Moving Object
+	"radius up close" 1.00
+	"radius at max dist" 2.00
+	"max. dist. visible" 48.00
+	"alpha" 0.60
+}
+
+//doors
+ObjProp 520 "RotDoor"
+{
+	"Open Angle" 86
+}
+ObjProp 1485 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1485 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 1485 "PhysType"
++ObjProp 1485 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 2842 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 2842 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++Link 2842 2841 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 2842 2844 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 2842 2847 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 2842 2848 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 2842 "Scripts"
+{
+	"Script 0" DoorFrobInert
+}
++Link 2847 2842 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 2847 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
++Link 2848 2842 "ScriptParams"
+{
+	"" Unlink
+}
++ObjProp 2848 "Scripts"
+{
+	"Script 0" UnlinkOnContained
+}
+
+//containers
++ObjProp 245 "JointPos"
+{
+	"Joint 1" 90.00
+}
+-ObjProp 473 "Scripts"
++ObjProp 1332 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1351 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 1964 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2098 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 2644 "JointPos"
+{
+	"Joint 1" 90.00
+}
++Link 2700 2703 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 2700 "Scripts"
+{
+	"Script 0" TweqFrobInert
 }
