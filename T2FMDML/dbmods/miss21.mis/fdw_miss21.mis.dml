@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: The First Day of Winter (Polish Contest) by PinkDot / Fix locking door and make an item easier to pick up
+//T2 FM: The First Day of Winter (Polish Contest) by Juliusz Kaczmarek (PinkDot) / Fixes
 
 FINGERPRINT
 {
@@ -15,27 +15,346 @@ FINGERPRINT
 	QVAR "goal_target_1" == 168
 }
 
+#script "nvscript"
+
+//starting point
+ObjProp 10 "Position"
+{
+	"Heading" 9000
+}
+
+//goals
+-Link 98 185 "ControlDevice"
+-ObjProp 168 "TrapFlags"
+-Link 168 171 "ControlDevice"
++Link 168 170 "ControlDevice"
+{
+}
+-Link 167 170 "ControlDevice"
++Link 167 123 "ControlDevice"
+{
+}
++Link 167 173 "ControlDevice"
+{
+}
++Link 167 336 "ControlDevice"
+{
+}
++ObjProp 167 "ScriptTiming"
+{
+	"" 11000
+}
++ObjProp 167 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 167 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
++Link 170 181 "ControlDevice"
+{
+}
++Link 170 253 "ControlDevice"
+{
+}
++ObjProp 170 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 170 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Don't Inherit" true
+}
+-ObjProp 173 "DeathStage"
++ObjProp 173 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 336 "TrapFlags"
+{
+	"" Invert
+}
+-Link 174 173 "ControlDevice"
+-Link 180 336 "ControlDevice"
+-Link 180 173 "ControlDevice"
+-Link 182 253 "ControlDevice"
+-Link 182 181 "ControlDevice"
+-Link 221 223 "ControlDevice"
+-Link 221 222 "ControlDevice"
++Link 221 223 "ControlDevice"
+{
+}
++Link 221 222 "ControlDevice"
+{
+}
+-ObjProp 183 "ScriptTiming"
+-ObjProp 183 "TrapFlags"
+-ObjProp 183 "Scripts"
++ObjProp 451 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
+
+//scrolls / goals
+-ObjProp 128 "ScriptTiming"
+ObjProp 128 "Scripts"
+{
+	"Script 0" TrigInvFrob
+	"Script 1" ""
+}
++ObjProp 390 "DesignNote"
+{
+	"" NVRelayTrapTDest=257; NVRelayTrapDelay=200; NVRelayTrap2Delay=1200
+}
+-Link 390 257 "ControlDevice"
+-ObjProp 390 "ScriptTiming"
+ObjProp 390 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVRelayTrap2
+}
+ObjProp 224 "StackCount"
+{
+	"" 0
+}
+-ObjProp 224 "PickBias"
++Link 224 225 "ControlDevice"
+{
+}
++ObjProp 224 "Class Tags"
+{
+}
++ObjProp 224 "Material Tags"
+{
+	"1: Tags" Material Carpet
+}
++ObjProp 224 "Scripts"
+{
+	"Script 0" TrigContained
+	"Script 1" LootSounds
+}
+-ObjProp 225 "TrapQVar"
++ObjProp 225 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 225 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
+-ObjProp 227 "TrapFlags"
++ObjProp 230 "TrapFlags"
+{
+	"" Once, NoOff
+}
+
+//doors
+ObjProp 120 "Scale"
+{
+	"" 1.1429, 1.1429, 0.71429
+}
++ObjProp 123 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"
+}
++ObjProp 123 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+ObjProp 123 "JointPos"
+{
+	"Joint 1" -90.00
+}
++MetaProp 123 -1629
+ObjProp 124 "Scale"
+{
+	"" 1.1429, 1.1429, 1
+}
+ObjProp 125 "Scale"
+{
+	"" 1.1429, 1.1429, 1
+}
++ObjProp 206 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=207
+}
++ObjProp 206 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+ObjProp 207 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 207 "DesignNote"
+{
+	"" NVRelayTrapOn="DoorClose"; NVRelayTrapOff="DoorOpening"; NVRelayTrapTDest=414
+}
 ObjProp 207 "Scripts"
 {
 	"Script 0" TrigUnlock
-	"Script 1" ""
+	"Script 1" NVRelayTrap
 	"Script 2" ""
 	"Don't Inherit" false
 }
-ObjProp 224 "PickBias"
+ObjProp 207 "StTweqLock"
 {
-	"" 20.00
+	"AnimS" None
 }
-+ObjProp 273 "RenderType"
+ObjProp 207 "Position"
 {
-	"" Not Rendered
+	"Heading" c000
 }
-+ObjProp 273 "FrobInfo"
+-ObjProp 207 "PhysType"
++ObjProp 207 "PhysType"
 {
-	"World Action" None
-	"Inv Action" None
-	"Tool Action" None
+	"Type" OBB
 }
++MetaProp 207 -5661
++Link 414 208 "ControlDevice"
+{
+}
++ObjProp 414 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+
+//chests
++ObjProp 97 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 99 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 100 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 100 "PickBias"
 +Link 100 273 "Contains"
+{
+}
+ObjProp 100 "JointPos"
+{
+	"Joint 2" 20
+}
++ObjProp 179 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 179 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 228 "Position"
+{
+	"Location" 188.8, -4.2, -29.4195
+	"Heading" 0
+}
+-ObjProp 228 "PhysType"
++ObjProp 228 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 228 "JointPos"
+{
+	"Joint 2" 20
+}
++ObjProp 298 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 300 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 391 "PickDist"
+{
+	"" 5.00
+}
+
+//AIs
+-Link 119 450 "ControlDevice"
+-Link 119 397 "ControlDevice"
+-Link 122 450 "ControlDevice"
+-Link 122 397 "ControlDevice"
+-Link 152 450 "ControlDevice"
+-Link 152 397 "ControlDevice"
+Receptron 159 "BodyStim" 00210000
+{
+	Min 3
+	Max 5
+}
+Receptron 159 "BodyStim" 00210003
+{
+	Min 3
+	Max 5
+}
++StimSource 187 "BodyStim"
+{
+	Intensity 1
+}
++StimSource 190 "BodyStim"
+{
+	Intensity 4
+}
+Receptron 192 "BodyStim" 00210002
+{
+	Max 2
+}
+Receptron 192 "BodyStim" 00210001
+{
+	Max 2
+}
+
+//water arrows
+-ObjProp 153 "DeathStage"
+
+//fireplace
+-Link 284 259 "ControlDevice"
+-Link 284 258 "ControlDevice"
+-Link 284 31 "ControlDevice"
+-Link 284 49 "ControlDevice"
++Link 284 320 "ControlDevice"
+{
+}
+ObjProp 284 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 320 "DiffTurnOn"
+{
+}
++ObjProp 320 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Script 1" ActivateAmbient
+	"Don't Inherit" true
+}
+
+//misplaced objects
+ObjProp 285 "Position"
+{
+	"Location" 148.3, -31, -15.375
+}
+-ObjProp 285 "PhysType"
++ObjProp 285 "PhysType"
+{
+	"Type" Sphere
+}
+
+//various objects
++ObjProp 205 "StackCount"
+{
+}
++ObjProp 301 "InvType"
 {
 }
