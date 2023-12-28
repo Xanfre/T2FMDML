@@ -40,9 +40,12 @@ ObjProp 10 "Position"
 +Link 167 336 "ControlDevice"
 {
 }
++Link 167 178 "ControlDevice"
+{
+}
 +ObjProp 167 "ScriptTiming"
 {
-	"" 11000
+	"" 12000
 }
 +ObjProp 167 "TrapFlags"
 {
@@ -341,6 +344,7 @@ ObjProp 284 "TrapFlags"
 }
 
 //misplaced objects
+-StimSource 285 "FireStim"
 ObjProp 285 "Position"
 {
 	"Location" 148.3, -31, -15.375
