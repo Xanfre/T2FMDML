@@ -1,6 +1,6 @@
 DML1
 
-//T2 FM: Sinful Opportunities by M. Schotte (Polygon) / Fixes
+//T2 FM: Sinful Opportunities by Marijn Schotte (Polygon) / Fixes
 
 FINGERPRINT
 {
@@ -35,6 +35,7 @@ FINGERPRINT
 }
 -Link 537 536 "ControlDevice"
 -Link 536 538 "ControlDevice"
+-Link 536 537 "ControlDevice"
 -Link 536 535 "ControlDevice"
 +Link 536 538 "ControlDevice"
 {
@@ -52,6 +53,7 @@ ObjProp 47 "FrobInfo"
 {
 	"Inv Action" None
 }
+-ObjProp 189 "FrobInfo"
 +ObjProp 189 "StackCount"
 {
 }
@@ -69,9 +71,15 @@ ObjProp 47 "FrobInfo"
 -ObjProp 458 "JointPos"
 -ObjProp 475 "JointPos"
 -ObjProp 529 "JointPos"
+-Link 332 264 "ControlDevice"
+-ObjProp 332 "Scripts"
 ObjProp 367 "RotDoor"
 {
 	"Open Angle" 89
+}
+ObjProp 541 "JointPos"
+{
+	"Joint 1" 0.00
 }
 
 //misplaced objects
@@ -106,6 +114,18 @@ ObjProp 317 "Position"
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
+	}
+}
+++Receptron 322 "Stench"
+{
+	Max None
+
+	Target 189
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
 	}
 }
 ++Receptron 322 "Stench"
@@ -153,6 +173,14 @@ ObjProp 452 "Position"
 {
 	"Location" 540.45, 489.65, 502
 }
+ObjProp 468 "Position"
+{
+	"Location" 549.05, 498, 503.5
+}
+ObjProp 469 "Position"
+{
+	"Location" 549.05, 480, 503.5
+}
 ObjProp 1031 "Position"
 {
 	"Location" 473.67, 502.34, 508.51
@@ -172,4 +200,14 @@ ObjProp 1031 "Position"
 +ObjProp 224 "JointPos"
 {
 	"Joint 1" 90.00
+}
++ObjProp 271 "StackCount"
+{
+}
++ObjProp 271 "SlayResult"
+{
+}
++ObjProp 271 "NoDrop"
+{
+	"" true
 }
