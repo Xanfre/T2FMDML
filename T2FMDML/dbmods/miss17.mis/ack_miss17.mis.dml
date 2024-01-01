@@ -32,7 +32,7 @@ FINGERPRINT
 }
 +ObjProp 565 "TrapFlags"
 {
-	"" Once
+	"" Once, NoOff
 }
 +ObjProp 567 "DiffDestroy"
 {
@@ -51,51 +51,17 @@ FINGERPRINT
 	"quest var values" 0, 1, 2
 }
 
-//candlesticks
-ObjProp 423 "FrobInfo"
-{
-	"World Action" None
-}
-+ObjProp 423 "Scripts"
-{
-	"Script 0" AnimLight
-	"Don't Inherit" true
-}
-+ObjProp 429 "DesignNote"
-{
-	"" NVFrobToggleState=1
-}
--Link 429 423 "FrobProxy"
-+Link 429 423 "ControlDevice"
-{
-}
-+ObjProp 429 "Scripts"
-{
-	"Script 0" NVFrobToggle
-}
-+ObjProp 506 "DesignNote"
-{
-	"" NVFrobToggleState=1
-}
--Link 506 516 "FrobProxy"
-+Link 506 516 "ControlDevice"
-{
-}
-+ObjProp 506 "Scripts"
-{
-	"Script 0" NVFrobToggle
-}
-ObjProp 516 "FrobInfo"
-{
-	"World Action" None
-}
-+ObjProp 516 "Scripts"
-{
-	"Script 0" AnimLight
-	"Don't Inherit" true
-}
-
 //doors
+ObjProp 5 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 6 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
 +ObjProp 435 "BlockFrob"
 {
 	"" true
@@ -174,10 +140,63 @@ ObjProp 516 "FrobInfo"
 	Propagator "Radius"
 }
 
+//candlesticks
+ObjProp 423 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 423 "Scripts"
+{
+	"Script 0" AnimLight
+	"Don't Inherit" true
+}
++ObjProp 429 "DesignNote"
+{
+	"" NVFrobToggleState=1
+}
+-Link 429 423 "FrobProxy"
++Link 429 423 "ControlDevice"
+{
+}
++ObjProp 429 "Scripts"
+{
+	"Script 0" NVFrobToggle
+}
++ObjProp 506 "DesignNote"
+{
+	"" NVFrobToggleState=1
+}
+-Link 506 516 "FrobProxy"
++Link 506 516 "ControlDevice"
+{
+}
++ObjProp 506 "Scripts"
+{
+	"Script 0" NVFrobToggle
+}
+ObjProp 516 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 516 "Scripts"
+{
+	"Script 0" AnimLight
+	"Don't Inherit" true
+}
+
 //AI
 ObjProp 543 "AI_Hearing"
 {
 	"" Well Below Average
+}
+
+//key
++ObjProp 14 "StackCount"
+{
+}
++ObjProp 14 "GameName"
+{
+	"" Name_crkey
 }
 
 //footlockers
