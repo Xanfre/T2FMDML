@@ -35,7 +35,6 @@ FINGERPRINT
 }
 -Link 537 536 "ControlDevice"
 -Link 536 538 "ControlDevice"
--Link 536 537 "ControlDevice"
 -Link 536 535 "ControlDevice"
 +Link 536 538 "ControlDevice"
 {
