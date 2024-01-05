@@ -77,15 +77,15 @@ ObjProp 199 "Scale"
 {
 	"" 0.875, 0.875, 0.875
 }
+ObjProp 223 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
 +Receptron 223 "WeaponStim"
 {
 	Min None
 	Max None
 	Effect "Abort"
-}
-ObjProp 223 "Scale"
-{
-	"" 0.875, 0.875, 0.875
 }
 +Receptron 408 "WeaponStim"
 {
@@ -93,11 +93,16 @@ ObjProp 223 "Scale"
 	Max None
 	Effect "Abort"
 }
-+Receptron 408 "Stench"
++ObjProp 478 "Scripts"
+{
+	"Script 0" StdDoor
+	"Don't Inherit" true
+}
++Receptron 612 "Stench"
 {
 	Max None
 
-	Target Me
+	Target 408
 	Agent 29
 
 	Effect "add_prop"
@@ -105,7 +110,7 @@ ObjProp 223 "Scale"
 		"Prop Name" PhysDims
 	}
 }
-+StimSource 408 "Stench"
++StimSource 612 "Stench"
 {
 	Intensity 1
 	Propagator "Radius"
@@ -118,22 +123,13 @@ ObjProp 223 "Scale"
 {
 }
 
-//quest items
+//mysterious key
 +ObjProp 139 "NoDrop"
 {
 	"" true
 }
-++Receptron 155 "PseudoStim"
++ObjProp 139 "Class Tags"
 {
-	Max None
-
-	Target Me
-	Agent -1707
-
-	Effect "add_prop"
-	{
-		"Prop Name" NoDrop
-	}
 }
 
 //AIs
