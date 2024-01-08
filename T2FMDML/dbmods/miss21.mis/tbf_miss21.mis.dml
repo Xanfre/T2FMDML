@@ -15,7 +15,235 @@ FINGERPRINT
 	QVAR "goal_target_4" == 1475
 }
 
-//hanging objects bug
+//starting point
+ObjProp 130 "Position"
+{
+	"Location" -3.65, 203.25, 97
+}
+
+//quest items
++ObjProp 908 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 908 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 908 "TrapQVar"
+{
+	"" =0:goal_target_1
+}
++ObjProp 909 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 909 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 909 "TrapQVar"
+{
+	"" =0:goal_target_2
+}
++ObjProp 667 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 667 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1475 "NoDrop"
+{
+	"" true
+}
++ObjProp 1767 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
++Link 1767 1746 "ControlDevice"
+{
+}
+ObjProp 1767 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1746 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1746 "TrapQVar"
+{
+	"" =1:goal_state_2
+}
++ObjProp 2144 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 2144 "TrapQVar"
+{
+	"" =1:goal_state_1
+}
+
+//secret
++ObjProp 2143 "DarkStat"
+{
+	"" Hidden
+}
++ObjProp 2143 "Scripts"
+{
+	"Script 0" TrapFindSecret
+}
++ObjProp 2330 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++Link 2330 2143 "ControlDevice"
+{
+}
+ObjProp 2330 "Position"
+{
+	"Pitch" c000
+}
++ObjProp 2330 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+-ObjProp 2331 "DarkStat"
++Link 2331 2143 "ControlDevice"
+{
+}
+ObjProp 2331 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+	"Script 2" ""
+}
++ObjProp 2332 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++Link 2332 2143 "ControlDevice"
+{
+}
++ObjProp 2332 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
++ObjProp 2333 "FrobInfo"
+{
+	"World Action" Move, Script
+}
++Link 2333 2143 "ControlDevice"
+{
+}
++ObjProp 2333 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+
+//doors / hanging objects bug
+ObjProp 70 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 123 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 148 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 148 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 148 "PhysType"
++ObjProp 148 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 194 "TransDoor"
+{
+	"Open Position" -3.50
+	"Base Speed" 2.00
+}
+ObjProp 342 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 374 "RotDoor"
+{
+	"Open Angle" 88
+}
++ObjProp 379 "PhysCanMant"
+{
+}
+ObjProp 383 "RotDoor"
+{
+	"Open Angle" 89
+}
++Link 383 382 "ScriptParams"
+{
+	"" Double
+}
++Receptron 625 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 929 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++Receptron 935 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1004 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1352 "TransDoor"
+{
+	"Open Position" -3.50
+	"Base Speed" 2.00
+}
+ObjProp 1439 "RotDoor"
+{
+	"Open Angle" 271
+}
++MetaProp 1530 -2420
++MetaProp 1542 -2420
++MetaProp 2325 -2420
+ObjProp 1706 "TransDoor"
+{
+	"Open Position" -1.50
+}
++ObjProp 1706 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1706 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
+-ObjProp 1706 "PhysType"
++ObjProp 1706 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 1715 "TransDoor"
 {
 	"Open Position" 2.00
@@ -33,4 +261,280 @@ ObjProp 1715 "Scripts"
 +ObjProp 1715 "PhysType"
 {
 	"Type" OBB
+}
+
+//AIs
++ObjProp 405 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem3
+}
++ObjProp 1223 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblew3
+}
++ObjProp 1517 "Scripts"
+{
+	"Don't Inherit" true
+}
++ObjProp 1580 "Scripts"
+{
+	"Don't Inherit" true
+}
++ObjProp 1951 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
++ObjProp 1955 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+	"Priority" Absolute
+	"Response: Step 1" Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1" Remove
+	"   Argument 2" M-SittingSleeper
+	"Response: Step 2" Play sound/motion(Sound Concept,Sound Tags,Motion Tags)
+	"   Argument 1"[1] tolevelone
+	"   Argument 3"[1] Sit2Stand
+}
+ObjProp 1955 "Position"
+{
+	"Location" -91.75, 85.75, 90.75
+}
++ObjProp 1999 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
+
+//switches
++ObjProp 1216 "JointPos"
+{
+	"Joint 1" 0.70
+}
+ObjProp 1216 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
+-Link 1544 1530 "ControlDevice"
++Link 1544 1546 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+-Link 1545 1542 "ControlDevice"
++Link 1545 1064 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+
+//banners
++ObjProp 25 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 32 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 631 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 1099 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 1163 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 1718 "SlayResult"
+{
+	"Effect" Destroy
+}
+
+//fireplaces
+ObjProp 57 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 59 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 262 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+
+//misplaced objects
+ObjProp 89 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 89 "PhysType"
++ObjProp 89 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 427 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 427 "PhysType"
++ObjProp 427 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1052 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 1052 "PhysType"
++ObjProp 1052 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1453 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1453 "PhysType"
++ObjProp 1453 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 89
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 686
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 686
+	Agent 1916
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 1130
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 1130
+	Agent 1916
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 95
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 1477
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1694 "Stench"
+{
+	Max None
+
+	Target 2310
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 1694 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 1694 "Position"
+{
+	"Location" 87.75, 178.2, 75.425
+}
+-ObjProp 2112 "PhysType"
+ObjProp 2112 "Position"
+{
+	"Location" -32.8, 158, 111.375
+	"Bank" 0
+}
+
+//various objects
+-ObjProp 491 "PhysType"
+ObjProp 760 "StTweqLock"
+{
+	"AnimS" None
 }
