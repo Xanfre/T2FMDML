@@ -1,0 +1,36 @@
+DML1
+
+//T2 FM: The Black Frog (The Portrait) by Gaetane / Fixes: miss21.mis.dml
+
+FINGERPRINT
+{
+	1526 [85 150 109]
+	317 [4 119 90]
+	867 [54 70 113]
+	572 [-41 71 90]
+	401 [-77 97 117]
+	1907 [52 86 96]
+	1921 [-100 91 114]
+	443 [64 87 92]
+	QVAR "goal_target_4" == 1475
+}
+
+//hanging objects bug
+ObjProp 1715 "TransDoor"
+{
+	"Open Position" 2.00
+}
++ObjProp 1715 "BlockFrob"
+{
+	"" true
+}
+ObjProp 1715 "Scripts"
+{
+	"Script 1" ""
+	"Script 2" ""
+}
+-ObjProp 1715 "PhysType"
++ObjProp 1715 "PhysType"
+{
+	"Type" OBB
+}

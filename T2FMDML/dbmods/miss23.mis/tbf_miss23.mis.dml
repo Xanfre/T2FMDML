@@ -1,0 +1,56 @@
+DML1
+
+//T2 FM: The Black Frog (The Lady and the Thief) by Gaetane / Fixes: miss23.mis.dml
+
+FINGERPRINT
+{
+	729 [280 34 96]
+	1043 [114 349 81]
+	2206 [-185 406 57]
+	1534 [233 90 99]
+	459 [-25 533 88]
+	1969 [-85 397 100]
+	394 [-2 385 85]
+	1680 [325 67 97]
+	QVAR "goal_target_2" == 1609
+}
+
+//hanging objects bug
++Receptron 2694 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 2694 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 2694 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 2694 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 2694 "PhysType"
++ObjProp 2694 "PhysType"
+{
+	"Type" OBB
+}
