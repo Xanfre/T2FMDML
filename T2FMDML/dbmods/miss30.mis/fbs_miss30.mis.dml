@@ -1,0 +1,622 @@
+DML1
+
+//T2 FM: From Beneath the Sands by Nick Dablin (nicked) / Fixes: miss30.mis.dml
+
+FINGERPRINT
+{
+	379 [704 686 416]
+	774 [383 514 460]
+	567 [703 670 408]
+	504 [818 610 404]
+	827 [640 344 429]
+	416 [768 520 425]
+	648 [712 452 427]
+	1186 [525 533 498]
+	QVAR "goal_target_4" == 373
+}
+
+#script "nvscript"
+
+//mantling
++ObjProp 45 "PhysCanMant"
+{
+}
++ObjProp 48 "PhysCanMant"
+{
+}
++ObjProp 51 "PhysCanMant"
+{
+}
++ObjProp 54 "PhysCanMant"
+{
+}
++ObjProp 57 "PhysCanMant"
+{
+}
++ObjProp 60 "PhysCanMant"
+{
+}
++ObjProp 63 "PhysCanMant"
+{
+}
++Receptron 1276 "Stench"
+{
+	Max None
+
+	Target 533
+	Agent 966
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 1276 "Stench"
+{
+	Max None
+
+	Target 88
+	Agent -4100
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 1276 "Stench"
+{
+	Max None
+
+	Target 446
+	Agent -2872
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 1276 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 1276 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 1276 "Material Tags"
+{
+}
++ObjProp 1276 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 1276 "TrapQVar"
+{
+	"" =0:goal_target_3
+}
+ObjProp 1276 "Position"
+{
+	"Location" 485, 426, 512
+	"Heading" 0
+}
+-ObjProp 1276 "PhysType"
++ObjProp 1276 "PhysType"
+{
+	"Type" OBB
+}
+
+//goals
++ObjProp 361 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapTDest=867; NVRelayTrap2On="FrobWorldEnd"; NVRelayTrap2Delay=1200
+}
++ObjProp 361 "NoDrop"
+{
+	"" true
+}
+ObjProp 361 "Scripts"
+{
+	"Script 0" StdScroll
+	"Script 1" NVRelayTrap
+	"Script 2" NVRelayTrap2
+	"Don't Inherit" false
+}
++ObjProp 867 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 867 "TrapQVar"
+{
+	"" =1:goal_state_3
+}
++ObjProp 1017 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200
+}
+ObjProp 1017 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 1021 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=1016
+}
++ObjProp 1021 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+
+//doors
+Create -199 "SD1"
+{
+	+ObjProp "TransDoor"
+	{
+		"Open Position" 4.00
+		"Base Speed" 1.00
+		"Axis" Y-Axis
+		"Blocks Vision?" false
+	}
+	+ObjProp "DesignNote"
+	{
+		"" NVMetaTrapOff="DoorOpening"; NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=1016; NVMetaTrapCount=1
+	}
+	+ObjProp "FrobInfo"
+	{
+		"World Action" Script
+	}
+	+ObjProp "Position"
+	{
+		"Location" 666, 647, 408.15
+		"Heading" 4000
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" StdDoor
+		"Script 1" NVMetaTrap
+	}
+	+ObjProp "Scale"
+	{
+		"" 0.928052, 0.814204, 0.083938
+	}
+}
+Create -199 "SD2"
+{
+	+ObjProp "TransDoor"
+	{
+		"Open Position" 6.00
+		"Base Speed" 6.00
+		"Axis" Z-Axis
+		"Blocks Vision?" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 412, 605.75, 451.75
+		"Heading" 8000
+		"Bank" 4000
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" StdDoor
+	}
+}
++Receptron "SD2" "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -1262
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource "SD2" "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp "SD1" "PhysType"
++ObjProp "SD1" "PhysType"
+{
+	"Type" OBB
+}
++Receptron "SD1" "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -1262
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource "SD1" "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 1092 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
+ObjProp 1092 "TransDoor"
+{
+	"Open Position" -4.00
+	"Base Speed" 5.00
+	"Axis" Z-Axis
+}
+-ObjProp 1092 "FrobInfo"
+ObjProp 1092 "CollisionType"
+{
+	"" None
+}
++ObjProp 1229 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
+ObjProp 1229 "TransDoor"
+{
+	"Open Position" -11.00
+	"Axis" X-Axis
+}
+ObjProp 1229 "CollisionType"
+{
+	"" None
+}
++MetaProp 90 -2420
++MetaProp 962 -2420
++MetaProp 1015 -2420
++MetaProp 1275 -2420
+-ObjProp 450 "PhysType"
++ObjProp 450 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 467 "PhysType"
++ObjProp 467 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 533 "BlockFrob"
+{
+	"" true
+}
+ObjProp 546 "TransDoor"
+{
+	"Open Position" -8.00
+}
+-ObjProp 546 "PhysType"
++ObjProp 546 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1039 "PhysType"
++ObjProp 1039 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1040 "Position"
+{
+	"Location" 697, 624, 408
+}
+-ObjProp 1040 "PhysType"
++ObjProp 1040 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1086 "PhysType"
++ObjProp 1086 "PhysType"
+{
+	"Type" OBB
+}
+
+//quest items
++ObjProp 93 "SlayResult"
+{
+}
++ObjProp 93 "NoDrop"
+{
+	"" true
+}
+-Receptron 105 "TeleportStim"
+-StimSource 105 "TeleportStim"
++ObjProp 105 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest=106; NVRelayTrapCount=1; NVDeleteTrapOn="Contained"
+}
++Link 105 374 "ControlDevice"
+{
+}
++ObjProp 105 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVDeleteTrap
+}
++Link 14 -2099 "PlayerFactory"
+{
+}
+ObjProp 14 "Position"
+{
+	"Heading" 7c00
+}
++Link 106 14 "ControlDevice"
+{
+}
++ObjProp 106 "Scripts"
+{
+	"Script 0" TrapTeleporter
+}
+-Receptron 180 "TeleportStim"
+-StimSource 180 "TeleportStim"
++ObjProp 180 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest=106; NVRelayTrapCount=1; NVDeleteTrapOn="Contained"
+}
++Link 180 376 "ControlDevice"
+{
+}
++ObjProp 180 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVDeleteTrap
+}
+-Receptron 186 "TeleportStim"
+-StimSource 186 "TeleportStim"
++ObjProp 186 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest=106; NVRelayTrapCount=1; NVDeleteTrapOn="Contained"
+}
++Link 186 375 "ControlDevice"
+{
+}
++ObjProp 186 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVDeleteTrap
+}
+-Receptron 187 "TeleportStim"
+-StimSource 187 "TeleportStim"
++ObjProp 187 "DesignNote"
+{
+	"" NVRelayTrapOn="Contained"; NVRelayTrapTDest=106; NVRelayTrapCount=1; NVDeleteTrapOn="Contained"
+}
++Link 187 182 "ControlDevice"
+{
+}
++ObjProp 187 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVDeleteTrap
+}
++ObjProp 446 "StackCount"
+{
+}
++ObjProp 446 "SlayResult"
+{
+}
++ObjProp 446 "NoDrop"
+{
+	"" true
+}
+-Link 1006 446 "ControlDevice"
++MetaProp 1016 -1629
+
+//switches
++ObjProp 181 "Class Tags"
+{
+}
++ObjProp 181 "JointPos"
+{
+	"Joint 4" -2.00
+}
+-Link 212 1229 "ControlDevice"
++Link 212 "SD2" "ControlDevice"
+{
+}
++ObjProp 422 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 0.6, 0, 1.35
+}
++ObjProp 499 "Scripts"
+{
+	"Script 0" FrobSounds
+	"Script 1" NVFrobToggle
+	"Don't Inherit" true
+}
+-Link 544 546 "ControlDevice"
++Link 544 422 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++ObjProp 544 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 0.15, 0, 0.15
+}
+
+//AIs
++ObjProp 75 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" chaunt
+}
++ObjProp 1155 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" chaunt
+}
++ObjProp 1162 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" chaunt
+}
++ObjProp 1169 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" chaunt
+}
+
+//blockers
++ObjProp 104 "Material Tags"
+{
+}
++ObjProp 107 "Material Tags"
+{
+}
++ObjProp 108 "Material Tags"
+{
+}
++ObjProp 109 "Material Tags"
+{
+}
++ObjProp 110 "Material Tags"
+{
+}
++ObjProp 111 "Material Tags"
+{
+}
++ObjProp 112 "Material Tags"
+{
+}
++ObjProp 113 "Material Tags"
+{
+}
++ObjProp 114 "Material Tags"
+{
+}
++ObjProp 115 "Material Tags"
+{
+}
++ObjProp 116 "Material Tags"
+{
+}
++ObjProp 117 "Material Tags"
+{
+}
++ObjProp 119 "Material Tags"
+{
+}
++ObjProp 120 "Material Tags"
+{
+}
++ObjProp 121 "Material Tags"
+{
+}
++ObjProp 122 "Material Tags"
+{
+}
++ObjProp 123 "Material Tags"
+{
+}
++ObjProp 124 "Material Tags"
+{
+}
++ObjProp 125 "Material Tags"
+{
+}
++ObjProp 126 "Material Tags"
+{
+}
++ObjProp 127 "Material Tags"
+{
+}
++ObjProp 128 "Material Tags"
+{
+}
++ObjProp 129 "Material Tags"
+{
+}
++ObjProp 433 "Material Tags"
+{
+}
++ObjProp 434 "Material Tags"
+{
+}
++ObjProp 435 "Material Tags"
+{
+}
++ObjProp 528 "Material Tags"
+{
+}
++ObjProp 529 "Material Tags"
+{
+}
++ObjProp 530 "Material Tags"
+{
+}
++ObjProp 531 "Material Tags"
+{
+}
++ObjProp 532 "Material Tags"
+{
+}
++ObjProp 536 "Material Tags"
+{
+}
++ObjProp 537 "Material Tags"
+{
+}
++ObjProp 538 "Material Tags"
+{
+}
++ObjProp 539 "Material Tags"
+{
+}
++ObjProp 540 "Material Tags"
+{
+}
++ObjProp 695 "Material Tags"
+{
+}
++ObjProp 1007 "Material Tags"
+{
+}
++ObjProp 1009 "Material Tags"
+{
+}
++ObjProp 1010 "Material Tags"
+{
+}
++ObjProp 1011 "Material Tags"
+{
+}
++ObjProp 1012 "Material Tags"
+{
+}
++ObjProp 1013 "Material Tags"
+{
+}
++ObjProp 1014 "Material Tags"
+{
+}
+
+//invalid scaling
+-ObjProp 188 "Scale"
+-ObjProp 229 "Scale"
+-ObjProp 295 "Scale"
+-ObjProp 443 "Scale"
+-ObjProp 954 "Scale"
+-ObjProp 1053 "Scale"
+
+//scrolls
+-ObjProp 849 "PhysType"
+ObjProp 1018 "Position"
+{
+	"Heading" 8000
+}
