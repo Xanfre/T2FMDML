@@ -36,3 +36,14 @@ Receptron "Human" "AlertStimX" 002000F7
 		"Prop Name" AI_AlertCap
 	}
 }
+StimSource "Projectile" "ProjStimX" 00600070
+{
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Collision
+			"Velocity Coeff" 0.08
+		}
+	}
+}
