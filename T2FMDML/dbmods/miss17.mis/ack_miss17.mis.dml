@@ -190,7 +190,7 @@ ObjProp 543 "AI_Hearing"
 	"" Well Below Average
 }
 
-//key
+//basement key
 +ObjProp 14 "StackCount"
 {
 }
