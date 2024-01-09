@@ -1,0 +1,377 @@
+DML1
+
+//T2 FM: Unnecessary Risk by Scott Murchison (SlyFoxx) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	286 [501 482 493]
+	622 [478 487 461]
+	487 [463 535 483]
+	988 [417 484 485]
+	166 [424 469 484]
+	834 [432 496 459]
+	435 [428 521 484]
+	315 [460 445 460]
+	QVAR "goal_target_6" == 989
+}
+
+//mantling
++ObjProp 449 "PhysCanMant"
+{
+}
++ObjProp 452 "PhysCanMant"
+{
+}
++ObjProp 573 "PhysCanMant"
+{
+}
++ObjProp 796 "PhysCanMant"
+{
+}
++ObjProp 805 "PhysCanMant"
+{
+}
++ObjProp 808 "PhysCanMant"
+{
+}
++ObjProp 811 "PhysCanMant"
+{
+}
++ObjProp 814 "PhysCanMant"
+{
+}
+
+//doors
++ObjProp 79 "BlockFrob"
+{
+	"" true
+}
+ObjProp 336 "RotDoor"
+{
+	"Open Angle" 272
+}
+ObjProp 568 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 575 "RotDoor"
+{
+	"Open Angle" 89
+}
++MetaProp 677 -2420
++ObjProp 727 "FrobInfo"
+{
+}
+ObjProp 787 "RotDoor"
+{
+	"Status" Closed
+}
++Receptron 787 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 788 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 855 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 855 "BlockFrob"
+{
+	"" true
+}
++Link 855 895 "ScriptParams"
+{
+	"" Double
+}
+-ObjProp 855 "TrapFlags"
+ObjProp 855 "Scripts"
+{
+	"Script 0" DoorFrobInert
+	"Script 1" ""
+	"Script 2" ""
+}
++Receptron 895 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 895 "BlockFrob"
+{
+	"" true
+}
+ObjProp 895 "Scripts"
+{
+	"Script 0" DoorFrobInert
+	"Script 1" ""
+	"Script 2" ""
+}
+ObjProp 1048 "Position"
+{
+	"Location" 466.75, 413.5, 463.5
+}
+-ObjProp 1048 "PhysType"
++ObjProp 1048 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1123 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 1123 "Position"
+{
+	"Heading" 4000
+}
+-ObjProp 1123 "PhysType"
++ObjProp 1123 "PhysType"
+{
+	"Type" OBB
+}
+
+//banners
++ObjProp 147 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 148 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 153 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 201 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 202 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 207 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 208 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 767 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 848 "SlayResult"
+{
+	"Effect" Destroy
+}
++ObjProp 848 "BlockFrob"
+{
+	"" true
+}
++ObjProp 849 "SlayResult"
+{
+	"Effect" Destroy
+}
+
+//misplaced objects / physdims
+ObjProp 166 "Position"
+{
+	"Location" 424, 468.575, 484.015
+}
+-ObjProp 166 "PhysType"
++ObjProp 166 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 214 "Position"
+{
+	"Location" 424, 468.2, 489.5
+}
+ObjProp 281 "Position"
+{
+	"Location" 503, 483.5, 494.625
+}
+-ObjProp 281 "PhysType"
++ObjProp 281 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 582 "PhysType"
++ObjProp 582 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 671 "Position"
+{
+	"Location" 480.5, 430.5, 453.25
+}
+-ObjProp 702 "PhysType"
++ObjProp 702 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 703 "PhysType"
++ObjProp 703 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 707 "PhysType"
++ObjProp 707 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 870 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 870 "Stench"
+{
+	Max None
+
+	Target 903
+	Agent 904
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 870 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+ObjProp 870 "Position"
+{
+	"Location" 429.2, 514.5, 457.05
+}
++ObjProp 870 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 884 "Position"
+{
+	"Location" 470, 521.525, 489.8
+}
+ObjProp 885 "Position"
+{
+	"Location" 470.25, 523.175, 489.8
+}
+ObjProp 903 "Position"
+{
+	"Location" 470.015, 521.25, 486.5
+}
+-ObjProp 903 "PhysType"
++ObjProp 903 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 926 "Position"
+{
+	"Location" 451.25, 536.25, 485.025
+}
+-ObjProp 926 "PhysType"
++ObjProp 926 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1028 "PhysType"
+ObjProp 1028 "Position"
+{
+	"Location" 387.575, 402.2, 482.6
+}
+
+//switches
+-Link 258 677 "ControlDevice"
++Link 258 596 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+
+//chests
+-ObjProp 363 "StTweqLock"
++ObjProp 363 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 933 "JointPos"
+{
+	"Joint 1" 90.00
+}
+-ObjProp 1040 "FrobInfo"
+-ObjProp 1040 "Scripts"
++ObjProp 1040 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//AIs
++ObjProp 391 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xbafg
+}
++ObjProp 670 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xbafg
+}
++ObjProp 731 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xbafg
+}
++ObjProp 735 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xbafg
+}
++ObjProp 856 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xbafg
+}
++ObjProp 917 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" xbafg
+}
++ObjProp 939 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 960 "TrapFlags"
+{
+	"" Once, NoOff
+}
+
+//quest items
++ObjProp 989 "FrobInfo"
+{
+	"World Action" Move
+}
++ObjProp 989 "NoDrop"
+{
+	"" true
+}
