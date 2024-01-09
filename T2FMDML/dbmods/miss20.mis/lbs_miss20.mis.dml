@@ -1,0 +1,42 @@
+DML1
+
+//T2 FM: Lord Bafford's Secret by Rod Peirson (DarthsLair) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	1476 [115 -104 20]
+	474 [-48 126 9]
+	680 [66 -105 4]
+	1846 [27 -124 18]
+	856 [88 25 -37]
+	1332 [211 68 25]
+	1185 [174 19 22]
+	1758 [3 50 3]
+	QVAR "goal_target_10" == 2096
+}
+
+//loot
++ObjProp 1124 "Loot"
+{
+}
++ObjProp 1211 "Loot"
+{
+}
++ObjProp 2427 "Loot"
+{
+}
+-ObjProp 1947 "PhysType"
+-ObjProp 2428 "PhysType"
+ObjProp 2428 "Position"
+{
+	"Location" -28.2, 264.25, -176.925
+}
++ObjProp 2429 "ModelName"
+{
+	"" trbottle
+}
+-ObjProp 2429 "PhysType"
+ObjProp 2429 "Position"
+{
+	"Location" -28.2, 265, -176.615
+}

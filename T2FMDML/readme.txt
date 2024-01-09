@@ -194,6 +194,7 @@ A Living Nightmare
 Lonmore
 Lord Alan's Basement
 Lord Ashton Series
+Lord Bafford's Secret
 Lord Burkhard
 Lord Fishkill's Curse
 Lord Gibson's Estate
