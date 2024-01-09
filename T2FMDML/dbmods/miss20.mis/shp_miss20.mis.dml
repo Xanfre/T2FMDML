@@ -1,0 +1,123 @@
+DML1
+
+//T2 FM: Shadow Plans (Meeting) by Terry DeLaney (Ricebug) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	276 [309 -139 5]
+	131 [489 -208 38]
+	599 [124 -428 137]
+	85 [618 -486 61]
+	754 [155 -483 142]
+	464 [150 -432 140]
+	328 [732 -267 49]
+	125 [487 -208 38]
+	QVAR "goal_target_7" == 433
+}
+
+//load up-to-date scripts
+#script "script-t2"
+
+//secrets
+ObjProp 165 "DarkStat"
+{
+	"" None
+}
++ObjProp 503 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 670 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+	"Script 2" ""
+}
+
+//pickpockets
+-Link 410 694 "ControlDevice"
+
+//misplaced objects
+ObjProp 254 "Position"
+{
+	"Location" 620.5, -207.75, 43.6225
+}
+-ObjProp 254 "PhysType"
++ObjProp 254 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 636 "Position"
+{
+	"Location" 142.665, -474.675, 137.75
+}
+-ObjProp 636 "PhysType"
++ObjProp 636 "PhysType"
+{
+	"Type" Sphere
+}
+-ObjProp 708 "PhysType"
+ObjProp 708 "Position"
+{
+	"Location" 563.2, -576.6, 50.6
+}
+
+//mantling
++ObjProp 358 "PhysCanMant"
+{
+}
++ObjProp 358 "Material Tags"
+{
+}
++ObjProp 359 "Material Tags"
+{
+}
++ObjProp 359 "PhysCanMant"
+{
+}
+
+//AIs
+-ObjProp 481 "Book"
+-ObjProp 481 "FrobInfo"
+-ObjProp 481 "Scripts"
++ObjProp 481 "Scripts"
+{
+	"Script 0" TrigBrainDead
+}
++ObjProp 569 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 785 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
+-ObjProp 785 "Scripts"
++ObjProp 785 "Scripts"
+{
+	"Script 0" TrigBrainDead
+}
++ObjProp 787 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cpagan
+}
+-ObjProp 787 "Scripts"
++ObjProp 787 "Scripts"
+{
+	"Script 0" TrigBrainDead
+}
+
+//doors
+ObjProp 541 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 643 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
