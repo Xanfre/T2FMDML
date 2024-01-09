@@ -91,6 +91,7 @@ Dark Messiah
 A Dark Night
 DarkWood 2
 Dead Flower
+Dead Night Sweet Delight
 The Dead of Winter
 The Deadly Triangle
 Death's Cold Embrace

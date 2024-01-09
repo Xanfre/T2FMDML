@@ -1,0 +1,343 @@
+DML1
+
+//T2 FM: Dead Night Sweet Delight by MysteryMan / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	388 [495 441 463]
+	492 [491 427 462]
+	602 [540 480 485]
+	80 [501 496 505]
+	404 [498 438 464]
+	380 [492 438 463]
+	424 [504 435 463]
+	845 [539 502 487]
+	QVAR "goal_target_7" == 13
+}
+
+//pick axe / sword
+Create -236 "PickSword2"
+{
+	+ObjProp "BashFactor"
+	{
+		"" 10.00
+	}
+	+ObjProp "SlayResult"
+	{
+		"Effect" No Effect
+	}
+	+ObjProp "InvLimbModel"
+	{
+		"" armsw4
+	}
+	+ObjProp "GameName"
+	{
+		"" Name_PickAxe
+	}
+	+ObjProp "Position"
+	{
+		"Location" 537.85, 466, 486.765
+		"Bank" 8000
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigContained
+		"Script 1" LootSounds
+	}
+	+ObjProp "ModelName"
+	{
+		"" picksword2
+	}
+}
++StimSource "PickSword2" "PickStim"
+{
+	Intensity 3
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Collision, Weapon Swing Low
+		}
+	}
+}
+++StimSource "PickSword2" "PickStim"
+{
+	Intensity 4
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Collision, Weapon Swing Med
+		}
+	}
+}
+++StimSource "PickSword2" "PickStim"
+{
+	Intensity 5
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Collision, Weapon Swing High
+		}
+	}
+}
++Link "PickSword2" 768 "ControlDevice"
+{
+}
+Create -1704 "ND127"
+{
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0, 1, 2
+	}
+}
++Link "ND127" 264 "ControlDevice"
+{
+}
+ObjProp 264 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
++ObjProp 768 "Scripts"
+{
+	"Script 0" TrapDestroy
+}
+
+//goals
+-ObjProp 13 "Scripts"
+-Link 13 719 "ControlDevice"
+-Link 251 659 "ControlDevice"
+-Link 251 655 "ControlDevice"
++Link 251 107 "ControlDevice"
+{
+}
++Link 107 655 "ControlDevice"
+{
+}
++Link 107 659 "ControlDevice"
+{
+}
++ObjProp 107 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+-Link 686 684 "ControlDevice"
++Link 686 719 "ControlDevice"
+{
+}
++Link 719 684 "ControlDevice"
+{
+}
+-ObjProp 719 "TrapQVar"
++ObjProp 719 "ScriptTiming"
+{
+	"" 1200
+}
++ObjProp 719 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
+}
+
+//secrets
++ObjProp 124 "BlockFrob"
+{
+	"" true
+}
++ObjProp 124 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 128 "AI_Converation"
+-ObjProp 128 "AI_SaveConverse"
+-Link 128 127 "AIConversationActor"
+ObjProp 128 "Scripts"
+{
+	"Script 0" SecretSounds
+}
+-StimSource 133 "SecretStim"
++ObjProp 133 "DarkStat"
+{
+	"" Hidden
+}
+-ObjProp 133 "PickDist"
+ObjProp 133 "Scripts"
+{
+	"Script 0" FrobFind
+}
++ObjProp 233 "DarkStat"
+{
+	"" Hidden
+}
++MetaProp 233 -2420
+-StimSource 234 "SecretStim"
++ObjProp 341 "BlockFrob"
+{
+	"" true
+}
+-StimSource 440 "SecretStim"
++ObjProp 440 "DarkStat"
+{
+	"" Hidden
+}
+-ObjProp 440 "PickDist"
+ObjProp 440 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" FrobFind
+	"Script 2" ""
+}
+-StimSource 614 "SecretStim"
++ObjProp 614 "DarkStat"
+{
+	"" Hidden
+}
+ObjProp 614 "Scripts"
+{
+	"Script 2" FrobFind
+}
+-StimSource 616 "SecretStim"
++ObjProp 616 "DarkStat"
+{
+	"" Hidden
+}
+ObjProp 616 "Scripts"
+{
+	"Script 1" FrobFind
+}
+-StimSource 651 "SecretStim"
++ObjProp 651 "DarkStat"
+{
+	"" Hidden
+}
+ObjProp 651 "Scripts"
+{
+	"Script 0" FrobFind
+}
+-StimSource 658 "SecretStim"
++ObjProp 658 "DarkStat"
+{
+	"" Hidden
+}
+ObjProp 658 "Scripts"
+{
+	"Script 1" FrobFind
+}
+-StimSource 667 "SecretStim"
++ObjProp 667 "DarkStat"
+{
+	"" Hidden
+}
+-ObjProp 667 "PickDist"
+ObjProp 667 "Scripts"
+{
+	"Script 1" FrobFind
+}
++ObjProp 668 "BlockFrob"
+{
+	"" true
+}
+-StimSource 710 "SecretStim"
++ObjProp 710 "DarkStat"
+{
+	"" Hidden
+}
+ObjProp 710 "Scripts"
+{
+	"Script 1" FrobFind
+}
++ObjProp 913 "DarkStat"
+{
+	"" Hidden
+}
+ObjProp 913 "Scripts"
+{
+	"Script 1" FrobFind
+}
+
+//fireplace
+ObjProp 65 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.00
+}
+ObjProp 87 "PGLaunchInfo"
+{
+	"Min time" 1.00
+	"Max time" 1.00
+}
+
+//various objects
++ObjProp 70 "PickDist"
+{
+	"" 5.00
+}
++ObjProp 91 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 923 "NoDrop"
+
+//misplaced objects
++Receptron 177 "Stench"
+{
+	Max None
+
+	Target 233
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 177 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 177 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 177 "Class Tags"
+{
+	"1: Tags" DoorType Slide1
+}
++ObjProp 177 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 177 "TrapQVar"
+{
+	"" =0:goal_irreversible_7
+}
+ObjProp 177 "Position"
+{
+	"Location" 541, 461, 499.955
+}
+-ObjProp 177 "PhysType"
++ObjProp 177 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 766 "PhysType"
+ObjProp 766 "Position"
+{
+	"Location" 532.3, 468.7, 501.155
+}
+
+//AIs
++ObjProp 213 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" frakusca
+}
++Link 549 550 "CreatureAttachment"
+{
+	"Joint" Abdomen
+}
