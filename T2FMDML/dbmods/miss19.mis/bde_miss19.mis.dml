@@ -1,0 +1,57 @@
+DML1
+
+//T2 FM: Better Off Dead v2 (The Citadel) by Szabo Csaba (Sensut) / Fixes: miss19.mis.dml
+
+FINGERPRINT
+{
+	1829 [171 198 12]
+	242 [179 212 12]
+	919 [37 326 -10]
+	450 [293 152 2]
+	1941 [294 193 -22]
+	958 [65 342 -16]
+	1045 [215 195 -40]
+	322 [155 95 -41]
+	QVAR "goal_target_6" == 1444
+}
+
+//load up-to-date scripts
+#script "script-t2"
+#script "tnhscript"
+
+//hanging objects bug
++Receptron 257 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
++StimSource 257 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 257 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 257 "BlockFrob"
+{
+	"" true
+}
+-Link 257 934 "ControlDevice"
+-ObjProp 257 "PhysType"
++ObjProp 257 "PhysType"
+{
+	"Type" OBB
+}
+-MetaProp 257 -7342
+-MetaProp 1025 -1629
+-Link 934 257 "ScriptParams"
+-Link 934 1025 "ScriptParams"

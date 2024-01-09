@@ -31,6 +31,7 @@ A Bank Job
 The Bathhouse
 The Beginning of Era Karath-Din
 Behind Closed Doors
+Better Off Dead
 The Black Frog
 The Blackheart's Recording
 Bloodmist Tower
