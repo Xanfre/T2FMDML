@@ -1,0 +1,330 @@
+DML1
+
+//T2 FM: Till Death Do Us Part (NewDark 64 Cubed Contest) by MysteryMan / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	984 [530 496 476]
+	647 [485 475 520]
+	1081 [521 492 500]
+	1101 [519 506 508]
+	122 [486 494 472]
+	1098 [477 483 490]
+	1089 [526 473 522]
+	832 [484 516 505]
+	NAME 727 "GoFirst"
+}
+
+#script "squirrel"
+
+//final goal
++ObjProp 789 "TrapFlags"
+{
+	"" Once, NoOff
+}
+
+//doors
+ObjProp 58 "RotDoor"
+{
+	"Open Angle" 85
+}
+ObjProp 58 "Scale"
+{
+	"" 0.872975, 0.872975, 1
+}
+ObjProp 59 "Scale"
+{
+	"" 0.872975, 0.872975, 1
+}
+ObjProp 59 "RotDoor"
+{
+	"Open Angle" 275
+}
++ObjProp 60 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.75,0,0; SetVectorProp2Property="PhysDims"; SetVectorProp2SubProperty="Size"; SetVectorProp2Value=2.5,0.25,8
+}
++ObjProp 60 "Scripts"
+{
+	"Script 0" SetVectorProp
+	"Script 1" SetVectorProp2
+}
+ObjProp 60 "Scale"
+{
+	"" 0.875, 0.875, 1
+}
+ObjProp 60 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 60 "PhysType"
++ObjProp 60 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 99 "BlockFrob"
+{
+	"" true
+}
++ObjProp 122 "BlockFrob"
+{
+	"" true
+}
++ObjProp 185 "BlockFrob"
+{
+	"" true
+}
++ObjProp 354 "BlockFrob"
+{
+	"" true
+}
++ObjProp 354 "TransDoor"
+{
+	"Open Position" -3.00
+	"Base Speed" 2.00
+	"Blocks Vision?" false
+}
+-ObjProp 354 "RotDoor"
++Link 385 387 "ControlDevice"
+{
+}
++Link 387 392 "ControlDevice"
+{
+}
++ObjProp 387 "DesignNote"
+{
+	"" NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=392
+}
++ObjProp 387 "TrapFlags"
+{
+	"" NoOn
+}
++ObjProp 387 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Script 1" NVMetaTrap
+}
++MetaProp 392 -1629
++ObjProp 392 "BlockFrob"
+{
+	"" true
+}
++ObjProp 403 "BlockFrob"
+{
+	"" true
+}
++ObjProp 442 "BlockFrob"
+{
+	"" true
+}
++ObjProp 474 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.75,0,0
+}
++ObjProp 474 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 474 "Scale"
+{
+	"" 0.875, 0.875, 0.96875
+}
+ObjProp 475 "Scale"
+{
+	"" 0.875, 0.875, 0.96875
+}
++ObjProp 475 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.75,0,0
+}
++ObjProp 475 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 509 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.5,0,0
+}
++ObjProp 509 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 509 "Scale"
+{
+	"" 0.75, 0.75, 1
+}
+-ObjProp 509 "PhysType"
++ObjProp 509 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 856 "BlockFrob"
+{
+	"" true
+}
++ObjProp 906 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1003 "BlockFrob"
+{
+	"" true
+}
++MetaProp 1052 -2420
+
+//AIs
++ObjProp 12 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 22 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 24 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 131 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" carcher1
+}
++ObjProp 225 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 567 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 578 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 838 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+
+//various objects
+-ObjProp 67 "PhysType"
+-ObjProp 240 "PhysType"
+-ObjProp 241 "PhysType"
+-ObjProp 242 "PhysType"
+-ObjProp 243 "PhysType"
+-ObjProp 244 "PhysType"
+-ObjProp 245 "PhysType"
+-ObjProp 293 "PhysType"
+-ObjProp 294 "PhysType"
+-ObjProp 295 "PhysType"
+-ObjProp 296 "PhysType"
+-ObjProp 297 "PhysType"
+-ObjProp 298 "PhysType"
+-ObjProp 299 "PhysType"
+-ObjProp 300 "PhysType"
+-ObjProp 319 "PhysType"
+-ObjProp 320 "PhysType"
+-ObjProp 321 "PhysType"
+-ObjProp 322 "PhysType"
+-ObjProp 323 "PhysType"
+-ObjProp 324 "PhysType"
+-ObjProp 325 "PhysType"
+-ObjProp 326 "PhysType"
+-ObjProp 387 "PhysType"
++ObjProp 111 "StackCount"
+{
+}
++ObjProp 880 "InvType"
+{
+}
+
+//security alarm
++Link 118 393 "ControlDevice"
+{
+}
++Link 128 393 "ControlDevice"
+{
+}
++Link 132 393 "ControlDevice"
+{
+}
++Link 147 393 "ControlDevice"
+{
+}
++ObjProp 390 "TrapFlags"
+{
+	"" Invert, NoOff
+}
++Link 393 389 "ControlDevice"
+{
+}
++ObjProp 393 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 393 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 395 390 "ControlDevice"
+{
+}
++ObjProp 395 "JointPos"
+{
+	"Joint 1" 0.70
+}
+ObjProp 395 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" On, Reverse
+}
+ObjProp 400 "Locked"
+{
+	"" false
+}
+
+//switches
++Link 341 339 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 343 337 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 347 337 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 353 357 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 370 371 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 372 344 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 377 266 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 382 380 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++Link 635 634 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
