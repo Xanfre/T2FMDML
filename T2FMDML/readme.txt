@@ -117,6 +117,7 @@ Evendale
 Evirath's Misery
 The Eye of the Gems: Shadows and Fog
 The Fall of Anduin Karol
+The Favour
 The Fever
 Fierce Competition
 First Day of Winter

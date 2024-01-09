@@ -1,0 +1,26 @@
+DML1
+
+//T2 FM: The Favour by Beltzer / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	819 [417 250 457]
+	894 [424 278 459]
+	2320 [397 461 481]
+	922 [349 283 456]
+	449 [153 501 463]
+	2357 [378 392 472]
+	762 [373 262 459]
+	697 [433 243 461]
+	QVAR "goal_target_6" == 4226
+}
+
+//loot
+-Link 2142 2144 "ControlDevice"
++Link 2142 2145 "ControlDevice"
+{
+}
+ObjProp 2145 "DesignNote"
+{
+	"" NVGiveWhat="BigBag"
+}
