@@ -1,0 +1,97 @@
+DML1
+
+//T2 FM: The Rustler by Naks / Fixes: miss22.mis.dml
+
+FINGERPRINT
+{
+	699 [54 153 30]
+	110 [120 78 60]
+	826 [221 224 29]
+	623 [153 146 15]
+	561 [220 225 54]
+	117 [101 68 65]
+	881 [58 40 43]
+	444 [214 77 29]
+	QVAR "goal_target_3" == 1046
+}
+
+#script "nvscript"
+
+//goals
++ObjProp 634 "DesignNote"
+{
+	"" NVRelayTrapOn="Incapacitated"; NVRelayTrapOff="Null"; NVRelayTrapTDest="tforseeyou"
+}
++ObjProp 634 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRelayTrap
+}
++ObjProp 1063 "DesignNote"
+{
+	"" NVRelayTrapOn="Incapacitated"; NVRelayTrapOff="Null"; NVRelayTrapTDest="tforseeyou"
+}
++ObjProp 1063 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRelayTrap
+}
++ObjProp 1068 "DesignNote"
+{
+	"" NVRelayTrapOn="Incapacitated"; NVRelayTrapOff="Null"; NVRelayTrapTDest="tforseeyou"
+}
++ObjProp 1068 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRelayTrap
+}
++ObjProp 1070 "DesignNote"
+{
+	"" NVRelayTrapOn="Incapacitated"; NVRelayTrapOff="Null"; NVRelayTrapTDest="tforseeyou"
+}
++ObjProp 1070 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRelayTrap
+}
++ObjProp 1138 "DesignNote"
+{
+	"" NVRelayTrapOn="Incapacitated"; NVRelayTrapOff="Null"; NVRelayTrapTDest="tforseeyou"
+}
++ObjProp 1138 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRelayTrap
+}
+
+//death stage
+-ObjProp 15 "DeathStage"
+-ObjProp 19 "DeathStage"
+-ObjProp 615 "DeathStage"
+-ObjProp 624 "DeathStage"
+-ObjProp 728 "DeathStage"
+-ObjProp 883 "DeathStage"
+-ObjProp 984 "DeathStage"
+-ObjProp 1051 "DeathStage"
+
+//pickpockets
+Link 1004 1007 "Contains"
+{
+	"" Generic Contents
+}
+ObjProp 1004 "MeshAttach"
+{
+	"attached obj 1" 1007
+	"joint of skeleton" 15
+	"x angle (0-65535)" 0
+	"y angle (0-65535)" 0
+	"z angle (0-65535)" 16000
+	"offset" 0, -1.6, -0.1
+}
+
+//hanging arrows
+ObjProp 978 "PhysType"
+{
+	"Type" OBB
+}
+

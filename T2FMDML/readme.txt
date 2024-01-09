@@ -276,6 +276,7 @@ Rowena's Curse
 Ruined
 Ruins of Originia
 Rust Belt Prison
+The Rustler
 Safe Haven
 The Saint
 Saints and Thieves
