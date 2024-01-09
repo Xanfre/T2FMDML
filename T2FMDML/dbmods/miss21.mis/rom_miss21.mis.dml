@@ -1,0 +1,37 @@
+DML1
+
+//T2 FM: The Rise of the Mechanists (Homeward Bound) by Cardia, DarthsLair & Ravenhook / Fixes: miss21.mis.dml
+
+FINGERPRINT
+{
+	910 [-231 135 -7]
+	126 [-314 147 -23]
+	1459 [-191 -14 -22]
+	250 [-455 312 -54]
+	1373 [-682 291 -77]
+	1232 [-549 -50 -116]
+	1025 [-360 358 -6]
+	1227 [-2 -10 -17]
+	NAME 1705 "RegenCanister"
+}
+
+//secrets
+ObjProp 3190 "DarkStat"
+{
+	"" None
+}
+
+//doors
+ObjProp 234 "FrobInfo"
+{
+	"World Action" None
+}
+ObjProp 235 "FrobInfo"
+{
+	"World Action" None
+}
+-ObjProp 235 "PhysType"
++ObjProp 235 "PhysType"
+{
+	"Type" OBB
+}
