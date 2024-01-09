@@ -1,0 +1,26 @@
+DML1
+
+//T2 FM: Bad Hangover by Brethren / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	1857 [-27 -18 -10]
+	2251 [170 82 -20]
+	1511 [-20 92 6]
+	479 [238 -69 -5]
+	1316 [-148 214 -18]
+	1322 [-235 36 -5]
+	2360 [253 122 -36]
+	577 [-163 14 -4]
+	QVAR "goal_target_21" == 305
+}
+
+//banner
++ObjProp 959 "BlockFrob"
+{
+	"" true
+}
+
+//pickpockets
+-Link 3287 3288 "ControlDevice"
+
