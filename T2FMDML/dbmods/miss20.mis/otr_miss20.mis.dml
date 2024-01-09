@@ -1,0 +1,264 @@
+DML1
+
+//T2 FM: Off the Record by Russ Robbins (Yandros) / Fixes
+
+FINGERPRINT
+{
+	519 [93 480 18]
+	526 [94 480 20]
+	349 [68 457 58]
+	507 [123 476 35]
+	385 [90 499 58]
+	575 [124 508 4]
+	322 [83 498 41]
+	324 [74 461 43]
+	QVAR "goal_target_9" == 437
+}
+
+//load up-to-date scripts
+#script "script-t2"
+#script "tnhscript"
+#script "nvscript"
+
+//starting point
+ObjProp 100 "Position"
+{
+	"Location" 120, 454, 11.4
+}
+
+//mantling
++ObjProp 344 "PhysCanMant"
+{
+}
++ObjProp 345 "PhysCanMant"
+{
+}
+
+//containers, quest items
+-ObjProp 76 "DesignNote"
+-ObjProp 239 "DesignNote"
+-ObjProp 414 "DesignNote"
+-ObjProp 507 "DesignNote"
+-ObjProp 514 "DesignNote"
+-ObjProp 545 "DesignNote"
+-ObjProp 76 "Scripts"
+-ObjProp 239 "Scripts"
+-ObjProp 414 "Scripts"
+-ObjProp 507 "Scripts"
+-ObjProp 514 "Scripts"
+-ObjProp 545 "Scripts"
+-Link 64 60 "ScriptParams"
+-Link 64 57 "ScriptParams"
+-Link 64 59 "ScriptParams"
+-Link 64 61 "ScriptParams"
+-Link 64 62 "ScriptParams"
+-Link 64 63 "ScriptParams"
+-Link 55 64 "ControlDevice"
++Link 55 57 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 55 59 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 55 60 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 55 61 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 55 62 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 55 63 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 55 "Scripts"
+{
+	"Script 0" TweqFrobInert
+	"Script 1" ""
+}
+-Link 65 -1629 "ScriptParams"
+Link 65 55 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 65 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
+-Link 127 -1629 "ScriptParams"
+Link 127 15 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 127 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
++Link 511 545 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 511 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
++Link 512 76 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 512 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
++Link 529 507 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 529 "Scripts"
+{
+	"Script 1" DoorFrobInert
+}
+ObjProp 551 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"
+}
+ObjProp 551 "CollisionType"
+{
+	"" None
+}
+-ObjProp 551 "PhysType"
++ObjProp 551 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 552 "CollisionType"
+{
+	"" None
+}
+-ObjProp 552 "PhysType"
++ObjProp 552 "PhysType"
+{
+	"Type" OBB
+}
+-Link 566 -1629 "ScriptParams"
+Link 566 545 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 566 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
+
+//doors, windows
++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 347
+	Agent -5091
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 348
+	Agent -5091
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 112 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 112 "JointPos"
+-ObjProp 113 "JointPos"
++ObjProp 168 "BlockFrob"
+{
+	"" true
+}
++ObjProp 237 "BlockFrob"
+{
+	"" true
+}
++ObjProp 243 "BlockFrob"
+{
+	"" true
+}
++ObjProp 250 "BlockFrob"
+{
+	"" true
+}
+ObjProp 268 "RotDoor"
+{
+	"Open Angle" 272
+}
++ObjProp 281 "BlockFrob"
+{
+	"" true
+}
+ObjProp 394 "Scale"
+{
+	"" 1.2471, 1.2471, 1
+}
+ObjProp 539 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+
+//keys
++ObjProp 194 "StackCount"
+{
+}
++ObjProp 534 "StackCount"
+{
+}
++ObjProp 535 "StackCount"
+{
+}
++ObjProp 537 "StackCount"
+{
+}
++ObjProp 538 "StackCount"
+{
+}
++ObjProp 540 "StackCount"
+{
+}
++ObjProp 553 "StackCount"
+{
+}
++ObjProp 553 "DesignNote"
+{
+	"" NVRemovePropertyTrapOn="Contained"; NVRemovePropertyTrapProp="Scripts"
+}
++ObjProp 553 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Tool Action" Script, Deselect
+}
+ObjProp 553 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" NVRemovePropertyTrap
+}
++ObjProp 591 "StackCount"
+{
+}
