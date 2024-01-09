@@ -1,0 +1,24 @@
+DML1
+
+//T2 FM: Ana's Secret by Pedro Quintela (Cardia) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	78 [20 -7 -6]
+	33 [11 -8 -6]
+	286 [41 19 -8]
+	320 [74 30 -4]
+	221 [78 8 -5]
+	141 [42 9 -1]
+	235 [-3 -8 -4]
+	241 [75 22 -8]
+	QVAR "goal_target_0" == 82
+}
+
+//loot
++ObjProp 97 "Loot"
+{
+}
++ObjProp 98 "Loot"
+{
+}
