@@ -1,0 +1,20 @@
+DML1
+
+//T2 FM: Religious Conflict (City Attacks) by Pedro Quintela (Cardia) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	1725 [-21 183 -18]
+	2267 [-104 161 -7]
+	549 [147 -39 -17]
+	1350 [-152 30 -29]
+	1390 [-152 5 -27]
+	453 [-30 -58 -18]
+	518 [-24 -128 -14]
+	328 [-25 6 -31]
+	QVAR "goal_target_4" == 1066
+}
+
+//doors
+-ObjProp 108 "PickDist"
+-ObjProp 455 "PickDist"
