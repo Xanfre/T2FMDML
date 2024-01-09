@@ -1,0 +1,162 @@
+DML1
+
+//T2 FM: Secret of the Keepers (48 Hour Contest) by SneakyGuy101 / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	153 [4 75 -5]
+	46 [-4 79 -9]
+	175 [-13 81 -8]
+	52 [-9 73 -11]
+	311 [9 -42 -7]
+	226 [20 -49 -11]
+	133 [-47 82 -28]
+	124 [27 68 -8]
+	QVAR "goal_target_1" == 55
+}
+
+//starting point
+ObjProp 8 "Position"
+{
+	"Heading" 4000
+}
+
+//goals
++ObjProp 127 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 127 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 127 "TrapQVar"
+{
+	"" =386:goal_target_1
+}
+
+//doors
++ObjProp 59 "Locked"
+{
+	"" true
+}
+ObjProp 96 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 96 "PhysType"
++ObjProp 96 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 99 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 99 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 99 "PhysType"
++ObjProp 99 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 120 "JointPos"
+-ObjProp 121 "JointPos"
+ObjProp 170 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 170 "Locked"
+{
+	"" true
+}
++ObjProp 185 "PhysCanMant"
+{
+}
+ObjProp 261 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 261 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 261 "PhysType"
++ObjProp 261 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 309 "FrobInfo"
+{
+	"World Action" None
+}
+ObjProp 335 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 335 "PhysType"
++ObjProp 335 "PhysType"
+{
+	"Type" OBB
+}
+
+//fireplace
+ObjProp 38 "PGLaunchInfo"
+{
+	"Min time" 2.00
+	"Max time" 2.50
+}
+ObjProp 40 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+
+//switches
+-Link 75 99 "ControlDevice"
++Link 75 110 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+
+//torches
++ObjProp 76 "FrobInfo"
+{
+}
++ObjProp 84 "FrobInfo"
+{
+}
++ObjProp 105 "FrobInfo"
+{
+}
++ObjProp 112 "FrobInfo"
+{
+}
+
+//misplaced objects
+-ObjProp 130 "PhysType"
+ObjProp 130 "Position"
+{
+	"Location" -74.15, 76.25, -12
+}
++ObjProp 210 "Scale"
+{
+	"" 0.8, 0.9, 1
+}
+
+//footlockers
++ObjProp 268 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 377 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 379 "JointPos"
+{
+	"Joint 1" 90.00
+}

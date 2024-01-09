@@ -279,6 +279,7 @@ Safe Haven
 The Saint
 Saints and Thieves
 Secret Breaking of a Pyramid
+Secret of the Keepers
 A Servant's Life
 The Seven Shades of Mercury
 The Seven Sisters
