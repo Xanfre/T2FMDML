@@ -1,0 +1,349 @@
+DML1
+
+//T2 FM: Lost in the Far Edges by Soul Tear / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	1129 [-339 393 -24]
+	389 [-168 156 -42]
+	1153 [-285 477 -79]
+	140 [-192 136 21]
+	297 [-189 103 -30]
+	673 [-137 126 -23]
+	166 [-152 128 -13]
+	983 [-172 59 4]
+	QVAR "goal_target_7" == 163
+}
+
+//goals / pickpockets
++ObjProp 197 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 197 198 "ControlDevice"
+{
+}
++Link 197 240 "ControlDevice"
+{
+}
++Link 197 241 "ControlDevice"
+{
+}
++ObjProp 197 "Scripts"
+{
+	"Script 0" TrapRelay
+	"Script 1" TrapSetQVar
+}
++ObjProp 197 "TrapQVar"
+{
+	"" =0:goal_irreversible_9
+}
++ObjProp 198 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 198 "TrapQVar"
+{
+	"" =0:DrSPocketCnt
+}
++ObjProp 240 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 240 "TrapQVar"
+{
+	"" =0:goal_target_3
+}
++ObjProp 241 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 241 "TrapQVar"
+{
+	"" =0:goal_target_7
+}
++ObjProp 207 "Scripts"
+{
+	"Script 0" JAccuse
+}
+ObjProp 296 "FrobInfo"
+{
+	"World Action" Move, Script
+}
+ObjProp 296 "Scripts"
+{
+	"Script 0" StdBook
+	"Script 1" TrigWorldFrob
+}
+-Link 296 773 "ControlDevice"
+-Link 791 795 "ControlDevice"
+-Link 796 794 "ControlDevice"
+-Link 804 796 "ControlDevice"
++Link 804 794 "ControlDevice"
+{
+}
++ObjProp 804 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
++ObjProp 810 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapMeta="FrobInert"
+}
+-Link 810 812 "ControlDevice"
++Link 810 795 "ControlDevice"
+{
+}
++ObjProp 810 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-Link 1192 1250 "ControlDevice"
+-ObjProp 1192 "Scripts"
++ObjProp 1251 "TrapFlags"
+{
+	"" NoOff
+}
+
+//doors
++ObjProp 152 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 220 "TransDoor"
+-ObjProp 228 "TransDoor"
+-ObjProp 365 "TransDoor"
+-ObjProp 274 "TransDoor"
++ObjProp 274 "BlockFrob"
+{
+	"" true
+}
++MetaProp 274 -2420
++ObjProp 253 "RenderAlpha"
+{
+	"" 0.65
+}
++ObjProp 255 "FrobInfo"
+{
+}
++ObjProp 261 "FrobInfo"
+{
+}
+ObjProp 276 "Scale"
+{
+	"" 1.125, 1.125, 1.125
+}
+-ObjProp 276 "JointPos"
+-ObjProp 789 "JointPos"
+ObjProp 789 "Scale"
+{
+	"" 1.125, 1.125, 1.125
+}
+ObjProp 298 "Scripts"
+{
+	"Script 1" TrigUnlock
+	"Script 2" ""
+	"Script 3" ""
+}
++ObjProp 298 "CfgTweqLock"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Lock Joint" 1
+	"    rate-low-highJoint" 15, 0, 90
+}
+
+//misplaced objects / physdims
+ObjProp 12 "Position"
+{
+	"Location" -123.5, 53.5825, 39.6
+}
+-ObjProp 12 "PhysType"
++ObjProp 12 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 13 "Position"
+{
+	"Location" -110.25, 38.8825, 35.1
+}
+-ObjProp 13 "PhysType"
++ObjProp 13 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 19 "Position"
+{
+	"Location" -127.5, 23.25, 16.5
+}
+-ObjProp 19 "PhysType"
++ObjProp 19 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 21 "Position"
+{
+	"Location" -123.5, 39.5235, 15.77
+}
+-ObjProp 21 "PhysType"
++ObjProp 21 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 24 "Position"
+{
+	"Location" -106.25, 46.5, 35.1
+}
+-ObjProp 24 "PhysType"
++ObjProp 24 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 29 "Position"
+{
+	"Location" -110.25, 0.365, 40.8
+}
+-ObjProp 29 "PhysType"
++ObjProp 29 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 40 "Position"
+{
+	"Location" -106.25, 56.5, 35.1
+}
+-ObjProp 40 "PhysType"
++ObjProp 40 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 44 "PhysType"
++ObjProp 44 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 44 "PhysCanMant"
+{
+}
+ObjProp 54 "Position"
+{
+	"Location" -147.925, 23.25, 16.5
+}
+-ObjProp 54 "PhysType"
++ObjProp 54 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 63 "Position"
+{
+	"Location" -123.5, 61.5825, 39.6
+}
+-ObjProp 63 "PhysType"
++ObjProp 63 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 81 "Position"
+{
+	"Location" -126, 75.25, 28.2
+}
+-ObjProp 81 "PhysType"
++ObjProp 81 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 847 "PhysType"
++ObjProp 847 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 850 "PhysType"
++ObjProp 850 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 924 "Position"
+{
+	"Location" -110.25, -7.635, 40.8
+}
+-ObjProp 924 "PhysType"
++ObjProp 924 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 925 "Position"
+{
+	"Location" -108.25, -11.635, 40.8
+}
+-ObjProp 925 "PhysType"
++ObjProp 925 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 930 "Stench"
+{
+	Max None
+
+	Target 253
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 930 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 930 "PhysCanMant"
+{
+}
+-ObjProp 930 "PhysType"
++ObjProp 930 "PhysType"
+{
+	"Type" OBB
+}
+
+//AIs
++ObjProp 193 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 648 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 670 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 672 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
+
+//keys
++ObjProp 218 "StackCount"
+{
+}
++ObjProp 287 "StackCount"
+{
+}
++ObjProp 815 "StackCount"
+{
+}
++ObjProp 816 "StackCount"
+{
+}
+
+//loot
+ObjProp 603 "PickDist"
+{
+	"" 4.60
+}
