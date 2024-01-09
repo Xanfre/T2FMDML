@@ -10,6 +10,7 @@ Ack! There's a Zombie in the Basement
 After Dark
 The Airship
 Akhenaten's Tomb
+All for a Night's Sleep
 All Torc
 Amnesia
 Among Two Storms
@@ -29,6 +30,7 @@ A Bank Job
 The Bathhouse
 The Beginning of Era Karath-Din
 Behind Closed Doors
+The Black Frog
 The Blackheart's Recording
 Bloodmist Tower
 Bloodsport
@@ -337,6 +339,7 @@ Unknown Treasure
 UnMasked
 Unnecessary Risk
 Vagabond
+Vampire Skull
 Viktor Gaspar
 Volcano Island Prison Facility
 Von Ratten, Spinnen un einer Flucht

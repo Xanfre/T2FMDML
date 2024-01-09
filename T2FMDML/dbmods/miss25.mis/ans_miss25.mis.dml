@@ -1,0 +1,152 @@
+DML1
+
+//T2 FM: All for a Night's Sleep by Maria Strom-Bestor (Morrgan) / Fixes: miss25.mis.dml
+
+FINGERPRINT
+{
+	231 [174 -64 21]
+	606 [96 -72 40]
+	179 [95 29 14]
+	835 [119 -90 -8]
+	305 [169 -17 -1]
+	415 [116 -91 -8]
+	30 [65 27 -1]
+	828 [77 -116 -29]
+	QVAR "goal_target_7" == 402
+}
+
+//mantling
++ObjProp 12 "PhysCanMant"
+{
+}
++ObjProp 189 "PhysCanMant"
+{
+}
++ObjProp 189 "Material Tags"
+{
+}
+
+//secret / goal
+-ObjProp 544 "TrapFlags"
+-Link 544 482 "ControlDevice"
++Link 544 537 "ControlDevice"
+{
+}
++Link 537 482 "ControlDevice"
+{
+}
++ObjProp 537 "ScriptTiming"
+{
+	"" 1000
+}
++ObjProp 537 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+}
+
+//doors
+ObjProp 157 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 308 "RotDoor"
+{
+	"Open Angle" 89
+	"Clockwise?" false
+}
++ObjProp 308 "BlockFrob"
+{
+	"" true
+}
++ObjProp 333 "BlockFrob"
+{
+	"" true
+}
++ObjProp 334 "BlockFrob"
+{
+	"" true
+}
+ObjProp 334 "RotDoor"
+{
+	"Open Angle" 89
+}
++ObjProp 373 "FrobInfo"
+{
+}
+ObjProp 397 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+ObjProp 527 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
++ObjProp 529 "BlockFrob"
+{
+	"" true
+}
+ObjProp 744 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+ObjProp 745 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+
+//footlockers
++ObjProp 147 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 147 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 226 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 266 "JointPos"
+{
+	"Joint 1" 90.00
+}
+-ObjProp 388 "Scripts"
+
+//fireplace
+ObjProp 257 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+
+//AIs
++ObjProp 452 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 531 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem4
+}
+
+//arrows
+-ObjProp 517 "DeathStage"
+-ObjProp 518 "DeathStage"
+-ObjProp 686 "DeathStage"
+-ObjProp 808 "DeathStage"
+
+//keys
++ObjProp 556 "StackCount"
+{
+}
++ObjProp 666 "StackCount"
+{
+}
+
+//banner
++ObjProp 801 "SlayResult"
+{
+	"Effect" Destroy
+}
