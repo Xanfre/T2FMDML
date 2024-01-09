@@ -1,0 +1,33 @@
+DML1
+
+//T2 FM: Stones and Glass Houses (Late Payment) by Robin Collier (R Soul) / Fixes
+
+FINGERPRINT
+{
+	97 [916 -82 182]
+	2357 [908 -155 221]
+	1524 [639 255 204]
+	1479 [921 -278 189]
+	437 [623 318 197]
+	2139 [898 82 191]
+	1752 [564 219 198]
+	1020 [565 399 188]
+	QVAR "goal_target_9" == 54
+}
+
+//load up-to-date scripts
+#script "script-t2"
+#script "tnhscript"
+#script "nvscript"
+
+//doors
+ObjProp 1156 "RotDoor"
+{
+	"Open Angle" 271
+}
+ObjProp 1157 "RotDoor"
+{
+	"Open Angle" 89
+}
+//pickpockets
+-Link 49 102 "ControlDevice"
