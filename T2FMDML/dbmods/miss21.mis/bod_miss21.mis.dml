@@ -1,5 +1,5 @@
 DML1
-//T2 FM: The Bodysnatchers by DarkShadow / Fixes: miss21.mis.dml
+//T2 FM: The Bodysnatchers by Michael Haase (DarkShadow) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -13,6 +13,9 @@ FINGERPRINT
 	1096 [-658 7 -70]
 	QVAR "goal_target_8" == 1193
 }
+
+//load up-to-date scripts
+#script "tnhscript"
 
 //pickpockets
 Link 221 229 "Contains"

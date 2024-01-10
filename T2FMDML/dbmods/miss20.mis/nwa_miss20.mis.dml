@@ -1,5 +1,5 @@
 DML1
-//T2 FM: The Night Watch by Fidcal / Fix the boulder on top of the chest containing Jake's note: miss20.mis.dml
+//T2 FM: The Night Watch (Mission 1) by Fidcal / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -16,6 +16,10 @@ FINGERPRINT
 
 #script "squirrel"
 
+//load up-to-date scripts
+#script "script-t2"
+
+//boulder
 +ObjProp 719 "DesignNote"
 {
 	"" RepositionLoc=104.427,-116.134,613.801

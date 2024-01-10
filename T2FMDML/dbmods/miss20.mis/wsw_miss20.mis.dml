@@ -14,9 +14,10 @@ FINGERPRINT
 	QVAR "goal_target_1" == 736
 }
 
+//load up-to-date scripts
 #script "tnhscript"
-#script "script-t2"
 #script "nvscript"
+#script "script-t2"
 
 -ObjProp 738 "Scripts"
 +ObjProp 1934 "PhysType"

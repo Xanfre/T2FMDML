@@ -14,5 +14,6 @@ FINGERPRINT
 	QVAR "goal_target_1" == 989
 }
 
-//load new NVScript
+//load up-to-date scripts
 #script "nvscript"
+#script "tnhscript"

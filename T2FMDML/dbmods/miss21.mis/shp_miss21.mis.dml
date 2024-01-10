@@ -1,5 +1,5 @@
 DML1
-//T2 FM: Shadow Plans by Terry DeLaney (Ricebug) / Fix goal 4: miss21.mis.dml
+//T2 FM: Shadow Plans (Secrets) by Terry DeLaney (Ricebug) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -14,6 +14,10 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1122
 }
 
+//load up-to-date scripts
+#script "script-t2"
+
+//goal 4
 +ObjProp 500 "Scripts"
 {
 	"Script 0" TrapSetQVar

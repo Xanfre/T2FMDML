@@ -14,6 +14,11 @@ FINGERPRINT
 	QVAR "goal_target_0" == 559
 }
 
+//load up-to-date scripts
+#script "script-t2"
+#script "tnhscript"
+#script "nvscript"
+
 //doors
 +ObjProp 150 "BlockFrob"
 {

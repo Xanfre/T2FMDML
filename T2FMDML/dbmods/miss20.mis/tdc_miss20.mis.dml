@@ -1,5 +1,5 @@
 DML1
-//T2 FM: The Drymian Codex by Russ Robbins (Yandros), Rob Strain (Random_Taffer), and Tannar / Load more recent NVScript module: miss20.mis.dml
+//T2 FM: The Drymian Codex by Russ Robbins (Yandros), Rob Strain (Random_Taffer), and Tannar / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -14,4 +14,6 @@ FINGERPRINT
 	QVAR "goal_target_0" == 3219
 }
 
+//load up-to-date scripts
 #script "nvscript"
+#script "tnhscript"

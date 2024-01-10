@@ -14,7 +14,9 @@ FINGERPRINT
 	QVAR "goal_target_5" == 885
 }
 
+//load up-to-date scripts
 #script "nvscript"
+#script "tnhscript"
 
 //blocker
 Create -445 "Blocker"

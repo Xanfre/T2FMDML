@@ -14,6 +14,10 @@ FINGERPRINT
 	QVAR "goal_target_10" == -14
 }
 
+//load up-to-date scripts
+#script "nvscript"
+#script "tnhscript"
+
 //mantling
 +ObjProp 73 "PhysCanMant"
 {
