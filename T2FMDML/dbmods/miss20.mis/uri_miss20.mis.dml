@@ -1,5 +1,4 @@
 DML1
-
 //T2 FM: Unnecessary Risk by Scott Murchison (SlyFoxx) / Fixes: miss20.mis.dml
 
 FINGERPRINT
@@ -71,18 +70,21 @@ ObjProp 787 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 788 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 855 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 855 "BlockFrob"
@@ -104,6 +106,7 @@ ObjProp 855 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 895 "BlockFrob"
@@ -260,6 +263,7 @@ ObjProp 671 "Position"
 +StimSource 870 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 870 "Position"

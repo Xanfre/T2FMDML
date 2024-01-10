@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Guard Called Benny by Jari Mäkinen (Dark Arrow) / Fixes
+//T2 FM: A Guard Called Benny by Jari Mäkinen (Dark Arrow) / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -59,6 +58,7 @@ FINGERPRINT
 {
 	"" R@2
 }
+
 //pickpockets
 +ObjProp 356 "DiffTurnOn"
 {

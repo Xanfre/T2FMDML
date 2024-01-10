@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: All Torc (Fort Montoya) by Robin Collier (R Soul) / Fixes
+//T2 FM: All Torc (Fort Montoya) by Robin Collier (R Soul) / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -17,5 +16,6 @@ FINGERPRINT
 
 //arrows
 -ObjProp 1062 "DeathStage"
+
 //pickpocketing
 -Link 1392 1849 "ControlDevice"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Cathedral of the Damned by Dark Angel / Fixes
+//T2 FM: Cathedral of the Damned by Dark Angel / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -34,41 +33,49 @@ ObjProp 56 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 505 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 506 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 506 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //crypt door (holy sword)
 +ObjProp 621 "BlockFrob"
 {
 	"" true
 }
+
 //necromancer's patrol point
 ObjProp 717 "Position"
 {
 	"Location" -138, 69, -17.1326
 }
+
 //barrel
 ObjProp 238 "Position"
 {
 	"Location" -125.81, -0.63, 7.81
 }
+
 //unused book
 +ObjProp 764 "FrobInfo"
 {

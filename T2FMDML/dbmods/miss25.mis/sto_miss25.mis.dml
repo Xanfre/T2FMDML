@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Stowaway by Mike Peers (Finial) / Fixes
+//T2 FM: Stowaway by Mike Peers (Finial) / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -141,6 +140,7 @@ FINGERPRINT
 {
 	"Script 0" TrapNonFinalComplete
 }
+
 //doors
 +ObjProp 19 "PickCfg"
 {
@@ -163,6 +163,7 @@ ObjProp 340 "RotDoor"
 	"Open Angle" 90
 	"Clockwise?" false
 }
+
 //trophies
 +ObjProp 136 "FrobInfo"
 {
@@ -186,12 +187,15 @@ ObjProp 340 "RotDoor"
 {
 	"" true
 }
+
 //misplaced objects
 +Receptron 143 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent 200
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
@@ -200,6 +204,7 @@ ObjProp 340 "RotDoor"
 +StimSource 143 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 352 "PhysType"
@@ -216,6 +221,7 @@ ObjProp 745 "Position"
 {
 	"Location" 68.17, 89.88, 25.15
 }
+
 //safe keys
 +ObjProp 296 "SlayResult"
 {
@@ -223,6 +229,7 @@ ObjProp 745 "Position"
 +ObjProp 587 "SlayResult"
 {
 }
+
 //junk
 +ObjProp 519 "FrobInfo"
 {

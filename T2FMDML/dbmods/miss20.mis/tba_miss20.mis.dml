@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Taffers' Bank (Novice Contest) by Thief0 / Fixes
+//T2 FM: The Taffers' Bank (Novice Contest) by Thief0 / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -64,12 +63,14 @@ ObjProp 71 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 158 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 192 "Scale"
@@ -173,6 +174,7 @@ ObjProp 288 "StTweqLock"
 +StimSource 129 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 

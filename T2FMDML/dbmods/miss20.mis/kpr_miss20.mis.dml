@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Keeper of the Prophecies (Hallucinations) by Ken Ramsley (frobber) / Fixes
+//T2 FM: Keeper of the Prophecies (Hallucinations) by Ken Ramsley (frobber) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -20,8 +19,10 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //AIs
 ObjProp 1167 AI_Efficiency
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Island of Iron 2: Confrontation by John D. Head (John D.) / Fixes
+//T2 FM: Island of Iron 2: Confrontation by John D. Head (John D.) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -35,6 +34,7 @@ FINGERPRINT
 {
 	"" =2:DrSPocketCnt
 }
+
 //doors
 +MetaProp 19 -2419
 +MetaProp 24 -2419
@@ -59,6 +59,7 @@ ObjProp 459 "StTweqJoints"
 {
 	"" true
 }
+
 //items
 +ObjProp 447 "FrobInfo"
 {

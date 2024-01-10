@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Freedo Finds One by Todd Neil (CloakedInDarkness) / Fix objects and goals
+//T2 FM: Freedo Finds One by Todd Neil (CloakedInDarkness) / Fix objects and goals: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -85,6 +84,7 @@ FINGERPRINT
 +Link 95 65 "ControlDevice"
 {
 }
+
 //objects
 -ObjProp 1060 "PhysType"
 +ObjProp 1060 "PhysType"
@@ -126,10 +126,12 @@ FINGERPRINT
 	"Type" OBB
 	"# Submodels" 6
 }
+
 //barrels
 +StimSource 27 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -151,8 +153,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 558.11, 643.72, 493.99
@@ -164,6 +168,7 @@ FINGERPRINT
 +StimSource 26 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -185,8 +190,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -2987
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 339.4, 642.3, 438.4

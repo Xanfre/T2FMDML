@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Evirath's Misery by Beatrice Madry (Turcaill) / Fixes
+//T2 FM: Evirath's Misery by Beatrice Madry (Turcaill) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -33,6 +32,7 @@ ObjProp 48 "Scripts"
 {
 	"" Once
 }
+
 //evirath's diary
 +ObjProp 1168 "NoDrop"
 {
@@ -51,6 +51,7 @@ ObjProp 168 "Position"
 {
 	"Location" 618.869, 337.792, 461.572
 }
+
 //pedestal
 -ObjProp 1160 "PhysType"
 ObjProp 1160 "Position"
@@ -61,6 +62,7 @@ ObjProp 1160 "Position"
 {
 	"Type" OBB
 }
+
 //torches
 +ObjProp 169 "FrobInfo"
 {
@@ -68,11 +70,13 @@ ObjProp 1160 "Position"
 +ObjProp 209 "FrobInfo"
 {
 }
+
 //button-book
 ObjProp 261 "StTweqJoints"
 {
 	"AnimS" Reverse
 }
+
 //safe doors
 +ObjProp 37 "BlockFrob"
 {
@@ -95,8 +99,10 @@ ObjProp 261 "StTweqJoints"
 {
 	"Type" OBB
 }
+
 //sheriff's archer female
 -ObjProp 995 "AI_Vision"
+
 //mantling
 +ObjProp 166 "PhysCanMant"
 {
@@ -104,6 +110,7 @@ ObjProp 261 "StTweqJoints"
 +ObjProp 427 "PhysCanMant"
 {
 }
+
 //shutters
 -ObjProp 87 "RotDoor"
 +ObjProp 87 "Immobile"

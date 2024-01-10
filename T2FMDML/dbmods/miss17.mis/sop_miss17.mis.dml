@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sinful Opportunities by Marijn Schotte (Polygon) / Fixes
+//T2 FM: Sinful Opportunities by Marijn Schotte (Polygon) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -167,6 +166,7 @@ ObjProp 317 "Position"
 +StimSource 322 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 452 "Position"

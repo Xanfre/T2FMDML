@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Dyers' Eve by Patrick Woolsey (Metalhead) / Fixes
+//T2 FM: Dyers' Eve by Patrick Woolsey (Metalhead) / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -577,6 +576,7 @@ ObjProp 378 "Position"
 +StimSource 448 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 448 "Position"

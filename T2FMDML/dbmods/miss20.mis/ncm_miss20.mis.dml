@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: No More Clients for Monty (Contest 4) by Duodecimal / Fixes
+//T2 FM: No More Clients for Monty (Contest 4) by Duodecimal / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -68,11 +67,13 @@ Create -2086 "GoalFix"
 {
 	"" =1:goal_state_3
 }
+
 //doors
 +Receptron 14 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 82 "JointPos"
@@ -80,8 +81,10 @@ Create -2086 "GoalFix"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //paintings
 +ObjProp 276 "BlockFrob"
 {
@@ -91,6 +94,7 @@ Create -2086 "GoalFix"
 {
 	"" true
 }
+
 //quest items
 +ObjProp 343 "NoDrop"
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: In These Enlightened Times (Water Contest) by Andy Joel (The Pixie) / Fix mages and ankhs
+//T2 FM: In These Enlightened Times (Water Contest) by Andy Joel (The Pixie) / Fix mages and ankhs: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -46,6 +45,7 @@ FINGERPRINT
 {
 	"" true
 }
+
 //ankh
 -ObjProp 211 "PhysType"
 +ObjProp 211 "PhysType"
@@ -97,8 +97,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -3132
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 512.89, 518.38, 510.0
@@ -110,6 +112,7 @@ FINGERPRINT
 +StimSource 551 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -131,8 +134,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -3132
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 511.89, 518.40, 510.0
@@ -144,6 +149,7 @@ FINGERPRINT
 +StimSource 421 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -161,6 +167,7 @@ FINGERPRINT
 		}
 	}
 }
+
 //loot goals
 +ObjProp 33 "Scripts"
 {
@@ -188,6 +195,7 @@ FINGERPRINT
 +Link 5 33 "ControlDevice"
 {
 }
+
 //bat
 +ObjProp 60 "AI_ObjPathable"
 {
@@ -201,6 +209,7 @@ FINGERPRINT
 {
 	"" true
 }
+
 //bat
 +Link 113 113 "AIWatchObj"
 {

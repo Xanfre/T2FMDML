@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Prisoner's Revenge by Jan Vitek (Vitus) & Adam Prenosil (Preno) / Fixes
+//T2 FM: Prisoner's Revenge by Jan Vitek (Vitus) & Adam Prenosil (Preno) / Fixes: miss15.mis.dml
 
 FINGERPRINT
 {
@@ -183,6 +182,7 @@ ObjProp 187 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 188 "Scale"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: City Conflict (part 3) by Silencium18 / Fixes
+//T2 FM: City Conflict (part 3) by Silencium18 / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -25,6 +24,7 @@ ObjProp 82 "Position"
 {
 	"Type" OBB
 }
+
 //banner / doors
 +ObjProp 149 "BlockFrob"
 {
@@ -32,23 +32,28 @@ ObjProp 82 "Position"
 }
 -ObjProp 163 "StTweqLock"
 -ObjProp 318 "StTweqLock"
+
 //arrows
 -ObjProp 218 "DeathStage"
 -ObjProp 381 "DeathStage"
+
 //hammer spell
 +ObjProp 258 "ModelName"
 {
 	"" HamShot
 }
+
 //mask
 +ObjProp 283 "StackCount"
 {
 }
+
 //loot
 +ObjProp 340 "DiffDestroy"
 {
 	"quest var values" 0, 1, 2
 }
+
 //book
 -ObjProp 352 "PhysType"
 ObjProp 352 "Position"

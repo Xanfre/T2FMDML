@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Mother's Love (Contest 4) by Katy Fortner (Kfort) / Fixes
+//T2 FM: A Mother's Love (Contest 4) by Katy Fortner (Kfort) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -20,6 +19,7 @@ FINGERPRINT
 {
 	"" Once
 }
+
 //secrets
 +ObjProp 7 "DiffTurnOn"
 {
@@ -50,6 +50,7 @@ FINGERPRINT
 {
 	"quest var values" 0, 2
 }
+
 //quest items
 +ObjProp 511 "StackCount"
 {
@@ -73,6 +74,7 @@ ObjProp 523 "FrobInfo"
 {
 	"" Once
 }
+
 //torches
 +ObjProp 10 "FrobInfo"
 {
@@ -110,12 +112,14 @@ ObjProp 523 "FrobInfo"
 +ObjProp 304 "FrobInfo"
 {
 }
+
 //doors
 -ObjProp 189 "JointPos"
 -ObjProp 190 "JointPos"
 +ObjProp 259 "FrobInfo"
 {
 }
+
 //DeathStage 12
 -ObjProp 394 "DeathStage"
 -ObjProp 398 "DeathStage"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: When Still... (Lord Robert Lelder) by Eternauta / Fixes
+//T2 FM: When Still... (Lord Robert Lelder) by Eternauta / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -28,6 +27,7 @@ Receptron 436 "HolyStim" 00210000
 {
 	Min 12
 	Max None
+
 	Target 1730
 }
 +ObjProp 436 "DiffRemoveProp"
@@ -349,5 +349,6 @@ ObjProp 1184 "Position"
 +StimSource 1828 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }

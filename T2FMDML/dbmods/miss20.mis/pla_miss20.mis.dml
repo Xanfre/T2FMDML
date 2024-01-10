@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Plagiarism (Contest 5) by Genie_bottle / Fixes
+//T2 FM: Plagiarism (Contest 5) by Genie_bottle / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -31,6 +30,7 @@ FINGERPRINT
 {
 	"" =1:goal_reverse_9
 }
+
 //doors
 -ObjProp 156 "JointPos"
 -ObjProp 187 "JointPos"
@@ -58,6 +58,7 @@ ObjProp 345 "RotDoor"
 {
 	"" true
 }
+
 //switch
 ObjProp 81 "JointPos"
 {
@@ -70,6 +71,7 @@ ObjProp 81 "StTweqJoints"
 	"Joint1AnimS" Reverse
 	"Joint2AnimS" On, Reverse
 }
+
 //junk
 +ObjProp 476 "InvType"
 {

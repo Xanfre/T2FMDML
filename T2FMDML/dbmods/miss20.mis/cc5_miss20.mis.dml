@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: City Conflict (part 5) by Silencium18 / Fixes
+//T2 FM: City Conflict (part 5) by Silencium18 / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -27,6 +26,7 @@ ObjProp 14 "Position"
 {
 	"Type" OBB
 }
+
 //cart
 -ObjProp 53 "PhysType"
 ObjProp 53 "Position"
@@ -37,10 +37,12 @@ ObjProp 53 "Position"
 {
 	"Type" OBB
 }
+
 //DeathStage 12
 -ObjProp 73 "DeathStage"
 -ObjProp 226 "DeathStage"
 -ObjProp 227 "DeathStage"
+
 //AIs
 +ObjProp 79 "InvRendType"
 {
@@ -67,6 +69,7 @@ ObjProp 53 "Position"
 	"Type" Alternate Bitmap
 	"Resource" cmecprs
 }
+
 //mantling
 +ObjProp 91 "PhysCanMant"
 {
@@ -92,6 +95,7 @@ ObjProp 53 "Position"
 +ObjProp 453 "PhysCanMant"
 {
 }
+
 //footlocker
 -ObjProp 97 "PhysType"
 ObjProp 97 "Position"
@@ -102,6 +106,7 @@ ObjProp 97 "Position"
 {
 	"Type" OBB
 }
+
 //switches
 +Link 148 193 "FrobProxy"
 {
@@ -111,6 +116,7 @@ ObjProp 503 "StTweqJoints"
 {
 	"AnimS" Reverse
 }
+
 //bottles
 -ObjProp 169 "PhysType"
 ObjProp 169 "Position"
@@ -130,6 +136,7 @@ ObjProp 170 "Position"
 {
 	"Type" Sphere
 }
+
 //toolbox
 -ObjProp 194 "PhysType"
 ObjProp 194 "Position"
@@ -140,6 +147,7 @@ ObjProp 194 "Position"
 {
 	"Type" OBB
 }
+
 //alarm
 +ObjProp 382 "Scripts"
 {
@@ -155,6 +163,7 @@ ObjProp 194 "Position"
 {
 	"" Once
 }
+
 //plaques
 +ObjProp 425 "FrobInfo"
 {
@@ -168,11 +177,13 @@ ObjProp 194 "Position"
 +ObjProp 437 "FrobInfo"
 {
 }
+
 //doors
 +Receptron 478 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 608 "JointPos"
@@ -181,6 +192,7 @@ ObjProp 194 "Position"
 {
 	"" true
 }
+
 //bucket
 -ObjProp 646 "PhysType"
 +ObjProp 646 "PhysType"

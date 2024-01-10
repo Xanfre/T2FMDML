@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Book of Prophecy: The Hidden City by Schattengilde / Fixes
+//T2 FM: The Book of Prophecy: The Hidden City by Schattengilde / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -58,6 +57,7 @@ FINGERPRINT
 {
 	"" =149:goal_target_2
 }
+
 //pickpocketing
 +ObjProp 145 "Scripts"
 {
@@ -67,6 +67,7 @@ FINGERPRINT
 {
 	"" -1:DrSPocketCnt
 }
+
 //drugs
 -Link 506 1377 "ControlDevice"
 -Link 506 1371 "ControlDevice"
@@ -76,6 +77,7 @@ FINGERPRINT
 ++Receptron 506 "HolyStim"
 {
 	Max None
+
 	Effect "SetQvar"
 	{
 		"Quest Variable" goal_state_10
@@ -86,6 +88,7 @@ FINGERPRINT
 ++Receptron 506 "HolyStim"
 {
 	Max None
+
 	Effect "SetQvar"
 	{
 		"Quest Variable" goal_state_11
@@ -101,6 +104,7 @@ ObjProp 514 "Scripts"
 {
 	"Script 1" NVRelayTrap
 }
+
 //secrets
 +Link 358 363 "ControlDevice"
 {
@@ -204,6 +208,7 @@ ObjProp 566 "CollisionType"
 +Link 567 509 "ControlDevice"
 {
 }
+
 //doors
 +MetaProp 74 -2420
 +MetaProp 105 -2420
@@ -222,12 +227,14 @@ ObjProp 214 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 354 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 666 "RotDoor"
@@ -247,18 +254,21 @@ ObjProp 1125 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1988 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 2362 "PickDist"
 {
 	"" 4.00
 }
+
 //switches
 ObjProp 121 "JointPos"
 {
@@ -330,6 +340,7 @@ ObjProp 805 "StTweqJoints"
 	"Joint1AnimS" Reverse
 	"Joint2AnimS" On, Reverse
 }
+
 //painting
 -ObjProp 525 "PhysType"
 ObjProp 525 "Position"
@@ -340,6 +351,7 @@ ObjProp 525 "Position"
 {
 	"Type" OBB
 }
+
 //scrolls
 -ObjProp 72 "PhysType"
 ObjProp 72 "Position"
@@ -359,6 +371,7 @@ ObjProp 72 "Position"
 	"Script 0" NVRelayTrap
 	"Script 1" NVSelectTrap
 }
+
 //bloodstains
 +ObjProp 900 "RenderAlpha"
 {
@@ -384,10 +397,12 @@ ObjProp 72 "Position"
 {
 	"" 1.00
 }
+
 //junk
 +ObjProp 955 "InvType"
 {
 }
+
 //victrola
 +ObjProp 980 "DesignNote"
 {
@@ -399,6 +414,7 @@ ObjProp 980 "Scripts"
 	"Script 1" NVAmbientSoundTrap
 	"Don't Inherit" true
 }
+
 //AIs
 -ObjProp 1005 "AI_Vision"
 ObjProp 1005 "AI_Hearing"
@@ -413,6 +429,7 @@ ObjProp 1005 "AI_Hearing"
 {
 	"" Below Average
 }
+
 //bookcases
 -ObjProp 1203 "PhysType"
 +ObjProp 1203 "PhysType"

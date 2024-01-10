@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Durant by Donald F. Mazur / Fixes
+//T2 FM: Durant by Donald F. Mazur / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -29,6 +28,7 @@ Link 728 824 "Contains"
 	"z angle (0-65535)" 29000
 	"offset" 0.5, -0.5, 0.1
 }
+
 //arrows
 -ObjProp 490 "DeathStage"
 -ObjProp 520 "DeathStage"

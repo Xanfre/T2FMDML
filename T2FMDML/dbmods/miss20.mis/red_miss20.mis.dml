@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Redemption by Brynolf / Fixes
+//T2 FM: Redemption by Brynolf / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -80,24 +79,28 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 448 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 510 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 510 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 676 "FrobInfo"
@@ -118,60 +121,70 @@ ObjProp 678 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1159 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1168 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1168 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1169 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1169 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1170 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1170 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1642 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1642 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 1784 "BlockFrob"
@@ -208,24 +221,28 @@ ObjProp 678 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2148 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2149 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2149 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 2317 "BlockFrob"

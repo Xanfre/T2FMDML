@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Carkess Escape by Carsten Kessler (Carkess) / Fixes
+//T2 FM: Carkess Escape by Carsten Kessler (Carkess) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -21,6 +20,7 @@ ObjProp 500 "Position"
 	"Location" 428.335, 391.537, 505.914
 	"Heading" 4000
 }
+
 //deer legs
 -ObjProp 446 "PhysType"
 ObjProp 446 "Position"
@@ -57,12 +57,14 @@ ObjProp 457 "Position"
 {
 	"Location" 427.001, 418.706, 495.612
 }
+
 //mask
 ObjProp 850 "Position"
 {
 	"Location" 459.311, 401.864, 499.91
 	"Heading" 8000
 }
+
 //plates
 -ObjProp 590 "PhysType"
 ObjProp 590 "Position"
@@ -76,12 +78,14 @@ ObjProp 640 "Position"
 	"Heading" 4000
 	"Bank" 4000
 }
+
 //medallion
 ObjProp 481 "Position"
 {
 	"Location" 486.929, 408.797, 515.362
 	"Heading" 4000
 }
+
 //banner
 +ObjProp 671 "BlockFrob"
 {

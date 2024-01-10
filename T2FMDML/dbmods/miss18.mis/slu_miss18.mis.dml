@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sluggs' FM Pack (Setup) by Vaughan Cooper (Sluggs) / Fixes
+//T2 FM: Sluggs' FM Pack (Setup) by Vaughan Cooper (Sluggs) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -112,6 +111,7 @@ FINGERPRINT
 +StimSource 196 "Touch"
 {
 	Intensity 10
+
 	Propagator "Contact"
 }
 
@@ -198,6 +198,7 @@ ObjProp 123 "InvRendType"
 +StimSource 95 "Touch"
 {
 	Intensity 10
+
 	Propagator "Radius"
 }
 ObjProp 95 "Position"

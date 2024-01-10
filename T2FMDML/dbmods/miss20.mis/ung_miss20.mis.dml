@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Uninvited Guest by Paul D Rotter (eepcat) / Fixes
+//T2 FM: Uninvited Guest by Paul D Rotter (eepcat) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -38,6 +37,7 @@ ObjProp 1034 "PGLaunchInfo"
 	"Min time" 1.00
 	"Max time" 1.50
 }
+
 //prevent reaching through the oven doors
 +ObjProp 1053 "BlockFrob"
 {
@@ -47,6 +47,7 @@ ObjProp 1034 "PGLaunchInfo"
 {
 	"" true
 }
+
 //reposition objects
 -ObjProp 1504 "PhysType"
 ObjProp 1504 "Position"

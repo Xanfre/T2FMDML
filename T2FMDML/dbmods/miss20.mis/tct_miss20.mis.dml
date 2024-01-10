@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Creepy Temple by P Forth / Fixes
+//T2 FM: The Creepy Temple by P Forth / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -25,6 +24,7 @@ ObjProp 137 "Position"
 {
 	"Type" OBB
 }
+
 //loot
 +ObjProp 152 "Loot"
 {
@@ -35,6 +35,7 @@ ObjProp 137 "Position"
 +ObjProp 524 "Loot"
 {
 }
+
 //doors
 +ObjProp 581 "FrobInfo"
 {
@@ -45,6 +46,7 @@ ObjProp 137 "Position"
 +ObjProp 645 "FrobInfo"
 {
 }
+
 //gold skull (junk)
 +ObjProp 828 "InvType"
 {

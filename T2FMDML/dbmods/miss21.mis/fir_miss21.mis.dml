@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Firefly by Lobster / Fixes
+//T2 FM: Firefly by Lobster / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -17,8 +16,10 @@ FINGERPRINT
 
 //arrows
 -ObjProp 1181 "DeathStage"
+
 //pickpockets
 -Link 1681 1682 "ControlDevice"
+
 //secret
 -ObjProp 640 "DarkStat"
 ObjProp 640 "Scripts"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes
+//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes: miss3.mis.dml
 
 FINGERPRINT
 {
@@ -239,10 +238,12 @@ ObjProp 747 "Position"
 {
 	"Location" -51.4951,10.5471,12.3315
 }
+
 //death stage
 -ObjProp 50 "DeathStage"
 -ObjProp 297 "DeathStage"
 -ObjProp 481 "DeathStage"
+
 //pickpockets
 Link 2292 1558 "Contains"
 {

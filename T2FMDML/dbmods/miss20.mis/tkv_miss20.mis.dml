@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Kindred Vault (Thief Anniversary Contest) by Paul D. Rotter (eepcat) / Fixes
+//T2 FM: The Kindred Vault (Thief Anniversary Contest) by Paul D. Rotter (eepcat) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -31,8 +30,10 @@ FINGERPRINT
 +MetaProp 36 -2420
 +MetaProp 199 -2420
 +MetaProp 355 -2420
+
 //pickpocketing
 -Link 99 101 "ControlDevice"
+
 //mantling
 +ObjProp 130 "PhysCanMant"
 {

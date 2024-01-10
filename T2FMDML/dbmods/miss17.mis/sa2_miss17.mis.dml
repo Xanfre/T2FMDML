@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sisterhood of Azura, part 2: The House by Ben Hur (And) / Fixes
+//T2 FM: Sisterhood of Azura, part 2: The House by Ben Hur (And) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -171,6 +170,7 @@ Create -464 "GoaltypeSwitch"
 {
 	"" false
 }
+
 //goal 11
 +ObjProp 989 "Scripts"
 {
@@ -285,6 +285,7 @@ Create -464 "GoaltypeSwitch"
 	"Pitch" 0
 	"Bank" 4000
 }
+
 //fireplace
 ObjProp 896 "PGLaunchInfo"
 {
@@ -397,6 +398,7 @@ ObjProp 202 "ParticleGroup"
 +Link 1328 305 "ControlDevice"
 {
 }
+
 //Sarah
 +ObjProp 959 "HitPoints"
 {
@@ -406,6 +408,7 @@ ObjProp 202 "ParticleGroup"
 {
 	"" 1000
 }
+
 //Thieves
 +ObjProp 1821 "AI_IgCam"
 {
@@ -423,6 +426,7 @@ ObjProp 202 "ParticleGroup"
 	"Pitch" 0
 	"Bank" 0
 }
+
 //doors
 -ObjProp 79 "TransDoor"
 -ObjProp 78 "TransDoor"
@@ -446,6 +450,7 @@ ObjProp 202 "ParticleGroup"
 	"Type" OBB
 	"# Submodels" 6
 }
+
 //fix parent key
 -Link 1485 1855 "ControlDevice"
 +Link 1485 538 "ControlDevice"
@@ -464,6 +469,7 @@ ObjProp 202 "ParticleGroup"
 }
 +MetaProp 1821 -5811
 +MetaProp 1491 -5811
+
 //bot2
 +ObjProp 948 "AI_Efficiency"
 {
@@ -502,6 +508,7 @@ ObjProp 202 "ParticleGroup"
 	"Pitch" 0
 	"Bank" 0
 }
+
 //Libraray Conversation
 +ObjProp 840 "Scripts"
 {
@@ -513,6 +520,7 @@ ObjProp 202 "ParticleGroup"
 +Link 840 -4104 "SoundDescription"
 {
 }
+
 //Begin Conversation
 +Link 1733 -6529 "SoundDescription"
 {
@@ -554,6 +562,7 @@ ObjProp 202 "ParticleGroup"
 {
 	"" SpellScroll
 }
+
 //pickpockets
 +ObjProp 1500 "Loot"
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Reunion with Basso (Garrett Takes a Cure) by Zappenduster / Fixes
+//T2 FM: Reunion with Basso (Garrett Takes a Cure) by Zappenduster / Fixes: miss24.mis.dml
 
 FINGERPRINT
 {
@@ -85,6 +84,7 @@ Create -2908 "Blocker2"
 +StimSource "Blocker2" "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 10 "PhysCanMant"
@@ -162,6 +162,7 @@ Create -2908 "Blocker2"
 +StimSource 979 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 979 "PhysType"
@@ -258,6 +259,7 @@ ObjProp 1253 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 552 "RotDoor"
@@ -272,6 +274,7 @@ ObjProp 552 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 576 "BlockFrob"
@@ -282,6 +285,7 @@ ObjProp 552 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 628 "BlockFrob"

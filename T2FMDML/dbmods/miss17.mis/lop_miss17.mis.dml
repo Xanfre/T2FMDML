@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Lucrative Opportunity by Aaron Pettett (Spanker) / Fix goals and objects
+//T2 FM: Lucrative Opportunity by Aaron Pettett (Spanker) / Fix goals and objects: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -49,6 +48,7 @@ FINGERPRINT
 +StimSource 590 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -70,8 +70,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 178.52, 126.01, 26.8
@@ -83,6 +85,7 @@ FINGERPRINT
 +StimSource 599 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -104,8 +107,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 185.77, -80.32, 6.8
@@ -144,6 +149,7 @@ FINGERPRINT
 	"Cur Time" 0
 	"Frame #" 0
 }
+
 //goal 7
 +ObjProp 817 "Scripts"
 {
@@ -179,6 +185,7 @@ FINGERPRINT
 {
 	"Script 0" StdButton
 }
+
 //fireplace
 -ObjProp 794 "PhysType"
 +ObjProp 794 "PhysType"

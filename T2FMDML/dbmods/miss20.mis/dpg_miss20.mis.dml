@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: In Dubio pro Garrett by Dainem & PsymH / Fixes
+//T2 FM: In Dubio pro Garrett by Dainem & PsymH / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -52,6 +51,7 @@ FINGERPRINT
 {
 	"" =38:goal_target_10
 }
+
 //goal 12 (bonus)
 +Link 797 1800 "ControlDevice"
 {
@@ -71,6 +71,7 @@ ObjProp 1457 "Scripts"
 {
 	"Script 1" TrigWorldFrob
 }
+
 //goal 13 (bonus)
 +ObjProp 303 "Scripts"
 {
@@ -98,6 +99,7 @@ ObjProp 632 "Scripts"
 {
 	"quest var values" 0
 }
+
 //doors
 -ObjProp 137 "TransDoor"
 +MetaProp 137 -2420
@@ -139,6 +141,7 @@ ObjProp 1297 "RotDoor"
 +ObjProp 2029 "FrobInfo"
 {
 }
+
 //scrolls
 ObjProp 523 "Position"
 {
@@ -156,6 +159,7 @@ ObjProp 580 "Position"
 {
 	"1: Tags" "Material Carpet"
 }
+
 //AIs
 +ObjProp 651 "InvRendType"
 {
@@ -241,13 +245,16 @@ ObjProp 580 "Position"
 {
 	"" =3:goal_state_7
 }
+
 //pedestal
 -ObjProp 825 "PhysPPlate"
+
 //painting
 ObjProp 1550 "CollisionType"
 {
 	"" None
 }
+
 //fireplace
 ObjProp 1582 "PGLaunchInfo"
 {
@@ -258,6 +265,7 @@ ObjProp 1584 "PGLaunchInfo"
 {
 	"Max time" 2.00
 }
+
 //banner
 +ObjProp 1817 "BlockFrob"
 {

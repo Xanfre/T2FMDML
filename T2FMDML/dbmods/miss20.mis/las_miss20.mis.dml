@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Lord Ashton Series (A Visit to Lord Ashton) by Christine Schneider / Fixes
+//T2 FM: The Lord Ashton Series (A Visit to Lord Ashton) by Christine Schneider / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -65,6 +64,7 @@ FINGERPRINT
 +ObjProp 1634 "FrobInfo"
 {
 }
+
 //doors
 +MetaProp 37 -2420
 ObjProp 168 "RotDoor"
@@ -91,12 +91,14 @@ ObjProp 185 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 186 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 186 "BlockFrob"
@@ -115,12 +117,14 @@ ObjProp 185 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 189 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 189 "BlockFrob"
@@ -143,12 +147,14 @@ ObjProp 198 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 200 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 200 "BlockFrob"
@@ -167,12 +173,14 @@ ObjProp 198 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 203 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 203 "BlockFrob"
@@ -183,24 +191,28 @@ ObjProp 198 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 235 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 236 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 236 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 236 "BlockFrob"
@@ -215,42 +227,49 @@ ObjProp 242 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 258 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 259 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 259 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 263 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 266 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 267 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 276 "Locked"
@@ -261,6 +280,7 @@ ObjProp 242 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 819 "BlockFrob"
@@ -285,8 +305,10 @@ ObjProp 242 "RotDoor"
 +Receptron 1265 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -2425
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -295,6 +317,7 @@ ObjProp 242 "RotDoor"
 +StimSource 1265 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 1265 "RotDoor"
@@ -313,26 +336,31 @@ ObjProp 242 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2012 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2013 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2013 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //arrows (original campaign)
 -ObjProp 103 "DeathStage"
 -ObjProp 109 "DeathStage"
@@ -345,6 +373,7 @@ ObjProp 242 "RotDoor"
 -ObjProp 1494 "DeathStage"
 -ObjProp 1498 "DeathStage"
 -ObjProp 1544 "DeathStage"
+
 //mantling
 +ObjProp 112 "PhysCanMant"
 {
@@ -367,6 +396,7 @@ ObjProp 242 "RotDoor"
 +ObjProp 1890 "PhysCanMant"
 {
 }
+
 //AIs
 +ObjProp 523 "InvRendType"
 {
@@ -430,6 +460,7 @@ ObjProp 242 "RotDoor"
 	"Type" Alternate Bitmap
 	"Resource" carcher1
 }
+
 //fireplace
 ObjProp 534 "PGLaunchInfo"
 {
@@ -440,6 +471,7 @@ ObjProp 536 "PGLaunchInfo"
 {
 	"Max time" 2.00
 }
+
 //misplaced objects
 -ObjProp 563 "PhysType"
 ObjProp 563 "Position"
@@ -472,8 +504,10 @@ ObjProp 1252 "Position"
 +Receptron 1379 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent 1380
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
@@ -482,8 +516,10 @@ ObjProp 1252 "Position"
 ++Receptron 1379 "EarthStim"
 {
 	Max None
+
 	Target 1594
 	Agent 1380
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
@@ -492,6 +528,7 @@ ObjProp 1252 "Position"
 +StimSource 1379 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 1763 "PhysType"
@@ -503,6 +540,7 @@ ObjProp 1763 "Position"
 {
 	"Type" OBB
 }
+
 //loot
 ObjProp 1013 "Position"
 {
@@ -553,6 +591,7 @@ ObjProp 2044 "Position"
 {
 	"" 8.00
 }
+
 //pickpocketing
 +ObjProp 704 "DiffTurnOn"
 {

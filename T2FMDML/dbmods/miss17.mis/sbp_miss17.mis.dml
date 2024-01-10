@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Secret Breaking of a Pyramid by Zmey / Fixes
+//T2 FM: Secret Breaking of a Pyramid by Zmey / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -18,6 +17,7 @@ FINGERPRINT
 +StimSource 99 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -39,8 +39,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -439
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -32.55, -396.8, 199.46
@@ -52,6 +54,7 @@ FINGERPRINT
 +StimSource 100 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -73,8 +76,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -439
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -32.71, -376.8, 199.46
@@ -86,6 +91,7 @@ FINGERPRINT
 +StimSource 101 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -107,8 +113,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -2925
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -80.38, -461.1, 390.97
@@ -120,6 +128,7 @@ FINGERPRINT
 +StimSource 818 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -141,8 +150,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -2925
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -80.71, -503.14, 390.97

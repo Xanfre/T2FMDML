@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: We Miss You, Bob! by Monastiri / Fixes
+//T2 FM: We Miss You, Bob! by Monastiri / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -23,12 +22,14 @@ ObjProp 280 "Position"
 {
 	"Location" 31.3564, -65.9583, -5.39894
 }
+
 //shovel
 -ObjProp 196 "PhysType"
 ObjProp 196 "Position"
 {
 	"Location" -1.81154, -118.704, -3.48015
 }
+
 //barrels
 +ObjProp 57 "DesignNote"
 {

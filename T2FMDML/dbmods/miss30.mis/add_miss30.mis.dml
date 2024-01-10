@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Abominable Dr. Dragon by Chiefdreams / Fixes
+//T2 FM: The Abominable Dr. Dragon by Chiefdreams / Fixes: miss30.mis.dml
 
 FINGERPRINT
 {
@@ -20,6 +19,7 @@ FINGERPRINT
 {
 	"" true
 }
+
 //pickpockets
 Link 705 707 "Contains"
 {

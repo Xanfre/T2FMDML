@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Keepers are Thirsty (Contest 3) by Chris K. (Cypher628) / Fixes
+//T2 FM: The Keepers are Thirsty (Contest 3) by Chris K. (Cypher628) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -83,6 +82,7 @@ ObjProp 38 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 154 "Scale"
@@ -105,6 +105,7 @@ ObjProp 209 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 211 "Scale"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Bad Blood v3 by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: Bad Blood v3 by Terry DeLaney (Ricebug) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -313,12 +312,14 @@ ObjProp 137 "PickCfg"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 167 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 167 "Scale"
@@ -580,12 +581,14 @@ ObjProp 1174 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1376 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 1376 "Scale"
@@ -844,6 +847,7 @@ ObjProp 983 "Position"
 +StimSource 1014 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 1014 "GameName"

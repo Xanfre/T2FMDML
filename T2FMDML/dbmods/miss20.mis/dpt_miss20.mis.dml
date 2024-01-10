@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Dedicated to the People of TTLG (Contest 3) by Rachel Yvonne (Cookiedough) / Fixes
+//T2 FM: Dedicated to the People of TTLG (Contest 3) by Rachel Yvonne (Cookiedough) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -21,6 +20,7 @@ TagBlock "DARKMISS"
 	"Mission Number" 20
 	"Mission Pathname" miss20
 }
+
 //doors
 -ObjProp 2 "JointPos"
 -ObjProp 3 "JointPos"

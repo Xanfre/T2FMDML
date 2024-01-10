@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Cataclysmic Revelations Campaign (The Mission) by DarthsLair / Fixes
+//T2 FM: Cataclysmic Revelations Campaign (The Mission) by DarthsLair / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -37,11 +36,13 @@ FINGERPRINT
 +ObjProp 3046 "Loot"
 {
 }
+
 //plate
 ObjProp 479 "Position"
 {
 	"Location" 269.496, -236.532, -54.9922
 }
+
 //chest
 -ObjProp 3226 "PhysType"
 ObjProp 3226 "Position"
@@ -52,6 +53,7 @@ ObjProp 3226 "Position"
 {
 	"Type" OBB
 }
+
 //traps
 +ObjProp 54 "Class Tags"
 {

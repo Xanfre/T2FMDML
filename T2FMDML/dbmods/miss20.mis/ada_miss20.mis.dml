@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: After Dark by Shadowhide / Fixes
+//T2 FM: After Dark by Shadowhide / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -25,10 +24,12 @@ FINGERPRINT
 +ObjProp 253 "PhysCanMant"
 {
 }
+
 //missing loot: 1 x gold ankh (50) out of map, excluded
 +ObjProp 412 "Loot"
 {
 }
+
 //letter and goals
 +ObjProp 414 "DesignNote"
 {
@@ -52,6 +53,7 @@ ObjProp 414 "Scripts"
 {
 	"" =1:goal_state_1
 }
+
 //bonfire
 +ObjProp 212 "StTweqJoints"
 {
@@ -64,6 +66,7 @@ ObjProp 414 "Scripts"
 }
 -ObjProp 212 "CfgTweqJoints"
 -ObjProp 212 "CfgTweqModels"
+
 //unnecessary rope (the well)
 +ObjProp 378 "CfgTweqDelete"
 {
@@ -74,6 +77,7 @@ ObjProp 414 "Scripts"
 {
 	"AnimS" "On"
 }
+
 //fireplaces
 ObjProp 408 "PGLaunchInfo"
 {
@@ -95,6 +99,7 @@ ObjProp 1132 "PGLaunchInfo"
 	"Min time" 1.50
 	"Max time" 1.50
 }
+
 //keys
 -ObjProp 140 "NoDrop"
 -ObjProp 886 "NoDrop"
@@ -105,6 +110,7 @@ ObjProp 1132 "PGLaunchInfo"
 +ObjProp 1109 "SlayResult"
 {
 }
+
 //quest items
 +ObjProp 157 "StackCount"
 {
@@ -118,6 +124,7 @@ ObjProp 1132 "PGLaunchInfo"
 +ObjProp 1163 "StackCount"
 {
 }
+
 //empty bottle / wine barrel
 +StimSource 246 "EarthStim"
 {
@@ -147,6 +154,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //full bottle / pagan
 +StimSource 247 "EarthStim"
 {
@@ -176,6 +184,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //flowers / vase
 +StimSource 291 "EarthStim"
 {
@@ -205,6 +214,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //heartbox
 ++Receptron 424 "WomanRingStim"
 {
@@ -219,6 +229,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //pick
 ++Receptron 477 "stim1"
 {
@@ -229,6 +240,7 @@ ObjProp 1132 "PGLaunchInfo"
 
 	Effect "destroy_obj"
 }
+
 //cheese / plate
 +StimSource 630 "EarthStim"
 {
@@ -258,6 +270,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //girl's mother
 ++Receptron 731 "GirlChimeStim"
 {
@@ -272,6 +285,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //skeleton
 ++Receptron 1215 "SkeletonNecklaceStim"
 {
@@ -286,6 +300,7 @@ ObjProp 1132 "PGLaunchInfo"
 		"Prop Name" FrobInfo
 	}
 }
+
 //fish
 +ObjProp 32 "GameName"
 {
@@ -311,6 +326,7 @@ ObjProp 1132 "PGLaunchInfo"
 {
 	"" Fish
 }
+
 //doors
 ObjProp 173 "RotDoor"
 {
@@ -326,12 +342,14 @@ ObjProp 738 "RotDoor"
 {
 	"" Double
 }
+
 //scrolls
 -ObjProp 943 "NoDrop"
 +ObjProp 950 "NoDrop"
 {
 	"" true
 }
+
 //ale without any effect
 +ObjProp 12 "FrobInfo"
 {

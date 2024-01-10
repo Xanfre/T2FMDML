@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Focus (Contest 5) by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes
+//T2 FM: The Focus (Contest 5) by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -42,6 +41,7 @@ ObjProp 853 "AI_Converation"
 {
 	"" Once
 }
+
 //keys
 +ObjProp 20 "SlayResult"
 {
@@ -71,6 +71,7 @@ ObjProp 889 "PickDist"
 {
 	"" 5.00
 }
+
 //switches
 +Link 54 158 "FrobProxy"
 {
@@ -108,6 +109,7 @@ ObjProp 319 "PickDist"
 {
 	"" 5.00
 }
+
 //doors
 -ObjProp 525 "JointPos"
 -ObjProp 564 "JointPos"
@@ -125,13 +127,16 @@ ObjProp 994 "RotDoor"
 {
 	"Open Angle" 89
 }
+
 //jenny's ring
 ++Receptron 167 "DropStim"
 {
 	Min 0
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -141,20 +146,25 @@ ObjProp 994 "RotDoor"
 {
 	Min 0
 	Max None
+
 	Target Me
 	Agent -141
+
 	Effect "add_prop"
 	{
 		"Prop Name" ExtraLight
 	}
 }
+
 //skulls
 ++Receptron 528 "CraneGobelStim"
 {
 	Min 0
 	Max None
+
 	Target 545
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -168,8 +178,10 @@ ObjProp 994 "RotDoor"
 {
 	Min 0
 	Max None
+
 	Target 526
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -183,8 +195,10 @@ ObjProp 994 "RotDoor"
 {
 	Min 0
 	Max None
+
 	Target 527
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -194,6 +208,7 @@ ObjProp 994 "RotDoor"
 {
 	"" true
 }
+
 //AIs
 +ObjProp 181 "AI_Hearing"
 {
@@ -203,6 +218,7 @@ ObjProp 994 "RotDoor"
 {
 	"Enabled" false
 }
+
 //mantling
 +ObjProp 184 "PhysCanMant"
 {
@@ -210,6 +226,7 @@ ObjProp 994 "RotDoor"
 +ObjProp 715 "PhysCanMant"
 {
 }
+
 //painting
 -ObjProp 206 "PhysType"
 ObjProp 206 "Position"
@@ -220,15 +237,19 @@ ObjProp 206 "Position"
 {
 	"Type" OBB
 }
+
 //moss arrow
 -ObjProp 684 "DeathStage"
+
 //elevator button
 +Link 733 949 "ControlDevice"
 {
 }
+
 //keeper medallion
 Receptron 741 "KeeperStim"
 {
+
 	Target 664
 }
 +ObjProp 741 "StackCount"

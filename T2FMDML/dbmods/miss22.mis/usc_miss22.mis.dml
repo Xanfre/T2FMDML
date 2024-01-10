@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: TTGM: Up Shit Creek by Steven Hindley (Belboz) / Fixes
+//T2 FM: TTGM: Up Shit Creek by Steven Hindley (Belboz) / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -31,6 +30,7 @@ FINGERPRINT
 +ObjProp 1065 "PhysCanMant"
 {
 }
+
 //doors
 ObjProp 379 "Locked"
 {
@@ -44,6 +44,7 @@ ObjProp 379 "Locked"
 +MetaProp 1064 -2420
 +MetaProp 1122 -2420
 -ObjProp 1157 "JointPos"
+
 //keys
 +ObjProp 597 "NoDrop"
 {
@@ -91,13 +92,16 @@ ObjProp 379 "Locked"
 +ObjProp 1022 "SlayResult"
 {
 }
+
 //plates
 ++Receptron 740 "RedStim"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -107,8 +111,10 @@ ObjProp 379 "Locked"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -118,8 +124,10 @@ ObjProp 379 "Locked"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -129,8 +137,10 @@ ObjProp 379 "Locked"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -140,8 +150,10 @@ ObjProp 379 "Locked"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -151,8 +163,10 @@ ObjProp 379 "Locked"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -162,13 +176,16 @@ ObjProp 379 "Locked"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
 	}
 }
+
 //lever
 +ObjProp 902 "RenderType"
 {
@@ -178,15 +195,18 @@ ObjProp 379 "Locked"
 {
 	"1: Tags" ""
 }
+
 //ruby lava snake head
 -Link 1209 44 "ControlDevice"
 +Link 1209 444 "ControlDevice"
 {
 }
+
 //gold skull (junk)
 +ObjProp 532 "InvType"
 {
 }
+
 //AIs
 +ObjProp 15 "InvRendType"
 {

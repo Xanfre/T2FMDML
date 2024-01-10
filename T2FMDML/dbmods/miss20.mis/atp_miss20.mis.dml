@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: After the Party (Contest 3) by Robert Lee (ChangelingJane) / Fixes
+//T2 FM: After the Party (Contest 3) by Robert Lee (ChangelingJane) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -42,6 +41,7 @@ ObjProp 7 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 22 "FrobInfo"
@@ -54,6 +54,7 @@ ObjProp 7 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 169 "PickBias"
@@ -170,6 +171,7 @@ ObjProp 173 "StTweqJoints"
 +StimSource 110 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 110 "Position"

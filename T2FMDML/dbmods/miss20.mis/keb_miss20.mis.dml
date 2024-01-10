@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Keeper's Betrayal by The Immortal Thief / Fix for goal 10 and light-based transparency
+//T2 FM: A Keeper's Betrayal by The Immortal Thief / Fix for goal 10 and light-based transparency: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -69,6 +68,7 @@ FINGERPRINT
 -ObjProp 713 "RenderAlpha"
 -ObjProp 1355 "RenderAlpha"
 -ObjProp 1357 "RenderAlpha"
+
 // more fixes to transparency
 +ObjProp 81 "LBAlpha"
 {

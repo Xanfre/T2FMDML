@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Balfour's Secret by Michael Haase (DarkShadow) / Fixes
+//T2 FM: Balfour's Secret by Michael Haase (DarkShadow) / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -52,6 +51,7 @@ ObjProp 151 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 283 "JointPos"
@@ -62,6 +62,7 @@ ObjProp 283 "JointPos"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 458 "BlockFrob"
@@ -81,8 +82,10 @@ ObjProp 458 "Position"
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent -2262
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysDims
@@ -100,8 +103,10 @@ ObjProp 458 "Position"
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent -2262
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysDims
@@ -115,6 +120,7 @@ ObjProp 458 "Position"
 {
 	"Script 0" NVRelayTrap
 }
+
 //chests
 -ObjProp 48 "StTweqLock"
 +Link 193 170 "ControlDevice"
@@ -131,6 +137,7 @@ ObjProp 458 "Position"
 {
 	"Script 0" NVRemovePropertyTrap
 }
+
 //fireplaces
 ObjProp 188 "PGLaunchInfo"
 {
@@ -152,10 +159,12 @@ ObjProp 215 "PGLaunchInfo"
 	"Min time" 1.50
 	"Max time" 1.50
 }
+
 //mantling
 +ObjProp 224 "PhysCanMant"
 {
 }
+
 //junk
 +ObjProp 328 "StackCount"
 {
@@ -163,6 +172,7 @@ ObjProp 215 "PGLaunchInfo"
 +ObjProp 328 "InvType"
 {
 }
+
 //torches
 -Link 557 569 "ControlDevice"
 -Link 574 569 "ControlDevice"
@@ -170,6 +180,7 @@ ObjProp 215 "PGLaunchInfo"
 {
 	"" Invert, NoOn
 }
+
 //ladder
 -ObjProp 441 "Scale"
 -ObjProp 441 "PhysType"
@@ -181,6 +192,7 @@ ObjProp 441 "Position"
 {
 	"Type" OBB
 }
+
 //trap
 +ObjProp 444 "RenderType"
 {
@@ -190,8 +202,10 @@ ObjProp 441 "Position"
 {
 	"1: Tags" ""
 }
+
 //rope arrow
 -ObjProp 459 "PhysType"
+
 //note (goal 6, 7)
 +ObjProp 591 "DesignNote"
 {
@@ -201,6 +215,7 @@ ObjProp 591 "Scripts"
 {
 	"Script 0" NVRelayTrap
 }
+
 //balfour (goal 7)
 +ObjProp 594 "DesignNote"
 {

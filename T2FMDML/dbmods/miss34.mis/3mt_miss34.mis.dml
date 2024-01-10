@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Three Mages Tomb (Skully Demo) by J. Knez (Schwaa) / Fixes
+//T2 FM: Three Mages Tomb (Skully Demo) by J. Knez (Schwaa) / Fixes: miss34.mis.dml
 
 FINGERPRINT
 {
@@ -63,6 +62,7 @@ FINGERPRINT
 +StimSource 185 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 199 "FrobInfo"

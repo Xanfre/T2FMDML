@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Bane 1 - Keep of Deceit by The Immortal Thief / Fix transpareny in NewDark
+//T2 FM: Bane 1 - Keep of Deceit by The Immortal Thief / Fix transpareny in NewDark: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -25,6 +24,7 @@ FINGERPRINT
 -ObjProp 713 "RenderAlpha"
 -ObjProp 1355 "RenderAlpha"
 -ObjProp 1357 "RenderAlpha"
+
 // more fixes to transparency
 +ObjProp 81 "LBAlpha"
 {

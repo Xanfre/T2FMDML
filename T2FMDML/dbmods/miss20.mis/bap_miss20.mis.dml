@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Breakout from Apocalypse Prison (Contest 4) by Isaac Kopecky (golem8) / Fixes
+//T2 FM: Breakout from Apocalypse Prison (Contest 4) by Isaac Kopecky (golem8) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -129,6 +128,7 @@ FINGERPRINT
 +StimSource 386 "WaterStim"
 {
 	Intensity 100
+
 	Propagator "Radius"
 	{
 		Life
@@ -146,13 +146,16 @@ FINGERPRINT
 		}
 	}
 }
+
 //angela
 +Receptron 321 "EarthStim"
 {
 	Min 9
 	Max None
+
 	Target 7
 	Agent -2250
+
 	Effect "add_prop"
 	{
 		"Prop Name" AI_Team
@@ -166,25 +169,30 @@ FINGERPRINT
 {
 	"Script 0" NVRelayTrap
 }
+
 //sword
 ObjProp 3 "SelfLit"
 {
 	"" 10
 }
+
 //doors
 -ObjProp 44 "Scripts"
 -ObjProp 130 "JointPos"
 -ObjProp 135 "JointPos"
 +MetaProp 194 -2420
+
 //water arrows
 -ObjProp 52 "DeathStage"
 -ObjProp 207 "DeathStage"
 -ObjProp 208 "DeathStage"
+
 //scroll
 ObjProp 211 "Position"
 {
 	"Location" 7.5, 3.22, -26.35
 }
+
 //cell lockpick
 +ObjProp 296 "StackCount"
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Bodysnatchers by DarkShadow / Fixes
+//T2 FM: The Bodysnatchers by DarkShadow / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -80,7 +79,9 @@ ObjProp 297 "MeshAttach"
 {
 	Min None
 	Max None
+
 	Target 297
+
 	Effect "rem_prop"
 	{
 		"Prop Name" MeshAttach
@@ -90,7 +91,9 @@ ObjProp 297 "MeshAttach"
 {
 	Min None
 	Max None
+
 	Target 288
+
 	Effect "destroy_obj"
 }
 -Link 305 302 "ControlDevice"

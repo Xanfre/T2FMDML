@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Reflections by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: Reflections by Terry DeLaney (Ricebug) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -112,8 +111,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -5746
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -64.0, -74.0, 12.6
@@ -125,6 +126,7 @@ FINGERPRINT
 +StimSource 413 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -146,8 +148,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -5746
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -64.0, -93.0, 12.6
@@ -159,6 +163,7 @@ FINGERPRINT
 +StimSource 449 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life

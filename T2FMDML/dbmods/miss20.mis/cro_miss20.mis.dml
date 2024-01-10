@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Crom's Blade by J. Knex (Schwaa) / Fixes
+//T2 FM: Crom's Blade by J. Knex (Schwaa) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -60,6 +59,7 @@ ObjProp 1139 "MeshAttach"
 	"z angle (0-65535)" 42000
 	"offset" 0.5, 1.1, 0
 }
+
 //arrows
 -ObjProp 76 "DeathStage"
 -ObjProp 113 "DeathStage"
@@ -78,6 +78,7 @@ ObjProp 1139 "MeshAttach"
 -ObjProp 1618 "DeathStage"
 -ObjProp 1920 "DeathStage"
 -ObjProp 2017 "DeathStage"
+
 //coinstack
 +ObjProp 1872 "PhysType"
 {

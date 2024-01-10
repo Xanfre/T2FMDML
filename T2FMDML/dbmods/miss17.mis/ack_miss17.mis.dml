@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Ack! There's a Zombie in the Basement by Marijn Schotte (Polygon) / Fixes
+//T2 FM: Ack! There's a Zombie in the Basement by Marijn Schotte (Polygon) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -137,6 +136,7 @@ ObjProp 6 "RotDoor"
 +StimSource 584 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 

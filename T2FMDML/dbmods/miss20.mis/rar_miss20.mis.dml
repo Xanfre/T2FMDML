@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Rosaries are Red (Novice Contest) by Tainted / Fix missing loot and frobbing gem through banner
+//T2 FM: Rosaries are Red (Novice Contest) by Tainted / Fix missing loot and frobbing gem through banner: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -33,6 +32,7 @@ Create -6129 "Blocker1"
 	}
 }
 +MetaProp "Blocker1" -2420
+
 //loot
 +ObjProp 444 "BlockFrob"
 {

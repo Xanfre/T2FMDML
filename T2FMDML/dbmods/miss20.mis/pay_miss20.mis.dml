@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Payback (SSR Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes
+//T2 FM: Payback (SSR Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -101,6 +100,7 @@ ObjProp 16 "RotDoor"
 +StimSource 19 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +MetaProp 19 -2420

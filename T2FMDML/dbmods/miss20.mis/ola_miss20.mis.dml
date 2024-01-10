@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Oh, l'amour by Rufus / Fixes
+//T2 FM: Oh, l'amour by Rufus / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -31,6 +30,7 @@ FINGERPRINT
 +Link 587 575 "ControlDevice"
 {
 }
+
 //AIs
 +ObjProp 10 "AI_Hearing"
 {
@@ -70,6 +70,7 @@ FINGERPRINT
 	"Type" Alternate Bitmap
 	"Resource" cnoblew4
 }
+
 //misplaced objects / junk
 ObjProp 150 "Position"
 {
@@ -95,8 +96,10 @@ ObjProp 151 "Scale"
 +Receptron 668 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -10
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
@@ -105,8 +108,10 @@ ObjProp 151 "Scale"
 ++Receptron 668 "EarthStim"
 {
 	Max None
+
 	Target 800
 	Agent -10
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
@@ -115,11 +120,13 @@ ObjProp 151 "Scale"
 +StimSource 668 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 1077 "InvType"
 {
 }
+
 //fireplace
 ObjProp 335 "PGLaunchInfo"
 {
@@ -131,6 +138,7 @@ ObjProp 338 "PGLaunchInfo"
 	"Min time" 2.00
 	"Max time" 2.50
 }
+
 //doors
 +MetaProp 376 -5661
 +MetaProp 377 -5661

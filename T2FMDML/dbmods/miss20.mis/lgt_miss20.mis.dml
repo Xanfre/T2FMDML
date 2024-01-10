@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The League of Grim Thieves by Niklas Schwenkschuster (The Niggster) / Fixes
+//T2 FM: The League of Grim Thieves by Niklas Schwenkschuster (The Niggster) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -106,6 +105,7 @@ FINGERPRINT
 +ObjProp 1142 "PhysCanMant"
 {
 }
+
 //doors
 +ObjProp 148 "BlockFrob"
 {
@@ -149,12 +149,14 @@ ObjProp 381 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 382 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 389 "BlockFrob"
@@ -172,8 +174,10 @@ ObjProp 381 "RotDoor"
 +Receptron 707 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -1263
+
 	Effect "add_prop"
 	{
 		"Prop Name" Class Tags
@@ -182,8 +186,10 @@ ObjProp 381 "RotDoor"
 ++Receptron 707 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -192,6 +198,7 @@ ObjProp 381 "RotDoor"
 +StimSource 707 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 707 "TransDoor"
@@ -235,6 +242,7 @@ ObjProp 1298 "TransDoor"
 {
 	"Open Position" 4.75
 }
+
 //scroll / book
 +ObjProp 205 "FrobInfo"
 {
@@ -282,6 +290,7 @@ ObjProp 1298 "TransDoor"
 {
 	"Script 0" TrapTimedRelay
 }
+
 //AIs
 +ObjProp 307 "InvRendType"
 {
@@ -309,6 +318,7 @@ ObjProp 821 "AI_Hearing"
 	"Type" Alternate Bitmap
 	"Resource" hauntca
 }
+
 //misplaced objects
 -ObjProp 479 "PhysType"
 ObjProp 479 "Position"
@@ -373,6 +383,7 @@ ObjProp 956 "Position"
 {
 	"Type" Sphere
 }
+
 //eddie's key (goal 4)
 +ObjProp 750 "FrobInfo"
 {
@@ -382,6 +393,7 @@ ObjProp 956 "Position"
 {
 	"" true
 }
+
 //junk
 +ObjProp 944 "FrobInfo"
 {

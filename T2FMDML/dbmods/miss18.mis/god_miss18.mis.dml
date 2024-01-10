@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Impious Pilgrimage (Godbreaker) by Rob Strain (Random_Taffer) / Fixes
+//T2 FM: Impious Pilgrimage (Godbreaker) by Rob Strain (Random_Taffer) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -24,61 +23,81 @@ FINGERPRINT
 +Receptron 3314 "BugStim"
 {
 	Max 1.10
+
 	Target 3508
+
 	Effect "frob_obj"
 }
 ++Receptron 3314 "BugStim"
 {
 	Max 1.10
+
 	Target Me
+
 	Effect "slay"
 }
 +Receptron 3325 "BugStim"
 {
 	Max 1.10
+
 	Target 3508
+
 	Effect "frob_obj"
 }
 ++Receptron 3325 "BugStim"
 {
 	Max 1.10
+
 	Target Me
+
 	Effect "slay"
 }
 +Receptron 3329 "BugStim"
 {
 	Max 1.10
+
 	Target 3508
+
 	Effect "frob_obj"
 }
 ++Receptron 3329 "BugStim"
 {
 	Max 1.10
+
 	Target Me
+
 	Effect "slay"
 }
 +Receptron 3340 "BugStim"
 {
 	Max 1.10
+
 	Target 3508
+
 	Effect "frob_obj"
 }
 ++Receptron 3340 "BugStim"
 {
 	Max 1.10
+
 	Target Me
+
 	Effect "slay"
 }
 +Receptron 3347 "BugStim"
 {
 	Max 1.10
+
 	Target 3508
+
 	Effect "frob_obj"
 }
 ++Receptron 3347 "BugStim"
 {
 	Max 1.10
+
 	Target Me
+
 	Effect "slay"
 }
 +ObjProp 3508 "DesignNote"

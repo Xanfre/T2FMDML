@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Treason and Plot by Nick Dablin (nicked) / Fix barrels and other issues
+//T2 FM: Treason and Plot by Nick Dablin (nicked) / Fix barrels and other issues: miss23.mis.dml
 
 FINGERPRINT
 {
@@ -19,8 +18,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -453
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -178.43, -26.53, -27.64
@@ -32,6 +33,7 @@ FINGERPRINT
 +StimSource 466 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -120,13 +122,16 @@ FINGERPRINT
 	"Heading" 0
 	"Bank" 0
 }
+
 //Create
 +Receptron 185 "PingStim"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -125.93, -1.64, -40.55
@@ -138,6 +143,7 @@ FINGERPRINT
 +StimSource 185 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -159,8 +165,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -121.88, -5.84, -40.5
@@ -172,6 +180,7 @@ FINGERPRINT
 +StimSource 602 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -193,8 +202,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -105.0, 13.29, -54.5
@@ -206,6 +217,7 @@ FINGERPRINT
 +StimSource 215 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life

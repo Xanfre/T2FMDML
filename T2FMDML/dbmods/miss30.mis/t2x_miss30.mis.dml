@@ -70,6 +70,7 @@ ObjProp 726 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 766 "NoFlash"
@@ -86,12 +87,14 @@ ObjProp 726 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 833 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 833 "RotDoor"

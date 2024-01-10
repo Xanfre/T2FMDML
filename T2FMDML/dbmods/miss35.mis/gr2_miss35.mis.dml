@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Garrett to the Rescue 2: The Auction House by Apache / Fixes
+//T2 FM: Garrett to the Rescue 2: The Auction House by Apache / Fixes: miss35.mis.dml
 
 FINGERPRINT
 {
@@ -26,8 +25,10 @@ FINGERPRINT
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent 255
+
 	Effect "add_prop"
 	{
 		"Prop Name" GameName
@@ -90,6 +91,7 @@ ObjProp 251 "Scripts"
 {
 	"" Once
 }
+
 //easter egg
 +ObjProp 244 "TrapFlags"
 {
@@ -103,6 +105,7 @@ ObjProp 599 "Scripts"
 {
 	"Don't Inherit" true
 }
+
 //doors
 +ObjProp 24 "BlockFrob"
 {
@@ -114,6 +117,7 @@ ObjProp 82 "TransDoor"
 {
 	"Blocks Vision?" true
 }
+
 //keys
 ObjProp 250 "HasRefs"
 {
@@ -124,11 +128,13 @@ ObjProp 410 "HasRefs"
 {
 	"" false
 }
+
 //diary (expert only)
 ObjProp 379 "DiffDestroy"
 {
 	"quest var values" 0, 1
 }
+
 //scrolls
 +ObjProp 448 "DesignNote"
 {
@@ -170,5 +176,6 @@ ObjProp 585 "Position"
 {
 	"Script 0" StdBook
 }
+
 //water arrows
 -ObjProp 485 "DeathStage"

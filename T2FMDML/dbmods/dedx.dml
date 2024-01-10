@@ -1,6 +1,5 @@
 DML1
-
-//DromEd Deluxe Game System / Fixes
+//DromEd Deluxe Game System / Fixes: dedx.dml
 
 FINGERPRINT
 {
@@ -10,10 +9,13 @@ FINGERPRINT
 
 //get Death Stage 12 off of the projectile archetype if it is there
 -ObjProp "Projectile" "DeathStage"
+
 //disable M-SilenceEffectX metaproperty
 -ObjProp "M-SilenceEffectX" "Fungus"
+
 //fix fires propagating FireStim even when put out
 -StimSource "Flame" "FireStim"
+
 //prevent M-AlertCapHigh from being added by AlertStimX and ProjStimX indefinitely
 Receptron "Creature" "AlertStimX" 0020010A
 {

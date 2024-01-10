@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Brawl in the Tombs (Remix) by John D. & Dark Assassin / Fixes
+//T2 FM: Brawl in the Tombs (Remix) by John D. & Dark Assassin / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -38,6 +37,7 @@ FINGERPRINT
 +ObjProp 2131 "StackCount"
 {
 }
+
 //doors
 -ObjProp 866 "SlayResult"
 Receptron 866 "FireStim"

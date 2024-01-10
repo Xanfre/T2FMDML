@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Snobs part 2 by Naks / Fixes
+//T2 FM: Snobs part 2 by Naks / Fixes: miss23.mis.dml
 
 FINGERPRINT
 {
@@ -557,6 +556,7 @@ Create -439
 +Link 76 711 "ControlDevice"
 {
 }
+
 //pickpockets
 Link 1556 1558 "Contains"
 {

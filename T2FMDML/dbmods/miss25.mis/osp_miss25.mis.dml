@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Oswald's Patisserie (Contest 1) by Chris Howcroft (Pseudonymouse) / Fixes
+//T2 FM: Oswald's Patisserie (Contest 1) by Chris Howcroft (Pseudonymouse) / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -42,7 +41,9 @@ FINGERPRINT
 {
 	Min 9
 	Max None
+
 	Target Me
+
 	Effect "rem_prop"
 	{
 		"Prop Name" FrobInfo
@@ -51,6 +52,7 @@ FINGERPRINT
 +StimSource 236 "EarthStim"
 {
 	Intensity 10
+
 	Propagator "Contact"
 	{
 		Shape
@@ -73,6 +75,7 @@ FINGERPRINT
 {
 	"1: Tags" ""
 }
+
 //doors
 +Link 14 267 "ScriptParams"
 {
@@ -83,5 +86,6 @@ FINGERPRINT
 	"" Double
 }
 +MetaProp 85 -2420
+
 //rope arrow
 -ObjProp 261 "DeathStage"

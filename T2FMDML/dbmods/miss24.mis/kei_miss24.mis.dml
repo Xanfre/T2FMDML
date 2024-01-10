@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Keeper Investigations (Returning Home) by Steffen Lehnert (intruder) / Fixes
+//T2 FM: Keeper Investigations (Returning Home) by Steffen Lehnert (intruder) / Fixes: miss24.mis.dml
 
 FINGERPRINT
 {
@@ -32,12 +31,14 @@ FINGERPRINT
 {
 	"Script 0" TrapRelay
 }
+
 //doors
 -ObjProp 369 "JointPos"
 ObjProp 1156 "TransDoor"
 {
 	"Open Position" 9.00
 }
+
 //arrows
 -ObjProp 66 "DeathStage"
 -ObjProp 524 "DeathStage"

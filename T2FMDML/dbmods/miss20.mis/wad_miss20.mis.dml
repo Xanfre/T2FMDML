@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: What a Drag! by Philou / Fixes
+//T2 FM: What a Drag! by Philou / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -58,6 +57,7 @@ FINGERPRINT
 {
 	"Enabled" false
 }
+
 //Conversations
 +Link 784 825 "ControlDevice"
 {

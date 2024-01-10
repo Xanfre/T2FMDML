@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Torner Island by Harald Lootze (Haman) / Fixes
+//T2 FM: Torner Island by Harald Lootze (Haman) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -28,6 +27,7 @@ FINGERPRINT
 +ObjProp 754 "Loot"
 {
 }
+
 //arrows
 -ObjProp 151 "DeathStage"
 -ObjProp 247 "DeathStage"

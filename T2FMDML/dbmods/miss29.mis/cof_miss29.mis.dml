@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Children of the Future SE by Mr.Tunnel / Fixes
+//T2 FM: Children of the Future SE by Mr.Tunnel / Fixes: miss29.mis.dml
 
 FINGERPRINT
 {
@@ -39,6 +38,7 @@ Create -445 "Threshold"
 		"1: Tags" ""
 	}
 }
+
 //new objectives
 +ObjProp 201 "DesignNote"
 {
@@ -65,16 +65,19 @@ ObjProp 2103 "Scripts"
 {
 	"Script 1" NVRelayTrap
 }
+
 //tunnel dust
 +ObjProp 282 "NoDrop"
 {
 	"" true
 }
+
 //salvador's golden dice
 +ObjProp 1958 "NoDrop"
 {
 	"" true
 }
+
 //chests
 -ObjProp 1140 "StTweqLock"
 -ObjProp 2291 "PhysType"
@@ -95,6 +98,7 @@ ObjProp 2336 "Position"
 {
 	"Type" OBB
 }
+
 //cage
 +ObjProp 2329 "BlockFrob"
 {
@@ -110,6 +114,7 @@ ObjProp 2336 "Position"
 +ObjProp 2330 "PhysCanMant"
 {
 }
+
 //junk objects
 +ObjProp 567 "InvType"
 {
@@ -119,6 +124,7 @@ ObjProp 2336 "Position"
 {
 	"" Junk
 }
+
 //doors
 -ObjProp 2593 "JointPos"
 +ObjProp 822 "Material Tags"
@@ -151,6 +157,7 @@ ObjProp 1451 "RotDoor"
 {
 	"" Double
 }
+
 //keys
 +ObjProp 91 "SlayResult"
 {
@@ -167,6 +174,7 @@ ObjProp 1451 "RotDoor"
 +ObjProp 2292 "SlayResult"
 {
 }
+
 //mantling
 +ObjProp 1995 "PhysCanMant"
 {

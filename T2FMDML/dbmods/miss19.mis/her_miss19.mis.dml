@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Guard House (Heretic) by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: The Guard House (Heretic) by Terry DeLaney (Ricebug) / Fixes: miss19.mis.dml
 
 FINGERPRINT
 {
@@ -35,12 +34,14 @@ ObjProp 578 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 8 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 8 "FrobInfo"

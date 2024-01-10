@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Haddur by Turi Robert / Fixes
+//T2 FM: Haddur by Turi Robert / Fixes: miss26.mis.dml
 
 FINGERPRINT
 {
@@ -113,19 +112,24 @@ FINGERPRINT
 {
 	Min 5
 	Max 10
+
 	Target 574
+
 	Effect "frob_obj"
 }
 +Receptron 290 "PingStim"
 {
 	Min 2
 	Max 4
+
 	Target 1409
+
 	Effect "frob_obj"
 }
 +StimSource 2427 "PingStim"
 {
 	Intensity 3
+
 	Propagator "Radius"
 	{
 		Life
@@ -146,6 +150,7 @@ FINGERPRINT
 +StimSource 241 "PingStim"
 {
 	Intensity 8
+
 	Propagator "Radius"
 	{
 		Life
@@ -300,6 +305,7 @@ Create -36 "EnableTPKV"
 {
 	"Script 0" NVRelayTrap
 }
+
 //AIWatch
 +Link 2281 2281 "AIWatchObj"
 {
@@ -369,8 +375,10 @@ Create -36 "EnableTPKV"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent Source
+
 	Effect "damage"
 	{
 		"Damage Type" 0
@@ -379,6 +387,7 @@ Create -36 "EnableTPKV"
 		"Then Add" -1
 	}
 }
+
 //End
 +ObjProp 485 "FrobInfo"
 {
@@ -407,6 +416,7 @@ Create -36 "EnableTPKV"
 {
 	"" NVRelayTrapOn="ControlDevice"; NVRelayTrapTDest="235"; NVRelayTrapTOn="[10.00]HolyStim";
 }
+
 //fix goal type for goal 0
 Create -36 "Goal0Fix"
 {

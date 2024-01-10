@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Mech Bank (Novice Contest) by Andy Joel (The Pixie) / Fixes
+//T2 FM: Mech Bank (Novice Contest) by Andy Joel (The Pixie) / Fixes: miss19.mis.dml
 
 FINGERPRINT
 {
@@ -66,6 +65,7 @@ FINGERPRINT
 {
 	"" =1:goal_visible_3
 }
+
 //frobinert on sun mask
 +MetaProp 562 "FrobInert"
 +ObjProp 778 "Scripts"

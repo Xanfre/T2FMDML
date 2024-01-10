@@ -1,5 +1,4 @@
 DML1
-
 //T2 FM: From Beneath the Sands by Nick Dablin (nicked) / Fixes: miss30.mis.dml
 
 FINGERPRINT
@@ -78,6 +77,7 @@ FINGERPRINT
 +StimSource 1276 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 1276 "DiffTurnOn"
@@ -220,6 +220,7 @@ Create -199 "SD2"
 +StimSource "SD2" "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp "SD1" "PhysType"
@@ -242,6 +243,7 @@ Create -199 "SD2"
 +StimSource "SD1" "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 1092 "DiffTurnOn"

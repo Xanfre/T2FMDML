@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: City Conflict (part 2) by Silencium18 / Fixes
+//T2 FM: City Conflict (part 2) by Silencium18 / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -35,12 +34,15 @@ FINGERPRINT
 {
 	"" -1:DrSPocketCnt
 }
+
 //secret door
 +MetaProp 165 -2420
+
 //mantling
 +ObjProp 209 "PhysCanMant"
 {
 }
+
 //barrels
 ObjProp 212 "Position"
 {
@@ -50,6 +52,7 @@ ObjProp 213 "Position"
 {
 	"Location" -36.87, 164.87, -5.13
 }
+
 //toolbox
 -ObjProp 268 "PhysType"
 ObjProp 268 "Position"
@@ -60,15 +63,18 @@ ObjProp 268 "Position"
 {
 	"Type" OBB
 }
+
 //DeathStage 12
 -ObjProp 269 "DeathStage"
 -ObjProp 285 "DeathStage"
 -ObjProp 305 "DeathStage"
+
 //information scroll
 +ObjProp 277 "NoDrop"
 {
 	"" true
 }
+
 //bottle
 -Link 318 325 "Contains"
 +Link 318 325 "CreatureAttachment"
@@ -78,6 +84,7 @@ ObjProp 268 "Position"
 +ObjProp 325 "FrobInfo"
 {
 }
+
 //AIs
 +ObjProp 320 "InvRendType"
 {

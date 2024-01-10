@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Shadows in our Blood by Ali Pouladi (Haplo) / Fixes
+//T2 FM: Shadows in our Blood by Ali Pouladi (Haplo) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -248,6 +247,7 @@ ObjProp 61 "Position"
 +StimSource 96 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 96 "Position"

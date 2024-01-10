@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Whispers in the Desert by Nick Dablin (nicked) / Fixes
+//T2 FM: Whispers in the Desert by Nick Dablin (nicked) / Fixes: miss23.mis.dml
 
 FINGERPRINT
 {
@@ -340,6 +339,7 @@ ObjProp 765 "Scripts"
 +StimSource 56 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +Link 56 1070 "ControlDevice"

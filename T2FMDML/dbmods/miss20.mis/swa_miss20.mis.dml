@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Swamped by Aaron Lambert (Sharga) / Fixes
+//T2 FM: Swamped by Aaron Lambert (Sharga) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -19,6 +18,7 @@ FINGERPRINT
 +ObjProp 332 "Loot"
 {
 }
+
 //portcullis
 +ObjProp 717 "PhysCanMant"
 {
@@ -38,12 +38,15 @@ FINGERPRINT
 +ObjProp 770 "PhysCanMant"
 {
 }
+
 //fountain sound
 +Link 686 418 "ControlDevice"
 {
 }
+
 //fire arrow
 -ObjProp 136 "DeathStage"
+
 //secret doors
 +MetaProp 279 -2420
 +MetaProp 508 -2420

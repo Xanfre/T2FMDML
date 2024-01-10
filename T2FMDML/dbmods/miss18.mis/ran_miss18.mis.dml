@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Ranstall Keep by Alex Thomson (Dashjianta) / Fix the crushed zombie
+//T2 FM: Ranstall Keep by Alex Thomson (Dashjianta) / Fix the crushed zombie: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -32,6 +31,7 @@ ObjProp 855 "Position"
 {
 	"AnimS" On
 }
+
 // the portcullises needs to be locked
 +ObjProp 770 "Locked" = true
 +ObjProp 777 "Locked" = true

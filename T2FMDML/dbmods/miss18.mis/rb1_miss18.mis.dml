@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes
+//T2 FM: The Rebellion of the Builder by Shaun M.D. Morin (GORT) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -221,6 +220,7 @@ ObjProp 1929 "AI_Converation"
 	"   Argument 2"[6] ""
 	"   Argument 3"[6] ""
 }
+
 //pickpockets
 Link 1468 1726 "Contains"
 {

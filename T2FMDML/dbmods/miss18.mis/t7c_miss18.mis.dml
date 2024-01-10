@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The 7th Crystal v2 (Act 2) by David Tonkinson (Saturnine) / Fixes
+//T2 FM: The 7th Crystal v2 (Act 2) by David Tonkinson (Saturnine) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -143,12 +142,14 @@ ObjProp 1657 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1819 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Link 1875 1876 "ScriptParams"
@@ -286,6 +287,7 @@ ObjProp 2447 "RotDoor"
 +StimSource 2051 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 2051 "Position"

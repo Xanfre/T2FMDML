@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Merchant's Manor by Nick_UI / Fixes
+//T2 FM: Merchant's Manor by Nick_UI / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -30,6 +29,7 @@ ObjProp 965 "Position"
 {
 	"Location" 533.35, -49.6, 45.7
 }
+
 //doors
 +ObjProp 215 "FrobInfo"
 {
@@ -38,12 +38,14 @@ ObjProp 965 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 528 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 528 "DesignNote"
@@ -65,12 +67,14 @@ ObjProp 965 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 638 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 638 "KeySrc"
@@ -133,6 +137,7 @@ ObjProp 965 "Position"
 +ObjProp 947 "FrobInfo"
 {
 }
+
 //keys
 +ObjProp 967 "CombineType"
 {
@@ -147,6 +152,7 @@ ObjProp 965 "Position"
 	"RegionMask" 1
 	"LockID" 16
 }
+
 //junk objects
 +ObjProp 15 "FrobInfo"
 {
@@ -155,6 +161,7 @@ ObjProp 965 "Position"
 {
 	"" Junk
 }
+
 //moneybox / tiara
 +Link 335 989 "ControlDevice"
 {
@@ -170,18 +177,22 @@ ObjProp 965 "Position"
 {
 	"Script 0" NVRemovePropertyTrap
 }
+
 //table
 +ObjProp 349 "RenderType"
 {
 	"" Not Rendered
 }
+
 //banner
 +ObjProp 472 "BlockFrob"
 {
 	"" true
 }
+
 //chest
 -ObjProp 489 "Locked"
+
 //gaslight
 +ObjProp 847 "FrobInfo"
 {
@@ -190,11 +201,13 @@ ObjProp 847 "AnimLight"
 {
 	"Mode" zero brightness
 }
+
 //secret door button
 +ObjProp 1161 "PickDist"
 {
 	"" 5.00
 }
+
 //lens schematics
 +ObjProp 1116 "NoDrop"
 {
@@ -204,6 +217,7 @@ ObjProp 847 "AnimLight"
 {
 	"" Name_schematics: "Lens schematics"
 }
+
 //lens prototype
 +ObjProp 1236 "GameName"
 {

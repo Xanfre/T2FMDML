@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: TTGM: Making Tracks by Steven Hindley (Belboz) / Fixes
+//T2 FM: TTGM: Making Tracks by Steven Hindley (Belboz) / Fixes: miss23.mis.dml
 
 FINGERPRINT
 {
@@ -29,24 +28,28 @@ ObjProp 2016 "CfgTweqEmit"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1457 "HolyStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1457 "LightBright"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1457 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 1457 "NoFlash"
@@ -57,12 +60,14 @@ ObjProp 2016 "CfgTweqEmit"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 464 "KOGas"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 464 "NoFlash"

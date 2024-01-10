@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Stones and Glass Houses (Late Payment) by Robin Collier (R Soul) / Fixes
+//T2 FM: Stones and Glass Houses (Late Payment) by Robin Collier (R Soul) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -29,5 +28,6 @@ ObjProp 1157 "RotDoor"
 {
 	"Open Angle" 89
 }
+
 //pickpockets
 -Link 49 102 "ControlDevice"

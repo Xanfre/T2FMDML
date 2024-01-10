@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Throne Room by T. Nagy Levente / Fixes
+//T2 FM: Throne Room by T. Nagy Levente / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -25,11 +24,13 @@ FINGERPRINT
 {
 	"" =1:goal_irreversible_0
 }
+
 //paper
 +ObjProp 224 "NoDrop"
 {
 	"" true
 }
+
 //unused books
 +ObjProp 28 "FrobInfo"
 {
@@ -40,6 +41,7 @@ FINGERPRINT
 +ObjProp 30 "FrobInfo"
 {
 }
+
 //unused door
 +ObjProp 32 "FrobInfo"
 {

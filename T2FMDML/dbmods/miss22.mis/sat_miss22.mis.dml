@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Saints and Thieves by Jani Saarijärvi (Spitter) / Fixes
+//T2 FM: Saints and Thieves by Jani Saarijärvi (Spitter) / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -46,11 +45,14 @@ FINGERPRINT
 {
 	"" =1:goal_state_10
 }
+
 //DeathStage 12
 -ObjProp 111 "DeathStage"
 -ObjProp 1946 "DeathStage"
+
 //storage key
 -ObjProp 706 "PhysType"
+
 //door
 ObjProp 1453 "RotDoor"
 {

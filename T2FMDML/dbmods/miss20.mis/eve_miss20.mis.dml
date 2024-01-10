@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Evendale (Novice Contest) by Rob Strain (Random_Taffer) / Fixes
+//T2 FM: Evendale (Novice Contest) by Rob Strain (Random_Taffer) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -54,6 +53,7 @@ FINGERPRINT
 {
 	"" =1:goal_state_4
 }
+
 //mantling
 +ObjProp 23 "PhysCanMant"
 {
@@ -82,11 +82,13 @@ FINGERPRINT
 +ObjProp 573 "PhysCanMant"
 {
 }
+
 //arrows
 -ObjProp 27 "DeathStage"
 -ObjProp 119 "DeathStage"
 -ObjProp 124 "DeathStage"
 -ObjProp 341 "DeathStage"
+
 //safe
 -ObjProp 78 "PhysType"
 ObjProp 78 "Position"
@@ -97,6 +99,7 @@ ObjProp 78 "Position"
 {
 	"Type" OBB
 }
+
 //doors
 ObjProp 117 "RotDoor"
 {
@@ -119,6 +122,7 @@ ObjProp 302 "RotDoor"
 {
 	"" true
 }
+
 //torches
 +ObjProp 162 "FrobInfo"
 {
@@ -132,12 +136,14 @@ ObjProp 302 "RotDoor"
 +ObjProp 224 "FrobInfo"
 {
 }
+
 //poster scroll
 ObjProp 172 "Position"
 {
 	"Location" 500.69, 382.024, 495.316
 	"Bank" 4000
 }
+
 //switch
 -ObjProp 260 "PhysType"
 ObjProp 260 "Position"
@@ -148,6 +154,7 @@ ObjProp 260 "Position"
 {
 	"Type" OBB
 }
+
 //alexander's last notes
 -ObjProp 268 "FrobInfo"
 +ObjProp 268 "FrobInfo"
@@ -173,6 +180,7 @@ ObjProp 268 "GameName"
 {
 	"Script 0" TrapDestroy
 }
+
 //darts
 -ObjProp 338 "PhysType"
 +ObjProp 338 "GameName"
@@ -218,6 +226,7 @@ ObjProp 268 "GameName"
 {
 	"" Name_ThrowingDart: "Throwing Dart"
 }
+
 //keys
 +ObjProp 360 "SlayResult"
 {
@@ -225,6 +234,7 @@ ObjProp 268 "GameName"
 +ObjProp 566 "SlayResult"
 {
 }
+
 //wassergibt
 +ObjProp 421 "GameName"
 {
@@ -237,6 +247,7 @@ ObjProp 268 "GameName"
 {
 	"Script 0" TrigSlain
 }
+
 //dagger
 +ObjProp 422 "GameName"
 {
@@ -246,10 +257,12 @@ ObjProp 268 "GameName"
 {
 	"1: Tags" ""
 }
+
 //trickster
 +Receptron 554 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }

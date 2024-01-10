@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Zealot's Hollow (NewDark 64 Cubed Contest) by Christopher Lafond (Xorak) / Fixes
+//T2 FM: Zealot's Hollow (NewDark 64 Cubed Contest) by Christopher Lafond (Xorak) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -98,6 +97,7 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "SetQvar"
 	{
 		"Quest Variable" goal_state_9
@@ -133,12 +133,14 @@ FINGERPRINT
 +Link 2538 2535 "ControlDevice"
 {
 }
+
 //AIs
 -ObjProp 2118 "CretPose"
 ObjProp 2226 "Position"
 {
 	"Location" 86.3, 91.337, 81.5
 }
+
 //doors
 +ObjProp 1951 "RotDoor"
 {
@@ -164,6 +166,7 @@ ObjProp 2226 "Position"
 {
 	"" 15.00
 }
+
 //chests
 -ObjProp 905 "PhysType"
 ObjProp 905 "Position"
@@ -175,6 +178,7 @@ ObjProp 905 "Position"
 	"Type" OBB
 }
 -ObjProp 1765 "StTweqLock"
+
 //junk
 +ObjProp 1500 "InvType"
 {

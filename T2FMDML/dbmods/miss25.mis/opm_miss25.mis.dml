@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Obligatory Prison Mission by Jonathan Seymour (Maver1ck) / Fixes
+//T2 FM: Obligatory Prison Mission by Jonathan Seymour (Maver1ck) / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -24,18 +23,22 @@ ObjProp 507 "KeySrc"
 {
 	"LockID" 6
 }
+
 //combat bot key
 +ObjProp 736 "RenderType"
 {
 	"" Not Rendered
 }
+
 //speed potion
 ObjProp 1028 "Position"
 {
 	"Location" 109.1, 209.407, 1.68
 }
+
 //purse (secret)
 -ObjProp 1163 "DarkStat"
+
 //loot (normal)
 +ObjProp 1075 "DiffDestroy"
 {

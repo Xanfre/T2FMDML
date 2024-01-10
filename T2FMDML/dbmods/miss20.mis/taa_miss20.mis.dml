@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Ashen Age by Marcus Zuppinger (Sliptip) / Fixes
+//T2 FM: The Ashen Age by Marcus Zuppinger (Sliptip) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -79,30 +78,35 @@ ObjProp 66 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 99 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 100 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 100 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 144 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 144 "RotDoor"
@@ -146,12 +150,14 @@ ObjProp 252 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 428 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 443 "RotDoor"
@@ -223,12 +229,14 @@ ObjProp 858 "StTweqLock"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1037 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 1037 "RotDoor"
@@ -322,6 +330,7 @@ ObjProp 113 "Position"
 +StimSource 115 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 115 "Position"

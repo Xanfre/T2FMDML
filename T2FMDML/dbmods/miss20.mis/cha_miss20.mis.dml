@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Curse of the Hammerites by Henri Havulinna (Henri The Hammer) / Fix various misplaced objects
+//T2 FM: Curse of the Hammerites by Henri Havulinna (Henri The Hammer) / Fix various misplaced objects: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -68,6 +67,7 @@ FINGERPRINT
 	"Heading" 4000
 	"Bank" 0
 }
+
 //Footlocker
 -ObjProp 299 "PhysType"
 +ObjProp 299 "PhysType"
@@ -93,6 +93,7 @@ FINGERPRINT
 {
 	"" 0.8,1.0,1.0
 }
+
 //cavetab
 -ObjProp 147 "PhysType"
 +ObjProp 147 "PhysType"
@@ -114,6 +115,7 @@ FINGERPRINT
 	"Type" OBB
 	"# Submodels" 6
 }
+
 //Zombie
 -ObjProp 199 "Position"
 +ObjProp 199 "Position"
@@ -123,6 +125,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
+
 //Nugget
 -ObjProp 225 "Position"
 +ObjProp 225 "Position"
@@ -256,6 +259,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
+
 //Fireplace
 -ObjProp 524 "PhysType"
 +ObjProp 524 "PhysType"
@@ -343,6 +347,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" e33
 }
+
 //no swords
 -ObjProp 826 "PhysType"
 +ObjProp 826 "PhysType"

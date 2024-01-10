@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Curiosity by Demonreaver / Fixes
+//T2 FM: Curiosity by Demonreaver / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -58,10 +57,12 @@ FINGERPRINT
 {
 	"Script 0" TrapDestroy
 }
+
 //arrows
 -ObjProp 85 "DeathStage"
 -ObjProp 86 "DeathStage"
 -ObjProp 90 "DeathStage"
+
 //doors
 -ObjProp 132 "JointPos"
 -ObjProp 141 "JointPos"
@@ -131,6 +132,7 @@ ObjProp 1609 "RotDoor"
 {
 	"Clockwise?" false
 }
+
 //mantling
 +ObjProp 163 "PhysCanMant"
 {
@@ -198,6 +200,7 @@ ObjProp 1609 "RotDoor"
 +ObjProp 1576 "PhysCanMant"
 {
 }
+
 //loot
 -ObjProp 236 "ModelName"
 +ObjProp 236 "Scale"
@@ -216,6 +219,7 @@ ObjProp 1609 "RotDoor"
 -ObjProp 326 "FrobInfo"
 -ObjProp 369 "FrobInfo"
 -ObjProp 423 "FrobInfo"
+
 //AIs
 -ObjProp 266 "PhysType"
 +ObjProp 266 "PhysType"
@@ -251,6 +255,7 @@ ObjProp 1609 "RotDoor"
 	"Type" Alternate Bitmap
 	"Resource" malesvca
 }
+
 //victrolas
 +ObjProp 1281 "FrobInfo"
 {

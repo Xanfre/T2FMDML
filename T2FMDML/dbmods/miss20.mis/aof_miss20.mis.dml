@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: An Old Friend (Thief Anniversary Contest) by Lost Soul / Fixes
+//T2 FM: An Old Friend (Thief Anniversary Contest) by Lost Soul / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -66,11 +65,13 @@ Create -2086 "GoalFix"
 {
 	"" =1:goal_state_2
 }
+
 //doors
 +Receptron 4 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +MetaProp 69 -2420
@@ -85,6 +86,7 @@ Create -2086 "GoalFix"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +MetaProp 329 -2420
@@ -92,12 +94,14 @@ Create -2086 "GoalFix"
 {
 	"" Double
 }
+
 //arrows
 -ObjProp 7 "DeathStage"
 -ObjProp 8 "DeathStage"
 -ObjProp 86 "DeathStage"
 -ObjProp 172 "DeathStage"
 -ObjProp 299 "DeathStage"
+
 //levers
 -Link 78 79 "ControlDevice"
 -Link 79 78 "ControlDevice"
@@ -105,6 +109,7 @@ Create -2086 "GoalFix"
 {
 	"FrobProxyMask" AllowDirect
 }
+
 //AIs
 +ObjProp 162 "AI_Hearing"
 {
@@ -123,6 +128,7 @@ Create -2086 "GoalFix"
 	"Type" Alternate Bitmap
 	"Resource" cnoblem2
 }
+
 //chest
 -ObjProp 201 "PhysType"
 ObjProp 201 "Position"
@@ -137,26 +143,31 @@ ObjProp 201 "Position"
 {
 	"" 0.9, 0.9, 0.9
 }
+
 //unused book
 +ObjProp 218 "FrobInfo"
 {
 }
+
 //bafford's sceptre
 +ObjProp 442 "NoDrop"
 {
 	"" true
 }
+
 //key
 -Link 456 459 "CreatureAttachment"
 +Link 456 459 "Contains"
 {
 	"" Belt
 }
+
 //coin
 ObjProp 493 "Position"
 {
 	"Location" 523.73, 518.875, 498.574
 }
+
 //painting
 ObjProp 554 "CollisionType"
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Mech Angelo by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: Mech Angelo by Terry DeLaney (Ricebug) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -82,6 +81,7 @@ FINGERPRINT
 +StimSource 509 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 801 "Scale"

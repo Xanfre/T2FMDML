@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Simple Enough by Tom N. Harris (Telliamed) / Fixes
+//T2 FM: Simple Enough by Tom N. Harris (Telliamed) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -20,6 +19,7 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 15 "RotDoor"
@@ -48,11 +48,13 @@ ObjProp 25 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 779 "PhysCanMant"
 {
 }
+
 //watering can
 -ObjProp 652 "PhysType"
 ObjProp 652 "Position"
@@ -63,9 +65,11 @@ ObjProp 652 "Position"
 {
 	"Type" Sphere
 }
+
 //chest key
 +ObjProp 1116 "SlayResult"
 {
 }
+
 //pickpocketing
 -Link 1170 1169 "ControlDevice"

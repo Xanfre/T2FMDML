@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sir William's Keep by Ville Paavolainen (Wille) / Fixes
+//T2 FM: Sir William's Keep by Ville Paavolainen (Wille) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -40,11 +39,13 @@ FINGERPRINT
 {
 	"" =0:goal_visible_6
 }
+
 //doors
 +Receptron 141 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 165 "BlockFrob"
@@ -76,6 +77,7 @@ FINGERPRINT
 {
 	"" true
 }
+
 //secret
 +ObjProp 129 "PickDist"
 {
@@ -93,9 +95,11 @@ ObjProp 129 "StTweqJoints"
 {
 	"" 2.00
 }
+
 //candlesticks
 -ObjProp 587 "FrobInfo"
 -ObjProp 588 "FrobInfo"
+
 //keys
 +ObjProp 740 "SlayResult"
 {
@@ -103,11 +107,13 @@ ObjProp 129 "StTweqJoints"
 +ObjProp 830 "SlayResult"
 {
 }
+
 //AIs
 +ObjProp 959 "AI_Hearing"
 {
 	"" Below Average
 }
+
 //moneybox
 -ObjProp 995 "PhysType"
 ObjProp 995 "Position"

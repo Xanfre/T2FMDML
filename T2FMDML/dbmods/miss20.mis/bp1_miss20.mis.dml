@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Book of Prophecy: Dead Letter Box by Schattengilde / Fixes
+//T2 FM: The Book of Prophecy: Dead Letter Box by Schattengilde / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -47,6 +46,7 @@ FINGERPRINT
 {
 	"" false
 }
+
 //barrels
 +ObjProp 720 "DesignNote"
 {
@@ -64,6 +64,7 @@ FINGERPRINT
 {
 	"Script 0" T2FMDMLSimReposOfst
 }
+
 //fix flames escaping fireplace
 ObjProp 269 "PGLaunchInfo"
 {
@@ -74,6 +75,7 @@ ObjProp 262 "PGLaunchInfo"
 {
 	"Max time" 1.00
 }
+
 //fix goal 4
 +ObjProp 1169 "Scripts"
 {

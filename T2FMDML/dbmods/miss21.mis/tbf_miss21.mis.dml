@@ -1,5 +1,4 @@
 DML1
-
 //T2 FM: The Black Frog (The Portrait) by Gaetane / Fixes: miss21.mis.dml
 
 FINGERPRINT
@@ -196,6 +195,7 @@ ObjProp 383 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 929 "RotDoor"
@@ -207,6 +207,7 @@ ObjProp 929 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 1004 "RotDoor"
@@ -519,6 +520,7 @@ ObjProp 1453 "Position"
 +StimSource 1694 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 1694 "Position"

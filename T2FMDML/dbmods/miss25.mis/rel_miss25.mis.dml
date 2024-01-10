@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Relic (Contest 5) by Timon / Fixes
+//T2 FM: The Relic (Contest 5) by Timon / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -22,6 +21,7 @@ FINGERPRINT
 +ObjProp 549 "PhysCanMant"
 {
 }
+
 //goals
 +Link 460 1380 "ControlDevice"
 {
@@ -60,6 +60,7 @@ FINGERPRINT
 +Link 371 1198 "ControlDevice"
 {
 }
+
 //doors
 +MetaProp 35 -2420
 +ObjProp 48 "BlockFrob"
@@ -99,18 +100,21 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1048 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 1182 "BlockFrob"
 {
 	"" true
 }
+
 //quest items
 +ObjProp 117 "FrobInfo"
 {
@@ -125,8 +129,10 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -155,8 +161,10 @@ ObjProp 843 "FrobInfo"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -166,8 +174,10 @@ ObjProp 843 "FrobInfo"
 {
 	Min None
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -182,8 +192,10 @@ ObjProp 843 "FrobInfo"
 {
 	Min None
 	Max None
+
 	Target 843
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -193,10 +205,12 @@ ObjProp 843 "FrobInfo"
 {
 	"World Action" Move
 }
+
 //arrows
 -ObjProp 113 "DeathStage"
 -ObjProp 614 "DeathStage"
 -ObjProp 744 "DeathStage"
+
 //painting
 -ObjProp 119 "PhysType"
 ObjProp 119 "Position"
@@ -207,6 +221,7 @@ ObjProp 119 "Position"
 {
 	"Type" OBB
 }
+
 //tomb button
 +ObjProp 1112 "RenderType"
 {

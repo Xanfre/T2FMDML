@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sisterhood of Azura, part 1: Estheridge by Ben Hur (And) / Fixes
+//T2 FM: Sisterhood of Azura, part 1: Estheridge by Ben Hur (And) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -42,6 +41,7 @@ ObjProp 1427 "MeshAttach"
 	"z angle (0-65535)" -16000
 	"offset" 0.8, -0.8, 0
 }
+
 //loot
 -ObjProp 652 "FrobInfo"
 +ObjProp 652 "FrobInfo"
@@ -80,6 +80,7 @@ ObjProp 1427 "MeshAttach"
 	"Pitch" 0
 	"Bank" 0
 }
+
 //objects
 -Link 39 38 "AIAttack"
 +Link 38 39 "Contains"

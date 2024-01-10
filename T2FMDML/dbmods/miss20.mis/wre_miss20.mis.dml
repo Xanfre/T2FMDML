@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Wicked Relics by Katy Fortner (Kfort) / Fixes
+//T2 FM: Wicked Relics by Katy Fortner (Kfort) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -191,6 +190,7 @@ ObjProp 2468 "TrapQVar"
 {
 	"" >4:DrSKnockout
 }
+
 //shadowjack
 +ObjProp 63 "Scripts"
 {
@@ -199,6 +199,7 @@ ObjProp 2468 "TrapQVar"
 +Link 2750 63 "ControlDevice"
 {
 }
+
 //fireplaces
 ObjProp 166 "PGLaunchInfo"
 {
@@ -218,6 +219,7 @@ ObjProp 173 "PGLaunchInfo"
 {
 	"Max time" 2.00
 }
+
 //doors, windows, banners
 +MetaProp 199 -5661
 +MetaProp 412 -5661
@@ -232,8 +234,10 @@ ObjProp 173 "PGLaunchInfo"
 +Receptron 253 "EarthStim"
 {
 	Max None
+
 	Target Me
 	Agent -2425
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -242,8 +246,10 @@ ObjProp 173 "PGLaunchInfo"
 ++Receptron 253 "EarthStim"
 {
 	Max None
+
 	Target 2155
 	Agent -2418
+
 	Effect "add_prop"
 	{
 		"Prop Name" Material Tags
@@ -252,6 +258,7 @@ ObjProp 173 "PGLaunchInfo"
 +StimSource 253 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 275 "Scale"
@@ -382,6 +389,7 @@ ObjProp 3661 "RotDoor"
 {
 	"Open Angle" 89
 }
+
 //AIs
 +ObjProp 208 "InvRendType"
 {
@@ -428,6 +436,7 @@ ObjProp 932 "InvRendType"
 	"Type" Alternate Bitmap
 	"Resource" cnoblem3
 }
+
 //switches
 +ObjProp 256 "PickDist"
 {
@@ -488,6 +497,7 @@ ObjProp 3021 "Scripts"
 	"Script 1" ""
 	"Script 2" ""
 }
+
 //mantling
 +ObjProp 1386 "PhysCanMant"
 {

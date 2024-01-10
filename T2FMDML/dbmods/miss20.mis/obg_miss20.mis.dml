@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Ominous Bequest Gold by Renzo Thonen (Eshaktaar) / Fixes
+//T2 FM: Ominous Bequest Gold by Renzo Thonen (Eshaktaar) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -60,24 +59,28 @@ ObjProp 491 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 783 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 796 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 797 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 868 "RotDoor"
@@ -144,6 +147,7 @@ ObjProp 1556 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 1818 "Scale"
@@ -464,6 +468,7 @@ ObjProp 2317 "RotDoor"
 +StimSource 300 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 300 "DiffTurnOn"
@@ -569,12 +574,14 @@ ObjProp 1879 "Position"
 +Receptron 1654 "PokeStim"
 {
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1845 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 1845 "AI_IdlRetOrg"

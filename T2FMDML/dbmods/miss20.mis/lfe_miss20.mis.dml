@@ -1,5 +1,4 @@
 DML1
-
 //T2 FM: Lost in the Far Edges by Soul Tear / Fixes: miss20.mis.dml
 
 FINGERPRINT
@@ -295,6 +294,7 @@ ObjProp 925 "Position"
 +StimSource 930 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 930 "PhysCanMant"

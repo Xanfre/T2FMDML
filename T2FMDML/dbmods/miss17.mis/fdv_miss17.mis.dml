@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: La Fete du Voleur (The Thief's Christmas Eve) by Jordan Maf (FireMage) / Fixes
+//T2 FM: La Fete du Voleur (The Thief's Christmas Eve) by Jordan Maf (FireMage) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -38,6 +37,7 @@ Receptron 433 "EarthStim" 00210001
 }
 StimSource 473 "EarthStim"
 {
+
 	Propagator "Radius"
 	{
 		Life
@@ -112,6 +112,7 @@ ObjProp 863 "TrapQVar"
 {
 	"" =1:goal_state_4
 }
+
 //AIs
 +ObjProp 224 "InvRendType"
 {
@@ -173,6 +174,7 @@ ObjProp 863 "TrapQVar"
 	"Type" Alternate Bitmap
 	"Resource" cnoblem1
 }
+
 //doors
 ObjProp 393 "RotDoor"
 {
@@ -188,10 +190,12 @@ ObjProp 393 "Position"
 	"Type" OBB
 }
 +MetaProp 1106 -5661
+
 //quest item
 +ObjProp 887 "StackCount"
 {
 }
+
 //gold hammer
 -ObjProp 901 "PhysType"
 ObjProp 901 "Position"
@@ -202,6 +206,7 @@ ObjProp 901 "Position"
 {
 	"Type" Sphere
 }
+
 //arrows
 -ObjProp 907 "PhysType"
 -ObjProp 908 "PhysType"

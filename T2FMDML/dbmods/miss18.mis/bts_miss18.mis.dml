@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Breaking the Stone (Part 1) by Jeremy Catlin (HipBreaker) / Fixes
+//T2 FM: Breaking the Stone (Part 1) by Jeremy Catlin (HipBreaker) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -76,6 +75,7 @@ ObjProp 1485 "Position"
 +StimSource 2842 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +Link 2842 2841 "ScriptParams"

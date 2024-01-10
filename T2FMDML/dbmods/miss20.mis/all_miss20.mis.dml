@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: All Torc (Welcome to Robington) by Robin Collier (R Soul) / Fixes
+//T2 FM: All Torc (Welcome to Robington) by Robin Collier (R Soul) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -28,6 +27,7 @@ FINGERPRINT
 {
 	"" =735:goal_loot_8
 }
+
 //pickpocketing
 ObjProp 1776 "TrapQVar"
 {

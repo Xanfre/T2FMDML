@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Visit for the Knights by Max Breuillot (DarkMax) / Fixes
+//T2 FM: A Visit for the Knights by Max Breuillot (DarkMax) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -35,10 +34,12 @@ FINGERPRINT
 {
 	"" true
 }
+
 //arrows
 -ObjProp 82 "DeathStage"
 -ObjProp 244 "DeathStage"
 -ObjProp 248 "DeathStage"
+
 //misplaced objects
 ObjProp 757 "Position"
 {
@@ -53,6 +54,7 @@ ObjProp 799 "Position"
 {
 	"Type" OBB
 }
+
 //banner
 +ObjProp 1455 "BlockFrob"
 {

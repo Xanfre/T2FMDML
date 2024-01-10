@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Mountain Monastery by Christine Schneider (incl. rework by Soul Tear) / Fixes
+//T2 FM: The Mountain Monastery by Christine Schneider (incl. rework by Soul Tear) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -24,13 +23,16 @@ FINGERPRINT
 +ObjProp 1573 "DarkStat"
 {
 }
+
 //high priest
 +Receptron 1557 "EarthStim"
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -44,6 +46,7 @@ FINGERPRINT
 {
 	"Script 2" NVRelayTrap
 }
+
 //high priest's notes
 +ObjProp 1631 "DesignNote"
 {
@@ -54,6 +57,7 @@ FINGERPRINT
 	"Script 1" NVRelayTrap
 	"Script 2" NVRelayTrap2
 }
+
 //doors
 +Link 51 52 "ScriptParams"
 {
@@ -63,76 +67,89 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 496 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 668 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 668 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 701 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 701 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 727 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 727 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 986 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 986 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1029 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +MetaProp 1124 -2420
 +MetaProp 1560 -2420
+
 //arrows (original)
 -ObjProp 39 "DeathStage"
 -ObjProp 443 "DeathStage"
 -ObjProp 557 "DeathStage"
 -ObjProp 577 "DeathStage"
 -ObjProp 1065 "DeathStage"
+
 //junk
 +ObjProp 287 "InvType"
 {

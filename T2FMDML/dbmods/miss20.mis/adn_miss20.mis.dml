@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Dark Night by JewelThief / Fixes
+//T2 FM: A Dark Night by JewelThief / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -47,6 +46,7 @@ ObjProp 320 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 95 "Position"
@@ -149,6 +149,7 @@ ObjProp 106 "Position"
 +StimSource 197 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 322 "Material Tags"
@@ -156,6 +157,7 @@ ObjProp 106 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 577 "StTweqLock"

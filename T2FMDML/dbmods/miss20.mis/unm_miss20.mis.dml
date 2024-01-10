@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: UnMasked by Sonnich Brinch Nielsen (Nielsen74) / Fixes
+//T2 FM: UnMasked by Sonnich Brinch Nielsen (Nielsen74) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -58,6 +57,7 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 16 "Scale"
@@ -73,6 +73,7 @@ ObjProp 16 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 102 "Scale"
@@ -110,6 +111,7 @@ ObjProp 195 "RotDoor"
 +StimSource 515 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 515 "Scale"
@@ -120,6 +122,7 @@ ObjProp 515 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 605 "Scale"

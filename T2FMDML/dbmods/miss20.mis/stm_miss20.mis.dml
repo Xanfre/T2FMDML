@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Strange Meeting by Sven Grunig (Ar-Zimrathon) / Fixes
+//T2 FM: Strange Meeting by Sven Grunig (Ar-Zimrathon) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -19,8 +18,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -3306
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -62.3167,24.203,-29.731
@@ -32,6 +33,7 @@ FINGERPRINT
 +StimSource 129 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -68,8 +70,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1380
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -55.5177,-13.6047,-23.7731
@@ -81,6 +85,7 @@ FINGERPRINT
 +StimSource 80 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life

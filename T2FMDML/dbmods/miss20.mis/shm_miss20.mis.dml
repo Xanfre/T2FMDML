@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Shadow Moon (Classic Contest) by P Forth / Fixes
+//T2 FM: Shadow Moon (Classic Contest) by P Forth / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -89,6 +88,7 @@ Create -5317 "FG2"
 {
 	"" =0:goal_type_4
 }
+
 //toolbox
 -ObjProp 197 "PhysType"
 ObjProp 197 "Position"
@@ -99,6 +99,7 @@ ObjProp 197 "Position"
 {
 	"Type" OBB
 }
+
 //doors
 +ObjProp 254 "FrobInfo"
 {
@@ -111,6 +112,7 @@ ObjProp 197 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 654 "TransDoor"
@@ -119,10 +121,12 @@ ObjProp 654 "TransDoor"
 }
 -ObjProp 722 "JointPos"
 -ObjProp 911 "JointPos"
+
 //key
 +ObjProp 577 "SlayResult"
 {
 }
+
 //switch
 -Link 585 583 "ControlDevice"
 +Link 585 852 "ControlDevice"
@@ -158,6 +162,7 @@ ObjProp 705 "StTweqJoints"
 {
 	"Script 0" TrapRelay
 }
+
 //fireplace
 -ObjProp 656 "PhysType"
 ObjProp 656 "Position"
@@ -168,6 +173,7 @@ ObjProp 656 "Position"
 {
 	"Type" OBB
 }
+
 //gold stack
 ObjProp 1066 "Position"
 {

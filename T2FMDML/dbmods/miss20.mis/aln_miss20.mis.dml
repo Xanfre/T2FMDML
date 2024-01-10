@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Lovely Night by Caradavin / Fixes
+//T2 FM: Lovely Night by Caradavin / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -41,6 +40,7 @@ FINGERPRINT
 	"Heading" 0
 	"Pitch" c485
 }
+
 //secret count
 -ObjProp 17 "DarkStat"
 -ObjProp 200 "DarkStat"

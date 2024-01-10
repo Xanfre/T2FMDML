@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sunset in Darkdale by P Forth / Fix walls to stop players climbing out of map and barrels
+//T2 FM: Sunset in Darkdale by P Forth / Fix walls to stop players climbing out of map and barrels: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -49,8 +48,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 408.35, 393.89, 493.90
@@ -62,6 +63,7 @@ FINGERPRINT
 +StimSource 22 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -83,8 +85,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 512.48, 489.35, 494.90
@@ -96,6 +100,7 @@ FINGERPRINT
 +StimSource 24 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -177,8 +182,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 477.53, 241.89, 474.90
@@ -190,6 +197,7 @@ FINGERPRINT
 +StimSource 182 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -211,8 +219,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 477.53, 246.09, 474.90
@@ -224,6 +234,7 @@ FINGERPRINT
 +StimSource 175 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -245,8 +256,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 477.33, 195.89, 474.90
@@ -258,6 +271,7 @@ FINGERPRINT
 +StimSource 176 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -279,8 +293,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 477.53, 190.89, 474.90
@@ -292,6 +308,7 @@ FINGERPRINT
 +StimSource 181 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -309,13 +326,16 @@ FINGERPRINT
 		}
 	}
 }
+
 //Blocking fences
 +Receptron 177 "PingStim"
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 			"Position" 526.98, 256.04, 488.0
@@ -327,6 +347,7 @@ FINGERPRINT
 +StimSource 177 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -348,8 +369,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 246.04, 488.0
@@ -361,6 +384,7 @@ FINGERPRINT
 +StimSource 180 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -382,8 +406,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 236.04, 488.0
@@ -395,6 +421,7 @@ FINGERPRINT
 +StimSource 303 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -416,8 +443,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 226.04, 488.0
@@ -429,6 +458,7 @@ FINGERPRINT
 +StimSource 281 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -450,8 +480,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 216.04, 488.0
@@ -463,6 +495,7 @@ FINGERPRINT
 +StimSource 302 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -484,8 +517,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 206.04, 488.0
@@ -497,6 +532,7 @@ FINGERPRINT
 +StimSource 276 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -518,8 +554,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 196.04, 488.0
@@ -531,6 +569,7 @@ FINGERPRINT
 +StimSource 1444 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -552,8 +591,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 186.04, 488.0
@@ -565,6 +606,7 @@ FINGERPRINT
 +StimSource 301 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -586,8 +628,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 176.04, 488.0
@@ -599,6 +643,7 @@ FINGERPRINT
 +StimSource 1445 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -620,8 +665,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 166.04, 488.0
@@ -633,6 +680,7 @@ FINGERPRINT
 +StimSource 280 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -654,8 +702,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 156.04, 488.0
@@ -667,6 +717,7 @@ FINGERPRINT
 +StimSource 275 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -688,8 +739,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 146.04, 488.0
@@ -701,6 +754,7 @@ FINGERPRINT
 +StimSource 1449 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -722,8 +776,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 136.04, 488.0
@@ -735,6 +791,7 @@ FINGERPRINT
 +StimSource 274 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -756,8 +813,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 126.04, 488.0
@@ -769,6 +828,7 @@ FINGERPRINT
 +StimSource 1281 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -790,8 +850,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 116.04, 488.0
@@ -803,6 +865,7 @@ FINGERPRINT
 +StimSource 1282 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -824,8 +887,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 526.98, 106.04, 488.0
@@ -837,6 +902,7 @@ FINGERPRINT
 +StimSource 1209 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -858,8 +924,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 524.0, 100.93, 488.0
@@ -871,6 +939,7 @@ FINGERPRINT
 +StimSource 1210 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -892,8 +961,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 514.0, 100.93, 488.0
@@ -905,6 +976,7 @@ FINGERPRINT
 +StimSource 1211 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -926,8 +998,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 504.0, 100.93, 488.0
@@ -939,6 +1013,7 @@ FINGERPRINT
 +StimSource 1216 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -960,8 +1035,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 494.0, 100.93, 488.0
@@ -973,6 +1050,7 @@ FINGERPRINT
 +StimSource 1215 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -994,8 +1072,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 484.0, 100.93, 488.0
@@ -1007,6 +1087,7 @@ FINGERPRINT
 +StimSource 1213 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1028,8 +1109,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 474.0, 100.93, 488.0
@@ -1041,6 +1124,7 @@ FINGERPRINT
 +StimSource 1280 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1062,8 +1146,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 464.0, 100.93, 488.0
@@ -1075,6 +1161,7 @@ FINGERPRINT
 +StimSource 1214 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1096,8 +1183,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 454.0, 100.93, 488.0
@@ -1109,6 +1198,7 @@ FINGERPRINT
 +StimSource 1218 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1130,8 +1220,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 444.0, 100.93, 488.0
@@ -1143,6 +1235,7 @@ FINGERPRINT
 +StimSource 1217 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1164,8 +1257,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 434.0, 100.93, 488.0
@@ -1177,6 +1272,7 @@ FINGERPRINT
 +StimSource 1212 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1198,8 +1294,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 219.2, 464.2, 488.0
@@ -1211,6 +1309,7 @@ FINGERPRINT
 +StimSource 1167 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1232,8 +1331,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -1430
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 209.2, 464.2, 488.0
@@ -1245,6 +1346,7 @@ FINGERPRINT
 +StimSource 1170 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1266,8 +1368,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 465.531,401.952,494.158
@@ -1279,6 +1383,7 @@ FINGERPRINT
 +StimSource 92 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1315,8 +1420,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 469.038,402.073,493.558
@@ -1328,6 +1435,7 @@ FINGERPRINT
 +StimSource 129 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1364,8 +1472,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 461.015,609.214,500.534
@@ -1377,6 +1487,7 @@ FINGERPRINT
 +StimSource 1155 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1413,8 +1524,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 464.305,609.266,500.354
@@ -1426,6 +1539,7 @@ FINGERPRINT
 +StimSource 1269 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1462,8 +1576,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 475.888,620.179,500.654
@@ -1475,6 +1591,7 @@ FINGERPRINT
 +StimSource 1316 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1511,8 +1628,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 482.16,619.9,500.354
@@ -1524,6 +1643,7 @@ FINGERPRINT
 +StimSource 1130 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1560,8 +1680,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 530.96,592.912,500.354
@@ -1573,6 +1695,7 @@ FINGERPRINT
 +StimSource 1328 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1609,8 +1732,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 531.201,589.084,500.354
@@ -1622,6 +1747,7 @@ FINGERPRINT
 +StimSource 1296 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1658,8 +1784,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 278.961,572.153,475.414
@@ -1671,6 +1799,7 @@ FINGERPRINT
 +StimSource 1056 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1707,8 +1836,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 341.525,603.281,476.014
@@ -1720,6 +1851,7 @@ FINGERPRINT
 +StimSource 1075 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1756,8 +1888,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 212.087,611.636,474.465
@@ -1769,6 +1903,7 @@ FINGERPRINT
 +StimSource 158 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1805,8 +1940,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 215.783,611.464,474.465
@@ -1818,6 +1955,7 @@ FINGERPRINT
 +StimSource 943 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1854,8 +1992,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 226.79,542.105,474.915
@@ -1867,6 +2007,7 @@ FINGERPRINT
 +StimSource 857 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1918,8 +2059,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 232.746,542.084,478.623
@@ -1931,6 +2074,7 @@ FINGERPRINT
 +StimSource 785 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -1967,8 +2111,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 317.345,495.184,474.355
@@ -1980,6 +2126,7 @@ FINGERPRINT
 +StimSource 1023 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2016,8 +2163,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 313.825,495.096,474.355
@@ -2029,6 +2178,7 @@ FINGERPRINT
 +StimSource 765 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2065,8 +2215,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 338.198,317.923,474.395
@@ -2078,6 +2230,7 @@ FINGERPRINT
 +StimSource 657 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2114,8 +2267,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 338.662,321.371,474.357
@@ -2127,6 +2282,7 @@ FINGERPRINT
 +StimSource 580 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2163,8 +2319,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 344.384,321.188,476.164
@@ -2176,6 +2334,7 @@ FINGERPRINT
 +StimSource 620 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2212,8 +2371,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 343.311,324.779,475.105
@@ -2225,6 +2386,7 @@ FINGERPRINT
 +StimSource 1089 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2261,8 +2423,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 237.865,52.4336,476.014
@@ -2274,6 +2438,7 @@ FINGERPRINT
 +StimSource 581 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2310,8 +2475,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 296.586,101.696,475.414
@@ -2323,6 +2490,7 @@ FINGERPRINT
 +StimSource 411 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2359,8 +2527,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 343.449,143.078,475.714
@@ -2372,6 +2542,7 @@ FINGERPRINT
 +StimSource 1387 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2408,8 +2579,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 418.846,117.306,474.385
@@ -2421,6 +2594,7 @@ FINGERPRINT
 +StimSource 327 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2457,8 +2631,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 412.684,117.401,474.385
@@ -2470,6 +2646,7 @@ FINGERPRINT
 +StimSource 1381 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2506,8 +2683,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 407.331,117.211,474.385
@@ -2519,6 +2698,7 @@ FINGERPRINT
 +StimSource 227 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2555,8 +2735,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 469.02,333.221,474.789
@@ -2568,6 +2750,7 @@ FINGERPRINT
 +StimSource 144 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2604,8 +2787,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 408.58,410.647,493.92
@@ -2617,6 +2802,7 @@ FINGERPRINT
 +StimSource 1377 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -2649,6 +2835,7 @@ FINGERPRINT
 	"Cur Time" 0
 	"Frame #" 0
 }
+
 //other
 +ObjProp 941 "PhysCanMant"
 {

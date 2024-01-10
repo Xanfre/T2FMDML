@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Midday Eclipse (Uncontest) by Sxerks / Fixes
+//T2 FM: Midday Eclipse (Uncontest) by Sxerks / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -35,10 +34,12 @@ FINGERPRINT
 {
 	"" =7:DrSPocketCnt
 }
+
 //doors
 -ObjProp 202 "JointPos"
 -ObjProp 386 "JointPos"
 -ObjProp 429 "JointPos"
+
 //keys
 +ObjProp 278 "SlayResult"
 {
@@ -46,6 +47,7 @@ FINGERPRINT
 +ObjProp 282 "SlayResult"
 {
 }
+
 //misplaced objects
 ObjProp 387 "Position"
 {

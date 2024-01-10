@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fix final objective and keeper conversation
+//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fix final objective and keeper conversation: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -59,6 +58,7 @@ FINGERPRINT
 {
 	"Script 3" TrigWorldFrob
 }
+
 //Other
 +ObjProp 783 "Scripts"
 {
@@ -82,13 +82,16 @@ FINGERPRINT
 +Link 783 2229 "ControlDevice"
 {
 }
+
 //Barrels without collision
 +Receptron 2230 "PingStim"
 {
 	Min 3
 	Max 7
+
 	Target -7695
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -288.08, 322.32, 34.36
@@ -100,6 +103,7 @@ FINGERPRINT
 +StimSource 2230 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -120,6 +124,7 @@ FINGERPRINT
 +StimSource 2311 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -141,8 +146,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -7695
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -282.58, 322.32, 34.36
@@ -162,6 +169,7 @@ ObjProp 1005 "Position"
 	"Type" OBB
 	"# Submodels" 6
 }
+
 //Keeper
 -ObjProp 1360 "AI_Converation"
 +ObjProp 1360 "AI_Converation"
@@ -205,6 +213,7 @@ ObjProp 1005 "Position"
 	"Actor"[6] "Unused"
 	"Flags"[6] "[None]"
 }
+
 //Endloot
 +ObjProp 2058 "Position"
 {
@@ -263,6 +272,7 @@ ObjProp 1981 "AI_Converation"
 	"Actor"[1] ActorOne
 	"Conversation: Action 1" Nothing()
 }
+
 //Secrets
 +Link 1422 1433 "ControlDevice"
 {
@@ -315,6 +325,7 @@ Create -464 "SecretfixSwitch"
 {
 	"" =4:DrSScrtCnt
 }
+
 //secretsounds
 +ObjProp 694 "Scripts"
 {

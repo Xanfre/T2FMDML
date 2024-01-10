@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Haddur by Turi Robert / Fixes
+//T2 FM: Haddur by Turi Robert / Fixes: miss28.mis.dml
 
 FINGERPRINT
 {
@@ -103,6 +102,7 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "SetQvar"
 	{
 		"Quest Variable" "goal_state_2"
@@ -110,6 +110,7 @@ FINGERPRINT
 		"Operand" 1
 	}
 }
+
 //Frobinert
 +ObjProp 330 "Scripts"
 {

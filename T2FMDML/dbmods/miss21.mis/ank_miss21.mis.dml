@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Fall of Anduin Karol by mtk / Fixes
+//T2 FM: The Fall of Anduin Karol by mtk / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -68,6 +67,7 @@ Create -2086 "GoalFix"
 {
 	"" =1:goal_irreversible_0
 }
+
 //scrolls
 +ObjProp 62 "NoDrop"
 {
@@ -82,11 +82,13 @@ ObjProp 269 "Scripts"
 	"Script 0" NVRelayTrap
 	"Script 1" NVSelectTrap
 }
+
 //doors
 +Receptron 55 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 55 "Locked"
@@ -125,6 +127,7 @@ ObjProp 55 "Locked"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 115 "FrobInfo"
@@ -134,7 +137,9 @@ ObjProp 55 "Locked"
 {
 	Min 9
 	Max None
+
 	Target 308
+
 	Effect "rem_prop"
 	{
 		"Prop Name" FrobInfo
@@ -163,12 +168,14 @@ ObjProp 133 "TransDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 192 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 192 "FrobInfo"
@@ -193,6 +200,7 @@ ObjProp 343 "TransDoor"
 {
 	"" true
 }
+
 //gaslights
 +ObjProp 37 "FrobInfo"
 {
@@ -215,6 +223,7 @@ ObjProp 343 "TransDoor"
 +ObjProp 186 "FrobInfo"
 {
 }
+
 //switches
 ObjProp 47 "JointPos"
 {
@@ -238,6 +247,7 @@ ObjProp 61 "StTweqJoints"
 	"Joint1AnimS" Reverse
 	"Joint2AnimS" On, Reverse
 }
+
 //keys
 +ObjProp 122 "SlayResult"
 {
@@ -248,6 +258,7 @@ ObjProp 61 "StTweqJoints"
 +ObjProp 267 "SlayResult"
 {
 }
+
 //cave ladder
 -ObjProp 328 "PhysType"
 ObjProp 328 "Position"
@@ -258,6 +269,7 @@ ObjProp 328 "Position"
 {
 	"Type" OBB
 }
+
 //barrel
 -ObjProp 135 "PhysType"
 ObjProp 135 "Position"

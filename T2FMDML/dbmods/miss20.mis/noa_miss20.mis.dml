@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A. K. A. Noah (Water Contest) by Volgelfrei / Fix fish
+//T2 FM: A. K. A. Noah (Water Contest) by Volgelfrei / Fix fish: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -33,6 +32,7 @@ FINGERPRINT
 +Link 431 424 "AIPatrol"
 {
 }
+
 //more fish
 +ObjProp 54 "AI_ObjAvoid"
 {

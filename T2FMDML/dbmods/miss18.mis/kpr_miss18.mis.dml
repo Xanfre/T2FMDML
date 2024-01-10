@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Keeper of the Prophecies (The Enterprise Part Two) by Ken Ramsley (frobber) / Fixes
+//T2 FM: Keeper of the Prophecies (The Enterprise Part Two) by Ken Ramsley (frobber) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -25,6 +24,7 @@ FINGERPRINT
 }
 -MetaProp 2594 -5704
 +MetaProp 2594 -1688
+
 //pickpockets
 -Link 2111 1071 "ControlDevice"
 -Link 2111 1335 "ControlDevice"

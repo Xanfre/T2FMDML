@@ -68,5 +68,6 @@ ObjProp 161 "JointPos"
 +StimSource 1477 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }

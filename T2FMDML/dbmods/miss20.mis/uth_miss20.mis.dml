@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Under Templehill by Andy Joel (The Pixie) / Fixes
+//T2 FM: Under Templehill by Andy Joel (The Pixie) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -90,6 +89,7 @@ FINGERPRINT
 {
 	"" false
 }
+
 //pickpockets
 Link 1631 773 "Contains"
 {
@@ -105,6 +105,7 @@ ObjProp 1631 "MeshAttach"
 	"offset" 0.24, 0.75, 0
 }
 -MetaProp 773 -9135
+
 //Barrels
 +ObjProp 1763 "CfgTweqDelete"
 {
@@ -200,8 +201,10 @@ ObjProp 1631 "MeshAttach"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 442.23, 689.89, 458.0
@@ -213,6 +216,7 @@ ObjProp 1631 "MeshAttach"
 +StimSource 1919 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -234,8 +238,10 @@ ObjProp 1631 "MeshAttach"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 446.16, 685.29, 458.0
@@ -247,6 +253,7 @@ ObjProp 1631 "MeshAttach"
 +StimSource 703 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -268,8 +275,10 @@ ObjProp 1631 "MeshAttach"
 {
 	Min 3
 	Max 7
+
 	Target -552
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 472.0, 507.34, 470.0
@@ -281,6 +290,7 @@ ObjProp 1631 "MeshAttach"
 +StimSource 472 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -302,8 +312,10 @@ ObjProp 1631 "MeshAttach"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 387.88, 532.57, 459.0
@@ -315,6 +327,7 @@ ObjProp 1631 "MeshAttach"
 +StimSource 2000 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -336,8 +349,10 @@ ObjProp 1631 "MeshAttach"
 {
 	Min 3
 	Max 7
+
 	Target -552
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 440.14, 532.2, 458.0
@@ -349,6 +364,7 @@ ObjProp 1631 "MeshAttach"
 +StimSource 344 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -370,8 +386,10 @@ ObjProp 1631 "MeshAttach"
 {
 	Min 3
 	Max 7
+
 	Target -552
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 438.16, 535.0, 458.0
@@ -383,6 +401,7 @@ ObjProp 1631 "MeshAttach"
 +StimSource 347 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life

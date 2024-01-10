@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Living Nightmare by John Denison (john9818a) / Fixes
+//T2 FM: A Living Nightmare by John Denison (john9818a) / Fixes: miss33.mis.dml
 
 FINGERPRINT
 {
@@ -55,6 +54,7 @@ FINGERPRINT
 {
 	"" =73:goal_target_7
 }
+
 //quest items
 +ObjProp 557 "StackCount"
 {

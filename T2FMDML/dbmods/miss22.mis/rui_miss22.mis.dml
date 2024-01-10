@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fix objectives and loot
+//T2 FM: Ruined by Igor Smikalla (Rostvogel) / Fix objectives and loot: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -154,13 +153,16 @@ FINGERPRINT
 +Link 208 162 "ControlDevice"
 {
 }
+
 //port
 +Receptron 177 "PingStim"
 {
 	Min 3
 	Max 7
+
 	Target 177
 	Agent 0
+
 	Effect "move_obj"
 	{
 		"Position" -467.4, -32.81, -117.00
@@ -172,6 +174,7 @@ FINGERPRINT
 +StimSource 177 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -197,6 +200,7 @@ FINGERPRINT
 	"Pitch" 0
 	"Bank" 0
 }
+
 //Valhall
 +ObjProp 2168 "ScriptTiming"
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Orthodox Wedding by TDBonko / Fix goals and other issues
+//T2 FM: Orthodox Wedding by TDBonko / Fix goals and other issues: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -43,7 +42,9 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Target 853
+
 	Effect "frob_obj"
 }
 +ObjProp 351 "TrapQVar"
@@ -106,6 +107,7 @@ Create -4533
 +StimSource 680 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -127,8 +129,10 @@ Create -4533
 {
 	Min 3
 	Max 7
+
 	Target -491
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 385.0, 49.0, 72.8
@@ -296,6 +300,7 @@ Create -4533
 ++StimSource 604 "PhotoStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 	{
 		Life
@@ -316,6 +321,7 @@ Create -4533
 +StimSource 613 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -337,8 +343,10 @@ Create -4533
 {
 	Min 3
 	Max 7
+
 	Target me
 	Agent -553
+
 	Effect "add_prop"
 	{
 		"Prop Name" "Frobinfo"
@@ -355,6 +363,7 @@ Create -4533
 {
 	"Script 0" NVSetPropertyTrap
 }
+
 //pickpockets
 +ObjProp 590 "DiffTurnOn"
 {

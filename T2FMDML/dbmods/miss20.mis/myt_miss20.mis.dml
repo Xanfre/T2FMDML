@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Mylokh's Tower (Contest 4) by Paul D. Rotter (eepcat) / Fixes
+//T2 FM: Mylokh's Tower (Contest 4) by Paul D. Rotter (eepcat) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -24,8 +23,10 @@ ObjProp 397 "Position"
 {
 	"Location" 125.46, 139.19, 163.82
 }
+
 //door
 -ObjProp 43 "JointPos"
+
 //quest items
 +ObjProp 60 "NoDrop"
 {

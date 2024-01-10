@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Skygem Connection (The Skygem Connection) by David Dyal (Dyald) / Fixes
+//T2 FM: The Skygem Connection (The Skygem Connection) by David Dyal (Dyald) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -199,6 +198,7 @@ FINGERPRINT
 {
 	"" =2:goal_state_9
 }
+
 //keepers
 +ObjProp 68 "AI_AlrtRsp"
 {
@@ -214,18 +214,21 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 216 "KOGas"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 216 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 216 "NoFlash"
@@ -360,6 +363,7 @@ ObjProp 1475 "AI_Hearing"
 +Link 1738 563 "ControlDevice"
 {
 }
+
 //sarah
 +Link 1179 564 "ControlDevice"
 {
@@ -368,6 +372,7 @@ ObjProp 1475 "AI_Hearing"
 {
 	"Script 0" TrigSlain
 }
+
 //doors
 +MetaProp 379 -2420
 +MetaProp 479 -2420
@@ -379,12 +384,14 @@ ObjProp 1475 "AI_Hearing"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 788 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 788 "BlockFrob"
@@ -395,12 +402,14 @@ ObjProp 1475 "AI_Hearing"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 789 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 789 "BlockFrob"
@@ -421,6 +430,7 @@ ObjProp 1475 "AI_Hearing"
 {
 	"" true
 }
+
 //DeathStage 12
 -ObjProp 59 "DeathStage"
 -ObjProp 199 "DeathStage"
@@ -444,6 +454,7 @@ ObjProp 1475 "AI_Hearing"
 -ObjProp 1569 "PhysType"
 -ObjProp 1569 "DeathStage"
 -ObjProp 1618 "DeathStage"
+
 //broadhead arrows
 -ObjProp 267 "PhysType"
 -ObjProp 270 "PhysType"
@@ -454,6 +465,7 @@ ObjProp 1475 "AI_Hearing"
 -ObjProp 1250 "PhysType"
 -ObjProp 1252 "PhysType"
 -ObjProp 1253 "PhysType"
+
 //beds
 -ObjProp 607 "PhysType"
 ObjProp 607 "Position"
@@ -481,6 +493,7 @@ ObjProp 1171 "Scale"
 {
 	"" 0.733, 0.75, 1
 }
+
 //mantling
 +ObjProp 1600 "PhysCanMant"
 {

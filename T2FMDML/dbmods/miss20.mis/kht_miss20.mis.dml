@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Keyhunt (SSR Contest) by Renzo Thonen (Eshaktaar) / Fixes
+//T2 FM: Keyhunt (SSR Contest) by Renzo Thonen (Eshaktaar) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -71,6 +70,7 @@ ObjProp 126 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 199 "Scale"
@@ -85,12 +85,14 @@ ObjProp 223 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 408 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 478 "Scripts"
@@ -113,6 +115,7 @@ ObjProp 223 "Scale"
 +StimSource 612 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 612 "PickDist"

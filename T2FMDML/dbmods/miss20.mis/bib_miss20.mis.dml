@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Burglary in Blackbrook by John D. / Fixes
+//T2 FM: Burglary in Blackbrook by John D. / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -71,6 +70,7 @@ Create -1823 "EscapeObj"
 {
 	"Script 0" TrigRoomObject
 }
+
 //bottle
 +ObjProp 1692 "PhysType"
 {

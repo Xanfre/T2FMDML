@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Three Crowns by Bryan Gleason (BBB) / Fixes
+//T2 FM: Three Crowns by Bryan Gleason (BBB) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -28,6 +27,7 @@ ObjProp 2509 "Scripts"
 {
 	"Script 0" NVRelayTrap
 }
+
 //fix goal 6
 +ObjProp 2510 "Scripts"
 {
@@ -49,20 +49,24 @@ ObjProp 2509 "Scripts"
 {
 	"" aFrobInert
 }
+
 //fix secrets
 -ObjProp 717 "DarkStat"
 -ObjProp 732 "DarkStat"
+
 //prevent frobbing switch through banner
 +ObjProp 231 "BlockFrob"
 {
 	"" true
 }
+
 //reposition spider
 +ObjProp 1866 "Position"
 {
 	"Location" 658.8,596.209,391.391
 	"Pitch" ecc8
 }
+
 //reposition hammerite
 +ObjProp 758 "Position"
 {
@@ -70,6 +74,7 @@ ObjProp 2509 "Scripts"
 	"Heading" 4000
 	"Bank" 8000
 }
+
 //fix mantling over gate
 Create -2819 "GateBlock1"
 {

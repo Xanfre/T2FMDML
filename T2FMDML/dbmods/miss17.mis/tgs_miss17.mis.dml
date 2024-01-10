@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Good Samaritan by Vaughan Cooper (Sluggs) / Fixes
+//T2 FM: The Good Samaritan by Vaughan Cooper (Sluggs) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -36,6 +35,7 @@ FINGERPRINT
 {
 	"Script 0" NVOnscreenText
 }
+
 //quest sounds / notifications
 +ObjProp 38 "DesignNote"
 {
@@ -78,6 +78,7 @@ FINGERPRINT
 	"Script 0" NVAmbientSoundTrap
 	"Don't Inherit" true
 }
+
 //mantling
 ObjProp 23 "CollisionType"
 {
@@ -110,6 +111,7 @@ ObjProp 320 "CollisionType"
 +ObjProp 320 "PhysCanMant"
 {
 }
+
 //quests
 -Link 27 253 "ControlDevice"
 +Link 27 28 "ControlDevice"
@@ -157,8 +159,10 @@ ObjProp 320 "CollisionType"
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -189,13 +193,17 @@ ObjProp 236 "Scripts"
 -Link 295 195 "ControlDevice"
 Receptron 299 "WaterStim" 0021001D
 {
+
 	Target 396
+
 	Effect "frob_obj"
 }
 ++Receptron 299 "WaterStim"
 {
 	Max None
+
 	Target -399
+
 	Effect "create_obj"
 	{
 		"Position" -28, 47.5, 13.22
@@ -204,13 +212,17 @@ Receptron 299 "WaterStim" 0021001D
 ++Receptron 299 "WaterStim"
 {
 	Max None
+
 	Target 897
+
 	Effect "destroy_obj"
 }
 ++Receptron 299 "WaterStim"
 {
 	Max None
+
 	Target Me
+
 	Effect "destroy_obj"
 }
 +Link 322 195 "ControlDevice"
@@ -395,6 +407,7 @@ ObjProp 622 "FrobInfo"
 	"Don't Inherit" true
 }
 -Link 816 396 "ControlDevice"
+
 //scrolls
 -Link 302 303 "CreatureAttachment"
 ObjProp 303 "FrobInfo"
@@ -405,6 +418,7 @@ ObjProp 551 "FrobInfo"
 {
 	"Inv Action" Script
 }
+
 //misplaced objects
 -ObjProp 166 "PhysType"
 ObjProp 166 "Position"
@@ -451,6 +465,7 @@ ObjProp 891 "Position"
 {
 	"Type" OBB
 }
+
 //pickpocketing
 +ObjProp 519 "DiffTurnOn"
 {
@@ -475,6 +490,7 @@ ObjProp 891 "Position"
 {
 	"" -1:DrSPocketCnt
 }
+
 //flashlight
 +ObjProp 554 "DesignNote"
 {
@@ -487,6 +503,7 @@ ObjProp 891 "Position"
 	"Script 2" NVRemovePropertyTrap
 	"Don't Inherit" true
 }
+
 //invalid scaling
 -ObjProp 59 "Scale"
 -ObjProp 62 "Scale"

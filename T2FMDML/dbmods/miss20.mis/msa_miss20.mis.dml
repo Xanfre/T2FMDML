@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Mystery at the St. Anne Inn by Paul D Rotter (eepcat) / Fixes
+//T2 FM: Mystery at the St. Anne Inn by Paul D Rotter (eepcat) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -54,6 +53,7 @@ ObjProp 300 "PGLaunchInfo"
 {
 	"Max time" 1.00
 }
+
 //barrels
 +ObjProp 390 "DesignNote"
 {
@@ -111,16 +111,19 @@ ObjProp 300 "PGLaunchInfo"
 {
 	"Script 0" T2FMDMLSimReposAbs
 }
+
 //prevent mantling on extendable bridge
 +ObjProp 791 "PhysCanMant"
 {
 	"" false
 }
+
 //reposition servant
 +ObjProp 1696 "Position"
 {
 	"Location" 130.411,94.7643,22.7439
 }
+
 //fix bush physics
 +ObjProp 860 "PhysType"
 {

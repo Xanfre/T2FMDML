@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Cathedral by Meshpit / Fixes
+//T2 FM: The Cathedral by Meshpit / Fixes: miss33.mis.dml
 
 FINGERPRINT
 {
@@ -76,6 +75,7 @@ FINGERPRINT
 {
 	"" =1:goal_visible_3
 }
+
 //doors
 -ObjProp 15 "JointPos"
 +Link 317 318 "ScriptParams"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Azure Fortress (Heretic) by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: The Azure Fortress (Heretic) by Terry DeLaney (Ricebug) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -413,6 +412,7 @@ ObjProp 788 "Position"
 +StimSource 284 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 284 "BlockFrob"

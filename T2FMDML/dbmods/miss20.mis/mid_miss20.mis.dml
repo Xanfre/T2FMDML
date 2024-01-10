@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Midday Escape (Contest 5) by Sxerks / Fixes
+//T2 FM: Midday Escape (Contest 5) by Sxerks / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -60,6 +59,7 @@ FINGERPRINT
 {
 	"" =20:DrSPocketCnt
 }
+
 //doors
 -ObjProp 17 "JointPos"
 -ObjProp 61 "JointPos"
@@ -71,6 +71,7 @@ FINGERPRINT
 -ObjProp 331 "JointPos"
 -ObjProp 386 "JointPos"
 -ObjProp 475 "JointPos"
+
 //mantling
 +ObjProp 18 "PhysCanMant"
 {
@@ -227,6 +228,7 @@ ObjProp 409 "Position"
 +ObjProp 454 "PhysCanMant"
 {
 }
+
 //keys
 +ObjProp 81 "SlayResult"
 {
@@ -247,6 +249,7 @@ ObjProp 121 "PickDist"
 {
 	"Type" OBB
 }
+
 //fireplaces
 ObjProp 486 "PGLaunchInfo"
 {

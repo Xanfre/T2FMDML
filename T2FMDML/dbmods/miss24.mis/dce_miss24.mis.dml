@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Death's Cold Embrace by Russ Robbins (Yandros), Rob Strain (Random_Taffer), Robin Collier (R Soul), Moghedian, Polygon, Peter Smith, & Tannar / Fixes
+//T2 FM: Death's Cold Embrace by Russ Robbins (Yandros), Rob Strain (Random_Taffer), Robin Collier (R Soul), Moghedian, Polygon, Peter Smith, & Tannar / Fixes: miss24.mis.dml
 
 FINGERPRINT
 {
@@ -21,6 +20,7 @@ FINGERPRINT
 -Link 3281 4505 "ControlDevice"
 -Link 3282 4505 "ControlDevice"
 -Link 4352 4505 "ControlDevice"
+
 //loot
 +ObjProp 4018 "Loot"
 {

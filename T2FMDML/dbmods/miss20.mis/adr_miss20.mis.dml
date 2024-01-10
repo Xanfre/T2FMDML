@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Debt Repaid by Jason Otto (Ottoj55) / Fixes
+//T2 FM: A Debt Repaid by Jason Otto (Ottoj55) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -22,48 +21,56 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 74 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 122 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 136 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 180 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 181 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 284 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 406 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 413 "BlockFrob"
@@ -80,6 +87,7 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 603 "RotDoor"
@@ -99,42 +107,49 @@ ObjProp 603 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 713 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1678 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1772 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1773 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1850 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1851 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 2030 "PhysType"
@@ -179,6 +194,7 @@ ObjProp 2030 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 2556 "DesignNote"
@@ -215,6 +231,7 @@ ObjProp 2030 "Position"
 {
 	"Script 0" NVRemovePropertyTrap
 }
+
 //chief's office key
 +Link 2612 2617 "ControlDevice"
 {
@@ -230,6 +247,7 @@ ObjProp 2030 "Position"
 {
 	"Script 0" NVRemovePropertyTrap
 }
+
 //arrows / gas bombs
 -ObjProp 234 "DeathStage"
 -ObjProp 355 "DeathStage"
@@ -243,6 +261,7 @@ ObjProp 2030 "Position"
 -ObjProp 1995 "DeathStage"
 -ObjProp 2543 "DeathStage"
 -ObjProp 2636 "DeathStage"
+
 //mantling
 +ObjProp 928 "PhysCanMant"
 {
@@ -259,6 +278,7 @@ ObjProp 2030 "Position"
 +ObjProp 2708 "PhysCanMant"
 {
 }
+
 //chemicals
 +ObjProp 1355 "CombineType"
 {

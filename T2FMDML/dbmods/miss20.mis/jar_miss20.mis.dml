@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Jarlson Manor (aka Assassins) by Minas Zuniga / Fixes: Objectives, paintings, misplaced objects, talismans
+//T2 FM: The Jarlson Manor (aka Assassins) by Minas Zuniga / Fixes: Objectives, paintings, misplaced objects, talismans: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -35,6 +34,7 @@ FINGERPRINT
 {
 	"Script 0" TrigWorldFrob
 }
+
 //goal (thief)
 +ObjProp 1824 "Scripts"
 {
@@ -55,6 +55,7 @@ FINGERPRINT
 {
 	"Script 0" TrigWorldFrob
 }
+
 //talismans (thief)
 +ObjProp 2307 "DiffPermit"
 {
@@ -72,16 +73,19 @@ FINGERPRINT
 {
 	"quest var values" 1
 }
+
 //frederick
 +ObjProp 1187 "GameName"
 {
 	"" Name_Frederick: "Frederick Jarlson"
 }
+
 //kheldara
 +ObjProp 2303 "GameName"
 {
 	"" Name_Kheldara: "Kheldara"
 }
+
 //paintings
 -ObjProp 89 "PhysType"
 ObjProp 89 "Position"
@@ -147,6 +151,7 @@ ObjProp 2335 "Position"
 {
 	"Type" OBB
 }
+
 //table
 -ObjProp 1872 "PhysType"
 ObjProp 1872 "Position"
@@ -157,6 +162,7 @@ ObjProp 1872 "Position"
 {
 	"Type" OBB
 }
+
 //doors
 +Link 100 101 "ScriptParams"
 {

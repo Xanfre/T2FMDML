@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Through the Lookin' Glass by J. Knez (Schwaa) / Fixes
+//T2 FM: Through the Lookin' Glass by J. Knez (Schwaa) / Fixes: miss35.mis.dml
 
 FINGERPRINT
 {
@@ -37,13 +36,16 @@ FINGERPRINT
 +ObjProp 486 "PhysCanMant"
 {
 }
+
 //banner
 +Receptron 191 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //chests
 +ObjProp 243 "DesignNote"
 {
@@ -77,13 +79,16 @@ FINGERPRINT
 {
 	"Script 0" NVMetaTrap
 }
+
 //bread loaf
 -ObjProp 663 "PhysType"
+
 //new objectives timer
 ObjProp 685 "ScriptTiming"
 {
 	"" 1300
 }
+
 //shutters
 +Link 703 704 "ScriptParams"
 {
@@ -93,6 +98,7 @@ ObjProp 685 "ScriptTiming"
 {
 	"" Double
 }
+
 //portcullis
 +ObjProp 746 "FrobInfo"
 {
@@ -101,6 +107,7 @@ ObjProp 1050 "FrobInfo"
 {
 	"World Action" None
 }
+
 //ladder
 -ObjProp 925 "PhysType"
 +ObjProp 925 "Position"
@@ -111,5 +118,6 @@ ObjProp 1050 "FrobInfo"
 {
 	"Type" OBB
 }
+
 //sleeping thief
 -ObjProp 1030 "AI_Vision"

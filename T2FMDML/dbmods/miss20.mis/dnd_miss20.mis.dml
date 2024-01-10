@@ -1,5 +1,4 @@
 DML1
-
 //T2 FM: Dead Night Sweet Delight by MysteryMan / Fixes: miss20.mis.dml
 
 FINGERPRINT
@@ -298,6 +297,7 @@ ObjProp 87 "PGLaunchInfo"
 +StimSource 177 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 177 "DiffTurnOn"

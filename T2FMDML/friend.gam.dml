@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Flowers for a Friend (Thief Anniversary Contest) by P Forth / Fixes
+//T2 FM: Flowers for a Friend (Thief Anniversary Contest) by P Forth / Fixes: friend.gam.dml
 
 FINGERPRINT
 {
@@ -12,6 +11,7 @@ FINGERPRINT
 +ObjProp -2634 "PhysCanMant"
 {
 }
+
 //friend
 +ObjProp -54 "SchPlayParams"
 {

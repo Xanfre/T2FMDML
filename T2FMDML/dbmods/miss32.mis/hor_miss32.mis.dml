@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: House of Random (Contest 5) by J. Knez (Schwaa) / Fix final goal and other issues
+//T2 FM: House of Random (Contest 5) by J. Knez (Schwaa) / Fix final goal and other issues: miss32.mis.dml
 
 FINGERPRINT
 {
@@ -18,6 +17,7 @@ FINGERPRINT
 +StimSource 584 "FeatherStim"
 {
 	Intensity 10
+
 	Propagator "Contact"
 	{
 		Shape

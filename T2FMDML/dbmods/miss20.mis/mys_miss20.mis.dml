@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Mysterious Invitation by PsymH / Fixes
+//T2 FM: Mysterious Invitation by PsymH / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -77,6 +76,7 @@ ObjProp 2872 "RotDoor"
 {
 	"Open Angle" 89
 }
+
 //windows
 Create -448 "Blocker1"
 {
@@ -134,6 +134,7 @@ Create -448 "Blocker2"
 {
 	"" true
 }
+
 //AIs
 +ObjProp 318 "InvRendType"
 {
@@ -150,19 +151,23 @@ Create -448 "Blocker2"
 	"Type" Alternate Bitmap
 	"Resource" assaca
 }
+
 //frogbeast / captain's office key
 +Receptron 459 "Knockout"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //duncan's heart
 -ObjProp 1060 "PickDist"
 +ObjProp 2165 "BlockFrob"
 {
 	"" true
 }
+
 //control panel
 -Link 1671 1592 "ControlDevice"
 +Link 1671 1586 "ControlDevice"
@@ -180,17 +185,20 @@ ObjProp 1671 "StTweqJoints"
 	"AnimS" Reverse
 	"Joint4AnimS" On, Reverse
 }
+
 //deer leg
 -ObjProp 608 "PhysType"
 ObjProp 608 "Position"
 {
 	"Location" 221.3, 598, -74.3
 }
+
 //gas arrows
 ObjProp 792 "Position"
 {
 	"Location" -89.52, 328.2, 13.9
 }
+
 //banners
 Create -535 "PBanner"
 {

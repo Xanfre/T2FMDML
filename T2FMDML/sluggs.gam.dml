@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Good Samaritan by Vaughan Cooper (Sluggs) / Fixes
+//T2 FM: The Good Samaritan by Vaughan Cooper (Sluggs) / Fixes: sluggs.gam.dml
 
 FINGERPRINT
 {
@@ -10,6 +9,7 @@ FINGERPRINT
 
 /* remove "//" if you want to mantle out of the canal on your own */
 //-ObjProp -4487 "PhysCanMant"
+
 //speech
 ObjProp -2677 "SchPlayParams"
 {

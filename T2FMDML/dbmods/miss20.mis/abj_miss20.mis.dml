@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Bank Job (Novice Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes
+//T2 FM: A Bank Job (Novice Contest) by Sonnich Brinch Nielsen (Nielsen74) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -71,6 +70,7 @@ ObjProp 60 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 68 "Scale"
@@ -126,6 +126,7 @@ ObjProp 92 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 127 "RotDoor"
@@ -141,6 +142,7 @@ ObjProp 128 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 133 "Scale"
@@ -151,24 +153,28 @@ ObjProp 133 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 162 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 163 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 643 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +MetaProp 643 -2422
@@ -192,6 +198,7 @@ ObjProp 133 "Scale"
 +StimSource 668 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 727 "BlockFrob"
@@ -230,12 +237,14 @@ ObjProp 133 "Scale"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 870 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 

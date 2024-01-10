@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Frozen Mines (Contest 5) by Azrarhn / Fixes
+//T2 FM: Frozen Mines (Contest 5) by Azrarhn / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -42,6 +41,7 @@ FINGERPRINT
 {
 	"" =1:goal_reverse_7
 }
+
 //secrets
 -ObjProp 37 "DarkStat"
 +ObjProp 272 "DarkStat"
@@ -52,6 +52,7 @@ FINGERPRINT
 {
 	"Script 0" TrapFindSecret
 }
+
 //loot
 +ObjProp 99 "Loot"
 {

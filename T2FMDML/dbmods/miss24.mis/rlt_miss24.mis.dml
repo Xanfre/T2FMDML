@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Revenge of Lt. Hagen by Jordan Maf (FireMage) / Fixes
+//T2 FM: The Revenge of Lt. Hagen by Jordan Maf (FireMage) / Fixes: miss24.mis.dml
 
 FINGERPRINT
 {
@@ -338,6 +337,7 @@ ObjProp 2152 "MeshAttach"
 {
 	Min None
 	Max None
+
 	Effect "stim_script_msg"
 	{
 	}
@@ -346,8 +346,10 @@ ObjProp 2152 "MeshAttach"
 {
 	Min None
 	Max None
+
 	Target 2152
 	Agent Source
+
 	Effect "stimulate"
 	{
 		"Stimulus" bowstim

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Happy New Year, Mister Lambert! by Gaetane / Fixes
+//T2 FM: Happy New Year, Mister Lambert! by Gaetane / Fixes: miss24.mis.dml
 
 FINGERPRINT
 {
@@ -46,6 +45,7 @@ FINGERPRINT
 {
 	"" =1:goal_state_0
 }
+
 //statuettes
 -Link 439 810 "ControlDevice"
 +ObjProp 396 "TrapFlags"
@@ -124,6 +124,7 @@ ObjProp 915 "CombineType"
 {
 	"Script 0" TrigContained
 }
+
 //doors
 ObjProp 61 "RotDoor"
 {
@@ -160,6 +161,7 @@ ObjProp 241 "RotDoor"
 {
 	"" true
 }
+
 //paintings
 +ObjProp 419 "BlockFrob"
 {
@@ -182,6 +184,7 @@ ObjProp 799 "Position"
 {
 	"Type" OBB
 }
+
 //loot
 ObjProp 749 "PickDist"
 {
@@ -200,6 +203,7 @@ ObjProp 848 "Position"
 {
 	"Type" Sphere
 }
+
 //AIs
 +ObjProp 97 "InvRendType"
 {
@@ -241,6 +245,7 @@ ObjProp 848 "Position"
 	"Type" Alternate Bitmap
 	"Resource" cnoblew4
 }
+
 //fireplaces
 ObjProp 180 "PGLaunchInfo"
 {
@@ -269,8 +274,10 @@ ObjProp 609 "PGLaunchInfo"
 {
 	"Max time" 2.00
 }
+
 //broadhead arrows
 -ObjProp 203 "DeathStage"
+
 //switches
 +Link 615 706 "FrobProxy"
 {

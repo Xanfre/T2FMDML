@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Lonmore (mission 1) by Beltzer / Fixes
+//T2 FM: Lonmore (mission 1) by Beltzer / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -16,7 +15,9 @@ FINGERPRINT
 }
 
 // Street-shrouding particles:
+
 // Reduce the size and number (and increase alpha to compensate).
+
 // And disable simulation when not on screen.
 ObjProp 984 "ParticleGroup"
 {
@@ -258,7 +259,9 @@ ObjProp 4694 "ParticleGroup"
 	"always simulate (slow)" 0
 	"always simulate group" 0
 }
+
 // Room-filling particle effects:
+
 // Disable simulation when not on screen.
 ObjProp 4122 "ParticleGroup"
 {

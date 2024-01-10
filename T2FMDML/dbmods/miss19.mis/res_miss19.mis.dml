@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Resonance by Jeremy Catlin (HipBreaker) / Fixes
+//T2 FM: Resonance by Jeremy Catlin (HipBreaker) / Fixes: miss19.mis.dml
 
 FINGERPRINT
 {
@@ -169,12 +168,14 @@ ObjProp 382 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 640 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +MetaProp 680 -2420
@@ -596,6 +597,7 @@ ObjProp 767 "StTweqJoints"
 +StimSource 712 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 -ObjProp 712 "PhysType"

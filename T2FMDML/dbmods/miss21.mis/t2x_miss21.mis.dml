@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes
+//T2 FM: Thief 2X: Shadows of the Metal Age by The Dark Engineering Guild / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -17,6 +16,7 @@ FINGERPRINT
 
 //AI
 -ObjProp 194 "FrobInfo"
+
 //pickpockets
 +ObjProp 1888 "DiffTurnOn"
 {

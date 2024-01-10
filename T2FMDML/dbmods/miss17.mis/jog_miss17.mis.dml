@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Jewel of Ghandar by BodomChild / Fix goal
+//T2 FM: The Jewel of Ghandar by BodomChild / Fix goal: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -56,6 +55,7 @@ FINGERPRINT
 +Link 190 44 "ControlDevice"
 {
 }
+
 //objects
 -ObjProp 133 "Position"
 +ObjProp 133 "Position"
@@ -278,6 +278,7 @@ ObjProp 303 "ParticleGroup"
 +StimSource 48 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -299,8 +300,10 @@ ObjProp 303 "ParticleGroup"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -161.6, 62.0, -17.4
@@ -312,6 +315,7 @@ ObjProp 303 "ParticleGroup"
 +StimSource 46 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -333,8 +337,10 @@ ObjProp 303 "ParticleGroup"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 	"Position" -137.7, 71.7, -17.4
@@ -346,6 +352,7 @@ ObjProp 303 "ParticleGroup"
 +StimSource 50 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -367,8 +374,10 @@ ObjProp 303 "ParticleGroup"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -131.2, 71.9, -17.4
@@ -380,6 +389,7 @@ ObjProp 303 "ParticleGroup"
 +StimSource 52 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -401,8 +411,10 @@ ObjProp 303 "ParticleGroup"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -135.8, 43.55, -17.4
@@ -414,6 +426,7 @@ ObjProp 303 "ParticleGroup"
 +StimSource 49 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -435,8 +448,10 @@ ObjProp 303 "ParticleGroup"
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -87.44, -16.4, -5.9

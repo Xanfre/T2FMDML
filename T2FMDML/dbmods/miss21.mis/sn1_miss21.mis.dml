@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Snobs part 1 by Naks / Fixes
+//T2 FM: Snobs part 1 by Naks / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -21,6 +20,7 @@ FINGERPRINT
 	"Type" None
 	"# Submodels" 0
 }
+
 //pickpockets
 Link 750 257 "Contains"
 {

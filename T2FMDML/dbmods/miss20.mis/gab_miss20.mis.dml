@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Garrett and the Beanstalk by Katy Fortner (Kfort) / Fixes
+//T2 FM: Garrett and the Beanstalk by Katy Fortner (Kfort) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -45,8 +44,10 @@ FINGERPRINT
 {
 	Min 8
 	Max 10
+
 	Target Me
 	Agent 520
+
 	Effect "add_prop"
 	{
 		"Prop Name" CollisionType
@@ -56,8 +57,10 @@ FINGERPRINT
 {
 	Min 8
 	Max 10
+
 	Target Me
 	Agent 520
+
 	Effect "add_prop"
 	{
 		"Prop Name" RenderAlpha
@@ -67,7 +70,9 @@ FINGERPRINT
 {
 	Min 8
 	Max 10
+
 	Target Me
+
 	Effect "rem_prop"
 	{
 		"Prop Name" DarkStat
@@ -77,7 +82,9 @@ FINGERPRINT
 {
 	Min 11
 	Max None
+
 	Target Me
+
 	Effect "rem_prop"
 	{
 		"Prop Name" Scripts
@@ -130,8 +137,10 @@ Create -5317 "SecretFix"
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent 81
+
 	Effect "add_prop"
 	{
 		"Prop Name" DarkStat
@@ -147,12 +156,15 @@ Create -5317 "SecretFix"
 	"Script 1" NVRelayTrap
 	"Don't Inherit" true
 }
+
 //vine arrows
 -ObjProp 302 "Scripts"
+
 //final goal
 +ObjProp 446 "TrapFlags"
 {
 	"" Once, NoOff
 }
+
 //pickpocketing count
 -Link 447 821 "ControlDevice"

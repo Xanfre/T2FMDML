@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Bloody Flounder's Inn by Adrian Rieck (Master_edd) / Fixes
+//T2 FM: The Bloody Flounder's Inn by Adrian Rieck (Master_edd) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -55,6 +54,7 @@ FINGERPRINT
 {
 	"" =+0:goal_target_9
 }
+
 //barrels
 +ObjProp 31 "DesignNote"
 {
@@ -96,6 +96,7 @@ FINGERPRINT
 {
 	"Script 0" T2FMDMLSimReposOfst
 }
+
 //footlockers
 -ObjProp 184 "PhysType"
 ObjProp 184 "Scale"
@@ -130,6 +131,7 @@ ObjProp 311 "Position"
 {
 	"Type" OBB
 }
+
 //goblet
 +ObjProp 231 "DesignNote"
 {
@@ -139,17 +141,20 @@ ObjProp 311 "Position"
 {
 	"Script 0" T2FMDMLSimReposOfst
 }
+
 //wax cylinder
 ObjProp 265 "Position"
 {
 	"Location" 533.857, 487.967, 473.132
 }
+
 //guard
 ObjProp 280 "Position"
 {
 	"Location" 535.719, 496.295, 513.502
 	"Heading" 8000
 }
+
 //coins
 ObjProp 275 "Position"
 {

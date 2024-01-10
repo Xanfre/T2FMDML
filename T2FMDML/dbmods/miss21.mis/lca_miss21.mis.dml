@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Last Caress (MOH Contest) by Tom N. Harris (Telliamed) / Fixes
+//T2 FM: Last Caress (MOH Contest) by Tom N. Harris (Telliamed) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -91,6 +90,7 @@ ObjProp 174 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 360 "JointPos"

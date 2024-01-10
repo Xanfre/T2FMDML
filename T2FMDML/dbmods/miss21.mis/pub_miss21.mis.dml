@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: A Night in the Pub by Oskar Schwermer (Hrothgar) / Fixes
+//T2 FM: A Night in the Pub by Oskar Schwermer (Hrothgar) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -242,6 +241,7 @@ ObjProp 627 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 7 "TransDoor"
@@ -290,6 +290,7 @@ ObjProp 159 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 409 "StTweqLock"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Tower (Thief Anniversary Contest) by Lady Rowena / Fixes
+//T2 FM: The Tower (Thief Anniversary Contest) by Lady Rowena / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -85,6 +84,7 @@ ObjProp 547 "ScriptTiming"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 73 "Scale"
@@ -114,18 +114,21 @@ ObjProp 547 "ScriptTiming"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 260 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 263 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 300 "RotDoor"
@@ -138,6 +141,7 @@ ObjProp 300 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 427 "RotDoor"
@@ -191,6 +195,7 @@ ObjProp 598 "RotDoor"
 +StimSource 236 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 236 "Position"

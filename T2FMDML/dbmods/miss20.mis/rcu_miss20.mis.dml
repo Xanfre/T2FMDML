@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Rowena's Curse v3 by Lady Rowena / Fixes
+//T2 FM: Rowena's Curse v3 by Lady Rowena / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -96,6 +95,7 @@ ObjProp 2102 "Scripts"
 {
 	"Script 0" TrigRoomDeposit
 }
+
 //mantling
 +ObjProp 171 "PhysCanMant"
 {
@@ -241,6 +241,7 @@ ObjProp 2278 "Position"
 {
 	"Type" OBB
 }
+
 //doors
 +ObjProp 185 "BlockFrob"
 {
@@ -385,6 +386,7 @@ ObjProp 1318 "RotDoor"
 -ObjProp 2676 "PhysType"
 -ObjProp 2677 "PhysType"
 -ObjProp 2678 "PhysType"
+
 //fireplaces
 -ObjProp 266 "Scale"
 ObjProp 243 "PGLaunchInfo"
@@ -403,6 +405,7 @@ ObjProp 716 "PGLaunchInfo"
 {
 	"Max time" 2.00
 }
+
 //secrets
 +ObjProp 1033 "PickDist"
 {
@@ -450,6 +453,7 @@ ObjProp 2645 "PickDist"
 {
 	"Script 0" NVAmbientSoundTrap
 }
+
 //chests
 -ObjProp 409 "StTweqLock"
 +ObjProp 2238 "DesignNote"
@@ -460,6 +464,7 @@ ObjProp 2238 "Scripts"
 {
 	"Script 1" NVRemovePropertyTrap
 }
+
 //lockboxes
 +ObjProp 933 "DesignNote"
 {
@@ -493,6 +498,7 @@ ObjProp 2238 "Scripts"
 {
 	"Script 0" NVMetaTrap
 }
+
 //misplaced objects
 -ObjProp 272 "PhysType"
 ObjProp 272 "Position"
@@ -526,8 +532,10 @@ ObjProp 272 "Position"
 +Receptron 1515 "EarthStim"
 {
 	Max None
+
 	Target 2762
 	Agent 1113
+
 	Effect "add_prop"
 	{
 		"Prop Name" TransDoor
@@ -536,8 +544,10 @@ ObjProp 272 "Position"
 ++Receptron 1515 "EarthStim"
 {
 	Max None
+
 	Target 2762
 	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysDims
@@ -546,8 +556,10 @@ ObjProp 272 "Position"
 ++Receptron 1515 "EarthStim"
 {
 	Max None
+
 	Target 157
 	Agent Me
+
 	Effect "add_prop"
 	{
 		"Prop Name" PhysControl
@@ -556,6 +568,7 @@ ObjProp 272 "Position"
 +StimSource 1515 "EarthStim"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 1515 "Scale"
@@ -576,6 +589,7 @@ ObjProp 2366 "Position"
 {
 	"Type" OBB
 }
+
 //AIs
 +ObjProp 2122 "InvRendType"
 {
@@ -586,18 +600,21 @@ ObjProp 2366 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2421 "Knockout"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 2421 "PokeStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 2421 "NoFlash"
@@ -607,6 +624,7 @@ ObjProp 2366 "Position"
 +ObjProp 2421 "FrobInfo"
 {
 }
+
 //junk
 +ObjProp 1742 "FrobInfo"
 {

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Gathering at the Inn (CoSaS 1) by Team CoSaS / Fixes
+//T2 FM: Gathering at the Inn (CoSaS 1) by Team CoSaS / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -140,6 +139,7 @@ ObjProp 402 "Scripts"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 492 "StTweqLock"
@@ -150,6 +150,7 @@ ObjProp 492 "StTweqLock"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 493 "RotDoor"
@@ -198,6 +199,7 @@ ObjProp 616 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 621 "Scripts"
@@ -205,6 +207,7 @@ ObjProp 616 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 711 "RotDoor"
@@ -216,6 +219,7 @@ ObjProp 711 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 ObjProp 834 "Scale"
@@ -238,12 +242,14 @@ ObjProp 907 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 1088 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 1268 "BlockFrob"
@@ -320,6 +326,7 @@ ObjProp 1307 "RotDoor"
 +StimSource 1309 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 1598 "StTweqLock"

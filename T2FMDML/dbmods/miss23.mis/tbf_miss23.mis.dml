@@ -1,5 +1,4 @@
 DML1
-
 //T2 FM: The Black Frog (The Lady and the Thief) by Gaetane / Fixes: miss23.mis.dml
 
 FINGERPRINT
@@ -43,6 +42,7 @@ FINGERPRINT
 +StimSource 2694 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 2694 "BlockFrob"

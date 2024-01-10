@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Five Tigers: Eye of the Tiger by W. Scott Thune (Catman) / Fixes
+//T2 FM: Five Tigers: Eye of the Tiger by W. Scott Thune (Catman) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -66,6 +65,7 @@ ObjProp 1852 "Position"
 {
 	"Type" OBB
 }
+
 //windows
 +ObjProp 316 "Scripts"
 {
@@ -91,6 +91,7 @@ ObjProp 1852 "Position"
 {
 	"" RepositionLoc=0.02,0.0,0.0
 }
+
 //locker doors
 -ObjProp 331 "PhysType"
 +ObjProp 331 "PhysType"

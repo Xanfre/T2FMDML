@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Sluggs' FM Pack (Ferrying The IceMan) by Vaughan Cooper (Sluggs) / Fixes
+//T2 FM: Sluggs' FM Pack (Ferrying The IceMan) by Vaughan Cooper (Sluggs) / Fixes: miss19.mis.dml
 
 FINGERPRINT
 {
@@ -35,6 +34,7 @@ FINGERPRINT
 {
 	"" -1:DrSPocketCnt
 }
+
 //switches
 ObjProp 7 "JointPos"
 {
@@ -111,6 +111,7 @@ ObjProp 536 "JointPos"
 	"Joint 1" 0.00
 	"Joint 2" 0.00
 }
+
 //doors
 +MetaProp 126 -5661
 +MetaProp 127 -5661
@@ -163,11 +164,13 @@ ObjProp 536 "JointPos"
 {
 	"quest var values" 0
 }
+
 //chair
 +ObjProp 436 "AI_ObjPathable"
 {
 	"" true
 }
+
 //mantling
 +ObjProp 496 "PhysCanMant"
 {
@@ -193,11 +196,13 @@ ObjProp 536 "JointPos"
 +ObjProp 562 "PhysCanMant"
 {
 }
+
 //scroll
 ObjProp 541 "FrobInfo"
 {
 	"Inv Action" Script
 }
+
 //AIs
 +ObjProp 558 "InvRendType"
 {

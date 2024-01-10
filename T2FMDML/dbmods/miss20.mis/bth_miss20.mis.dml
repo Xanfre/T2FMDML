@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Bafford's Town House (Classic Contest) by Esme / Fixes
+//T2 FM: Bafford's Town House (Classic Contest) by Esme / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -22,7 +21,9 @@ FINGERPRINT
 {
 	Min 9
 	Max None
+
 	Target -3458
+
 	Effect "create_obj"
 	{
 		"Position" 107, 46.7, 40.5
@@ -33,7 +34,9 @@ FINGERPRINT
 {
 	Min 9
 	Max None
+
 	Target Me
+
 	Effect "slay"
 }
 -ObjProp 258 "StackCount"
@@ -60,7 +63,9 @@ ObjProp 258 "Scripts"
 {
 	Min 9
 	Max None
+
 	Target -34
+
 	Effect "create_obj"
 	{
 		"Position" 107, 45, 39.6
@@ -71,7 +76,9 @@ ObjProp 258 "Scripts"
 {
 	Min 9
 	Max None
+
 	Target Me
+
 	Effect "slay"
 }
 +ObjProp 290 "DesignNote"
@@ -102,6 +109,7 @@ ObjProp 290 "Scripts"
 +StimSource 337 "EarthStim"
 {
 	Intensity 10
+
 	Propagator "Contact"
 	{
 		Shape
@@ -126,8 +134,10 @@ ObjProp 290 "Scripts"
 {
 	Min 9
 	Max None
+
 	Target 337
 	Agent -471
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -141,6 +151,7 @@ ObjProp 290 "Scripts"
 {
 	"Script 0" NVRelayTrap
 }
+
 //doors
 +ObjProp 48 "BlockFrob"
 {
@@ -154,6 +165,7 @@ ObjProp 78 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 -ObjProp 256 "TransDoor"
@@ -161,26 +173,31 @@ ObjProp 78 "RotDoor"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 965 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 966 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 975 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //switches
 -Link 263 264 "ControlDevice"
 -Link 264 263 "ControlDevice"
@@ -188,18 +205,22 @@ ObjProp 78 "RotDoor"
 {
 	"FrobProxyMask" AllowDirect
 }
+
 //mantling
 +ObjProp 553 "PhysCanMant"
 {
 }
+
 //gas arrow
 -ObjProp 595 "DeathStage"
+
 //bafford's sceptre
 -ObjProp 979 "DiffPermit"
 +ObjProp 979 "PickDist"
 {
 	"" 5.00
 }
+
 //AIs
 +ObjProp 1271 "InvRendType"
 {
@@ -236,6 +257,7 @@ ObjProp 78 "RotDoor"
 	"Type" Alternate Bitmap
 	"Resource" cnoblew2
 }
+
 //junk
 +ObjProp 1327 "InvType"
 {

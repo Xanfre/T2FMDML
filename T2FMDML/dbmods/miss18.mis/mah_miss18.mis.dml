@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Mad as a Hatter by Triksta / Fixes
+//T2 FM: Mad as a Hatter by Triksta / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -37,8 +36,10 @@ FINGERPRINT
 {
 	Min 9
 	Max None
+
 	Target Me
 	Agent -1
+
 	Effect "add_prop"
 	{
 		"Prop Name" FrobInfo
@@ -52,6 +53,7 @@ FINGERPRINT
 {
 	"Script 0" NVRelayTrap
 }
+
 //painting
 ObjProp 141 "TransDoor"
 {
@@ -61,6 +63,7 @@ ObjProp 141 "TransDoor"
 {
 	"" true
 }
+
 //door scroll
 ObjProp 733 "Position"
 {
@@ -77,6 +80,7 @@ ObjProp 733 "Position"
 {
 	"Script 0" TrigDoorOpen
 }
+
 //doors
 ObjProp 1002 "RotDoor"
 {

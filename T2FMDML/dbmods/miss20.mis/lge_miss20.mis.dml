@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Lord Gibson's Estate by Chris K. (Mr.Magoo) / Fixes
+//T2 FM: Lord Gibson's Estate by Chris K. (Mr.Magoo) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -200,8 +199,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -115.289,159.329,-3.8968
@@ -213,6 +214,7 @@ ObjProp 1229 "Position"
 +StimSource 1358 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -249,8 +251,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -111.6,153.713,-3.8968
@@ -262,6 +266,7 @@ ObjProp 1229 "Position"
 +StimSource 1363 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -298,8 +303,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -115.256,153.735,-3.8968
@@ -311,6 +318,7 @@ ObjProp 1229 "Position"
 +StimSource 1360 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -347,8 +355,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -18.4004,-36.8513,-16.8435
@@ -360,6 +370,7 @@ ObjProp 1229 "Position"
 +StimSource 522 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -396,8 +407,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -9
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -18.6829,-32.8565,-17.1435
@@ -409,6 +422,7 @@ ObjProp 1229 "Position"
 +StimSource 514 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -445,8 +459,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -137
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -2.49354,-42.2287,-15.8313
@@ -458,6 +474,7 @@ ObjProp 1229 "Position"
 +StimSource 500 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -494,8 +511,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" -1.56422,-36.1099,-16.8905
@@ -507,6 +526,7 @@ ObjProp 1229 "Position"
 +StimSource 1205 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -543,8 +563,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -553
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 21.0993,-35.9698,-16.8813
@@ -556,6 +578,7 @@ ObjProp 1229 "Position"
 +StimSource 1202 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -592,8 +615,10 @@ ObjProp 1229 "Position"
 {
 	Min 3
 	Max 7
+
 	Target -9
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 7.88847,-30.0387,-4.20217
@@ -605,6 +630,7 @@ ObjProp 1229 "Position"
 +StimSource 858 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life

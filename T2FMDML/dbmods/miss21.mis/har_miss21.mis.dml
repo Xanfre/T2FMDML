@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Harlequin (Uncontest) by Doug Brainard (Balboa) / Fixes
+//T2 FM: The Harlequin (Uncontest) by Doug Brainard (Balboa) / Fixes: miss21.mis.dml
 
 FINGERPRINT
 {
@@ -46,6 +45,7 @@ FINGERPRINT
 +ObjProp 454 "PhysCanMant"
 {
 }
+
 //quest items
 +ObjProp 273 "StackCount"
 {
@@ -68,6 +68,7 @@ FINGERPRINT
 +ObjProp 467 "Class Tags"
 {
 }
+
 //benny
 ObjProp 501 "AI_Converation"
 {
@@ -87,8 +88,10 @@ ObjProp 517 "AI_Converation"
 	"Conversation: Action 2"[7] Nothing()
 	"  Argument 1"[44] ""
 }
+
 //pickpocketing
 -Link 509 619 "ControlDevice"
+
 //blockers
 Create -445 "Blocker1"
 {

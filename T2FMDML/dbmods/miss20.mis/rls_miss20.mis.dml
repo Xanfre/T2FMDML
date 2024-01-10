@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Relics by Paul D Rotter (eepcat) / Fixes
+//T2 FM: Relics by Paul D Rotter (eepcat) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -25,6 +24,7 @@ FINGERPRINT
 +StimSource 27 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -46,8 +46,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 119.24, 192.56, 49.99
@@ -59,6 +61,7 @@ FINGERPRINT
 +StimSource 29 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -80,8 +83,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 131.7, 192.75, 49.99
@@ -93,6 +98,7 @@ FINGERPRINT
 +StimSource 28 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -114,8 +120,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 135.4, 192.9, 49.99
@@ -127,6 +135,7 @@ FINGERPRINT
 +StimSource 21 "PingStim"
 {
 	Intensity 5
+
 	Propagator "Radius"
 	{
 		Life
@@ -148,8 +157,10 @@ FINGERPRINT
 {
 	Min 3
 	Max 7
+
 	Target -138
 	Agent 0
+
 	Effect "create_obj"
 	{
 		"Position" 135.4, 197.49, 49.99

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Flowers for a Friend (Thief Anniversary Contest) by P Forth / Fixes
+//T2 FM: Flowers for a Friend (Thief Anniversary Contest) by P Forth / Fixes: miss35.mis.dml
 
 FINGERPRINT
 {
@@ -106,6 +105,7 @@ FINGERPRINT
 +StimSource 79 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 
@@ -162,12 +162,14 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 523 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 
@@ -180,6 +182,7 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 525 "NoFlash"
@@ -502,6 +505,7 @@ ObjProp 303 "Position"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +ObjProp 340 "NoFlash"

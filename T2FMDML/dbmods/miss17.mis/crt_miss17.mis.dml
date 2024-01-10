@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Crooked Town by Terry DeLaney (Ricebug) / Fixes
+//T2 FM: Crooked Town by Terry DeLaney (Ricebug) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -74,6 +73,7 @@ ObjProp 560 "Scripts"
 {
 	"" 1.0, 1.0, 0.875
 }
+
 //goals
 +ObjProp 625 "NoDrop"
 {

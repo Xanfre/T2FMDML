@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: What Lies Below (Water Contest) by Russ Robbins (Yandros) / Fixes
+//T2 FM: What Lies Below (Water Contest) by Russ Robbins (Yandros) / Fixes: miss24.mis.dml
 
 FINGERPRINT
 {
@@ -451,6 +450,7 @@ ObjProp 580 "Scripts"
 +StimSource 1682 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 ObjProp 1682 "Position"

@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: The Curse by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes
+//T2 FM: The Curse by Daniel Markarian (Ramirez's Old Fat Burrick) / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -180,36 +179,42 @@ ObjProp 578 "StTweqJoints"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 190 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 377 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 464 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 465 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 466 "FireStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 

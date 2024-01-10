@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: City Conflict (part 1) by Silencium18 / Fixes
+//T2 FM: City Conflict (part 1) by Silencium18 / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -24,20 +23,24 @@ FINGERPRINT
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 35 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
 +Receptron 83 "WeaponStim"
 {
 	Min None
 	Max None
+
 	Effect "Abort"
 }
+
 //cart
 -ObjProp 51 "PhysType"
 ObjProp 51 "Position"
@@ -48,6 +51,7 @@ ObjProp 51 "Position"
 {
 	"Type" OBB
 }
+
 //AIs
 +ObjProp 96 "InvRendType"
 {
@@ -68,15 +72,18 @@ ObjProp 51 "Position"
 	"Type" Alternate Bitmap
 	"Resource" cmecprs
 }
+
 //bottle
 +ObjProp 99 "FrobInfo"
 {
 }
+
 //information scroll
 +ObjProp 118 "NoDrop"
 {
 	"" true
 }
+
 //moneybox
 -ObjProp 148 "PhysType"
 ObjProp 148 "Position"

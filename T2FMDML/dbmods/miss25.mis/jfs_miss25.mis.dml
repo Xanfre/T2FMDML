@@ -1,6 +1,5 @@
 DML1
-
-//T2 FM: Just for Show by William Hollingsworth (Tumbleweed) / Fixes
+//T2 FM: Just for Show by William Hollingsworth (Tumbleweed) / Fixes: miss25.mis.dml
 
 FINGERPRINT
 {
@@ -583,6 +582,7 @@ ObjProp 943 "Position"
 +StimSource 913 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 +ObjProp 913 "Scale"
@@ -772,6 +772,7 @@ ObjProp 930 "Position"
 +StimSource 930 "Stench"
 {
 	Intensity 1
+
 	Propagator "Radius"
 }
 
