@@ -48,12 +48,6 @@ ObjProp 17 "Scripts"
 	"Script 1" T2FMDMLZomExpCtl
 	"Script 2" NVRelayTrap
 }
-
-ObjProp 17 "Position"
-{
-	"Location" 127.153, 779.694, -84.191
-}
-
 +ObjProp 1271 "DesignNote"
 {
 	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
