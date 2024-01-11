@@ -183,3 +183,126 @@ class SetVectorProp2 extends SetVectorProp { }
 class SetVectorProp3 extends SetVectorProp { }
 
 class SetVectorProp4 extends SetVectorProp { }
+
+class T2FMDMLRePhys extends SqRootScript
+{
+
+	function RePhys()
+	{
+		// Remove and add the "PhysType" property to each ControlDevice-linked
+		// object.
+		// NOTE: This is assumed to be used only on physical objects.
+		if (!Link.AnyExist(linkkind("ControlDevice"), self))
+			return;
+		foreach (l in Link.GetAll(linkkind("ControlDevice"), self))
+		{
+			Property.Remove(LinkDest(l), "PhysType");
+			Property.Add(LinkDest(l), "PhysType");
+		}
+	}
+
+	function OnRePhys() { RePhys(); }
+
+	function OnTurnOn() { RePhys(); }
+
+}
+
+class T2FMDMLZomExpRelay extends SqRootScript
+{
+
+	function OnSlain()
+	{
+		// If the weapon archetype exists and this zombie is actually dead,
+		// send a message to the controller.
+		local weapname = "";
+		local weap = 0
+		try
+		{
+			weapname = userparams()[GetClassName() + "Weapon"].tostring();
+			weap = weapname.tointeger();
+		}
+		catch (err) { }
+		if (!weap && weapname.len() > 0)
+			weap = ObjID(weapname);
+		if (Object.Exists(weap) && HasProperty("MAX_HP")
+			&& 0 >= GetProperty("MAX_HP")
+			&& (Object.InheritsFrom(message().culprit, weap)
+				|| message().culprit == weap))
+		{
+			// Check if the controller exists.
+			local ctlname = "";
+			local ctl = 0;
+			try
+			{
+				ctlname = userparams()[GetClassName() + "Controller"].tostring();
+				ctl = ctlname.tointeger();
+			}
+			catch (err) { }
+			if (!ctl && ctlname.len() > 0)
+				ctl = ObjID(ctlname);
+			if (!Object.Exists(ctl))
+				return;
+			// Send both a generic and specific message to the controller.
+			SendMessage(ctl, "T2FMDMLZomExp");
+			SendMessage(ctl, "T2FMDMLZomExp" + self);
+		}
+	}
+
+}
+
+class T2FMDMLZomExpCtl extends SqRootScript
+{
+
+	function OnT2FMDMLZomExp()
+	{
+		// Check if the player object exists as a precaution and broadcast the
+		// message to other players if this is a multiplayer game.
+		local plrobj = ObjID("Player");
+		if (!Object.Exists(plrobj))
+			return;
+		if (Networking.IsMultiplayer() && Networking.IsPlayer(plrobj)
+			&& TRUE != message().data)
+			Networking.Broadcast(self, "T2FMDMLZomExp", TRUE, TRUE);
+		// Get the initial value of the bash params coefficient.
+		local coeff = Property.Get(plrobj, "BashParams", "Coefficient");
+		// Flatten the coefficient of the player's bash parameters.
+		// This will nullify bash damage.
+		Property.Set(plrobj, "BashParams", "Coefficient", 0.0);
+		// Store the initial coefficient if no timer has been set,
+		local timer = IsDataSet("TimerHandle") ? GetData("TimerHandle") : 0;
+		if (0 == timer)
+			SetData("Coeff", coeff);
+		else
+		// Otherwise, kill the existing timer.
+			KillTimer(timer);
+		// Get the reset delay.
+		// The default is 250 ms.
+		local delay = 0.25;
+		try
+		{
+			delay = userparams()[GetClassName() + "Delay"].tofloat();
+		}
+		catch (err) { }
+		// Set a timer for resetting the bash parameters.
+		SetData("TimerHandle", SetOneShotTimer("T2FMDMLZomExpReset", delay));
+	}
+
+	function OnTimer()
+	{
+		if (message().name == "T2FMDMLZomExpReset")
+		{
+			// Nullify the timer handle.
+			SetData("TimerHandle", 0);
+			// Check if the player object exists as a precaution.
+			local plrobj = ObjID("Player");
+			if (!Object.Exists(plrobj))
+				return;
+			// Get the initial coefficient value if it was properly fetched.
+			// The default is 0.00133.
+			local coeff = IsDataSet("Coeff") ? GetData("Coeff") : 0.00133;
+			// Reset the coefficient of the bash parameters.
+			Property.Set(plrobj, "BashParams", "Coefficient", coeff);
+		}
+	}
+
+}

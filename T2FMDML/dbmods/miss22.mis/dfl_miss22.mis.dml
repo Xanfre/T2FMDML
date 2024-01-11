@@ -1,5 +1,5 @@
 DML1
-//T2 FM: Dead Flower by Turi Robert / Make player resistent to flying zombie parts: miss22.mis.dml
+//T2 FM: Dead Flower by Turi Robert / Fixes: miss22.mis.dml
 
 FINGERPRINT
 {
@@ -14,12 +14,131 @@ FINGERPRINT
 	QVAR "goal_target_3" == 1330
 }
 
-+ObjProp 17 "BashFactor"
+#script "nvscript"
+#script "squirrel"
+
+//zombies
+-Link 1271 305 "CorpsePart"
+-Link 1271 900 "CorpsePart"
+-Link 1271 1273 "CorpsePart"
+-Link 1271 1279 "CorpsePart"
+-Link 1271 1281 "CorpsePart"
+-Link 1271 1282 "CorpsePart"
+Create -36 "KeyTeleporter"
 {
-	"" 0.1
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTeleporter
+		"Script 1" T2FMDMLRePhys
+	}
 }
-+ObjProp 17 "BashParams"
++Link 1271 "KeyTeleporter" "CreatureAttachment"
 {
-	"Threshold" 20000
-	"Coefficient" 0.1
+	"Joint" Abdomen
+}
++Link "KeyTeleporter" 900 "ControlDevice"
+{
+}
++ObjProp 17 "DesignNote"
+{
+	"" NVRelayTrapOn="T2FMDMLZomExp1271"; NVRelayTrapTDest="KeyTeleporter"; NVRelayTrapDelay=500
+}
+ObjProp 17 "Scripts"
+{
+	"Script 1" T2FMDMLZomExpCtl
+	"Script 2" NVRelayTrap
+}
+
+ObjProp 17 "Position"
+{
+	"Location" 127.153, 779.694, -84.191
+}
+
++ObjProp 1271 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1271 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1276 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1276 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1277 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1277 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1278 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1278 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1331 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1331 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1332 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1332 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1333 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1333 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1343 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1343 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1344 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1344 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1345 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1345 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
+}
++ObjProp 1346 "DesignNote"
+{
+	"" T2FMDMLZomExpRelayWeapon="Sword"; T2FMDMLZomExpRelayController="Player"
+}
++ObjProp 1346 "Scripts"
+{
+	"Script 0" T2FMDMLZomExpRelay
 }
