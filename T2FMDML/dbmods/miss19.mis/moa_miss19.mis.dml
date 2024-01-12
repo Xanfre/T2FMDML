@@ -1,5 +1,6 @@
 DML1
-//T2 FM: The Mask of Agamemnon by Russ Robbins (Yandros) / Fixes: miss19.mis.dml
+
+//T2 FM: The Mask of Agamemnon by Russ Robbins (Yandros) / Fixes
 
 FINGERPRINT
 {
@@ -24,6 +25,7 @@ FINGERPRINT
 {
 	"" true
 }
++MetaProp 150 -2420
 ObjProp 237 "Position"
 {
 	"Location" 363.95, 68, 230
@@ -34,19 +36,51 @@ ObjProp 237 "Position"
 	"Type" OBB
 }
 +MetaProp 237 -2420
++MetaProp 319 -2420
++MetaProp 553 -2420
 -MetaProp 660 -1629
++ObjProp 687 "Material Tags"
+{
+}
 +ObjProp 678 "DiffDestroy"
 {
 	"quest var values" 0, 1, 2
 }
 
-//ladder
+//misplaced objects
 ObjProp 170 "Position"
 {
 	"Location" 257.885, 116, 245.95
 }
 -ObjProp 170 "PhysType"
 +ObjProp 170 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 207 "Stench"
+{
+	Max None
+
+	Target 61
+	Agent -5146
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 207 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++MetaProp 207 -2420
+ObjProp 207 "Position"
+{
+	"Location" 246.325, 130.5, 206
+}
+-ObjProp 207 "PhysType"
++ObjProp 207 "PhysType"
 {
 	"Type" OBB
 }
