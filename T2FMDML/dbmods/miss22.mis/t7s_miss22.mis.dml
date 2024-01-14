@@ -1,5 +1,6 @@
 DML1
-//T2 FM: The Seven Sisters by Lady Rowena / Fixes: miss22.mis.dml
+
+//T2 FM: The Seven Sisters v2 (Night One) by Lady Rowena / Fixes
 
 FINGERPRINT
 {
@@ -14,53 +15,202 @@ FINGERPRINT
 	QVAR "goal_target_8" == -6843
 }
 
-#script "squirrel"
-
+//mantling
++ObjProp 23 "PhysCanMant"
+{
+}
++ObjProp 659 "PhysCanMant"
+{
+}
++ObjProp 664 "PhysCanMant"
+{
+}
++ObjProp 665 "PhysCanMant"
+{
+}
++ObjProp 666 "PhysCanMant"
+{
+}
++ObjProp 667 "PhysCanMant"
+{
+}
++ObjProp 668 "PhysCanMant"
+{
+}
++ObjProp 669 "PhysCanMant"
+{
+}
++ObjProp 670 "PhysCanMant"
+{
+}
++ObjProp 671 "PhysCanMant"
+{
+}
++ObjProp 672 "PhysCanMant"
+{
+}
++ObjProp 673 "PhysCanMant"
+{
+}
++ObjProp 1295 "PhysCanMant"
+{
+}
++ObjProp 1296 "PhysCanMant"
+{
+}
++ObjProp 1320 "PhysCanMant"
+{
+}
++ObjProp 1693 "PhysCanMant"
+{
+}
 +ObjProp 2640 "PhysCanMant"
 {
-	"" false
 }
 +ObjProp 2641 "PhysCanMant"
 {
-	"" false
 }
-+ObjProp 2527 "Scripts"
+
+//doors
++Receptron 153 "WeaponStim"
 {
-	"Script 0" T2FMDMLSimReposOfst
+	Min None
+	Max None
+	Effect "Abort"
 }
-+ObjProp 2527 "DesignNote"
++Receptron 392 "WeaponStim"
 {
-	"" RepositionLoc="0,0,-0.1"
+	Min None
+	Max None
+	Effect "Abort"
 }
-+ObjProp 2528 "Scripts"
++Link 442 501 "ScriptParams"
 {
-	"Script 0" T2FMDMLSimReposOfst
+	"" Double
 }
-+ObjProp 2528 "DesignNote"
++Receptron 1105 "WeaponStim"
 {
-	"" RepositionLoc="0,0,-0.1"
+	Min None
+	Max None
+	Effect "Abort"
 }
-+ObjProp 2529 "Scripts"
++Receptron 1271 "WeaponStim"
 {
-	"Script 0" T2FMDMLSimReposOfst
+	Min None
+	Max None
+	Effect "Abort"
 }
-+ObjProp 2529 "DesignNote"
++ObjProp 1986 "BlockFrob"
 {
-	"" RepositionLoc="0,0,-0.1"
+	"" true
 }
-+ObjProp 2530 "Scripts"
++ObjProp 2646 "BlockFrob"
 {
-	"Script 0" T2FMDMLSimReposOfst
+	"" true
 }
-+ObjProp 2530 "DesignNote"
++ObjProp 2647 "BlockFrob"
 {
-	"" RepositionLoc="0,0,-0.1"
+	"" true
 }
-+ObjProp 1696 "Scripts"
++MetaProp 636 -2420
++MetaProp 1113 -2420
++MetaProp 1220 -2420
++MetaProp 2017 -2420
++MetaProp 2409 -2420
++MetaProp 2423 -2420
+
+//switches
+ObjProp 387 "PickDist"
 {
-	"Script 0" T2FMDMLSimReposAbs
+	"" 5.00
 }
-+ObjProp 1696 "DesignNote"
+ObjProp 549 "StTweqJoints"
 {
-	"" RepositionLoc="-368.579,-167.356,-27.4083"
+	"Joint1AnimS" None
+	"Joint2AnimS" On
 }
+ObjProp 1489 "JointPos"
+{
+	"Joint 1" 0.00
+	"Joint 2" 0.00
+}
+ObjProp 1489 "StTweqJoints"
+{
+	"AnimS" Reverse
+	"Joint1AnimS" Reverse
+	"Joint2AnimS" On, Reverse
+}
+ObjProp 1502 "Position"
+{
+	"Location" -269.5, -151.7, -40
+}
+-ObjProp 1502 "PhysType"
++ObjProp 1502 "PhysType"
+{
+	"Type" OBB
+}
+
+//altar
+++Receptron 819 "HolyHammerStim"
+{
+	Min None
+	Max None
+
+	Target Me
+	Agent -1629
+
+	Effect "add_metaprop"
+}
+
+//misplaced objects
+ObjProp 1696 "Position"
+{
+	"Location" -368.58, -167.5, -27.408
+}
+-ObjProp 1696 "PhysType"
++ObjProp 1696 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1813 "PhysType"
+ObjProp 2527 "Position"
+{
+	"Location" -331, -197.7, -28.21
+}
+-ObjProp 2527 "PhysType"
++ObjProp 2527 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 2528 "Position"
+{
+	"Location" -330.8, -196.8, -28.21
+}
+-ObjProp 2528 "PhysType"
++ObjProp 2528 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 2529 "Position"
+{
+	"Location" -330.8, -195.9, -28.21
+}
+-ObjProp 2529 "PhysType"
++ObjProp 2529 "PhysType"
+{
+	"Type" Sphere
+}
+ObjProp 2530 "Position"
+{
+	"Location" -330.1, -196.4, -28.21
+}
+-ObjProp 2530 "PhysType"
++ObjProp 2530 "PhysType"
+{
+	"Type" Sphere
+}
+
+//invalid scaling
+-ObjProp 19 "Scale"
+-ObjProp 1590 "Scale"
+-ObjProp 1883 "Scale"
