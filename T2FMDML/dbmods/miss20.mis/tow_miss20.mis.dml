@@ -1,5 +1,6 @@
 DML1
-//T2 FM: The Tower (Thief Anniversary Contest) by Lady Rowena / Fixes: miss20.mis.dml
+
+//T2 FM: The Tower (Thief Anniversary Contest) by Lady Rowena / Fixes
 
 FINGERPRINT
 {
@@ -58,6 +59,14 @@ ObjProp 547 "ScriptTiming"
 +Link 587 554 "ControlDevice"
 {
 }
+ObjProp 587 "ScriptTiming"
+{
+	"" 500
+}
+ObjProp 588 "ScriptTiming"
+{
+	"" 1500
+}
 +Link 588 590 "ControlDevice"
 {
 }
@@ -84,7 +93,6 @@ ObjProp 547 "ScriptTiming"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +ObjProp 73 "Scale"
@@ -114,21 +122,20 @@ ObjProp 547 "ScriptTiming"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
+-ObjProp 228 "Scale"
+-ObjProp 260 "Scale"
 +Receptron 260 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +Receptron 263 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 ObjProp 300 "RotDoor"
@@ -136,12 +143,16 @@ ObjProp 300 "RotDoor"
 	"Open Angle" 272
 }
 -ObjProp 344 "TransDoor"
+-ObjProp 344 "Scripts"
 +MetaProp 344 -2420
+ObjProp 392 "Scale"
+{
+	"" 0.8125, 0.8125, 0.8125
+}
 +Receptron 426 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 ObjProp 427 "RotDoor"
@@ -192,10 +203,33 @@ ObjProp 598 "RotDoor"
 		"Prop Name" PhysControl
 	}
 }
+++Receptron 236 "Stench"
+{
+	Max None
+
+	Target 507
+	Agent -152
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 236 "Stench"
+{
+	Max None
+
+	Target 508
+	Agent -152
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
 +StimSource 236 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
 ObjProp 236 "Position"
@@ -209,7 +243,7 @@ ObjProp 236 "Position"
 }
 ObjProp 393 "Position"
 {
-	"Location" -53.89, 21, -0.57
+	"Location" -53.89, 21, -0.5
 }
 -ObjProp 393 "PhysType"
 +ObjProp 393 "PhysType"
@@ -278,6 +312,7 @@ ObjProp 677 "Position"
 }
 
 //containers
+-ObjProp 436 "Scripts"
 +ObjProp 507 "CfgTweqLock"
 {
 	"Halt" Stop Tweq
@@ -291,6 +326,11 @@ ObjProp 677 "Position"
 	"AnimC" Sim
 	"Lock Joint" 1
 	"    rate-low-highJoint" 10, 0, 90
+}
+ObjProp 626 "Scripts"
+{
+	"Script 0" TrapFindSecret
+	"Don't Inherit" true
 }
 +ObjProp 729 "DesignNote"
 {
