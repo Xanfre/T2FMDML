@@ -1,5 +1,6 @@
 DML1
-//T2 FM: Ashes and Dust (Thief Anniversary Contest) by Rob Strain (Random_Taffer) / Fixes: miss20.mis.dml
+
+//T2 FM: Ashes and Dust (Thief Anniversary Contest) by Rob Strain (Random_Taffer) / Fixes
 
 FINGERPRINT
 {
@@ -110,6 +111,20 @@ ObjProp 596 "Scripts"
 }
 
 //doors
+ObjProp 351 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 351 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 351 "PhysType"
++ObjProp 351 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 355 "Scale"
 {
 	"" 1, 1, 0.5
@@ -127,6 +142,11 @@ ObjProp 361 "Position"
 +ObjProp 361 "PhysType"
 {
 	"Type" OBB
+}
+ObjProp 369 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
 }
 ObjProp 463 "RotDoor"
 {
@@ -161,18 +181,31 @@ ObjProp 572 "Position"
 }
 
 //switches
+ObjProp 198 "Position"
+{
+	"Location" 525.125, 494.68, 489.3
+}
+-ObjProp 198 "PhysType"
++ObjProp 198 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 213 "Position"
 {
-	"Location" 497.2, 494.7, 489.3
+	"Location" 497.2, 494.68, 489.3
 }
 -ObjProp 213 "PhysType"
 +ObjProp 213 "PhysType"
 {
 	"Type" OBB
 }
+ObjProp 366 "Position"
+{
+	"Location" 523.5, 494.625, 488.83
+}
 ObjProp 415 "Position"
 {
-	"Location" 480.3, 482.4, 502.8
+	"Location" 480.325, 482.4, 502.8
 }
 -ObjProp 415 "PhysType"
 +ObjProp 415 "PhysType"
