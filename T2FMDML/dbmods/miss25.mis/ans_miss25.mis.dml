@@ -197,6 +197,11 @@ ObjProp 257 "PGLaunchInfo"
 }
 
 //AIs
+Link 484 491 "AIWatchObj"
+{
+	"   Argument 1" ""
+	"   Argument 2" 471
+}
 +ObjProp 452 "InvRendType"
 {
 	"Type" Alternate Bitmap
