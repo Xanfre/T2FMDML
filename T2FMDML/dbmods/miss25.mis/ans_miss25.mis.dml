@@ -1,5 +1,6 @@
 DML1
-//T2 FM: All for a Night's Sleep by Maria Strom-Bestor (Morrgan) / Fixes: miss25.mis.dml
+
+//T2 FM: All for a Night's Sleep by Maria Strom-Bestor (Morrgan) / Fixes
 
 FINGERPRINT
 {
@@ -18,11 +19,27 @@ FINGERPRINT
 +ObjProp 12 "PhysCanMant"
 {
 }
++ObjProp 41 "PhysCanMant"
+{
+}
++ObjProp 180 "PhysCanMant"
+{
+}
 +ObjProp 189 "PhysCanMant"
 {
 }
 +ObjProp 189 "Material Tags"
 {
+}
+ObjProp 189 "Position"
+{
+	"Location" 123, -130.5, 10
+	"Heading" c00
+}
+-ObjProp 189 "PhysType"
++ObjProp 189 "PhysType"
+{
+	"Type" OBB
 }
 
 //secret / goal
@@ -47,6 +64,24 @@ FINGERPRINT
 ObjProp 157 "StTweqLock"
 {
 	"AnimS" None
+}
+ObjProp 163 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 163 "PhysType"
++ObjProp 163 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 236 "PickDist"
+{
+	"" 5.00
+}
+-ObjProp 236 "PhysType"
++ObjProp 236 "PhysType"
+{
+	"Type" OBB
 }
 ObjProp 308 "RotDoor"
 {
@@ -93,6 +128,49 @@ ObjProp 745 "Scale"
 	"" 1.1429, 1.1429, 1.1429
 }
 
+//candlesticks
++ObjProp 109 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 109 127 "ControlDevice"
+{
+}
++Link 109 131 "ControlDevice"
+{
+}
++Link 109 623 "ControlDevice"
+{
+}
++ObjProp 109 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 127 127 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 127 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
++Link 131 131 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 131 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
++Link 623 623 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 623 "Scripts"
+{
+	"Script 0" TrapFrobInert
+}
+
 //footlockers
 +ObjProp 147 "JointPos"
 {
@@ -137,14 +215,28 @@ ObjProp 257 "PGLaunchInfo"
 -ObjProp 808 "DeathStage"
 
 //keys
++ObjProp 556 "Scripts"
+{
+	"Script 0" StdKey
+	"Don't Inherit" true
+}
 +ObjProp 556 "StackCount"
 {
 }
 +ObjProp 666 "StackCount"
 {
 }
++ObjProp 666 "Scripts"
+{
+	"Script 0" StdKey
+	"Don't Inherit" true
+}
 
-//banner
+//various objects
++ObjProp 629 "PickDist"
+{
+	"" -0.50
+}
 +ObjProp 801 "SlayResult"
 {
 	"Effect" Destroy
