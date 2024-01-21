@@ -19,7 +19,13 @@ FINGERPRINT
 +ObjProp 12 "PhysCanMant"
 {
 }
-+ObjProp 41 "PhysCanMant"
++ObjProp 57 "PhysCanMant"
+{
+}
++ObjProp 58 "PhysCanMant"
+{
+}
++ObjProp 59 "PhysCanMant"
 {
 }
 +ObjProp 180 "PhysCanMant"
