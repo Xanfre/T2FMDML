@@ -1,5 +1,6 @@
 DML1
-//T2 FM: Nostalgia (Memento Mori) by Rob Strain (Random_Taffer) & Devin Reynolds (Drysils Chosen) / Fixes: miss20.mis.dml
+
+//T2 FM: Nostalgia (Memento Mori) by Rob Strain (Random_Taffer) & Devin Reynolds (Drysils Chosen) / Fixes
 
 FINGERPRINT
 {
@@ -12,6 +13,66 @@ FINGERPRINT
 	136 [429 441 496]
 	637 [463 315 383]
 	QVAR "goal_target_2" == 319
+}
+
+//camvator
+ObjProp 46 "Position"
+{
+	"Location" 529.38, 446.475, 521.384
+	"Heading" 0
+}
+ObjProp 214 "Position"
+{
+	"Location" 511, 513.5, 495.5
+}
++ObjProp 218 "AI_Efficiency"
+{
+	"Enabled" false
+}
+-Link 548 376 "ControlDevice"
+Link 367 369 "TPath"
+{
+	"Speed" 4.25
+}
+Link 369 370 "TPath"
+{
+	"Speed" 4.25
+}
+Link 370 372 "TPath"
+{
+	"Speed" 4.25
+}
+Link 372 373 "TPath"
+{
+	"Speed" 4.25
+}
++ObjProp 376 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
+ObjProp 376 "AI_Converation"
+{
+	"Conversation: Action 1" Add link(Flavor,Destination(s),Source(s))
+	"   Argument 1"[1] PhysAttach
+	"   Argument 2"[1] CamVator
+	"   Argument 3"[1] Player
+	"Conversation: Action 2" Goto object(Object,Speed,Motion Tags)
+	"   Argument 1"[2] EndPoint
+	"   Argument 2"[2] ""
+	"   Argument 3"[2] ""
+	"Conversation: Action 3" Remove link(Flavor,Destination(s),Source(s))
+	"   Argument 1"[3] PhysAttach
+	"   Argument 2"[3] CamVator
+	"   Argument 3"[3] Player
+	"Conversation: Action 4" Frob object(Target Object,With Object)
+	"   Argument 1"[4] StartPt
+	"   Argument 2"[4] ""
+	"   Argument 3"[4] ""
+	"Actor"[5] Unused
+	"Conversation: Action 5" Nothing()
+	"   Argument 1"[5] ""
+	"   Argument 2"[5] ""
+	"   Argument 3"[5] ""
 }
 
 //goals / pickpockets
@@ -52,7 +113,7 @@ FINGERPRINT
 }
 +ObjProp 182 "DesignNote"
 {
-	"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=515; NVLinkBuilderLinkDest=466; NVLinkBuilderCount=1; NVLinkBuilderOff="Null"
+	"" NVLinkBuilderLinkType="ControlDevice"; NVLinkBuilderLinkSource=515; NVLinkBuilderLinkDest=466; NVLinkBuilderOff="Null"; NVLinkBuilderCount=1
 }
 +ObjProp 182 "Scripts"
 {
@@ -60,7 +121,7 @@ FINGERPRINT
 }
 +ObjProp 466 "TrapFlags"
 {
-	"" Once
+	"" Once, NoOff
 }
 +ObjProp 466 "Scripts"
 {
@@ -96,6 +157,17 @@ FINGERPRINT
 {
 	"Script 0" TrapDestroy
 }
++ObjProp 190 "DesignNote"
+{
+	"" NVAmbientSoundTrapOn="Contained"
+}
++Link 190 -728 "SoundDescription"
+{
+}
+ObjProp 190 "Scripts"
+{
+	"Script 1" NVAmbientSoundTrap
+}
 +ObjProp 190 "SlayResult"
 {
 }
@@ -130,6 +202,10 @@ ObjProp 280 "Scripts"
 +ObjProp 290 "NoDrop"
 {
 	"" true
+}
++ObjProp 290 "Scripts"
+{
+	"Script 0" LootSounds
 }
 -Link 291 313 "ControlDevice"
 ObjProp 291 "Position"
@@ -316,10 +392,72 @@ ObjProp 598 "Scripts"
 +StimSource 31 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
 +ObjProp 31 "PhysCanMant"
+{
+}
++ObjProp 37 "PhysCanMant"
+{
+}
+ObjProp 37 "Position"
+{
+	"Location" 506.85, 471.5, 522
+}
+-ObjProp 37 "PhysType"
++ObjProp 37 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 37 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 38 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 38 "ModelName"
+{
+	"" lever02
+}
++ObjProp 38 "Scale"
+{
+	"" 1, 1, 2
+}
+ObjProp 38 "Position"
+{
+	"Location" 510.5, 472.35, 525.5
+	"Bank" 2000
+}
+-ObjProp 38 "PhysType"
++ObjProp 38 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 38 "PhysCanMant"
+{
+}
++ObjProp 39 "PhysCanMant"
+{
+}
+ObjProp 39 "Position"
+{
+	"Location" 502, 476, 521
+}
+-ObjProp 39 "PhysType"
++ObjProp 39 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 39 "RenderType"
+{
+	"" Not Rendered
+}
++ObjProp 428 "PhysCanMant"
+{
+}
++ObjProp 538 "PhysCanMant"
 {
 }
 
@@ -330,6 +468,29 @@ ObjProp 598 "Scripts"
 -ObjProp 100 "JointPos"
 -ObjProp 496 "JointPos"
 -ObjProp 575 "JointPos"
+ObjProp 24 "RotDoor"
+{
+	"Open Angle" 89
+}
+ObjProp 45 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 45 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 45 "PhysType"
++ObjProp 45 "PhysType"
+{
+	"Type" c000
+}
+ObjProp 99 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
 ObjProp 146 "RotDoor"
 {
 	"Open Angle" 274
@@ -342,6 +503,28 @@ ObjProp 321 "TransDoor"
 {
 	"Base Speed" 2.50
 }
+ObjProp 459 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 459 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 459 "PhysType"
++ObjProp 459 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 492 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
++ObjProp 492 "PhysCanMant"
+{
+}
 +ObjProp 729 "Locked"
 {
 	"" true
@@ -351,15 +534,29 @@ ObjProp 321 "TransDoor"
 	"" true
 }
 
-//scrolls
+//scrolls / signs
 +ObjProp 211 "DesignNote"
 {
-	"" NVRelayTrapOn="FrobInvEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapDelay=200; NVRelayTrapCount=1
+}
++ObjProp 211 "FrobInfo"
+{
+	"World Action" Move, Script
+	"Inv Action" Script
 }
 -ObjProp 211 "PhysType"
 ObjProp 211 "Scripts"
 {
+	"Script 0" StdBook
 	"Script 1" NVRelayTrap
+}
+ObjProp 251 "FrobInfo"
+{
+	"World Action" FocusScript
+}
+ObjProp 251 "Scripts"
+{
+	"Script 0" NVOnscreenText
 }
 +ObjProp 521 "DesignNote"
 {
@@ -370,11 +567,54 @@ ObjProp 521 "Scripts"
 	"Script 1" NVRelayTrap
 	"Script 2" ""
 }
-
-//AI
-+ObjProp 218 "AI_Efficiency"
+ObjProp 529 "FrobInfo"
 {
-	"Enabled" false
+	"World Action" FocusScript
+}
++ObjProp 529 "PickDist"
+{
+	"" -1.00
+}
+ObjProp 529 "Scripts"
+{
+	"Script 0" NVOnscreenText
+}
+
+//misplaced objects
+ObjProp 212 "Position"
+{
+	"Location" 525.7, 526.75, 509.125
+}
+ObjProp 365 "Position"
+{
+	"Location" 526.8, 460.225, 516.85
+}
+-ObjProp 365 "PhysType"
++ObjProp 365 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 464 "Position"
+{
+	"Location" 527.25, 366.1, 498.1
+}
+-ObjProp 464 "PhysType"
++ObjProp 464 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 474 "Position"
+{
+	"Location" 526.8, 460.225, 514.5
+}
+-ObjProp 474 "PhysType"
++ObjProp 474 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 541 "Position"
+{
+	"Location" 476.806, 370.725, 392.306
 }
 
 //fish
@@ -389,15 +629,4 @@ ObjProp 521 "Scripts"
 +ObjProp 284 "CombineType"
 {
 	"" Sushi
-}
-
-//ladder
-ObjProp 464 "Position"
-{
-	"Location" 527.96, 366.1, 498.1
-}
--ObjProp 464 "PhysType"
-+ObjProp 464 "PhysType"
-{
-	"Type" OBB
 }
