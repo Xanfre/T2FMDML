@@ -1,7 +1,46 @@
-/*
- * FMDML Helper Scripts
- */
+/************************
+ * FMDML Helper Scripts *
+ ************************/
 
+/*
+ * T2FMDMLRePhys:
+ * Re-physicalize ControlDevice-linked physical objects upon receiving "TurnOn"
+ * messages.
+ * Linked objects are assumed to be physical objects.
+ */
+class T2FMDMLRePhys extends SqRootScript
+{
+
+	function RePhys()
+	{
+		// Remove and add the "PhysType" property to each ControlDevice-linked
+		// object.
+		// NOTE: This is assumed to be used only on physical objects.
+		if (!Link.AnyExist(linkkind("ControlDevice"), self))
+			return;
+		foreach (l in Link.GetAll(linkkind("ControlDevice"), self))
+		{
+			Property.Remove(LinkDest(l), "PhysType");
+			Property.Add(LinkDest(l), "PhysType");
+		}
+	}
+
+	function OnRePhys() { RePhys(); }
+
+	function OnTurnOn() { RePhys(); }
+
+}
+
+/*
+ * T2FMDMLReposBase:
+ * Get the user-specified location and direction parameters for use in derived
+ * scripts.
+ * This script responds to no messages.
+ *
+ * Parameters:
+ * "RepositionLoc" - The new location of the object.
+ * "RepositionDir" - The new direction of the object.
+ */
 class T2FMDMLReposBase extends SqRootScript
 {
 
@@ -47,6 +86,12 @@ class T2FMDMLReposBase extends SqRootScript
 
 }
 
+/*
+ * T2FMDMLSimReposOfst:
+ * Change the position of this object on simulation start to that which was
+ * provided, treating parameters as offsets applied to the object's current
+ * state.
+ */
 class T2FMDMLSimReposOfst extends T2FMDMLReposBase
 {
 
@@ -61,6 +106,11 @@ class T2FMDMLSimReposOfst extends T2FMDMLReposBase
 
 }
 
+/*
+ * T2FMDMLSimReposAbs:
+ * Change the position of this object on simulation start to that which was
+ * provided, treating parameters as absolute.
+ */
 class T2FMDMLSimReposAbs extends T2FMDMLReposBase
 {
 
@@ -76,6 +126,20 @@ class T2FMDMLSimReposAbs extends T2FMDMLReposBase
 
 const SVP_MAX_SUBPROP = 4;
 
+/*
+ * SetVectorProp:
+ * Set a specified vector property on this object to that which was provided
+ * on simulation start.
+ * Provides multiple copies for use on the same object.
+ *
+ * Parameters:
+ * "SetVectorProp[2,3,4]Target" - The target of the script (either a concrete
+ *     object or an archetype).
+ * "SetVectorProp[2,3,4]Property" - The vector property to assign.
+ * "SetVectorProp[2,3,4]SubProperty" - The sub property to assign (if
+ *     applicable).
+ * "SetVectorProp[2,3,4]Value" - The vector to assign to the property.
+ */
 class SetVectorProp extends SqRootScript
 {
 
@@ -130,9 +194,51 @@ class SetVectorProp extends SqRootScript
 		return values;
 	}
 
+	// Get the script target.
+	function GetTarget()
+	{
+		local targetstr = "";
+		local target = []
+		try
+		{
+			targetstr = userparams()[GetClassName() + "Target"].tostring();
+		}
+		catch(err) { target.append(self); }
+		if (0 != targetstr.len())
+		{
+			local obj;
+			try
+			{
+				obj = targetstr.tointeger();
+			}
+			catch (err) { obj = ObjID(targetstr); }
+			if (obj > 0 && Object.Exists(obj))
+				target.append(obj);
+			else if (obj < 0 && Object.Exists(obj))
+			{
+				local objmax = 8184, objmaxref = int_ref();
+				if (Engine.ConfigGetInt("obj_max", objmaxref))
+					objmax = objmaxref.tointeger();
+				// NOTE: This is inefficient, but Squirrel scripts do not have
+				// access to ITraitMan to query objects.
+				for (local i = 1; i < objmax; i++)
+				{
+					if (!Object.Exists(i) || !Object.InheritsFrom(i, obj))
+						continue;
+					target.append(i);
+				}
+			}
+		}
+		return target;
+	}
+
 	// Set the requested property fields with the provided values.
 	function SetProp()
 	{
+		// Fetch targets of the set operation.
+		local target = GetTarget();
+		if (0 == target.len())
+			return;
 		// Fetch parameters for the property to be modified, the subproperties
 		// (if applicable), and the vector values to be set.
 		local prop = GetPropParam();
@@ -151,11 +257,13 @@ class SetVectorProp extends SqRootScript
 			// Ensure a 3-tuple was passed as the value.
 			// If one was, construct a vector using it and populate the
 			// specified property field.
-			if (3 == val.len()) {
+			if (3 == val.len())
+			{
 				local vec = vector(val[0].tofloat(), val[1].tofloat(),
 					val[2].tofloat());
-				Property.Set(self, prop,
-					null == subprops[i] ? "" : subprops[i], vec);
+				foreach (obj in target)
+					Property.Set(obj, prop,
+						null == subprops[i] ? "" : subprops[i], vec);
 			}
 		}
 		// Handle special cases for modifying physics attributes of doors.
@@ -163,10 +271,13 @@ class SetVectorProp extends SqRootScript
 		// In particular, re-initialize the relevant door property.
 		if (prop == "PhysAttr")
 		{
-			if (Property.Possessed(self, "RotDoor"))
-				Property.CopyFrom(self, "RotDoor", self);
-			else if (Property.Possessed(self, "TransDoor"))
-				Property.CopyFrom(self, "TransDoor", self);
+			foreach (obj in target)
+			{
+				if (Property.Possessed(obj, "RotDoor"))
+					Property.CopyFrom(obj, "RotDoor", obj);
+				else if (Property.Possessed(obj, "TransDoor"))
+					Property.CopyFrom(obj, "TransDoor", obj);
+			}
 		}
 	}
 
@@ -184,36 +295,78 @@ class SetVectorProp3 extends SetVectorProp { }
 
 class SetVectorProp4 extends SetVectorProp { }
 
-class T2FMDMLRePhys extends SqRootScript
+/*
+ * T2FMDMLUnmount:
+ * Unmounts the player from a rope or other climbable object upon receiving
+ * "TurnOn".
+ */
+class T2FMDMLUnmount extends SqRootScript
 {
 
-	function RePhys()
+	// Unmount the player.
+	function OnTurnOn()
 	{
-		// Remove and add the "PhysType" property to each ControlDevice-linked
-		// object.
-		// NOTE: This is assumed to be used only on physical objects.
-		if (!Link.AnyExist(linkkind("ControlDevice"), self))
-			return;
-		foreach (l in Link.GetAll(linkkind("ControlDevice"), self))
+		// Get the player object.
+		local player = ObjID("Player");
+		// Prepare the object being climbed.
+		local climbobj = object(); 
+		Physics.GetClimbingObject(player, climbobj);
+		climbobj = climbobj.tointeger();
+		// Unmount if the player is currently climbing.
+		if (climbobj)
 		{
-			Property.Remove(LinkDest(l), "PhysType");
-			Property.Add(LinkDest(l), "PhysType");
+			// If this is a non-rope OBB object like a ladder, trick Dark into
+			// believing that it is a rope for a few moments and reset the
+			// relevant properties after a short delay.
+			if (!Physics.IsRope(climbobj) && Physics.IsOBB(climbobj))
+			{
+				Property.Add(climbobj, "PhysRope");
+				Property.Set(climbobj, "PhysType", "Type", /*Sphere*/ 1);
+				SetOneShotTimer("ResetPhys", 0.001, climbobj);
+			}
+			// Reset the velocity to what it was before. This will destroy all
+			// object contacts on the player, causing him to unmount from ropes
+			// (but not ladders!).
+			// See SetVelocity() in PHSCRPT.CPP.
+			local vel = vector();
+			Physics.GetVelocity(player, vel);
+			Physics.SetVelocity(player, vel);
 		}
 	}
 
-	function OnRePhys() { RePhys(); }
-
-	function OnTurnOn() { RePhys(); }
+	function OnTimer()
+	{
+		if (message().name == "ResetPhys" && message().data)
+		{
+			// Remove rope-related properties and reset physics.
+			local climbobj = message().data;
+			Property.Remove(climbobj, "PhysRope");
+			Property.Remove(climbobj, "Creature");
+			Property.Add(climbobj, "PhysType");
+		}
+	}
 
 }
 
+/*
+ * T2FMDMLZomExpRelay:
+ * Relay a "T2FMDMLZomExp" message to a specified controller object if this
+ * zombie was destroyed with a particular weapon.
+ *
+ * Parameters
+ * "T2FMDMLZomExpRelayWeapon" - The accepted weapon's archetype or object ID.
+ * "T2FMDMLZomExpRelayController" - The controller object's name or object ID.
+ */
 class T2FMDMLZomExpRelay extends SqRootScript
 {
 
+	// Relay a message if this zombie is about to explode.
 	function OnSlain()
 	{
 		// If the weapon archetype exists and this zombie is actually dead,
 		// send a message to the controller.
+		// If this is not a zombie, assume that it is dead.
+		local zomarch = ObjID("ZombieTypes");
 		local weapname = "";
 		local weap = 0
 		try
@@ -224,8 +377,9 @@ class T2FMDMLZomExpRelay extends SqRootScript
 		catch (err) { }
 		if (!weap && weapname.len() > 0)
 			weap = ObjID(weapname);
-		if (Object.Exists(weap) && HasProperty("MAX_HP")
-			&& 0 >= GetProperty("MAX_HP")
+		if (Object.Exists(weap)
+			&& (!Object.Exists(zomarch) || !Object.InheritsFrom(self, zomarch)
+				|| (HasProperty("MAX_HP") && 0 >= GetProperty("MAX_HP")))
 			&& (Object.InheritsFrom(message().culprit, weap)
 				|| message().culprit == weap))
 		{
@@ -250,9 +404,20 @@ class T2FMDMLZomExpRelay extends SqRootScript
 
 }
 
+/*
+ * T2FMDMLZomExpCtl:
+ * Upon receiving the "T2FMDMLZomExp" message, temporarily flatten the player's
+ * bash parameters coefficient to prevent damage from flying zombie parts.
+ * The original coefficient is restored after a short delay.
+ *
+ * Parameters:
+ * "T2FMDMLZomExpCtlDelay" - The amount of time before the bash parameters
+ *     coefficient is reset to its initial value.
+ */
 class T2FMDMLZomExpCtl extends SqRootScript
 {
 
+	// Temporarily flatten the bash parameters coefficient.
 	function OnT2FMDMLZomExp()
 	{
 		// Check if the player object exists as a precaution and broadcast the
