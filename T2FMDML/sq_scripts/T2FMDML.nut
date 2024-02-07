@@ -134,7 +134,8 @@ const SVP_MAX_SUBPROP = 4;
  *
  * Parameters:
  * "SetVectorProp[2,3,4]Target" - The target of the script (either a concrete
- *     object or an archetype).
+ *     object or an archetype; multiple targets can be specified by providing a
+ *     comma-separated list).
  * "SetVectorProp[2,3,4]Property" - The vector property to assign.
  * "SetVectorProp[2,3,4]SubProperty" - The sub property to assign (if
  *     applicable).
@@ -206,26 +207,30 @@ class SetVectorProp extends SqRootScript
 		catch(err) { target.append(self); }
 		if (0 != targetstr.len())
 		{
-			local obj;
-			try
+			local objstrs = split(targetstr, ",");
+			foreach (objstr in objstrs)
 			{
-				obj = targetstr.tointeger();
-			}
-			catch (err) { obj = ObjID(targetstr); }
-			if (obj > 0 && Object.Exists(obj))
-				target.append(obj);
-			else if (obj < 0 && Object.Exists(obj))
-			{
-				local objmax = 8184, objmaxref = int_ref();
-				if (Engine.ConfigGetInt("obj_max", objmaxref))
-					objmax = objmaxref.tointeger();
-				// NOTE: This is inefficient, but Squirrel scripts do not have
-				// access to ITraitMan to query objects.
-				for (local i = 1; i < objmax; i++)
+				local obj;
+				try
 				{
-					if (!Object.Exists(i) || !Object.InheritsFrom(i, obj))
-						continue;
-					target.append(i);
+					obj = objstr.tointeger();
+				}
+				catch (err) { obj = ObjID(objstr); }
+				if (obj > 0 && Object.Exists(obj))
+					target.append(obj);
+				else if (obj < 0 && Object.Exists(obj))
+				{
+					local objmax = 8184, objmaxref = int_ref();
+					if (Engine.ConfigGetInt("obj_max", objmaxref))
+						objmax = objmaxref.tointeger();
+					// NOTE: This is inefficient, but Squirrel scripts do not
+					// have access to ITraitMan to query objects.
+					for (local i = 1; i < objmax; i++)
+					{
+						if (!Object.Exists(i) || !Object.InheritsFrom(i, obj))
+							continue;
+						target.append(i);
+					}
 				}
 			}
 		}
