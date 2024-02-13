@@ -124,6 +124,30 @@ class T2FMDMLSimReposAbs extends T2FMDMLReposBase
 
 }
 
+/*
+ * T2FMDMLNoBlockDoor:
+ * Prevent this door from blocking vision, which is useful if you have the
+ * 'black box' effect from its cells being set to block vision.
+ */
+class T2FMDMLNoBlockDoor extends SqRootScript
+{
+
+	// Unblock the door on Sim start.
+	function OnSim()
+	{
+		if (message().starting)
+		{
+			Door.SetBlocking(self, false);
+			if (Property.Possessed(self, "RotDoor"))
+				Property.Set(self, "RotDoor", "Blocks Vision?", false);
+			else if (Property.Possessed(self, "TransDoor"))
+				Property.Set(self, "TransDoor", "Blocks Vision?", false);
+			Door.SetBlocking(self, true);
+		}
+	}
+
+}
+
 const SVP_MAX_SUBPROP = 4;
 
 /*
