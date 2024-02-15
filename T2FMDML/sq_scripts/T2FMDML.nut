@@ -47,41 +47,31 @@ class T2FMDMLReposBase extends SqRootScript
 	// Get the specified location
 	function GetLoc(def)
 	{
-		local loc = def;
-		if ("RepositionLoc" in userparams())
+		try
 		{
-			try
-			{
-				local locxyz = split(
-					userparams().RepositionLoc.tostring(), ","
-				);
-				if (locxyz.len() == 3)
-					loc = vector(locxyz[0].tofloat(), locxyz[1].tofloat(),
-						locxyz[2].tofloat());
-			}
-			catch (err) { }
+			local loc = def;
+			local locxyz = split(userparams().RepositionLoc.tostring(), ",");
+			if (locxyz.len() == 3)
+				loc = vector(locxyz[0].tofloat(), locxyz[1].tofloat(),
+					locxyz[2].tofloat());
+			return loc;
 		}
-		return loc;
+		catch (err) { return def; }
 	}
 
 	// Get the specified rotation
 	function GetDir(def)
 	{
-		local dir = def;
-		if ("RepositionDir" in userparams())
+		try
 		{
-			try
-			{
-				local dirhpb = split(
-					userparams().RepositionDir.tostring(), ","
-				);
-				if (dirhpb.len() == 3)
-					dir = vector(dirhpb[2].tofloat(), dirhpb[1].tofloat(),
-						dirhpb[0].tofloat());
-			}
-			catch (err) { }
+			local dir = def;
+			local dirhpb = split(userparams().RepositionDir.tostring(), ",");
+			if (dirhpb.len() == 3)
+				dir = vector(dirhpb[2].tofloat(), dirhpb[1].tofloat(),
+					dirhpb[0].tofloat());
+			return dir;
 		}
-		return dir;
+		catch (err) { return def; }
 	}
 
 }
@@ -125,25 +115,54 @@ class T2FMDMLSimReposAbs extends T2FMDMLReposBase
 }
 
 /*
- * T2FMDMLNoBlockDoor:
+ * NoBlkVisDoor:
  * Prevent this door from blocking vision, which is useful if you have the
  * 'black box' effect from its cells being set to block vision.
+ *
+ * Parameters:
+ * "NoBlkVisDoorBlockAIVis" - Set the door to block AI vision instead of
+ *     blocking vision on the door property itself. This parameter takes no
+ *     argument.
  */
-class T2FMDMLNoBlockDoor extends SqRootScript
+class NoBlkVisDoor extends SqRootScript
 {
 
-	// Unblock the door on Sim start.
-	function OnSim()
+	// Set the blocking state of the door.
+	function SetBlocking(on)
 	{
-		if (message().starting)
+		Door.SetBlocking(self, on);
+		if (HasProperty("RotDoor"))
+			SetProperty("RotDoor", "Blocks Vision?", on);
+		else if (HasProperty("TransDoor"))
+			SetProperty("TransDoor", "Blocks Vision?", on);
+		if (!on)
+			Door.SetBlocking(self, true)
+	}
+
+	// Unblock the door on script start.
+	function OnBeginScript()
+	{
+		local blocking = false;
+		if (HasProperty("RotDoor"))
+			blocking = GetProperty("RotDoor", "Blocks Vision?");
+		else if (HasProperty("TransDoor"))
+			blocking = GetProperty("TransDoor", "Blocks Vision?");
+		if (blocking)
 		{
-			Door.SetBlocking(self, false);
-			if (Property.Possessed(self, "RotDoor"))
-				Property.Set(self, "RotDoor", "Blocks Vision?", false);
-			else if (Property.Possessed(self, "TransDoor"))
-				Property.Set(self, "TransDoor", "Blocks Vision?", false);
-			Door.SetBlocking(self, true);
+			SetBlocking(false);
+			if (!HasProperty("AI_BlkVis")
+				&& GetClassName() + "BlockAIVis" in userparams())
+				SetProperty("AI_BlkVis", true);
 		}
+		if (!IsDataSet("Blocking"))
+			SetData("Blocking", blocking);
+	}
+
+	// Block the door on script end.
+	function OnEndScript()
+	{
+		if (IsDataSet("Blocking") && GetData("Blocking"))
+			SetBlocking(true);
 	}
 
 }
