@@ -178,7 +178,7 @@ const SVP_MAX_SUBPROP = 4;
  * Parameters:
  * "SetVectorProp[2,3,4]Target" - The target of the script (either a concrete
  *     object or an archetype; multiple targets can be specified by providing a
- *     comma-separated list).
+ *     comma-separated list; prepend '!' to a target to explicitly exclude it).
  * "SetVectorProp[2,3,4]Property" - The vector property to assign.
  * "SetVectorProp[2,3,4]SubProperty" - The sub property to assign (if
  *     applicable).
@@ -242,25 +242,28 @@ class SetVectorProp extends SqRootScript
 	function GetTarget()
 	{
 		local targetstr = "";
-		local target = []
+		local target = [[], []]
 		try
 		{
 			targetstr = userparams()[GetClassName() + "Target"].tostring();
 		}
-		catch(err) { target.append(self); }
+		catch(err) { target[0].append(self); }
 		if (0 != targetstr.len())
 		{
 			local objstrs = split(targetstr, ",");
 			foreach (objstr in objstrs)
 			{
 				local obj;
+				local exclude = objstr.len() > 0 && objstr[0] == '!';
+				if (exclude)
+					objstr = objstr.slice(1);
 				try
 				{
 					obj = objstr.tointeger();
 				}
 				catch (err) { obj = ObjID(objstr); }
 				if (obj > 0 && Object.Exists(obj))
-					target.append(obj);
+					target[exclude ? 1 : 0].append(obj);
 				else if (obj < 0 && Object.Exists(obj))
 				{
 					local objmax = 8184, objmaxref = int_ref();
@@ -272,7 +275,7 @@ class SetVectorProp extends SqRootScript
 					{
 						if (!Object.Exists(i) || !Object.InheritsFrom(i, obj))
 							continue;
-						target.append(i);
+						target[exclude ? 1 : 0].append(i);
 					}
 				}
 			}
@@ -285,7 +288,7 @@ class SetVectorProp extends SqRootScript
 	{
 		// Fetch targets of the set operation.
 		local target = GetTarget();
-		if (0 == target.len())
+		if (0 == target[0].len())
 			return;
 		// Fetch parameters for the property to be modified, the subproperties
 		// (if applicable), and the vector values to be set.
@@ -309,9 +312,22 @@ class SetVectorProp extends SqRootScript
 			{
 				local vec = vector(val[0].tofloat(), val[1].tofloat(),
 					val[2].tofloat());
-				foreach (obj in target)
-					Property.Set(obj, prop,
-						null == subprops[i] ? "" : subprops[i], vec);
+				foreach (obj in target[0])
+				{
+					local skip = false;
+					foreach (exclusion in target[1])
+					{
+						if (obj == exclusion
+							|| Object.InheritsFrom(obj, exclusion))
+						{
+							skip = true;
+							break;
+						}
+					}
+					if (!skip)
+						Property.Set(obj, prop,
+							null == subprops[i] ? "" : subprops[i], vec);
+				}
 			}
 		}
 		// Handle special cases for modifying physics attributes of doors.
@@ -319,7 +335,7 @@ class SetVectorProp extends SqRootScript
 		// In particular, re-initialize the relevant door property.
 		if (prop == "PhysAttr")
 		{
-			foreach (obj in target)
+			foreach (obj in target[0])
 			{
 				if (Property.Possessed(obj, "RotDoor"))
 					Property.CopyFrom(obj, "RotDoor", obj);
