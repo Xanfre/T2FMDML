@@ -14,7 +14,7 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1321
 }
 
-//loot stats
+//loot
 +ObjProp 10 "DiffTurnOn"
 {
 	"quest var values" 0, 1, 2
@@ -27,3 +27,49 @@ FINGERPRINT
 {
 	"" =0:DrSCmLoot
 }
+ObjProp 2226 "PickDist"
+{
+	"" 4.00
+}
+ObjProp 2245 "PickDist"
+{
+	"" 4.00
+}
+
+//window
++ObjProp 1098 "BlockFrob"
+{
+	"" true
+}
+
+//book of vision
+ObjProp 1174 "PickDist"
+{
+	"" 2.50
+}
+-ObjProp 1174 "PhysType"
++ObjProp 1174 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1287 "PhysType"
++ObjProp 1287 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1321 "PhysType"
++ObjProp 1321 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1321 "PickDist"
+{
+	"" 2.50
+}
++ObjProp 1321 "GameName"
+{
+	"" Name_VisBook: "The 7th Book of Vision"
+}
+
+//AIs
++MetaProp 2278 -3529
