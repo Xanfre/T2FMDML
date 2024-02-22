@@ -23,13 +23,13 @@ FINGERPRINT
 }
 
 //doors
-ObjProp 112 "Scale"
+ObjProp 112 "RotDoor"
 {
-	"" 1, 1, 0.47
+	"Status" Open
 }
-ObjProp 113 "Scale"
+ObjProp 113 "RotDoor"
 {
-	"" 1, 1, 0.47
+	"Status" Open
 }
 ObjProp 118 "StTweqLock"
 {
