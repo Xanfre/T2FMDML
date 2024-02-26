@@ -1,5 +1,5 @@
 DML1
-//T2 FM: The Folly of Youth by Philip Shepherd (The Dude) / Fix items: miss20.mis.dml
+//T2 FM: The Folly of Youth by Philip Shepherd (The Dude) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -14,114 +14,99 @@ FINGERPRINT
 	QVAR "goal_target_0" == 1976
 }
 
-+ObjProp 503 "NoDrop"
+//pickpockets
++ObjProp 1373 "DesignNote"
 {
-	"" true
+	"" NVRemovePropertyTrapOn="Incapacitated"; NVRemovePropertyTrapTarget=445; NVRemovePropertyTrapProp="FrobInfo"
 }
-+ObjProp 680 "NoDrop"
++ObjProp 1373 "Scripts"
 {
-	"" true
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRemovePropertyTrap
 }
-+ObjProp 1100 "NoDrop"
++ObjProp 1441 "DesignNote"
 {
-	"" true
+	"" NVRemovePropertyTrapOn="Incapacitated"; NVRemovePropertyTrapTarget=696; NVRemovePropertyTrapProp="FrobInfo"
 }
-+ObjProp 704 "NoDrop"
++ObjProp 1441 "Scripts"
 {
-	"" true
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRemovePropertyTrap
 }
-+ObjProp 1270 "BlockFrob"
++ObjProp 2089 "DesignNote"
 {
-	"" true
+	"" NVRemovePropertyTrapOn="Incapacitated"; NVRemovePropertyTrapTarget=1439; NVRemovePropertyTrapProp="FrobInfo"
+}
++ObjProp 2089 "Scripts"
+{
+	"Script 0" NVIncapacitatedMessages
+	"Script 1" NVRemovePropertyTrap
+}
+
+//hanging arrows
+-ObjProp 614 "PhysType"
++ObjProp 614 "PhysType"
+{
+    "Type" OBB
+}
+-ObjProp 1485 "PhysType"
++ObjProp 1485 "PhysType"
+{
+    "Type" OBB
+}
+-ObjProp 1490 "PhysType"
++ObjProp 1490 "PhysType"
+{
+    "Type" OBB
+}
+
+//objects
+Create -2467
+{
+    -ObjProp "PhysType"
+    +ObjProp "Position"
+    {
+        "Location" 443.99,409.49,403.57
+    }
+    +ObjProp "PhysType"
+    {
+        "Type" OBB
+        "# Submodels" 6
+    }
+    +ObjProp "RenderType"
+    {
+        "" Not Rendered
+    }
 }
 -ObjProp 1270 "PhysType"
 +ObjProp 1270 "PhysType"
 {
-	"Type" None
-	"# Submodels" 0
+    "Type" OBB
 }
--ObjProp 1270 "PhysDims"
-+ObjProp 1270 "PhysDims"
+-ObjProp 1535 "PhysType"
++ObjProp 1535 "PhysType"
 {
-	"Size" 0.20, 4.00, 4.00
-	"Radius 1" 0.00
-	"Radius 2" 0.00
-	"Offset 1" 0.00, 0.00, 0.00
-	"Offset 2" 0.00, 0.00, 0.00
-	"Point vs Terrain" false
-	"Point vs Not Special" false
+    "Type" OBB
 }
-+ObjProp 1270 "PhysType"
++ObjProp 503 "NoDrop"
 {
-	"Type" OBB
-	"# Submodels" 6
+    "" true
 }
-Create -2467
++ObjProp 680 "NoDrop"
 {
-	-ObjProp "PhysType"
-	+ObjProp "Position"
-	{
-		"Location" 443.99,409.49,403.57
-	}
-	+ObjProp "PhysType"
-	{
-		"Type" OBB
-		"# Submodels" 6
-	}
-	+ObjProp "RenderType"
-	{
-		"" Not Rendered
-	}
+    "" true
 }
-+ObjProp 1056 "InvType"
++ObjProp 704 "NoDrop"
 {
-	"" Item
+    "" true
 }
-+ObjProp 1057 "InvType"
++ObjProp 1100 "NoDrop"
 {
-	"" Item
+    "" true
 }
-+ObjProp 1079 "InvType"
+
+//block frob
++ObjProp 1270 "BlockFrob"
 {
-	"" Item
-}
-+ObjProp 1085 "InvType"
-{
-	"" Item
-}
-+ObjProp 1142 "InvType"
-{
-	"" Item
-}
-+ObjProp 2098 "InvType"
-{
-	"" Item
-}
-+ObjProp 2113 "InvType"
-{
-	"" Item
-}
-+ObjProp 2135 "InvType"
-{
-	"" Item
-}
-+ObjProp 2141 "InvType"
-{
-	"" Item
-}
-+ObjProp 2145 "InvType"
-{
-	"" Item
-}
-+ObjProp 2343 "InvType"
-{
-	"" Item
-}
-+ObjProp 2456 "InvType"
-{
-	"" Item
-}
-+ObjProp 2457 "InvType"
-{
-	"" Item
+    "" true
 }
