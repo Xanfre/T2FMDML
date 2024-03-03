@@ -1,5 +1,7 @@
-T2FMDML is a collection of both preexisting and entirely new fixes for many Thief 2 fan missions that have compatibility
-issues with NewDark and other problems. To install, simply copy everything accompanying this readme to any mod directory.
+T2FMDML is a collection of both preexisting and entirely new fixes for many
+Thief 2 fan missions that have compatibility issues with NewDark and other
+problems. To install, simply copy everything accompanying this readme to any mod
+directory.
 
 T2FMDML currently addresses issues in the following fan missions and campaigns:
 
