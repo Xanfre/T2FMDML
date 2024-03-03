@@ -2,11 +2,12 @@
 ; Setup Script
 
 #define ModName "T2FMDML"
+#define RepoName "T2FMDML"
 
 #define AppName ModName + " Updater"
 #define AppVersion "1.0"
 #define AppPublisher "Xanfre"
-#define AppURL "https://github.com/" + AppPublisher + "/" + ModName
+#define AppURL "https://github.com/" + AppPublisher + "/" + RepoName
 
 [Setup]
 AppId={{BA5C87AE-B0BB-48D0-869D-CB813D44ECE2}

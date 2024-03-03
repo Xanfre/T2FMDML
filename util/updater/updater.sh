@@ -13,7 +13,8 @@ cd $(dirname $0)
 
 PUBLISHER="Xanfre"
 MOD_NAME="T2FMDML"
-CHECK_URL="https://api.github.com/repos/${PUBLISHER}/${MOD_NAME}/releases/latest"
+REPO_NAME="T2FMDML"
+CHECK_URL="https://api.github.com/repos/${PUBLISHER}/${REPO_NAME}/releases/latest"
 CURRENT_VER=""
 
 echo "Checking for prerequisites..."
@@ -32,7 +33,7 @@ rm -f .latest
 test -z "$NEW_VER" \
 	&& abort "Could not get valid version information. Assuming that the latest version is already installed."
 
-UPDATE_URL="https://github.com/${PUBLISHER}/${MOD_NAME}/releases/download/${NEW_VER}/${MOD_NAME}_${NEW_VER}.zip"
+UPDATE_URL="https://github.com/${PUBLISHER}/${REPO_NAME}/releases/download/${NEW_VER}/${MOD_NAME}_${NEW_VER}.zip"
 
 if test -z "$CURRENT_VER" || ! test "$CURRENT_VER" = "$NEW_VER"; then
 	read -p "A ${MOD_NAME} update was found. Download and install it? [y/N] " CHOICE
