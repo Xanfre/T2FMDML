@@ -1,7 +1,9 @@
 ; T2FMDML Automatic Updater
 ; Setup Script
 
+#ifndef ModName
 #define ModName "T2FMDML"
+#endif
 #define RepoName "T2FMDML"
 
 #define AppName ModName + " Updater"
@@ -24,6 +26,7 @@ CreateAppDir=no
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=commandline
 OutputBaseFilename=updater
+OutputDir=Output\{#ModName}
 Compression=lzma
 SolidCompression=yes
 Uninstallable=no

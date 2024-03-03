@@ -1,5 +1,5 @@
 #!/bin/sh
-# Build T2FMDML utilities.
+# Build T1GFMDML and T2FMDML utilities.
 
 iscc()
 {
@@ -21,7 +21,7 @@ fi
 
 _7Z_VER="2301"
 
-rm -f "T2FMDML_${T2FMDML_VER}.zip"
+rm -rf updater/Output
 
 echo "Checking for prerequisites..."
 check_command 7z
@@ -38,9 +38,14 @@ if test ! -f ./7za.exe; then
 	echo "Retrieved 7-Zip binary."
 fi
 
-echo "Building T2FMDML Updater..."
+echo "Building Updater..."
 cd updater
-iscc "-Qp updater.iss" && echo "T2FMDML Updater built successfully." || abort "T2FMDML Updater failed to build!"
+mkdir -p Output/T1GFMDML Output/T2FMDML
+iscc "-Qp -DModName=T1GFMDML updater.iss" && echo "T1GFMDML Updater built successfully." || abort "T1GFMDML Updater failed to build!"
+cp updater.sh Output/T1GFMDML/
+sed -i 's|T2FMDML updates|T1GFMDML updates|; s|MOD_NAME="T2FMDML"|MOD_NAME="T1GFMDML"|' Output/T1GFMDML/updater.sh
+iscc "-Qp -dModName=T2FMDML updater.iss" && echo "T2FMDML Updater built successfully." || abort "T2FMDML Updater failed to build!"
+cp updater.sh Output/T2FMDML/
 
 echo
 
