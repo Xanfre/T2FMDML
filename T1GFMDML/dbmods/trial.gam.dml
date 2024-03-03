@@ -1,0 +1,45 @@
+DML1
+//T1 FM: Trial By Night by Skarza.MJA / Fixes
+
+FINGERPRINT
+{
+   NAME -3188 "gardieL"
+   NAME -4284 "gardie"
+}
+
+//adding scripts for candle snuffing
++ObjProp -181 "Scripts"
+{
+	"Script 0" NVRelayTrap
+	"Script 1" NVMetaTrap
+	"Script 2" ""
+	"Script 3" ""
+	"Don't Inherit" false
+}
++ObjProp -181 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapMeta="FrobInert"; NVMetaTrapOff="null"; NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapTDest="^{1.7:Flame"; NVRelayTrapTOn="[1.0]WaterStim";
+}
++ObjProp -181 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp -186 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp -1964 "FrobInfo"
+{
+	"World Action" Move
+}
+//dousing flame should make the nearest candle unfrobable
++ObjProp -208 "Scripts"
+{
+	"Script 2" NVRelayTrap
+	"Script 3" ""
+	"Don't Inherit" false
+}
++ObjProp -208 "DesignNote"
+{
+	"" NVRelayTrapOn="Slain"; NVRelayTrapTDest="^{1.7:Candle"; NVRelayTrapTOn="FrobWorldEnd";
+}

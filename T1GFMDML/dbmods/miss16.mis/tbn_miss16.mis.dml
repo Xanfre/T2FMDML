@@ -1,0 +1,33 @@
+DML1
+//T1 FM: Trial By Night by Skarza.MJA / Fixes: miss16.mis.dml
+
+FINGERPRINT
+{
+	661 [-37 44 -23]
+	1757 [-146 -59 -76]
+	672 [-101 62 -15]
+	388 [-298 74 -42]
+	1890 [-109 -45 -73]
+	1188 [-311 -72 -45]
+	939 [-142 61 -13]
+	1860 [-123 -27 -75]
+	QVAR "goal_target_4" == 1337
+}
+
+//unlit candles should not be frobable
++ObjProp 271 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 281 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 282 "FrobInfo"
+{
+	"World Action" None
+}
++ObjProp 683 "FrobInfo"
+{
+	"World Action" None
+}
