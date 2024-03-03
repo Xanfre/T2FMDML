@@ -31,5 +31,5 @@ ObjProp 325 "AI_Hearing"
 }
 +ObjProp 248 "Light"
 {
-	"max brightness" 10
+	"brightness" 10
 }
