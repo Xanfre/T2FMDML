@@ -1,5 +1,5 @@
-# T2FMDML
-T2FMDML is a collection of Thief 2 fan mission fixes for NewDark implemented with dbmods, allowing for missions and gamesystems to be patched without requiring redistribution.
+# T1GFMDML and T2FMDML
+T1GFMDML and T2FMDML are definitive collections of Thief 1/Gold and Thief 2 fan mission fixes for NewDark implemented with dbmods, allowing for missions and gamesystems to be patched without requiring redistribution.
 
 Contributions are welcome and encouraged.
 
