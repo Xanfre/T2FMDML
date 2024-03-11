@@ -15,6 +15,7 @@ FINGERPRINT
 }
 
 #script "nvscript"
+#script "squirrel"
 
 //blocker
 Create -2789 "CB"
@@ -40,10 +41,22 @@ Create -6812 "CaveBlocker"
 		"Script 0" TrapDestroy
 	}
 }
-+Link "CB" "CaveBlocker" "ControlDevice"
++Receptron "CaveBlocker" "Stench"
 {
+	Max None
+
+	Target Me
+	Agent 77
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysAttr
+	}
 }
 +Link 1490 "CaveBlocker" "ControlDevice"
+{
+}
++Link "CB" "CaveBlocker" "ControlDevice"
 {
 }
 
@@ -82,9 +95,14 @@ ObjProp 967 "Scripts"
 {
 	"quest var values" 0, 1, 2
 }
++ObjProp 1362 "DesignNote"
+{
+	"" NVRelayTrapTDest="CaveBlocker"; NVRelayTrapTOn="[1.00]Stench"
+}
 +ObjProp 1362 "Scripts"
 {
 	"Script 0" TrapSetQVar
+	"Script 1" NVRelayTrap
 }
 +ObjProp 1362 "TrapQVar"
 {
@@ -92,7 +110,11 @@ ObjProp 967 "Scripts"
 }
 
 //quest items
+-ObjProp 44 "FrobInfo"
 +ObjProp 44 "StackCount"
+{
+}
++ObjProp 44 "SlayResult"
 {
 }
 +ObjProp 44 "PickDist"
@@ -101,6 +123,7 @@ ObjProp 967 "Scripts"
 }
 ObjProp 44 "Scripts"
 {
+	"Script 0" TrigContained
 	"Script 1" ""
 }
 +StimSource 140 "Stench"
@@ -115,16 +138,17 @@ ObjProp 44 "Scripts"
 		}
 	}
 }
+-ObjProp 140 "FrobInfo"
++ObjProp 140 "StackCount"
+{
+}
++ObjProp 140 "SlayResult"
+{
+}
 -ObjProp 140 "PhysType"
 ObjProp 140 "Position"
 {
 	"Location" 636, 566.25, -199.975
-}
-+ObjProp 140 "StackCount"
-{
-}
-+ObjProp 141 "StackCount"
-{
 }
 +StimSource 141 "Stench"
 {
@@ -138,6 +162,13 @@ ObjProp 140 "Position"
 		}
 	}
 }
+-ObjProp 141 "FrobInfo"
++ObjProp 141 "StackCount"
+{
+}
++ObjProp 141 "SlayResult"
+{
+}
 +Receptron 142 "Stench"
 {
 	Max 2
@@ -147,6 +178,8 @@ ObjProp 140 "Position"
 
 	Effect "add_metaprop"
 }
++MetaProp 142 -2420
++MetaProp 143 -2420
 +Receptron 143 "Stench"
 {
 	Min 3
@@ -185,7 +218,11 @@ ObjProp 1030 "Scripts"
 		}
 	}
 }
+-ObjProp 1031 "FrobInfo"
 +ObjProp 1031 "StackCount"
+{
+}
++ObjProp 1031 "SlayResult"
 {
 }
 ObjProp 1031 "Class Tags"
@@ -195,6 +232,14 @@ ObjProp 1031 "Class Tags"
 +ObjProp 1031 "Scripts"
 {
 	"Script 0" LootSounds
+}
++ObjProp 1065 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 1178 "TrapFlags"
+{
+	"" Once
 }
 +ObjProp 1073 "PickBias"
 {
@@ -229,11 +274,22 @@ ObjProp 1031 "Class Tags"
 }
 
 //doors
++Link 43 1377 "ControlDevice"
+{
+}
 ObjProp 53 "TransDoor"
 {
 	"Open Position" -10.00
 }
-
+ObjProp 57 "RotDoor"
+{
+	"Open Angle" 335.00
+	"Clockwise?" true
+}
++ObjProp 57 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1,3,0
+}
 +Link 57 974 "ScriptParams"
 {
 	"" FrobInert
@@ -241,6 +297,7 @@ ObjProp 53 "TransDoor"
 +ObjProp 57 "Scripts"
 {
 	"Script 0" DoorFrobInert
+	"Script 1" SetVectorProp
 }
 +Link 73 979 "ScriptParams"
 {
@@ -250,6 +307,14 @@ ObjProp 73 "Scripts"
 {
 	"Script 1" DoorFrobInert
 }
+ObjProp 137 "RotDoor"
+{
+	"Open Angle" 25.00
+}
++ObjProp 137 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1,3,0
+}
 +Link 137 1064 "ScriptParams"
 {
 	"" FrobInert
@@ -257,7 +322,32 @@ ObjProp 73 "Scripts"
 +ObjProp 137 "Scripts"
 {
 	"Script 0" DoorFrobInert
+	"Script 1" SetVectorProp
 }
++ObjProp 159 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=8,1,8
+}
++ObjProp 159 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 281 "BlockFrob"
+{
+	"" true
+}
+ObjProp 281 "Position"
+{
+	"Location" 234, 200, -226
+}
+-ObjProp 281 "PhysType"
++ObjProp 281 "PhysType"
+{
+	"Type" OBB
+}
++MetaProp 281 -2420
++MetaProp 224 -2420
++MetaProp 989 -2420
 +ObjProp 743 "BlockFrob"
 {
 	"" true
@@ -275,10 +365,6 @@ ObjProp 73 "Scripts"
 	"" FrobInert
 }
 +Link 743 973 "ScriptParams"
-{
-	"" FrobInert
-}
-+Link 743 1169 "ScriptParams"
 {
 	"" FrobInert
 }
@@ -310,22 +396,106 @@ ObjProp 765 "Scripts"
 {
 	"Script 1" DoorFrobInert
 }
+-ObjProp 979 "PickDist"
+-ObjProp 980 "PickDist"
+-ObjProp 981 "PickDist"
+-ObjProp 982 "PickDist"
 
 //switches
+-Link 51 216 "ControlDevice"
++Link 51 216 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 51 "Position"
+{
+	"Location" 556.565, 468, -127.75
+	"Pitch" c000
+	"Bank" 8000
+}
+-ObjProp 51 "PhysType"
++ObjProp 51 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 51 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 51 "StTweqJoints"
+{
+	"AnimS" None
+	"Joint1AnimS" None
+}
+ObjProp 52 "Position"
+{
+	"Location" 326, 338.5, -159.435
+	"Heading" 4000
+}
+-ObjProp 52 "PhysType"
++ObjProp 52 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 52 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
++ObjProp 54 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 54 "StTweqJoints"
+{
+	"AnimS" None
+	"Joint1AnimS" None
+}
+-Link 54 47 "ControlDevice"
+-Link 54 43 "ControlDevice"
++Link 54 1376 "ControlDevice"
+{
+}
++Link 1376 43 "ControlDevice"
+{
+}
++ObjProp 1376 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 1376 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++Link 1377 47 "ControlDevice"
+{
+}
++ObjProp 1377 "TrapFlags"
+{
+	"" Invert
+}
++ObjProp 1377 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+ObjProp 55 "Position"
+{
+	"Location" 587, 466.25, -167.435
+}
 +Receptron 56 "Stench"
 {
-	Max None
-
-	Target 1169
-	Agent -5040
-
-	Effect "add_prop"
-	{
-		"Prop Name" PhysDims
-	}
-}
-++Receptron 56 "Stench"
-{
+	Min None
 	Max None
 
 	Target 44
@@ -336,10 +506,34 @@ ObjProp 765 "Scripts"
 		"Prop Name" Class Tags
 	}
 }
+++Receptron 56 "Stench"
+{
+	Min None
+	Max None
+
+	Target 281
+	Agent 989
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 56 "Stench"
+{
+	Min None
+	Max None
+
+	Target 1169
+	Agent -5040
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
 +StimSource 56 "Stench"
 {
-	Intensity 1
-
 	Propagator "Radius"
 }
 +Link 56 1070 "ControlDevice"
@@ -353,34 +547,327 @@ ObjProp 765 "Scripts"
 {
 	"Script 0" TrapRelay
 }
+ObjProp 86 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" ""
+	"Script 2" ""
+}
+-Link 87 107 "ControlDevice"
+-Link 87 104 "ControlDevice"
+-Link 87 100 "ControlDevice"
+-Link 87 99 "ControlDevice"
+-Link 99 89 "ControlDevice"
+-Link 100 90 "ControlDevice"
+-Link 104 88 "ControlDevice"
+-Link 107 91 "ControlDevice"
++Link 230 91 "ControlDevice"
+{
+}
++Link 230 90 "ControlDevice"
+{
+}
++Link 230 89 "ControlDevice"
+{
+}
++Link 230 88 "ControlDevice"
+{
+}
++ObjProp 230 "Scripts"
+{
+	"Script 0" NVDeleteTrap
+}
+ObjProp 88 "Position"
+{
+	"Location" 332, 499.435, -199
+}
+-ObjProp 88 "PhysType"
++ObjProp 88 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 88 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 89 "Position"
+{
+	"Location" 332, 420.565, -199
+}
+-ObjProp 89 "PhysType"
++ObjProp 89 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 89 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 90 "Position"
+{
+	"Location" 371.435, 460, -199
+}
+-ObjProp 90 "PhysType"
++ObjProp 90 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 90 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 91 "Position"
+{
+	"Location" 292.565, 460, -199
+}
+-ObjProp 91 "PhysType"
++ObjProp 91 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 91 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
++ObjProp 96 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 97 "Position"
+{
+	"Location" 332, 420.565, -199
+}
++ObjProp 98 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 101 "Position"
+{
+	"Location" 371.435, 460, -199
+}
++ObjProp 102 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 103 "Position"
+{
+	"Location" 332, 499.435, -199
+}
++ObjProp 105 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 106 "Position"
+{
+	"Location" 292.565, 460, -199
+}
+ObjProp 116 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" ""
+	"Script 2" ""
+}
+ObjProp 117 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" ""
+	"Script 2" ""
+}
+ObjProp 232 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" ""
+	"Script 2" ""
+}
++ObjProp 135 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=1.4,0.5,0.5; SetVectorPropSubProperty2="Offset 1"; SetVectorPropValue2=-0.25,0,-0.5; SetVectorPropTarget=-446,!1169
+}
++ObjProp 135 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 158 "Position"
+{
+	"Location" 587, 466.25, -167.435
+}
+-ObjProp 158 "PhysType"
++ObjProp 158 "PhysType"
+{
+	"Type" OBB
+}
+-Link 216 1342 "ControlDevice"
+-Link 216 51 "ControlDevice"
+ObjProp 216 "Position"
+{
+	"Location" 541, 465.75, -167.435
+	"Heading" c000
+}
+-ObjProp 216 "PhysType"
++ObjProp 216 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 216 "StTweqJoints"
+{
+	"AnimS" None
+	"Joint1AnimS" None
+}
++ObjProp 216 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
++ObjProp 1098 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 1098 "Position"
+{
+	"Location" 149.435, 122, -149
+}
+-ObjProp 1098 "PhysType"
++ObjProp 1098 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1121 "Position"
+{
+	"Location" 587, 466.25, -167.435
+}
 +Link 1169 56 "ControlDevice"
 {
 }
 ObjProp 1169 "Position"
 {
-	"Location" 428.76, 175.65, -136.15
+	"Location" 428.765, 175.65, -136.15
 }
 -ObjProp 1169 "PhysType"
 +ObjProp 1169 "PhysType"
 {
 	"Type" OBB
 }
++ObjProp 1169 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
++ObjProp 1171 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
 -Link 1171 1070 "ControlDevice"
 +Link 1171 1169 "FrobProxy"
 {
 	"FrobProxyMask" AllowDirect
 }
+-ObjProp 1175 "StTweqJoints"
 +ObjProp 1175 "JointPos"
 {
-	"Joint 1" 60.00
+	"Joint 1" 90.00
 }
-ObjProp 1175 "StTweqJoints"
+ObjProp 1234 "Position"
 {
-	"AnimS" Reverse
-	"Joint1AnimS" On, Reverse
+	"Location" 451.565, 476, -154.25
+}
+-ObjProp 1234 "PhysType"
++ObjProp 1234 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1234 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+-Link 1342 216 "ControlDevice"
++Link 1342 216 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
+ObjProp 1342 "Position"
+{
+	"Heading" 0
+	"Pitch" c000
+}
+-ObjProp 1342 "PhysType"
++ObjProp 1342 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1342 "StTweqJoints"
+{
+	"AnimS" None
+	"Joint1AnimS" None
+}
++ObjProp 1342 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
++ObjProp 1494 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 1
+	"Joint1AnimC" Sim
+	"    rate-low-high" 12, 0, 90
+}
+ObjProp 1494 "Position"
+{
+	"Location" 230.565, 197.885, -226
+}
+-ObjProp 1494 "PhysType"
++ObjProp 1494 "PhysType"
+{
+	"Type" OBB
 }
 
 //misplaced objects
++ObjProp 223 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=1,8,16
+}
++ObjProp 223 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
 ObjProp 223 "Position"
 {
 	"Location" 564, 240.5, -312
@@ -391,7 +878,11 @@ ObjProp 223 "Position"
 	"Type" OBB
 }
 
-//quivers
+//containers
+ObjProp 999 "JointPos"
+{
+	"Joint 1" 90.00
+}
 +ObjProp 1240 "DesignNote"
 {
 	"" NVMetaTrapOn="Container"; NVMetaTrapMeta="FrobInert"
