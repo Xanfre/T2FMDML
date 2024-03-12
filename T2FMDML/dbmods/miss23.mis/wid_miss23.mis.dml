@@ -274,8 +274,9 @@ ObjProp 1031 "Class Tags"
 }
 
 //doors
-+Link 43 1377 "ControlDevice"
+ObjProp 43 "TransDoor"
 {
+	"Base Speed" 3.00
 }
 ObjProp 53 "TransDoor"
 {
@@ -402,6 +403,40 @@ ObjProp 765 "Scripts"
 -ObjProp 982 "PickDist"
 
 //switches
+Create -2789 "TT"
+{
+	+ObjProp "Position"
+	{
+		"Location" 564, 468, -173
+	}
+	+ObjProp "TrapFlags"
+	{
+		"" Once, NoOff
+	}
+}
+Create -5317 "BT"
+{
+	+ObjProp "Position"
+	{
+		"Location" 564, 468, -180
+	}
+	-ObjProp "PhysType"
+	+ObjProp "PhysType"
+	{
+		"Type" OBB
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrigOBBPlayer
+		"Don't Inherit" true
+	}
+}
++Link "TT" 49 "ControlDevice"
+{
+}
++Link "BT" "TT" "ControlDevice"
+{
+}
 -Link 51 216 "ControlDevice"
 +Link 51 216 "FrobProxy"
 {
@@ -462,7 +497,6 @@ ObjProp 54 "StTweqJoints"
 	"AnimS" None
 	"Joint1AnimS" None
 }
--Link 54 47 "ControlDevice"
 -Link 54 43 "ControlDevice"
 +Link 54 1376 "ControlDevice"
 {
@@ -475,17 +509,6 @@ ObjProp 54 "StTweqJoints"
 	"" Once, NoOff
 }
 +ObjProp 1376 "Scripts"
-{
-	"Script 0" TrapRelay
-}
-+Link 1377 47 "ControlDevice"
-{
-}
-+ObjProp 1377 "TrapFlags"
-{
-	"" Invert
-}
-+ObjProp 1377 "Scripts"
 {
 	"Script 0" TrapRelay
 }
