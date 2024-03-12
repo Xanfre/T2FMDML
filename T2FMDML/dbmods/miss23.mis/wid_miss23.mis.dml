@@ -241,10 +241,6 @@ ObjProp 1031 "Class Tags"
 {
 	"" Once
 }
-+ObjProp 1073 "PickBias"
-{
-	"" 2.00
-}
 +ObjProp 1088 "Class Tags"
 {
 }
@@ -905,6 +901,18 @@ ObjProp 223 "Position"
 ObjProp 999 "JointPos"
 {
 	"Joint 1" 90.00
+}
++ObjProp 1073 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=2.95,1.35,2.5; SetVectorPropSubProperty2="Offset 1"; SetVectorPropValue2=0,-0.5,-0.5
+}
++ObjProp 1073 "BlockFrob"
+{
+	"" true
+}
++ObjProp 1073 "Scripts"
+{
+	"Script 0" SetVectorProp
 }
 +ObjProp 1240 "DesignNote"
 {
