@@ -530,6 +530,19 @@ ObjProp 55 "Position"
 	Min None
 	Max None
 
+	Target 223
+	Agent 1418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Position
+	}
+}
+++Receptron 56 "Stench"
+{
+	Min None
+	Max None
+
 	Target 281
 	Agent 989
 
@@ -879,22 +892,10 @@ ObjProp 1494 "Position"
 }
 
 //misplaced objects
-+ObjProp 223 "DesignNote"
-{
-	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=1,8,16
-}
-+ObjProp 223 "Scripts"
-{
-	"Script 0" SetVectorProp
-}
-ObjProp 223 "Position"
+ObjProp 1418 "Position"
 {
 	"Location" 564, 240.5, -312
-}
--ObjProp 223 "PhysType"
-+ObjProp 223 "PhysType"
-{
-	"Type" OBB
+	"Heading" c000
 }
 
 //containers
