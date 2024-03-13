@@ -304,6 +304,20 @@ ObjProp 73 "Scripts"
 {
 	"Script 1" DoorFrobInert
 }
+-ObjProp 109 "Scripts"
++ObjProp 112 "BlockFrob"
+{
+	"" true
+}
+ObjProp 112 "Position"
+{
+	"Location" 364, 516, -236
+}
+-ObjProp 112 "PhysType"
++ObjProp 112 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 137 "RotDoor"
 {
 	"Open Angle" 25.00
@@ -432,6 +446,10 @@ Create -5317 "BT"
 }
 +Link "BT" "TT" "ControlDevice"
 {
+}
+ObjProp 47 "Position"
+{
+	"Location" 564, 468, -205
 }
 -Link 51 216 "ControlDevice"
 +Link 51 216 "FrobProxy"
