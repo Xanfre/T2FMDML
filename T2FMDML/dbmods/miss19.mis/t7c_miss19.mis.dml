@@ -36,12 +36,6 @@ ObjProp 2245 "PickDist"
 	"" 4.00
 }
 
-//window
-+ObjProp 1098 "BlockFrob"
-{
-	"" true
-}
-
 //book of vision
 ObjProp 1174 "PickDist"
 {
