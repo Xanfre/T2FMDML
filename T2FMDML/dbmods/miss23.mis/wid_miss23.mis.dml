@@ -909,13 +909,6 @@ ObjProp 1494 "Position"
 	"Type" OBB
 }
 
-//misplaced objects
-ObjProp 1418 "Position"
-{
-	"Location" 564, 240.5, -312
-	"Heading" c000
-}
-
 //containers
 ObjProp 999 "JointPos"
 {
@@ -948,4 +941,213 @@ ObjProp 999 "JointPos"
 +ObjProp 1254 "Scripts"
 {
 	"Script 0" NVMetaTrap
+}
+
+//AIs
++ObjProp 1389 "AI_Efficiency"
+{
+	"Enabled" false
+}
++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 286
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 287
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 288
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 289
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 290
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 291
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 292
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 295
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 307
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 1024
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 1035
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 1037
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 1039
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 1471
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
+++Receptron 1389 "Stench"
+{
+	Max None
+
+	Target 1493
+	Agent Me
+
+	Effect "add_prop"
+	{
+		"Prop Name" AI_Efficiency
+	}
+}
++ObjProp 1389 "DesignNote"
+{
+	"" NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[1.00]Stench"; NVRelayTrapCount=1
+}
++ObjProp 1389 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 1472 "DesignNote"
+{
+	"" NVRelayTrapDelay=200; NVRelayTrapTDest=1389
+}
++ObjProp 1472 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
+
+//misplaced objects
+ObjProp 1418 "Position"
+{
+	"Location" 564, 240.5, -312
+	"Heading" c000
 }
