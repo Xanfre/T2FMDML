@@ -38,6 +38,9 @@ FINGERPRINT
 +ObjProp 63 "PhysCanMant"
 {
 }
++ObjProp 92 "PhysCanMant"
+{
+}
 +Receptron 1276 "Stench"
 {
 	Max None
@@ -77,7 +80,6 @@ FINGERPRINT
 +StimSource 1276 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
 +ObjProp 1276 "DiffTurnOn"
@@ -220,7 +222,6 @@ Create -199 "SD2"
 +StimSource "SD2" "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
 -ObjProp "SD1" "PhysType"
@@ -243,41 +244,87 @@ Create -199 "SD2"
 +StimSource "SD1" "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
-+ObjProp 1092 "DiffTurnOn"
+Create -1704 "ND127"
 {
-	"quest var values" 0, 1, 2
+	+ObjProp "DiffTurnOn"
+	{
+		"quest var values" 0, 1, 2
+	}
+	+ObjProp "Position"
+	{
+		"Location" 576, 527, 495
+	}
+	+ObjProp "ScriptTiming"
+	{
+		"" 500
+	}
+	+ObjProp "Scripts"
+	{
+		"Script 0" TrapTimedRelay
+		"Don't Inherit" true
+	}
 }
-ObjProp 1092 "TransDoor"
++Receptron "ND127" "Stench"
+{
+	Min None
+	Max None
+
+	Target 1092
+	Agent 11
+
+	Effect "add_prop"
+	{
+		"Prop Name" TransDoor
+	}
+}
+++Receptron "ND127" "Stench"
+{
+	Min None
+	Max None
+
+	Target 1229
+	Agent 12
+
+	Effect "add_prop"
+	{
+		"Prop Name" TransDoor
+	}
+}
++StimSource "ND127" "Stench"
+{
+	Propagator "Radius"
+}
++Link "ND127" 1092 "ControlDevice"
+{
+}
++Link "ND127" 1229 "ControlDevice"
+{
+}
+ObjProp 11 "TransDoor"
 {
 	"Open Position" -4.00
-	"Base Speed" 5.00
-	"Axis" Z-Axis
+	"Blocks Vision?" true
 }
--ObjProp 1092 "FrobInfo"
-ObjProp 1092 "CollisionType"
+ObjProp 12 "TransDoor"
 {
-	"" None
-}
-+ObjProp 1229 "DiffTurnOn"
-{
-	"quest var values" 0, 1, 2
-}
-ObjProp 1229 "TransDoor"
-{
-	"Open Position" -11.00
-	"Axis" X-Axis
-}
-ObjProp 1229 "CollisionType"
-{
-	"" None
+	"Open Position" -7.00
+	"Blocks Vision?" true
 }
 +MetaProp 90 -2420
 +MetaProp 962 -2420
 +MetaProp 1015 -2420
 +MetaProp 1275 -2420
++ObjProp 214 "Scripts"
+{
+	"Script 0" ToggleDoor
+	"Don't Inherit" true
+}
+ObjProp 389 "Scale"
+{
+	"" 2.05, 1, 2
+}
 -ObjProp 450 "PhysType"
 +ObjProp 450 "PhysType"
 {
@@ -287,6 +334,10 @@ ObjProp 1229 "CollisionType"
 +ObjProp 467 "PhysType"
 {
 	"Type" OBB
+}
+ObjProp 502 "Scale"
+{
+	"" 2.05, 1, 2
 }
 +ObjProp 533 "BlockFrob"
 {
@@ -348,7 +399,7 @@ ObjProp 1040 "Position"
 }
 ObjProp 14 "Position"
 {
-	"Heading" 7c00
+	"Location" 577, 520, 495
 }
 +Link 106 14 "ControlDevice"
 {
@@ -399,6 +450,10 @@ ObjProp 14 "Position"
 	"Script 0" NVRelayTrap
 	"Script 1" NVDeleteTrap
 }
++ObjProp 230 "GameName"
+{
+	"" Name_llmap: "Lower Levels Map"
+}
 +ObjProp 446 "StackCount"
 {
 }
@@ -432,12 +487,6 @@ ObjProp 14 "Position"
 	"Joint1AnimC" Sim
 	"    rate-low-high" 0.6, 0, 1.35
 }
-+ObjProp 499 "Scripts"
-{
-	"Script 0" FrobSounds
-	"Script 1" NVFrobToggle
-	"Don't Inherit" true
-}
 -Link 544 546 "ControlDevice"
 +Link 544 422 "FrobProxy"
 {
@@ -449,7 +498,7 @@ ObjProp 14 "Position"
 	"AnimC" Sim
 	"Primary Joint" 1
 	"Joint1AnimC" Sim
-	"    rate-low-high" 0.15, 0, 0.15
+	"    rate-low-high" 0.1, 0, 0.15
 }
 
 //AIs
