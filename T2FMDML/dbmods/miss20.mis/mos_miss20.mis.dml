@@ -1,0 +1,139 @@
+DML1
+//T2 FM: The Music of Sibel (48 Hour Contest) by Romain Barrilliot (skacky) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	606 [187 -252 -21]
+	546 [197 -162 -8]
+	548 [197 -178 -8]
+	621 [109 -246 -57]
+	596 [180 -257 -14]
+	458 [205 -162 -65]
+	614 [75 -232 -41]
+	405 [49 -174 10]
+	QVAR "goal_target_6" == 473
+}
+
+//wind chime
++ObjProp 564 "NoDrop"
+{
+	"" true
+}
+
+//doors
+ObjProp 78 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+ObjProp 159 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 199 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+ObjProp 225 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 225 "PhysType"
++ObjProp 225 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 304 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+ObjProp 345 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+
+//AIs
++ObjProp 120 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafegca
+}
++ObjProp 212 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafegca
+}
++ObjProp 226 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 303 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cham01
+}
++ObjProp 575 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" betserca
+}
++ObjProp 586 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 608 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafegca
+}
++ObjProp 609 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafegca
+}
++ObjProp 610 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
+
+//fireplaces
+ObjProp 138 "PGLaunchInfo"
+{
+	"Min time" 2.50
+	"Max time" 3.00
+}
+ObjProp 140 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+ObjProp 203 "PGLaunchInfo"
+{
+	"Min time" 2.50
+	"Max time" 3.00
+}
+ObjProp 205 "PGLaunchInfo"
+{
+	"Max time" 2.00
+}
+
+//keys
++ObjProp 227 "StackCount"
+{
+}
++ObjProp 489 "StackCount"
+{
+}
+
+//misplaced objects
+ObjProp 312 "Position"
+{
+	"Location" 121.925, -218.635, -61.1
+}
+-ObjProp 312 "PhysType"
++ObjProp 312 "PhysType"
+{
+	"Type" Sphere Hat
+}

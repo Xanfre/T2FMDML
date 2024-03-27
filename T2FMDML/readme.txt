@@ -229,6 +229,7 @@ Mistress Guennean's Castle
 A Mother's Love
 The Mountain Monastery
 Mr. J's Ring
+The Music of Sibel
 Mylokh's Tower
 Mysterious Invitation
 Mystery at the St. Anne Inn
