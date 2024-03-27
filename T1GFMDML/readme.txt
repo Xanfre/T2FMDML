@@ -53,6 +53,7 @@ Treachery
 The Treasury
 Trial By Night
 The Trickster's Return
+The Unseen
 The Varyx Obelisk
 The Vigil
 WoodKey Resthouse
