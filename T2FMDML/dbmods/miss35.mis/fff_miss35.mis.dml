@@ -345,7 +345,9 @@ ObjProp 353 "TransDoor"
 }
 +ObjProp 353 "Scripts"
 {
-	"Script 0" SetVectorProp
+	"Script 0" ToggleDoor
+	"Script 1" SetVectorProp
+	"Don't Inherit" true
 }
 
 //misplaced objects
@@ -527,12 +529,4 @@ ObjProp 303 "Position"
 +ObjProp 354 "NoDrop"
 {
 	"" true
-}
-
-//button
-+ObjProp 355 "Scripts"
-{
-	"Script 0" FrobSounds
-	"Script 1" NVFrobToggle
-	"Don't Inherit" true
 }
