@@ -1,0 +1,135 @@
+DML1
+//T2 FM: Bad Blood 2 (Daytime in Ottoville) by Terry DeLaney (Ricebug) / Fixes: miss18.mis.dml
+
+FINGERPRINT
+{
+	133 [231 -39 34]
+	1272 [380 13 78]
+	83 [224 -60 52]
+	432 [368 -117 56]
+	181 [251 -33 48]
+	451 [318 -72 82]
+	1304 [230 -98 46]
+	47 [405 -99 54]
+	NAME 374 "Drowned Escapee"
+}
+
+//loot / quest items
++ObjProp 118 "StackCount"
+{
+}
++ObjProp 118 "NoDrop"
+{
+	"" true
+}
++Receptron 144 "KeyStim"
+{
+	Max None
+
+	Target Me
+	Agent -1
+
+	Effect "add_prop"
+	{
+		"Prop Name" FrobInfo
+	}
+}
+ObjProp 144 "FrobInfo"
+{
+	"World Action" FocusScript
+}
+ObjProp 144 "Scripts"
+{
+	"Script 0" FocusPlaque
+	"Script 1" TrigUnlock
+	"Script 2" ""
+}
+-ObjProp 144 "ExtraLight"
+-ObjProp 156 "ExtraLight"
++ObjProp 156 "Loot"
+{
+}
++ObjProp 140 "Loot"
+{
+}
++StimSource 187 "KeyStim"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
++ObjProp 187 "StackCount"
+{
+}
++ObjProp 187 "NoDrop"
+{
+	"" true
+}
++ObjProp 187 "Class Tags"
+{
+}
+
+//doors
+ObjProp 126 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 126 "PhysType"
++ObjProp 126 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 149 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
+-ObjProp 246 "JointPos"
+-ObjProp 247 "JointPos"
+ObjProp 1679 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1679 "PhysType"
++ObjProp 1679 "PhysType"
+{
+	"Type" OBB
+}
+
+//various objects
++ObjProp 103 "Scripts"
+{
+	"Script 0" ActivateAmbient
+	"Don't Inherit" true
+}
+-Link 104 103 "ControlDevice"
+-Link 106 103 "ControlDevice"
+-Link 107 104 "ControlDevice"
++Link 107 103 "ControlDevice"
+{
+}
+ObjProp 107 "StTweqJoints"
+{
+	"AnimS" On
+}
++ObjProp 168 "DesignNote"
+{
+	"" NVRelayTrapOn="FrobWorldEnd"; NVRelayTrapCount=1
+}
+ObjProp 168 "Scripts"
+{
+	"Script 1" NVRelayTrap
+}
++ObjProp 296 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapOnDelay=6000; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 296 "Scripts"
+{
+	"Script 1" NVMetaTrap
+}

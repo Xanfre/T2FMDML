@@ -1,0 +1,577 @@
+DML1
+//T2 FM: Bad Blood 2 (Nighttime in Ottoville) by Terry DeLaney (Ricebug) / Fixes: miss19.mis.dml
+
+FINGERPRINT
+{
+	579 [519 -61 50]
+	1037 [281 25 68]
+	275 [472 -33 63]
+	34 [244 -109 48]
+	163 [228 -67 50]
+	392 [446 -91 68]
+	481 [272 29 70]
+	1222 [360 8 67]
+	QVAR "goal_target_1" == 260
+}
+
+//pickpockets
++ObjProp 155 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++Link 155 157 "ControlDevice"
+{
+}
++ObjProp 155 "Scripts"
+{
+	"Script 0" TrapRelay
+}
++ObjProp 157 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 157 "TrapQVar"
+{
+	"" =7:DrSPocketCnt
+}
+
+//goals
+-Link 93 887 "ControlDevice"
+-Link 938 937 "ControlDevice"
+-Link 932 936 "ControlDevice"
++Link 932 937 "ControlDevice"
+{
+}
++Link 934 887 "ControlDevice"
+{
+}
++ObjProp 934 "TrapFlags"
+{
+	"" Once
+}
+
+//quest items
++Link 260 932 "ControlDevice"
+{
+}
++ObjProp 260 "Scripts"
+{
+	"Script 0" TrigContained
+}
+ObjProp 595 "FrobInfo"
+{
+	"Inv Action" Script
+}
+ObjProp 595 "Scripts"
+{
+	"Script 0" StdScroll
+}
+-Link 618 143 "ControlDevice"
+-Link 133 619 "ControlDevice"
++ObjProp 619 "TrapFlags"
+{
+	"" Once
+}
+ObjProp 632 "FrobInfo"
+{
+	"Inv Action" Script
+}
+ObjProp 632 "Scripts"
+{
+	"Script 0" StdScroll
+}
+-ObjProp 750 "PhysType"
+-ObjProp 757 "TrapFlags"
+ObjProp 753 "FrobInfo"
+{
+	"Inv Action" None
+}
+
+//doors
+-MetaProp 112 -2418
+-ObjProp 246 "JointPos"
+-ObjProp 247 "JointPos"
+-ObjProp 771 "JointPos"
+-ObjProp 811 "JointPos"
+-ObjProp 952 "JointPos"
+-ObjProp 953 "JointPos"
+-ObjProp 954 "JointPos"
+-ObjProp 955 "JointPos"
+-ObjProp 956 "JointPos"
+-ObjProp 957 "JointPos"
+-ObjProp 1679 "JointPos"
+ObjProp 103 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 126 "Position"
+{
+	"Heading" 0
+}
+-ObjProp 126 "PhysType"
++ObjProp 126 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 149 "Scale"
+{
+	"" 0.875, 0.875, 0.875
+}
++ObjProp 161 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 161 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 177 "KeyDst"
+{
+	"RegionMask" 1
+	"LockID" 7
+}
+ObjProp 177 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
++ObjProp 277 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 277 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 279 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 279 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 280 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 280 "StTweqLock"
+{
+	"AnimS" None
+}
+-Receptron 385 "KeyStim"
++Receptron 385 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 385 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 385 "Locked"
+{
+	"" true
+}
+-MetaProp 385 -2613
+-Link 385 135 "Lock"
+-Link 933 385 "ControlDevice"
++Receptron 614 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 614 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 615 "PickDist"
+{
+	"" 5.00
+}
+ObjProp 625 "Scale"
+{
+	"" 0.875, 0.875, 0.9375
+}
+-ObjProp 773 "PhysType"
++ObjProp 773 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 1216 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 1234 "BlockFrob"
+{
+	"" true
+}
+-MetaProp 1234 -2418
++Receptron 1275 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1275 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1437 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1437 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1444 "FireStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1444 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 1679 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 1679 "PhysType"
++ObjProp 1679 "PhysType"
+{
+	"Type" OBB
+}
+
+//windows
++MetaProp 74 -2422
++MetaProp 630 -2422
++MetaProp 772 -2422
++MetaProp 774 -2422
++MetaProp 775 -2422
++MetaProp 776 -2422
++MetaProp 777 -2422
++MetaProp 779 -2422
++MetaProp 780 -2422
++MetaProp 928 -2422
++Receptron 74 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 108 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 108 "Stench"
+{
+	Max None
+
+	Target 652
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 108 "Stench"
+{
+	Max None
+
+	Target 653
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 108 "Stench"
+{
+	Max None
+
+	Target 112
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 108 "Stench"
+{
+	Max None
+
+	Target 1234
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
++StimSource 108 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 108 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 148 "PhysType"
++ObjProp 148 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 150 "PhysType"
++ObjProp 150 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 151 "PhysType"
++ObjProp 151 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 152 "PhysType"
++ObjProp 152 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 652 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 653 "PhysType"
+{
+	"Type" OBB
+}
++Receptron 772 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 774 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 775 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+ObjProp 775 "RotDoor"
+{
+	"Open Angle" 0.00
+	"Status" Open
+}
++Receptron 776 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 777 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 779 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 780 "WeaponStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+
+//AIs
++ObjProp 21 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" thgrswca
+}
++ObjProp 79 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 230 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 813 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 836 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 889 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 890 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 900 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 949 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 980 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" bafgca
+}
++ObjProp 1032 "FrobInfo"
+{
+}
++ObjProp 1053 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
+-Link 1053 1052 "AIWatchObj"
+-Link 1053 928 "AIWatchObj"
++Link 1053 1054 "AIWatchObj"
+{
+	"Watch kind" Self entry
+	"Trigger: Radius" 3
+	"         Height" 8
+	"         Maximum alertness" (3) High
+	"      Reuse delay" 10000
+	"      Reset delay" 0
+	"Response: Step 1" Face(Angle,Object(-1 for angle relative to self))
+	"   Argument 1" ""
+	"   Argument 2" 1052
+	"Response: Step 2" Wait(Time(ms),Motion Tags)
+	"   Argument 1"[1] 6000
+	"   Argument 2"[1] IdleGesture 0
+}
++Link 1053 1061 "AIWatchObj"
+{
+	"Watch kind" Self entry
+	"Trigger: Radius" 4
+	"         Height" 8
+	"         Maximum alertness" (3) High
+	"      Reuse delay" 10000
+	"      Reset delay" 0
+	"Response: Step 1" Face(Angle,Object(-1 for angle relative to self))
+	"   Argument 1" ""
+	"   Argument 2" 928
+	"Response: Step 2" Wait(Time(ms),Motion Tags)
+	"   Argument 1"[1] 6000
+	"   Argument 2"[1] IdleGesture 0
+}
++Link 1061 1054 "AIPatrol"
+{
+}
+
+//keys
++ObjProp 51 "StackCount"
+{
+}
++ObjProp 75 "StackCount"
+{
+}
++ObjProp 81 "StackCount"
+{
+}
++ObjProp 153 "StackCount"
+{
+}
+-Link 294 303 "ControlDevice"
++Link 294 282 "ControlDevice"
+{
+}
+-Link 572 304 "Contains"
++Link 572 573 "Contains"
+{
+}
++StimSource 573 "KeyStim"
+{
+	Intensity 1
+
+	Propagator "Contact"
+	{
+		Shape
+		{
+			"Contact Types" Frob Inv -> World
+		}
+	}
+}
+-ObjProp 573 "FrobInfo"
+-ObjProp 573 "NoDrop"
++ObjProp 573 "StackCount"
+{
+}
++ObjProp 671 "StackCount"
+{
+}
+
+//misplaced objects / physdims
+-ObjProp 570 "PhysType"
+ObjProp 570 "Position"
+{
+	"Location" 503.18, -64.068, 59.65
+}
+-ObjProp 617 "PhysType"
++ObjProp 617 "PhysType"
+{
+	"Type" OBB
+}
+
+//rope arrows
+-ObjProp 1037 "PhysType"
+-ObjProp 1038 "PhysType"
+-ObjProp 1039 "PhysType"

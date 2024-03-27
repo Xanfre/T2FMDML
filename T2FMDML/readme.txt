@@ -24,6 +24,7 @@ Ashes and Dust
 Assault at the Gas Station
 Auldale Chess Tournament
 Bad Blood
+Bad Blood 2
 Bad Hangover
 Bad Intentions
 Bafford's Town House
