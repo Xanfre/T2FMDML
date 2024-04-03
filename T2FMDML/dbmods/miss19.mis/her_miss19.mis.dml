@@ -21,6 +21,7 @@ ObjProp 436 "TrapQVar"
 }
 
 //secrets
+-ObjProp 423 "DarkStat"
 -ObjProp 578 "DarkStat"
 ObjProp 578 "Scripts"
 {
@@ -34,37 +35,22 @@ ObjProp 578 "Scripts"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +Receptron 8 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
--ObjProp 8 "FrobInfo"
 +ObjProp 8 "BlockFrob"
 {
 	"" true
 }
-+ObjProp 8 "PickDist"
-{
-	"" -6.00
-}
-+Link 8 423 "ControlDevice"
-{
-}
-+Link 8 421 "ControlDevice"
-{
-}
-+Link 8 424 "ControlDevice"
-{
-}
 +ObjProp 8 "Scripts"
 {
-	"Script 0" TrigWorldFrob
+	"Script 0" ToggleDoor
+	"Don't Inherit" true
 }
 -ObjProp 8 "PhysType"
 +ObjProp 8 "PhysType"
@@ -157,13 +143,6 @@ ObjProp 395 "Scale"
 
 //switches
 -Link 353 374 "ControlDevice"
--Link 360 421 "ControlDevice"
--Link 360 424 "ControlDevice"
--Link 360 423 "ControlDevice"
--Link 360 8 "ControlDevice"
-+Link 360 8 "FrobProxy"
-{
-}
 +ObjProp 375 "Locked"
 {
 	"" false
@@ -179,25 +158,13 @@ ObjProp 395 "Scale"
 +Link 420 375 "Lock"
 {
 }
--ObjProp 423 "DarkStat"
-+Link 423 -795 "SoundDescription"
-{
-}
-ObjProp 423 "Position"
-{
-	"Location" -33.3, 5.43, 57.5
-}
-+ObjProp 423 "Scripts"
-{
-	"Script 0" AmbientSounds
-}
 +ObjProp 424 "TrapFlags"
 {
 	"" Once
 }
 ObjProp 139 "Position"
 {
-	"Location" -147.43, -87.5, 27
+	"Location" -147.435, -87.5, 27
 }
 -ObjProp 139 "PhysType"
 +ObjProp 139 "PhysType"
@@ -206,7 +173,7 @@ ObjProp 139 "Position"
 }
 ObjProp 378 "Position"
 {
-	"Location" -147.43, -82.5, 27
+	"Location" -147.435, -82.5, 27
 }
 -ObjProp 378 "PhysType"
 +ObjProp 378 "PhysType"
@@ -215,11 +182,11 @@ ObjProp 378 "Position"
 }
 ObjProp 421 "Position"
 {
-	"Location" -18.57, 0, 60.5
+	"Location" -18.565, 0, 60.5
 }
 ObjProp 422 "Position"
 {
-	"Location" -76.5, -140.43, 28.5
+	"Location" -76.5, -140.435, 28.5
 }
 -ObjProp 422 "PhysType"
 +ObjProp 422 "PhysType"
@@ -228,7 +195,7 @@ ObjProp 422 "Position"
 }
 ObjProp 510 "Position"
 {
-	"Location" -356.57, 275, 20
+	"Location" -356.565, 275, 20
 }
 -ObjProp 510 "PhysType"
 +ObjProp 510 "PhysType"
