@@ -1,6 +1,5 @@
 DML1
-
-//T2X: Shadows of the Metal Age (Unexpected Shelter) by The Dark Engineering Guild
+//T2X: Shadows of the Metal Age (Unexpected Shelter) by The Dark Engineering Guild / Fixes: miss18.mis.dml
 
 FINGERPRINT
 {
@@ -15,20 +14,25 @@ FINGERPRINT
 	QVAR "goal_target_2" == 424
 }
 
-//cloud deck / celestial
-TagBlock "CLOUDOBJVAR"
-{
-	"Texture" clouds95
-}
-TagBlock "STAROBJVAR"
-{
-	"Max Sky Intensity" 1000000.00
-}
+#script "nvscript"
 
-//door
+//doors
 ObjProp 81 "RotDoor"
 {
+	"Open Angle" 0.00
 	"Status" Open
+}
++Receptron 81 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++Receptron 1105 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
 }
 
 //switches
@@ -36,6 +40,32 @@ ObjProp 81 "RotDoor"
 +Link 106 124 "FrobProxy"
 {
 	"FrobProxyMask" AllowDirect
+}
+ObjProp 23 "AI_Converation"
+{
+	"   Argument 1"[1] OnEnterMansionButton
+	"Actor"[2] ActorTwo
+	"Conversation: Action 2" Script message(Message,MsgData1,MsgData2)
+	"   Argument 1"[2] PhantomBegin
+	"Actor"[3] Unused
+	"Conversation: Action 3" Nothing()
+	"   Argument 1"[3] ""
+}
++ObjProp 380 "DesignNote"
+{
+	"" NVMetaTrapOn="FrobWorldEnd"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 380 "PickDist"
+{
+	"" 6.00
+}
++ObjProp 380 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+ObjProp 380 "StTweqJoints"
+{
+	"AnimS" On
 }
 
 //chests
@@ -68,6 +98,5 @@ ObjProp 161 "JointPos"
 +StimSource 1477 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
