@@ -58,6 +58,44 @@ class T2FMDMLBase extends SqRootScript
 }
 
 /*
+ * BlockMessage:
+ * Block a message from propagating to other scripts on this object.
+ *
+ * Parameters:
+ * "BlockMessageMsg" - The message to block.
+ */
+class BlockMessage extends SqRootScript
+{
+
+	function GetMsgParam()
+	{
+		try
+		{
+			return userparams()[GetClassName() + "Msg"].tostring();
+		}
+		catch (err) { return null; }
+	}
+
+	function OnBeginScript()
+	{
+		local msg = GetMsgParam();
+		if (msg != null)
+		{
+			SetData("Msg", msg);
+			if (msg == message().message)
+				BlockMessage();
+		}
+	}
+
+	function OnMessage()
+	{
+		if (IsDataSet("Msg") && MessageIs(GetData("Msg")))
+			BlockMessage();
+	}
+
+}
+
+/*
  * T2FMDMLRePhys:
  * Re-physicalize ControlDevice-linked physical objects upon receiving "TurnOn"
  * messages.
