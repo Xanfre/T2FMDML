@@ -3,6 +3,61 @@
  ************************/
 
 /*
+ * T2FMDMLBase:
+ * Common routines for derived scripts.
+ * This script responds to no messages.
+ */
+class T2FMDMLBase extends SqRootScript
+{
+
+	// Get the script target.
+	function GetTarget()
+	{
+		local targetstr = "";
+		local target = [[], []]
+		try
+		{
+			targetstr = userparams()[GetClassName() + "Target"].tostring();
+		}
+		catch(err) { target[0].append(self); }
+		if (0 != targetstr.len())
+		{
+			local objstrs = split(targetstr, ",");
+			foreach (objstr in objstrs)
+			{
+				local obj;
+				local exclude = objstr.len() > 0 && objstr[0] == '!';
+				if (exclude)
+					objstr = objstr.slice(1);
+				try
+				{
+					obj = objstr.tointeger();
+				}
+				catch (err) { obj = ObjID(objstr); }
+				if (obj > 0 && Object.Exists(obj))
+					target[exclude ? 1 : 0].append(obj);
+				else if (obj < 0 && Object.Exists(obj))
+				{
+					local objmax = 8184, objmaxref = int_ref();
+					if (Engine.ConfigGetInt("obj_max", objmaxref))
+						objmax = objmaxref.tointeger();
+					// NOTE: This is inefficient, but Squirrel scripts do not
+					// have access to ITraitMan to query objects.
+					for (local i = 1; i < objmax; i++)
+					{
+						if (!Object.Exists(i) || !Object.InheritsFrom(i, obj))
+							continue;
+						target[exclude ? 1 : 0].append(i);
+					}
+				}
+			}
+		}
+		return target;
+	}
+
+}
+
+/*
  * T2FMDMLRePhys:
  * Re-physicalize ControlDevice-linked physical objects upon receiving "TurnOn"
  * messages.
@@ -166,13 +221,87 @@ class NoBlkVisDoor extends SqRootScript
 	}
 
 }
+/*
+ * PhysTypeReAdd:
+ * Re-add the "PhysType" property to the specified objects on simulation start.
+ *
+ * Parameters:
+ * "PhysTypeReAddTarget" - The target of the script (either a concrete object or
+ *     an archetype; multiple targets can be specified by providing a
+ *     comma-separated list; prepend '!' to a target to explicitly exclude it).
+ *     applicable).
+ * "PhysTypeReAddType" - The physics type to which the targets will be reset.
+ *     If none is provided, or an invalid option is provided, the default is
+ *     "OBB".
+ */
+class PhysTypeReAdd extends T2FMDMLBase
+{
+
+	// Get the specified physics type.
+	function GetTypeParam()
+	{
+		local type;
+		try
+		{
+			switch (userparams()[GetClassName() + "Type"].tostring())
+			{
+				case "1":
+				case "Sphere":
+					type = 1;
+					break;
+				case "2":
+				case "Sphere Hat":
+					type = 2;
+					break;
+				default:
+					type = 0;
+					break;
+			}
+		}
+		catch (err) { type = 0; }
+		return type;
+	}
+
+	function OnSim()
+	{
+		if (message().starting)
+		{
+			// Fetch targets of re-initialization.
+			local target = GetTarget();
+			if (0 == target[0].len())
+				return;
+			// Get the destination physics type.
+			local type = GetTypeParam();
+			// Re-initialize the physics type property.
+			foreach (obj in target[0])
+			{
+				local skip = false;
+				foreach (exclusion in target[1])
+				{
+					if (obj == exclusion
+						|| Object.InheritsFrom(obj, exclusion))
+					{
+						skip = true;
+						break;
+					}
+				}
+				if (!skip)
+				{
+					Property.Remove(obj, "PhysType");
+					Property.Set(obj, "PhysType", "Type", type);
+				}
+			}
+		}
+	}
+
+}
 
 const SVP_MAX_SUBPROP = 4;
 
 /*
  * SetVectorProp:
- * Set a specified vector property on this object to that which was provided
- * on simulation start.
+ * Set a specified vector property on the specified objects to that which was
+ * provided on simulation start.
  * Provides multiple copies for use on the same object.
  *
  * Parameters:
@@ -184,7 +313,7 @@ const SVP_MAX_SUBPROP = 4;
  *     applicable).
  * "SetVectorProp[2,3,4]Value" - The vector to assign to the property.
  */
-class SetVectorProp extends SqRootScript
+class SetVectorProp extends T2FMDMLBase
 {
 
 	// Get the specified property.
@@ -236,51 +365,6 @@ class SetVectorProp extends SqRootScript
 			catch (err) { }
 		}
 		return values;
-	}
-
-	// Get the script target.
-	function GetTarget()
-	{
-		local targetstr = "";
-		local target = [[], []]
-		try
-		{
-			targetstr = userparams()[GetClassName() + "Target"].tostring();
-		}
-		catch(err) { target[0].append(self); }
-		if (0 != targetstr.len())
-		{
-			local objstrs = split(targetstr, ",");
-			foreach (objstr in objstrs)
-			{
-				local obj;
-				local exclude = objstr.len() > 0 && objstr[0] == '!';
-				if (exclude)
-					objstr = objstr.slice(1);
-				try
-				{
-					obj = objstr.tointeger();
-				}
-				catch (err) { obj = ObjID(objstr); }
-				if (obj > 0 && Object.Exists(obj))
-					target[exclude ? 1 : 0].append(obj);
-				else if (obj < 0 && Object.Exists(obj))
-				{
-					local objmax = 8184, objmaxref = int_ref();
-					if (Engine.ConfigGetInt("obj_max", objmaxref))
-						objmax = objmaxref.tointeger();
-					// NOTE: This is inefficient, but Squirrel scripts do not
-					// have access to ITraitMan to query objects.
-					for (local i = 1; i < objmax; i++)
-					{
-						if (!Object.Exists(i) || !Object.InheritsFrom(i, obj))
-							continue;
-						target[exclude ? 1 : 0].append(i);
-					}
-				}
-			}
-		}
-		return target;
 	}
 
 	// Set the requested property fields with the provided values.
