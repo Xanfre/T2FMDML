@@ -78,6 +78,23 @@ ObjProp 161 "JointPos"
 	"Joint 1" 90.00
 }
 
+//fireplaces
+ObjProp 319 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+ObjProp 1059 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+ObjProp 1447 "PGLaunchInfo"
+{
+	"Min time" 3.00
+	"Max time" 3.50
+}
+
 //book
 -ObjProp 1336 "PickDist"
 
