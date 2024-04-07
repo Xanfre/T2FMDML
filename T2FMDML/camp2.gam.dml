@@ -1,0 +1,15 @@
+DML1
+//T2 FM: Vagabond (Memento Mori) by Rob Strain (Random_Taffer) / Fixes: camp2.gam.dml
+
+FINGERPRINT
+{
+	NAME -6623 "SavingsStim"
+	NAME -6624 "NoraStim"
+}
+
+#script "script"
+
+ObjProp -14 "Scripts"
+{
+   "Script 2" CorpseFrobFixed
+}
