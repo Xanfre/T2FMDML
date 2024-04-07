@@ -54,6 +54,7 @@ Treachery
 The Treasury
 Trial By Night
 The Trickster's Return
+TSR-1000
 The Unseen
 The Varyx Obelisk
 The Vigil
