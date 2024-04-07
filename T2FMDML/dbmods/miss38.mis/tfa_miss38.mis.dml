@@ -1,0 +1,25 @@
+DML1
+//T2 FM: The Flying Age (Time Flies) by Menguzzo Stefano (Sterlino) / Fixes: miss38.mis.dml
+
+FINGERPRINT
+{
+	671 [481 209 365]
+	1021 [623 201 468]
+	733 [463 220 364]
+	927 [360 168 406]
+	146 [424 222 362]
+	54 [438 204 362]
+	714 [414 204 365]
+	979 [52 238 281]
+	QVAR "goal_target_6" == 634
+}
+
+//scrolls
+ObjProp 33 "Position"
+{
+	"Location" 299.37, 200.67, 386.56
+}
+ObjProp 548 "Position"
+{
+	"Location" 444.056, 207.246, 374.5
+}
