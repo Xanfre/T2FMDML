@@ -32,3 +32,29 @@ FINGERPRINT
 {
 	"Script 0" TrapRequireAll
 }
+
+//fix hanging arrows
+-ObjProp 2011 "PhysType"
++ObjProp 2011 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2012 "PhysType"
++ObjProp 2012 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2015 "PhysType"
++ObjProp 2015 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2016 "PhysType"
++ObjProp 2016 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

@@ -1,0 +1,49 @@
+DML1
+// T2 FM: The Korrigans (The Goblins) by Gaëtane / Fixes: miss22.mis.dml
+
+FINGERPRINT
+{
+	1243 [454 401 -11]
+	228 [-27 597 41]
+	1694 [47 566 15]
+	1297 [-114 949 22]
+	1763 [401 548 -13]
+	604 [33 492 -30]
+	1527 [-38 435 23]
+	1264 [458 511 -9]
+	QVAR "goal_target_3" == 3288
+}
+
+//fix hanging arrows
+-ObjProp 199 "PhysType"
++ObjProp 199 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 202 "PhysType"
++ObjProp 202 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 206 "PhysType"
++ObjProp 206 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 510 "PhysType"
++ObjProp 510 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1774 "PhysType"
++ObjProp 1774 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 2089 "PhysType"
++ObjProp 2089 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 292 "DeathStage"
+-ObjProp 358 "DeathStage"

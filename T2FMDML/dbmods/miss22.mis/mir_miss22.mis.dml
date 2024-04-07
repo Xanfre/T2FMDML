@@ -1,0 +1,32 @@
+DML1
+//T2 FM: The Mirror by Zontik / Fixes: miss22.mis.dml
+
+FINGERPRINT
+{
+	237 [509 685 487]
+	351 [565 412 481]
+	1794 [589 553 481]
+	847 [390 524 440]
+	1227 [543 660 487]
+	1555 [390 491 454]
+	656 [496 843 457]
+	693 [257 448 362]
+	NAME 1146 "alchmusmark"
+}
+
+//fix hanging arrows
+-ObjProp 1494 "PhysType"
++ObjProp 1494 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1495 "PhysType"
++ObjProp 1495 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 1496 "PhysType"
++ObjProp 1496 "PhysType"
+{
+	"Type" OBB
+}

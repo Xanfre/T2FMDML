@@ -1,0 +1,89 @@
+DML1
+//T2 FM: The Mirror of Return (Part 2) by PsymH / Fixes: miss23.mis.dml
+
+FINGERPRINT
+{
+	1524 [-89 -188 266]
+	55 [702 -610 272]
+	819 [-181 -514 345]
+	1783 [-198 -586 358]
+	1369 [160 531 363]
+	688 [-175 -655 318]
+	953 [-190 -444 331]
+	682 [-187 -658 312]
+	QVAR "goal_target_3" == 615
+}
+
+//fix hanging arrows
+ObjProp 1304 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1304 "PhysType"
++ObjProp 1304 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1309 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1309 "PhysType"
++ObjProp 1309 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1314 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1314 "PhysType"
++ObjProp 1314 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1318 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1318 "PhysType"
++ObjProp 1318 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1346 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1346 "PhysType"
++ObjProp 1346 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1347 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1347 "PhysType"
++ObjProp 1347 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1348 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1348 "PhysType"
++ObjProp 1348 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 1349 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1349 "PhysType"
++ObjProp 1349 "PhysType"
+{
+	"Type" OBB
+}

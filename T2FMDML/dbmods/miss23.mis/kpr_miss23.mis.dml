@@ -1,0 +1,51 @@
+DML1
+//T2 FM: Keeper of the Prophecies (The Other Side of Time) by Ken Ramsley (frobber) / Fixes: miss23.mis.dml
+
+FINGERPRINT
+{
+	1194 [10 623 20]
+	1521 [36 241 42]
+	1221 [-24 288 112]
+	414 [-35 435 171]
+	437 [106 712 19]
+	272 [-31 526 172]
+	459 [100 577 61]
+	832 [102 578 144]
+	NAME 1877 "ButnBlackOutTest"
+}
+
+//fix hanging arrows
+-ObjProp 1666 "TransDoor"
+-ObjProp 1666 "PhysType"
+-ObjProp 1940 "TransDoor"
+-ObjProp 1940 "PhysType"
+-ObjProp 1642 "PhysType"
++ObjProp 1642 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2011 "PhysType"
++ObjProp 2011 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2012 "PhysType"
++ObjProp 2012 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2015 "PhysType"
++ObjProp 2015 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}
+-ObjProp 2016 "PhysType"
++ObjProp 2016 "PhysType"
+{
+	"Type" OBB
+	"# Submodels" 6
+}

@@ -379,3 +379,10 @@ Create -464 "SecretfixSwitch"
 +Link 2438 694 "ControlDevice"
 {
 }
+
+//fix hanging arrows
+-ObjProp 956 "PhysType"
++ObjProp 956 "PhysType"
+{
+	"Type" OBB
+}

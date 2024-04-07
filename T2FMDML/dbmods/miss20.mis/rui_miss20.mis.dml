@@ -141,3 +141,39 @@ ObjProp 1565 "Scripts"
 {
 	"Script 0" NVRelayTrap
 }
+
+//fix hanging arrows
+ObjProp 1331 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1331 "PhysType"
++ObjProp 1331 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1331 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
+ObjProp 1331 "Scripts"
+{
+	"Script 3" NVSetPropertyTrap
+}
+ObjProp 1565 "CollisionType"
+{
+	"" None
+}
+-ObjProp 1565 "PhysType"
++ObjProp 1565 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 1565 "DesignNote"
+{
+	"" NVSetPropertyTrapOn="Sim"; NVSetPropertyTrapProperty="PhysControl"; NVSetPropertyTrapSubProperty="Controls Active"; NVSetPropertyTrapValue=24
+}
+ObjProp 1565 "Scripts"
+{
+	"Script 3" NVSetPropertyTrap
+}

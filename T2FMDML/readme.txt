@@ -190,6 +190,7 @@ Kill Factory
 Kill Factory II: Escape from the Planet of the Robots
 The Kindred Vault
 Konkurrenten
+The Korrigans (The Goblins)
 Last Caress
 The League of Grim Thieves
 The Legend of the Four Elements: The Last Hope
@@ -225,6 +226,8 @@ Merchant's Manor
 Midday Eclipse
 Midday Escape
 Mind Master
+The Mirror
+The Mirror of Return
 Mistress Guennean's Castle
 A Mother's Love
 The Mountain Monastery
