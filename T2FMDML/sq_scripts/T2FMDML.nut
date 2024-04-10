@@ -96,6 +96,20 @@ class BlockMessage extends SqRootScript
 }
 
 /*
+ * BlockFrobMsg:
+ * Blocks "FrobWorldEnd" messages on this object, taking no parameters.
+ */
+class BlockFrobMsg extends SqRootScript
+{
+
+	function OnFrobWorldEnd()
+	{
+		BlockMessage();
+	}
+
+}
+
+/*
  * T2FMDMLRePhys:
  * Re-physicalize ControlDevice-linked physical objects upon receiving "TurnOn"
  * messages.
