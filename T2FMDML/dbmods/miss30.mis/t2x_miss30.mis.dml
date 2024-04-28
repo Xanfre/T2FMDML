@@ -1,6 +1,5 @@
 DML1
-
-//T2X: Shadows of the Metal Age (Betrayal) by The Dark Engineering Guild
+//T2X: Shadows of the Metal Age (Betrayal) by The Dark Engineering Guild / Fixes: miss30.mis.dml
 
 FINGERPRINT
 {
@@ -13,6 +12,20 @@ FINGERPRINT
 	963 [-62 -149 7]
 	1040 [239 229 -22]
 	NAME 196 "Beasty"
+}
+
+//secrets
++ObjProp 45 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 45 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 45 "TrapQVar"
+{
+	"" =0:DrSSecrets
 }
 
 //mantling
@@ -31,6 +44,8 @@ FINGERPRINT
 +ObjProp 980 "PhysCanMant"
 {
 }
++MetaProp 980 -2420
++MetaProp 1141 -2420
 +ObjProp 1141 "PhysCanMant"
 {
 }
@@ -50,15 +65,26 @@ ObjProp 166 "Position"
 {
 	"Type" OBB
 }
+ObjProp 233 "Position"
+{
+	"Location" 372.95, 112.6, 55.7
+}
+ObjProp 681 "Position"
+{
+	"Location" 178.35, 351.55, -11.95
+}
+ObjProp 683 "Position"
+{
+	"Location" 183.235, 351.885, -12
+}
+-ObjProp 863 "PhysType"
+-ObjProp 891 "PhysType"
+-ObjProp 892 "PhysType"
 
 //AIs
 +ObjProp 213 "GameName"
 {
 	"" Name_Malak: "Malak"
-}
-+ObjProp 726 "NoFlash"
-{
-	"" true
 }
 ObjProp 726 "Scripts"
 {
@@ -66,39 +92,49 @@ ObjProp 726 "Scripts"
 	"Script 2" ""
 	"Script 3" ""
 }
-+Receptron 766 "LightBright"
++ObjProp 726 "NoFlash"
 {
-	Min None
-	Max None
-
-	Effect "Abort"
+	"" true
 }
 +ObjProp 766 "NoFlash"
 {
 	"" true
+}
++Receptron 766 "LightBright"
+{
+	Min None
+	Max None
+	Effect "Abort"
 }
 
 //invalid scaling
 -ObjProp 533 "Scale"
 -ObjProp 588 "Scale"
 
-//doors
-+Receptron 833 "WeaponStim"
+//well rope
+ObjProp 579 "PhysRope"
 {
-	Min None
-	Max None
-
-	Effect "Abort"
+	"Desired Length" 25.50
+	"Length" 25.50
+	"Calc Correct Len" true
 }
+
+//doors
 +Receptron 833 "FireStim"
 {
 	Min None
 	Max None
-
+	Effect "Abort"
+}
++Receptron 833 "WeaponStim"
+{
+	Min None
+	Max None
 	Effect "Abort"
 }
 ObjProp 833 "RotDoor"
 {
+	"Open Angle" 0.00
 	"Status" Open
 }
 +MetaProp 1076 -2420
