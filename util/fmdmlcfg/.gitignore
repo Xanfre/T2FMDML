@@ -1,0 +1,4 @@
+fmdmlcfg
+*.exe*
+*.obj
+objs

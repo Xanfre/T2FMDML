@@ -1,0 +1,26 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0308
+header_name {.h}
+code_name {.cpp.h}
+Function {MakeConfig()} {open private
+} {
+  Fl_Window pDMLConfig {
+    label {T2FMDML Configuration}
+    callback OnConfigClose open selected
+    private xywh {1 1 320 240} type Double modal visible
+  } {
+    Fl_Box {} {
+      label {Configure DML Options:}
+      xywh {5 0 390 25} labelfont 1 align 20 when 0
+    }
+    Fl_Return_Button {} {
+      label Done
+      callback OnConfigDone
+      xywh {200 210 115 25}
+    }
+    Fl_Check_Browser pCFGList {
+      callback OnConfigChanged
+      xywh {5 25 310 180} when 1
+    }
+  }
+}

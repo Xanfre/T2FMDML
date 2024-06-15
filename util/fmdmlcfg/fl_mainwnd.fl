@@ -1,0 +1,40 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0308
+header_name {.h}
+code_name {.cpp.h}
+Function {MakeWindow()} {open private
+} {
+  Fl_Window pMainWnd {
+    label {T2FMDML Configuration} open
+    private xywh {1 1 640 480} type Double modal visible
+  } {
+    Fl_Box {} {
+      label {Select DML to Toggle or Configure:}
+      xywh {5 0 390 25} labelfont 1 align 20 when 0
+    }
+    Fl_Return_Button {} {
+      label Configure
+      callback OnConfigure
+      xywh {5 440 115 25}
+    }
+    Fl_Button {} {
+      label Exit
+      callback OnExit
+      xywh {520 440 115 25}
+    }
+    Fl_Browser pDMLList {
+      callback OnSelect
+      xywh {5 25 630 400} type Hold when 10
+    }
+    Fl_Button {} {
+      label {Enable/Disable}
+      callback OnToggle
+      xywh {135 440 130 25}
+    }
+    Fl_Input pDMLSearch {
+      label {Search:}
+      callback OnSearch selected
+      xywh {335 440 165 25} when 1
+    }
+  }
+}
