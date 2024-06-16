@@ -25,15 +25,17 @@
 #endif
 
 // constant strings
-#define DML_KEY "//T2 FM: "
-#define SEC_KEY "//Section: "
+#define DML_KEY1 "//T1 FM: "
+#define DML_KEY2 "//TG FM: "
+#define DML_KEY3 "//T2 FM: "
+#define SEC_KEY "//"
 #define CMT_BEGIN "/*"
 #define CMT_END "*/"
 #define DIS_SUF ".disabled"
 
 // constant values
 #define DML_KEY_LEN 9
-#define SEC_KEY_LEN 11
+#define SEC_KEY_LEN 2
 #define CMT_BEGIN_LEN 2
 #define CMT_END_LEN 2
 #define DIS_SUF_LEN 9
@@ -85,7 +87,8 @@ static bool GetCommandLineInt(int argc, char **argv, const char *option,
 static void InitFLTK(const char *theme);
 static void SetDMLDir(const short misnum, char *path);
 static void SetDMLPath(const DMLEntry *e, char *path, const size_t pathSize);
-static bool IsDMLHeaderValid(char *header);
+static bool IsDMLHeaderValid(const char *header);
+static bool IsDMLSectionValid(const char *sec);
 static void GetSortName(char **name);
 static int ChangeCurrentDir(bool useBinDir);
 static int ReadFileIntoBuffer(const char *name, char **data, size_t *len,
@@ -154,6 +157,11 @@ static void OnConfigure(Fl_Widget *, void *)
 			char *match = data;
 			while (NULL != (match = strstr(match, "\r\n" SEC_KEY)))
 			{
+				if (!IsDMLSectionValid(match + 2))
+				{
+					match += 2;
+					continue;
+				}
 				char *match2 = strstr(match + 2 + SEC_KEY_LEN, "\r\n");
 				int enabled = 1;
 				if (NULL != match2)
@@ -537,9 +545,16 @@ static void SetDMLPath(const DMLEntry *e, char *path, const size_t pathSize)
 	strcat(path, e->fname);
 }
 
-static bool IsDMLHeaderValid(char *header)
+static bool IsDMLHeaderValid(const char *header)
 {
 	return !strncmp(header, "DML1", 4);
+}
+
+static bool IsDMLSectionValid(const char *sec)
+{
+	return sec[SEC_KEY_LEN] != '@' && strncmp(sec, DML_KEY1, DML_KEY_LEN)
+		&& strncmp(sec, DML_KEY2, DML_KEY_LEN)
+		&& strncmp(sec, DML_KEY3, DML_KEY_LEN);
 }
 
 static void GetSortName(char **name)
@@ -681,9 +696,17 @@ static void GetDMLs(void)
 			header[bytesRead] = '\0';
 			if (!IsDMLHeaderValid(header))
 				continue;
-			char *name = strstr(header, "\r\n" DML_KEY);
+			char *name = strstr(header, "\r\n" DML_KEY1);
 			if (NULL == name)
-				continue;
+			{
+				name = strstr(header, "\r\n" DML_KEY2);
+				if (NULL == name)
+				{
+					name = strstr(header, "\r\n" DML_KEY3);
+					if (NULL == name)
+						continue;
+				}
+			}
 			name += 2 + DML_KEY_LEN - 4;
 			memmove(header, name, strlen(name) + 1); // Move back in the buffer.
 			name = header;
