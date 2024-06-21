@@ -1,5 +1,5 @@
 DML1
-//T2 FM: Bad Intentions by Mirko (Thief Anniversary Contest) / Fixes: miss20.mis.dml
+//T2 FM: Bad Intentions (Thief Anniversary Contest) by Mirko / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -14,9 +14,147 @@ FINGERPRINT
 	QVAR "goal_target_6" == 122
 }
 
-//raise sunken guard
-+ObjProp 437 "Position"
+#script "nvscript"
+
+//starting point
+ObjProp 117 "Position"
 {
-	"Location" 476.505, 445.419, 536.016
+	"Location" 421.75, 428.25, 487.5
+}
+
+//AIs
++ObjProp 261 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 273 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 302 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cnoblem2
+}
+ObjProp 302 "AI_AlrtRsp"
+{
+	"Alert level" (1) Low
+}
+ObjProp 437 "Position"
+{
+	"Location" 476.5, 445.42, 536
+}
++ObjProp 437 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 516 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgard1
+}
++ObjProp 522 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
++ObjProp 561 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" cswgardm
+}
+
+//containers
+-ObjProp 236 "FrobInfo"
+-ObjProp 236 "KeySrc"
+-ObjProp 586 "KeySrc"
++ObjProp 482 "CfgTweqJoints"
+{
+	"Halt" Stop Tweq
+	"AnimC" Sim
+	"Primary Joint" 2
+	"Joint2AnimC" Sim
+	"    rate-low-high2" 30, 0, 75
+}
++ObjProp 556 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 558 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 633 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//junk
++ObjProp 274 "FrobInfo"
+{
+}
++ObjProp 317 "InvType"
+{
+}
+
+//doors
+-ObjProp 321 "FrobInfo"
++ObjProp 321 "BlockFrob"
+{
+	"" true
+}
+ObjProp 321 "Scripts"
+{
+	"Script 1" ""
+}
+ObjProp 464 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 464 "Position"
+{
 	"Heading" 4000
+}
+-ObjProp 464 "PhysType"
++ObjProp 464 "PhysType"
+{
+	"Type" OBB
+}
+
+//misplaced objects
+ObjProp 383 "Position"
+{
+	"Location" 439.745, 461.11, 500.965
+}
+-ObjProp 383 "PhysType"
++ObjProp 383 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 422 "PhysType"
++ObjProp 422 "PhysType"
+{
+	"Type" OBB
+}
+
+//scrolls
++ObjProp 594 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 594 "Scripts"
+{
+	"Script 0" StdBook
+}
++ObjProp 603 "DesignNote"
+{
+	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget=324
+}
++ObjProp 603 "Scripts"
+{
+	"Script 0" NVMetaTrap
 }
