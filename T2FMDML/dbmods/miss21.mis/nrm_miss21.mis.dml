@@ -1,0 +1,23 @@
+DML1
+
+//T2 FM: The Heart Of Gems: Night Of The Red Moon by Terra / Fixes: miss21.mis.dml
+
+FINGERPRINT
+{
+	2192 [-532 -480 -11]
+	47 [225 -56 -28]
+	1568 [-119 428 0]
+	2239 [-576 -476 4]
+	2197 [-29 -70 -26]
+	1661 [-194 68 -3]
+	957 [363 -161 -9]
+	1178 [-264 -47 -10]
+	QVAR "goal_target_6" == 2751
+}
+
+//inaccessible loot
+ObjProp 1574 "Position"
+{
+	"Location" -280, -135.35, -9.71203
+	"Heading" 4000
+}
