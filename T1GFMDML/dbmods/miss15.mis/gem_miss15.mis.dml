@@ -1,6 +1,19 @@
 DML1
 //T1 FM: The Gem by Wes Morrison (Datoyminaytah) / Fixes: miss15.mis.dml
 
+FINGERPRINT
+{
+	1214 [-40 29 -8]
+	1198 [-12 46 19]
+	140 [-18 -46 10]
+	766 [167 -78 5]
+	104 [16 -133 33]
+	107 [170 -149 40]
+	254 [15 -148 45]
+	1804 [83 -5 -7]
+	QVAR "goal_target_2" == 496
+}
+
 #script "squirrel"
 
 //goals
