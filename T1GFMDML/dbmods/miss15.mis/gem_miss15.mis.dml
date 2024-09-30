@@ -284,6 +284,10 @@ Link 58 88 "AIWatchObj"
 	"   Argument 1"[1] ""
 	"   Argument 2"[1] 88
 }
++ObjProp 300 "AI_Team"
+{
+	"" Neutral
+}
 +ObjProp 300 "InvRendType"
 {
 	"Type" Alternate Bitmap
