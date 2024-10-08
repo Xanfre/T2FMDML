@@ -176,7 +176,7 @@ ObjProp 85 "Position"
 -ObjProp 97 "Scripts"
 +ObjProp 135 "Scale"
 {
-	"" 1, 1.01, 1
+	"" 1, 1.005, 1
 }
 -ObjProp 135 "PhysType"
 +ObjProp 135 "PhysType"
