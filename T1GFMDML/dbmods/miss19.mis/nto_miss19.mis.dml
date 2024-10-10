@@ -173,6 +173,20 @@ ObjProp 85 "Position"
 {
 	"" true
 }
+ObjProp 94 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 94 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 94 "PhysType"
++ObjProp 94 "PhysType"
+{
+	"Type" OBB
+}
 -ObjProp 97 "Scripts"
 +ObjProp 135 "Scale"
 {
