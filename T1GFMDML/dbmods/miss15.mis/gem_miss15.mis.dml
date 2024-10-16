@@ -82,6 +82,7 @@ FINGERPRINT
 {
 	"" =1:goal_irreversible_2
 }
+-ObjProp 386 "DesignNote"
 +ObjProp 386 "TrapQVar"
 {
 	"" =1:goal_state_0
