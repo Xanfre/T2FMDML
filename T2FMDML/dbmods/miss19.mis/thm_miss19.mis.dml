@@ -155,15 +155,15 @@ ObjProp 19 "Position"
 	"Type" OBB
 }
 -Link 19 36 "ControlDevice"
-Link 19 18  "Lock"
+Link 19 18 "Lock"
 {
 	"" 1
 }
-+Link 19 35  "Lock"
++Link 19 35 "Lock"
 {
 	"" 1
 }
--Link 36 35  "Lock"
+-Link 36 35 "Lock"
 -Link 36 19 "ControlDevice"
 -Link 36 11 "ControlDevice"
 +Link 36 19 "FrobProxy"
