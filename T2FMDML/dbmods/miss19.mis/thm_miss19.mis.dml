@@ -15,11 +15,19 @@ FINGERPRINT
 }
 
 //doors
+ObjProp 6 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 6 "PhysType"
++ObjProp 6 "PhysType"
+{
+	"Type" OBB
+}
 +Receptron 11 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 ObjProp 11 "RotDoor"
@@ -51,33 +59,13 @@ ObjProp 82 "Position"
 {
 	"Type" OBB
 }
-+Receptron 161 "FireStim"
++ObjProp 161 "DeathStage"
 {
-	Min None
-	Max None
-
-	Effect "Abort"
+	"" -1
 }
-+Receptron 161 "WeaponStim"
++ObjProp 162 "DeathStage"
 {
-	Min None
-	Max None
-
-	Effect "Abort"
-}
-+Receptron 162 "FireStim"
-{
-	Min None
-	Max None
-
-	Effect "Abort"
-}
-+Receptron 162 "WeaponStim"
-{
-	Min None
-	Max None
-
-	Effect "Abort"
+	"" -1
 }
 +ObjProp 189 "BlockFrob"
 {
@@ -87,8 +75,15 @@ ObjProp 82 "Position"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
+}
+ObjProp 217 "Position"
+{
+	"Location" -12.97, -25.2, 82.9
+}
+ObjProp 220 "Position"
+{
+	"Location" -3.05, -17.53, 82.9
 }
 +ObjProp 227 "BlockFrob"
 {
@@ -103,25 +98,53 @@ ObjProp 275 "RotDoor"
 	"Open Angle" 90
 	"Clockwise?" false
 }
++ObjProp 300 "BlockFrob"
+{
+	"" true
+}
++ObjProp 302 "BlockFrob"
+{
+	"" true
+}
++ObjProp 303 "BlockFrob"
+{
+	"" true
+}
++ObjProp 304 "BlockFrob"
+{
+	"" true
+}
 ObjProp 304 "Scripts"
 {
 	"Don't Inherit" true
 }
++ObjProp 312 "BlockFrob"
+{
+	"" true
+}
+ObjProp 318 "TransDoor"
+{
+	"Open Position" -3.58
+}
+-ObjProp 318 "Scripts"
++ObjProp 318 "JointPos"
+{
+	"Joint 1" 90.00
+}
++ObjProp 325 "JointPos"
+{
+	"Joint 1" 90.00
+}
+ObjProp 325 "TransDoor"
+{
+	"Open Position" -3.58
+}
+ObjProp 356 "TransDoor"
+{
+	"Open Position" -6.50
+}
 
 //lockboxes / switches
-+Receptron 18 "Stench"
-{
-	Max None
-
-	Target 35
-	Agent Me
-
-	Effect "add_prop"
-	{
-		"Prop Name" Locked
-	}
-}
--Link 19 36 "ControlDevice"
 ObjProp 19 "Position"
 {
 	"Heading" 8000
@@ -131,18 +154,16 @@ ObjProp 19 "Position"
 {
 	"Type" OBB
 }
-+Receptron 35 "Stench"
+-Link 19 36 "ControlDevice"
+Link 19 18  "Lock"
 {
-	Max None
-
-	Target 18
-	Agent Me
-
-	Effect "add_prop"
-	{
-		"Prop Name" Locked
-	}
+	"" 1
 }
++Link 19 35  "Lock"
+{
+	"" 1
+}
+-Link 36 35  "Lock"
 -Link 36 19 "ControlDevice"
 -Link 36 11 "ControlDevice"
 +Link 36 19 "FrobProxy"
@@ -157,18 +178,6 @@ ObjProp 36 "Position"
 +ObjProp 36 "PhysType"
 {
 	"Type" OBB
-}
-+StimSource 254 "Stench"
-{
-	Intensity 1
-
-	Propagator "Contact"
-	{
-		Shape
-		{
-			"Contact Types" Frob Inv -> World
-		}
-	}
 }
 
 //AIs
