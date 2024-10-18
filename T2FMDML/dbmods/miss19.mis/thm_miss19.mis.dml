@@ -42,16 +42,13 @@ ObjProp 11 "RotDoor"
 +ObjProp 11 "PhysCanMant"
 {
 }
-ObjProp 82 "RotDoor"
-{
-	"Open Angle" 271
-}
 +ObjProp 82 "BlockFrob"
 {
 	"" true
 }
 ObjProp 82 "Position"
 {
+	"Location" 0, -17, 81.75
 	"Heading" 8000
 }
 -ObjProp 82 "PhysType"
