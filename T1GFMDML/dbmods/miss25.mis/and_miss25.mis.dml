@@ -400,6 +400,16 @@ ObjProp 223 "Position"
 {
 }
 
+//keys
++ObjProp 327 "GameName"
+{
+	"" Name_srkey
+}
++ObjProp 328 "GameName"
+{
+	"" Name_srkey
+}
+
 //AI
 +ObjProp 403 "GameName"
 {
