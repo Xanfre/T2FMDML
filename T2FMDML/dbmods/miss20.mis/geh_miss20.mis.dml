@@ -28,7 +28,7 @@ FINGERPRINT
 	"" =1:goal_final_1
 }
 
-//door
+//doors
 ObjProp 71 "RotDoor"
 {
 	"Open Angle" 90
@@ -43,15 +43,45 @@ ObjProp 71 "Position"
 {
 	"Type" OBB
 }
+ObjProp 139 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 139 "Position"
+{
+	"Heading" 8000
+}
+-ObjProp 139 "PhysType"
++ObjProp 139 "PhysType"
+{
+	"Type" OBB
+}
 -ObjProp 160 "JointPos"
 -ObjProp 161 "JointPos"
 -ObjProp 246 "JointPos"
 -ObjProp 247 "JointPos"
+-ObjProp 318 "FrobInfo"
+-ObjProp 318 "KeyDst"
 
 //keys
 -ObjProp 150 "PhysType"
 +ObjProp 341 "SlayResult"
 {
+}
++ObjProp 341 "NoDrop"
+{
+	"" true
+}
+
+//scroll
++ObjProp 243 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 243 "Scripts"
+{
+	"Script 0" StdBook
 }
 
 //AI
