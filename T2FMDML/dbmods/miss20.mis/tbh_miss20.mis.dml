@@ -1,5 +1,5 @@
 DML1
-//T2 FM: The Builder's Hammer (Contest 2) by Yametha / Fix loot: miss20.mis.dml
+//T2 FM: The Builder's Hammer (Contest 2) by Sarah Bruce (Yametha) / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -14,9 +14,245 @@ FINGERPRINT
 	QVAR "goal_target_1" == 136
 }
 
+#script "nvscript"
+
+//goals
++Receptron 3 "Stench"
+{
+	Max None
+
+	Target 104
+	Agent -2422
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 3 "Stench"
+{
+	Max None
+
+	Target 73
+	Agent -3219
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 3 "Stench"
+{
+	Max None
+
+	Target 115
+	Agent -3219
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 3 "Stench"
+{
+	Max None
+
+	Target 120
+	Agent -3219
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 3 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 3 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 3 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 3 "TrapQVar"
+{
+	"" =1:goal_final_1
+}
++ObjProp 4 "DiffTurnOn"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 4 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 4 "TrapQVar"
+{
+	"" =0:goal_optional_0
+}
+
+//explosive charges
++Receptron 5 "Stench"
+{
+	Max None
+
+	Target -234
+	Agent -3219
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysAttr
+	}
+}
++ObjProp 5 "DesignNote"
+{
+	"" NVRelayTrapOn="BeginScript"; NVRelayTrapTDest="[Me]"; NVRelayTrapTOn="[1.00]Stench"; NVRelayTrapOff="Null"
+}
++ObjProp 5 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
++ObjProp 73 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move, Script, Use Ammo
+}
+-ObjProp 73 "DeathStage"
++ObjProp 73 "InvType"
+{
+	"" Item
+}
+-ObjProp 73 "PhysType"
+ObjProp 73 "PhysFaceVel"
+{
+	"" false
+}
+ObjProp 73 "PhysInitVel"
+{
+	"" 1, 0, 0
+}
+-ObjProp 73 "SelfLit"
++ObjProp 73 "Scripts"
+{
+	"Script 0" CollisionStick
+	"Script 1" LootSounds
+	"Don't Inherit" true
+}
++ObjProp 111 "BlockFrob"
+{
+	"" true
+}
++ObjProp 115 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move, Script, Use Ammo
+}
++ObjProp 115 "InvType"
+{
+	"" Item
+}
+-ObjProp 115 "PhysType"
+ObjProp 115 "PhysFaceVel"
+{
+	"" false
+}
+ObjProp 115 "PhysInitVel"
+{
+	"" 1, 0, 0
+}
+-ObjProp 115 "SelfLit"
++ObjProp 115 "Scripts"
+{
+	"Script 0" CollisionStick
+	"Script 1" LootSounds
+	"Don't Inherit" true
+}
++ObjProp 120 "FrobInfo"
+{
+	"World Action" Move
+	"Inv Action" Move, Script, Use Ammo
+}
++ObjProp 120 "InvType"
+{
+	"" Item
+}
+-ObjProp 120 "PhysType"
+ObjProp 120 "PhysFaceVel"
+{
+	"" false
+}
+ObjProp 120 "PhysInitVel"
+{
+	"" 1, 0, 0
+}
+-ObjProp 120 "SelfLit"
++ObjProp 120 "Scripts"
+{
+	"Script 0" CollisionStick
+	"Script 1" LootSounds
+	"Don't Inherit" true
+}
+
+//quest items / loot
+-Link 138 140 "ControlDevice"
+-Link 104 116 "ControlDevice"
++Link 104 140 "ControlDevice"
+{
+}
+ObjProp 104 "Scripts"
+{
+	"Script 0" TrigUnlock
+}
+ObjProp 104 "Position"
+{
+	"Location" 123, 21.5, -6.345
+}
+-ObjProp 104 "PhysType"
++ObjProp 104 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 105 "FrobInfo"
+-ObjProp 105 "DeathStage"
++ObjProp 105 "StackCount"
+{
+}
++ObjProp 105 "SlayResult"
+{
+}
++ObjProp 105 "NoDrop"
+{
+	"" true
+}
++ObjProp 105 "Class Tags"
+{
+}
+ObjProp 105 "Scripts"
+{
+	"Script 0" LootSounds
+	"Script 1" ""
+}
+ObjProp 108 "Position"
+{
+	"Location" 123, 21.5, -6.345
+}
 +ObjProp 110 "Loot"
 {
-	"Gold" 0
-	"Gems" 0
-	"Art" 0
+}
+
+//various objects
+-ObjProp 27 "PhysType"
+ObjProp 27 "Position"
+{
+	"Location" 112, -41, -7.645
+	"Heading" 2400
+	"Bank" 0
+}
+-ObjProp 44 "DeathStage"
++ObjProp 44 "Material Tags"
+{
 }
