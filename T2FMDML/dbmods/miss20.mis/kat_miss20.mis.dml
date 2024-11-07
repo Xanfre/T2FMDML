@@ -53,13 +53,15 @@ Link 163 206 "Contains"
 {
 	"" Belt
 }
+-Link 200 35 "AIPatrol"
+-Link 202 59 "AIPatrol"
 -Link 203 207 "Contains"
 +Link 49 207 "Contains"
 {
 	"" Belt
 }
 
-//beer
+//quest item
 ObjProp 135 "FrobInfo"
 {
 	"Inv Action" None
@@ -78,16 +80,33 @@ ObjProp 38 "RotDoor"
 {
 	"Open Angle" 271
 }
+ObjProp 38 "Position" 
+{
+	"Location" 114.485, 82.5, -16
+}
+-ObjProp 38 "PhysType"
++ObjProp 38 "PhysType"
+{
+	"Type" OBB
+}
 +Receptron 154 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 ObjProp 154 "Scale"
 {
-	"" 0.5, 0.5, 0.25
+	"" 0.525, 0.525, 0.25
+}
+ObjProp 154 "Position" 
+{
+	"Location" 93, 106, -3.95
+}
+-ObjProp 154 "PhysType"
++ObjProp 154 "PhysType"
+{
+	"Type" OBB
 }
 ObjProp 209 "TransDoor"
 {
@@ -95,17 +114,25 @@ ObjProp 209 "TransDoor"
 }
 +ObjProp 209 "JointPos"
 {
-	"Joint 1" 90.00
+	"Joint 1" -90.00
 }
 ObjProp 209 "Scale"
 {
-	"" 1, 1, 0.5
+	"" 1.025, 1.025, 0.5
+}
+ObjProp 209 "Position" 
+{
+	"Location" 115.95, 94.5, -9.4
+}
+-ObjProp 209 "PhysType"
++ObjProp 209 "PhysType"
+{
+	"Type" OBB
 }
 +Receptron 211 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 ObjProp 211 "Scale"
@@ -125,11 +152,18 @@ ObjProp 213 "Scale"
 	"" 1.25, 1.25, 0.625
 }
 
-//banner
-+ObjProp 119 "BlockFrob"
+//switch
+ObjProp 36 "Position" 
 {
-	"" true
+	"Location" 115.235, 80.25, -15.35
 }
+-ObjProp 36 "PhysType"
++ObjProp 36 "PhysType"
+{
+	"Type" OBB
+}
+
+//banner
 ObjProp 119 "Position" 
 {
 	"Location" 88.95, 86, -15
@@ -138,10 +172,6 @@ ObjProp 119 "Position"
 +ObjProp 119 "PhysType"
 {
 	"Type" OBB
-}
-+ObjProp 119 "Scale"
-{
-	"" 1.05, 1.05, 1.05
 }
 
 //keys
