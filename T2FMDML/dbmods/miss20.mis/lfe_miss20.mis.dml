@@ -294,7 +294,6 @@ ObjProp 925 "Position"
 +StimSource 930 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
 +ObjProp 930 "PhysCanMant"
@@ -307,6 +306,10 @@ ObjProp 925 "Position"
 }
 
 //AIs
++ObjProp 207 "AI_Efficiency"
+{
+	"Enabled" false
+}
 +ObjProp 193 "InvRendType"
 {
 	"Type" Alternate Bitmap
