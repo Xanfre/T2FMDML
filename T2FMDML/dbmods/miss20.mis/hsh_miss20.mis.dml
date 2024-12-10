@@ -484,9 +484,9 @@ ObjProp 1573 "Scripts"
 {
 	"" true
 }
-+ObjProp 113 "PhysAIColl"
++ObjProp 1588 "AI_Efficiency"
 {
-	"" true
+	"Enabled" false
 }
 -Link 234 1800 "ControlDevice"
 ObjProp 1800 "AnimLight"
