@@ -18,6 +18,7 @@ FINGERPRINT
 #script "script-t2"
 #script "tnhscript"
 #script "nvscript"
+#script "squirrel"
 
 //starting point
 ObjProp 100 "Position"
@@ -25,33 +26,188 @@ ObjProp 100 "Position"
 	"Location" 120, 454, 11.4
 }
 
-//mantling
-+ObjProp 344 "PhysCanMant"
+//doors, buttons, windows
+-ObjProp 14 "DesignNote"
+-ObjProp 14 "Scripts"
++Link 14 42 "ControlDevice"
 {
 }
-+ObjProp 345 "PhysCanMant"
+-ObjProp 42 "PickDist"
+-Link 42 127 "ControlDevice"
++Link 42 15 "ScriptParams"
+{
+	"" FrobInert
+}
+ObjProp 42 "Scripts"
+{
+	"Script 0" ToggleDoor
+	"Script 1" DoorFrobInert
+}
+-ObjProp 53 "DesignNote"
+-ObjProp 53 "Scripts"
+-MetaProp 53 -1629
+ObjProp 81 "TransDoor"
+{
+	"Base Speed" 1.25
+}
++ObjProp 81 "BlockFrob"
+{
+	"" true
+}
+-Link 81 65 "ControlDevice"
+ObjProp 81 "Scripts"
+{
+	"Script 1" ""
+}
++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 81
+	Agent -5820
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
+++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 347
+	Agent -5091
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 348
+	Agent -5091
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
+++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 431
+	Agent -1426
+
+	Effect "add_prop"
+	{
+		"Prop Name" Class Tags
+	}
+}
++StimSource 112 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-ObjProp 112 "JointPos"
+-ObjProp 113 "JointPos"
+ObjProp 168 "Scripts"
+{
+	"Script 0" ToggleDoor
+}
++ObjProp 168 "BlockFrob"
+{
+	"" true
+}
++ObjProp 207 "BlockFrob"
+{
+	"" true
+}
++ObjProp 213 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.875,0,0
+}
++ObjProp 213 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 213 "Scale"
+{
+	"" 0.99625, 1, 0.8
+}
+ObjProp 213 "Position"
+{
+	"Location" 90.5, 497, 8
+}
+-ObjProp 213 "PhysType"
++ObjProp 213 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 237 "BlockFrob"
+{
+	"" true
+}
++ObjProp 243 "BlockFrob"
+{
+	"" true
+}
++ObjProp 250 "BlockFrob"
+{
+	"" true
+}
+ObjProp 268 "RotDoor"
+{
+	"Open Angle" 272
+}
++ObjProp 281 "BlockFrob"
+{
+	"" true
+}
+ObjProp 394 "Scale"
+{
+	"" 1.2471, 1.2471, 1
+}
+ObjProp 531 "DesignNote"
+{
+	"" NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"; NVMetaTrapTarget="&ControlDevice"
+}
++ObjProp 531 "TrapFlags"
+{
+	"" NoOn
+}
+ObjProp 531 "Scripts"
+{
+	"Script 0" NVMetaTrap
+	"Don't Inherit" false
+}
++ObjProp 539 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=5,0.325,9
+}
++ObjProp 539 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+-ObjProp 596 "DesignNote"
+-ObjProp 596 "Scripts"
+-Link 596 168 "ScriptParams"
+-Link 596 53 "ControlDevice"
++Link 596 168 "ControlDevice"
 {
 }
 
 //containers, quest items
--ObjProp 76 "DesignNote"
--ObjProp 239 "DesignNote"
--ObjProp 414 "DesignNote"
--ObjProp 507 "DesignNote"
--ObjProp 514 "DesignNote"
--ObjProp 545 "DesignNote"
--ObjProp 76 "Scripts"
--ObjProp 239 "Scripts"
--ObjProp 414 "Scripts"
--ObjProp 507 "Scripts"
--ObjProp 514 "Scripts"
--ObjProp 545 "Scripts"
 -Link 64 60 "ScriptParams"
 -Link 64 57 "ScriptParams"
 -Link 64 59 "ScriptParams"
 -Link 64 61 "ScriptParams"
 -Link 64 62 "ScriptParams"
 -Link 64 63 "ScriptParams"
+-Receptron 55 "Stench"
 -Link 55 64 "ControlDevice"
 +Link 55 57 "ScriptParams"
 {
@@ -80,25 +236,38 @@ ObjProp 100 "Position"
 ObjProp 55 "Scripts"
 {
 	"Script 0" TweqFrobInert
-	"Script 1" ""
+	"Script 1" NVTweqDevice
 }
--Link 65 -1629 "ScriptParams"
-Link 65 55 "ScriptParams"
+-Link 65 55 "ScriptParams"
+-Link 127 15 "ScriptParams"
+ObjProp 239 "DesignNote"
 {
-	"" FrobInert
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"
 }
-ObjProp 65 "Scripts"
+ObjProp 239 "Scripts"
 {
-	"Script 0" TrapFrobInert
+	"Script 0" NVMetaTrap
 }
--Link 127 -1629 "ScriptParams"
-Link 127 15 "ScriptParams"
+-ObjProp 239 "PickBias"
+-ObjProp 507 "PickBias"
+-ObjProp 507 "DesignNote"
+-ObjProp 507 "Scripts"
++Link 507 239 "ControlDevice"
 {
-	"" FrobInert
 }
-ObjProp 127 "Scripts"
+ObjProp 414 "DesignNote"
 {
-	"Script 0" TrapFrobInert
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 414 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-ObjProp 545 "DesignNote"
+-ObjProp 545 "PickBias"
+-ObjProp 545 "Scripts"
++Link 545 414 "ControlDevice"
+{
 }
 +Link 511 545 "ScriptParams"
 {
@@ -116,6 +285,21 @@ ObjProp 512 "Scripts"
 {
 	"Script 1" DoorFrobInert
 }
+ObjProp 514 "DesignNote"
+{
+	"" NVMetaTrapOn="NowUnlocked"; NVMetaTrapOff="TurnOn"; NVMetaTrapMeta="FrobInert"
+}
+ObjProp 514 "Scripts"
+{
+	"Script 0" NVMetaTrap
+}
+-ObjProp 514 "PickBias"
+-ObjProp 76 "PickBias"
+-ObjProp 76 "DesignNote"
+-ObjProp 76 "Scripts"
++Link 76 514 "ControlDevice"
+{
+}
 +Link 529 507 "ScriptParams"
 {
 	"" FrobInert
@@ -124,28 +308,29 @@ ObjProp 529 "Scripts"
 {
 	"Script 1" DoorFrobInert
 }
++ObjProp 550 "Locked"
+{
+}
+-Link 550 551 "ControlDevice"
+ObjProp 550 "Scripts"
+{
+	"Script 1" ""
+}
 ObjProp 551 "DesignNote"
 {
-	"" NVMetaTrapMeta="FrobInert"; NVMetaTrapOn="TurnOff"; NVMetaTrapOff="TurnOn"
+	"" NVMetaTrapOn="DoorClosing"; NVMetaTrapOff="DoorOpening"; NVMetaTrapMeta="FrobInert"
 }
-ObjProp 551 "CollisionType"
++ObjProp 551 "PickBias"
 {
-	"" None
+	"" 2.00
 }
 -ObjProp 551 "PhysType"
 +ObjProp 551 "PhysType"
 {
 	"Type" OBB
 }
-ObjProp 552 "CollisionType"
-{
-	"" None
-}
+-ObjProp 552 "TransDoor"
 -ObjProp 552 "PhysType"
-+ObjProp 552 "PhysType"
-{
-	"Type" OBB
-}
 -Link 566 -1629 "ScriptParams"
 Link 566 545 "ScriptParams"
 {
@@ -156,78 +341,25 @@ ObjProp 566 "Scripts"
 	"Script 0" TrapFrobInert
 }
 
-//doors, windows
-+Receptron 112 "Stench"
-{
-	Max None
-
-	Target 347
-	Agent -5091
-
-	Effect "add_prop"
-	{
-		"Prop Name" Class Tags
-	}
-}
-++Receptron 112 "Stench"
-{
-	Max None
-
-	Target 348
-	Agent -5091
-
-	Effect "add_prop"
-	{
-		"Prop Name" Class Tags
-	}
-}
-+StimSource 112 "Stench"
-{
-	Intensity 1
-
-	Propagator "Radius"
-}
--ObjProp 112 "JointPos"
--ObjProp 113 "JointPos"
-+ObjProp 168 "BlockFrob"
-{
-	"" true
-}
-+ObjProp 237 "BlockFrob"
-{
-	"" true
-}
-+ObjProp 243 "BlockFrob"
-{
-	"" true
-}
-+ObjProp 250 "BlockFrob"
-{
-	"" true
-}
-ObjProp 268 "RotDoor"
-{
-	"Open Angle" 272
-}
-+ObjProp 281 "BlockFrob"
-{
-	"" true
-}
-ObjProp 394 "Scale"
-{
-	"" 1.2471, 1.2471, 1
-}
-ObjProp 539 "RotDoor"
-{
-	"Open Angle" 270
-	"Clockwise?" true
-}
-
 //keys
 +ObjProp 194 "StackCount"
 {
 }
 +ObjProp 534 "StackCount"
+{
+}
++ObjProp 534 "SlayResult"
+{
+}
++ObjProp 534 "NoDrop"
+{
+	"" true
+}
++ObjProp 535 "NoDrop"
+{
+	"" true
+}
++ObjProp 535 "SlayResult"
 {
 }
 +ObjProp 535 "StackCount"
@@ -242,23 +374,58 @@ ObjProp 539 "RotDoor"
 +ObjProp 540 "StackCount"
 {
 }
++ObjProp 591 "StackCount"
+{
+}
 +ObjProp 553 "StackCount"
 {
 }
+-ObjProp 553 "BeltLink"
 +ObjProp 553 "DesignNote"
 {
-	"" NVRemovePropertyTrapOn="Contained"; NVRemovePropertyTrapProp="Scripts"
-}
-+ObjProp 553 "FrobInfo"
-{
-	"World Action" Move, Script
-	"Tool Action" Script, Deselect
+	"" NVMetaTrapMeta="FrobInert"; NVRelayTrapOn="Contained"; NVRelayTrapOff="Null"; NVRelayTrapCount=1
 }
 ObjProp 553 "Scripts"
 {
-	"Script 0" TrigWorldFrob
-	"Script 1" NVRemovePropertyTrap
+	"Script 0" NVMetaTrap
+	"Script 1" NVRelayTrap
 }
-+ObjProp 591 "StackCount"
+ObjProp 553 "Scale"
+{
+	"" 0.8, 0.8, 1
+}
+-ObjProp 553 "PhysType"
+ObjProp 553 "Position"
+{
+	"Location" 120.35, 510.25, 56.305
+}
++MetaProp 553 -1629
+-Link 555 553 "ControlDevice"
+-Link 554 555 "ControlDevice"
++Link 554 553 "ControlDevice"
+{
+}
+ObjProp 554 "TrapFlags"
+{
+	"" Once, Invert
+}
+
+//physdims
+-ObjProp 206 "PhysType"
++ObjProp 206 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 572 "PhysType"
++ObjProp 572 "PhysType"
+{
+	"Type" OBB
+}
+
+//mantling
++ObjProp 344 "PhysCanMant"
+{
+}
++ObjProp 345 "PhysCanMant"
 {
 }
