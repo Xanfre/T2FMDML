@@ -107,6 +107,18 @@ ObjProp 81 "Scripts"
 		"Prop Name" Class Tags
 	}
 }
+++Receptron 112 "Stench"
+{
+	Max None
+
+	Target 545
+	Agent 510
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
 +StimSource 112 "Stench"
 {
 	Intensity 1
@@ -114,6 +126,14 @@ ObjProp 81 "Scripts"
 }
 -ObjProp 112 "JointPos"
 -ObjProp 113 "JointPos"
++ObjProp 113 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=1.5,1.55,1.5; SetVectorPropSubProperty2="Offset 1"; SetVectorPropValue2=0,0.2,0; SetVectorPropTarget=-1262,!236,!239,!550,!569
+}
++ObjProp 113 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
 ObjProp 168 "Scripts"
 {
 	"Script 0" ToggleDoor
@@ -413,6 +433,26 @@ ObjProp 554 "TrapFlags"
 //physdims
 -ObjProp 206 "PhysType"
 +ObjProp 206 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 508 "PhysType"
++ObjProp 508 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 509 "PhysType"
++ObjProp 509 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 510 "PhysType"
++ObjProp 510 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 511 "PhysType"
++ObjProp 511 "PhysType"
 {
 	"Type" OBB
 }
