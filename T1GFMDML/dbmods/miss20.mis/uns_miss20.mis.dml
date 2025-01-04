@@ -63,14 +63,14 @@ FINGERPRINT
 -ObjProp 213 "Scale"
 ObjProp 213 "RotDoor"
 {
- "Open Angle" 271
+	"Open Angle" 271
 }
 +ObjProp 213 "BlockFrob"
 {
 	"" true
 }
 
-//quest items
+//quest items, keys
 +Receptron 33 "HolyStim"
 {
 	Max None
@@ -80,7 +80,7 @@ ObjProp 213 "RotDoor"
 
 	Effect "add_prop"
 	{
- 		Prop Name" Locked
+		"Prop Name" Locked
 	}
 }
 ++Receptron 33 "HolyStim"
@@ -128,6 +128,7 @@ ObjProp 33 "Scripts"
 		}
 	}
 }
+-ObjProp 330 "FrobInfo"
 -ObjProp 330 "KeySrc"
 +ObjProp 330 "NoDrop"
 {
@@ -150,6 +151,7 @@ ObjProp 33 "Scripts"
 		}
 	}
 }
+-ObjProp 338 "FrobInfo"
 -ObjProp 338 "KeySrc"
 +ObjProp 338 "StackCount"
 {
@@ -180,6 +182,7 @@ ObjProp 33 "Scripts"
 		}
 	}
 }
+-ObjProp 341 "FrobInfo"
 -ObjProp 341 "KeySrc"
 +ObjProp 341 "StackCount"
 {
@@ -199,3 +202,9 @@ ObjProp 33 "Scripts"
 -ObjProp 309 "PhysType"
 -ObjProp 310 "PhysType"
 -ObjProp 353 "PhysType"
+
+//misplaced objects
+ObjProp 326 "Position"
+{
+	"Location" 91.475, 62.575, -28.85
+}
