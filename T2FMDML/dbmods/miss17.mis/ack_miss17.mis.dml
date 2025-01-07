@@ -15,6 +15,7 @@ FINGERPRINT
 }
 
 #script "nvscript"
+#script "tnhscript"
 
 //goals
 +ObjProp 63 "DesignNote"
@@ -61,6 +62,14 @@ ObjProp 6 "RotDoor"
 	"Open Angle" 90
 	"Clockwise?" false
 }
++ObjProp 29 "BlockFrob"
+{
+	"" true
+}
++ObjProp 65 "BlockFrob"
+{
+	"" true
+}
 +ObjProp 435 "BlockFrob"
 {
 	"" true
@@ -73,11 +82,35 @@ ObjProp 6 "RotDoor"
 {
 	"" true
 }
-+Receptron 584 "Stench"
++Receptron 355 "Stench"
 {
 	Max None
 
 	Target Me
+	Agent -2421
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 355 "Stench"
+{
+	Max None
+
+	Target 356
+	Agent -2421
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 355 "Stench"
+{
+	Max None
+
+	Target 584
 	Agent -2418
 
 	Effect "add_prop"
@@ -85,7 +118,7 @@ ObjProp 6 "RotDoor"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 584 "Stench"
+++Receptron 355 "Stench"
 {
 	Max None
 
@@ -97,7 +130,7 @@ ObjProp 6 "RotDoor"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 584 "Stench"
+++Receptron 355 "Stench"
 {
 	Max None
 
@@ -109,7 +142,7 @@ ObjProp 6 "RotDoor"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 584 "Stench"
+++Receptron 355 "Stench"
 {
 	Max None
 
@@ -121,7 +154,7 @@ ObjProp 6 "RotDoor"
 		"Prop Name" PhysDims
 	}
 }
-++Receptron 584 "Stench"
+++Receptron 355 "Stench"
 {
 	Max None
 
@@ -133,11 +166,66 @@ ObjProp 6 "RotDoor"
 		"Prop Name" PhysDims
 	}
 }
-+StimSource 584 "Stench"
++StimSource 355 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
+}
+
+//safe
++Link 377 511 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 513 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 517 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 519 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 520 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 521 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 522 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 523 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 524 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 544 "ScriptParams"
+{
+	"" FrobInert
+}
++Link 377 545 "ScriptParams"
+{
+	"" FrobInert
+}
++ObjProp 377 "Scripts"
+{
+	"Script 0" TweqFrobInert
+}
+-Link 555 558 "ControlDevice"
+-Link 558 555 "ControlDevice"
++ObjProp 558 "TrapFlags"
+{
+	"" Once
 }
 
 //candlesticks
@@ -209,7 +297,12 @@ ObjProp 543 "AI_Hearing"
 	"Joint 1" 90.00
 }
 
-//book
+//books
+ObjProp 487 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
+}
 ObjProp 946 "Position"
 {
 	"Heading" 8000
