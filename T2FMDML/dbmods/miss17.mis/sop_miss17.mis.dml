@@ -14,8 +14,25 @@ FINGERPRINT
 	QVAR "goal_target_6" == 505
 }
 
+#script "squirrel"
+
 //goals
 -Link 400 553 "ControlDevice"
+-Link 537 536 "ControlDevice"
+-Link 536 538 "ControlDevice"
+-Link 536 535 "ControlDevice"
++Link 536 538 "ControlDevice"
+{
+}
++Link 536 535 "ControlDevice"
+{
+}
++ObjProp 536 "TrapFlags"
+{
+	"" Once
+}
+
+//AIs
 +Link 461 553 "ControlDevice"
 {
 }
@@ -32,25 +49,18 @@ FINGERPRINT
 {
 	"Script 0" TrigBrainDead
 }
--Link 537 536 "ControlDevice"
--Link 536 538 "ControlDevice"
--Link 536 535 "ControlDevice"
-+Link 536 538 "ControlDevice"
+ObjProp 578 "AI_AlrtRsp"
 {
-}
-+Link 536 535 "ControlDevice"
-{
-}
-+ObjProp 536 "TrapFlags"
-{
-	"" Once
+	"Alert level" (3) High
 }
 
-//quest items
+//quest items, key
+-StimSource 47 "RestoreStim"
 ObjProp 47 "FrobInfo"
 {
 	"Inv Action" None
 }
+-ObjProp 47 "Scripts"
 -ObjProp 189 "FrobInfo"
 +ObjProp 189 "StackCount"
 {
@@ -62,8 +72,44 @@ ObjProp 47 "FrobInfo"
 {
 	"Script 0" LootSounds
 }
++ObjProp 271 "StackCount"
+{
+}
++ObjProp 271 "SlayResult"
+{
+}
++ObjProp 271 "NoDrop"
+{
+	"" true
+}
 
 //doors
++ObjProp 59 "BlockFrob"
+{
+	"" true
+}
+ObjProp 128 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+	"Script 1" ""
+	"Script 2" ""
+}
++ObjProp 152 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.79,0,0
+}
++ObjProp 152 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 156 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.79,0,0
+}
++ObjProp 156 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
 +MetaProp 145 -2420
 -ObjProp 160 "JointPos"
 -ObjProp 458 "JointPos"
@@ -74,7 +120,51 @@ ObjProp 47 "FrobInfo"
 -ObjProp 332 "Scripts"
 ObjProp 367 "RotDoor"
 {
-	"Open Angle" 89
+	"Open Angle" 89.5
+}
++ObjProp 367 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.85,0,0
+}
++ObjProp 367 "BlockFrob"
+{
+	"" true
+}
++ObjProp 367 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+ObjProp 367 "StTweqLock"
+{
+	"AnimS" None
+}
+ObjProp 370 "StTweqLock"
+{
+	"AnimS" None
+}
++ObjProp 370 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.85,0,0
+}
++ObjProp 370 "BlockFrob"
+{
+	"" true
+}
++ObjProp 370 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 481 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.875,0,0
+}
++ObjProp 481 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
++ObjProp 541 "BlockFrob"
+{
+	"" true
 }
 ObjProp 541 "JointPos"
 {
@@ -166,7 +256,6 @@ ObjProp 317 "Position"
 +StimSource 322 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
 ObjProp 452 "Position"
@@ -192,6 +281,14 @@ ObjProp 1031 "Position"
 }
 
 //various objects
++ObjProp 15 "PickDist"
+{
+	"" 7.00
+}
++ObjProp 16 "PickDist"
+{
+	"" 7.00
+}
 +ObjProp 17 "DiffDestroy"
 {
 	"quest var values" 0, 1, 2
@@ -201,13 +298,22 @@ ObjProp 1031 "Position"
 {
 	"Joint 1" 90.00
 }
-+ObjProp 271 "StackCount"
+ObjProp 477 "Scripts"
 {
+	"Script 0" TrigWorldFrob
 }
-+ObjProp 271 "SlayResult"
+-ObjProp 477 "PhysType"
++ObjProp 477 "PhysType"
 {
+	"Type" OBB
 }
-+ObjProp 271 "NoDrop"
+-ObjProp 488 "FrobInfo"
++ObjProp 488 "PickBias"
 {
-	"" true
+	"" 2.00
+}
+ObjProp 488 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+	"Script 1" ""
 }
