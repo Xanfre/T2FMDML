@@ -61,9 +61,53 @@ class T1GFMDMLBase extends SqRootScript
  * T1DoorFix:
  * Implements the door obstruction and synchronization behavior from the Thief 2
  * door script.
+ *
+ * Parameters:
+ * "NonAutoDoor" - Whether the door should implement the additional behavior
+ *     from the Thief 2 NonAutoDoor script. Using this parameter requires that
+ *     the script appear before the door script in the script hierarchy. Other
+ *     scripts which need the locking messages will need to appear before this
+ *     script.
  */
 class T1DoorFix extends SqRootScript
 {
+
+	function IsNonAutoDoor()
+	{
+		try
+		{
+			return userparams().NonAutoDoor.tostring() == "true"
+				|| userparams().NonAutoDoor.tointeger() != 0;
+		}
+		catch (err)
+		{
+			return false;
+		}
+	}
+
+	function ClearTiming(kill)
+	{
+		// Clear any outstanding close timer.
+		if (IsDataSet("CloseTimer"))
+		{
+			local close = GetData("CloseTimer");
+			if (kill)
+				KillTimer(close);
+			ClearData("CloseTimer");
+		}
+	}
+
+	function CheckTiming()
+	{
+		// Check if an explicit close time was set and set a timer if one is.
+		if (Property.Possessed(self, "ScriptTiming"))
+		{
+			ClearTiming(true);
+			local time = Property.Get(self, "ScriptTiming");
+			local close = SetOneShotTimer(self, "Close", time / 1000.0);
+			SetData("CloseTimer", close);
+		}
+	}
 
 	function OnCloseAfterHalt()
 	{
@@ -84,8 +128,19 @@ class T1DoorFix extends SqRootScript
 		}
 	}
 
+	function OnDoorClosing()
+	{
+		ClearTiming(true);
+	}
+
+	function OnDoorOpen()
+	{
+		CheckTiming();
+	}
+
 	function OnDoorHalt()
 	{
+		CheckTiming();
 		// Set 'BeforeHalt' to the previous action on halt.
 		SetData("BeforeHalt", message().PrevActionType);
 	}
@@ -101,6 +156,34 @@ class T1DoorFix extends SqRootScript
 			if (lock != pairLock)
 				Property.CopyFrom(self, "Locked", pair);
 		}
+	}
+
+	function OnTimer()
+	{
+		// Close door if closing timer has expired.
+		if (message().name == "Close")
+		{
+			ClearTiming(false);
+			Door.CloseDoor(self);
+		}
+	}
+
+	function OnNowLocked()
+	{
+		// Block the message if set to emulate NonAutoDoor.
+		// NOTE: This will have side effects for scripts lower in the hierarchy.
+		//       Use with caution.
+		if (IsNonAutoDoor())
+			BlockMessage();
+	}
+
+	function OnNowUnlocked()
+	{
+		// Block the message if set to emulate NonAutoDoor.
+		// NOTE: This will have side effects for scripts lower in the hierarchy.
+		//       Use with caution.
+		if (IsNonAutoDoor())
+			BlockMessage();
 	}
 
 }
