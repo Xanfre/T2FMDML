@@ -14,8 +14,33 @@ FINGERPRINT
 	QVAR "goal_target_2" == 550
 }
 
-//goals
+#script "nvscript"
+
+//goals / pickpockets
++ObjProp 171 "Scripts"
+{
+	"Script 0" TrapSetQVar
+}
++ObjProp 171 "TrapQVar"
+{
+	"" =2:goal_state_2
+}
++Link 572 171 "ControlDevice"
+{
+}
+-Link 517 636 "ControlDevice"
 -Link 550 553 "ControlDevice"
++Link 553 581 "ControlDevice"
+{
+}
++ObjProp 553 "DesignNote"
+{
+	"" NVRelayTrapDelay=1; NVRelayTrapCount=1
+}
++ObjProp 553 "Scripts"
+{
+	"Script 0" NVRelayTrap
+}
 ObjProp 554 "TrapQVar"
 {
 	"" >0:burnt_envelopes
@@ -24,16 +49,13 @@ ObjProp 555 "TrapQVar"
 {
 	"" >1:burnt_envelopes
 }
-+Link 572 171 "ControlDevice"
++ObjProp 581 "DesignNote"
 {
+	"" NVText="Mission Failed"
 }
-+ObjProp 171 "Scripts"
++ObjProp 581 "Scripts"
 {
-	"Script 0" TrapSetQVar
-}
-+ObjProp 171 "TrapQVar"
-{
-	"" =2:goal_state_2
+	"Script 0" NVOnscreenText
 }
 
 //doors
@@ -69,6 +91,10 @@ ObjProp 15 "Position"
 {
 	"Type" OBB
 }
+ObjProp 28 "RotDoor"
+{
+	"Open Angle" 275
+}
 ObjProp 31 "RotDoor"
 {
 	"Open Angle" 90
@@ -83,12 +109,84 @@ ObjProp 31 "Position"
 {
 	"Type" OBB
 }
-ObjProp 46 "TransDoor"
++ObjProp 42 "BlockFrob"
 {
-	"Open Position" -2.85
+	"" true
+}
++ObjProp 46 "Scale"
+{
+	"" 0.775, 1, 1
+}
+ObjProp 46 "Position"
+{
+	"Location" -38.5, 9.175, 18
+}
+-ObjProp 46 "PhysType"
++ObjProp 46 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 47 "Scale"
+{
+	"" 0.775, 1, 1
+}
+ObjProp 47 "Position"
+{
+	"Location" -38.5, 6.075, 18
+}
+-ObjProp 47 "PhysType"
++ObjProp 47 "PhysType"
+{
+	"Type" OBB
 }
 +ObjProp 48 "FrobInfo"
 {
+}
++ObjProp 178 "BlockFrob"
+{
+	"" true
+}
++ObjProp 179 "BlockFrob"
+{
+	"" true
+}
+ObjProp 179 "Scripts"
+{
+	"Script 2" StdDoor
+	"Don't Inherit" true
+}
++Receptron 220 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -162
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 220 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
++ObjProp 220 "JointPos"
+{
+	"Joint 1" 90.00
+}
+
+//misplaced objects
+ObjProp 221 "Position"
+{
+	"Location" -36.5, 27.5, 15.109
+	"Heading" 1000
+}
+-ObjProp 221 "PhysType"
++ObjProp 221 "PhysType"
+{
+	"Type" OBB
 }
 
 //lockboxes / keys
@@ -104,7 +202,6 @@ ObjProp 46 "TransDoor"
 		"Prop Name" Locked
 	}
 }
--Link 297 255 "FrobProxy"
 +Receptron 297 "Stench"
 {
 	Max None
@@ -121,6 +218,7 @@ ObjProp 46 "TransDoor"
 {
 	"" true
 }
+-Link 297 255 "FrobProxy"
 +StimSource 302 "Stench"
 {
 	Intensity 1
@@ -155,6 +253,3 @@ ObjProp 46 "TransDoor"
 {
 	"Joint 1" 90.00
 }
-
-//pickpockets
--Link 517 636 "ControlDevice"
