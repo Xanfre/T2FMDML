@@ -172,10 +172,6 @@ ObjProp 179 "Scripts"
 	Intensity 1
 	Propagator "Radius"
 }
-+ObjProp 220 "JointPos"
-{
-	"Joint 1" 90.00
-}
 
 //misplaced objects
 ObjProp 221 "Position"
