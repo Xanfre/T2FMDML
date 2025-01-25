@@ -57,6 +57,24 @@ ObjProp 555 "TrapQVar"
 {
 	"Script 0" NVOnscreenText
 }
+-Link 638 637 "ControlDevice"
+-Link 613 612 "ControlDevice"
+-Link 612 638 "ControlDevice"
+-Link 612 613 "ControlDevice"
++Link 612 637 "ControlDevice"
+{
+}
+-ObjProp 612 "Scale"
+ObjProp 612 "Position"
+{
+	"Location" -22.5, 24, -7.5
+	"Heading" 1800
+}
+-ObjProp 612 "PhysType"
++ObjProp 612 "PhysType"
+{
+	"Type" OBB
+}
 
 //doors
 ObjProp 13 "RotDoor"
