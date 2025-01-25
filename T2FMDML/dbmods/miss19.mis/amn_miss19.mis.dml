@@ -67,8 +67,7 @@ ObjProp 555 "TrapQVar"
 -ObjProp 612 "Scale"
 ObjProp 612 "Position"
 {
-	"Location" -22.5, 24, -7.5
-	"Heading" 1800
+	"Location" 30, 16, -8
 }
 -ObjProp 612 "PhysType"
 +ObjProp 612 "PhysType"
