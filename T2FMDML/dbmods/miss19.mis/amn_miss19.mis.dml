@@ -67,12 +67,22 @@ ObjProp 555 "TrapQVar"
 -ObjProp 612 "Scale"
 ObjProp 612 "Position"
 {
-	"Location" 30, 16, -8
+	"Location" -22.5, 24, -7.5
+	"Heading" 1800
 }
 -ObjProp 612 "PhysType"
 +ObjProp 612 "PhysType"
 {
 	"Type" OBB
+}
++ObjProp 637 "ScriptTiming"
+{
+	"" 4000
+}
++ObjProp 637 "Scripts"
+{
+	"Script 0" TrapTimedRelay
+	"Don't Inherit" true
 }
 
 //doors
