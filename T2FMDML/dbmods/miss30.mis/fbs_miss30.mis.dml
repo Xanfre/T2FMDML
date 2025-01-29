@@ -394,9 +394,6 @@ ObjProp 1040 "Position"
 	"Script 0" NVRelayTrap
 	"Script 1" NVDeleteTrap
 }
-+Link 14 -2099 "PlayerFactory"
-{
-}
 ObjProp 14 "Position"
 {
 	"Location" 577, 520, 495
