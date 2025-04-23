@@ -1,5 +1,5 @@
 DML1
-//T2 FM: Slow but Steady Progress (Small Stock Resource Contest) by Vlad Midnight / Fix window: miss20.mis.dml
+//T2 FM: Slow but Steady Progress (SSR Contest) by Vlad Midnight / Fixes: miss20.mis.dml
 
 FINGERPRINT
 {
@@ -14,32 +14,470 @@ FINGERPRINT
 	QVAR "goal_target_0" == 254
 }
 
-#script "squirrel"
+#script "tnhscript"
 
-+ObjProp 142 "PhysType"
+//blockers
+Create -445 "Blocker1"
 {
-	"Type" None
-	"# Submodels" 0
-}
-+ObjProp 251 "DesignNote"
-{
-	"" RepositionLoc=-0.0,0.0,0.1
-}
-+ObjProp 251 "Scripts"
-{
-	"Script 0" T2FMDMLSimReposOfst
-}
-Create -6082 "BrokenWinBlock"
-{
-	+ObjProp "ModelName"
+	+ObjProp "CollisionType"
 	{
-		"" win4x8br
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 432, 513.15, 480.5
+		"Pitch" c000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
 	}
 	+ObjProp "Material Tags"
 	{
 		"1: Tags" ""
 	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 1.7
+	}
 }
-+Link 101 "BrokenWinBlock" "Corpse"
+-ObjProp "Blocker1" "PhysType"
++ObjProp "Blocker1" "PhysType"
 {
+	"Type" OBB
+}
+Create -445 "Blocker2"
+{
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "PhysCanMant"
+	{
+		"" false
+	}
+	+ObjProp "Position"
+	{
+		"Location" 432, 515.85, 480.5
+		"Pitch" c000
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Material Tags"
+	{
+		"1: Tags" ""
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 1, 1.7
+	}
+}
+-ObjProp "Blocker2" "PhysType"
++ObjProp "Blocker2" "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 24 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 66 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
++ObjProp 70 "DiffDestroy"
+{
+	"quest var values" 0, 1, 2
+}
+
+//doors, window
+-ObjProp 22 "PhysType"
++ObjProp 22 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 64 "FrobInfo"
+{
+}
++Link 64 60 "ControlDevice"
+{
+}
++ObjProp 64 "Scripts"
+{
+	"Script 0" TrigDoorOpen
+}
+-ObjProp 72 "PhysType"
++ObjProp 72 "PhysType"
+{
+	"Type" OBB
+}
++ObjProp 76 "BlockFrob"
+{
+	"" true
+}
+-ObjProp 76 "FrobInfo"
+-ObjProp 97 "FrobInfo"
+-ObjProp 97 "Class Tags"
+Receptron 101 "ItsWetStim" 00210007
+{
+	Effect "rem_prop"
+	{
+		"Prop Name" PickDist
+	}
+}
+Receptron 101 "ItsWetStim" 00210008
+{
+	Target Source
+	Effect "destroy_obj"
+}
+ObjProp 101 "Scripts"
+{
+	"Script 0" TrigSlain
+	"Script 1" ""
+	"Don't Inherit" true
+}
++Receptron 109 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 109 "Scripts"
+ObjProp 115 "Position"
+{
+	"Location" 444.25, 511.5, 513
+}
+-ObjProp 115 "PhysType"
++ObjProp 115 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 116 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 116 "Position"
+{
+	"Location" 438.45, 525, 480
+}
+-ObjProp 116 "PhysType"
++ObjProp 116 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 121 "Scripts"
++MetaProp 145 -2420
+-ObjProp 159 "PhysType"
++ObjProp 159 "PhysType"
+{
+	"Type" OBB
+}
+-ObjProp 173 "PhysType"
++ObjProp 173 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 244 "TransDoor"
+{
+	"Blocks Sound %" 100
+}
++Receptron 259 "BashStim"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
+-ObjProp 293 "FrobInfo"
++ObjProp 293 "BlockFrob"
+{
+	"" true
+}
+
+//switches
+ObjProp 60 "Position"
+{
+	"Location" 489.5, 522, 500
+	"Heading" c000
+}
+-ObjProp 60 "PhysType"
++ObjProp 60 "PhysType"
+{
+	"Type" OBB
+}
+-Link 60 287 "ControlDevice"
++Link 59 287 "ControlDevice"
+{
+}
+ObjProp 59 "Position"
+{
+	"Location" 475.905, 536.5, 503
+}
+-ObjProp 59 "PhysType"
++ObjProp 59 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 61 "Position"
+{
+	"Location" 485.85, 522, 500
+}
+-Link 62 64 "ControlDevice"
++Link 62 60 "FrobProxy"
+{
+	"FrobProxyMask" AllowDirect
+}
++ObjProp 235 "Locked"
+{
+	"" false
+}
+
+//keys
++ObjProp 137 "FrobInfo"
+{
+	"World Action" Move
+	"Tool Action" Script, Deselect
+}
++ObjProp 137 "NoDrop"
+{
+	"" true
+}
++ObjProp 137 "PickDist"
+{
+	"" 0.00
+}
+-ObjProp 137 "PhysType"
+-ObjProp 217 "PhysType"
+ObjProp 217 "Position"
+{
+	"Location" 420, 476.5, 497.5
+}
+
+//AIs
++Link 18 64 "ControlDevice"
+{
+}
++Link 18 19 "ControlDevice"
+{
+}
++ObjProp 18 "TrapFlags"
+{
+	"" Once, Invert
+}
++ObjProp 18 "Scripts"
+{
+	"Script 0" TrapRelay
+}
+ObjProp 19 "Scripts"
+{
+	"Script 1" TrapFreezePlayer
+}
+ObjProp 21 "AI_Converation"
+{
+	"Actor"[1] ActorOne
+	"Conversation: Action 1" Remove link(Flavor,Destination(s),Source(s))
+	"   Argument 1"[1] ControlDevice
+	"   Argument 2"[1] X2
+	"   Argument 3"[1] X1
+	"Actor"[2] ActorOne
+	"Conversation: Action 2" Remove link(Flavor,Destination(s),Source(s))
+	"   Argument 1"[2] ControlDevice
+	"   Argument 2"[2] X3
+	"   Argument 3"[2] X1
+	"Actor"[3] Unused
+	"Conversation: Action 3" Nothing()
+	"   Argument 1"[3] ""
+	"   Argument 2"[3] ""
+	"   Argument 3"[3] ""
+	"Actor"[4] Unused
+	"Conversation: Action 4" Nothing()
+	"   Argument 1"[4] ""
+	"   Argument 2"[4] ""
+	"   Argument 3"[4] ""
+	"   Argument 1"[9] doorclose
+	"Conversation: Action 4"[1] Add/Remove Meta-property(Add/Remove,Mprop name,Target Objects)
+	"   Argument 1"[10] Remove
+	"   Argument 2"[10] FrobInert
+	"   Argument 3"[10] secswit
+	"Actor"[11] Unused
+	"Conversation: Action 5"[1] Nothing()
+	"   Argument 1"[11] ""
+	"   Argument 2"[11] ""
+	"   Argument 3"[11] ""
+	"Actor"[12] ActorOne
+	"Actor"[13] ActorOne
+	"Conversation: Action 0"[2] Script message(Message,MsgData1,MsgData2)
+	"   Argument 1"[12] PhantomEnd
+	"   Argument 2"[12] ""
+	"Conversation: Action 1"[2] Frob object(Target Object,With Object)
+	"   Argument 1"[13] hyt
+	"   Argument 2"[13] ""
+	"Actor"[14] Unused
+	"Conversation: Action 2"[2] Nothing()
+	"   Argument 1"[14] ""
+	"Actor"[18] Unused
+	"Conversation: Action 0"[3] Nothing()
+	"   Argument 1"[18] ""
+	"Actor"[19] Unused
+	"Conversation: Action 1"[3] Nothing()
+	"   Argument 1"[19] ""
+	"Actor"[20] Unused
+	"Conversation: Action 2"[3] Nothing()
+	"   Argument 1"[20] ""
+}
++ObjProp 28 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 28 "PickDist"
+{
+	"" -5.00
+}
++Link 28 18 "ControlDevice"
+{
+}
++ObjProp 28 "Scripts"
+{
+	"Script 0" TrigWorldFrob
+}
+-ObjProp 32 "PickDist"
+-ObjProp 32 "Scripts"
+-Link 32 69 "ControlDevice"
++Link 292 21 "ControlDevice"
+{
+}
++Receptron 53 "LightBright"
+{
+	Min None
+	Max None
+	Effect "Abort"
+}
++ObjProp 53 "NoFlash"
+{
+	"" true
+}
+ObjProp 108 "AI_Converation"
+{
+	"   Argument 1"[14] 100
+}
++ObjProp 287 "TrapFlags"
+{
+	"" Once, NoOff
+}
++ObjProp 288 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
+}
+
+//misplaced objects
+ObjProp 127 "Position"
+{
+	"Heading" 4000
+}
++Receptron 142 "Stench"
+{
+	Max None
+
+	Target Me
+	Agent -10
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysControl
+	}
+}
+++Receptron 142 "Stench"
+{
+	Max None
+
+	Target 76
+	Agent -2418
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 142 "Stench"
+{
+	Max None
+
+	Target 97
+	Agent -2425
+
+	Effect "add_prop"
+	{
+		"Prop Name" Material Tags
+	}
+}
+++Receptron 142 "Stench"
+{
+	Max None
+
+	Target 159
+	Agent -3090
+
+	Effect "add_prop"
+	{
+		"Prop Name" PhysDims
+	}
+}
++StimSource 142 "Stench"
+{
+	Intensity 1
+	Propagator "Radius"
+}
+-Link 177 33 "ControlDevice"
+-ObjProp 177 "ScriptTiming"
+-ObjProp 177 "Scripts"
+-ObjProp 177 "PhysType"
+ObjProp 177 "Position"
+{
+	"Location" 492.5, 467.75, 512.15
+	"Heading" 8000
+}
+ObjProp 180 "Position"
+{
+	"Location" 484, 482.4, 516.5
+}
+-ObjProp 180 "PhysType"
++ObjProp 180 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 251 "Position"
+{
+	"Location" 498.6, 529.6, 510.81
+}
+ObjProp 252 "Position"
+{
+	"Location" 497, 488, 515.8
+}
+
+//various objects
+-ObjProp 92 "FrobInfo"
+-ObjProp 92 "Scripts"
+-ObjProp 226 "PhysType"
+ObjProp 226 "Scripts"
+{
+	"Script 0" StdBook
+	"Script 1" ""
+}
+-ObjProp 236 "DeathStage"
+Receptron 236 "WeaponStim"
+{
+	Min None
+	Max None
+}
+Receptron 236 "BashStim"
+{
+	Min None
+	Max None
 }
