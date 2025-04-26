@@ -14,6 +14,8 @@ FINGERPRINT
 	QVAR "goal_target_0" == 425
 }
 
+#script "squirrel"
+
 //debtors registry
 +ObjProp 541 "NoDrop"
 {
@@ -56,22 +58,44 @@ FINGERPRINT
 {
 	"Type" OBB
 }
++ObjProp 73 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.875,0,0
+}
+ObjProp 73 "Scripts"
+{
+	"Script 1" SetVectorProp
+}
 ObjProp 81 "RotDoor"
 {
 	"Open Angle" 89
+}
+ObjProp 82 "RotDoor"
+{
+	"Open Angle" 271
+}
++ObjProp 101 "BlockFrob"
+{
+	"" true
+}
++ObjProp 113 "BlockFrob"
+{
+	"" true
+}
++ObjProp 114 "BlockFrob"
+{
+	"" true
 }
 +Receptron 117 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +Receptron 118 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +ObjProp 124 "BlockFrob"
@@ -79,6 +103,10 @@ ObjProp 81 "RotDoor"
 	"" true
 }
 +ObjProp 127 "BlockFrob"
+{
+	"" true
+}
++ObjProp 183 "BlockFrob"
 {
 	"" true
 }
@@ -90,27 +118,29 @@ ObjProp 208 "Scale"
 {
 	"" 0.875, 0.875, 0.875
 }
+ObjProp 241 "Position"
+{
+	"Location" 408.916, 443.5, -19
+}
+-ObjProp 241 "PhysType"
++ObjProp 241 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 243 "Position"
+{
+	"Location" 408.916, 451.5, -19
+}
+-ObjProp 243 "PhysType"
++ObjProp 243 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 372 "Scale"
 {
 	"" 0.75, 0.75, 0.75
 }
 +MetaProp 474 -2420
-
-//mantling
-+ObjProp 74 "PhysCanMant"
-{
-}
-
-//bed
-ObjProp 78 "Position"
-{
-	"Heading" c000
-}
--ObjProp 78 "PhysType"
-+ObjProp 78 "PhysType"
-{
-	"Type" OBB
-}
 
 //chests
 +ObjProp 23 "JointPos"
@@ -148,6 +178,16 @@ ObjProp 92 "JointPos"
 }
 
 //AIs
+ObjProp 361 "Position"
+{
+	"Location" 561.125, 498.75, -13
+}
+-ObjProp 361 "PhysType"
++ObjProp 361 "PhysType"
+{
+	"Type" Sphere
+	"# Submodels" 2
+}
 +ObjProp 338 "InvRendType"
 {
 	"Type" Alternate Bitmap
@@ -162,4 +202,46 @@ ObjProp 92 "JointPos"
 {
 	"Type" Alternate Bitmap
 	"Resource" cthfm02
+}
+
+//various objects
+ObjProp 61 "Position"
+{
+	"Location" 557.085, 495, 4.5
+}
+-ObjProp 61 "PhysType"
++ObjProp 61 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 78 "Position"
+{
+	"Heading" c000
+}
+-ObjProp 78 "PhysType"
++ObjProp 78 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 351 "Position"
+{
+	"Location" 431.5, 562.1, 1
+}
+-ObjProp 351 "PhysType"
++ObjProp 351 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 394 "Position"
+{
+	"Location" 411.5, 453.975, -18
+}
+ObjProp 412 "Position"
+{
+	"Location" 433.99, 579, 2
+}
+
+//mantling
++ObjProp 74 "PhysCanMant"
+{
 }
