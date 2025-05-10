@@ -1,5 +1,5 @@
 DML1
-//T2 FM: Dwelling Insanity (Contest 4) by Rustibus / Fix objectives not displaying: miss17.mis.dml
+//T2 FM: Dwelling Insanity (Contest 4) by Patrick Strom (Rustibus) / Fixes: miss17.mis.dml
 
 FINGERPRINT
 {
@@ -17,4 +17,35 @@ FINGERPRINT
 TagBlock "DARKMISS"
 {
 	"Mission Pathname" ""
+}
+
+//book
++ObjProp 17 "NoDrop"
+{
+	"" true
+}
+
+//doors
+-ObjProp 14 "PhysType"
++ObjProp 14 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 29 "Scale"
+{
+	"" 1.1429, 1.1429, 1.1429
+}
+-ObjProp 30 "JointPos"
+-ObjProp 31 "JointPos"
+
+//key
++ObjProp 35 "StackCount"
+{
+}
+
+//AI
++ObjProp 48 "InvRendType"
+{
+	"Type" Alternate Bitmap
+	"Resource" hauntca
 }
