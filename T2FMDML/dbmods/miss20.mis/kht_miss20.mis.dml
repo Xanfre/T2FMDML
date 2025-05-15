@@ -14,6 +14,8 @@ FINGERPRINT
 	QVAR "goal_target_3" == 507
 }
 
+#script "squirrel"
+
 //mantling
 +ObjProp 10 "PhysCanMant"
 {
@@ -70,7 +72,6 @@ ObjProp 126 "RotDoor"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 ObjProp 199 "Scale"
@@ -85,14 +86,12 @@ ObjProp 223 "Scale"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +Receptron 408 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
 }
 +ObjProp 478 "Scripts"
@@ -115,8 +114,11 @@ ObjProp 223 "Scale"
 +StimSource 612 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
+}
++ObjProp 612 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysAttr"; SetVectorPropSubProperty="COG Offset"; SetVectorPropValue=1.79,0,0
 }
 +ObjProp 612 "PickDist"
 {
@@ -124,6 +126,29 @@ ObjProp 223 "Scale"
 }
 +ObjProp 612 "PhysCanMant"
 {
+}
++ObjProp 612 "Scripts"
+{
+	"Script 0" SetVectorProp
+}
+
+//chest trap
++Link 4 461 "ControlDevice"
+{
+}
++ObjProp 461 "Scripts"
+{
+	"Script 0" TrapFreezePlayer
+}
+
+//table
++ObjProp 46 "DesignNote"
+{
+	"" SetVectorPropProperty="PhysDims"; SetVectorPropSubProperty="Size"; SetVectorPropValue=6.5,3.5,0.5; SetVectorPropSubProperty2="Offset 1"; SetVectorPropValue2=0,0,1.5
+}
+ObjProp 46 "Scripts"
+{
+	"Script 1" SetVectorProp
 }
 
 //mysterious key
