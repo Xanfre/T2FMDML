@@ -57,16 +57,9 @@ ObjProp 93 "RotDoor"
 -Link 65 145 "ControlDevice"
 -Link 66 146 "ControlDevice"
 -Link 67 130 "ControlDevice"
--Link 120 63 "ControlDevice"
--Link 130 62 "ControlDevice"
--Link 145 62 "ControlDevice"
--Link 146 63 "ControlDevice"
 +ObjProp 120 "DesignNote"
 {
 	"" object="Elevator0B1";flavor="ControlDevice"
-}
-+Link 120 63 "ControlDevice"
-{
 }
 +ObjProp 120 "Scripts"
 {
@@ -77,9 +70,6 @@ ObjProp 93 "RotDoor"
 {
 	"" object="Elevator1B0";flavor="ControlDevice"
 }
-+Link 130 62 "ControlDevice"
-{
-}
 +ObjProp 130 "Scripts"
 {
 	"Script 0" LinkTemplate
@@ -89,9 +79,6 @@ ObjProp 93 "RotDoor"
 {
 	"" object="Elevator0B0";flavor="ControlDevice"
 }
-+Link 145 62 "ControlDevice"
-{
-}
 +ObjProp 145 "Scripts"
 {
 	"Script 0" LinkTemplate
@@ -100,9 +87,6 @@ ObjProp 93 "RotDoor"
 +ObjProp 146 "DesignNote"
 {
 	"" object="Elevator1B1";flavor="ControlDevice"
-}
-+Link 146 63 "ControlDevice"
-{
 }
 +ObjProp 146 "Scripts"
 {
