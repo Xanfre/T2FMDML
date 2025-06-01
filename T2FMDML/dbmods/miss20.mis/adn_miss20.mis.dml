@@ -17,6 +17,7 @@ FINGERPRINT
 //starting point
 ObjProp 320 "Position"
 {
+	"Location" -70.5, -45, 93.525
 	"Heading" 4000
 }
 
@@ -41,13 +42,51 @@ ObjProp 320 "Position"
 	"" =1:goal_state_5
 }
 
+//blocker
+Create -1430 "Blocker"
+{
+	+ObjProp "BlockFrob"
+	{
+		"" true
+	}
+	+ObjProp "CollisionType"
+	{
+		"" None
+	}
+	+ObjProp "Position"
+	{
+		"Location" -187.5, 112.175, 76.5
+	}
+	+ObjProp "RenderType"
+	{
+		"" Not Rendered
+	}
+	+ObjProp "Scale"
+	{
+		"" 1, 0.8, 0.8
+	}
+}
+-ObjProp "Blocker" "PhysType"
++ObjProp "Blocker" "PhysType"
+{
+	"Type" OBB
+}
+
 //doors
 +Receptron 19 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
+}
+ObjProp 19 "Position"
+{
+	"Location" -83.75, -11, 82.75
+}
+-ObjProp 19 "PhysType"
++ObjProp 19 "PhysType"
+{
+	"Type" OBB
 }
 ObjProp 95 "Position"
 {
@@ -55,6 +94,15 @@ ObjProp 95 "Position"
 }
 -ObjProp 95 "PhysType"
 +ObjProp 95 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 96 "Position"
+{
+	"Location" -189.5, 131.5, 90.75
+}
+-ObjProp 96 "PhysType"
++ObjProp 96 "PhysType"
 {
 	"Type" OBB
 }
@@ -86,11 +134,11 @@ ObjProp 106 "Position"
 {
 	"Type" OBB
 }
-+Receptron 197 "Stench"
++Receptron 193 "Stench"
 {
 	Max None
 
-	Target Me
+	Target 197
 	Agent -1403
 
 	Effect "add_prop"
@@ -98,11 +146,11 @@ ObjProp 106 "Position"
 		"Prop Name" Class Tags
 	}
 }
-++Receptron 197 "Stench"
+++Receptron 193 "Stench"
 {
 	Max None
 
-	Target Me
+	Target 197
 	Agent -2420
 
 	Effect "add_prop"
@@ -110,7 +158,7 @@ ObjProp 106 "Position"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 197 "Stench"
+++Receptron 193 "Stench"
 {
 	Max None
 
@@ -122,7 +170,7 @@ ObjProp 106 "Position"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 197 "Stench"
+++Receptron 193 "Stench"
 {
 	Max None
 
@@ -134,7 +182,7 @@ ObjProp 106 "Position"
 		"Prop Name" Material Tags
 	}
 }
-++Receptron 197 "Stench"
+++Receptron 193 "Stench"
 {
 	Max None
 
@@ -146,27 +194,104 @@ ObjProp 106 "Position"
 		"Prop Name" Material Tags
 	}
 }
-+StimSource 197 "Stench"
++StimSource 193 "Stench"
 {
 	Intensity 1
-
 	Propagator "Radius"
 }
--ObjProp 322 "Material Tags"
+ObjProp 197 "Position"
+{
+	"Location" -165.75, 93.5, 117.75
+}
+-ObjProp 197 "PhysType"
++ObjProp 197 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 302 "RotDoor"
+{
+	"Open Angle" 270
+	"Clockwise?" true
+}
+ObjProp 302 "Position"
+{
+	"Location" -176.25, 105.25, 117.75
+	"Heading" c000
+}
+-ObjProp 302 "PhysType"
++ObjProp 302 "PhysType"
+{
+	"Type" OBB
+}
 +Receptron 322 "WeaponStim"
 {
 	Min None
 	Max None
-
 	Effect "Abort"
+}
+-ObjProp 322 "Material Tags"
+ObjProp 336 "RotDoor"
+{
+	"Open Angle" 90
+	"Clockwise?" false
+}
+ObjProp 336 "Position"
+{
+	"Location" -119.25, 141.5, 90.75
+	"Heading" 8000
+}
+-ObjProp 336 "PhysType"
++ObjProp 336 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 339 "Position"
+{
+	"Location" -126.5, 105.75, 90.75
+}
+-ObjProp 339 "PhysType"
++ObjProp 339 "PhysType"
+{
+	"Type" OBB
 }
 ObjProp 577 "StTweqLock"
 {
 	"AnimS" None
 }
+ObjProp 577 "Position"
+{
+	"Location" -177.25, 110, 76.5
+}
+-ObjProp 577 "PhysType"
++ObjProp 577 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 632 "RotDoor"
 {
 	"Open Angle" 89
+}
++ObjProp 632 "BlockFrob"
+{
+	"" true
+}
+ObjProp 632 "Position"
+{
+	"Location" -187.5, 106.5, 76.5
+}
+-ObjProp 632 "PhysType"
++ObjProp 632 "PhysType"
+{
+	"Type" OBB
+}
+ObjProp 699 "Position"
+{
+	"Location" -151.25, 110, 76.5
+}
+-ObjProp 699 "PhysType"
++ObjProp 699 "PhysType"
+{
+	"Type" OBB
 }
 
 //mantling
@@ -180,6 +305,12 @@ ObjProp 632 "RotDoor"
 {
 }
 +ObjProp 124 "PhysCanMant"
+{
+}
++ObjProp 329 "PhysCanMant"
+{
+}
++ObjProp 379 "PhysCanMant"
 {
 }
 +ObjProp 390 "PhysCanMant"
@@ -196,28 +327,19 @@ ObjProp 632 "RotDoor"
 	"Joint 1" 90.00
 }
 
-//scrolls
-+ObjProp 301 "FrobInfo"
-{
-	"World Action" Script
-}
-+ObjProp 301 "Scripts"
-{
-	"Script 0" StdBook
-}
-+ObjProp 449 "FrobInfo"
-{
-	"World Action" Script
-}
-+ObjProp 449 "Scripts"
-{
-	"Script 0" StdBook
-}
-
 //switches
+ObjProp 300 "Position"
+{
+	"Location" -175.75, 106.325, 92.5
+}
+-ObjProp 300 "PhysType"
++ObjProp 300 "PhysType"
+{
+	"Type" OBB
+}
 ObjProp 306 "Position"
 {
-	"Location" -185.775, 93.175, 92.55
+	"Location" -186, 93.175, 92.5
 }
 -ObjProp 306 "PhysType"
 +ObjProp 306 "PhysType"
@@ -226,7 +348,7 @@ ObjProp 306 "Position"
 }
 ObjProp 332 "Position"
 {
-	"Location" -162.875, 106.3, 92.55
+	"Location" -162.875, 106.325, 92.5
 }
 -ObjProp 332 "PhysType"
 +ObjProp 332 "PhysType"
@@ -252,6 +374,24 @@ ObjProp 544 "StTweqJoints"
 {
 	"AnimS" Reverse
 	"Joint1AnimS" On, Reverse
+}
+
+//scrolls
++ObjProp 301 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 301 "Scripts"
+{
+	"Script 0" StdBook
+}
++ObjProp 449 "FrobInfo"
+{
+	"World Action" Script
+}
++ObjProp 449 "Scripts"
+{
+	"Script 0" StdBook
 }
 
 //misplaced objects
