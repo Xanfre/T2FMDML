@@ -199,6 +199,10 @@ ObjProp 106 "Position"
 	Intensity 1
 	Propagator "Radius"
 }
++ObjProp 197 "BlockFrob"
+{
+	"" true
+}
 ObjProp 197 "Position"
 {
 	"Location" -165.75, 93.5, 117.75
@@ -228,6 +232,10 @@ ObjProp 302 "Position"
 	Min None
 	Max None
 	Effect "Abort"
+}
++ObjProp 322 "BlockFrob"
+{
+	"" true
 }
 -ObjProp 322 "Material Tags"
 ObjProp 336 "RotDoor"
