@@ -1,0 +1,21 @@
+DML1
+//T1 FM: The Saint of Redmound by Maria Ström (Morrgan) / Fixes: miss20.mis.dml
+
+FINGERPRINT
+{
+	509 [-254 71 -8]
+	776 [-245 59 -13]
+	1057 [-230 57 -35]
+	1158 [-230 61 -40]
+	690 [-224 61 -41]
+	451 [-224 44 1]
+	691 [-221 58 -41]
+	688 [-221 71 -41]
+	QVAR "goal_target_0" == 1149
+}
+
+//fixes the archer falling down from the catwalk by moving the patrol point
+ObjProp 1179 "Position"
+{
+	"Location" -309.18, -46.25, -11.9
+}
